@@ -1,0 +1,301 @@
+.york-bisect{
+	display:flex;
+}
+
+.york-bisect > *{
+	flex:1;
+}
+
+.york-bisect.york-bisect-21 > *:first-child{
+	flex:2;
+}
+
+.york-bisect.york-bisect-21 > *:last-child{
+	flex:1;
+}
+
+.york-bisect.york-bisect-12 > *:first-child{
+	flex:1;
+}
+
+.york-bisect.york-bisect-12 > *:last-child{
+	flex:2;
+}
+
+.york-bisect > *:first-child{
+	margin-right:10px;
+}
+
+.york-bisect > *:last-child{
+	margin-left:10px;
+}
+
+
+
+#page_head{
+	background-color:#e31837;
+	color:#FFF;
+	margin:15px 0;
+	width:100vw;
+	margin-left:calc((100% - 100vw) / 2);	
+	padding:0 calc((100vw - 100%) / 2);
+	font-size:1.2em;
+	line-height:1.5;
+	display:flex;
+	flex-direction:row;
+}
+
+#page_head > *{
+	flex:1;
+	padding:20px;
+}
+
+#page_head ul{
+	margin-bottom:0;
+}
+
+@media (max-width:800px){
+	#page_head{
+		flex-direction:column-reverse;
+		padding:20px;
+	}
+	
+	#page_head > div:last-child{
+		padding-bottom:0px;
+	}	
+}
+
+
+
+#navigation .region-navigation ul.menu li ul.menu{
+	top:auto;
+	z-index:5000;
+}
+
+
+.york-code{
+	font-family:monospace;
+	font-size:1.35em;
+}
+
+
+/* Drupal 8 migration */
+
+nav[role="navigation"] h2{
+	display:none;
+}
+
+footer img.wordmark{
+	width:200px;
+}
+
+
+/* Content Server Tags */
+.cs-usages{
+	position:fixed;
+	bottom:0;
+	right:25px;
+	padding:25px;
+	background-color:#CCC;
+}
+
+.cs-usages > a.close{
+	position:absolute;
+	top:15px;
+	right:15px;
+}
+
+.cs-usages h2{
+	text-transform:uppercase;
+	font-size:1.25em;
+	margin-bottom:15px;
+}
+
+.cs-usages .cs-usage{
+	margin-bottom:15px;
+	display:none;
+}
+
+.cs-usages:hover .cs-usage{
+	display:block;
+}
+
+
+
+.logged-in-content{
+	display:none;
+}
+
+.logged-in .logged-in-content{
+	display:block;
+}
+
+
+
+
+
+paper-button{
+	background-color:#9A0100;
+	color:#FFF;
+	margin-left:0;
+	padding:8px 16px;
+	display:inline-block;
+	border-radius:0;
+}
+
+	paper-button[glendon]{
+		background-color:#084C8B;
+	}
+	
+.focus{
+	padding:48px;
+	position:relative;
+	font-size:1.2rem;
+}
+
+	.focus:before,
+	.focus:after{
+		content:' ';
+		position:absolute;
+		width:48px;
+		height:48px;
+		transition:0.3s all ease;
+	}
+	
+	.focus:before{
+		border-top:10px solid #e31837;
+		border-left:10px solid #e31837;
+		left:0;
+		top:0;
+	}
+	
+	.focus:after{
+		border-bottom:10px solid #e31837;
+		border-right:10px solid #e31837;
+		right:0;
+		bottom:0;
+	}	
+	
+	.focus:hover:before{
+		border-top:20px solid #9A0100;
+		border-left:20px solid #9A0100;
+		left:5px;
+		top:5px;
+		transition:0.3s all ease;		
+	}
+	
+	.focus:hover:after{
+		border-bottom:20px solid #9A0100;
+		border-right:20px solid #9A0100;
+		right:5px;
+		bottom:5px;
+		transition:0.3s all ease;		
+	}		
+	
+a.video{
+	position:relative;
+	display:inline-block;
+	border-bottom:none;
+	text-align:center;
+}
+
+	a.video:before{
+		position:absolute;
+		font-family:"FontAwesome";
+		content:'\f144';
+		top:50%;
+		left:0;
+		width:100%;
+		margin:0;
+		text-align:center;
+		font-size:5em;
+		color:#e31837;
+		transition:all 0.3s ease-in-out;
+		transform:translateY(-50%);
+	}
+	
+		a.video.red:before{
+			color:#9A0100;
+		}	
+	
+	a.video:hover:before{
+		animation-name:playVideo;
+		animation-duration:1.5s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		color:#9A0100;
+		transition:all 0.3s ease-in-out;
+	}	
+	
+	@keyframes playVideo{
+		from{
+			color:#e31837;
+		}
+		
+		to{
+			color:#9A0100;
+		}
+	}			
+	
+#block-mainpagecontent{
+	margin-top:0;
+}
+
+.call-out{
+	margin:36px 0;
+}
+
+a.inactive{
+	pointer-events: none;
+	cursor: default;	
+}
+
+ol.parent-count{
+	counter-reset: parent1;
+}
+
+	ol.parent-count > li{
+		counter-increment: parent1;
+		margin:16px 0 16px 16px;
+		font-weight:bold;
+	}
+	
+		ol.parent-count > li > ol > li{
+			counter-increment: parent2;
+			list-style:none;
+			margin:12px 0 12px 16px;
+			font-weight:normal;
+		}
+		
+		ol.parent-count > li > ol > li:before{
+			content: counter(parent1) "." counter(parent2) ". ";
+		}
+		
+			ol.parent-count > li > ol > li > ol > li{
+				counter-increment: parent3;
+				list-style:none;
+				margin:8px 0 8px 16px;
+			}
+			
+			ol.parent-count > li > ol > li > ol > li:before{
+				content: counter(parent1) "." counter(parent2) "." counter(parent3) ". ";
+			}
+			
+				ol.parent-count > li > ol > li > ol > li > ol > li{
+					counter-increment: parent4;
+					list-style:none;
+					margin:4px 0 4px 16px;
+				}
+				
+				ol.parent-count > li > ol > li > ol > li > ol > li:before{
+					content: counter(parent1) "." counter(parent2) "." counter(parent3) "." counter(parent4) ". ";
+				}
+	
+@media (max-width:620px){
+	paper-toast.york-paper-toggle-button-bilingual-wrapper{
+		left:auto !important;
+		top:auto !important;
+		bottom:70px !important;
+		right:0 !important;
+	}
+}
