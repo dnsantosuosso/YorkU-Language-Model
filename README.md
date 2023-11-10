@@ -8,4 +8,4 @@ The data under this repository was scraped from York University's website (https
 
 To clean the HTML data, `clea_html.py` was developed, which removes the markup language from HTML files.
 
-This image must then be structured and passed to the ML model for training.
+This clean data must then be structured and passed to the ML model for training.
