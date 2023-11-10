@@ -1,0 +1,29 @@
+.fs-handbooks{
+	text-align:center;
+	overflow-x:auto;
+}
+
+.fs-handbooks .fs-handbook{
+	text-align:center;
+	min-width:200px;
+	margin:0 16px 16px 0
+}
+
+	.fs-handbooks .fs-handbook > *{
+		display:block;
+	}
+
+	.fs-handbooks .fs-handbook img{
+		margin:0 auto;
+		object-fit:contain;
+		height:300px;
+	}
+	
+	.fs-handbooks .fs-handbook a{
+		margin-top:8px;
+	}
+	
+		.fs-handbooks .fs-handbook a:last-child{
+			width:160px;
+			margin:8px auto;
+		}

@@ -1,0 +1,6 @@
+jQuery('a[data-toggle="dropdown"]:not([href=""])').off('click.namespace').on('click.namespace',
+   function(e) {
+       if (jQuery(this).parent().is('.show, .open')) 
+           window.open(jQuery(this).attr(
+                'href'), jQuery(this).attr('target') || '_self');
+   });

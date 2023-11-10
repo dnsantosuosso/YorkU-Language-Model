@@ -1,0 +1,64 @@
+.card a {
+  color: #e31837;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.card figure {
+  border: 8px solid #fff;
+  padding-top: 56.25%;
+}
+
+.card img {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: transform 15s ease;
+  object-fit: cover;
+}
+
+.card img:hover {
+  transform: scale(1.5);
+}
+
+.card figure.wp-block-embed-youtube {
+  padding-top: 0.5rem !important;
+  border: 0;
+}
+
+.card iframe {
+  width: 100%;
+}
+
+.card .wp-block-embed__wrapper {
+  position: relative;
+}
+
+.card .wp-has-aspect-ratio .wp-block-embed__wrapper:before {
+  content: "";
+  display: block;
+  padding-top: 50%;
+}
+
+.card .wp-embed-aspect-16-9 .wp-block-embed__wrapper:before {
+  padding-top: 56.25%;
+}
+
+.card .wp-has-aspect-ratio iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.card .wp-block-embed iframe {
+  max-width: 100%;
+}
+
+.card .card .wp-block-embed {
+  margin: 0 0 1em;
+}

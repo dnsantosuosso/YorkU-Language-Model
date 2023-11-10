@@ -1,0 +1,31 @@
+.program-search-view{
+	display:flex;
+	flex-direction:column;
+}
+
+.text-search-control{
+	margin-bottom:48px;
+}
+
+	.text-search-control label{
+		font-size:1.25rem;
+	}
+	
+	.text-search-control input{
+		height:48px !important;
+		line-height:48px;
+	}
+	
+.program-search-control{
+	margin-top:calc(78px + 48px);
+}	
+
+@media (max-width:599px){
+	.program-search-control{
+		margin-top:0;
+	}
+	
+	.program-search-view{
+		margin-top:48px;
+	}	
+}

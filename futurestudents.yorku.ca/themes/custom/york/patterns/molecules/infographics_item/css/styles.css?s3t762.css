@@ -1,0 +1,11 @@
+.infographics-box img{
+  height:51px;
+}
+.infographics-item {
+  background-color: #F5F5F5;
+  color: #212529;
+}
+.infographics-item h2 {
+  color: #CC0000;
+  font-weight: bolder;
+}

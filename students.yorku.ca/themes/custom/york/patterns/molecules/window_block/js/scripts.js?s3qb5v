@@ -1,0 +1,11 @@
+(function ($) {
+	'use strict';
+	
+	$('.pattern-window-block').each(function(){
+		const target_parent = $(this);
+		const target_height = $('.pattern-window-block-body', target_parent).height();
+		
+		$('.pattern-window-block-figure, .pattern-window-block-figure img', target_parent).css('min-height', target_height + 'px');
+	});
+})(jQuery);
+	

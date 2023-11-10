@@ -1,0 +1,11 @@
+.selection-block{
+  line-height:1.25; 
+}
+
+.selection-block .selection-box {
+  margin-top: 10px;
+}
+
+.selection-block .selection-box:first-child {
+  margin-top: 0;
+}

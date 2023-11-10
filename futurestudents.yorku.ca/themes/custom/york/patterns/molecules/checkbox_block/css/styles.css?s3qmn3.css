@@ -1,0 +1,12 @@
+.checkbox__block {
+  margin-bottom: 33.5px;
+}
+
+.checkbox__block:last-child {
+  margin-bottom: 0;
+}
+
+.checkbox__wrapper {
+  display: inline-flex;
+  flex-direction: column;
+}

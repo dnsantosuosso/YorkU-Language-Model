@@ -1,0 +1,31 @@
+.wp-block-cover-image .wp-block-cover__inner-container,
+.wp-block-cover .wp-block-cover__inner-container {
+  width: 100%;
+  z-index: 1;
+  color: #fff;
+}
+
+@media (min-width: 991px){
+  .infographics-box .wp-block-columns + .wp-block-columns .wp-block-column{
+    max-width:calc((100% - (32px * 3)) / 4);
+  }
+}
+
+@media (min-width: 600px) and (max-width: 991px){
+  .infographics-box .wp-block-columns{
+    flex-wrap:wrap;
+  }
+  
+  .infographics-box .wp-block-column{
+    flex-basis: calc(50% - 16px) !important;
+    flex-grow:0;
+  } 
+  
+  .infographics-box .wp-block-column:nth-child(2n){
+    margin-left:32px;
+  }
+  
+  .infographics-box .wp-block-column:nth-child(2n + 1){
+    margin-left:0;
+  }
+}
