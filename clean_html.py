@@ -30,7 +30,7 @@ def clean_html():
 # Run the cleaning function in the current directorys
 ans = input("The HTML files will be deleted. It is good practice to have a copy of this entire folder. Are you sure you want to clean the data? Yes [Y] - No [N]?: ")
 
-if (ans == 'Y'):
+if (ans == 'Y' |  ans == 'y'):
     clean_html()
-    print("Data was cleaned up successfully")
+    print("Data was cleaned up successfully.")
 

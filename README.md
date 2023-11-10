@@ -7,4 +7,5 @@ The data under this repository was scraped from York University's website (https
 `wget --recursive --level=inf --span-hosts --page-requisites --html-extension --convert-links --no-parent --domains yorku.ca --wait=2 --limit-rate=20k -e robots=off -c https://www.yorku.ca`
 
 To clean the HTML data, `clea_html.py` was developed, which removes the markup language from HTML files.
-# YorkU-Language-Model
+
+This image must then be structured and passed to the ML model for training.
