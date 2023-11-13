@@ -1,0 +1,17 @@
+.wp-block-spacer + div > div:first-child > h2:first-child,
+.wp-block-spacer + div > div:first-child > h3:first-child,
+.segment div:first-child > h2:first-child,
+.segment div:first-child > h3:first-child{
+	margin-top:0 !important;
+}
+
+.has-background.grey-bg-block h2.border-top,
+.has-background.grey-bg-block h3.border-top{
+	border-top:1px solid #AAA !important;
+}
+
+.has-background.grey-bg-block.transparent-bg-block h2.border-top,
+.has-background.grey-bg-block.transparent-bg-block h3.border-top{
+	border-top:1px solid #DEE2E6 !important;
+}
+

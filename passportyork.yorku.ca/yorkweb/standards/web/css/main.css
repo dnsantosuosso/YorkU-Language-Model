@@ -1,0 +1,83 @@
+
+<!--
+a:hover {  color: #CC0000; font-family: Arial, Helvetica, sans-serif}
+a {  color: #CC0000; font-family: Arial, Helvetica, sans-serif}
+td {  font-family: Arial, Helvetica, sans-serif; font-size: 12px}
+.smallbodytext {  font-family: Arial, Helvetica, sans-serif; font-size: 11px}
+li {  font-family: Arial, Helvetica, sans-serif; font-size: 12px}
+ol {  font-family: Arial, Helvetica, sans-serif; font-size: 12px}
+ul {  font-family: Arial, Helvetica, sans-serif; font-size: 12px}
+tr {  font-family: Arial, Helvetica, sans-serif; font-size: 12px}
+table {  font-family: Arial, Helvetica, sans-serif; font-size: 12px}
+p {  font-family: Arial, Helvetica, sans-serif; font-size: 12px}
+body {  font-family: Arial, Helvetica, sans-serif; font-size: 12px}
+b {  font-family: Arial, Helvetica, sans-serif; font-weight: bold}
+a:link {  font-family: Arial, Helvetica, sans-serif; color: #CC0000}
+a:active {  font-family: Arial, Helvetica, sans-serif; color: #CC0000}
+a:visited {  font-family: Arial, Helvetica, sans-serif; color: #CC0000}
+.subheading {  font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold}
+.heading {  font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: bold}
+.smallbodytext {  font-family: Arial, Helvetica, sans-serif; font-size: 11px}
+ol ol {  font-family: Arial, Helvetica, sans-serif; font-size: 12px}
+ul ul {  font-family: Arial, Helvetica, sans-serif; font-size: 12px}
+ol ul {  font-family: Arial, Helvetica, sans-serif; font-size: 12px}
+ul ol {  font-family: Arial, Helvetica, sans-serif; font-size: 12px}
+.bodytext { font-family: Arial, Helvetica, sans-serif; font-size: 12px }
+H1 {  font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: bold}
+H2 { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: bold}
+H3 {  font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold} 
+H4 {  font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold} 
+.teletype {font-family: Courier, monospace; font-size: 12px}
+.alert { color: #CC0000; font-family: Arial, Helvetica, sans-serif; font-weight: bold}
+
+/* following styles are for the new internal banner */
+
+a#yib2home:link, a#yib2cs:link, a#yib2fs:link, a#yib2research:link, a#yib2international:link,
+a#yib2home:visited, a#yib2cs:visited, a#yib2fs:visited, a#yib2research:visited, a#yib2international:visited {
+color: #cc0000;
+text-decoration: none;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+border: 1px solid #ffffff; 
+padding: 2px;
+line-height: 26px;
+}
+
+a#yib2home:hover, a#yib2cs:hover, a#yib2fs:hover, a#yib2research:hover, a#yib2international:hover {
+color: #cc0000;
+text-decoration: none;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+border: 1px solid #cc0000; 
+padding: 2px;
+line-height: 26px;
+}
+
+#yib2qlinks, #yib2searchbox {
+color: #ffffff;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+background: #555555;
+}
+
+a#yib2fac:link, a#yib2lib:link, a#yib2maps:link, a#yib2org:link, a#yib2dir:link, a#yib2index:link, a#yib2search:link,
+a#yib2fac:visited, a#yib2lib:visited, a#yib2maps:visited, a#yib2org:visited, a#yib2dir:visited, a#yib2index:visited, a#yib2search:visited {
+color: #ffffff;
+text-decoration: none;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+padding: 2px;
+line-height: 22px;
+}
+
+a#yib2fac:hover, a#yib2lib:hover, a#yib2maps:hover, a#yib2org:hover, a#yib2dir:hover, a#yib2index:hover, a#yib2search:hover {
+color: #000000;
+text-decoration: none;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+padding: 2px;
+line-height: 22px;
+background: #FFFFFF;
+}
+
+-->

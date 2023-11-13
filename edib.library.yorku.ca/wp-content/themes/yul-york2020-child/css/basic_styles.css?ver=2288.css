@@ -1,0 +1,117 @@
+/* Basic Styling of body, p, headings, lists, tables etc as needed to override parent */
+
+/*
+ * Parent family
+ * font-family: 'IBM Plex Sans', Arial, Helvetica, sans-serif;
+ *
+ * Child family options
+ * font-family: 'Lato', sans-serif;
+ * font-family: 'Roboto', sans-serif;
+ * font-family: 'Roboto Condensed', sans-serif;
+ * font-family: 'Roboto Slab', serif;
+ * font-family: 'Source Sans Pro', sans-serif;
+ */
+
+body { /* inherit from parent */ }
+
+p { /* inherit from parent */ }
+
+h1, h2, h3, h4, h5, h6 {  /* inherit from parent */ }
+
+.white-link a { color: #fff; }
+.white-link a:hover { color: #E31837; }
+
+.section-title {
+  font-family: 'IBM Plex Serif', 'Arial Black', 'Roboto Slab' , sans-serif;
+  font-size: 2rem;
+}
+
+.cover-title {
+  font-family: 'IBM Plex Serif', 'Arial Black', 'Roboto Slab' , sans-serif;
+  font-size: 2.2rem;
+
+}
+.yul-bg-block {
+  /*
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  */
+  margin-left: -300vw;
+  padding-left: 300vw;
+  margin-right: -300vw;
+  padding-right: 300vw;
+}
+
+.yul-fa-icon {
+  text-align: center;
+  padding: 10px;
+}
+
+.yul-info-box {
+  background: #f1f1f1;
+  padding: 10px 10px 10px 10px;
+}
+.yul-info-box h3 { margin-top: 15%; }
+
+/* Springshare Chat Slideout */
+.lcs_slide_out-r { top: 225px !important; }
+
+/* mobile first hiding */
+.hide-me {display: none;}
+
+/* Landing Page Specific Styles */
+
+/* Undergraduate research fair landing padding.
+   Make it more specific or make a new template
+*/
+/* .page-id-6 main#content {
+  padding-top: 0;
+} */
+
+
+/* DESKTOP SPECIFIC STYLES */
+@media only screen and (min-width: 768px) {
+  .cover-title {
+    font-size: 5rem;
+  }
+  .section-title {
+    font-size: 2.5rem;
+  }
+  .hide-me-desktop-tablet {display: none;}
+
+
+/* ADD THESE TO TIPS AND TRICKS */
+
+/*
+  .quarterwidth
+  .fullwidth
+  .w-25
+  .w-50
+  .w-75
+  .w-100
+  .w-auto
+  .h-25
+  .h-50
+  .h-75
+  .h-100
+  .h-auto
+  //max/min-Width/height
+  .mw-100
+  .mh-100
+  .min-vw-100
+  .min-vh-100
+  .vw-100
+  .vh-100
+
+*/
+
+
+/** Temporarly commented out ** /
+/*
+  .wp-block-buttons .wp-block-button.library-side-button a {
+    width: 100%;
+  }
+*/
+
+
+} /* end of @media only screen and (min-width: 768px) */

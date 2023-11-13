@@ -1,0 +1,3945 @@
+<!DOCTYPE html>
+
+
+  
+ 
+  
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+	
+
+<html lang="en-CA">
+
+	
+		
+		<head>
+			
+
+  
+ 
+  
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+	
+
+
+
+<title>York University Portal - Experience YU - Alumni - Login</title>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!-- This metatag enables responsive design -->
+
+
+<link rel="icon" href="/site/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/site/images/favicon.ico" type="image/x-icon">
+
+<script type="text/javascript" src="https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/jquery/3.1.1/jquery.min.js"></script>
+
+<link href="https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/css/normalize-5.0.0.css" rel="stylesheet" type="text/css" />
+<script type='text/javascript'>$('head title, .addComponent').filter(':last').after($('<link/>', {rel: 'stylesheet',type: 'text/css', href: 'https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/css/animate.css', class:'addComponent'}));</script>
+
+<link href="https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/css/jquery.tokenize.css" rel="stylesheet" type="text/css" />
+<link href="https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/css/protip.min.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel="stylesheet" />
+<link href="https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+
+
+
+
+<script type="text/javascript">
+	var orbisLocale = "en";
+	var isL1 = true;
+	var isL2 = false;
+	var i18n = {
+		answered: "Answered",
+		answeredFilterDescription: "Shows answered chats",
+		unanswered: "Unanswered",
+		unansweredFilterDescription: "Shows unanswered chats",
+		unclaimedFilterDescription: "Shows chats with no claimants",
+		claimedByMeFilterDescription: "Shows chats you\'ve claimed",
+		claimedByMe: "Claimed By Me",
+		unclaimed: "Unclaimed",
+		noChatsToShow: "No chats to show",
+		helpQueue: "Help Queue",
+		participantType: "Participant Type",
+		participant: "Participant",
+		sent: "Sent",
+		claim: "Claim",
+		unclaim: "Unclaim",
+		claimed: "Claimed By",
+		title: "Title",
+		groupInterview: "Group Interview",
+		close: "Close",
+		confirm: "Confirm",
+		kickUser: "Remove Participant",
+		kickConfirm: "Are you sure you want to remove this participant?",
+		numOfAdminsOnline: "{num} Admin(s) Online",
+		viewInterviewees: "View Interviewees",
+		viewRegistrants: "View Registrants",
+		online: "Online",
+		offline: "Offline",
+		registrants: "Registrants",
+		presenters: "Presenters",
+		category: "Category",
+		presentedBy: "Presented by {presenters}",
+		interviewerEmailAlreadyInUse: "This email is already being used by another interviewer.",
+		joinButtonPastTooltip: "The meeting is over. You can\'t join past meetings.",
+		joinButtonFutureTooltip: "Please wait for the meeting to start.",
+		youSentAMessage: "You",
+		schedule: "Schedule",
+		helpNeeded: "Help Needed",
+		helpNeededFilterDescription: "Shows meetings where at least one of the participants has sent a help message that hasn\'t been responded to",
+		lateParticipant: "Late Participant",
+		lateParticipantFilterDescription: "Shows meetings where at least one of the participants is late",
+		notReady: "Participant Not Ready",
+		notReadyFilterDescription: "Shows meetings that start in the next {beforeBufferMinutes} minute(s) where at least one participant hasn\'t joined yet",
+		upcoming: "Upcoming",
+		upcomingFilterDescription: "Shows current and upcoming meetings",
+		searchPlaceholder: "Search...",
+		event: "Meeting",
+		actions: "Actions",
+		noEventsToShow: "No meetings to show.",
+		appointmentWith: "Appointment with {user}",
+		join: "Join",
+		information: "Information",
+		time: "Time",
+		organization: "Organization",
+		job: "Job Posting",
+		jobs: "Job Postings",
+		interviewer: "Interviewer",
+		interviewee: "Interviewee",
+		interviewees: "Interviewees",
+		saType: "Appointment Type",
+		provider: "Provider",
+		customer: "Attendee",
+		chat: "Chat",
+		sendAMessage: "Send a message...",
+		sendMessage: "Send message",
+		interviewWith: "Interview with {user}",
+		broadcastMessage: "Broadcast Message",
+		broadcastMessageModalTitle: "Message Broadcaster",
+		broadcastMessageModalButtonText: "Broadcast Message",
+		broadcastMessageInputLabel: "Message Content",
+		broadcastMessageContentLabel: "Broadcasted Message Content",
+		unsaved: "(unsaved)",
+		active: "(active)",
+		inactive: "(inactive)",
+		i14581551: "Are you sure you want to delete this task?",
+		i55453541: "Are you sure you want to delete this note?",
+		i34534531: "Are you sure you want to delete this time-slot?",
+		i98413981: "deleteInterviewer - unsuccessful",
+		i74513741: "ERROR",
+		i882266335: "Delete this time-slot",
+		i909878654: "Delete this interviewer",
+		u876543678: "Edit this interviewer",
+		x894392000: "Add day for this interviewer",
+		d888987896: "Are you sure you want to delete this Interviewer?",
+		u71664225: "Delete this group?",
+		s60971652: "Could not add new group - invalid parameters.",
+		a05352565: "ERROR",
+		d76200733: "Columns",
+		w73107591: "Reorder Columns",
+		l43035401: "View Details",
+		q40274238: "View More Details",
+		i74855411: "No Restrictions.",
+		a40369725: "SELECT ALL",
+		c53266207: "There has been a communication error with the server(1). Please try again.",
+		t14685232: "There has been a communication error with the server(4). Please try again.",
+		g92510331: "There has been a communication error with the server(2). Please try again.",
+		x410443028: "There has been a communication error with the server(3). Please try again.",
+		o312666927: "Alert",
+		e037553076: "Please Wait...",
+		h17743726: "Are you sure?",
+		m536012143: "MAX CHARS",
+		w24268703: "CHARS REMAINING",
+		u93742358: "You have inputed incorrect parameters within the checkboxWidget plugin.",
+		j07234968: "Fetching news feed",
+		i413033843: "News feed unavailable!",
+		s55118689: "Click here for more information",
+		q8366135: "OK",
+		n968294344: "Confirmation",
+		cl1723834: "Close",
+		z121936338: "Cancel",
+		i56321831: "Save",
+		i59165711: "Delete",
+		j20071968: "Success",
+		j20071969: "Information",
+		j20071970: "Warning",
+		j20071971: "Error",
+		h76451855: "No data to display",
+		x86501475: "The student doesn\'t have a valid address.",
+		x54414921: "The opportunity doesn\'t have a valid address.",
+		x30489942: "The industry partner doesn\'t have a valid address.",
+		filter: "Filter: ",
+		selected: "selected",
+		hc_noData: "No data to display",
+		hc_zoom: "Reset Zoom",
+		hc_shortMonthsJan: "Jan",
+		hc_shortMonthsFeb: "Feb",
+		hc_shortMonthsMar: "Mar",
+		hc_shortMonthsApr: "Apr",
+		hc_shortMonthsMay: "May",
+		hc_shortMonthsJun: "Jun",
+		hc_shortMonthsJul: "Jul",
+		hc_shortMonthsAug: "Aug",
+		hc_shortMonthsSep: "Sep",
+		hc_shortMonthsOct: "Oct",
+		hc_shortMonthsNov: "Nov",
+		hc_shortMonthsDec: "Dec",
+		hc_longMonthsJan: "January",
+		hc_longMonthsFeb: "February",
+		hc_longMonthsMar: "March",
+		hc_longMonthsApr: "April",
+		hc_longMonthsMay: "May",
+		hc_longMonthsJun: "June",
+		hc_longMonthsJul: "July",
+		hc_longMonthsAug: "August",
+		hc_longMonthsSep: "September",
+		hc_longMonthsOct: "October",
+		hc_longMonthsNov: "November",
+		hc_longMonthsDec: "December",
+		hc_weekdaysSun: "Sunday",
+		hc_weekdaysMon: "Monday",
+		hc_weekdaysTue: "Tuesday",
+		hc_weekdaysWed: "Wednesday",
+		hc_weekdaysThu: "Thursday",
+		hc_weekdaysFri: "Friday",
+		hc_weekdaysSat: "Saturday",		
+		hc_loading: "Loading...",
+		hc_decimalPoint: ".",
+		hc_downloadCSV: "Download CSV",
+		hc_downloadJPEG: "Download JPEG",
+		hc_downloadPDF: "Download PDF",
+		hc_downloadPNG: "Download PNG",
+		hc_downloadSVG: "Download SVG",
+		hc_downloadXLS: "Download XLS",
+		hc_viewData: "View data table",
+		hc_contextButtonTitle: "Chart Context Menu",
+		hc_printChart: "Print Chart",
+		availExp: "Available experiences by type",
+		activityTime: "Timeline of activity",
+		expW0: "Experiences with 0 participants",
+		last30: "Last 30 days",
+		totalOpp: "Total opportunities: ",
+		chooseFile: "Choose a file",
+        charLimReached: "Character limit reached, the text has been truncated."
+	};
+</script>
+
+
+<script type="text/javascript" src="/core/spiralRobot/scripts/orbisScriptManager/0.3/orbisScriptManager.js"></script>
+
+
+<link href="/site/styles/sass/index.processed.css?v=38af7cf0-126d-4691-a60a-8a6bb9191cb5" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="/core/ckfinder/ckfinder-2.4.2-custom.js"></script>
+
+
+
+<script type="text/javascript">
+	var orbisAppLocalized = {
+		locale : "en",
+		spiralRobotCss : "/site/styles/sass/index.processed.css?v=38af7cf0-126d-4691-a60a-8a6bb9191cb5",
+		spiralRobotTheme : "lp-theme--004",
+		dateTimeFormats : {
+			php : {
+				dateShort : "m/d/Y",
+				timeShort : "g:i A"
+			},
+			java : {
+				dateShort : "MM/dd/yyyy",
+				timeShort : "hh:mm a",
+				timeShort2 : "h:mm a"
+			},
+			moment : {
+				dateShort : "MM/DD/YYYY",
+				dateMedium : "MMM DD, YYYY",
+				dateMedium2 : "MMM D, YYYY",
+				timeShort : "hh:mm a",
+				timeShort2 : "h:mm a",
+				timeLong : "MM/DD/YYYY h:mm A",
+				dateMediumTimeShort: "MMM DD, YYYY hh:mm A"
+			}
+		},
+		
+		translations : {
+			htmlStructures : {
+				modals : {
+					confirmModal : {
+						confirmation : "Confirmation",
+						yes : "Yes",
+						no : "No"
+					},
+					alertModal : {
+						alert : "Alert",
+						ok : "ok"
+					}
+				}
+			},
+			functions : {
+				checkAjaxResponse : {
+					c53266207: "There has been a communication error with the server(1). Please try again.",
+					t14685232: "There has been a communication error with the server(4). Please try again.",
+					g92510331: "There has been a communication error with the server(2). Please try again.",
+					x410443028: "There has been a communication error with the server(3). Please try again."
+				},
+				showLoadingOverlay : {
+					loading : "Loading..."
+				}
+			},
+			tags : {
+				uiCheckboxGroup : {
+					youMustSelectAtLeastOneItem: "You must select at least one item"
+				},
+				uiCalendar : {
+					filters: "Filters",
+					updateEventError: "There has been an error updating the event.",
+					failedEventFeaturesError: "Event change randomly failed to show off some failed features."
+				},
+				uiFileUpload : {
+					chooseFile: "Choose a file",
+					removeFileConfirmation: "Are you sure you want to delete the uploaded file?",
+					fileUploadFailed: "File upload failed",
+					fileFormatIsNotPermitted: "The file format \'.{0}\' is not permitted for upload",
+					maxFileSizeExceeded: "Max file size of {0} exceeded"
+				}
+			}
+		},
+		
+		resourceURL : 'https://orbisv4head.blob.core.windows.net'
+	};
+	
+	var spiralRobotMigration = {
+		stopClickGuard: true
+	};
+	
+	ckFinder(orbisAppLocalized.resourceURL + '/core/ckfinder');
+</script>
+
+<script type="text/javascript" src="https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/js/jquery-ui.min.js"></script>
+
+<script type='text/javascript' src='https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/js/sprintf.min.js' charset='UTF-8'></script>
+<script type='text/javascript'>orbisScriptManager.scriptLoaded('https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/js/sprintf.min.js');</script>
+<script type='text/javascript' src='/core/spiralRobot/scripts/orbisApp/0.44/OrbisApp.js' charset='UTF-8'></script>
+<script type='text/javascript'>orbisScriptManager.scriptLoaded('/core/spiralRobot/scripts/orbisApp/0.44/OrbisApp.js');</script>
+
+<script type='text/javascript' src='/core/spiralRobot/scripts/orbisAppLegacy/0.1/legacy.js' charset='UTF-8'></script>
+<script type='text/javascript'>orbisScriptManager.scriptLoaded('/core/spiralRobot/scripts/orbisAppLegacy/0.1/legacy.js');</script>
+
+<script type='text/javascript' src='https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/validate/1.15.0/jquery.validate.min.js' charset='UTF-8'></script>
+<script type='text/javascript'>orbisScriptManager.scriptLoaded('https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/validate/1.15.0/jquery.validate.min.js');</script>
+<script type='text/javascript' src='https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/validate/1.15.0/localization/messages_en.min.js' charset='UTF-8'></script>
+<script type='text/javascript'>orbisScriptManager.scriptLoaded('https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/validate/1.15.0/localization/messages_en.min.js');</script>
+<script type='text/javascript'>orbisScriptManager.loadScript('https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/validate/1.15.0/jquery.validate.min.js');</script>
+<script type='text/javascript' src='https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/validate/1.15.0/additional-methods.min.js' charset='UTF-8'></script>
+<script type='text/javascript'>orbisScriptManager.scriptLoaded('https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/validate/1.15.0/additional-methods.min.js');</script>
+<script type='text/javascript' src='/core/orbis/scripts/orbisValidationRules.js' charset='UTF-8'></script>
+<script type='text/javascript'>orbisScriptManager.scriptLoaded('/core/orbis/scripts/orbisValidationRules.js');</script>
+
+<script type='text/javascript' src='/core/spiralRobot/scripts/prototype/hammerjs/2.0.8/hammer.min.js' charset='UTF-8'></script>
+<script type='text/javascript'>orbisScriptManager.scriptLoaded('/core/spiralRobot/scripts/prototype/hammerjs/2.0.8/hammer.min.js');</script>
+<script type='text/javascript' src='/core/spiralRobot/scripts/prototype/webAnimationjs/2.3.1/web-animations.min.js' charset='UTF-8'></script>
+<script type='text/javascript'>orbisScriptManager.scriptLoaded('/core/spiralRobot/scripts/prototype/webAnimationjs/2.3.1/web-animations.min.js');</script>
+<script type='text/javascript' src='/core/spiralRobot/scripts/prototype/muuri/0.7.1/muuri.min.js' charset='UTF-8'></script>
+<script type='text/javascript'>orbisScriptManager.scriptLoaded('/core/spiralRobot/scripts/prototype/muuri/0.7.1/muuri.min.js');</script>
+
+<script type='text/javascript' src='https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/perfect-scrollbar/1.4.0/perfect-scrollbar.min.js' charset='UTF-8'></script>
+<script type='text/javascript'>orbisScriptManager.scriptLoaded('https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/perfect-scrollbar/1.4.0/perfect-scrollbar.min.js');</script>
+<script type='text/javascript'>$('head title, .addComponent').filter(':last').after($('<link/>', {rel: 'stylesheet',type: 'text/css', href: 'https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/perfect-scrollbar/1.4.0/perfect-scrollbar.css', class:'addComponent'}));</script>
+<script type='text/javascript' src='https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/perfect-scrollbar/1.4.0/perfectScrollbarJqueryWrapper.js' charset='UTF-8'></script>
+<script type='text/javascript'>orbisScriptManager.scriptLoaded('https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/perfect-scrollbar/1.4.0/perfectScrollbarJqueryWrapper.js');</script>
+
+<script type='text/javascript' src='/core/spiralRobot/scripts/jqueryExtensions/1.1/JQueryExtensions.js' charset='UTF-8'></script>
+<script type='text/javascript'>orbisScriptManager.scriptLoaded('/core/spiralRobot/scripts/jqueryExtensions/1.1/JQueryExtensions.js');</script>
+
+
+<script type='text/javascript' src='/core/spiralRobot/scripts/SpiralRobotTagLib-07032023.js' charset='UTF-8'></script>
+<script type='text/javascript'>orbisScriptManager.scriptLoaded('/core/spiralRobot/scripts/SpiralRobotTagLib-07032023.js');</script>
+
+
+<script type="text/javascript">
+
+	orbisAppSr.actions = {
+		handleUiState: '_-_-gLYSJvgSF_EDiLJ7bULprk56ag1lpOIP06i5IDP6ZzASwu4MrCIgCFeqAHFRsx-rNlTVLUqfdcftfdZ4-cEyOBskxnytvkk5MqylCjeEcd_HopazgBYIyJq0XM47ghCPM7JV4HC3IqZNrzq-XA9eV_8O6qtRKFFO-RzCqka0Jd2AXlKclv6Yoq6D2BjkdIsCPYF_F9T-gsM96L6A8JiZ'
+	};
+	
+	orbisAppSr.uiState = {};
+	
+	
+	
+</script>
+
+
+
+
+
+
+<style type="text/css">
+	/* START Generic Fixes Copy and Paste */
+.logo__holder {
+height: auto !important;
+width: auto !important;
+max-width: none !important;
+}
+.logo__holder img {
+height: 60px !important;
+width: auto !important;
+}
+.section_group .panel--overrides .panel {
+padding: 48px 24px 8px 24px !important;
+}
+/* END Generic Fixes Copy and Paste */
+/* START Any custom branding for the OUTER UI goes here. */
+/* Copy it from the CSS OVERRIDE above and bing bong, done. */
+/* END Any custom branding for the OUTER UI goes here. *//*Top Header Bar*/
+.header--branding {
+background-color: #FFFFFF !important;
+}
+
+/*Mobile Left Nav (should match Left Nav)*/
+.navigation--mobile {
+background-color: #171717 !important;
+}
+
+/*Left Nav (should match mobile)*/
+.header--side-nav, .is--spiral--robot .header--side-nav {
+ background: #171717 !important;
+ width: 100%;
+ z-index: 40;
+ box-shadow: 2px 4px 3px 1px rgba(0, 0, 0, 0.22);
+ transition: all 300ms ease;
+}
+
+/*Active tab for top Admin Header*/
+.is--spiral--robot .header--admin.has--tabs .items.active {
+ background-color: #171717 !important;
+}
+
+/* Link Background (nav) (active) */
+html.is--spiral--robot .nav--my-account a.is--active, .is--spiral--robot .nav--my-account a.is--active {
+ background-color: #9999999 !important;
+}
+
+/* Link Background (nav) (hover) */
+html.is--spiral--robot .nav--my-account a:hover, .is--spiral--robot .nav--my-account a:hover {
+ background-color: #9999999 !important;
+}
+
+
+/*Old Branding*/
+.sidebar-nav {
+	background-color: #171717;
+	border: 10px solid #171717;
+}
+
+.sectionRow .nav-tabs&gt;li&gt;a {
+background: none repeat scroll 0 0 #fd0;
+}
+
+.account-name {
+color: #fff;
+}
+
+.boxcontent {
+font-size: 14px !important;
+}
+
+.nbs--fixed-nav .nav-tabs&gt;li&gt;a {
+ background: none;
+ border: none;
+ line-height: 60px;
+ padding: 0px 8px;
+}
+.btn-primary {
+ color: #fff; 
+ background-color: #e31837;
+ border-color: #e31837;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
+ color: #fff;
+ background-color: #9a0100;
+ border-color: #eeeeee;
+}
+
+.btn-group.open .btn-primary.dropdown-toggle {
+ background-color: #e31837;
+}
+
+a.btn-primary, a:active.btn-primary, a:link.btn-primary, a:visited.btn-primary {
+ color: #fff;
+}
+
+#brandingNav .navbar-inner {
+ background-color: #FFFFFF;
+}
+
+.navbar-inverse .navbar-inner {
+ background-color: #333;
+ background-image: none;
+ /*border-color: #e5b325;*/
+ padding: 10px;
+}
+
+.orbisFooter {
+ background-color: #171717;
+}
+
+.bs--hide__column {
+ background: #171717;
+}
+
+.bg-stats {
+ background: #e31837 !important;
+}
+
+@media (min-width: 980px)
+.sidebar-nav .nav-list&gt;.active&gt;a, .sidebar-nav .nav-list&gt;.active&gt;a:hover {
+ background: #999;
+ color: #fff;
+}
+
+.orbisTableHeader {
+ background-color: #ccc;
+ border-color: #7e7e7e;
+}
+
+/* Mobile Header Icon Colors */
+button.js--btn-search{
+ color:#005baa;
+}
+
+.navbar .btn-navbar .icon-bar{
+ background-color:#005baa;
+}
+
+/* logo stuff */
+.img--branding-left {
+ height: 60px;
+ float: left;
+ margin-top: -10px;
+ margin-left: -10px;
+}
+
+/* Menu active and hover styles */
+
+.sidebar-nav .nav-list&gt;.active&gt;a, .sidebar-nav .nav-list&gt;.active&gt;a:hover{
+background: #999 !important;
+color: #171717;
+}
+
+@media (min-width: 980px){
+.sidebar-nav .nav-list&gt;li&gt;a:hover, .sidebar-nav .nav-list&gt;li&gt;a:focus {
+ background: #999 !important;
+ color: #171717;
+}
+}
+
+@media (min-width: 980px){
+.nbs--fixed-nav sticky .nav-list&gt;li&gt;a:hover, .nbs--fixed-nav sticky .nav-list&gt;li&gt;a:focus {
+ background: #900324 !important;
+ 
+}
+}
+
+@media (min-width: 980px){
+.sidebar-nav .nbs--fixed-nav .nav-list&gt;li&gt;a:hover, .sidebar-nav .nbs--fixed-nav .nav-list&gt;li&gt;a:focus {
+ background: #900324 !important;
+ 
+}
+}
+
+
+table.alternateCols col:nth-child(even) {
+	background-color:#000000;
+}
+
+@media (min-width: 1024px){
+.nbs--fixed-nav .nav-list li a .caret {
+ border-top: 4px solid #fff;
+ border-top-color: #fff;
+ border-bottom-color: #fff;
+margin-top: 9px;
+ margin-left: 4px;
+}
+}
+
+@media (min-width: 1024px){
+.nbs--fixed-nav .nav-list li a .caret:hover {
+ border-top: 4px solid #fff;
+}
+}
+
+.nav .dropdown-toggle:hover .caret, .nav .dropdown-toggle:focus .caret {
+ border-top-color: #fff;
+ border-bottom-color: #fff;
+}
+
+.lvItem a:hover, .lvItem a:focus {
+ background: #e31837 !important;
+ color: #171717;
+}
+
+/* Kiosk Overrides */
+
+body.color--bg--white.is--hidden .navbar-inverse .brand, .navbar-inverse .nav&gt;li&gt;a{
+ color:#fff;
+ font-weight:bold; 
+}
+
+body.color--bg--white.is--hidden .navbar-inverse .divider-vertical{
+ border-right-color: #fff;
+ border-left-color: #eee; 
+}
+
+
+body.color--bg--white.is--hidden .titleHeader {
+ background-color:#e31837;
+ color:#222;
+}
+
+body.color--bg--white.is--hidden .navbar-inverse .nav li.dropdown&gt;.dropdown-toggle .caret {
+ border-top-color: #fff;
+ border-bottom-color: #fff;
+}
+
+body.color--bg--white.is--hidden {
+ padding-top:75px;
+}
+/* This will protect the aspect ratio of your img */
+.postings__header__logo {
+ 
+ flex-basis: auto !important;
+ 
+ min-width: auto !important;
+ 
+ width: auto !important;
+}
+/* This will change the background colour of the campus connect postings header*/
+
+.postings__header{
+ 
+ /* Don't forget to change me */
+ 
+ background:#FFFFFF !important;
+}
+
+/* START: Override actions group colour */
+html.is--spiral--robot .nav--interaction, .is--spiral--robot .nav--interaction {
+ background: #e31837 !important;
+}
+html.is--spiral--robot .btn--menu--circular, .is--spiral--robot .btn--menu--circular {
+ background:#e31837 !important;
+ color: #FFFFFF !important;
+}
+.is--spiral--robot nav.actions-group--transform-into--sidebar.is--visible.nav--interaction {
+ color: white;
+}
+/* END: Override actions group colour */
+
+#competencies1350241087 .card {
+	width: 100%;	
+}
+
+.is--spiral--robot .btn--default
+{
+ color: #FFFFFF; 
+ background-color: #e31837;
+ border-color: #e31837;
+}
+
+.color--bg--default {
+	background: #e31837 !important;
+}
+
+/* Apply to a Program Button */
+.btn--success:hover {
+    background-color: rgba(255, 255, 255, 0.95);
+}
+.btn--success {
+    background-color: rgba(255, 255, 255, 0.88);
+    color: #171717;
+}
+
+body.is--my-account .nav--my-account a:hover{
+background:#e31837 !important;
+}
+body.is--my-account .nav--my-account a.is--active{
+background:#e31837 !important;
+}
+
+/*New BRanding  white card change*/
+body.lp-theme--004 .lp__hero-h2 {
+    color: #FFFFFF;
+}
+body.lp-theme--004 .lp__content-box__title {
+    color: #000;
+}
+body.lp-theme--004 .lp__content-box__description {
+
+    color: #000;
+}
+
+body.lp-theme--004 .lp__content-box__action {
+   color: #FFFFFF;
+}
+
+body.lp-theme--004 .lp__footer__heading-title {
+    color: #FFFFFF;
+}
+</style>
+
+		</head>
+		
+	
+	
+
+
+ 
+
+
+
+
+		
+
+
+
+
+
+
+
+
+  
+ 
+  
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+	
+
+
+
+
+<body class="loginController page--122 lp-theme--004">
+	
+
+  
+ 
+  
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+	
+
+
+
+<a href="#main" class="only--screen-reader only--screen-reader--focusable transWarpHub" style="z-index:100;">
+	Skip to main content
+</a>
+	<header class="grd header--landing-page--002 position--relative">
+		<div class="grd__col--2">
+			
+			<div class="logo--landing-page--002">
+				
+					<a href="/">
+						<img src="/site/images/2018-10-29/r5521383734844273423155149885091849494484419458307r/yorkulogorgb240122r16630814038170616079854102689500775110124092409002r.jpg"
+							alt="">
+					</a>
+				
+				
+			</div>
+		</div>
+		<div class="grd__col--10 display--flex align--middle">
+			<button type="button" class="btn--menu js--btn--landing-menu"  aria-label="Open Main Navigation" aria-controls="a11y-menu" aria-expanded="false">
+				<i class="material-icons">menu</i>
+			</button>
+			<nav  id="a11y-menu" aria-label="Main Navigation" class="nav--landing-page--002 js--landing-nav">
+				<h4 class="nav__title">Navigation</h4>
+				<button type="button" class="btn--close js--btn--menu-close"  aria-label="Close Main Navigation" role="navigation" aria-controls="a11y-menu" aria-expanded="false">
+					<i class="material-icons">close</i>
+				</button>
+				
+		
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+  
+ 
+  
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+	
+
+
+	
+
+
+<ul class="nav__list ">
+	
+		
+		
+		
+			
+			<li class="nav__list-item   ">
+				
+				
+				
+				
+				 
+				 
+				 
+				 
+				  
+				 
+				  
+				  
+				 
+				 
+				
+				<a class="clickGuard  " href="/home/home.htm" >Home</a>
+				
+				
+			</li>
+		
+	
+		
+		
+		
+			
+			<li class="nav__list-item is--parent  ">
+				
+				
+					<button type="button" aria-label="Toggle Dropdown" class="btn__default--text btn--info plain js--btn--nav-dropdown-arrow ">
+						<i class="material-icons">keyboard_arrow_down</i>
+					</button>
+				
+				
+				
+				 
+				 
+				 
+				 
+				  
+				 
+				  
+				  
+				 
+				 
+				
+				<a class="clickGuard  " href="/home/students.htm" >Students</a>
+				
+					
+					
+					
+					
+
+
+
+
+
+<ul class="nav__list is--child">
+	
+		
+		
+		
+			
+			<li class="nav__list-item   ">
+				
+				
+				
+				
+				 
+				 
+				 
+				 
+				  
+				 
+				  
+				  
+				 
+				 
+				
+				<a class="clickGuard  " href="https://experience.yorku.ca/Shibboleth.sso/Login?entityID=https://shib.yorku.ca/idp/shibboleth&target=https://experience.yorku.ca/secure/sso-students.htm" >Login</a>
+				
+				
+			</li>
+		
+	
+</ul>
+					
+				
+				
+			</li>
+		
+	
+		
+		
+		
+			
+			<li class="nav__list-item is--parent  is--expanded">
+				
+				
+					<button type="button" aria-label="Toggle Dropdown" class="btn__default--text btn--info plain js--btn--nav-dropdown-arrow is--expanded">
+						<i class="material-icons">keyboard_arrow_down</i>
+					</button>
+				
+				
+				
+				 
+				 
+				 
+				 
+				  
+				 
+				  
+				  
+				 
+				 
+				
+				<a class="clickGuard is--active " href="/home/alumni.htm" >Alumni</a>
+				
+					
+					
+					
+					
+
+
+
+
+
+<ul class="nav__list is--child">
+	
+		
+		
+		
+			
+			<li class="nav__list-item   is--expanded">
+				
+				
+				
+				
+				 
+				 
+				 
+				 
+				  
+				 
+				  
+				  
+				 
+				 
+				
+				<a class="clickGuard is--active " href="/home/alumni/alumniLogin.htm" >Login</a>
+				
+				
+			</li>
+		
+	
+		
+		
+		
+			
+			<li class="nav__list-item   ">
+				
+				
+				
+				
+				 
+				 
+				 
+				 
+				  
+				 
+				  
+				  
+				 
+				 
+				
+				<a class="clickGuard  " href="/home/alumni/ForgotPassword.htm" >Forgot Password</a>
+				
+				
+			</li>
+		
+	
+</ul>
+					
+				
+				
+			</li>
+		
+	
+		
+		
+		
+			
+			<li class="nav__list-item is--parent  ">
+				
+				
+					<button type="button" aria-label="Toggle Dropdown" class="btn__default--text btn--info plain js--btn--nav-dropdown-arrow ">
+						<i class="material-icons">keyboard_arrow_down</i>
+					</button>
+				
+				
+				
+				 
+				 
+				 
+				 
+				  
+				 
+				  
+				  
+				 
+				 
+				
+				<a class="clickGuard  " href="/home/facultyStaff.htm" >Faculty &amp; Staff</a>
+				
+					
+					
+					
+					
+
+
+
+
+
+<ul class="nav__list is--child">
+	
+		
+		
+		
+			
+			<li class="nav__list-item   ">
+				
+				
+				
+				
+				 
+				 
+				 
+				 
+				  
+				 
+				  
+				  
+				 
+				 
+				
+				<a class="clickGuard  " href="/home/facultyStaff/facultyStaffLogin.htm" >Login</a>
+				
+				
+			</li>
+		
+	
+		
+		
+		
+			
+			<li class="nav__list-item   ">
+				
+				
+				
+				
+				 
+				 
+				 
+				 
+				  
+				 
+				  
+				  
+				 
+				 
+				
+				<a class="clickGuard  " href="/home/facultyStaff/forgotPassword.htm" >Forgot Password</a>
+				
+				
+			</li>
+		
+	
+</ul>
+					
+				
+				
+			</li>
+		
+	
+		
+		
+		
+			
+			<li class="nav__list-item is--parent  ">
+				
+				
+					<button type="button" aria-label="Toggle Dropdown" class="btn__default--text btn--info plain js--btn--nav-dropdown-arrow ">
+						<i class="material-icons">keyboard_arrow_down</i>
+					</button>
+				
+				
+				
+				 
+				 
+				 
+				 
+				  
+				 
+				  
+				  
+				 
+				 
+				
+				<a class="clickGuard  " href="/home/employers.htm" >Employers &amp; Community Partners</a>
+				
+					
+					
+					
+					
+
+
+
+
+
+<ul class="nav__list is--child">
+	
+		
+		
+		
+			
+			<li class="nav__list-item   ">
+				
+				
+				
+				
+				 
+				 
+				 
+				 
+				  
+				 
+				  
+				  
+				 
+				 
+				
+				<a class="clickGuard  " href="/home/employers/employerLogin.htm" >Login</a>
+				
+				
+			</li>
+		
+	
+		
+		
+		
+			
+			<li class="nav__list-item   ">
+				
+				
+				
+				
+				 
+				 
+				 
+				 
+				  
+				 
+				  
+				  
+				 
+				 
+				
+				<a class="clickGuard  " href="/home/employers/employer.htm" >Employer Registration</a>
+				
+				
+			</li>
+		
+	
+		
+		
+		
+			
+			<li class="nav__list-item   ">
+				
+				
+				
+				
+				 
+				 
+				 
+				 
+				  
+				 
+				  
+				  
+				 
+				 
+				
+				<a class="clickGuard  " href="/home/employers/forgotPassword.htm" >Forgot Password</a>
+				
+				
+			</li>
+		
+	
+</ul>
+					
+				
+				
+			</li>
+		
+	
+		
+		
+		
+			
+			<li class="nav__list-item is--parent  ">
+				
+				
+					<button type="button" aria-label="Toggle Dropdown" class="btn__default--text btn--info plain js--btn--nav-dropdown-arrow ">
+						<i class="material-icons">keyboard_arrow_down</i>
+					</button>
+				
+				
+				
+				 
+				 
+				 
+				 
+				  
+				 
+				  
+				  
+				 
+				 
+				
+				<a class="clickGuard  " href="/home/admin.htm" >Admin Staff</a>
+				
+					
+					
+					
+					
+
+
+
+
+
+<ul class="nav__list is--child">
+	
+		
+		
+		
+			
+			<li class="nav__list-item   ">
+				
+				
+				
+				
+				 
+				 
+				 
+				 
+				  
+				 
+				  
+				  
+				 
+				 
+				
+				<a class="clickGuard  " href="/home/admin/adminLogin.htm" >Login</a>
+				
+				
+			</li>
+		
+	
+		
+		
+		
+			
+			<li class="nav__list-item   ">
+				
+				
+				
+				
+				 
+				 
+				 
+				 
+				  
+				 
+				  
+				  
+				 
+				 
+				
+				<a class="clickGuard  " href="/home/admin/ForgotPassword.htm" >Forgot Password</a>
+				
+				
+			</li>
+		
+	
+</ul>
+					
+				
+				
+			</li>
+		
+	
+		
+		
+		
+			
+			<li class="nav__list-item   ">
+				
+				
+				
+				
+				 
+				 
+				 
+				 
+				  
+				 
+				  
+				  
+				 
+				 
+				
+				<a class="clickGuard  " href="/home/EventsAndWorkshops.htm" >Events</a>
+				
+				
+			</li>
+		
+	
+		
+		
+		
+			
+			<li class="nav__list-item   ">
+				
+				
+				
+				
+				 
+				 
+				 
+				 
+				  
+				 
+				  
+				  
+				 
+				 
+				
+				<a class="clickGuard  " href="/home/catalogue.htm" >Catalogue</a>
+				
+				
+			</li>
+		
+	
+</ul>
+
+			</nav>
+			
+				<script type="text/javascript">
+					function changePortalLanguage()
+					{
+						$.post("/changePortalLanguage.htm", $("#changePortalLanguageForm").serializeFormToObject(), function(){
+							location.reload();
+						});
+					}
+				</script>
+				
+				<form id="changePortalLanguageForm" class="margin--r--m switcher__form" method="post" action="/changePortalLanguage.htm"> 
+					
+
+  
+ 
+  
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+	
+
+
+
+
+	
+	<div id="orbisLocale" class="switcher " style="">
+		
+						
+							
+								
+
+  
+ 
+  
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+	
+
+
+
+
+	<input type="radio" name="orbisLocale" value="en" id="switchItem_349797355970241" class="switcher__input switcher__input--left  " CHECKED />
+	<label for="switchItem_349797355970241" class="switcher__label">EN</label>
+
+
+
+							
+							
+						
+							
+							
+								
+
+  
+ 
+  
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+	
+
+
+
+
+	<input type="radio" name="orbisLocale" value="fr" id="switchItem_8340485507132395" class="switcher__input switcher__input--right  "  />
+	<label for="switchItem_8340485507132395" class="switcher__label">FR</label>
+
+
+
+							
+						
+					
+		<span class="switcher__toggle"></span>
+	</div>
+	
+	
+		<p class="text--help"></p>
+	
+	
+	
+		<script type="text/javascript">
+			$("#orbisLocale input").change(function(){
+				changePortalLanguage();
+			});
+		</script>
+	
+	
+
+
+
+				</form>
+			
+		</div>
+	</header>
+ 	
+	 
+
+
+
+
+		
+
+
+
+
+
+
+
+
+  
+ 
+  
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+	
+
+
+<div class="grd lp-theme__content-wrapper">
+	<main class="grd__col--12 lp-theme__main">
+		<div class="grd dist--around">
+			<div class="grd__col--12" style="padding-top: 0px;">
+			 
+
+
+
+
+		
+
+
+
+
+
+
+
+
+  
+ 
+  
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+	
+
+
+
+
+
+
+
+	
+
+  
+ 
+  
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="grd lp-theme__content-wrapper">
+	<main class="grd__col--12 lp-theme__main">
+		
+		
+		<div class="grd dist--around">
+			<div class="grd__col--12" style="padding-top: 0px;">
+				
+
+  
+ 
+  
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+	
+
+
+
+
+  
+ 
+  
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+	
+
+
+
+
+
+<h1 class=" margin--b--l sel_About_ourSite " style="">
+	
+	 Login
+	 
+ 
+</h1>
+
+
+	<h2 class="heading--underline">
+		
+	</h2>
+
+ 
+
+  
+ 
+  
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+	
+
+
+
+
+  
+ 
+  
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+	
+
+
+
+
+  
+ 
+  
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+	
+
+
+
+
+
+
+	
+
+
+
+
+				
+				
+				
+					
+
+
+
+
+
+
+<form class="margin--b--xxl js--ui-form margin--t--m" style="" id="form_6061611500072893" method="POST" enctype="" target="" action="https://experience.yorku.ca/j_acegi_security_check" autocomplete="off" name="loginForm" onsubmit="; return $('#form_6061611500072893').uiForm('formOnSubmitOnly', function(data){});" data-ajax-form="">
+	<input type="hidden" name="action" value="_-_-bNPu8XBaisgjrG0fN2Dp0Smxa3UNV-zWhvwQO2WkXTb0_I6P5-plYaS6yXZSkFcsFKeOrnatp7BdWm1lxxXPWUF0v1IMyikOGCrbfX5IWkBkHwhM-N-G8KxZAA6bKyA7FjjV7ujdvDaT1-_mJyZgbXX00bAGCsLso4kPB30shTaSCeLAPa8yhlMbsHnxpXkvW1o4" />
+	<input type="hidden" name="uiForm" value="true" />
+	
+	
+						<input type="hidden" name="loginPageUrl" id="loginPageUrl" value="https://experience.yorku.ca/home/alumni/alumniLogin.htm" />
+						<input type="hidden" name="orbisRedirectAfterLogin" value="" />
+						
+							&nbsp;
+ <a href="https://experience.yorku.ca/home/alumni/ForgotPassword.htm"><strong>Forgot Password?</strong></a>
+<br>
+
+
+
+
+							
+						
+						
+						
+
+  
+ 
+  
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+	
+
+
+
+
+	<div id="" class="input__group margin--b--xxxl " style="">
+		<label class="label  " for="j_username"  style="">
+			
+							
+							
+								Login (York Student Number)
+							
+						 
+		</label>
+		
+		<div class="display--flex" style="align-items: center">
+			
+			
+			
+				<input class="input--box display--block  " style="" data-rule-maxlength="255" type="text" name="j_username" id="j_username" value="" onkeydown="" onclick=""    ondblclick="" onfocus=""    placeholder=""/>
+			
+			
+			
+		</div>
+		
+		
+			<p class="text--help"></p>
+		
+	</div>
+
+
+
+
+						
+
+  
+ 
+  
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+	
+
+
+
+
+	<div id="" class="input__group margin--b--xxxl js--password-field" style="">
+		<label class="label  " for="j_password"  style="">
+			
+							
+							
+								Password
+							
+						 
+		</label>
+		
+		<div class="display--flex" style="align-items: center">
+			
+			
+			
+				<input class="input--box display--block   margin--a--none" style="" data-rule-maxlength="255" type="password" name="j_password" id="j_password" value="" onkeydown="" onclick=""    ondblclick="" onfocus=""    placeholder=""/>
+			
+			
+			
+				<span class="icon-container display--flex">
+					<i class="material-icons">visibility</i>
+				</span>
+			
+		</div>
+		
+		
+			<p class="text--help"></p>
+		
+	</div>
+
+
+
+
+						
+						
+						<div class="display--flex">
+				        	
+
+  
+ 
+  
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+	
+
+
+
+
+
+
+
+<button 
+	id="button_7792325946820585"
+	name=""
+	value=""
+	title=""
+	type="submit"
+	class="btn__default--text btn--default  btn__default--text btn--default"
+	onclick=""
+	style=""
+	
+	
+	>
+	
+	
+				        		Submit
+				        	
+	
+</button>
+
+					        
+					    </div>
+					
+</form>
+
+<script type="text/javascript">
+	$('#form_6061611500072893').uiForm();
+</script>
+				
+			</div>
+		</div>
+	</main>
+</div>
+
+<style>
+	.js--password-field i.material-icons {
+		margin-left: -30px;
+		line-height: inherit;
+		cursor: pointer;
+	}
+</style>
+
+<script type="text/javascript">
+	$(window).on("load", function(){
+
+		$(".js--password-field i.material-icons").click(function (){
+			const $input = $("#j_password");
+			const $icon = $(this);
+			if ($input.attr("type") === "password"){
+				$input.attr("type", "text");
+				$icon.text("visibility_off");
+			} else {
+				$input.attr("type", "password");
+				$icon.text("visibility");
+			}
+		})
+		$("#j_username").focus();
+	});
+</script>
+
+
+
+			</div>
+		</div>
+	</main>
+</div>
+
+	<script type='text/javascript' src='/core/spiralRobot/scripts/spiralRobot/0.30/SpiralRobot.js' charset='UTF-8'></script>
+<script type='text/javascript'>orbisScriptManager.scriptLoaded('/core/spiralRobot/scripts/spiralRobot/0.30/SpiralRobot.js');</script>
+
+
+<script type="text/javascript" src="https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/js/jquery.tokenize.js"></script>
+<script type="text/javascript" src="https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/js/protip.min.js"></script>
+<script type="text/javascript" src="https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/js/modernizr.min.js"></script>
+<script type="text/javascript" src="https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/js/Chart.bundle.min.js"></script>
+<script type="text/javascript" src="https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/js/Chart.min.js"></script>
+	
+	<footer class="lp__footer">
+		
+		
+			<div class="lp__footer__heading">
+				<h3 class="lp__footer__heading-title">YORK UNIVERSITY | TORONTO, ON</h3>
+				
+			</div>
+		
+		
+		
+		
+		<div class="lp__footer__copyright">
+			<p class="lp__footer__copyright-text">
+				© 2018 Orbis Communications Inc.
+			</p>
+			<div class="lp__footer__user-buttons">
+				
+					
+					
+						
+						<a href="/login" class="btn__default btn--success is--btn">
+							Admin Login
+						</a>
+						
+					
+				
+			</div>
+		</div>
+	</footer>
+	
+	
+	<script type="text/javascript">
+//Smartresize:
+(function($, sr) {
+    // debouncing function from John Hann
+    // http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
+    var debounce = function(func, threshold, execAsap) {
+        var timeout;
+
+        return function debounced() {
+            var obj = this,
+                args = arguments;
+
+            function delayed() {
+                if (!execAsap)
+                    func.apply(obj, args);
+                timeout = null;
+            };
+
+            if (timeout)
+                clearTimeout(timeout);
+            else if (execAsap)
+                func.apply(obj, args);
+
+            timeout = setTimeout(delayed, threshold || 300);
+        };
+    }
+    // smartresize 
+    jQuery.fn[sr] = function(fn) {
+        return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr);
+    };
+
+})(jQuery, 'smartresize');
+
+
+
+// Check if browser is resized in order to add/remove negative tabindex
+$(document).ready(function() {
+    var width = $(window).width();
+    if (width >= 769) {
+
+
+
+
+        $(document).ready(function() {
+            // Setup the a11y nav
+            $('.nav__list').setup_navigation();
+
+            // RWD Nav Pattern
+            $('body').addClass('js');
+            var $menu = $('#menu'),
+                $menulink = $('.menu-link'),
+                $menuTrigger = $('.has-subnav > a');
+
+            $menulink.click(function(e) {
+                e.preventDefault();
+                $menulink.toggleClass('active');
+                $menu.toggleClass('active');
+            });
+
+            $menuTrigger.click(function(e) {
+                e.preventDefault();
+                var $this = $(this);
+                $this.toggleClass('active').next('ul').toggleClass('active');
+            });
+        });
+        /*
+        $(function(){
+        	$('.nav').setup_navigation();
+        });
+        */
+        var keyCodeMap = {
+            48: "0",
+            49: "1",
+            50: "2",
+            51: "3",
+            52: "4",
+            53: "5",
+            54: "6",
+            55: "7",
+            56: "8",
+            57: "9",
+            59: ";",
+            65: "a",
+            66: "b",
+            67: "c",
+            68: "d",
+            69: "e",
+            70: "f",
+            71: "g",
+            72: "h",
+            73: "i",
+            74: "j",
+            75: "k",
+            76: "l",
+            77: "m",
+            78: "n",
+            79: "o",
+            80: "p",
+            81: "q",
+            82: "r",
+            83: "s",
+            84: "t",
+            85: "u",
+            86: "v",
+            87: "w",
+            88: "x",
+            89: "y",
+            90: "z",
+            96: "0",
+            97: "1",
+            98: "2",
+            99: "3",
+            100: "4",
+            101: "5",
+            102: "6",
+            103: "7",
+            104: "8",
+            105: "9"
+        }
+
+        $.fn.setup_navigation = function(settings) {
+
+            settings = jQuery.extend({
+                menuHoverClass: 'show-menu',
+            }, settings);
+
+            // Add ARIA role to menubar and menu items
+            $(this).attr('role', 'menubar').find('li').attr('role', 'menuitem');
+
+            var top_level_links = $(this).find('> li > a');
+
+            // Added by Terrill: (removed temporarily: doesn't fix the JAWS problem after all)
+            // Add tabindex="0" to all top-level links 
+            // Without at least one of these, JAWS doesn't read widget as a menu, despite all the other ARIA
+            //$(top_level_links).attr('tabindex','0');
+
+            // Set tabIndex to -1 so that top_level_links can't receive focus until menu is open
+            $(top_level_links).next('ul')
+                .attr('data-test', 'true')
+                .attr({
+                    'aria-hidden': 'true',
+                    'role': 'menu'
+                })
+                .find('a')
+                .attr('tabIndex', -1);
+
+            // Adding aria-haspopup for appropriate items
+            $(top_level_links).each(function() {
+                if ($(this).next('ul').length > 0)
+                    $(this).parent('li').attr('aria-haspopup', 'true');
+            });
+
+            $(top_level_links).hover(function() {
+                $(this).closest('ul')
+                    .attr('aria-hidden', 'false')
+                    .find('.' + settings.menuHoverClass)
+                    .attr('aria-hidden', 'true')
+                    .removeClass(settings.menuHoverClass)
+                    .find('a')
+                    .attr('tabIndex', -1);
+                $(this).siblings('ul')
+                    .attr('aria-hidden', 'false')
+                    .addClass(settings.menuHoverClass)
+                    .find('a').attr('tabIndex', 0);
+            });
+
+            $(top_level_links).focus(function() {
+                $(this).closest('ul')
+                    // Removed by Terrill 
+                    // The following was adding aria-hidden="false" to root ul since menu is never hidden
+                    // and seemed to be causing flakiness in JAWS (needs more testing) 
+                    // .attr('aria-hidden', 'false') 
+                    .find('.' + settings.menuHoverClass)
+                    .attr('aria-hidden', 'true')
+                    .removeClass(settings.menuHoverClass)
+                    .find('a')
+                    .attr('tabIndex', -1);
+
+                $(this).siblings('ul')
+                    .attr('aria-hidden', 'false')
+                    .addClass(settings.menuHoverClass)
+                    .find('a').attr('tabIndex', 0);
+            });
+
+            // Bind arrow keys for navigation
+            $(top_level_links).keydown(function(e) {
+                if (e.keyCode == 37) {
+                    e.preventDefault();
+                    // This is the first item
+                    if ($(this).parent('li').prev('li').length == 0) {
+                        $(this).parents('ul').find('> li').last().find('a').first().focus();
+                    } else {
+                        $(this).parent('li').prev('li').find('a').first().focus();
+                    }
+                } else if (e.keyCode == 38) {
+                    e.preventDefault();
+                    if ($(this).parent('li').find('ul').length > 0) {
+                        $(this).parent('li').find('ul')
+                            .attr('aria-hidden', 'false')
+                            .addClass(settings.menuHoverClass)
+                            .find('a').attr('tabIndex', 0)
+                            .last().focus();
+                    }
+                } else if (e.keyCode == 39) {
+                    e.preventDefault();
+                    // This is the last item
+                    if ($(this).parent('li').next('li').length == 0) {
+                        $(this).parents('ul').find('> li').first().find('a').first().focus();
+                    } else {
+                        $(this).parent('li').next('li').find('a').first().focus();
+                    }
+                } else if (e.keyCode == 40) {
+                    e.preventDefault();
+                    if ($(this).parent('li').find('ul').length > 0) {
+                        $(this).parent('li').find('ul')
+                            .attr('aria-hidden', 'false')
+                            .addClass(settings.menuHoverClass)
+                            .find('a').attr('tabIndex', 0)
+                            .first().focus();
+                    }
+                } else if (e.keyCode == 13 || e.keyCode == 32) {
+                    // If submenu is hidden, open it
+                    e.preventDefault();
+                    $(this).parent('li').find('ul[aria-hidden=true]')
+                        .attr('aria-hidden', 'false')
+                        .addClass(settings.menuHoverClass)
+                        .find('a').attr('tabIndex', 0)
+                        .first().focus();
+                } else if (e.keyCode == 27) {
+                    e.preventDefault();
+                    $('.' + settings.menuHoverClass)
+                        .attr('aria-hidden', 'true')
+                        .removeClass(settings.menuHoverClass)
+                        .find('a')
+                        .attr('tabIndex', -1);
+                } else {
+                    $(this).parent('li').find('ul[aria-hidden=false] a').each(function() {
+                        if ($(this).text().substring(0, 1).toLowerCase() == keyCodeMap[e.keyCode]) {
+                            $(this).focus();
+                            return false;
+                        }
+                    });
+                }
+            });
+
+
+            var links = $(top_level_links).parent('li').find('ul').find('a');
+            $(links).keydown(function(e) {
+                if (e.keyCode == 38) {
+                    e.preventDefault();
+                    // This is the first item
+                    if ($(this).parent('li').prev('li').length == 0) {
+                        $(this).parents('ul').parents('li').find('a').first().focus();
+                    } else {
+                        $(this).parent('li').prev('li').find('a').first().focus();
+                    }
+                } else if (e.keyCode == 40) {
+                    e.preventDefault();
+                    if ($(this).parent('li').next('li').length == 0) {
+                        $(this).parents('ul').parents('li').find('a').first().focus();
+                    } else {
+                        $(this).parent('li').next('li').find('a').first().focus();
+                    }
+                } else if (e.keyCode == 27 || e.keyCode == 37) {
+                    e.preventDefault();
+                    $(this)
+                        .parents('ul').first()
+                        .prev('a').focus()
+                        .parents('ul').first().find('.' + settings.menuHoverClass)
+                        .attr('aria-hidden', 'true')
+                        .removeClass(settings.menuHoverClass)
+                        .find('a')
+                        .attr('tabIndex', -1);
+                } else if (e.keyCode == 32) {
+                    e.preventDefault();
+                    window.location = $(this).attr('href');
+                } else {
+                    var found = false;
+                    $(this).parent('li').nextAll('li').find('a').each(function() {
+                        if ($(this).text().substring(0, 1).toLowerCase() == keyCodeMap[e.keyCode]) {
+                            $(this).focus();
+                            found = true;
+                            return false;
+                        }
+                    });
+
+                    if (!found) {
+                        $(this).parent('li').prevAll('li').find('a').each(function() {
+                            if ($(this).text().substring(0, 1).toLowerCase() == keyCodeMap[e.keyCode]) {
+                                $(this).focus();
+                                return false;
+                            }
+                        });
+                    }
+                }
+            });
+
+
+            // Hide menu if click or focus occurs outside of navigation
+            $(this).find('a').last().keydown(function(e) {
+                if (e.keyCode == 9) {
+                    // If the user tabs out of the navigation hide all menus
+                    $('.' + settings.menuHoverClass)
+                        .attr('aria-hidden', 'true')
+                        .removeClass(settings.menuHoverClass)
+                        .find('a')
+                        .attr('tabIndex', -1);
+                }
+            });
+
+            $(document).click(function() {
+                $('.' + settings.menuHoverClass).attr('aria-hidden', 'true').removeClass(settings.menuHoverClass).find('a').attr('tabIndex', -1);
+            });
+
+            $(this).click(function(e) {
+                e.stopPropagation();
+            });
+        }
+
+
+
+
+    } else {
+
+        // Add negative z-index to nav container and it's links:
+        $('.js--landing-nav a, .js--btn--menu-close').attr("tabindex", "-1");
+
+
+
+
+        $(document).ready(function() {
+            // Setup the a11y nav
+            $('.nav__list').setup_navigation();
+
+            // RWD Nav Pattern
+            $('body').addClass('js');
+            var $menu = $('#menu'),
+                $menulink = $('.menu-link'),
+                $menuTrigger = $('.has-subnav > a');
+
+            $menulink.click(function(e) {
+                e.preventDefault();
+                $menulink.toggleClass('active');
+                $menu.toggleClass('active');
+            });
+
+            $menuTrigger.click(function(e) {
+                e.preventDefault();
+                var $this = $(this);
+                $this.toggleClass('active').next('ul').toggleClass('active');
+            });
+        });
+        /*
+        $(function(){
+        	$('.nav').setup_navigation();
+        });
+        */
+        var keyCodeMap = {
+            48: "0",
+            49: "1",
+            50: "2",
+            51: "3",
+            52: "4",
+            53: "5",
+            54: "6",
+            55: "7",
+            56: "8",
+            57: "9",
+            59: ";",
+            65: "a",
+            66: "b",
+            67: "c",
+            68: "d",
+            69: "e",
+            70: "f",
+            71: "g",
+            72: "h",
+            73: "i",
+            74: "j",
+            75: "k",
+            76: "l",
+            77: "m",
+            78: "n",
+            79: "o",
+            80: "p",
+            81: "q",
+            82: "r",
+            83: "s",
+            84: "t",
+            85: "u",
+            86: "v",
+            87: "w",
+            88: "x",
+            89: "y",
+            90: "z",
+            96: "0",
+            97: "1",
+            98: "2",
+            99: "3",
+            100: "4",
+            101: "5",
+            102: "6",
+            103: "7",
+            104: "8",
+            105: "9"
+        }
+
+        $.fn.setup_navigation = function(settings) {
+
+            settings = jQuery.extend({
+                menuHoverClass: 'show-menu',
+            }, settings);
+
+            // Add ARIA role to menubar and menu items
+            $(this).attr('role', 'menubar').find('li').attr('role', 'menuitem');
+
+            var top_level_links = $(this).find('> li > a');
+
+            // Added by Terrill: (removed temporarily: doesn't fix the JAWS problem after all)
+            // Add tabindex="0" to all top-level links 
+            // Without at least one of these, JAWS doesn't read widget as a menu, despite all the other ARIA
+            //$(top_level_links).attr('tabindex','0');
+
+            // Set tabIndex to -1 so that top_level_links can't receive focus until menu is open
+            $(top_level_links).next('ul')
+                .attr('data-test', 'true')
+                .attr({
+                    'aria-hidden': 'false',
+                    'role': 'menu'
+                });
+
+            // Adding aria-haspopup for appropriate items
+            $(top_level_links).each(function() {
+                if ($(this).next('ul').length > 0)
+                    $(this).parent('li').attr('aria-haspopup', 'true');
+            });
+
+            // $(top_level_links).hover(function(){
+            // 	$(this).closest('ul') 
+            // 		.attr('aria-hidden', 'false')
+            // 		.find('.'+settings.menuHoverClass)
+            // 		.attr('aria-hidden', 'true')
+            // 		.removeClass(settings.menuHoverClass)
+            // 		.find('a')
+            // 		.attr('tabIndex',-1);
+            // 	$(this).next('ul')
+            // 		.attr('aria-hidden', 'false')
+            // 		.addClass(settings.menuHoverClass)
+            // 		.find('a').attr('tabIndex',0);
+            // });
+
+            $(top_level_links).focus(function() {
+                $(this).closest('ul')
+                    // Removed by Terrill 
+                    // The following was adding aria-hidden="false" to root ul since menu is never hidden
+                    // and seemed to be causing flakiness in JAWS (needs more testing) 
+                    // .attr('aria-hidden', 'false') 
+                    .find('.' + settings.menuHoverClass)
+                    .attr('aria-hidden', 'false')
+                    .removeClass(settings.menuHoverClass);
+
+                $(this).next('ul')
+                    .attr('aria-hidden', 'false')
+                    .addClass(settings.menuHoverClass)
+                    .find('a').attr('tabIndex', 0);
+            });
+
+            // Bind arrow keys for navigation
+            $(top_level_links).keydown(function(e) {
+                if (e.keyCode == 37) {
+                    e.preventDefault();
+                    // This is the first item
+                    if ($(this).parent('li').prev('li').length == 0) {
+                        $(this).parents('ul').find('> li').last().find('a').first().focus();
+                    } else {
+                        $(this).parent('li').prev('li').find('a').first().focus();
+                    }
+                } else if (e.keyCode == 38) {
+                    e.preventDefault();
+                    if ($(this).parent('li').find('ul').length > 0) {
+                        $(this).parent('li').find('ul')
+                            .attr('aria-hidden', 'false')
+                            .addClass(settings.menuHoverClass)
+                            .find('a').attr('tabIndex', 0)
+                            .last().focus();
+                    }
+                } else if (e.keyCode == 39) {
+                    e.preventDefault();
+                    // This is the last item
+                    if ($(this).parent('li').next('li').length == 0) {
+                        $(this).parents('ul').find('> li').first().find('a').first().focus();
+                    } else {
+                        $(this).parent('li').next('li').find('a').first().focus();
+                    }
+                } else if (e.keyCode == 40) {
+                    e.preventDefault();
+                    if ($(this).parent('li').find('ul').length > 0) {
+                        $(this).parent('li').find('ul')
+                            .attr('aria-hidden', 'false')
+                            .addClass(settings.menuHoverClass)
+                            .find('a').attr('tabIndex', 0)
+                            .first().focus();
+                    }
+                } else if (e.keyCode == 13 || e.keyCode == 32) {
+                    // If submenu is hidden, open it
+                    e.preventDefault();
+                    $(this).parent('li').find('ul[aria-hidden=true]')
+                        .attr('aria-hidden', 'false')
+                        .addClass(settings.menuHoverClass)
+                        .find('a').attr('tabIndex', 0)
+                        .first().focus();
+                } else if (e.keyCode == 27) {
+                    e.preventDefault();
+                    $('.' + settings.menuHoverClass)
+                        .attr('aria-hidden', 'false')
+                        .removeClass(settings.menuHoverClass);
+                } else {
+                    $(this).parent('li').find('ul[aria-hidden=false] a').each(function() {
+                        if ($(this).text().substring(0, 1).toLowerCase() == keyCodeMap[e.keyCode]) {
+                            $(this).focus();
+                            return false;
+                        }
+                    });
+                }
+            });
+
+
+            var links = $(top_level_links).parent('li').find('ul').find('a');
+            $(links).keydown(function(e) {
+                if (e.keyCode == 38) {
+                    e.preventDefault();
+                    // This is the first item
+                    if ($(this).parent('li').prev('li').length == 0) {
+                        $(this).parents('ul').parents('li').find('a').first().focus();
+                    } else {
+                        $(this).parent('li').prev('li').find('a').first().focus();
+                    }
+                } else if (e.keyCode == 40) {
+                    e.preventDefault();
+                    if ($(this).parent('li').next('li').length == 0) {
+                        $(this).parents('ul').parents('li').find('a').first().focus();
+                    } else {
+                        $(this).parent('li').next('li').find('a').first().focus();
+                    }
+                } else if (e.keyCode == 27 || e.keyCode == 37) {
+                    e.preventDefault();
+                    $(this)
+                        .parents('ul').first()
+                        .prev('a').focus()
+                        .parents('ul').first().find('.' + settings.menuHoverClass)
+                        .attr('aria-hidden', 'false')
+                        .removeClass(settings.menuHoverClass);
+                } else if (e.keyCode == 32) {
+                    e.preventDefault();
+                    window.location = $(this).attr('href');
+                } else {
+                    var found = false;
+                    $(this).parent('li').nextAll('li').find('a').each(function() {
+                        if ($(this).text().substring(0, 1).toLowerCase() == keyCodeMap[e.keyCode]) {
+                            $(this).focus();
+                            found = true;
+                            return false;
+                        }
+                    });
+
+                    if (!found) {
+                        $(this).parent('li').prevAll('li').find('a').each(function() {
+                            if ($(this).text().substring(0, 1).toLowerCase() == keyCodeMap[e.keyCode]) {
+                                $(this).focus();
+                                return false;
+                            }
+                        });
+                    }
+                }
+            });
+
+
+            // Hide menu if click or focus occurs outside of navigation
+            $(this).find('a').last().keydown(function(e) {
+                if (e.keyCode == 9) {
+                    // If the user tabs out of the navigation hide all menus
+                    $('.' + settings.menuHoverClass)
+                        .attr('aria-hidden', 'true')
+                        .removeClass(settings.menuHoverClass)
+                        .find('a')
+                        .attr('tabIndex', -1);
+                }
+            });
+
+            $(document).click(function() {
+                $('.' + settings.menuHoverClass).attr('aria-hidden', 'true').removeClass(settings.menuHoverClass).find('a').attr('tabIndex', -1);
+            });
+
+            $(this).click(function(e) {
+                e.stopPropagation();
+            });
+        }
+
+
+
+
+    }
+    $(window).smartresize(function() {
+        var width = $(window).width();
+        if (width >= 769) {
+
+
+
+
+            $(document).ready(function() {
+                // Setup the a11y nav
+                $('.nav__list').setup_navigation();
+
+                // RWD Nav Pattern
+                $('body').addClass('js');
+                var $menu = $('#menu'),
+                    $menulink = $('.menu-link'),
+                    $menuTrigger = $('.has-subnav > a');
+
+                $menulink.click(function(e) {
+                    e.preventDefault();
+                    $menulink.toggleClass('active');
+                    $menu.toggleClass('active');
+                });
+
+                $menuTrigger.click(function(e) {
+                    e.preventDefault();
+                    var $this = $(this);
+                    $this.toggleClass('active').next('ul').toggleClass('active');
+                });
+            });
+            /*
+            $(function(){
+            	$('.nav').setup_navigation();
+            });
+            */
+            var keyCodeMap = {
+                48: "0",
+                49: "1",
+                50: "2",
+                51: "3",
+                52: "4",
+                53: "5",
+                54: "6",
+                55: "7",
+                56: "8",
+                57: "9",
+                59: ";",
+                65: "a",
+                66: "b",
+                67: "c",
+                68: "d",
+                69: "e",
+                70: "f",
+                71: "g",
+                72: "h",
+                73: "i",
+                74: "j",
+                75: "k",
+                76: "l",
+                77: "m",
+                78: "n",
+                79: "o",
+                80: "p",
+                81: "q",
+                82: "r",
+                83: "s",
+                84: "t",
+                85: "u",
+                86: "v",
+                87: "w",
+                88: "x",
+                89: "y",
+                90: "z",
+                96: "0",
+                97: "1",
+                98: "2",
+                99: "3",
+                100: "4",
+                101: "5",
+                102: "6",
+                103: "7",
+                104: "8",
+                105: "9"
+            }
+
+            $.fn.setup_navigation = function(settings) {
+
+                settings = jQuery.extend({
+                    menuHoverClass: 'show-menu',
+                }, settings);
+
+                // Add ARIA role to menubar and menu items
+                $(this).attr('role', 'menubar').find('li').attr('role', 'menuitem');
+
+                var top_level_links = $(this).find('> li > a');
+
+                // Added by Terrill: (removed temporarily: doesn't fix the JAWS problem after all)
+                // Add tabindex="0" to all top-level links 
+                // Without at least one of these, JAWS doesn't read widget as a menu, despite all the other ARIA
+                //$(top_level_links).attr('tabindex','0');
+
+                // Set tabIndex to -1 so that top_level_links can't receive focus until menu is open
+                $(top_level_links).next('ul')
+                    .attr('data-test', 'true')
+                    .attr({
+                        'aria-hidden': 'true',
+                        'role': 'menu'
+                    })
+                    .find('a')
+                    .attr('tabIndex', -1);
+
+                // Adding aria-haspopup for appropriate items
+                $(top_level_links).each(function() {
+                    if ($(this).next('ul').length > 0)
+                        $(this).parent('li').attr('aria-haspopup', 'true');
+                });
+
+                $(top_level_links).hover(function() {
+                    $(this).closest('ul')
+                        .attr('aria-hidden', 'false')
+                        .find('.' + settings.menuHoverClass)
+                        .attr('aria-hidden', 'true')
+                        .removeClass(settings.menuHoverClass)
+                        .find('a')
+                        .attr('tabIndex', -1);
+                    $(this).next('ul')
+                        .attr('aria-hidden', 'false')
+                        .addClass(settings.menuHoverClass)
+                        .find('a').attr('tabIndex', 0);
+                });
+
+                $(top_level_links).focus(function() {
+                    $(this).closest('ul')
+                        // Removed by Terrill 
+                        // The following was adding aria-hidden="false" to root ul since menu is never hidden
+                        // and seemed to be causing flakiness in JAWS (needs more testing) 
+                        // .attr('aria-hidden', 'false') 
+                        .find('.' + settings.menuHoverClass)
+                        .attr('aria-hidden', 'true')
+                        .removeClass(settings.menuHoverClass)
+                        .find('a')
+                        .attr('tabIndex', -1);
+
+                    $(this).next('ul')
+                        .attr('aria-hidden', 'false')
+                        .addClass(settings.menuHoverClass)
+                        .find('a').attr('tabIndex', 0);
+                });
+
+                // Bind arrow keys for navigation
+                $(top_level_links).keydown(function(e) {
+                    if (e.keyCode == 37) {
+                        e.preventDefault();
+                        // This is the first item
+                        if ($(this).parent('li').prev('li').length == 0) {
+                            $(this).parents('ul').find('> li').last().find('a').first().focus();
+                        } else {
+                            $(this).parent('li').prev('li').find('a').first().focus();
+                        }
+                    } else if (e.keyCode == 38) {
+                        e.preventDefault();
+                        if ($(this).parent('li').find('ul').length > 0) {
+                            $(this).parent('li').find('ul')
+                                .attr('aria-hidden', 'false')
+                                .addClass(settings.menuHoverClass)
+                                .find('a').attr('tabIndex', 0)
+                                .last().focus();
+                        }
+                    } else if (e.keyCode == 39) {
+                        e.preventDefault();
+                        // This is the last item
+                        if ($(this).parent('li').next('li').length == 0) {
+                            $(this).parents('ul').find('> li').first().find('a').first().focus();
+                        } else {
+                            $(this).parent('li').next('li').find('a').first().focus();
+                        }
+                    } else if (e.keyCode == 40) {
+                        e.preventDefault();
+                        if ($(this).parent('li').find('ul').length > 0) {
+                            $(this).parent('li').find('ul')
+                                .attr('aria-hidden', 'false')
+                                .addClass(settings.menuHoverClass)
+                                .find('a').attr('tabIndex', 0)
+                                .first().focus();
+                        }
+                    } else if (e.keyCode == 13 || e.keyCode == 32) {
+                        // If submenu is hidden, open it
+                        e.preventDefault();
+                        $(this).parent('li').find('ul[aria-hidden=true]')
+                            .attr('aria-hidden', 'false')
+                            .addClass(settings.menuHoverClass)
+                            .find('a').attr('tabIndex', 0)
+                            .first().focus();
+                    } else if (e.keyCode == 27) {
+                        e.preventDefault();
+                        $('.' + settings.menuHoverClass)
+                            .attr('aria-hidden', 'true')
+                            .removeClass(settings.menuHoverClass)
+                            .find('a')
+                            .attr('tabIndex', -1);
+                    } else {
+                        $(this).parent('li').find('ul[aria-hidden=false] a').each(function() {
+                            if ($(this).text().substring(0, 1).toLowerCase() == keyCodeMap[e.keyCode]) {
+                                $(this).focus();
+                                return false;
+                            }
+                        });
+                    }
+                });
+
+
+                var links = $(top_level_links).parent('li').find('ul').find('a');
+                $(links).keydown(function(e) {
+                    if (e.keyCode == 38) {
+                        e.preventDefault();
+                        // This is the first item
+                        if ($(this).parent('li').prev('li').length == 0) {
+                            $(this).parents('ul').parents('li').find('a').first().focus();
+                        } else {
+                            $(this).parent('li').prev('li').find('a').first().focus();
+                        }
+                    } else if (e.keyCode == 40) {
+                        e.preventDefault();
+                        if ($(this).parent('li').next('li').length == 0) {
+                            $(this).parents('ul').parents('li').find('a').first().focus();
+                        } else {
+                            $(this).parent('li').next('li').find('a').first().focus();
+                        }
+                    } else if (e.keyCode == 27 || e.keyCode == 37) {
+                        e.preventDefault();
+                        $(this)
+                            .parents('ul').first()
+                            .prev('a').focus()
+                            .parents('ul').first().find('.' + settings.menuHoverClass)
+                            .attr('aria-hidden', 'true')
+                            .removeClass(settings.menuHoverClass)
+                            .find('a')
+                            .attr('tabIndex', -1);
+                    } else if (e.keyCode == 32) {
+                        e.preventDefault();
+                        window.location = $(this).attr('href');
+                    } else {
+                        var found = false;
+                        $(this).parent('li').nextAll('li').find('a').each(function() {
+                            if ($(this).text().substring(0, 1).toLowerCase() == keyCodeMap[e.keyCode]) {
+                                $(this).focus();
+                                found = true;
+                                return false;
+                            }
+                        });
+
+                        if (!found) {
+                            $(this).parent('li').prevAll('li').find('a').each(function() {
+                                if ($(this).text().substring(0, 1).toLowerCase() == keyCodeMap[e.keyCode]) {
+                                    $(this).focus();
+                                    return false;
+                                }
+                            });
+                        }
+                    }
+                });
+
+
+                // Hide menu if click or focus occurs outside of navigation
+                $(this).find('a').last().keydown(function(e) {
+                    if (e.keyCode == 9) {
+                        // If the user tabs out of the navigation hide all menus
+                        $('.' + settings.menuHoverClass)
+                            .attr('aria-hidden', 'true')
+                            .removeClass(settings.menuHoverClass)
+                            .find('a')
+                            .attr('tabIndex', -1);
+                    }
+                });
+
+                $(document).click(function() {
+                    $('.' + settings.menuHoverClass).attr('aria-hidden', 'true').removeClass(settings.menuHoverClass).find('a').attr('tabIndex', -1);
+                });
+
+                $(this).click(function(e) {
+                    e.stopPropagation();
+                });
+            }
+
+
+
+
+        } else {
+
+
+
+            $('.js--landing-nav a, .js--btn--menu-close').attr("tabindex", "-1");
+
+
+
+
+            $(document).ready(function() {
+                // Setup the a11y nav
+                $('.nav__list').setup_navigation();
+
+                // RWD Nav Pattern
+                $('body').addClass('js');
+                var $menu = $('#menu'),
+                    $menulink = $('.menu-link'),
+                    $menuTrigger = $('.has-subnav > a');
+
+                $menulink.click(function(e) {
+                    e.preventDefault();
+                    $menulink.toggleClass('active');
+                    $menu.toggleClass('active');
+                });
+
+                $menuTrigger.click(function(e) {
+                    e.preventDefault();
+                    var $this = $(this);
+                    $this.toggleClass('active').next('ul').toggleClass('active');
+                });
+            });
+            /*
+            $(function(){
+            	$('.nav').setup_navigation();
+            });
+            */
+            var keyCodeMap = {
+                48: "0",
+                49: "1",
+                50: "2",
+                51: "3",
+                52: "4",
+                53: "5",
+                54: "6",
+                55: "7",
+                56: "8",
+                57: "9",
+                59: ";",
+                65: "a",
+                66: "b",
+                67: "c",
+                68: "d",
+                69: "e",
+                70: "f",
+                71: "g",
+                72: "h",
+                73: "i",
+                74: "j",
+                75: "k",
+                76: "l",
+                77: "m",
+                78: "n",
+                79: "o",
+                80: "p",
+                81: "q",
+                82: "r",
+                83: "s",
+                84: "t",
+                85: "u",
+                86: "v",
+                87: "w",
+                88: "x",
+                89: "y",
+                90: "z",
+                96: "0",
+                97: "1",
+                98: "2",
+                99: "3",
+                100: "4",
+                101: "5",
+                102: "6",
+                103: "7",
+                104: "8",
+                105: "9"
+            }
+
+            $.fn.setup_navigation = function(settings) {
+
+                settings = jQuery.extend({
+                    menuHoverClass: 'show-menu',
+                }, settings);
+
+                // Add ARIA role to menubar and menu items
+                $(this).attr('role', 'menubar').find('li').attr('role', 'menuitem');
+
+                var top_level_links = $(this).find('> li > a');
+
+                // Added by Terrill: (removed temporarily: doesn't fix the JAWS problem after all)
+                // Add tabindex="0" to all top-level links 
+                // Without at least one of these, JAWS doesn't read widget as a menu, despite all the other ARIA
+                //$(top_level_links).attr('tabindex','0');
+
+                // Set tabIndex to -1 so that top_level_links can't receive focus until menu is open
+                $(top_level_links).next('ul')
+                    .attr('data-test', 'true')
+                    .attr({
+                        'aria-hidden': 'false',
+                        'role': 'menu'
+                    });
+
+                // Adding aria-haspopup for appropriate items
+                $(top_level_links).each(function() {
+                    if ($(this).next('ul').length > 0)
+                        $(this).parent('li').attr('aria-haspopup', 'true');
+                });
+
+                // $(top_level_links).hover(function(){
+                // 	$(this).closest('ul') 
+                // 		.attr('aria-hidden', 'false')
+                // 		.find('.'+settings.menuHoverClass)
+                // 		.attr('aria-hidden', 'true')
+                // 		.removeClass(settings.menuHoverClass)
+                // 		.find('a')
+                // 		.attr('tabIndex',-1);
+                // 	$(this).next('ul')
+                // 		.attr('aria-hidden', 'false')
+                // 		.addClass(settings.menuHoverClass)
+                // 		.find('a').attr('tabIndex',0);
+                // });
+
+                $(top_level_links).focus(function() {
+                    $(this).closest('ul')
+                        // Removed by Terrill 
+                        // The following was adding aria-hidden="false" to root ul since menu is never hidden
+                        // and seemed to be causing flakiness in JAWS (needs more testing) 
+                        // .attr('aria-hidden', 'false') 
+                        .find('.' + settings.menuHoverClass)
+                        .attr('aria-hidden', 'false')
+                        .removeClass(settings.menuHoverClass);
+
+                    $(this).next('ul')
+                        .attr('aria-hidden', 'false')
+                        .addClass(settings.menuHoverClass)
+                        .find('a').attr('tabIndex', 0);
+                });
+
+                // Bind arrow keys for navigation
+                $(top_level_links).keydown(function(e) {
+                    if (e.keyCode == 37) {
+                        e.preventDefault();
+                        // This is the first item
+                        if ($(this).parent('li').prev('li').length == 0) {
+                            $(this).parents('ul').find('> li').last().find('a').first().focus();
+                        } else {
+                            $(this).parent('li').prev('li').find('a').first().focus();
+                        }
+                    } else if (e.keyCode == 38) {
+                        e.preventDefault();
+                        if ($(this).parent('li').find('ul').length > 0) {
+                            $(this).parent('li').find('ul')
+                                .attr('aria-hidden', 'false')
+                                .addClass(settings.menuHoverClass)
+                                .find('a').attr('tabIndex', 0)
+                                .last().focus();
+                        }
+                    } else if (e.keyCode == 39) {
+                        e.preventDefault();
+                        // This is the last item
+                        if ($(this).parent('li').next('li').length == 0) {
+                            $(this).parents('ul').find('> li').first().find('a').first().focus();
+                        } else {
+                            $(this).parent('li').next('li').find('a').first().focus();
+                        }
+                    } else if (e.keyCode == 40) {
+                        e.preventDefault();
+                        if ($(this).parent('li').find('ul').length > 0) {
+                            $(this).parent('li').find('ul')
+                                .attr('aria-hidden', 'false')
+                                .addClass(settings.menuHoverClass)
+                                .find('a').attr('tabIndex', 0)
+                                .first().focus();
+                        }
+                    } else if (e.keyCode == 13 || e.keyCode == 32) {
+                        // If submenu is hidden, open it
+                        e.preventDefault();
+                        $(this).parent('li').find('ul[aria-hidden=true]')
+                            .attr('aria-hidden', 'false')
+                            .addClass(settings.menuHoverClass)
+                            .find('a').attr('tabIndex', 0)
+                            .first().focus();
+                    } else if (e.keyCode == 27) {
+                        e.preventDefault();
+                        $('.' + settings.menuHoverClass)
+                            .attr('aria-hidden', 'false')
+                            .removeClass(settings.menuHoverClass);
+                    } else {
+                        $(this).parent('li').find('ul[aria-hidden=false] a').each(function() {
+                            if ($(this).text().substring(0, 1).toLowerCase() == keyCodeMap[e.keyCode]) {
+                                $(this).focus();
+                                return false;
+                            }
+                        });
+                    }
+                });
+
+
+                var links = $(top_level_links).parent('li').find('ul').find('a');
+                $(links).keydown(function(e) {
+                    if (e.keyCode == 38) {
+                        e.preventDefault();
+                        // This is the first item
+                        if ($(this).parent('li').prev('li').length == 0) {
+                            $(this).parents('ul').parents('li').find('a').first().focus();
+                        } else {
+                            $(this).parent('li').prev('li').find('a').first().focus();
+                        }
+                    } else if (e.keyCode == 40) {
+                        e.preventDefault();
+                        if ($(this).parent('li').next('li').length == 0) {
+                            $(this).parents('ul').parents('li').find('a').first().focus();
+                        } else {
+                            $(this).parent('li').next('li').find('a').first().focus();
+                        }
+                    } else if (e.keyCode == 27 || e.keyCode == 37) {
+                        e.preventDefault();
+                        $(this)
+                            .parents('ul').first()
+                            .prev('a').focus()
+                            .parents('ul').first().find('.' + settings.menuHoverClass)
+                            .attr('aria-hidden', 'false')
+                            .removeClass(settings.menuHoverClass);
+                    } else if (e.keyCode == 32) {
+                        e.preventDefault();
+                        window.location = $(this).attr('href');
+                    } else {
+                        var found = false;
+                        $(this).parent('li').nextAll('li').find('a').each(function() {
+                            if ($(this).text().substring(0, 1).toLowerCase() == keyCodeMap[e.keyCode]) {
+                                $(this).focus();
+                                found = true;
+                                return false;
+                            }
+                        });
+
+                        if (!found) {
+                            $(this).parent('li').prevAll('li').find('a').each(function() {
+                                if ($(this).text().substring(0, 1).toLowerCase() == keyCodeMap[e.keyCode]) {
+                                    $(this).focus();
+                                    return false;
+                                }
+                            });
+                        }
+                    }
+                });
+
+
+                // Hide menu if click or focus occurs outside of navigation
+                $(this).find('a').last().keydown(function(e) {
+                    if (e.keyCode == 9) {
+                        // If the user tabs out of the navigation hide all menus
+                        $('.' + settings.menuHoverClass)
+                            .attr('aria-hidden', 'true')
+                            .removeClass(settings.menuHoverClass)
+                            .find('a')
+                            .attr('tabIndex', -1);
+                    }
+                });
+
+                $(document).click(function() {
+                    $('.' + settings.menuHoverClass).attr('aria-hidden', 'true').removeClass(settings.menuHoverClass).find('a').attr('tabIndex', -1);
+                });
+
+                $(this).click(function(e) {
+                    e.stopPropagation();
+                });
+            }
+
+
+
+
+        }
+    });
+});
+
+
+$('.level-2 a').prop("tabindex", -1);
+
+
+$('[aria-controls="a11y-menu"]').on("click", function(e) {
+    e.preventDefault();
+    $('[aria-controls="a11y-menu"]').attr('aria-expanded', function(index, attr) {
+        return attr == 'true' ? 'false' : 'true';
+    });
+});
+
+$('.js--btn--landing-menu').click(function() {
+    $(this).attr("tabindex", "-1");
+    $('.js--landing-nav a,  .js--btn--menu-close').removeAttr('tabindex');
+});
+$('.js--btn--menu-close').click(function() {
+    $(this).attr("tabindex", "-1");
+    $('.js--landing-nav a').attr("tabindex", "-1");
+    $('.js--btn--landing-menu').removeAttr('tabindex');
+});
+
+	$(document).ready(function(){
+		$("main").attr("id", "main");
+	});
+
+
+</script>
+	
+	
+</body>
+
+
+ 
+
+
+
+
+
+</html>
+

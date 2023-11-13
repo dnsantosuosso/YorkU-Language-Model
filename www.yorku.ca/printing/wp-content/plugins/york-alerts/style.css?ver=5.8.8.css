@@ -1,0 +1,27 @@
+/*#york-website-alert {
+	background: transparent;
+	animation-name: backgroundload;
+	animation-duration: .01s;
+	animation-delay: 0.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+@keyframes backgroundload {
+  from {background-color: #fff;}
+  to {background-color: #d6d8d9;}
+}*/
+#york-website-alert {
+	padding: 0;
+	margin-bottom: 0 !important;
+}
+#york-website-alert a, #york-website-alert a:hover, #york-website-alert a:focus {
+	color: #533f03 !important;
+	max-width: 1140px;
+	text-decoration: underline !important;
+	font-weight: 400;
+}
+#york-website-alert p {
+	padding: 0.5rem 1rem !important;
+	min-height: 40px;
+	margin: 0;
+}

@@ -1,0 +1,144 @@
+Drupal.behaviors.contentserver_usage = {
+	attach:function(context, settings){
+		jQuery('.cs-usages > a.close').once('contentserver_usage').click(function(event){
+			event.preventDefault();
+			event.stopPropagation();
+			
+			jQuery(this).parent().css('display', 'none');
+		});
+	}
+};
+
+Drupal.behaviors.analytics_onclick = {
+	attach:function(context, settings){
+		jQuery('.york-analytics-click').once('analytics_onclick').click(function(event){
+			var target_element = 	jQuery(this);
+			var target_action = 	target_element.data('action');
+			var target_label = 		target_element.data('label');
+debugger;			
+			ga('create', 'UA-54028600-1', {'name':'main'}) // please do not change this
+			ga('main.send', 'event', window.location.hostname, target_action, target_label); //category, action, label
+		});
+	}
+};
+
+Drupal.behaviors.analytics_onclick2 = {
+	attach:function(context, settings){
+		jQuery('.york-analytics-click2').once('analytics_onclick').click(function(event){
+			var target_element = 	jQuery(this);
+			
+			var target_category = 	target_element.data('category');
+			var target_action = 	target_element.data('action');
+			var target_label = 		target_element.data('label');
+			
+			ga('create', 'UA-54028600-1', {'name':'main'}) // please do not change this
+			ga('main.send', 'event', target_category, target_action, target_label); //category, action, label
+		});
+	}
+};
+
+Drupal.behaviors.video_slide = {
+	attach:function(context, settings){
+		let dialog = document.getElementById('dialog');
+			
+		if(dialog){
+			jQuery('a.video, a.panorama').click(function(event){
+				event.stopPropagation();
+				event.preventDefault();
+				
+				let srcId = this.dataset.src;
+				dialog.innerHTML = window.dialogList[srcId];
+				
+				dialog.open();
+			});
+			
+			dialog.addEventListener('iron-overlay-closed', function(){
+				dialog.innerHTML = "";
+			});
+		}
+		
+		
+		jQuery('.slider > .control a, .slider > .slide a.slide-link').click(function(event){
+			event.preventDefault();
+			event.stopPropagation();
+			
+			let target_link = jQuery(this);
+			let target_root = target_link.closest('.slider');
+			let target_index = target_link.attr('data-attr');
+			
+			target_root.find('.control a').removeClass('active');
+			target_root.find('.slide').removeClass('active');
+			
+			target_root.find('.control a[data-attr="' + target_index + '"]').addClass('active');
+			target_root.find('.slide[data-attr="' + target_index + '"]').addClass('active');
+		});			
+	}
+};
+
+Drupal.behaviors.linking = {
+	attach:function(context, settings){
+		jQuery("a:not(.tab-link)").click(function(event){
+			let target_link = jQuery(this);
+			if(target_link.attr('href') !== '#' && target_link.attr('href').substr(0, 1) === '#'){
+				let anchor = 			target_link.attr('href').substr(1);
+				let target_hashtag = 	jQuery("#" + anchor);
+				
+				if(target_hashtag.length){
+					let target_component = 		target_hashtag;
+					let target_parent_fishing = target_component.closest('.has-very-light-gray-background-color.has-background.grey-bg-block');
+					
+					if(target_parent_fishing.length > 0){
+						target_component = 		target_parent_fishing;
+					}					
+	
+					jQuery('html').scrollTop(target_component.offset().top - jQuery('.sticky-top').height());
+					
+					event.preventDefault();
+					event.stopPropagation();					
+				}				
+			}
+		});
+	}
+};
+
+Drupal.behaviors.linking2 = {
+	attach:function(context, settings){
+		if(location.hash && location.hash == '#video'){
+			let target_hashtag = 	jQuery('#video, #video_default');
+			
+			if(target_hashtag.length){
+				let target_component = 		target_hashtag;
+				let target_parent_fishing = target_component.closest('.has-very-light-gray-background-color.has-background.grey-bg-block');
+				
+				if(target_parent_fishing.length > 0){
+					target_component = 		target_parent_fishing;
+				}					
+
+				let target_height = target_component.offset().top - jQuery('.sticky-top').height();
+				jQuery('html').scrollTop(target_height);
+				jQuery('html').scrollTop(target_height + "px");
+				
+				event.preventDefault();
+				event.stopPropagation();
+				
+				return false;				
+			}				
+		}
+	}
+};
+
+Drupal.behaviors.bilingual_onclick = {
+	attach:function(context, settings){
+		jQuery('#french-button, #english-button').once('analytics_onclick').click(function(event){
+			let is_french = jQuery(this).is('#french-button');
+		
+			if(typeof ga !== 'undefined'){
+				//ga('create', 'UA-54028600-1', {'name':'main'}) // please do not change this
+				//ga('main.send', 'event', window.location.hostname, 'translation:button-clicked', 'To ' + (is_french ? 'French' : 'English'));				
+
+				ga('create', 'UA-54028600-1', {'name':'main'}) // please do not change this
+				ga('main.send', 'event', window.location.hostname, 'Bilingual Toggle Event', (is_french ? 'French' : 'English') + ' selected'); //category, action, label
+			}
+		});
+	}
+};

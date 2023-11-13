@@ -1,0 +1,14 @@
+.box-with-links-collection {
+  display: block;
+}
+
+@media (min-width: 767px) {
+  .box-with-links-collection {
+    display: flex;
+    column-gap: 10px;
+    flex-wrap: wrap;
+  }
+}
+.box-with-links-collection .wp-block-column:not(:first-child) {
+  margin-left: 0;
+}

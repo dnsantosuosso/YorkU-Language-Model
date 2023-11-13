@@ -1,0 +1,74 @@
+.wpml-ls-legacy-dropdown {
+  width: auto;
+  margin-right: 10px;
+}
+.wpml-ls-legacy-dropdown a { font-size: 1rem; line-height: 1.5; }
+.wpml-ls-legacy-dropdown .wpml-ls-sub-menu { z-index: 1050; }
+.wpml-ls-legacy-dropdown .wpml-ls-sub-menu a {
+  border: none;
+  background-color: #810001;
+  background-color: #333;
+  color: #fff;
+}
+
+#yul-wpml-dropdown .dropdown-menu, #yul-wpml-dropdown .dropdown-menu a {
+    background: #fff;
+    color: #212529;
+}
+#yul-wpml-dropdown .dropdown-menu a:hover, #yul-wpml-dropdwon .dropdown-menu a:focus {
+    background: #343a40;
+    color: #fff;
+}
+
+@media (max-width: 575px) {
+  .wpml-ls-legacy-dropdown {
+    padding-top: 0.5rem;
+   }
+}
+/*
+.wpml-ls-legacy-dropdown a { border: none; border-color: #e31837;  }
+.wpml-ls-legacy-dropdown .wpml-ls-sub-menu a {
+  border: none;
+  background-color: #810001;
+  color: #fff;
+}
+.wpml-ls-statics-shortcode_actions, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu, .wpml-ls-statics-shortcode_actions a {
+  border-color: #e31827;
+}
+.wpml-ls-statics-shortcode_actions .wpml-ls-current-language>a {
+  background-color: #810001;
+  color: #fff;
+}
+.wpml-ls-statics-shortcode_actions .wpml-ls-current-language:hover>a, .wpml-ls-statics-shortcode_actions .wpml-ls-current-language>a:focus {
+  background-color: #e31837;
+  color: rgba(255, 255, 255, 1);
+  border-color: #e31837;
+}
+*/
+
+/*
+.wpml-ls-statics-shortcode_actions, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu, .wpml-ls-statics-shortcode_actions a {
+    border-color: #4c3e3e00;
+}
+.wpml-ls-statics-shortcode_actions {
+    background-color: #9a1d1d00;
+}
+.wpml-ls-statics-shortcode_actions a {
+    color: #ffffff00;
+    background-color: #ffffff00;
+}
+.wpml-ls-legacy-dropdown {
+    width: 20%;
+    max-width: auto%;
+}
+.wpml-ls-statics-shortcode_actions .wpml-ls-current-language>a {
+    color: #444444;
+    background-color: #ffffff000;
+    width: 40%;
+}
+.wpml-ls-statics-shortcode_actions, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu, .wpml-ls-statics-shortcode_actions a {
+    border-color: #4c3e3e00;
+    width: 63%;
+}
+
+*/

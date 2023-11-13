@@ -1,0 +1,187 @@
+jQuery(document).ready(function() {
+jQuery("#edit-undergraduateselect").change(function(){
+var temp = jQuery("#edit-undergraduateselect").val();
+url = "https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=" + temp;
+window.location.replace(url);
+});
+
+jQuery("#edit-graduateselect").change(function(){
+var temp = jQuery("#edit-graduateselect").val();
+url = "https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=" + temp;
+window.location.replace(url);
+});
+
+
+href = window.location.href
+//alert(href);
+
+var base_url = href.split('?');
+
+if(base_url[0] == 'https://sfs.yorku.ca/fees/courses/2019-2020/fw-form'){
+  
+//alert(base_url[0]);
+
+jQuery('#site-name').text('Student Financial Services');
+
+};
+
+
+jQuery(window).scroll(function(){ 
+        if (jQuery(this).scrollTop() > 100) { 
+            jQuery('#scroll').fadeIn(); 
+        } else { 
+            jQuery('#scroll').fadeOut(); 
+        } 
+    }); 
+    jQuery('#scroll').click(function(){ 
+        jQuery("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    });
+	
+jQuery('body').prepend('<a href="#" id="scroll" style="display: none;"><span></span></a>');
+
+
+href = window.location.href
+//alert(href);
+
+if(href == 'https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=faculty-of-graduate-studies-non-professional-masters'){
+jQuery('#block-sfsfeescourseskeelecampuscolleges').hide();
+};
+
+if(href == 'https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=faculty-of-graduate-studies-phd'){
+jQuery('#block-sfsfeescourseskeelecampuscolleges').hide();
+};
+
+if(href == 'https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=graduate-diploma-in-professional-accounting'){
+jQuery('#block-sfsfeescourseskeelecampuscolleges').hide();
+};
+
+if(href == 'https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=master-in-conference-interpreting'){
+jQuery('#block-sfsfeescourseskeelecampuscolleges').hide();
+};
+
+if(href == 'https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=master-in-environmental-studies'){
+jQuery('#block-sfsfeescourseskeelecampuscolleges').hide();
+};
+
+if(href == 'https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=master-in-financial-accountability'){
+jQuery('#block-sfsfeescourseskeelecampuscolleges').hide();
+};
+
+if(href == 'https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=master-of-applied-science-for-civil-mechanical-engineering-masc'){
+jQuery('#block-sfsfeescourseskeelecampuscolleges').hide();
+};
+
+if(href == 'https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=master-of-design'){
+jQuery('#block-sfsfeescourseskeelecampuscolleges').hide();
+};
+
+if(href == 'https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=master-of-human-resources-management'){
+jQuery('#block-sfsfeescourseskeelecampuscolleges').hide();
+};
+
+if(href == 'https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=master-of-leadership-and-community-engagement-mlce'){
+jQuery('#block-sfsfeescourseskeelecampuscolleges').hide();
+};
+
+if(href == 'https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=master-of-public-policy-administration-and-law'){
+jQuery('#block-sfsfeescourseskeelecampuscolleges').hide();
+};
+
+if(href == 'https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=osgoode-graduate-diploma-in-law-for-law-enforcement-professionals'){
+jQuery('#block-sfsfeescourseskeelecampuscolleges').hide();
+};
+
+if(href == 'https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=osgoode-professional-llm'){
+jQuery('#block-sfsfeescourseskeelecampuscolleges').hide();
+};
+
+if(href == 'https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=schulich-school-of-business-financial-engineering-diploma-part-time'){
+jQuery('#block-sfsfeescourseskeelecampuscolleges').hide();
+jQuery('#gradreg').hide();
+jQuery('#latefee').hide();
+jQuery('#assoc').hide();
+};
+
+if(href == 'https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=schulich-school-of-business-master-of-accounting-macc-graduate-diploma-in-intermediate-accounting-gdia'){
+jQuery('#block-sfsfeescourseskeelecampuscolleges').hide();
+jQuery('#gradreg').hide();
+jQuery('#latefee').hide();
+jQuery('#assoc').hide();
+};
+
+if(href == 'https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=schulich-school-of-business-master-of-business-analytics-mban-master-of-management-in-artificial-intelligence-mmai'){
+jQuery('#block-sfsfeescourseskeelecampuscolleges').hide();
+jQuery('#gradreg').hide();
+jQuery('#latefee').hide();
+jQuery('#assoc').hide();
+};
+
+if(href == 'https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=schulich-school-of-business-master-of-finance-mf'){
+jQuery('#block-sfsfeescourseskeelecampuscolleges').hide();
+jQuery('#gradreg').hide();
+jQuery('#latefee').hide();
+jQuery('#assoc').hide();
+};
+
+if(href == 'https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=schulich-school-of-business-master-of-management-mmgt'){
+jQuery('#block-sfsfeescourseskeelecampuscolleges').hide();
+jQuery('#gradreg').hide();
+jQuery('#latefee').hide();
+jQuery('#assoc').hide();
+};
+
+if(href == 'https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=schulich-school-of-business-master-of-marketing-mmkg'){
+jQuery('#block-sfsfeescourseskeelecampuscolleges').hide();
+jQuery('#gradreg').hide();
+jQuery('#latefee').hide();
+jQuery('#assoc').hide();
+};
+
+if(href == 'https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=schulich-school-of-business-master-of-real-estate-and-infrastructure-mrei'){
+jQuery('#block-sfsfeescourseskeelecampuscolleges').hide();
+jQuery('#gradreg').hide();
+jQuery('#latefee').hide();
+jQuery('#assoc').hide();
+};
+
+if(href == 'https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=schulich-school-of-business-master-of-supply-chain-management-mscm'){
+jQuery('#block-sfsfeescourseskeelecampuscolleges').hide();
+jQuery('#gradreg').hide();
+jQuery('#latefee').hide();
+jQuery('#assoc').hide();
+};
+
+if(href == 'https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=schulich-school-of-business-mba-imba-post-graduate-diploma-in-advanced-management-pdam'){
+jQuery('#block-sfsfeescourseskeelecampuscolleges').hide();
+jQuery('#gradreg').hide();
+jQuery('#latefee').hide();
+jQuery('#assoc').hide();
+};
+
+if(href == 'https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=glendon-college'){
+jQuery('#block-sfsfeescourseskeelecampuscolleges').hide();
+};
+
+if(href == 'https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=faculty-of-education'
+|| href == 'https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=faculty-of-environmental-studies'
+|| href == 'https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=faculty-of-health'
+|| href == 'https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=faculty-of-liberal-arts-and-professional-studies'
+|| href == 'https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=faculty-of-liberal-arts-and-professional-studies-bcom-bdem-bpa-and-ba-itec-major-only'
+|| href == 'https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=faculty-of-science'
+|| href == 'https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=faculty-of-science-computer-science'
+|| href == 'https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=glendon-college'
+|| href == 'https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=lassonde-school-of-engineering-ba-bsc-computer-security-ba-digital-media-bsc-earth-and-atmospheric-science'
+|| href == 'https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=lassonde-school-of-engineering-ba-bsc-iba-ibsc-computer-science'
+|| href == 'https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=lassonde-school-of-engineering-beng'
+|| href == 'https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=osgoode-hall-law-school-juris-doctor'
+|| href == 'https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=school-of-the-arts-media-performance-design'
+|| href == 'https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=school-of-the-arts-media-performance-design-bdes'
+|| href == 'https://sfs.yorku.ca/fees/courses/2019-2020/fall-winter?url=schulich-school-of-business-bba-ibba'
+){
+jQuery('#gradreg').hide();
+jQuery('#latefee').hide();
+jQuery('#absence').hide();
+};
+
+});

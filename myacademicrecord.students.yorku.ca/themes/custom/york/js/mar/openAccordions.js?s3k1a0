@@ -1,0 +1,76 @@
+jQuery(document).ready(function(){
+	jQuery('.ovps-tabbed-accordion').each(function(){
+		var this_accordion = jQuery(this);
+		
+		this_accordion.prepend('<div class="open-accordion"><button>Open all</button></div>');
+		this_accordion.prepend('<div class="close-accordion" style="display:none"><button>Close all</button></div>');
+	
+		jQuery('.open-accordion button').click(function(){
+			jQuery('.open-accordion').hide();
+			jQuery('.close-accordion').show();
+			
+			jQuery('h2.heading.ui-accordion-header', this_accordion).removeClass('ui-state-default').removeClass('ui-corner-all').addClass('ui-state-active').addClass('ui-corner-top');
+			jQuery('div.ui-accordion-content', this_accordion).addClass('ui-accordion-content-active').css('display', 'block');
+		});
+	
+		jQuery('.close-accordion button').click(function(){
+			jQuery('.close-accordion').hide();
+			jQuery('.open-accordion').show();
+
+			jQuery('h2.heading.ui-accordion-header', this_accordion).removeClass('ui-state-active').removeClass('ui-corner-top').addClass('ui-state-default').addClass('ui-corner-all');
+			jQuery('div.ui-accordion-content', this_accordion).removeClass('ui-accordion-content-active').css('display', 'none');
+		});
+	
+	});
+
+/*
+	jQuery('.views-row.home-menu').hover(function(){
+		jQuery(this).css('cursor','pointer');
+	});
+	
+	jQuery('.home-menu-title').append('<i class="fa fa-chevron-circle-right"></i>');
+	
+	jQuery('.views-row.home-menu').click(function(){
+		jQuery(this).children('.views-field-body').toggle('fast','linear',function(){
+			jQuery(this).siblings().children('.home-menu-title').children().toggleClass('fa-chevron-circle-right')
+				.toggleClass('fa-chevron-circle-up');
+			jQuery(this).parent().css('z-index','1000')
+				.css('position','relative');
+			jQuery(this).parent().siblings().css('z-index','0')
+				.css('position','relative');
+			jQuery(this).parent().siblings().children('.views-field-body').hide();
+			
+			if(jQuery(this).parent().siblings().children('.views-field-title').children().children().hasClass('fa-chevron-circle-up')){
+				jQuery(this).parent().siblings().children('.views-field-title').children().children().removeClass('fa-chevron-circle-up').addClass('fa-chevron-circle-right');
+			}
+		});
+	});
+*/	
+	
+
+jQuery('.mar-menu h2').hover(function(){
+		jQuery(this).css('cursor','pointer');
+	});
+	
+	jQuery('.mar-menu h2').append('<i class="fa fa-chevron-circle-right"></i>');
+	
+	jQuery('.mar-menu').click(function(){
+		jQuery(this).children('ul').toggle('fast','linear',function(){
+			jQuery(this).siblings().children('.mar-menu h2').children().toggleClass('fa-chevron-circle-right')
+				.toggleClass('fa-chevron-circle-up');
+			jQuery(this).parent().css('z-index','89')
+				.css('position','relative');
+			jQuery(this).parent().siblings().css('z-index','0')
+				.css('position','relative');
+			jQuery(this).parent().siblings().children('ul').hide();
+			
+			if(jQuery(this).parent().siblings().children('.mar-menu h2').children().children().hasClass('fa-chevron-circle-up')){
+				jQuery(this).parent().siblings().children('.mar-menu h2').children().children().removeClass('fa-chevron-circle-up').addClass('fa-chevron-circle-right');
+			}
+		});
+	});
+	
+	
+
+
+});

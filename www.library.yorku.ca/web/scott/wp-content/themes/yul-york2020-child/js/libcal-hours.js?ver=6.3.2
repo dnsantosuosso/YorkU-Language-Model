@@ -1,0 +1,26 @@
+$=jQuery;
+$( document ).ready(function() {
+  var current_week = 0;
+  $('#left_arrow').click(function (e)
+    {
+      //console.log("LEFT ARROW CLICKED");
+      $('.week_' + current_week).addClass("hidden");
+      if(current_week > 0){
+        current_week = current_week - 1;
+      }
+      $('.week_' + current_week).removeClass("hidden");
+    }
+  );
+  $('#right_arrow').click(function (e)
+    {
+      //console.log("RIGHT ARROW CLICKED");
+      //console.log($('.week_' + current_week));
+      $('.week_' + current_week).addClass("hidden");
+      //console.log($('.week_' + current_week));
+      if(current_week < 7){
+        current_week = current_week + 1;
+      }
+      $('.week_' + current_week).removeClass("hidden");
+    }
+  );
+});

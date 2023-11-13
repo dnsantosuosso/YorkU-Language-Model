@@ -1,0 +1,1809 @@
+/*!
+ * scripts.js
+ * MAIN SCHULICH SITE SCRIPTS
+ *
+ * 01 Polyfills
+ * 02 Transition helpers
+ * 03 Jump link
+ * 04 Smooth scrolling
+ * 05 Scroll effects
+ * 06 Sliders
+ * 07 News/events filters
+ * 08 Natural language forms
+ * 09 Program finder
+ * 10 Expandable sections
+ * 11 Add to calendar
+ * 12 Program floating sidebar
+ * 13 Live search
+ * 14 Faculty search
+ * 15 Course catalog filter
+ * 16 Interior nav toggles
+ * 17 Site modals
+ * 18 Map clicks
+ * 19 EMBA tabpanels
+ * 20 Asynchronous video loader
+ *
+ */
+
+;(function($, window, document, undefined) {
+
+    // -----------------------------------------------------------------------------------------------01. POLYFILLS
+    // LOAD REM POLYFILL IF NEEDED (~IE8)
+    if (!Modernizr.cssremunit) {
+        $.getScript('//' + window.location.host + '/wp-content/themes/schulich/js/vendor/rem.min.js');
+    }
+    // RESIZE VIDEOS IF OBJECT FIT NOT SUPPORTED (ALL IE)
+    if (!Modernizr.objectfit) {
+        var $player = $('.image-header__video');
+        var videoRatio = 16 / 9;
+        var height = $player.parent().height();
+        var width = $player.parent().width();
+        var viewportRatio = width / height;
+        var scale = 1;
+
+        if (videoRatio < viewportRatio) {
+            // viewport more widescreen than video aspect ratio
+            scale = viewportRatio / videoRatio;
+        } else if (viewportRatio < videoRatio) {
+            // viewport more square than video aspect ratio
+            scale = videoRatio / viewportRatio;
+        }
+
+        $player.css({
+            '-webkit-transform': 'scale(' + scale  + ')',
+            'transform': 'scale(' + scale  + ')'
+        });
+    }
+
+    // -----------------------------------------------------------------------------------------------02. TRANSITION HELPERS
+    var transEndEventNames = {
+      'WebkitTransition': 'webkitTransitionEnd',
+      'MozTransition': 'transitionend',
+      'OTransition': 'oTransitionEnd',
+      'msTransition': 'MSTransitionEnd',
+      'transition': 'transitionend'
+    },
+    transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
+    support = { transitions : Modernizr.csstransitions };
+
+    // -----------------------------------------------------------------------------------------------03. JUMP LINK
+    $('.btn--down').on('click',function(e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $(this).offset().top - 128
+        }, 800);
+    });
+
+    // -----------------------------------------------------------------------------------------------04. SMOOTH SCROLLING
+    // TO COMMENTS
+    $('.single-news .news-item__comments a').on('click',function(e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $('#comments').offset().top - 200
+        }, 800);
+    });
+
+    // TO ANCHOR (note that this must be an ID on the page, not a named anchor)
+    $('a[href^="#"]').on('click',function(e) {
+        e.preventDefault();
+        var target = $(this).attr('href');
+        if (target.length > 1 && $(target).length) {
+            $('html, body').animate({
+                scrollTop: $(target).offset().top - 200
+            }, 800);
+            $(this).blur();
+        }
+    });
+
+    // -----------------------------------------------------------------------------------------------05. SCROLL EFFECTS
+    var scrollFx = function() {
+        var scroll = $(window).scrollTop(),
+            viewportHeight = $(window).height(),
+            viewportWidth = $(window).width(),
+            isHome = $('body').hasClass('home');
+ 
+        //mobile header toggling based on viewport size
+        if (viewportWidth >= 856) {
+
+            //find toggle point
+            if (isHome) {
+                if (viewportWidth >= 1296) {            
+                    togglePoint = 338; //desk
+                } else if (viewportWidth >= 1056) {            
+                    togglePoint = 309; //lap
+ //               } else if (viewportWidth >= 856) {            
+ //                   togglePoint = 213; //tab
+                } else {
+                    togglePoint = 132; //phab
+                }
+            } else {
+                togglePoint = 64;
+            }
+
+            //do toggle
+            if (scroll >= togglePoint) {
+                $(".header--global").addClass("mini");
+            } else {
+                $(".header--global").removeClass("mini");
+            }
+
+        } else {
+            //mobile doesn't have mini header
+            $(".header--global").removeClass("mini");
+        }
+        
+        //go through all remaining FX and trigger them if they've entered the viewport
+        if ($fx.length > 0) {
+
+            if( support.transitions ) {
+
+                $fx = $.grep($fx, function(el, i) {
+
+                    var $el = $(el);
+                    var triggerZone = $el.offset().top - viewportHeight;
+                    var triggerLag = 0;
+
+                    if ($el.data('fx-lag')) {
+                        triggerLag = $el.data('fx-lag');
+                    }
+
+                    if (scroll >= triggerZone ) {
+                        setTimeout(function(){
+                          $el.delay(triggerLag).addClass('fx--triggered');
+                          return false;
+                        }, triggerLag);
+                    }
+                    return true;
+                });
+
+            } else {
+                //if transitions aren't supported, just add all the effects immediately
+                //to prevent pop-in when scrolling
+                $('.fx').addClass('fx--triggered');
+            }
+        }
+    };
+
+    var $fx = $('.fx');
+    scrollFx();
+    $(window).on('scroll', $.throttle( 200, scrollFx ) ); //ss find solution .scroll
+
+    // -----------------------------------------------------------------------------------------------06. SLIDERS
+    // set initial size of testimonial slider
+    var resizeTestimonialSlider = function() {
+        var tallestSlide = '0px';
+        $.each($('.testimonial-slider__slide'), function(key, value) {
+            if ( $(value).css('height') > tallestSlide ) {
+                tallestSlide = $(value).css('height');
+            }
+        });
+        $('.testimonial-slider__slides').css('height', tallestSlide);
+        $('.testimonial-slider__slide').css('height','inherit');
+    };
+
+    var changeSlide = function($clickedButton) {
+        var $controls = $clickedButton.parent('.slider__controls'),
+            $slides = $controls.siblings('.slider__slides'),
+            $buttons = $controls.children('button'),
+            currentSlide = parseInt($slides.data('current-slide')),
+            totalSlides = $slides.children().length,
+            newSlide = currentSlide,
+            sliderCleanup = function() {           
+                $slides.children('.outgoing').removeClass('outgoing');
+                $buttons.removeAttr('disabled');
+                $(this).blur();
+            };
+
+        //don't run anything if the button is disabled
+        if ( !$clickedButton.is(':disabled') ) {
+
+            //disable buttons and remove active classes
+            $buttons.attr('disabled','disabled');
+            $slides.children('.outgoing').removeClass('outgoing');
+            $slides.children('.active').addClass('outgoing').removeClass('active');
+
+            if ( $clickedButton.hasClass('btn--next')) {
+
+                //increment and loop if needed
+                newSlide = currentSlide + 1;
+                if (newSlide > totalSlides - 1) {
+                    newSlide = 0;
+                }
+
+            } else if ( $clickedButton.hasClass('btn--prev')) {
+
+                //increment and loop if needed
+                newSlide = currentSlide - 1;
+                if (newSlide < 0) {
+                    newSlide = totalSlides - 1;
+                }
+            }
+
+            //update the slide tracker, make the new one active
+            $slides.data('current-slide', newSlide);
+            $slides.children('.slider__slide').eq(newSlide).addClass('active');
+
+            //remove class and re-enable buttons when outgoing transition is over
+            if( support.transitions ) {
+                $slides.children('.active').one(transEndEventName, function(e) {
+                    sliderCleanup();
+                });
+            } else {
+                sliderCleanup();
+            }
+        }
+    };
+
+    // sliders of all types
+    if ($('.slider__slides').length ) {
+
+        var sliderSpeed = 15000;
+
+        if ($('.slider__slides').attr('data-speed')) {
+            sliderSpeed = parseInt($('.slider__slides').attr('data-speed'));
+        }
+
+        $('.slider__controls button').on('click',function(e) {
+            e.preventDefault();
+            changeSlide($(this));
+        });
+
+        // resize testimonial slider initially and when changing window size
+        resizeTestimonialSlider();
+        $(window).on('resize', $.throttle( 200, resizeTestimonialSlider ) ); //ss .resize
+
+        // auto-start slider
+        setInterval(function() { 
+            changeSlide($('.module--testimonial-slider .slider__controls button.btn--next'));
+        }, sliderSpeed);
+    }
+
+    // ------------------------------------------------------------------------------------------------07. NEWS / EVENTS FILTERS
+    var reloadNewsPage = function() {
+        var category = $('#search-filter__category').val(),
+            month = $('#search-filter__month').val(),
+            year = $('#search-filter__year').val(),
+            type = '';
+
+        if ($('#search-filter__events').hasClass('form__btn--active')) {
+            type = 'events';
+        } else if ($('#search-filter__releases').hasClass('form__btn--active')) {
+            type = 'releases';
+        } else {
+            type = 'news';
+        }
+
+        var path = window.location.pathname;
+
+        //if the pathname is paged, remove that part
+        if (path.indexOf('/page/') !== -1) {
+            path = path.split('/page/')[0];
+        }
+
+        var newLocation = '//' + window.location.host + path + '?type=' + type;
+
+        if (category !== '0') {
+            newLocation += '&cat=' + category;
+        }
+        if (month !== '0') {
+            newLocation += '&mth=' + month;
+        }
+        if (year !== '0') {
+            newLocation += '&yr=' + year;  
+        }
+
+        newLocation += '#more';
+        window.location.replace(newLocation);
+    };
+
+    //reload trigger events
+    $('.search-filter--news-events select').on('change', function(e) {
+        e.preventDefault();
+        reloadNewsPage();
+    });
+
+    $('.search-filter--news-events .form__btn').on('click', function(e) {
+        e.preventDefault();
+        $('.form__btn--active').removeClass('form__btn--active');
+        $(this).addClass('form__btn--active');
+        reloadNewsPage();
+    });
+
+    // ------------------------------------------------------------------------------------------------08. NATURAL LANGUAGE FORM
+    //click on a field
+    $('.form--nl').on('click', '.nl__selection', function(e) {
+        e.preventDefault();
+
+        //close any other options
+//        $('.nl__options.open').removeClass('open');
+
+        //add the overlay
+//        $('body').addClass('modal-open');
+//        $('.nl__overlay').addClass('open').one('click', function() {
+//            $('body').removeClass('modal-open');
+//            $('.nl__overlay').removeClass('open');
+//            $('.nl__options.open').removeClass('open');
+//        });
+
+        //open this one
+//        $(this).next('.nl__options').addClass('open');
+					$selected = $(this).next('.nl__options');		
+					$('.nl__options.open').not($selected).removeClass('open');		
+					$selected.toggleClass('open');		
+    });
+
+    //click an add field button
+    $('.form--nl').on('click', '.nl__add', function(e) {
+        e.preventDefault();
+
+        //get the field this button controls
+        var field = $(this).data('field').toString();
+
+        //show the field 
+        $('.nl__additional-field--' + field).addClass('added');
+
+        //hide this button
+        $(this).addClass('capped');
+
+        //if this is the optional one, we want to open the pop up immediately
+        if (field == 3) {
+            $('.nl__additional-field--' + field).find('.nl__selection').trigger('click');
+            $('.nl__remove[data-field="3"]').removeClass('capped');
+        }
+    });
+
+    //click on a remove field (x) button
+    $('.form--nl').on('click', '.nl__remove', function(e) {
+        e.preventDefault();
+
+        //get the field this button controls
+        var field = $(this).data('field').toString();
+
+        //if you're removing 2 and 3 is visible, copy the 3 contents to 2 and remove 3
+        if (field == '1' && $('.nl__additional-field--2.added').length ) {
+
+            var thirdValue = $('.nl__additional-field--2 .nl__selection').text();
+            $('.nl__additional-field--1 .nl__selection').text(thirdValue);
+            $('.nl__select[name="interested-in-2"]').val($('.nl__select[name="interested-in-3"]').val());
+            $('.nl__additional-field--2').removeClass('added');
+            $('.nl__add[data-field="2"]').removeClass('capped');
+        
+        } else {
+
+            //the optional one needs option set to none capped added to the x button
+            if (field == '3') {
+                $('.nl__select[name="possibilities"]').val('none');
+                $('.nl__remove[data-field="3"]').addClass('capped');
+            }                
+
+            //hide the field 
+            $('.nl__additional-field--' + field).removeClass('added');
+
+            //reshow the add button
+            $('.nl__add[data-field="' + field + '"]').removeClass('capped');
+        }
+				$('.program-finder__finder .form--nl').submit();		
+    });
+
+    // select an option from the popup
+    $('.form--nl').on('click', '.nl__options a', function(e) {
+        e.preventDefault();
+
+        var text = $(this).text(),
+            value = $(this).data('val'),
+            $field = $(this).parents('.nl__field'),
+            $select = $('.nl__select[name="' + $field.data('select') + '"]');
+
+        //set the text of the selection to the just clicked item
+        var $selection = $field.find('.nl__selection');
+        $selection.text(text);
+
+        //set the value of the hidden select box to the just clicked item
+        $select.val(value);
+
+        //if i've set optional field to 'none', remove it
+        if (value == 'none' ) {
+            $('.nl__additional-field--3').removeClass('added');
+            $('.nl__add[data-field="3"]').removeClass('capped');
+            $('.nl__remove[data-field="3"]').addClass('capped');
+        }
+
+        //close the overlay
+        $('.nl__overlay').removeClass('open');
+        $('.nl__options.open').removeClass('open');
+        $('body').removeClass('modal-open');
+					$('.program-finder__finder .form--nl').submit();		
+    });
+
+    // ------------------------------------------------------------------------------------------------09. PROGRAM FINDER
+    // submit the finder
+    $('.program-finder__finder .form--nl').on('submit', function(e) {
+        e.preventDefault();
+
+        //make the results happen
+        $('.program-finder__finder').addClass('program-finder__finder--results');
+
+        ajax_data = {
+            'action': 'get-program-finder-results',
+            'form_data': $('.form--nl').serialize()
+        };
+
+        //show loader icon
+        $('.icon--loader').attr('class', 'icon icon--loader icon--loader--loading');
+
+ //       $('html, body').animate({
+ //           scrollTop: $('.program-finder__finder').offset().top - 200
+ //       }, 500);
+
+        $.get(ajax_object.ajax_url, ajax_data, function(response) {
+            var results = JSON.parse(response);
+            //remove loader icon
+            $('.icon--loader').attr('class', 'icon icon--loader');
+            
+            //replace the content with the results
+            $('.program-finder__content--results').html(results.html);
+        });
+    });
+
+    // return from results page
+    $('#program-finder-reset').on('click',function(e) {
+        e.preventDefault();
+        $('.program-finder__content--results').html('');
+        $('.program-finder__finder').removeClass('program-finder__finder--results');
+
+        $('html, body').animate({
+            scrollTop: $('.program-finder__finder').offset().top - 200
+        }, 500);
+    });
+
+    // ------------------------------------------------------------------------------------------------10. EXPANDABLE SECTIONS
+    // PROGRAM DETAILS FACULTY EXPANDER
+    $('.details--faculty__expander').on('click',function(e) {
+        e.preventDefault();
+        $('.details--faculty__additional').addClass('expanded');
+        $(this).addClass('expanded');
+    });
+
+    // COURSE LIST EXPANDER
+    $('#content').on('click', '.course-list__link', function(e) {
+        e.preventDefault();
+        var $this = $(this);
+
+        if ($this.attr('aria-expanded') === 'true') {
+            //hide the course
+            $this.attr('aria-expanded', 'false').blur().next('.course-list__desc').slideToggle().attr('aria-hidden','true');
+        } else {
+            //show the course
+            $this.attr('aria-expanded', 'true').blur().next('.course-list__desc').slideToggle().attr('aria-hidden','false');
+        }
+    });
+
+    // CONTACT DIRECTORY EXPANDER
+    $('.dept-contacts__dept').on('click',function(e) {
+        e.preventDefault();
+        var $this = $(this);
+
+        if ($this.hasClass('no-close')) { return; }
+
+        if ($this.attr('aria-expanded') === 'true') {
+            //hide the course
+            $this.attr('aria-expanded', 'false').blur().parent().next('.dept-contacts__content').slideToggle().attr('aria-hidden', 'true');
+            //alert("working hide here");
+        } else {
+            //show the course
+            $this.attr('aria-expanded', 'true').blur().parent().next('.dept-contacts__content').slideToggle().attr('aria-hidden', 'false');
+            //alert("working show here");
+
+        }
+    });
+
+    // STUDY OPTIONS EXPANDER
+    $('.details--options__header').on('click',function(e) {
+        e.preventDefault();
+        var $this = $(this);
+
+        if ($this.attr('aria-expanded') === 'true') {
+            //hide the course
+            $this.attr('aria-expanded', 'false').blur().next('.details--options__panel').attr('aria-hidden','true');
+        } else {
+            //show the course
+            $this.attr('aria-expanded', 'true').blur().next('.details--options__panel').attr('aria-hidden','false');
+        }
+    });
+
+    // ------------------------------------------------------------------------------------------------11. ADD TO CALENDAR
+    // applies to event pages only
+    if ($('.event-details').length) {
+
+        var details = $('.event-details'),
+            calData = {
+                title: details.data('title'),
+                start: new Date(details.data('start')),
+                duration: 60,
+                address: details.data('location')
+            };
+
+        if (details.data('end')) {
+            calData.end = new Date(details.data('end'));
+        }
+
+        var myCalendar = createCalendar({ 
+            options: {
+                id: 'add-to-calendar'
+            },
+            data: calData 
+        });
+        document.querySelector('.event-details').appendChild(myCalendar);
+    }
+
+    // ------------------------------------------------------------------------------------------------12. FLOATING SIDEBAR LOCK
+    //$('.module--introduction--details .grid__item:last-of-type').addClass('floating-sidebar');
+
+    //find the closest heading to current scroll position, Price is Right style
+    var closestWithoutGoingOver = function(array,num) {
+        var i = 0, 
+            minDiff = Infinity, 
+            ans = null;
+
+        for(i in array) {
+            var diff = Math.abs(num - array[i]);
+            if(diff < minDiff && num > array[i]){ 
+                minDiff = diff; 
+                ans = i; 
+            }
+        }
+
+        return ans;
+    };
+
+    var sidebarScroll = function(sectionOffsets) {
+        var scroll = $(window).scrollTop();
+        var viewportHeight = $(window).height();
+        var headerHeight = $('.header--global').height();
+        var footerTop = $('.footer--global').offset().top;
+
+        var sectionTitle = closestWithoutGoingOver(sectionOffsets, (scroll + headerHeight + 100));
+
+        $('.floating-sidebar__link').removeClass('past').removeClass('current');
+
+        $('.floating-sidebar__link[data-details-section="' + sectionTitle + '"]').addClass('current')
+            .parent('.floating-sidebar__item').prevUntil()
+            .find('.floating-sidebar__link').addClass('past');
+ 
+        if ( scroll >= (footerTop - viewportHeight + 82) ) {
+            $('.floating-sidebar').addClass('locked');
+        } else {
+            $('.floating-sidebar').removeClass('locked');
+        }            
+    };
+
+    //if this page has a sidebar, create an array with the offset of each setion and pass that to the scroll function
+    if ($('.floating-sidebar').length && $(window).width() >= 1056) {
+        
+        var sections = $('main section'),
+            sectionOffsets = [];
+
+        $.each(sections, function() {
+            sectionOffsets[$(this).attr('class').slice(17)] = ($(this).offset().top); //slice(17) removes "details details--"
+        });
+
+        $(window).unbind('scroll');
+        $(window).scroll( $.throttle( 200, function() { 
+            scrollFx();
+            sidebarScroll(sectionOffsets);            
+        }));
+    }
+/*
+    //program details page sidebar
+    $(window).scroll(function() {
+
+        var $header = $('.header--global'),
+            $footer = $('.footer--global'),            
+            $sidebar = $(''),
+            $container = $sidebar.closest('.grid'),
+            fixedStartThreshold = $header.height(),
+            fixedEndThreshold = fixedStartThreshold + $container.height() - $sidebar.outerHeight(true);
+
+        //check if we're past the start
+        if ($(window).scrollTop() >= fixedStartThreshold) {
+            $sidebar.addClass('fixed');
+        } else {
+            $sidebar.removeClass('fixed');
+        }
+        
+        //check if we're past the end
+        if ($(window).scrollTop() >= fixedEndThreshold) {
+            $sidebar.addClass('bottom');
+        } else {
+            $sidebar.removeClass('bottom');
+        }
+
+        console.log(fixedEndThreshold,$(window).scrollTop());
+
+    });*/
+
+
+    // ------------------------------------------------------------------------------------------------13. LIVE SEARCH
+    //manually submit form
+    $(document).on('submit', '.form--search', function(e) {
+        e.preventDefault();
+        $('.form--search__results-container').addClass('searching');
+        $('#form--search__more, #form--search__back').data('offset',0).data('remaining',0);
+        ajaxSearch();
+        return false;
+    });
+
+    //type into the search field - max twice per second, only fires if more than 2 chars and not currently animating
+    $(document).on('keyup', '#search', $.throttle( 500, function(e) {
+        if ( $('#search').val().length > 2 ) {
+            $resultsContainer = $('.form--search__results-container');
+            $resultsContainer.addClass('searching');
+            if( support.transitions) {
+                $resultsContainer.one(transEndEventName, function(e) {
+                    $('#form--search__more, #form--search__back').data('offset',0).data('remaining',0);
+                    ajaxSearch();
+                });
+            } else {
+                $('#form--search__more, #form--search__back').data('offset',0).data('remaining',0);
+                ajaxSearch();
+            }
+        } 
+    }));
+
+    // click to load more results
+    $(document).on('click', '#form--search__more', function(e) {
+        $('.form--search__results-container').addClass('searching');
+        ajaxSearch();
+    });
+
+    // click to go back
+    $(document).on('click', '#form--search__back', function(e) {
+        $('.form--search__results-container').addClass('searching');
+        ajaxSearch(true);
+    });
+
+    // the ajax search function itself
+    var ajaxSearch = function(back) {
+
+        var $searchMoreButton = $('#form--search__more'),
+            $searchBackButton = $('#form--search__back'),
+            resultsPerPage = 8,
+            ajax_data = {
+                'action': 'get-search-results',
+                'query': $('#search').val(),
+                'offset': $searchMoreButton.data('offset')
+            };
+
+        if (back) {
+            ajax_data.offset = $searchBackButton.data('offset');
+        }
+
+        //show loader icon
+        $('.icon--loader').attr('class', 'icon icon--loader icon--loader--loading');
+
+        $.post(ajax_object.ajax_url, ajax_data, function(response) {
+
+            var results = JSON.parse(response);
+            var remaining = results.count - (results.last + 1);
+            
+            $('.form--search__results-container').html(results.html).removeClass('searching');
+            
+            $searchMoreButton.data('offset', (results.last + 1)).data('remaining', remaining);
+            $searchBackButton.data('offset', $searchMoreButton.data('offset') - (2 * resultsPerPage) );
+
+            if (remaining < 1) {
+                $searchMoreButton.addClass('form--search__more--none');
+            } else {
+                $searchMoreButton.removeClass('form--search__more--none');
+                $('.form--search__remaining').text(remaining);
+            }
+
+            //add back button if we're not on the first page
+            if ($searchMoreButton.data('offset') > resultsPerPage ) {
+                $searchBackButton.removeClass('form--search__back--none');
+            } else {
+                $searchBackButton.addClass('form--search__back--none');
+            }
+
+            //remove loader icon
+            $('.icon--loader').attr('class', 'icon icon--loader');
+        });
+    };
+
+    // ------------------------------------------------------------------------------------------------14. FACULTY SEARCH
+    // submit to ajax action
+    var doFacultySearch = function() {
+
+        var ajax_data = {
+            'action': 'get-faculty-results',
+            'name': $('#search-filter__name').val(),
+            'area': $('#search-filter__area').val(),
+            'interest': $('#search-filter__interest').val(),
+			'status': $('#search-filter__status').val()
+        };
+
+        $.post(ajax_object.ajax_url, ajax_data, function(response) {
+
+            $('.faculty-search-results').html(response).addClass('results-populated');
+
+            //reinitialize masonry AFTER images load
+            $('#masonry-container').imagesLoaded(function() {
+                $('#masonry-container').masonry({
+                    itemSelector: '.masonry__item',
+                    columnWidth: '.masonry__grid-sizer', 
+                    percentPosition: true, 
+                    gutter: 32,
+                });
+            });
+
+            //scroll down
+            $('html, body').animate({
+                scrollTop: $('.faculty-search-results').offset().top - 200
+            }, 500);
+
+        });
+    };
+
+    var clearFacultySearch = function() {
+        $('.faculty-search-results').removeClass('results-populated').empty();
+        $('#search-filter__name').val('');
+        $('#search-filter__interest').val('0');
+        $('#search-filter__area').val('0');
+        $('html, body').animate({
+            scrollTop: $('.faculty-search__heading').offset().top - 200
+        }, 500);
+    };
+
+    // faculty search triggers
+    $('#search-filter__area').on('change', function(e) {
+        e.preventDefault();
+
+        $('#search-filter__interest').val('0');
+
+        if ($(this).val() == 0) {
+            clearFacultySearch();
+        } else {
+            doFacultySearch();
+        }
+    });
+    $('#search-filter__interest').on('change', function(e) {
+        e.preventDefault();
+
+        $('#search-filter__area').val('0');
+
+        if ($(this).val() == 0) {
+            clearFacultySearch();
+        } else {
+            doFacultySearch();
+        }
+    });
+
+    // regular form submission
+    $('.search-filter--faculty form').on('submit', function(e) {
+        e.preventDefault();
+
+        if ($('#search-filter__name').val().length > 1 ) {
+            doFacultySearch();
+        }
+    });
+
+    //clear results
+    $('.faculty-search-results').on('click', '#faculty-clear', function() {
+        clearFacultySearch();
+    });
+
+    // if this has been preset with GET params, we need to search immediately on load
+    if ($('.faculty-search-results--prefilled').length) {
+        doFacultySearch();
+    }
+
+    // ------------------------------------------------------------------------------------------------15. COURSE CATALOG FILTER
+    // change the selected dept
+    $('.search-filter--courses select').on('change', function(e) {
+        e.preventDefault();
+        
+        var ajax_data = {
+            'action': 'get-course-results',
+            'dept': $('#course-filter__dept').val()
+        };
+
+        $.post(ajax_object.ajax_url, ajax_data, function(response) {
+            $('.full-course-table tbody').html(response);
+        });
+    });
+
+    // ------------------------------------------------------------------------------------------------16. (INTERIOR) MAIN NAV TOGGLE
+    // make the heading clickable
+    $('.section-nav__title').on('click',function(e) {
+        $(this).next('.modal-trigger').trigger('click');
+    });
+
+    //when you tab into the menu item, open it and focus on the first item
+    $('.nav--main__toggle').on('click',function(e) {
+        e.stopPropagation();
+
+        var $navContainer = $('.nav--main__container'),
+            $firstItem = $navContainer.find('.nav__item:first .nav__link');
+
+        //check if this was a tab
+        var isTab = false;
+
+        //open the menu
+        $navContainer.toggleClass('open');
+
+        //if the modal is open, close it
+        removeModal();
+
+        //close on click outside
+        $('html').one('click',function() {
+            //don't close if we're on mobile or the modal is visible
+            if ($('.modal--show').length === 0 || $(window).width() > 655) {
+                $navContainer.removeClass('open');
+            }
+        });
+
+        if (isTab) {
+            if ( support.transitions ) {
+                $navContainer.one(transEndEventName, function(e) {
+                    $firstItem.focus();
+                });
+            } else {
+                $firstItem.focus();
+            }
+        }
+
+        $(this).trigger('blur'); //ss .blur()
+    });
+
+    //when tabbing out of the last item, close the menu
+    $('.nav--main .nav__item:last .nav__link').on('blur',function(e) { //ss .blur()
+        $('.nav--main__container').removeClass('open');
+    });
+
+    // ------------------------------------------------------------------------------------------------17. MODALS
+    // SITE MODAL
+    var $modalOverlay = $('.modal-overlay'),
+        $modal = $('#site-modal'),
+        $modalClose = $('.modal__close'),
+        $modalHeader = $('.modal__header'),
+        $modalContent = $('.modal__content');
+
+    //remove the modal
+    var removeModal = function() {
+
+        if ($modal.hasClass('modal--section')) {
+            $('.nav--main__container').removeClass('open');
+        } else if ($modal.hasClass('modal--video')) {
+            $('.modal__content').empty();
+        }
+
+        $('body').removeClass('modal-open');
+
+        //prevent title bar pop-in on alternate modals
+        if( ($modal.hasClass('modal--search') || $modal.hasClass('modal--section') || $modal.hasClass('modal--admissions') || $modal.hasClass('modal--course') || $modal.hasClass('modal--student') || $modal.hasClass('modal--video')) && support.transitions ) {
+            $modal.one(transEndEventName, function(e) {
+                $modal.attr('class', 'modal modal--flip-vertical');
+            });
+            $modal.removeClass('modal--show').removeClass('modal--scrollable');
+        } else {
+            $modal.attr('class', 'modal modal--flip-vertical');
+        }
+    };
+
+    //add the content to the modal and show it
+    var populateModal = function(title, content, section, modalClass) {
+
+        //MOBILE
+        if ($(window).width() <= 655) {
+            //trigger the open class so we can use the button
+            if (!section) {
+                $('.nav--main__container').addClass('open');
+            }
+            //scroll back to top
+            $('html, body').animate({
+                scrollTop: $(window).top - 128
+            }, 800);
+        }
+
+        //populate the modal
+        $modalHeader.html(title);
+        $modalContent.html(content);
+
+        if (modalClass) {
+            $modal.addClass('modal--' + modalClass);
+        }
+
+        //show the modal, enabling scrolling when the transition is done
+        if (support.transitions) {
+            $modal.one(transEndEventName, function(e) {
+                $modal.addClass('modal--scrollable');
+            });
+            $modal.addClass('modal--show');
+        } else {
+            $modal.addClass('modal--show').addClass('modal--scrollable');
+        }
+
+        //add the overlay click event
+        $modalOverlay.one('click', removeModal);
+
+        //prevent body scrolling while modal is open
+        $('body').addClass('modal-open');
+        
+        //tab into the first link
+        $modal.find('a, button, input').first().focus();        
+    };
+
+    $modalHeader.on('click', function( e ) { 
+        e.stopPropagation();
+        removeModal();
+    });
+
+    $modalClose.on('click', function( e ) { 
+        e.stopPropagation();
+        removeModal();
+    });
+
+//    $('.modal-trigger').on('click',function(e) {
+	$(document).on('click', '.modal-trigger', function(e){			
+        e.preventDefault();
+
+        var linkText = '',
+            sectionMenuContent = '',
+            $trigger = $(this);
+
+        //if this is the "More" section nav
+        if ($trigger.hasClass('section-nav__toggle')) {
+
+            //figure out which section to show
+            var sectionTitle = $trigger.prev('.section-nav__title').text(),
+                sectionMenuId = $trigger.data('section');
+
+            //show the section modal
+            sectionMenuContent = $('div[data-section=' + sectionMenuId + ']').html();
+            $modal.addClass('modal--section');
+            populateModal('<h2 class="h1">' + sectionTitle + '</h2>',sectionMenuContent,true);
+            
+
+        } else if ($trigger.hasClass('search-toggle')) {
+
+            //make sure the modal has the correct additional classes
+            $modal.addClass('modal--search').removeClass('modal--section');
+
+            //show the blank modal to reduce percieved lag when waiting for the AJAX call
+            $modalContent.html('');
+            $modal.addClass('modal--show');
+
+            //AJAX in the search form
+            $.post(ajax_object.ajax_url, {'action': 'get-search-form'}, function(response) {
+                populateModal('<h2 class="h1">Search</h2>', response);
+            });
+
+        } else if ($trigger.hasClass('emba-course-toggle')) {
+
+            //make sure the modal has the correct additional classes
+            $modal.addClass('modal--course').removeClass('modal--section');
+
+            var courseContent = '<div class="modal__course-desc">' + $trigger.data('course-desc') + '</div>';
+            courseContent += '<div class="modal__school-info"><span class="modal__school-name">' + $trigger.data('school-name') + '</span>';
+            courseContent += '<span class="modal__school-location">' + $trigger.data('school-location') + '</span>';
+            courseContent += '<a target="_blank" class="modal__school-website" href="' + $trigger.data('school-website') + '">Visit Website&nbsp;&rsaquo;</a></div>';
+
+            populateModal('<h2 class="h1">' + $trigger.text() + '</h2>', courseContent);
+
+        } else if ($trigger.hasClass('modal-trigger--program')) {
+
+            //make sure the modal has the correct additional classes
+            $modal.addClass('modal--program').removeClass('modal--section');
+
+            //TODO: add GA event to track form opens
+
+            sectionMenuContent = $('#program-form').html();
+
+            populateModal('<h2 class="h1">Contact Schulich</h2>', sectionMenuContent);
+
+        } else if ($trigger.hasClass('modal-trigger--student')) {
+
+            //make sure the modal has the correct additional classes
+            $modal.addClass('modal--student');
+            if ($trigger.data('color') == 'light') {
+                $modal.addClass('modal--student-light');
+            } else {
+                $modal.removeClass('modal--student-light');
+            }
+            $modal.removeClass('modal--section');
+
+            var studentHeader = '<header class="modal--student__header">';
+            studentHeader += '<svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-person"></use></svg>';
+            studentHeader += '<h2 class="h1">' + $trigger.data('student-name') + '</h2>';
+            studentHeader += '<span class="modal--student__title">' + $trigger.data('title') + '</span>';
+            studentHeader += '</header>';
+
+            var studentContent = '<img src="' + $trigger.data('image-url') + '" />';
+            studentContent += '<p class="lead">' + $trigger.data('summary') + '</p>';
+            studentContent += $trigger.next('.student-showcase__modal-content').html();
+
+            populateModal(studentHeader, studentContent);
+
+        } else if ($trigger.hasClass('modal-trigger--video')) {
+
+            //make sure the modal has the correct additional classes
+            $modal.addClass('modal--video').removeClass('modal--section');
+
+            var embedCode = decodeURIComponent($trigger.attr('data-embed-code'));
+
+            embedCode = embedCode.replace(/\+/g, ' ');
+
+            var videoContent = '<div>' + embedCode + '</div>';
+
+            populateModal('<h2 class="h1">' + $trigger.attr('data-modal-title') + '</h2>', videoContent);
+
+        } else {
+            //this is a regular nav trigger
+
+            //the content is in the section menu item
+            sectionMenuContent = $trigger.next('.nav__item__section-menu-content').html();
+
+            //show the real title or the display title
+            if ( $trigger.children('.nav--main__link--inner').length > 0 ) {
+                linkText = $trigger.children('.nav--main__link--inner').text();
+            } else {
+                linkText = $trigger.text();
+            }
+
+            //populate the modal
+            populateModal('<h2 class="h1">' + linkText + '</h2>', sectionMenuContent);
+        }            
+    });
+
+    // ADMISSIONS MODALS
+    $('.admissions .btn--admissions').on('click',function(e) {
+        e.preventDefault();
+
+        var programName = $(this).find('.program__name').text();
+        var programAbbr = $(this).find('.program__abbreviation').text().toLowerCase().replace(/\//gi, '-').replace(/ /gi, '-');
+				if (programAbbr == "we-mba") {
+						var programAbbr = "mba" ;
+				}				
+        var modalContent = '<a href="/admissions/admissions-requirements/' + programAbbr + '" class="btn"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-alert"></use></svg>Admission Requirements</a>';
+        modalContent += '<a href="/admissions/tuition-fees-costs/#' + programAbbr + '" class="btn"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-dollar"></use></svg>Tuition Fees &amp; Costs</a>';
+        modalContent += '<a href="/admissions/admissions-requirements/' + programAbbr + '#deadlines" class="btn"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-event"></use></svg>Deadlines</a>';
+        modalContent += '<a href="/admissions/how-to-apply/" class="btn full-block full-block--dark full-block--pattern"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-right"></use></svg>How to Apply</a>';
+
+        populateModal('<h2 class="h1">' + programName + '</h2>', modalContent, null, 'admissions');
+    });
+
+    // -----------------------------------------------------------------------------------------------18. MAP CLICKS
+    $('.module--global-network-map').on('click',function(e) {
+        $(this).addClass('active');
+        e.stopPropagation();
+
+        //click off
+        $('body').one('click',function() {
+            $('.module--global-network-map').removeClass('active');
+
+            //if the gmaps code has run, close any open windows
+            if (typeof closeAllInfoWindows == 'function') { 
+                closeAllInfoWindows();
+            }
+        });
+    });
+
+    $('#map-country-select').on('change',function(e) {
+        e.preventDefault();
+        var country = $(this).val();
+
+        $('#map-list tbody tr').hide();
+        $('#map-list tbody tr.country-' + country).css('display','inline-block');
+
+        if (country === 'none') {
+            $('#map-list tbody').hide();
+        } else {
+            $('#map-list tbody').css('display','block');
+        }        
+    });
+
+    // -----------------------------------------------------------------------------------------------19. EMBA TABPANELS
+    //from: http://accessibility.athena-ict.com/aria/examples/tabpanel2.shtml
+    $('body').on('click', '[role="tab"]', function(e){
+
+        var noClose = $(this).hasClass('no-close'); // don't do anything if this is already open
+        var toggle = $(this).hasClass('course-cluster__toggle') || $(this).hasClass('expand-toggle'); //this is only for EMBA
+        var tabpanid = $(this).attr('aria-controls'); //find out what tab panel this tab controls
+        var tablevel = $(this).data('tablevel') || 1;
+
+        if (noClose) {
+            if ($(this).attr('aria-selected') == 'true') {
+                return;
+            }
+        }
+
+        if (toggle) {
+
+            if ($(this).attr('aria-selected') == 'true') {
+                $(this).attr('aria-selected','false');
+                $('#'+tabpanid).attr('aria-hidden','true');
+            } else {
+                $(this).attr('aria-selected','true');
+                $('#'+tabpanid).attr('aria-hidden','false');
+            }
+            return;
+        }
+
+        //deselect all the tabs at this level
+        $('[role="tab"][data-tablevel="' + tablevel + '"]').attr('aria-selected','false'); 
+        //hide all the panels at this level
+        $('section[role="tabpanel"][data-tablevel="' + tablevel + '"],div[role="tabpanel"][data-tablevel="' + tablevel + '"]').attr('aria-hidden','true'); 
+        
+        $(this).attr('aria-selected','true');  // select this tab
+        
+        //also select the mirrored tab
+        var lastChar = $(this).attr('id').slice(-1);
+        var tabNum = $(this).attr('id').substr(-2,1);
+
+        if (lastChar === 'a') {
+            $('#tab-' + tabNum + 'b').attr('aria-selected','true');
+        } else {
+            $('#tab-' + tabNum + 'a').attr('aria-selected','true');
+        }
+
+        $('#'+tabpanid).attr('aria-hidden','false'); // show our panel
+
+    });
+
+    // -----------------------------------------------------------------------------------------------20. ASYNC VIDEO LOADER
+    
+    if ($('.video-embed').length) {
+
+        var isMobile = { 
+            Android: function() { return navigator.userAgent.match(/Android/i); }, 
+            BlackBerry: function() { return navigator.userAgent.match(/BlackBerry/i); }, 
+            iOS: function() { return navigator.userAgent.match(/iPhone|iPad|iPod/i); }, 
+            Opera: function() { return navigator.userAgent.match(/Opera Mini/i); }, 
+            Windows: function() { return navigator.userAgent.match(/IEMobile/i); }, 
+            any: function() { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()); } 
+        };
+
+        //on mobile, we want to load all the embeds so we don't have to click twice
+        if (isMobile.any()) {
+
+            $('.module--video .video-embed').each(function(e) {
+                var embedcode = $(this).data('embedcode');
+                $(this).data('hasvideo','true').children('.video-embed__container').addClass('playing').prepend(embedcode);
+            });
+
+        }
+
+        $('.video-embed').on('click', function(e) {
+            e.preventDefault();
+
+            var video = $(this),
+                embedcode = video.data('embedcode'),
+                hasvideo = video.data('hasvideo');
+
+            if (!hasvideo) {
+                video.data('hasvideo','true').children('.video-embed__container').addClass('playing').prepend(embedcode);
+            }
+
+        });
+    }
+
+    // -----------------------------------------------------------------------------------------------21. FACULTY EXPANDER
+    if ($('.faculty__content-list').length) {
+
+     $('.faculty__content-list').each(function() {
+
+        //max-height on these is set at 20rem, with 2rems of padding on top and bottom
+        //so content height is 256 or less, and we can remove 'show all' button
+        if ($(this).height() < 256) {
+            $(this).addClass('open').next('.faculty__content-expand').remove();
+        }
+     });
+
+    }
+
+    $('.faculty__content-expand').on('click', function(e) {
+        e.preventDefault();
+        $(this).prev().toggleClass('open');
+        $(this).remove();
+    });
+
+    // -----------------------------------------------------------------------------------------------22. SPECIALIZATION EXPANDER
+    $('#spec-expand').on('click',function(e) {
+        e.preventDefault();
+        $(this).toggleClass('open').blur();
+        $(this).closest('.module--specializations').find('.grid--specs').toggleClass('open');
+    });
+
+    $('#cert-expand').on('click',function(e) {
+        e.preventDefault();
+        $(this).toggleClass('open').blur();
+        $(this).closest('.module--specializations').find('.grid--certs').toggleClass('open');
+    });
+	
+    $('#dipl-expand').on('click',function(e) {
+        e.preventDefault();
+        $(this).toggleClass('open').blur();
+        $(this).closest('.module--specializations').find('.grid--dipl').toggleClass('open');
+    });	
+	
+    //if this is a program overview page with the specializations anchor, immediately open the specs section
+    if ( $('body').hasClass('single-programs') && window.location.hash == '#specializations' ) {
+        $('#spec-expand').trigger('click');
+    }
+
+    $('.courses__expand').on('click',function(e) {
+        e.preventDefault();
+        $(this).toggleClass('open');
+    });
+
+    $('.spec__expand').on('click',function(e) {
+        e.preventDefault();
+        $(this).toggleClass('open').blur();
+        $(this).next('.grid--specs__container').find('.grid--specs').toggleClass('open');
+    });
+
+    $('.cert__expand').on('click',function(e) {
+        e.preventDefault();
+        $(this).toggleClass('open').blur();
+        $(this).next('.grid--certs__container').find('.grid--certs').toggleClass('open');
+    });
+
+    // -----------------------------------------------------------------------------------------------23. EVENTS CALENDAR
+    if ($('#calendar').length) {
+        $('#calendar').fullCalendar({
+          events: window.calendarJson
+        });
+
+        var filterHtml = '<button id="fc-filter-cat-toggle" class="btn">Categories</button>';
+        filterHtml += '<span class="fc-filter-cat-joiner">and</span>';
+        //filterHtml += '<label class="fc-filter-label" for="fc-filter-general"><input type="checkbox" checked class="fc-filter-check" id="fc-filter-general" value="general" /> General Events</label>';
+        filterHtml += '<label class="fc-filter-label" for="fc-filter-undergraduate"><input type="checkbox" checked class="fc-filter-check" id="fc-filter-undergraduate" value="undergraduate" /> Undergraduate Events</label>';
+        filterHtml += '<label class="fc-filter-label" for="fc-filter-graduate"><input type="checkbox" checked class="fc-filter-check" id="fc-filter-graduate" value="graduate" /> Graduate Events</label>';
+
+        $('.fc-toolbar .fc-center').append(filterHtml);
+
+        $('.fc-filter-check').on('change', function(e) {
+            e.preventDefault();
+            $('#calendar').toggleClass('show-' + $(this).val());
+        });
+
+        $('.fc-filter-cat-check').on('change', function(e) {
+            e.preventDefault();
+            $('#calendar').toggleClass('hide-' + $(this).val());
+        });
+
+        $('.fc-right button').on('click', function(e) {
+            var currentDate = $('.fc-day-number:not(.fc-other-month)').first().data('date').split('-');
+            $('#event-list-button').attr('href', ($('#event-list-button').data('base') + '&mth=' + currentDate[1] + '&yr=' + currentDate[0])) + '#more';
+        });
+
+        $('#fc-filter-cat-toggle').on('click', function(e) {
+            e.preventDefault();
+            $('.event-calendar-cats').slideToggle();
+        });
+
+        $('#fc-filter-toggle-all').on('click', function(e) {
+            e.preventDefault();
+
+            //are they all checked?
+            if ($('.fc-filter-cat-check:checked').length === $('.fc-filter-cat-check').length) {
+                $('.fc-filter-cat-check').each(function(e) {
+                    $(this).removeAttr('checked');
+                    $('#calendar').addClass('hide-' + $(this).val());
+                });
+            } else {
+                $('.fc-filter-cat-check').each(function(e) {
+                    $(this).attr('checked','checked');
+                    $('#calendar').removeClass('hide-' + $(this).val());
+                });
+            }
+        });
+    }
+
+    // -----------------------------------------------------------------------------------------------24. LISTING EXPAND
+    $('.listings__btn').on('click', function(e) {
+        e.preventDefault();
+        $(this).prev().toggleClass('open');
+
+        if ($(this).text() == 'Show more') {
+            $(this).text('Show less');
+        } else {
+            $(this).text('Show more');
+        }
+    });
+
+    $('.listings__content').each(function(e) {
+        if ($(this).height() <= 192) {
+            $(this).next('.listings__btn').remove();
+        } else {
+            $(this).removeClass('open');
+        }
+    });
+
+    // -----------------------------------------------------------------------------------------------25. VIDEO SLIDER
+    $('.video__slides').each(function(e) {
+        $(this).slick({
+            infinite: false,
+            initialSlide: 1,
+            slidesToShow: 3,
+            draggable: false,
+            prevArrow: $(this).closest('.video__slider-container').find('.video__slider-prev'),
+            nextArrow: $(this).closest('.video__slider-container').find('.video__slider-next'),
+            responsive: [{
+                breakpoint: 780,
+                settings: {
+                    slidesToShow: 2,
+                    draggable: true
+                }
+            }, {
+                breakpoint: 420,
+                settings: {
+                    slidesToShow: 1,
+                    draggable: true
+                }
+            }]
+        });
+    });
+
+    //change the main video
+    $('.video__slide-link').on('click', function(e) {
+        var video = $(this).closest('.module--videos').find('.video-embed'),
+            embedcode = $(this).data('embedcode'),
+            cover = $(this).data('cover-image'),
+            caption = $(this).data('caption'),
+            title = $(this).data('title'),
+            $thisSlide = $(this).parent('.video__slide');
+
+        video.children('.video-embed__container')
+            .css('background-image', 'url(' + cover +')')
+            .removeClass('playing')            
+            .find('iframe').remove();
+        
+        video.data('hasvideo',false).data('embedcode', embedcode);
+        video.find('.video-embed__caption-title').text(title);
+        video.find('.video-embed__caption-desc').text(caption);
+
+        $('.video__slide').removeClass('active');
+        $thisSlide.addClass('active');
+    });
+
+    // -----------------------------------------------------------------------------------------------26. STUDENT SHOWCASE
+    $('.student-showcase__slides').each(function(e) {
+        $(this).slick({
+            infinite: false,
+            slidesToShow: 5,
+            prevArrow: $(this).closest('.module--student-showcase').find('.student-showcase__prev'),
+            nextArrow: $(this).closest('.module--student-showcase').find('.student-showcase__next'),
+            responsive: [{
+                breakpoint: 1600,
+                settings: {
+                    slidesToShow: 4
+                }
+            },{
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 3
+                }
+            }, {
+                breakpoint: 960,
+                settings: {
+                    slidesToShow: 2
+                }
+            }, {
+                breakpoint: 780,
+                settings: {
+                    slidesToShow: 1
+                }
+            }]
+        });
+    });
+
+    //open modal
+    $('.student-showcase__link').on('click', function(e) {
+       e.preventDefault();
+    });
+
+    // -----------------------------------------------------------------------------------------------27. PROGRAM DETAIL ACCORDIONS
+    $('.program-details__expand').on('click',function(e) {
+        e.preventDefault();
+        $(this).toggleClass('open').blur().next('.program-details__content').slideToggle();
+    });
+
+    // -----------------------------------------------------------------------------------------------28. PROGRAM CAREER OPPS LOGOS
+    var resizeLogoBar = function() {
+        if ($('.career-opps__logo-item').length) {
+            var gridHeight = $('.career-opps__logo-item').prev('.grid__item').outerHeight();
+
+            if ($(window).width() >= 856 && (gridHeight < $('.career-opps__logo-block').outerHeight())) {                
+                $('.career-opps__logo-item').css('position', 'relative');
+            } else {
+                $('.career-opps__logo-item').removeAttr('style');
+            }
+        }
+    };
+    if ($('.career-opps__logo-item').length) {
+        resizeLogoBar();
+        $(window).on('resize', $.throttle( 200, resizeLogoBar ) ); //ss .resize
+    }
+
+     // -----------------------------------------------------------------------------------------------29. HEADER SLIDER
+    $('.image-header__slider').slick({
+        infinite: true,
+        fade: true,
+        slidesToShow: 1,
+        arrows: true,
+        adaptiveHeight: false,
+        draggable: true,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 6000,
+        prevArrow: $('.image-header__slide-prev'),
+        nextArrow: $('.image-header__slide-next'),
+        appendDots: $('.image-header__slide-dots')
+    });
+
+    // -----------------------------------------------------------------------------------------------30. MARKETING LANDING PAGES
+    $('.lp__career-btn').on('click',function(e) {
+        e.preventDefault();
+        $(this).toggleClass('is-active');
+        $('.lp__career-content').slideToggle();
+    });
+
+    $('.lp__cta-btn').on('click',function(e) {
+        e.preventDefault();
+        $('body').addClass('modal-open');
+        $('.lp__overlay').addClass('is-active');
+        $('.lp__sidebar-form').addClass('is-active');
+
+        if ($(this).attr('data-modal-title')) {
+            var newTitle = $(this).attr('data-modal-title');
+            $('.lp__sidebar-form-title').html(newTitle);
+        }
+    });
+
+    $('.lp__overlay').on('click',function(e) {
+        e.preventDefault();
+        $('body').removeClass('modal-open');
+        $('.lp__overlay').removeClass('is-active');
+        $('.lp__sidebar-form').removeClass('is-active');
+
+        var origTitle = $('.lp__sidebar-form-title').attr('data-original-title');
+        $('.lp__sidebar-form-title').html(origTitle);
+    });
+
+    $('.lp__sidebar-radio input').on('change', function(e) {
+        $(this).closest('.lp__sidebar-radio').addClass('is-set');
+    });
+
+    var emailIsValid = function(email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    };
+
+    var phoneIsValid = function(phone) {
+        return /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/i.test(phone);
+    };
+
+    //VALIDATION
+    $('.lp__sidebar #lead_gen_form').on('submit', function(e) {
+
+        e.preventDefault();
+
+        var $form = $(this);
+        var errors = 0;
+
+        // inputs are all required
+        $form.find('.lp__sidebar-field').each(function() {
+
+            $(this).find('.lp__sidebar-error').remove();
+
+            var $input = $(this).find('input');
+            
+            if ( $input.length != 0) {
+                
+                //email
+                if ($input.attr('id') == 'email' && !emailIsValid($input.val())) {
+                    $(this).append('<p class="lp__sidebar-error">Please enter a valid email address.</p>');
+                
+                // phone
+                } else if ($input.attr('id') == 'phone' && !phoneIsValid($input.val())) {
+                    $(this).append('<p class="lp__sidebar-error">Please enter a valid phone number.</p>');
+                
+                //regular inputs
+                } else if ($input.val() == '') {
+                    $(this).append('<p class="lp__sidebar-error">This is a required field.</p>');
+                }
+
+            } else {
+                //selects
+                if ( $(this).find('select').val() == 0) {
+                    $(this).append('<p class="lp__sidebar-error">Please choose an option.</p>');
+                }
+            }
+        });
+
+        // radios must have an answer
+        $form.find('.lp__sidebar-radio').each(function() {
+            if ( $(this).find('input:checked').length == 0) {
+                if ( $(this).find('.lp__sidebar-error').length == 0) {
+                    $(this).append('<p class="lp__sidebar-error">Please choose an option.</p>');
+                }
+            } else {
+                $(this).find('.lp__sidebar-error').remove();
+            }
+        });
+
+        errors = $form.find('.lp__sidebar-error').length;
+
+        //no errors, so move to server side check
+        if (errors <= 0) {
+        
+            ajax_data = {
+                'action': 'validate-lead-form',
+                'form_data': $form.serialize(),
+                'utm_source': $('.lp__sidebar-form').attr('data-utm-source'),
+                'utm_medium': $('.lp__sidebar-form').attr('data-utm-medium')
+            };
+
+            $.ajax({
+                type: 'POST',
+                url: ajax_object.ajax_url,
+                data: ajax_data,
+                success: function(response) {
+                    if (response == 'pass') {
+                        $form.off('submit').trigger('submit'); //ss .submit
+                    } else {
+                        $form.find('.lp__sidebar-field--captcha').append('<p class="lp__sidebar-error">There was an error with reCAPTCHA.</p>');
+                    }
+                },
+                error: function(response) {
+                    $form.find('.lp__sidebar-field--captcha').append('<p class="lp__sidebar-error">There was an error with reCAPTCHA.</p>');
+                }
+            });
+
+        }
+        
+        return false;
+
+    });
+
+    // -----------------------------------------------------------------------------------------------31. MARKETING LANDING PAGE DROPDOWNs
+    var closeAllSelects = function() {
+        $('.select-container.is-open').removeClass('is-open').scrollTop(0).find('.select-container__select').css('height', 'auto');
+    };
+
+    $('.select-container__select').on('click', function(e) {
+        e.stopPropagation();
+
+        var $this = $(this),
+            $container = $this.parent('.select-container');
+
+        if ($container.hasClass('is-open')) {
+            $this.css('height', 'auto');
+            $container.removeClass('is-open');
+
+        } else {
+
+            closeAllSelects();
+
+            $container.addClass('is-open');
+            $this.css('height', $this.find('.select-container__options').css('height'));
+        }    
+
+        //add a temporary click off event to close any open selects
+        $('html').one('click', function(e) {
+            closeAllSelects();
+        });
+
+    });
+
+    $('.select-container__option').on('click', function(e) {
+
+        $('html').off('click'); //remove the temporary click event if there
+
+        var optValue = $(this).data('value'),
+            optText = $(this).text(),
+            $select = $(this).closest('.select-container__select');
+
+        //if they've clicked on the null value, just close it
+        if (optValue == 0) {
+            closeAllSelects();
+            return false;
+        }
+
+        $select.find('.select-container__value-line').text(optText);
+        $select.find('.select-container__input').val(optValue).trigger('change');
+        $select.find('.select-container__option--active').removeClass('select-container__option--active');
+        $select.scrollTop(0);
+        $(this).addClass('select-container--active');
+    });
+
+
+// ADDITIONS MARCH 2022
+	
+	 $(document).on('click', '.video-control', function(e){
+		var $clicked = $(this);
+		var $video = $('.video-background');
+		if ($video.prop('paused')) {
+			$video.trigger('play'); 
+			$clicked.removeClass('play').addClass('pause').attr('aria-label','Pause');
+			$clicked.html("Pause");
+		} else {
+			$video.trigger('pause'); 
+			$clicked.removeClass('pause').addClass('play').attr('aria-label','Play');
+			$clicked.html("Play");
+		}
+		e.preventDefault();
+	});
+
+
+
+    $('.slider22').each(function(e) {
+	var $slider = $(this);		
+		
+		if ($slider.length) {
+			var sliderCounter = $slider.siblings('.slider22__controls').find('.slide22__counter');			
+			var currentSlide;
+			var slidesCount;
+
+			 var updateSliderCounter = function(slick, currentIndex) {
+				currentSlide = slick.slickCurrentSlide() + 1;
+				slidesCount = slick.slideCount;
+				$(sliderCounter).text(currentSlide + ' of ' +slidesCount)
+			  };
+
+			  $slider.on('init', function(event, slick) {
+//				updateSliderCounter(slick);
+			  });
+
+			  $slider.on('afterChange', function(event, slick, currentSlide) {
+//				updateSliderCounter(slick, currentSlide);
+			  });
+
+			
+			
+			$slider.slick({
+				infinite: false,
+				slidesToShow: 3,
+				slidesToScroll: 3,			
+				draggable: true,
+				lazyLoad: 'ondemand',
+				prevArrow: $slider.siblings('.slider22__controls').find('.slide22__prev'),
+				nextArrow: $slider.siblings('.slider22__controls').find('.slide22__next'),
+				responsive: [{
+					breakpoint: 1296,
+						settings: {
+						slidesToShow: 3,
+						slidesToScroll: 3,
+						dots: false
+						}
+					},
+					{
+					breakpoint: 853,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2,
+						}
+					},
+					{
+					breakpoint: 656,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1,	
+						}
+				}]
+			});
+			
+		}	
+    });
+	
+
+   /* Slick needs no get Reinitialized on window Resize after it was destroyed */
+    $(window).on('load resize orientationchange', function() {
+            if ($(window).width() > 1296) {
+				$('.flex-grid22').siblings('.slider22__controls').hide();				
+            } else {
+				$('.flex-grid22').siblings('.slider22__controls').show();				
+			}
+
+        $('.flex-grid22').each(function(){
+            var $carousel = $(this);
+
+                if (!$carousel.hasClass('slick-initialized')) {
+                    $carousel.slick({
+						draggable: true,
+						slidesToShow: 3,
+						slidesToScroll: 3,	
+						dots: false,						
+						draggable: true,
+						lazyLoad: 'ondemand',
+						prevArrow: $carousel.siblings('.slider22__controls').find('.slide22__prev'),
+						nextArrow: $carousel.siblings('.slider22__controls').find('.slide22__next'),
+						infinite: false,							
+ //                       mobileFirst: true,
+						responsive: [{
+							breakpoint: 1297,
+							settings: "unslick",
+							},
+							{
+							breakpoint: 1296,
+								settings: {
+								slidesToShow: 3,
+								slidesToScroll: 3,
+								dots: false
+								}
+							},
+							{								
+							breakpoint: 853,
+							settings: {
+								slidesToShow: 2,
+								slidesToScroll: 2,
+								}
+							},
+							{
+							breakpoint: 656,
+							settings: {
+								slidesToShow: 1,
+								slidesToScroll: 1,	
+								}
+						}]
+					});						
+                }			
+
+        });
+	
+    });
+	
+	var mfpOpen = true;  
+	$('.video-popup').magnificPopup({
+	  type: 'iframe',
+	  gallery:{
+		enabled:true
+	  },	  
+	  preloader: true,	
+	  disableOn: function() {
+		return mfpOpen;
+	  },  
+	  iframe: {
+		 markup: '<div class="mfp-iframe-scaler">'+
+					'<div class="mfp-close"></div>'+
+					'<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+					'<div class="mfp-title dark-skin"></div>'+
+				  '</div>',
+		 patterns: {
+			youtube: {
+			  index: 'youtube.com/', 
+			  id: 'v=',
+			  src: '//www.youtube.com/embed/%id%?autoplay=1&rel=0', 
+			}
+		  },					  
+	  },
+  
+	  closeMarkup: '<button type="button" class="mfp-close" aria-label="Close"></button>',
+	  callbacks: {
+		markupParse: function(template, values, item) {
+			url = item.el.attr('data-program-url');
+			if (url) {
+				values.title = '<a class="read-more" href="' + url + '"><span>' + item.el.attr('data-program') + '</span><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-right"></use></svg></a>';
+			}
+		}
+	  }
+	  
+	  
+	});	
+
+	// Set the flag using slick’s events
+
+	$('.slick-slider').on('beforeChange', function(){
+	  mfpOpen = false;    
+	});  
+
+	$('.slick-slider').on('afterChange', function(){    
+	  mfpOpen = true;        
+	}); 
+	
+	 $(document).on('click', '.mfp-close', function (e) {
+         e.preventDefault();
+         $.magnificPopup.close();
+    });
+
+})(jQuery, window, document);

@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en"  xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Media Creation Lab (MCL) Pilot Feedback Form</title>
+<link rel="stylesheet" type="text/css" href="./data/form_143337/css/view.css" media="all" />
+<link rel="stylesheet" type="text/css" href="view.mobile.css" media="all" />
+<link rel="stylesheet" type="text/css" href="./data/themes/theme_43.css" media="all" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.12/effect.js"></script>
+<script type="text/javascript" src="view.js"></script>
+
+
+
+
+
+
+
+
+
+</head>
+<body id="main_body" class=" no_guidelines">
+	<div id="form_container" class="">
+	
+		<h1><a>Media Creation Lab (MCL) Pilot Feedback Form</a></h1>
+		<form id="form_143337" class="appnitro top_label"  method="post" data-highlightcolor="#FFF7C0" action="/machform/view.php">
+					<div class="form_description">
+			<h2>Media Creation Lab (MCL) Pilot Feedback Form</h2>
+			<p>The MCL at York University Libraries would love to hear from you! This form will capture your anonymous feedback. If you'd like to connect with us directly, please send your questions to <a href="mailto:diginit@yorku.ca">diginit@yorku.ca</a> and we'll be happy to help.</p>
+		</div>						
+			<ul >
+			
+			
+			
+					<li id="li_1"  >
+		<label class="description" for="element_1">Name of York University Faculty, Department, School, or Unit: <span id="required_1" class="required">*</span></label>
+		<div>
+			<input id="element_1" name="element_1"    class="element text large" type="text" value=""   />
+			 
+		</div> 
+		</li>		<li id="li_2"  >
+		<label class="description" for="element_2">Which equipment or particular expertise attracts you to the MCL? </label>
+		<div>
+			<textarea id="element_2" name="element_2"   class="element textarea medium" rows="8" cols="90" ></textarea>
+			 
+		</div> 
+		</li>		<li id="li_3"  >
+		<label class="description" for="element_3">Are you working on a specific project that involves/could involve the MCL? If so, could you tell us a bit about it, and how the MCL fits in/might fit in? </label>
+		<div>
+			<textarea id="element_3" name="element_3"   class="element textarea medium" rows="8" cols="90" ></textarea>
+			 
+		</div> 
+		</li>		<li id="li_4"  >
+		<label class="description" for="element_4">Do you have any suggestions for equipment or programs? Please share them here. </label>
+		<div>
+			<textarea id="element_4" name="element_4"   class="element textarea medium" rows="8" cols="90" ></textarea>
+			 
+		</div> 
+		</li>
+			
+			
+			
+					<li id="li_buttons" class="buttons">
+			    <input type="hidden" name="form_id" value="143337" />
+			    
+			    <input type="hidden" name="submit_form" value="1" />
+			    <input type="hidden" name="page_number" value="1" />
+				<input id="submit_form" class="button_text" type="submit" name="submit_form" value="Submit" />
+		</li>
+			</ul>
+		</form>	
+		<div id="footer">
+			Powered by <a href="https://www.machform.com" target="_blank">MachForm</a>
+		</div>
+	</div>
+	
+	</body>
+</html><script type="text/javascript">
+var inputs = document.getElementsByTagName('input');
+
+for (var i = 0; i < inputs.length; i++) {
+
+var ppy_id = inputs[i].id;
+
+//if(inputs[ppy_id].parentNode.className=='date_field'){
+//}else{
+  var ppyname_label = document.querySelector('label[for="'+ppy_id+'"]');
+  var required_id = ppy_id.replace(/element/g, 'required');
+  var required_class = 'required';
+
+  if( ppyname_label && ppyname_label.innerHTML.indexOf(required_class) > -1 && ppyname_label.innerHTML.startsWith('ppy')){
+    var required = '&nbsp;<span id="'+required_id+'" class="required">*</span>';
+    document.getElementById(ppy_id).readOnly = true;
+    //document.getElementById(ppy_id).disabled = true;
+  }else{
+    var required = '';
+  }
+
+if (ppyname_label) {
+
+if(ppyname_label.innerHTML.startsWith('ppyname')){
+ppyname_label.innerHTML = 'Name'+required;
+inputs[ppy_id].value = ' ';
+}
+
+if(ppyname_label.innerHTML.startsWith('ppyfirstname')){
+ppyname_label.innerHTML = 'First Name'+required;
+inputs[ppy_id].value = '';
+}
+
+if(ppyname_label.innerHTML.startsWith('ppylastname')){
+ppyname_label.innerHTML = 'Last Name/Surname'+required;
+inputs[ppy_id].value = '';
+}
+
+
+if(ppyname_label.innerHTML.startsWith('ppycyin')){
+ppyname_label.innerHTML = 'Student Number'+required;
+inputs[ppy_id].value = '';
+}
+
+if(ppyname_label.innerHTML.startsWith('ppystaffcyin')){
+ppyname_label.innerHTML = 'Employee Number'+required;
+inputs[ppy_id].value = '';
+}
+
+if(ppyname_label.innerHTML.startsWith('ppyemail')){
+ppyname_label.innerHTML = 'York E-mail'+required;
+inputs[ppy_id].value = '';
+}
+
+if(ppyname_label.innerHTML.startsWith('ppyuser')){
+ppyname_label.innerHTML = 'Passport York ID'+required;
+inputs[ppy_id].value = '';
+}
+
+if(ppyname_label.innerHTML.startsWith('ppytype')){
+ppyname_label.innerHTML = 'Type'+required;
+inputs[ppy_id].value = '';
+}
+
+}
+
+}
+
+//}
+</script>
+

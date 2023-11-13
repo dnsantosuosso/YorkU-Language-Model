@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7 " lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8 " lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html class="" lang="en-US">
+<!--<![endif]-->
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>York University Open Access Policy FAQ - Open Access and Open Data Steering Committee</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="https://www.library.yorku.ca/web/open/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="https://www.library.yorku.ca/web/open/wp-content/themes/York-Template-2014/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<style type="text/css">
+/* File:       uki_facebook_wall_feed.css
+   Author:     Fedil Grogan
+   Date:       01/03/2011
+   Copyright:  Fedil Grogan 2011
+   Purpose:
+   This is the styling sheet for the facebook feed. I tried to make it as
+   close to facebook as possible. Feel free to change as you wish.
+*/
+#facebook_status_box {
+  background: #ffffff;
+  color: #383838;
+  margin: 0px;
+  padding: 0px;
+  width: 250px;
+  height: 450px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+#facebook_status_box h2, #facebook_status_box h5 {
+  margin: 0px;
+  padding: 0px;
+}
+#facebook_status_box p {
+  margin: 0px;
+  padding: 5px 0px 0px 0px;
+  color: #383838;
+  line-height: 150%;
+}
+#facebook_status_box h2 {
+  padding: 10px 0px 10px 30px;
+  background: #F6F6F6;
+  letter-spacing: -.5px;
+  font-size: 1.4em;
+  color: #383838;
+}
+#facebook_status_box #facebook_canvas {
+  overflow: auto;
+  height: 409px;  
+}
+#facebook_status_box .fb_post {
+  margin: 10px 4px;
+  border: 1px solid #C4CDE0;
+  padding: 3px;
+  border-radius: 3px;
+}
+#facebook_status_box .fb_post h5 {
+  padding: 0px;
+  font-size: 11px;
+  margin-bottom: 2px;
+  line-height: 1;
+}
+#facebook_status_box .fb_post h5 a {
+  color: #0A7A98;
+  text-decoration: none;
+}
+#facebook_status_box .fb_post .fb_photoblock {
+  border-bottom: 1px solid #e6e6fa;
+  overflow: hidden;
+  padding: 7px;
+  margin: 0;
+}
+#facebook_status_box .fb_post .fb_photo {
+  float: left;
+  width: 32px;
+  margin-right: 2px;
+}
+#facebook_status_box .fb_post .fb_time {
+  color: #999999;
+}
+#facebook_status_box .fb_post .fb_time img {
+  padding-right: 5px;
+}
+#facebook_status_box .fb_post .fb_photo img {
+  border: none;
+  width: 32px;
+  height: 32px;
+}
+#facebook_status_box .fb_post .fb_photo_content {
+  font-size: 11px;
+  float: left;
+  width: 85%;
+}
+#facebook_status_box .fb_post .fb_msg {
+  clear: both;
+  padding: 7px;
+  overflow: hidden;
+}
+#facebook_status_box .fb_post .fb_msg p {
+  font-size: 12px;
+}
+#facebook_status_box .fb_link_post img {
+  margin: 0px 3px 0px 0px;
+  float: left;
+}
+#facebook_status_box .fb_link_post h6 {
+  font-size: .9em;
+  margin: 3px 0px 0px 0px;
+}
+#facebook_status_box .fb_link_post a {
+  color: #0A7A98;
+  text-decoration: none;
+}
+#facebook_status_box .fb_link_post a:hover {
+  text-decoration: underline;
+}
+#facebook_status_box .fb_link_post p {
+  font-size: .9em;
+  color: #999999;
+}
+#facebook_status_box .fb_link_post p.fb_link_caption {
+  margin: 0px;
+  margin-top: -5px;
+  color: #383838;
+}
+#facebook_status_box .fb_link_post p.fb_vid_length {
+  font-size: 10px;
+}
+#facebook_status_box .fb_link_post p.fb_desc {
+  font-size: 11px;
+}
+#facebook_status_box .fb_link_post p.fb_cap {
+  font-size: 11px;
+  color: #000000;
+}
+#facebook_status_box .fb_post img.fb_post_icon {
+  float: left;
+  margin: 2px;
+}
+#facebook_status_box .fb_post .fb_commLink {
+  font-size: 11px;
+  background: #EDEFF4;
+  padding: 3px 7px;
+  clear: both;
+}
+#facebook_status_box .fb_post .fb_commLink a {
+  color: #0A7A98;
+  text-decoration: none;
+}
+#facebook_status_box .fb_post .fb_msg .fb_commLink a:hover {
+  text-decoration: underline;
+}
+#facebook_status_box .fb_post .fb_likes {
+  float: right;
+  margin-left: 5px;
+}
+#facebook_status_box .fb_post .fb_likes_count {
+  float: right;
+}
+#facebook_status_box .fb_post .fb_likes {
+  background-image: url("https://www.facebook.com/rsrc.php/v2/yP/r/5XOCrBv7t-N.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: -244px -484px;
+  height: 15px;
+  width: 13px;
+  margin: 0 3px -3px 0;
+}
+#facebook_status_box .fb_msg p.fb_story {
+  font-size: 10px;
+  color: #999999;
+}
+#facebook_status_box .fb_post .fb_comments {
+  background-color: #EDEFF4;
+  font-size: 11px;
+  border-bottom: 1px solid #e6e6fa;
+  overflow: hidden;
+  padding: 7px;
+  margin: 0;
+}
+#facebook_status_box .fb_post .fb_comments p {
+  font-size: 11px;
+  margin: 0;
+  padding: 0 5px 0 0;
+  float: left;
+}
+#facebook_status_box .fb_post .fb_comments a {
+  color: #0A7A98;
+  text-decoration: none;
+}
+
+#facebook_status_box .fb_post .fb_comments .fb_comment_likes {
+  float: left;
+}
+
+</style>
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<link rel="alternate" hreflang="en-us" href="https://www.library.yorku.ca/web/open/open-access-at-york/faq/" />
+<link rel="alternate" hreflang="x-default" href="https://www.library.yorku.ca/web/open/open-access-at-york/faq/" />
+
+	<!-- This site is optimized with the Yoast SEO plugin v21.5 - https://yoast.com/wordpress/plugins/seo/ -->
+	<link rel="canonical" href="https://www.library.yorku.ca/web/open/open-access-at-york/faq/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="York University Open Access Policy FAQ - Open Access and Open Data Steering Committee" />
+	<meta property="og:description" content="This FAQ was developed as part of the Open Access Open Data Steering Committee, Open Access Policy &amp; Implementation Working Group’s efforts towards developing a policy on open dissemination of research at York University.  This FAQ reflects both general and specific questions arising from discussions with faculty and other stakeholders. What is “Open Access”? In [&hellip;]" />
+	<meta property="og:url" content="https://www.library.yorku.ca/web/open/open-access-at-york/faq/" />
+	<meta property="og:site_name" content="Open Access and Open Data Steering Committee" />
+	<meta property="article:modified_time" content="2020-04-07T22:12:19+00:00" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Est. reading time" />
+	<meta name="twitter:data1" content="9 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.library.yorku.ca/web/open/open-access-at-york/faq/","url":"https://www.library.yorku.ca/web/open/open-access-at-york/faq/","name":"York University Open Access Policy FAQ - Open Access and Open Data Steering Committee","isPartOf":{"@id":"https://www.library.yorku.ca/web/open/#website"},"datePublished":"2018-01-25T00:16:55+00:00","dateModified":"2020-04-07T22:12:19+00:00","breadcrumb":{"@id":"https://www.library.yorku.ca/web/open/open-access-at-york/faq/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.library.yorku.ca/web/open/open-access-at-york/faq/"]}]},{"@type":"BreadcrumbList","@id":"https://www.library.yorku.ca/web/open/open-access-at-york/faq/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.library.yorku.ca/web/open/"},{"@type":"ListItem","position":2,"name":"Open Access at York","item":"https://www.library.yorku.ca/web/open/open-access-at-york/"},{"@type":"ListItem","position":3,"name":"York University Open Access Policy FAQ"}]},{"@type":"WebSite","@id":"https://www.library.yorku.ca/web/open/#website","url":"https://www.library.yorku.ca/web/open/","name":"Open Access and Open Data Steering Committee","description":"","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.library.yorku.ca/web/open/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//blog.yorku.ca' />
+<link rel="alternate" type="application/rss+xml" title="Open Access and Open Data Steering Committee &raquo; Feed" href="https://www.library.yorku.ca/web/open/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Open Access and Open Data Steering Committee &raquo; Comments Feed" href="https://www.library.yorku.ca/web/open/comments/feed/" />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.library.yorku.ca\/web\/open\/wp-includes\/js\/wp-emoji-release.min.js"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wpfb-css' href='//www.library.yorku.ca/web/open/wp-content/plugins/wp-filebase/wp-filebase.css?t=1493745794&#038;ver=3.4.4' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css' href='https://www.library.yorku.ca/web/open/wp-content/themes/York-Template-2014/css/font-awesome.css' type='text/css' media='all' />
+<link rel='stylesheet' id='twentythirteen-style-css' href='https://www.library.yorku.ca/web/open/wp-content/themes/York-Template-2014/style.css' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentythirteen-ie-css' href='https://www.library.yorku.ca/web/open/wp-content/themes/York-Template-2014/ie.css' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='google-fonts-css' href='https://www.library.yorku.ca/blog.yorku.ca__yufonts/york_google_fonts.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css' href='https://www.library.yorku.ca/web/open/wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='yorku-blocks-style-css' href='https://www.library.yorku.ca/web/open/wp-content/plugins/yorkublocks/dist/style.css' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='exlibris_catalogue_search_box_css-css' href='https://www.library.yorku.ca/web/open/wp-content/plugins/exlibris-catalogue-search-box/css/exlibris-csb.css' type='text/css' media='all' />
+<link rel='stylesheet' id='page-list-style-css' href='https://www.library.yorku.ca/web/open/wp-content/plugins/page-list/css/page-list.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wpml-blocks-css' href='https://www.library.yorku.ca/web/open/wp-content/plugins/sitepress-multilingual-cms/dist/css/blocks/styles.css' type='text/css' media='all' />
+<link rel='stylesheet' id='social-widget-css' href='https://www.library.yorku.ca/web/open/wp-content/plugins/social-media-widget/social_widget.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-tabletools-css-css' href='https://www.library.yorku.ca/web/open/wp-content/plugins/tablepress-datatables-tabletools/css/TableTools.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='yuanimatedblockpatterns-style-css' href='https://www.library.yorku.ca/web/open/wp-content/plugins/yu-animated-blockpatterns/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='yublockpatterns-style-css' href='https://www.library.yorku.ca/web/open/wp-content/plugins/yu-blockpatterns-2.0/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wpml-legacy-dropdown-0-css' href='https://www.library.yorku.ca/web/open/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-dropdown/style.min.css' type='text/css' media='all' />
+<style id='wpml-legacy-dropdown-0-inline-css' type='text/css'>
+.wpml-ls-statics-shortcode_actions, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu, .wpml-ls-statics-shortcode_actions a {border-color:#cdcdcd;}.wpml-ls-statics-shortcode_actions a, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu a, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu a:link, .wpml-ls-statics-shortcode_actions li:not(.wpml-ls-current-language) .wpml-ls-link, .wpml-ls-statics-shortcode_actions li:not(.wpml-ls-current-language) .wpml-ls-link:link {color:#444444;background-color:#ffffff;}.wpml-ls-statics-shortcode_actions a, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu a:hover,.wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu a:focus, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu a:link:hover, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu a:link:focus {color:#000000;background-color:#eeeeee;}.wpml-ls-statics-shortcode_actions .wpml-ls-current-language > a {color:#444444;background-color:#ffffff;}.wpml-ls-statics-shortcode_actions .wpml-ls-current-language:hover>a, .wpml-ls-statics-shortcode_actions .wpml-ls-current-language>a:focus {color:#000000;background-color:#eeeeee;}
+</style>
+<link rel='stylesheet' id='tablepress-default-css' href='https://www.library.yorku.ca/web/open/wp-content/plugins/tablepress/css/build/default.css' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-ui-standard-css-css' href='https://www.library.yorku.ca/web/open/wp-content/plugins/squelch-tabs-and-accordions-shortcodes/css/jquery-ui/jquery-ui-1.11.4/smoothness/jquery-ui.theme.min.css' type='text/css' media='' />
+<link rel='stylesheet' id='squelch_taas-css' href='https://www.library.yorku.ca/web/open/wp-content/plugins/squelch-tabs-and-accordions-shortcodes/css/squelch-tabs-and-accordions.css' type='text/css' media='all' />
+<style id='kadence-blocks-global-variables-inline-css' type='text/css'>
+:root {--global-kb-font-size-sm:clamp(0.8rem, 0.73rem + 0.217vw, 0.9rem);--global-kb-font-size-md:clamp(1.1rem, 0.995rem + 0.326vw, 1.25rem);--global-kb-font-size-lg:clamp(1.75rem, 1.576rem + 0.543vw, 2rem);--global-kb-font-size-xl:clamp(2.25rem, 1.728rem + 1.63vw, 3rem);--global-kb-font-size-xxl:clamp(2.5rem, 1.456rem + 3.26vw, 4rem);--global-kb-font-size-xxxl:clamp(2.75rem, 0.489rem + 7.065vw, 6rem);}:root {--global-palette1: #3182CE;--global-palette2: #2B6CB0;--global-palette3: #1A202C;--global-palette4: #2D3748;--global-palette5: #4A5568;--global-palette6: #718096;--global-palette7: #EDF2F7;--global-palette8: #F7FAFC;--global-palette9: #ffffff;}
+</style>
+<link rel='stylesheet' id='__EPYT__style-css' href='https://www.library.yorku.ca/web/open/wp-content/plugins/youtube-embed-plus/styles/ytprefs.min.css' type='text/css' media='all' />
+<style id='__EPYT__style-inline-css' type='text/css'>
+
+                .epyt-gallery-thumb {
+                        width: 33.333%;
+                }
+                
+</style>
+<script type='text/javascript' src='https://www.library.yorku.ca/web/open/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://www.library.yorku.ca/web/open/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='https://www.library.yorku.ca/web/open/wp-content/plugins/yorkublocks/dist/script.js' id='yorku-blocks-script-js'></script>
+<script type='text/javascript' src='https://www.library.yorku.ca/web/open/wp-content/plugins/better-wordpress-showhide-elements/showhide.js' id='wp-showhide-js'></script>
+<script type='text/javascript' src='https://www.library.yorku.ca/web/open/wp-content/plugins/exlibris-catalogue-search-box/js/exlibris-csb.js' id='exlibris_catalogue_search_box_js-js'></script>
+<script type='text/javascript' src='https://www.library.yorku.ca/web/open/wp-content/plugins/yu-animated-blockpatterns/animate.js' id='animate_js-js'></script>
+<script type='text/javascript' src='https://www.library.yorku.ca/web/open/wp-content/plugins/yu-animated-blockpatterns/animategallery.js' id='animategallery_js-js'></script>
+<script type='text/javascript' src='https://www.library.yorku.ca/web/open/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-dropdown/script.min.js' id='wpml-legacy-dropdown-0-js'></script>
+<script type='text/javascript' id='__ytprefs__-js-extra'>
+/* <![CDATA[ */
+var _EPYT_ = {"ajaxurl":"https:\/\/www.library.yorku.ca\/web\/open\/wp-admin\/admin-ajax.php","security":"f682263747","gallery_scrolloffset":"20","eppathtoscripts":"https:\/\/www.library.yorku.ca\/web\/open\/wp-content\/plugins\/youtube-embed-plus\/scripts\/","eppath":"https:\/\/www.library.yorku.ca\/web\/open\/wp-content\/plugins\/youtube-embed-plus\/","epresponsiveselector":"[\"iframe.__youtube_prefs_widget__\"]","epdovol":"1","version":"14.2","evselector":"iframe.__youtube_prefs__[src], iframe[src*=\"youtube.com\/embed\/\"], iframe[src*=\"youtube-nocookie.com\/embed\/\"]","ajax_compat":"","maxres_facade":"eager","ytapi_load":"light","pause_others":"","stopMobileBuffer":"1","facade_mode":"","not_live_on_channel":"","vi_active":"","vi_js_posttypes":[]};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.library.yorku.ca/web/open/wp-content/plugins/youtube-embed-plus/scripts/ytprefs.min.js' id='__ytprefs__-js'></script>
+<link rel="https://api.w.org/" href="https://www.library.yorku.ca/web/open/wp-json/" /><link rel="alternate" type="application/json" href="https://www.library.yorku.ca/web/open/wp-json/wp/v2/pages/379" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.library.yorku.ca/web/open/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.3.2" />
+<link rel='shortlink' href='https://www.library.yorku.ca/web/open/?p=379' />
+<link rel="alternate" type="application/json+oembed" href="https://www.library.yorku.ca/web/open/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.library.yorku.ca%2Fweb%2Fopen%2Fopen-access-at-york%2Ffaq%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.library.yorku.ca/web/open/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.library.yorku.ca%2Fweb%2Fopen%2Fopen-access-at-york%2Ffaq%2F&#038;format=xml" />
+<meta name="generator" content="WPML ver:4.6.6 stt:1,4;" />
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-54028600-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</head>
+<body class="page-template-default page page-id-379 page-child parent-pageid-374 single-author sidebar horizontal_nav">
+<div id="page" class="hfeed site">
+<header id="masthead" role="banner"><div class="yeb11skipnav"><a href="#content">Skip to main content</a><a href="#navbar">Skip to local navigation</a></div>
+
+<!-- 2011 YORK EXTERNAL BANNER - html code -->
+<div id="yeb11banner">
+<div class="york-logo-holder"><a href="http://yorku.ca"><img class="yorklogo" src="https://www.library.yorku.ca/www.yorku.ca_yorkweb/demos/test-header/images/yorku-logo-rgb-240-122.jpg" border="0" alt="York University" /></a></div
+>
+
+<button class="button quick-links" id="ql-button">Quick Links <i class="fa fa-caret-up"></i></button>
+<div id="quick-links-container" >  
+
+<div class="mobile-quicklinks-btns">
+    <div class="col4"><button onclick="javascript:location.href='http://mocha.yorku.ca/atlas/servlet/atlas'" class="header-btn"><i class="fa fa-binoculars"></i> Directory</button></div>
+        <div class="col4"><button onclick="javascript:location.href='http://maps.info.yorku.ca/'" class="header-btn"><i class="fa fa-map-marker"></i> Campus Maps</button></div>
+       <div class="clear"></div>        
+        <ul class="menu">
+       <div class="col4">  <li><a href="http://futurestudents.yorku.ca/"><span data-title="Future Students">Future Students</span></a></li>
+         <li class="mobile-quicklinks-cs"><a href="http://www.yorku.ca/yorkweb/cs.htm"><span data-title="Current Students">Current Students</span></a></li></div>
+         <div class="col4"><li><a href="http://alumniandfriends.yorku.ca"><span data-title="Alumni & Friends">Alumni & Friends</span></a></li></div>
+       </ul>
+
+       <div class="clear"></div>
+    </div>
+  
+
+<div class="col4">
+<div class="accessible"><h1>Quick Links Menus</h1></div>
+<h2>York U <span class="accessible">Organization Menu</span></h2>
+   <ul>
+    <li><a  href="http://about.yorku.ca/">About York U</a></li> 
+    <li><a  href="http://president.yorku.ca/">President's Message</a></li> 
+    <li><a href="http://www.yorku.ca/research/">Research</a> </li>
+    <li><a  href="http://www.glendon.yorku.ca/">Glendon Campus</a></li>
+     <li><a href="http://about.yorku.ca/careers/">Careers</a></li>
+   <li><a href="http://about.yorku.ca/our-faculties/">Faculties</a></li>
+        <li><a href="http://about.yorku.ca/organization/">York U Organization</a></li>
+<li><a href="http://campuslife.yorku.ca/">Campus Life</a></li>    
+         </ul>
+    </div>
+    
+    <div class="col4">
+    <h2>Students <span class="accessible">Menu</span></h2>
+    <ul> 
+    <li><a  href="http://futurestudents.yorku.ca/programsearch/">Programs of Study</a></li>
+     <li><a  href="http://futurestudents.yorku.ca/requirements/apply">Undergraduate Admissions</a></li>
+    <li><a href="http://futurestudents.yorku.ca/graduate/">Graduate Admissions</a></li>        
+    <li><a href="http://futurestudents.yorku.ca/continuing/">Continuing Education</a></li>   
+    <li><a href="http://futurestudents.yorku.ca/tour/">Book a Tour</a></li>  
+    <li><a href="https://www.library.yorku.ca/">Libraries</a></li>    
+    <li><a href="http://yorkinternational.yorku.ca/">York International</a></li>
+      <li><a href="https://mymail.yorku.ca/">MyMail</a></li>
+    </ul>
+    </div>
+    <div class="mobile-header-clear"></div>
+    
+     <div class="col4">
+     <h2>Faculty &amp; Staff</h2>
+      <ul>
+        <li><a href="http://facultyandstaff.yorku.ca/">Faculty &amp; Staff Home</a></li>
+        <li><a href="https://yulink.yorku.ca/">YU Link</a></li>
+        <li><a href="http://webmail.notes.yorku.ca/">Lotus Notes</a></li>
+        <li><a href="http://mymail.yorku.ca/">MyMail</a></li>
+    </ul>
+     <div class="desktop-quicklinks-btns"><button onclick="javascript:location.href='http://mocha.yorku.ca/atlas/servlet/atlas'" class="header-btn"><i class="fa fa-binoculars"></i> Directory</button>
+        <button onclick="javascript:location.href='http://maps.info.yorku.ca/'" class="header-btn"><i class="fa fa-map-marker"></i> Campus Maps</button>
+    </div>
+  
+    </div>
+     <div class="col4">
+    <h2>Community <span class="accessible">Menu</span></h2>
+    <ul>
+    <li><a href="http://family.yorku.ca/">Parents &amp; Family</a></li>
+    <li><a href="http://futurestudents.yorku.ca/counsellors/">Counsellors &amp; Teachers</a> </li>
+    <li><a href="http://news.yorku.ca/">Media</a></li>
+    <li><a href="http://advancement.yorku.ca/">Giving to York</a></li>
+     <li><a href="http://www.yorkulions.ca/">York U Lions</a></li> 
+      <li><a href="http://accessibilityhub.info.yorku.ca/">Accessibility</a></li> 
+    <li><a href="http://site.info.yorku.ca/weather-status/">Weather Status</a></li> 
+    </ul>
+    </div><div class="clear"></div>
+</div>
+<div class="greyed-page"></div>
+
+<div id="yorklinks" class="nav-collapse">
+     <div id="yorklinks-container">
+     <div class="col4">
+
+     <form id="main-search" class="main-search" method="get" action="https://www.library.yorku.ca/search2.info.yorku.ca">
+     <fieldset class="header-search">
+     <legend class="accessible">Global Search</legend>
+     <label for="yeb13searchfield" class="accessible">search box</label>
+        <input class="header-search" type="search" name="q" maxlength="255" id="yeb13searchfield" value="Search yorku.ca"  onclick="if (!this.cleared) { this.cleared = true; this.value = ''; }" />
+        <input type="hidden" name="client" value="External" />
+        <input type="hidden" name="proxystylesheet" value="External" />
+        <input type="hidden" name="site" value="default_collection" />
+        <input type="hidden" name="output" value="xml_no_dtd" />
+        </fieldset>
+        <button type="submit" class="search-button"><div class="icon-search icon-medium"></div><span class="accessible">search button</span></button>
+           <button type="button" class="search-button2" onclick="window.location.href='#mobile-search'"><div class="icon-search icon-medium"></div><span class="accessible">search button</span></button>
+
+
+    </form>
+
+     <div class="menu2-new">
+        <ul class="menu">
+         <li><a class="roll-link ie1" href="http://futurestudents.yorku.ca/"><span data-title="Future Students">Future Students</span></a></li>
+         <li><a class="roll-link ie2" href="http://www.yorku.ca/yorkweb/cs.htm"><span data-title="Current Students">Current Students</span></a></li>
+         <li><a class="roll-link ie3" href="http://alumniandfriends.yorku.ca"><span data-title="Alumni & Friends">Alumni & Friends</span></a></li>
+       </ul>
+     </div><div class="clear"></div>
+        </div>
+
+  </div>
+</div>
+
+</div>
+<!-- yeb11banner -->
+<!-- end of 2014 YORK EXTERNAL BANNER - html code 3-7-13 -->
+
+
+     <div class="short-banner"><hgroup><a href=""><h1 class="site-title">Open Access and Open Data Steering Committee</h1></a>
+          </hgroup></div>
+             <div id="navbar" class="navbar">
+        <nav id="site-navigation" class="navigation main-navigation horizontal-menu" role="navigation">
+            <span tabindex="0" class="menu-toggle">Menu</span>
+            <div class="menu-open-access-and-open-data-steering-committee-container"><ul id="yu-smartmenu" class="sm sm-blue nav-menu row"><li id="menu-item-6" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-6"><a href="https://www.library.yorku.ca/web/open">Welcome</a></li>
+<li id="menu-item-67" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-67"><a href="https://www.library.yorku.ca/web/open/governance/">Governance</a>
+<ul class="sub-menu">
+	<li id="menu-item-68" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68"><a href="https://www.library.yorku.ca/web/open/governance/terms/">Open Access and Open Data Steering Committee</a></li>
+	<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a href="https://www.library.yorku.ca/web/open/governance/oawg/">Open Access Policy and Implementation Working Group</a></li>
+</ul>
+</li>
+<li id="menu-item-422" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-422"><a href="https://www.library.yorku.ca/web/open/open-access-at-york/open-access-policy/">Open Access at York</a>
+<ul class="sub-menu">
+	<li id="menu-item-389" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-389"><a href="https://www.library.yorku.ca/web/open/open-access-at-york/open-access-policy/">Open Access Policy</a></li>
+	<li id="menu-item-388" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-379 current_page_item menu-item-388"><a href="https://www.library.yorku.ca/web/open/open-access-at-york/faq/" aria-current="page">York University Open Access Policy FAQ</a></li>
+	<li id="menu-item-387" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-387"><a href="https://www.library.yorku.ca/web/open/open-access-at-york/yorkspace/">YorkSpace FAQ</a></li>
+	<li id="menu-item-386" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-386"><a href="https://www.library.yorku.ca/web/open/open-access-at-york/osgoode-digital-commons/">Osgoode Digital Commons FAQ</a></li>
+</ul>
+</li>
+<li id="menu-item-709" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-709"><a href="https://www.library.yorku.ca/web/open/research-data-management/research-data-management-at-yorku/">Research Data Management at York</a>
+<ul class="sub-menu">
+	<li id="menu-item-588" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-588"><a href="https://www.library.yorku.ca/web/open/research-data-management/">Research Data Management</a></li>
+	<li id="menu-item-629" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-629"><a href="https://www.library.yorku.ca/web/open/research-data-management/institutional-data-management-strategy/">Institutional Data Management Strategy</a></li>
+	<li id="menu-item-704" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-704"><a href="https://www.library.yorku.ca/web/open/faq-institutional-rdm-strategy/">FAQ for the York University Institutional RDM Strategy</a></li>
+</ul>
+</li>
+<li id="menu-item-76" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-76"><a href="https://www.library.yorku.ca/web/open/resources/">Resources</a></li>
+</ul></div>            
+        </nav><!-- #site-navigation -->
+        </div><!-- #navbar -->
+          <!--Slideshow Widget-->
+</header><!-- #masthead -->
+<div id="main" class="site-main">
+
+<div id="primary" class="content-area">
+<div id="content" class="site-content" role="main">
+   <article id="post-379" class="post-379 page type-page status-publish hentry">
+   <header class="entry-header">
+   <h1 class="entry-title">York University Open Access Policy FAQ</h1>
+</header><!-- .entry-header -->
+<div class="entry-content">
+<p>This FAQ was developed as part of the Open Access Open Data Steering Committee, Open Access Policy &amp; Implementation Working Group’s efforts towards developing a policy on open dissemination of research at York University.  This FAQ reflects both general and specific questions arising from discussions with faculty and other stakeholders.</p>
+<h5><b>What is “Open Access”?</b></h5>
+<p><span style="font-weight: 400">In accordance with the </span><a href="http://www.budapestopenaccessinitiative.org/boai-10-recommendations"><span style="font-weight: 400">Budapest Open Access Initiative</span></a><span style="font-weight: 400">, “open access” to research scholarship is understood to mean “its free availability on the public internet, permitting any users to read, download,  copy, distribute, print, search, or link to the full texts of these articles, crawl them for indexing, pass them as data to software, or use them for any other lawful purpose, without financial, legal, or technical barriers other than those inseparable from gaining access to the internet itself. The only constraint on reproduction and distribution, and the only role for copyright in this domain, should be to give authors control over the integrity of their work and the right to be properly acknowledged and cited.”</span></p>
+<h5><b>What is an Open Access Policy?</b></h5>
+<p><span style="font-weight: 400">An Open Access Policy sets forth a commitment from York University, its faculty and its affiliated researchers, to disseminate the fruits of research and scholarship as widely as possible in alignment with the principles of Open Access (OA) and the guidelines of the </span><a href="http://www.budapestopenaccessinitiative.org"><span style="font-weight: 400">Budapest Open Access Initiative</span></a><span style="font-weight: 400">.</span></p>
+<h5><b>Why should we have a policy on open access?</b></h5>
+<p><span style="font-weight: 400">The enduring goal of a university is to create and disseminate knowledge. York is committed to disseminating the research performed at the university in ways that make it widely accessible, while protecting the intellectual property rights of its authors. Changes in technology offer opportunities for new forms of both creation and dissemination of scholarship through Open Access (OA).  The act of posting increases visibility of and access to research.  Open Access also offers opportunities for York University to fulfill its mission of creating and preserving knowledge in a way that opens disciplinary boundaries and facilitates sharing knowledge more freely with the world.  </span></p>
+<h5><b>How will it work?</b></h5>
+<p><span style="font-weight: 400">The policy establishes a broad baseline commitment, on the part of York University and its researchers, to making scholarship freely available through an open access repository. A number of open access repositories are already used by many York researchers. The policy establishes the expectation that York University researchers will submit their scholarly articles to the open digital repository at York University (</span><a href="https://yorkspace.library.yorku.ca/xmlui/"><span style="font-weight: 400">Yorkspace</span></a><span style="font-weight: 400">, </span><a href="http://digitalcommons.osgoode.yorku.ca/"><span style="font-weight: 400">Osgoode Digital Commons</span></a><span style="font-weight: 400">) or its equivalent.  The policy also reflects a commitment on the part of the University to invest in and support its institutional repository.  </span></p>
+<p>Articles should be submitted to the repository as early as possible, ideally between the date of acceptance and the date of publication. If applicable, an embargo date can be set to meet publisher requirements.  Researchers are asked  to submit revised versions of manuscripts following peer review and post-publication, unless prohibited by the publisher, so that the repository contains the final version of the published article. Waivers can be obtained by application to the Provost.</p>
+<h5><b>Is this policy unique?</b></h5>
+<p><span style="font-weight: 400">No. Faculties at over 117 other leading institutions have adopted similar policies.  Examples include: Harvard U., Duke U., Stanford U., MIT, University College London and the University of Helsinki.  Canadian institutions with Open Access policies include University of Ottawa, Concordia U., Windsor University, Simon Fraser University. The proposed policy for York was influenced by these policies, but was shaped to reflect the unique characteristics of our institution.  Global institutional Open Access policies can be accessed via the</span><a href="https://roarmap.eprints.org/"><span style="font-weight: 400"> ROARMAP database</span></a><span style="font-weight: 400">. ROARMAP also makes available </span><a href="http://roarmap.eprints.org/dataviz2.html"><span style="font-weight: 400">data visualizations</span></a><span style="font-weight: 400"> to illustrate global adoption.</span></p>
+<h5><b>Do funding agencies require open research dissemination?</b></h5>
+<p><span style="font-weight: 400">Yes, many research funders require or strongly support such efforts. For instance, the </span><a href="http://www.science.gc.ca/eic/site/063.nsf/eng/h_F6765465.html?OpenDocument"><span style="font-weight: 400">Tri-agency Open Access Policy</span></a><span style="font-weight: 400"> now requires that any article derived from their grant-funded research must be deposited in an open access repository such as PubMed Central or an institution’s open access repository such as Yorkspace. Other funding agencies worldwide have similar mandates, such as the US National Institutes of Health (</span><a href="https://publicaccess.nih.gov/faq.htm#753"><span style="font-weight: 400">NIH</span></a><span style="font-weight: 400">), the Australian Research Council (</span><a href="http://www.arc.gov.au/arc-open-access-policy"><span style="font-weight: 400">ARC</span></a><span style="font-weight: 400">) , and all four UK higher education funding bodies (e.g. </span><a href="http://www.hefce.ac.uk/rsrch/oa/"><span style="font-weight: 400">HEFCE</span></a><span style="font-weight: 400">).</span></p>
+<p><span style="font-weight: 400">A list of the many institutions and funders that already have similar policies can be found here:</span><a href="http://www.eprints.org/openaccess/policysignup/%CA"> <span style="font-weight: 400">http://www.opendoar.org/</span></a></p>
+<h5><b>What kinds of works would this policy apply to?  </b></h5>
+<p><span style="font-weight: 400">The policy applies to “scholarship,” which is typically presented in peer-reviewed scholarly articles, book chapters, and conference proceedings. Many of the written products of faculty effort may not fall into this category: e.g. books and edited collections, newspaper and magazine articles, blogs and social media commentary, fiction and poetry, performances, artworks, ephemeral writings, lecture notes, lecture videos, software, or other such works. The York University policy does not and is not meant to address these other classes of work. However, faculty are encouraged to enhance the visibility and preservation of all research-related outputs and the democratization of knowledge by making their work freely available online.</span></p>
+<h5><b>How does this policy affect the freedom of researchers to publish their work in the journal of their choosing?</b></h5>
+<p><span style="font-weight: 400">It doesn’t.  This policy fully respects researcher freedom to submit new work to the journals of their choice. However, the policy reminds researchers that they need not work as authors, editors, or referees for publishers who act against their interests (in particular, their interest in having their research read). Moreover, the policy signals a commitment by the university to support and encourage faculty and researchers electing to publish their work in open access journals, or seeking permission to deposit published articles in its institutional repositories. </span></p>
+<h5><b>How does the Policy impact me?</b></h5>
+<p><span style="font-weight: 400">The Policy does not impose any new obligations upon York University faculty and researchers. Rather the Policy allows York University faculty and researchers to choose to submit their scholarly articles to the open digital repository at York University or an equivalent repository.  Faculty and researchers may choose to allow open access to their submitted articles right away, or may elect to embargo their articles, limiting access for a specified time period.</span></p>
+<p><span style="font-weight: 400">It is recognized that an embargo period or other restrictions may be imposed by policies of the publisher of the scholarly article. The policy is also intended to offer institutional support and leverage to authors seeking to negotiate better contractual terms (i.e. terms that allow open access online archiving) with publishers. </span></p>
+<h5><b>How does this policy affect tenure and promotion?</b></h5>
+<p><span style="font-weight: 400">It doesn’t.  Faculty still choose where and when to publish.  Faculty may self-archive their articles in an open access repository of choice. The policy does not require deposit in the institutional repository in order for research articles to be considered for promotion, tenure, or other forms of internal assessment and review. (Note that, in this respect, the policy stops short of the Budapest Open Access Initiative guidelines). </span></p>
+<h5><b>Would the policy apply to articles I wrote before the policy was adopted?  </b></h5>
+<p><span style="font-weight: 400">The policy applies to new articles.  If you wish to deposit articles written prior to the adoption of the policy, you are encouraged to do so. Furthermore, the policy applies only to articles written while a faculty member at, or researcher affiliated with, York University. </span></p>
+<h5><b>Would the policy apply to co-authored papers?</b></h5>
+<p><span style="font-weight: 400">Yes, the policy applies to co-authored papers where one or more authors is a York faculty member or researcher. Joint authors are those who participate as authors in the preparation of the article with the intention that their contributions be merged into inseparable or interdependent parts of the whole.  They share ownership of copyright in the resulting work and, in Canada, must act in concert or obtain permission from all co-owners before exercising an exclusive right. As such, co-authors are not advised to deposit an article in any repository without the knowledge and consent of the co-authors. </span></p>
+<h5><b>What if my article includes images or other works for which I have permission to publish only in print, not in an online repository?</b></h5>
+<p><span style="font-weight: 400">If the copyright owner withheld permission to publish the image except in a print journal,  that image ought not to be included in Yorkspace/Osgoode Digital Commons.  If appropriate, the article could be submitted without that image or work.  It is advisable for faculty and researchers to obtain permissions from copyright owners that expressly permit the online distribution of the final article. However, where permission was obtained to include the image or other work without any such specified restrictions as to the mode or manner of distribution of the final article, then the author of the article should proceed to deposit the article, including the authorized image or work, in an online repository as he or she otherwise would. </span></p>
+<h5><b>What version of my article gets deposited?  What about version control?</b></h5>
+<p><span style="font-weight: 400">Faculty and researchers are free to choose which version of the article to deposit. It could be a pre-print (prior to peer review), a post-print (after peer review but not publisher’s copy), or the final published version.  As a general rule and subject to the relevant publication agreement, it is preferable to publish the most recent or final version of a published article (and to negotiate the terms of the publication agreement accordingly). Both Yorkspace and Osgoode Digital Commons accepts the latest version possible under the publisher’s contract (as supplied by  the author), and will, wherever possible, provide a link to and citation information for the published version, to make clear that the published version is the preferred version and that the YorkSpace/Osgoode Digital Commons copy is a secondary copy for archival purposes. The presence of the secondary version will provide access to readers who do not have access to the final published version, and will provide an additional opportunity to discover the article for those who do.  </span></p>
+<h5><b>Will this policy harm the journal publishers?</b></h5>
+<p><span style="font-weight: 400">There is no evidence that it will.  The policy allows each author to decide where to publish his or her work and how to accommodate the requirements of a chosen publisher.  Many publishers already permit authors to archive the final author’s manuscript in an institutional repository (see</span><a href="http://www.sherpa.ac.uk/romeo/"> <span style="font-weight: 400">Sherpa Romeo</span></a><span style="font-weight: 400"> site for a listing of publishers that allow deposit of articles in an institutional repository like Yorkspace or Osgoode Digital Commons ). If a publisher wants the release of an open access copy of the author’s final manuscript delayed for 6 months or a year so as not to undermine subscription revenue, the York University policy can accommodate that embargo.  Finally, if a publisher absolutely objects to the license granted to Yorkspace or another repository, the author can obtain a waiver.  </span></p>
+<p>When choosing to archive articles in Yorkspace or another repository, authors will grant the repository a non-exclusive license that permits the article to be made available and distributed as Open Access. No rights are transferred to the repository. Either the author(s), or the journal publishers to whom  copyright has been transferred in a Publisher Agreement, remain the <span style="font-weight: 400">copyright owner(s) and can continue to exercise exclusive rights as they otherwise would.</span></p>
+<h5><b>Who can answer questions that are not on this list?<br />
+</b></h5>
+<p><span style="font-weight: 400">You can send queries to <a href="mailto:opendeposit@yorku.ca">opendeposit@yorku.ca</a></span></p>
+<div style="clear:both;"></div></div><!-- .entry-content -->
+<footer class="entry-meta">
+</footer><!-- .entry-meta -->
+</article><!-- #post -->
+
+<div id="comments" class="comments-area">
+
+	
+	
+</div><!-- #comments -->
+</div><!-- #content -->
+</div><!-- #primary -->
+<div id="tertiary" class="sidebar-container" role="complementary">
+<div class="sidebar-inner">
+<div class="widget-area">
+   </div><!-- .widget-area -->
+</div><!-- .sidebar-inner -->
+</div><!-- #tertiary -->
+
+		</div><!-- #main -->
+                <div style="clear:both"></div>
+		<footer id="colophon" class="site-footer" role="contentinfo">
+			
+  <div class="site-info">
+                                                </div><!-- .site-info -->
+		</footer><!-- #colophon -->
+	<div class="york-global-footer-links"><ul>
+	<li><a href="http://site.info.yorku.ca/site-index/">Site Index</a></li>
+	<li><a href="http://site.info.yorku.ca/privacy-legal/">Privacy &amp; Legal</a></li>
+	<li><a href="http://site.info.yorku.ca/">Contact York University</a></li>
+	</ul></div>	
+
+
+<form id="mobile-search" class="main-search" method="get" action=" https://www.library.yorku.ca/search2.info.yorku.ca ">
+     <fieldset class="header-search">
+     <legend class="accessible">Global Search</legend>
+     <label for="yeb13searchfield2" class="accessible">search box</label>
+<input class="header-search" type="search" name="q" maxlength="255" id="yeb13searchfield2" value="Search yorku.ca "  onclick="if (!this.cleared) { this.cleared = true; this.value = ''; }" />
+  <input type="hidden" name="client" value="External" />
+  <input type="hidden" name="proxystylesheet" value="External" />
+  <input type="hidden" name="site" value="default_collection" />
+  <input type="hidden" name="output" value="xml_no_dtd" />
+  </fieldset>
+        <button type="submit" class="search-button"><div class="icon-search icon-medium"></div><span class="accessible">search button</span></button>
+        <button type="submit" class="search-button2"><div class="icon-search icon-medium"></div><span class="accessible">search button</span></button>
+ </form>
+
+</div>
+
+<!-- #page -->
+	<script type='text/javascript' src='https://www.library.yorku.ca/web/open/wp-content/themes/York-Template-2014/js/functions.js' id='twentythirteen-script-js'></script>
+<script type='text/javascript' src='https://www.library.yorku.ca/web/open/wp-includes/js/jquery/ui/core.min.js' id='jquery-ui-core-js'></script>
+<script type='text/javascript' src='https://www.library.yorku.ca/web/open/wp-includes/js/jquery/ui/accordion.min.js' id='jquery-ui-accordion-js'></script>
+<script type='text/javascript' src='https://www.library.yorku.ca/web/open/wp-includes/js/jquery/ui/tabs.min.js' id='jquery-ui-tabs-js'></script>
+<script type='text/javascript' id='squelch_taas-js-extra'>
+/* <![CDATA[ */
+var squelch_taas_options = {"disable_magic_url":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.library.yorku.ca/web/open/wp-content/plugins/squelch-tabs-and-accordions-shortcodes/js/squelch-tabs-and-accordions.js' id='squelch_taas-js'></script>
+<script type='text/javascript' src='https://www.library.yorku.ca/web/open/wp-content/plugins/youtube-embed-plus/scripts/fitvids.min.js' id='__ytprefsfitvids__-js'></script>
+
+
+</body>
+</html>

@@ -1,0 +1,740 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<title>Creative Technologies &#8211; AMPD</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='stylesheet' id='yu-datatable-css-css'  href='https://ampd.yorku.ca/wp-content/plugins/yu-tables-responsive/DataTables-1.10.7/media/css/jquery.dataTables.css' media='all' />
+<link rel='stylesheet' id='yu-datatable-responsive-css-css'  href='https://ampd.yorku.ca/wp-content/plugins/yu-tables-responsive/dataTables.responsive.css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://ampd.yorku.ca/wp-includes/css/dist/block-library/style.min.css' media='all' />
+<style id='wp-block-library-theme-inline-css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-code>code{font-family:Menlo,Consolas,monaco,monospace;color:#1e1e1e;padding:.8em 1em;border:1px solid #ddd;border-radius:4px}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-pullquote{border-top:4px solid;border-bottom:4px solid;margin-bottom:1.75em;color:currentColor}.wp-block-pullquote__citation,.wp-block-pullquote cite,.wp-block-pullquote footer{color:currentColor;text-transform:uppercase;font-size:.8125em;font-style:normal}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;position:relative;font-style:normal}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-group:where(.has-background){padding:1.25em 2.375em}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto;opacity:.4}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{padding:.5em;border:1px solid;word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-template-part.has-background{padding:1.25em 2.375em;margin-top:0;margin-bottom:0}
+</style>
+<link rel='stylesheet' id='mediaelement-css'  href='https://ampd.yorku.ca/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css'  href='https://ampd.yorku.ca/wp-includes/js/mediaelement/wp-mediaelement.min.css' media='all' />
+<link rel='stylesheet' id='view_editor_gutenberg_frontend_assets-css'  href='https://ampd.yorku.ca/wp-content/plugins/wp-views/public/css/views-frontend.css' media='all' />
+<style id='view_editor_gutenberg_frontend_assets-inline-css'>
+.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item a {color: #444;background-color: #fff;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:focus {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #eee;}
+.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item a {color: #444;background-color: #fff;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:focus {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item a {color: #444;background-color: #eeeeee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey a:focus {color: #000;background-color: #e5e5e5;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #e5e5e5;}
+.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item a {color: #444;background-color: #fff;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:focus {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item a {color: #444;background-color: #eeeeee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey a:focus {color: #000;background-color: #e5e5e5;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #e5e5e5;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue .wpv-sort-list-item {border-color: #0099cc;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue .wpv-sort-list-item a {color: #444;background-color: #cbddeb;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue a:focus {color: #000;background-color: #95bedd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #95bedd;}
+</style>
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #FFF;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--primary: #0073a8;--wp--preset--color--secondary: #005075;--wp--preset--color--dark-gray: #111;--wp--preset--color--light-gray: #767676;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 19.5px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36.5px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-size--normal: 22px;--wp--preset--font-size--huge: 49.5px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel='stylesheet' id='twentynineteen-style-css'  href='https://ampd.yorku.ca/wp-content/themes/AMPD2020/style.css' media='all' />
+<link rel='stylesheet' id='twentynineteen-print-style-css'  href='https://ampd.yorku.ca/wp-content/themes/twentynineteen/print.css' media='print' />
+<script type='text/javascript' src='https://ampd.yorku.ca/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://ampd.yorku.ca/wp-content/plugins/wp-views/vendor/toolset/common-es/public/toolset-common-es-frontend.js' id='toolset-common-es-frontend-js'></script>
+<script type='text/javascript' src='https://ampd.yorku.ca/wp-content/plugins/yu-tables-responsive/DataTables-1.10.7/media/js/jquery.dataTables.min.js' id='datatable-js-js'></script>
+<script type='text/javascript' src='https://ampd.yorku.ca/wp-content/plugins/yu-tables-responsive/dataTables.responsive.js' id='yu-datatable-js-js'></script>
+<script type='text/javascript' src='https://ampd.yorku.ca/wp-content/plugins/yu-tables-responsive/jquery.dataTables.columnFilter.js' id='yu-datatable-column-filter-js-js'></script>
+<link rel="canonical" href="https://ampd.yorku.ca/creative-technologies/" />
+ <script> window.addEventListener("load",function(){ var c={script:false,link:false}; function ls(s) { if(!['script','link'].includes(s)||c[s]){return;}c[s]=true; var d=document,f=d.getElementsByTagName(s)[0],j=d.createElement(s); if(s==='script'){j.async=true;j.src='https://ampd.yorku.ca/wp-content/plugins/wp-views/vendor/toolset/blocks/public/js/frontend.js?v=1.6.4';}else{ j.rel='stylesheet';j.href='https://ampd.yorku.ca/wp-content/plugins/wp-views/vendor/toolset/blocks/public/css/style.css?v=1.6.4';} f.parentNode.insertBefore(j, f); }; function ex(){ls('script');ls('link')} window.addEventListener("scroll", ex, {once: true}); if (('IntersectionObserver' in window) && ('IntersectionObserverEntry' in window) && ('intersectionRatio' in window.IntersectionObserverEntry.prototype)) { var i = 0, fb = document.querySelectorAll("[class^='tb-']"), o = new IntersectionObserver(es => { es.forEach(e => { o.unobserve(e.target); if (e.intersectionRatio > 0) { ex();o.disconnect();}else{ i++;if(fb.length>i){o.observe(fb[i])}} }) }); if (fb.length) { o.observe(fb[i]) } } }) </script>
+	<noscript>
+		<link rel="stylesheet" href="https://ampd.yorku.ca/wp-content/plugins/wp-views/vendor/toolset/blocks/public/css/style.css">
+	</noscript>		<style id="wp-custom-css">
+			.main-navigation{display:none !important;}
+.second-nav dl, ol, ul{margin-bottom: 0rem !important;}		</style>
+		<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Creative Technologies" />
+    <meta name="keywords" content="AMPD, YorkU, Creative, Technologies">
+
+    <!--nosociallink-->
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="google-site-verification" content="V7lzTsXaX9vzrJk2VXrjBH2eDX6sOsg_HmmSxY0S8uE" />
+
+<link rel="profile" href="https://gmpg.org/xfn/11" />
+<link rel="shortcut icon" href="/wp-content/themes/AMPD-2/img/favicons/favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/wp-content/themes/AMPD2020/hc-offcanvas-nav.css">
+<link rel="stylesheet" href="/wp-content/themes/AMPD2020/bootstrap-v4.3.1.css">
+<link async rel="stylesheet" type="text/css" href="https://ampd.yorku.ca/slick-org/slick.css"/>
+<link async rel="stylesheet" type="text/css" href="https://ampd.yorku.ca/slick-org/slick-theme.css"/>
+<link async rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DX5QPT1BP1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DX5QPT1BP1');
+</script>
+
+<!-- Menu -->
+<script type="text/javascript">
+"use strict";!function(e,t){if("object"==typeof module&&"object"==typeof module.exports){if(!e.document)throw new Error("HC Off-canvas Nav requires a browser to run.");module.exports=t(e)}else"function"==typeof define&&define.amd?define("hcOffcanvasNav",[],t(e)):t(e)}("undefined"!=typeof window?window:this,function(re){var ie=re.document,se=ie.getElementsByTagName("html")[0],oe=0,le="nav-open",i=function(e,t){if(t=t||{},"string"==typeof e&&(e="#"===e.charAt(0)&&-1===e.indexOf(" ")?ie.querySelector(e):ie.querySelectorAll(e)),!e)return!1;var ee=i.Helpers;void 0!==t.maxWidth&&(ee.deprecated("maxWidth","disableAt","option"),t.disableAt=t.maxWidth);var te=Object.assign({},{width:380,height:"auto",disableAt:!1,pushContent:null,swipeGestures:!0,expanded:!1,position:"left",levelOpen:"overlap",levelSpacing:40,levelTitles:!0,closeOpenLevels:!0,closeActiveLevel:!1,navTitle:null,navClass:"",disableBody:!0,closeOnClick:!0,customToggle:null,bodyInsert:"prepend",keepClasses:!0,removeOriginalNav:!1,rtl:!1,insertClose:!0,insertBack:!0,levelTitleAsBack:!0,labelClose:"",labelBack:"Back"},t);te.ariaLabels=Object.assign({},{open:"Open Menu",close:"Close Menu",submenu:"Submenu"},t.ariaLabels);var ne=[],ae=function(e){if(!ne.length)return!1;var t=!1;"string"==typeof e&&(e=[e]);for(var n=e.length,a=0;a<n;a++)-1!==ne.indexOf(e[a])&&(t=!0);return t},n=function(e){if(e.querySelector("ul")||"UL"===e.tagName){var E="hc-nav-"+ ++oe,l=ee.printStyle("hc-offcanvas-"+oe+"-style"),s="keydown.hcOffcanvasNav",L=ee.createElement("nav",{id:E}),c=ee.createElement("div",{class:"nav-container"});L.addEventListener("click",ee.stopPropagation),L.appendChild(c);var n,v,a,u=null,d=null,f=null,t={},p=!1,h=!1,m=null,b=0,g=0,y=0,A=null,x={},C=[],O=!1,k=[],o=null,N=null,T=!1,w=!1;te.customToggle?u=ee.getElements(te.customToggle):(u=[ee.createElement("a",{href:"#"},ee.createElement("span"))],e.insertAdjacentElement("afterend",u[0])),u&&u.length&&u.forEach(function(e){e.addEventListener("click",J(e)),e.classList.add("hc-nav-trigger",E),e.setAttribute("role","button"),e.setAttribute("aria-label",(te.ariaLabels||{}).open),e.setAttribute("aria-controls",E),e.setAttribute("aria-expanded",!1),e.addEventListener("keydown",function(e){"Enter"!==e.key&&13!==e.keyCode||setTimeout(function(){S(0,0)},0)})});var S=function(e,t,n){if("number"==typeof t&&("number"==typeof e||k.length)){var a=Array.prototype.filter.call(c.querySelectorAll(".nav-wrapper"),function(e){return e.getAttribute("data-level")==t&&("number"!=typeof n||"number"==typeof n&&e.getAttribute("data-index")==n)})[0];if(a=ee.children(a,".nav-content")[0],a=ee.children(a,"ul"),a=ee.children(a,"li"),a=ee.children(a,":not(.nav-wrapper)"),a=Array.prototype.map.call(a,function(e){return Array.prototype.slice.call(e.querySelectorAll('[tabindex="0"], a[href], button, textarea, input[type="text"], input[type="radio"], input[type="checkbox"], select'))}).flat(),a=Array.prototype.filter.call(a,function(e){return"-1"!==e.getAttribute("tabindex")})){L.classList.add("user-is-tabbing");var r=a[0],i=a[a.length-1];"number"==typeof e?a[e].focus():(k[k.length-1].focus(),k.pop()),ie.removeEventListener(s),ie.addEventListener(s,function(e){"Tab"!==e.key&&9!==e.keyCode||(e.shiftKey?ie.activeElement===r&&(e.preventDefault(),i.focus()):ie.activeElement===i&&(e.preventDefault(),r.focus()))})}}},M=function(){ie.removeEventListener(s),d&&setTimeout(function(){d.focus()},v)},j=function(){c.style.transition="none",L.style.display="block";var e=ee.formatSizeVal(g=c.offsetWidth),t=ee.formatSizeVal(y=c.offsetHeight);l.add(".hc-offcanvas-nav."+E+".nav-position-left .nav-container","transform: translate3d(-"+e+", 0, 0)"),l.add(".hc-offcanvas-nav."+E+".nav-position-right .nav-container","transform: translate3d("+e+", 0, 0)"),l.add(".hc-offcanvas-nav."+E+".nav-position-top .nav-container","transform: translate3d(0, -"+t+", 0)"),l.add(".hc-offcanvas-nav."+E+".nav-position-bottom .nav-container","transform: translate3d(0, "+t+", 0)"),l.insert(),L.style.display="",c.style.transition="",n=re.getComputedStyle(c).transitionProperty,v=ee.toMs(re.getComputedStyle(c).transitionDuration),a=re.getComputedStyle(c).transitionTimingFunction,te.pushContent&&f&&n&&l.add(ee.getElementCssTag(f),"transition: "+n+" "+v+"ms "+a),l.insert()},r=function(e){var t=!!u&&re.getComputedStyle(u[0]).display,n=!!te.disableAt&&"max-width: "+(te.disableAt-1)+"px",a=ee.formatSizeVal(te.width),r=ee.formatSizeVal(te.height),i=ee.formatSizeVal(te.levelSpacing);(ee.isNumeric(a)||-1!==a.indexOf("px"))&&(g=parseInt(a)),(ee.isNumeric(r)||-1!==r.indexOf("px"))&&(y=parseInt(r)),ae(["disableAt","position"])&&l.reset(),l.add(".hc-offcanvas-nav."+E,"display: block",n),l.add(".hc-nav-original."+E,"display: none",n),t&&l.add(".hc-nav-trigger."+E,"display: "+(t&&"none"!==t?t:"block"),n),-1!==["left","right"].indexOf(te.position)?l.add(".hc-offcanvas-nav."+E+" .nav-container","width: "+a):l.add(".hc-offcanvas-nav."+E+" .nav-container","height: "+r),l.add(".hc-offcanvas-nav."+E+".nav-position-left .nav-container","transform: translate3d(-"+a+", 0, 0);"),l.add(".hc-offcanvas-nav."+E+".nav-position-right .nav-container","transform: translate3d("+a+", 0, 0);"),l.add(".hc-offcanvas-nav."+E+".nav-position-top .nav-container","transform: translate3d(0, -"+r+", 0);"),l.add(".hc-offcanvas-nav."+E+".nav-position-bottom .nav-container","transform: translate3d(0, "+r+", 0);"),l.add(".hc-offcanvas-nav."+E+".nav-levels-overlap.nav-position-left li.level-open > .nav-wrapper","transform: translate3d(-"+i+", 0, 0)",n),l.add(".hc-offcanvas-nav."+E+".nav-levels-overlap.nav-position-right li.level-open > .nav-wrapper","transform: translate3d("+i+", 0, 0)",n),l.add(".hc-offcanvas-nav."+E+".nav-levels-overlap.nav-position-top li.level-open > .nav-wrapper","transform: translate3d(0, -"+i+", 0)",n),l.add(".hc-offcanvas-nav."+E+".nav-levels-overlap.nav-position-bottom li.level-open > .nav-wrapper","transform: translate3d(0, "+i+", 0)",n),l.insert(),(!e||e&&ae("pushContent"))&&(f=te.pushContent?ee.getElements(te.pushContent)[0]:null),c.style.transition="none";var s=L.classList.contains(le),o=["hc-offcanvas-nav",te.navClass||"",E,"nav-levels-"+(te.levelOpen||"none"),"nav-position-"+te.position,te.disableBody?"disable-body":"",ee.isIos?"is-ios":"",ee.isTouchDevice?"touch-device":"",s?le:"",te.rtl?"rtl":"",!0!==te.insertClose||te.labelClose?"":"nav-close-button-empty"].join(" ").trim().replace(/  +/g," ");L.removeEventListener("click"),L.className=o,L.setAttribute("aria-hidden",!0),ie.documentElement.style.setProperty("--nav-level-spacing",te.levelSpacing+"px"),te.disableBody&&L.addEventListener("click",$),e?j():setTimeout(j,0)},i=function(){t=function c(e,t){var n=[];Array.prototype.forEach.call(e,function(e){if("UL"===e.tagName||e instanceof HTMLHeadingElement){var l={tagName:e.tagName,id:t,htmlClass:e.getAttribute("class")||null,items:[]};e instanceof HTMLHeadingElement?l.content=ee.clone(e,!1,!0):(null!==e.getAttribute("data-nav-active")&&(m=t,e.removeAttribute("data-nav-active")),Array.prototype.forEach.call(e.children,function(e){var t=null!==e.getAttribute("data-nav-custom-content"),n=t?e.children:Array.prototype.filter.call(e.children,function(e){return"UL"!==e.tagName&&!e.querySelector("ul")}).concat(e.children.length?[]:[e.firstChild]),a=t?[]:Array.prototype.slice.call(e.querySelectorAll("ul")),r=a.length?[].concat(Array.prototype.filter.call(a[0].parentNode.children,function(e){return"UL"===e.tagName||e instanceof HTMLHeadingElement})):[],i=null;if(!n.length){for(var s="",o=0;o<e.childNodes.length;o++)e.childNodes[o].nodeType===Node.TEXT_NODE&&(s+=e.childNodes[o].textContent.trim());n=[ie.createTextNode(s)]}r.length&&(ee.data(e,"hc-uniqid")?i=ee.data(e,"hc-uniqid"):(i=Math.random().toString(36).substr(2),ee.data(e,"hc-uniqid",i))),null!==e.getAttribute("data-nav-active")&&(m=i,e.removeAttribute("data-nav-active")),l.items.push({id:i,htmlClass:e.getAttribute("class")||"",content:n,custom:t,subnav:r.length?c(r,i):[],highlight:null!==e.getAttribute("data-nav-highlight")})})),n.push(l)}});return n}("UL"===e.tagName?[e]:Array.prototype.filter.call(e.children,function(e){return"UL"===e.tagName||e instanceof HTMLHeadingElement}),null)},P=function(e){if(e){for(;c.firstChild;)c.removeChild(c.firstChild);x={}}!function h(n,e,m,b,t,a){var g=ee.createElement("div",{class:"nav-wrapper nav-wrapper-"+m,"data-level":m,"data-index":t||0});var r=ee.createElement("div",{class:"nav-content"});g.addEventListener("click",ee.stopPropagation);g.appendChild(r);e.appendChild(g);if(b&&(0===m||0<m&&"overlap"===te.levelOpen)){var i="string"==typeof b?b:ee.clone(re.jQuery&&b instanceof re.jQuery&&b.length?b[0]:b,!0,!0);r.insertBefore(ee.createElement("h2",{id:0===m?E+"-nav-title":null,class:0===m?"nav-title":"level-title"},i),r.firstChild),0===m&&"string"==typeof b&&L.setAttribute("aria-labelledby",E+"-nav-title")}var s=-1;n.forEach(function(e,t){if("UL"===e.tagName){s++;var p=ee.createElement("ul",{id:e.id?1<n.length?"menu-"+e.id+"-"+s:"menu-"+e.id:null,role:"menu","aria-level":m+1});r.appendChild(p),te.keepClasses&&e.htmlClass&&p.classList.add.apply(p.classList,e.htmlClass.split(" ")),e.items.forEach(function(t,e){var n=t.content;if(t.custom){var a=ee.createElement("li",{class:"nav-item nav-item-custom"},ee.createElement("div",{class:"nav-custom-content"},Array.prototype.map.call(n,function(e){return ee.clone(e,!0,!0)})));return te.keepClasses&&t.htmlClass&&a.classList.add.apply(a.classList,t.htmlClass.split(" ")),void p.appendChild(a)}var r,i=Array.prototype.filter.call(n,function(e){return"A"===e.tagName||e.nodeType!==Node.TEXT_NODE&&e.querySelector("a")})[0];i?(r=ee.clone(i,!1,!0)).classList.add("nav-item-link"):r=ee.createElement(t.subnav.length?"a":"span",{class:"nav-item-link"},Array.prototype.map.call(n,function(e){return ee.clone(e,!0,!0)})),"A"===r.tagName&&(r.setAttribute("tabindex","0"),r.setAttribute("role","menuitem"),r.getAttribute("href")||r.setAttribute("href","#")),i&&r.addEventListener("click",function(e){e.stopPropagation(),ee.hasListener(i,"click")&&i.click()}),"#"===r.getAttribute("href")&&r.addEventListener("click",ee.preventDefault),te.closeOnClick&&(W()?"A"!==r.tagName||"false"===r.dataset.navClose||null!==r.getAttribute("disabled")&&"false"!==r.getAttribute("disabled")||t.subnav.length&&(!r.getAttribute("href")||"#"===r.getAttribute("href").charAt(0))||r.addEventListener("click",$):"A"!==r.tagName||"false"===r.dataset.navClose||null!==r.getAttribute("disabled")&&"false"!==r.getAttribute("disabled")||r.addEventListener("click",$));var s=ee.createElement("li",{class:"nav-item"});if(s.appendChild(r),p.appendChild(s),te.keepClasses&&t.htmlClass&&s.classList.add.apply(s.classList,t.htmlClass.split(" ")),t.highlight&&s.classList.add("nav-highlight"),ee.wrap(r,ee.createElement("div",{class:"nav-item-wrapper"})),t.subnav.length){var o=m+1,l=t.id,c="";if(x[o]||(x[o]=0),s.classList.add("nav-parent"),W()){var v=x[o],u=ee.createElement("input",{type:"checkbox",title:"Nav Button",id:E+"-"+o+"-"+v,class:"hc-chk",tabindex:-1,"data-level":o,"data-index":v,value:l});u.addEventListener("click",ee.stopPropagation),u.addEventListener("change",Q),s.insertBefore(u,s.firstChild);var d=function(e){e.addEventListener("click",function(e){if(e.stopPropagation(),u.setAttribute("checked","true"!==u.getAttribute("checked")),"createEvent"in ie){var t=ie.createEvent("HTMLEvents");t.initEvent("change",!1,!0),u.dispatchEvent(t)}}),e.addEventListener("keydown",function(e){"Enter"!==e.key&&13!==e.keyCode||(O=!0,k.push(this))}),e.setAttribute("aria-controls",1<t.subnav.length?t.subnav.filter(function(e){return"UL"===e.tagName}).map(function(e,t){return"menu-"+e.id+"-"+t}).join(" "):"menu-"+l),e.setAttribute("aria-haspopup","overlap"===te.levelOpen),e.setAttribute("aria-expanded",!1)};if(-1!==C.indexOf(l)&&(g.classList.add("sub-level-open"),g.addEventListener("click",function(){return Z(o,v)}),s.classList.add("level-open"),u.setAttribute("checked",!0)),c=!0===te.levelTitles?n[0].textContent.trim():"",r.getAttribute("href")&&"#"!==r.getAttribute("href")){var f=ee.createElement("a",{href:"#",class:"nav-next","aria-label":(te.ariaLabels||{}).submenu+": "+c,role:"menuitem",tabindex:0},ee.createElement("span"));f.addEventListener("click",ee.preventClick()),d(f),te.rtl?r.parentNode.appendChild(f):r.parentNode.insertBefore(f,r.nextSibling)}else r.appendChild(ee.createElement("span",{class:"nav-next"},ee.createElement("span"))),d(r)}else r.setAttribute("aria-expanded",!0);x[o]++,h(t.subnav,s,o,c,x[o]-1,"string"==typeof b?b:"")}})}else r.appendChild(e.content)});if(m&&void 0!==t&&!1!==te.insertBack&&"overlap"===te.levelOpen){var o=ee.children(r,"ul"),l=te.levelTitleAsBack&&a||te.labelBack||"",c=ee.createElement("a",{href:"#",class:"nav-back-button",role:"menuitem",tabindex:0},[l,ee.createElement("span")]);if(!0===te.insertBack||0===te.insertBack){var v=ee.createElement("div",{class:"nav-back"},c);r.insertBefore(v,ee.children(r,":not(.level-title)")[0])}else{var u=ee.createElement("li",{class:"nav-item nav-back"},c);ee.insertAt(u,!0===te.insertBack?0:te.insertBack,o)}var d=function(){return Z(m,t)};ee.wrap(c,ee.createElement("div",{class:"nav-item-wrapper"})),c.addEventListener("click",ee.preventClick(d)),c.addEventListener("keydown",function(e){"Enter"!==e.key&&13!==e.keyCode||(O=!0)})}if(0===m&&!1!==te.insertClose){var f=ee.createElement("a",{href:"#",class:"nav-close-button"+(te.labelClose?" has-label":""),role:"menuitem",tabindex:0,"aria-label":te.labelClose?"":(te.ariaLabels||{}).close},[te.labelClose||"",ee.createElement("span")]);if(f.addEventListener("click",ee.preventClick($)),f.addEventListener("keydown",function(e){"Enter"!==e.key&&13!==e.keyCode||M()}),b&&!0===te.insertClose)r.insertBefore(ee.createElement("div",{class:"nav-close"},f),r.children[1]);else if(!0===te.insertClose)r.insertBefore(ee.createElement("div",{class:"nav-close"},f),r.firstChild);else{var p=ee.children(r,"ul"),y=ee.createElement("li",{class:"nav-item nav-close"},f);ee.wrap(f,ee.createElement("div",{class:"nav-item-wrapper"})),ee.insertAt(y,te.insertClose,p)}}}(t,c,0,te.navTitle)},_=function(t){return function(e){"left"!==te.position&&"right"!==te.position||(o=e.touches[0].clientX,N=e.touches[0].clientY,"doc"===t?w||(ie.addEventListener("touchmove",H,ee.supportsPassive),ie.addEventListener("touchend",D,ee.supportsPassive)):(w=!0,c.addEventListener("touchmove",U,ee.supportsPassive),c.addEventListener("touchend",z,ee.supportsPassive)))}},B=function(e,t){re.addEventListener("touchmove",ee.preventDefault,ee.supportsPassive),L.style.visibility="visible",c.style[ee.browserPrefix("transition")]="none",ee.setTransform(c,e,te.position),f&&(f.style[ee.browserPrefix("transition")]="none",ee.setTransform(f,t,te.position))},q=function(e,t,n,a){void 0===t&&(t=!0),void 0===n&&(n=!1),void 0===a&&(a=!1),re.removeEventListener("touchmove",ee.preventDefault,ee.supportsPassive),c.style[ee.browserPrefix("transition")]="",ee.setTransform(c,n,te.position),f&&(f.style[ee.browserPrefix("transition")]="",ee.setTransform(f,a,te.position)),"open"===e?K():($(),t?setTimeout(function(){L.style.visibility=""},v):L.style.visibility="")},H=function(e){var t=0-(o-e.touches[0].clientX),n="overlap"===te.levelOpen?Y()*te.levelSpacing:0,a=g+n;t="left"===te.position?Math.min(Math.max(t,0),a):Math.abs(Math.min(Math.max(t,-a),0)),("left"===te.position&&o<50||"right"===te.position&&o>ie.clientWidth-50)&&(T=!0,B(0-(g-t),Math.abs(t)))},D=function e(t){if(ie.removeEventListener("touchmove",H),ie.removeEventListener("touchend",e),T){var n=t.changedTouches[t.changedTouches.length-1],a=0-(o-n.clientX),r="overlap"===te.levelOpen?Y()*te.levelSpacing:0,i=g+r;(a="left"===te.position?Math.min(Math.max(a,0),i):Math.abs(Math.min(Math.max(a,-i),0)))?q(70<a?"open":"close"):q("close",!1),N=o=null,T=!1}},U=function(e){var t=0-(o-e.touches[0].clientX),n=0-(N-e.touches[0].clientY);if(!(Math.abs(t)<Math.abs(n))){var a="overlap"===te.levelOpen?Y()*te.levelSpacing:0,r=g+a;t="left"===te.position?Math.min(Math.max(t,-r),0):Math.min(Math.max(t,0),r),("left"===te.position&&t<0||"right"===te.position&&0<t)&&(T=!0,B(-Math.abs(t)+a,r-Math.abs(t)))}},z=function e(t){if(c.removeEventListener("touchmove",U),c.removeEventListener("touchend",e),w=!1,T){var n=t.changedTouches[t.changedTouches.length-1],a=0-(o-n.clientX),r="overlap"===te.levelOpen?Y()*te.levelSpacing:0,i=g+r;(a="left"===te.position?Math.abs(Math.min(Math.max(a,-i),0)):Math.abs(Math.min(Math.max(a,0),i)))===i?q("close",!1):50<a?q("close"):q("open",!0,r,i),N=o=null,T=!1}};r(),i(),P(),!0===te.removeOriginalNav?e.parentNode.removeChild(e):e.classList.add("hc-nav-original",E),"prepend"===te.bodyInsert?ie.body.insertBefore(L,ie.body.firstChild):"append"===te.bodyInsert&&ie.body.appendChild(L),!0===te.expanded&&(h=!0,K()),te.swipeGestures&&(c.addEventListener("touchstart",_("nav"),ee.supportsPassive),ie.addEventListener("touchstart",_("doc"),ee.supportsPassive)),ie.addEventListener("keydown",function(e){if(F()&&("Escape"===e.key||27===e.keyCode)){var t=Y();0===t?($(),M()):(Z(t,G()),S(null,t-1))}});var I=ee.debounce(j,500);re.addEventListener("resize",I,ee.supportsPassive);var X=function(e,t,n){var a=ie.querySelector("#"+E+"-"+e+"-"+t);if(a){var r=a.value,i=a.parentNode,s=i.closest(".nav-wrapper");if(a.setAttribute("checked",!1),s.classList.remove("sub-level-open"),i.classList.remove("level-open"),i.querySelectorAll("[aria-controls]")[0].setAttribute("aria-expanded",!1),-1!==C.indexOf(r)&&C.splice(C.indexOf(r),1),n&&"overlap"===te.levelOpen&&(s.removeEventListener("click"),s.addEventListener("click",ee.stopPropagation),ee.setTransform(c,(e-1)*te.levelSpacing,te.position),f)){var o="x"===ee.getAxis(te.position)?g:y;ee.setTransform(f,o+(e-1)*te.levelSpacing,te.position)}}};return L.on=function(e,t){L.addEventListener(e,t)},L.off=function(e,t){L.removeEventListener(e,t)},L.getSettings=function(){return Object.assign({},te)},L.isOpen=F,L.open=K,L.close=$,L.toggle=J(null),L.update=function(e,t){if(ne=[],"object"==typeof e){for(var n in e)te[n]!==e[n]&&ne.push(n);te=Object.assign({},te,e)}if(!0===e||!0===t){if(te.removeOriginalNav)return void console.warn("%c! HC Offcanvas Nav:%c Can't update because original navigation has been removed. Disable `removeOriginalNav` option.","color: #fa253b","color: default");r(!0),i(),P(!0)}else r(!0),P(!0)},L}function Q(){var e=Number(this.dataset.level),t=Number(this.dataset.index);"true"===this.getAttribute("checked")?R(e,t):Z(e,t)}function V(e){e.classList.remove("toggle-open"),e.setAttribute("aria-expanded",!1)}function W(){return!1!==te.levelOpen&&"none"!==te.levelOpen}function F(){return p}function Y(){return C.length?Number(Array.prototype.filter.call(c.querySelectorAll(".hc-chk"),function(e){return e.value==C[C.length-1]})[0].dataset.level):0}function G(){return C.length?Number(Array.prototype.filter.call(c.querySelectorAll(".hc-chk"),function(e){return e.value==C[C.length-1]})[0].dataset.index):0}function K(e,t){if((!F()||void 0!==t)&&(function(){if(F())return;p=!0,L.style.visibility="visible",L.setAttribute("aria-hidden",!1),L.classList.add(le),u&&(u.forEach(V),d&&(d.classList.add("toggle-open"),d.setAttribute("aria-expanded",!0)));"expand"===te.levelOpen&&A&&clearTimeout(A);te.disableBody&&(b=re.pageYOffset||se.scrollTop||ie.documentElement.scrollTop||ie.body.scrollTop,ie.documentElement.scrollHeight>ie.documentElement.clientHeight&&se.classList.add("hc-nav-yscroll"),ie.body.classList.add("hc-nav-open"),b&&(ie.body.style.top=-b+"px"));if(f){var e="x"===ee.getAxis(te.position)?g:y;ee.setTransform(f,e,te.position)}if(h)return h=!1;L._eventListeners.toggle&&L._eventListeners.toggle.forEach(function(e){e.fn(ee.customEventObject("toggle",L,L,{action:"open"}),Object.assign({},te))});setTimeout(function(){L._eventListeners.open&&L._eventListeners.open.forEach(function(e){e.fn(ee.customEventObject("open",L,L),Object.assign({},te))})},v)}(),W())){var n;if("number"!=typeof e&&!ee.isNumeric(e)||"number"!=typeof t&&!ee.isNumeric(t))m?(n=Array.prototype.filter.call(c.querySelectorAll(".hc-chk"),function(e){return e.value==m})[0],!te.closeActiveLevel&&te.closeOpenLevels||(m=null)):!1===te.closeOpenLevels&&(n=(n=Array.prototype.filter.call(c.querySelectorAll(".hc-chk"),function(e){return"true"===e.getAttribute("checked")}))[n.length-1]);else if(!(n=ie.querySelector("#"+E+"-"+e+"-"+t)))return void console.warn("HC Offcanvas Nav: level "+e+" doesn't have index "+t);if(n){var a=[];if(e=Number(n.dataset.level),t=Number(n.dataset.index),1<e){for(var r=[];n&&n!==ie;n=n.parentNode)n.matches(".nav-wrapper")&&r.push(n);for(var i=0;i<r.length;i++){var s=r[i],o=Number(s.dataset.level);0<o&&a.push({level:o,index:Number(s.dataset.index)})}a=a.reverse()}a.push({level:e,index:t});for(var l=0;l<a.length;l++)R(a[l].level,a[l].index,!1)}}}function $(){if(F()){if(p=!1,f&&ee.setTransform(f,!1),L.classList.remove(le),L.classList.remove("user-is-tabbing"),L.setAttribute("aria-hidden",!0),c.removeAttribute("style"),u&&u.forEach(V),"expand"===te.levelOpen&&-1!==["top","bottom"].indexOf(te.position)?Z(0):W()&&(A=setTimeout(function(){Z(0)},"expand"===te.levelOpen?v:0)),te.disableBody&&(ie.body.classList.remove("hc-nav-open"),se.classList.remove("hc-nav-yscroll"),b)){if(ie.body.style.top="",ie.body.scrollTop=b,se.scrollTop=b,"bottom"===te.position){var e=b;setTimeout(function(){ie.body.scrollTop=e,se.scrollTop=e},0)}b=0}L._eventListeners.toggle&&L._eventListeners.toggle.forEach(function(e){e.fn(ee.customEventObject("toggle",L,L,{action:"close"}),Object.assign({},te))}),setTimeout(function(){L.style.visibility="",L._eventListeners.close&&L._eventListeners.close.forEach(function(e){e.fn(ee.customEventObject("close",L,L),Object.assign({},te))}),L._eventListeners["close.once"]&&L._eventListeners["close.once"].forEach(function(e){e.fn(ee.customEventObject("close.once",L,L),Object.assign({},te))}),L.removeEventListener("close.once")},v)}}function J(t){return function(e){e&&(e.preventDefault(),e.stopPropagation()),t&&(d=t),p?$():K()}}function R(t,n,e){void 0===e&&(e=!0);var a=ie.querySelector("#"+E+"-"+t+"-"+n),r=a.value,i=a.parentNode,s=i.closest(".nav-wrapper"),o=ee.children(i,".nav-wrapper")[0];if(!1===e&&(o.style.transition="none"),a.setAttribute("checked",!0),s.classList.add("sub-level-open"),i.classList.add("level-open"),i.querySelectorAll("[aria-controls]")[0].setAttribute("aria-expanded",!0),!1===e&&setTimeout(function(){o.style.transition=""},v),-1===C.indexOf(r)&&C.push(r),"overlap"===te.levelOpen&&(s.addEventListener("click",function(){return Z(t,n)}),ee.setTransform(c,t*te.levelSpacing,te.position),f)){var l="x"===ee.getAxis(te.position)?g:y;ee.setTransform(f,l+t*te.levelSpacing,te.position)}L._eventListeners["open.level"]&&L._eventListeners["open.level"].forEach(function(e){e.fn(ee.customEventObject("open.level",L,o,{currentLevel:t,currentIndex:n}),Object.assign({},te))}),O&&(S(0,t,n),O=!1)}function Z(t,e){for(var n=t;n<=Object.keys(x).length;n++)if(n===t&&void 0!==e)X(t,e,!0);else if(0!==t||te.closeOpenLevels)for(var a=0;a<x[n];a++)X(n,a,n===t);else;if(0<t&&L._eventListeners["close.level"]){var r=ie.querySelector("#"+E+"-"+t+"-"+e).closest(".nav-wrapper");L._eventListeners["close.level"].forEach(function(e){e.fn(ee.customEventObject("close.level",L,r,{currentLevel:t-1,currentIndex:G()}),Object.assign({},te))})}O&&(S(null,t-1),O=!1)}console.error("%c! HC Offcanvas Nav:%c Navigation must contain <ul> element.","color: #fa253b","color: default")};if(Array.isArray(e)||e instanceof NodeList){for(var a=[],r=0;r<e.length;r++)a.push(n(e[r]));return 1<a.length?a:a[0]}return n(e)};if(void 0!==re.jQuery){var n=re.jQuery,a="hcOffcanvasNav";n.fn.extend({hcOffcanvasNav:function(t){return this.length?this.each(function(){var e=n.data(this,a);e?e.update(t):(e=new i(this,t),n.data(this,a,e))}):this}})}return re.hcOffcanvasNav=re.hcOffcanvasNav||i,i}),function(n){var e=n.hcOffcanvasNav,o=n.document;"function"!=typeof Object.assign&&Object.defineProperty(Object,"assign",{value:function(e,t){if(null==e)throw new TypeError("Cannot convert undefined or null to object");for(var n=Object(e),a=1;a<arguments.length;a++){var r=arguments[a];if(null!=r)for(var i in r)Object.prototype.hasOwnProperty.call(r,i)&&(n[i]=r[i])}return n},writable:!0,configurable:!0}),Element.prototype.closest||(Element.prototype.closest=function(e){var t=this;do{if(Element.prototype.matches.call(t,e))return t;t=t.parentElement||t.parentNode}while(null!==t&&1===t.nodeType);return null}),Array.prototype.flat||Object.defineProperty(Array.prototype,"flat",{configurable:!0,value:function n(){var a=isNaN(arguments[0])?1:Number(arguments[0]);return a?Array.prototype.reduce.call(this,function(e,t){return Array.isArray(t)?e.push.apply(e,n.call(t,a-1)):e.push(t),e},[]):Array.prototype.slice.call(this)},writable:!0}),Element.prototype.matches||(Element.prototype.matches=Element.prototype.msMatchesSelector||Element.prototype.matchesSelector||Element.prototype.mozMatchesSelector||Element.prototype.oMatchesSelector||Element.prototype.webkitMatchesSelector);var t=!1;try{var a=Object.defineProperty({},"passive",{get:function(){t={passive:!1}}});n.addEventListener("testPassive",null,a),n.removeEventListener("testPassive",null,a)}catch(e){}var r=(/iPad|iPhone|iPod/.test(navigator.userAgent)||!!navigator.platform&&/iPad|iPhone|iPod/.test(navigator.platform))&&!n.MSStream,i="ontouchstart"in n||navigator.maxTouchPoints||n.DocumentTouch&&o instanceof DocumentTouch,s=function(e){return!isNaN(parseFloat(e))&&isFinite(e)},l=function(e){return"auto"===e?"100%":s(e)&&0!==e?e+"px":e},c=function(e){var t=["Webkit","Moz","Ms","O"],n=(o.body||o.documentElement).style,a=e.charAt(0).toUpperCase()+e.slice(1);if(void 0!==n[e])return e;for(var r=0;r<t.length;r++)if(void 0!==n[t[r]+a])return t[r]+a;return!1},v=function(e,t){if(e instanceof Element)return t?Array.prototype.filter.call(e.children,function(e){return e.matches(t)}):e.children;var n=[];return Array.prototype.forEach.call(e,function(e){n=t?n.concat(Array.prototype.filter.call(e.children,function(e){return e.matches(t)})):n.concat(Array.prototype.slice.call(e.children))}),n},u=function(o){var l=Node.prototype[o+"EventListener"];return function(e,t,n){if(this){var a=e.split(".")[0];if(this._eventListeners=this._eventListeners||{},"add"===o){this._eventListeners[e]=this._eventListeners[e]||[];var r={fn:t};n&&(r.options=n),this._eventListeners[e].push(r),l.call(this,a,t,n)}else if("function"==typeof t)for(var i in l.call(this,a,t,n),this._eventListeners)this._eventListeners[i]=this._eventListeners[i].filter(function(e){return e.fn!==t}),this._eventListeners[i].length||delete this._eventListeners[i];else if(this._eventListeners[e]){for(var s=this._eventListeners[e].length;s--;)l.call(this,a,this._eventListeners[e][s].fn,this._eventListeners[e][s].options),this._eventListeners[e].splice(s,1);this._eventListeners[e].length||delete this._eventListeners[e]}}}};Node.prototype.addEventListener=u("add"),Node.prototype.removeEventListener=u("remove");var d=function(e,t,n){void 0===t&&(t={});var a=o.createElement(e);for(var r in t)"class"!==r?(t[r]||0===t[r])&&a.setAttribute(r,t[r]):a.className=t[r];if(n){Array.isArray(n)||(n=[n]);for(var i=0;i<n.length;i++)if("object"==typeof n[i]&&n[i].length&&!n[i].nodeType)for(var s=0;s<n[i].length;s++)a.appendChild(n[i][s]);else a.appendChild("string"==typeof n[i]?o.createTextNode(n[i]):n[i])}return a},f=function(e){return-1!==["left","right"].indexOf(e)?"x":"y"},p=function(){c("transform");return function(e,t,n){if(!1===t||""===t)e.style.transform="";else if("x"===f(n)){var a="left"===n?t:"-"+t;e.style.transform="translate3d("+l(a)+",0,0)"}else{var r="top"===n?t:"-"+t;e.style.transform="translate3d(0,"+l(r)+",0)"}}}(),h=function(e,t,n){console.warn("%cHC Off-canvas Nav:%c "+n+"%c '"+e+"'%c is now deprecated and will be removed in the future. Use%c '"+t+"'%c option instead. See details about plugin usage at https://github.com/somewebmedia/hc-offcanvas-nav.","color: #fa253b","color: default","color: #5595c6","color: default","color: #5595c6","color: default")};e.Helpers={supportsPassive:t,isIos:r,isTouchDevice:i,isNumeric:s,formatSizeVal:l,toMs:function(e){return parseFloat(e)*(/\ds$/.test(e)?1e3:1)},stopPropagation:function(e){return e.stopPropagation()},preventDefault:function(e){return e.preventDefault()},preventClick:function(t){return function(e){e.preventDefault(),e.stopPropagation(),"function"==typeof t&&t()}},browserPrefix:c,children:v,wrap:function(e,t){e.parentNode.insertBefore(t,e),t.appendChild(e)},data:function(e,t,n){if(e.hcOffcanvasNav=e.hcOffcanvasNav||{},void 0===n)return e.hcOffcanvasNav[t];e.hcOffcanvasNav[t]=n},clone:function(e,t,n){var a=e.cloneNode(n||!1),r=e instanceof Element?[e].concat(Array.prototype.slice.call(e.getElementsByTagName("*"))):[],i=a instanceof Element?[a].concat(Array.prototype.slice.call(a.getElementsByTagName("*"))):[];return t||(r.shift(),i.shift()),n&&function(e,t){for(var n=0;n<e.length;n++)if(e[n]._eventListeners)for(var a in e[n]._eventListeners)for(var r=0;r<e[n]._eventListeners[a].length;r++)t[r].addEventListener(a,e[n]._eventListeners[a][r].fn,e[n]._eventListeners[a][r].options)}(r,i),a},customEventObject:function(e,n,a,r){return new function(e){for(var t in this.bubbles=!1,this.cancelable=!1,this.composed=!1,this.currentTarget=a,this.data=r?{}:null,this.defaultPrevented=!1,this.eventPhase=0,this.isTrusted=!1,this.target=n,this.timeStamp=Date.now(),this.type=e,r)this.data[t]=r[t]}(e)},hasListener:function(e,t){return(t?(e._eventListeners||{})[t]:e._eventListeners)||!1},debounce:function(a,r,i){var s;return function(){var e=this,t=arguments,n=i&&!s;clearTimeout(s),s=setTimeout(function(){s=null,i||a.apply(e,t)},r),n&&a.apply(e,t)}},createElement:d,getElements:function(e){var t=null;return"string"==typeof e?t=o.querySelectorAll(e):n.jQuery&&e instanceof n.jQuery&&e.length?t=e.toArray():e instanceof Element&&(t=[e]),t},getElementCssTag:function e(t){return"string"==typeof t?t:t.getAttribute("id")?"#"+t.getAttribute("id"):t.getAttribute("class")?t.tagName.toLowerCase()+"."+t.getAttribute("class").replace(/\s+/g,"."):e(t.parentNode)+" > "+t.tagName.toLowerCase()},printStyle:function(e){var r=d("style",{id:e}),i={},s={};o.head.appendChild(r);var a=function(e){return";"!==e.substr(-1)&&(e+=";"!==e.substr(-1)?";":""),e};return{reset:function(){i={},s={}},add:function(e,t,n){e=e.trim(),t=t.trim(),n?(n=n.trim(),s[n]=s[n]||{},s[n][e]=a(t)):i[e]=a(t)},remove:function(e,t){e=e.trim(),t?(t=t.trim(),void 0!==s[t][e]&&delete s[t][e]):void 0!==i[e]&&delete i[e]},insert:function(){var e="";for(var t in s){for(var n in e+="@media screen and ("+t+") {\n",s[t])e+="  "+n+" { "+s[t][n]+" }\n";e+="}\n"}for(var a in i)e+=a+" { "+i[a]+" }\n";r.innerHTML=e}}},insertAt:function(e,t,n){var a=v(n),r=a.length,i=-1<(t="last"===(t="first"===t?0:t)?r:t)?Math.max(0,Math.min(t,r)):Math.max(0,Math.min(r+t,r));0===i?n[0].insertBefore(e,n[0].firstChild):a[i-1].insertAdjacentElement("afterend",e)},getAxis:f,setTransform:p,deprecated:h}}(window);
+</script>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WB2S8R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WB2S8R');</script>
+<!-- End Google Tag Manager -->
+<script>
+/*!
+ * scripts.js
+ *
+ * Call any plugins and other regular JavaScript and jQuery code here.
+ */
+;(function ($, window, document, undefined) {
+    /**
+     * jQuery.
+     */
+    $(function() {
+
+        // Accordions.
+        $('.accordion').accordion({
+            trigger: '.accordion__heading, .accordion__arrow'
+        });
+
+    });
+    /**
+     * Anychronous embeded video loader.
+     */
+    (function() {
+
+        var videos,
+            call_video;
+
+        // Select all videos on the page.
+        videos = document.querySelectorAll('.figure--video');
+
+        // Callback function to load a video.
+        call_video = function(index) {
+            return function() {
+                loadVideo(this, videos[index]);
+            };
+        };
+
+        // Attach the callback to all the play buttons.
+        for (var i = 0; i < videos.length; i++) {
+            videos[i].querySelector('.js-play-video').onclick = call_video(i);
+        }
+
+        /**
+         * Loads a video based on the button being clicked.
+         * 
+         * @param  {Object} button The button node.
+         * @param  {Object} video  The video node.
+         */
+        function loadVideo(button, video) {
+
+            var embedcode,
+                hasvideo;
+            
+            embedcode = video.dataset.embedcode;
+            hasvideo = video.dataset.hasvideo;
+
+            // Only append the video if it isn't yet appended. Also remove the
+            // play button.
+            if (!hasvideo) {
+                video.querySelector('.figure__image').insertAdjacentHTML('afterbegin', embedcode);
+                video.dataset.hasvideo = "true";
+                button.remove();
+            }
+        }
+
+    })();
+
+})(jQuery, window, document);
+</script>
+</head>
+<body class="page-template-default page page-id-110135 wp-embed-responsive singular image-filters-enabled views-template-creative-technologies">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><!--Holiday Message Open-->
+<!--<div class="alert alert-warning" role="alert">AMPD Winter Orientation for new students begins January 6, 2023 and classes for all students start January 9, 2023.</div>-->
+<!--Holdiday Message End-->
+<div id="page" class="site">
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+<header id="masthead" class="site-header">
+<div class="site-branding-container">
+<script type="text/javascript">
+(function() {
+    var cx = '012772715479672969817:u1sknwdu6mo';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+
+ jQuery(document).ready(function($){
+
+    var url = window.location.href; 
+
+    $("#menu-main-menu a").each(function() {
+
+        if(url == (this.href)) { 
+            $(this).closest("li").addClass("active-menu");
+        }
+    });
+
+});
+
+</script>
+<!--chat with Sadie button-->
+<style>.vmeeting-window{z-index: 105;position: fixed;right: 9%;bottom: -1px;width: 12.5em;/* margin-top: -2.5em; */margin-right: 0em;background-color: #e31837;padding: 18px 0px 14px 20px;border: 1px solid #fff;border-radius: 15px 15px 0px 0px;}
+@media only screen and (max-width: 600px) {.vmeeting-window {margin-right: 0em;width: 100%;right: 0%}}
+.vmeeting-window a{color:#fff;font-weight: 500;}
+.vmeeting-window a:hover{color:#fff;font-weight: 500;}
+.chat-img{width: 30px;float: left;margin-right: 10px;margin-top: -3px;fill: #fff;}</style>
+<div class="vmeeting-window"><svg class="chat-img" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" role="img" aria-label="Chat Window"><path class="cls-1a" d="M45,13H18.1A4.12,4.12,0,0,0,14,17.07V34a4.12,4.12,0,0,0,4.12,4.11H37a.63.63,0,0,1,.51.25l6.1,7.72a1.23,1.23,0,0,0,1,.47,1.53,1.53,0,0,0,.41-.07,1.22,1.22,0,0,0,.82-1.16V38.05a4.14,4.14,0,0,0,3.37-4V17.07A4.12,4.12,0,0,0,45,13Zm2.7,21a2.69,2.69,0,0,1-2.66,2.69.71.71,0,0,0-.7.71V44.8L38.6,37.49A2,2,0,0,0,37,36.71H18.1A2.71,2.71,0,0,1,15.4,34V17.07a2.7,2.7,0,0,1,2.7-2.7H45a2.7,2.7,0,0,1,2.7,2.7Z"/><path class="cls-1a" d="M11.29,24.65a1.88,1.88,0,0,0-1.22.7L5.21,31.5V25.34a.71.71,0,0,0-.7-.71,2.27,2.27,0,0,1-2.23-2.26V7.63A2.26,2.26,0,0,1,4.54,5.37H28a2.26,2.26,0,0,1,2.26,2.26v2.73a.7.7,0,0,0,.7.7.7.7,0,0,0,.71-.7V7.63A3.67,3.67,0,0,0,28,4H4.54A3.67,3.67,0,0,0,.87,7.63V22.37A3.7,3.7,0,0,0,3.79,26v6.26a1.14,1.14,0,0,0,.79,1.09,1,1,0,0,0,.38.07A1.18,1.18,0,0,0,5.87,33l5.31-6.72a.45.45,0,0,1,.31-.18.71.71,0,1,0-.2-1.4Z"/></svg><a href="https://ampd.yorku.ca/virtualmeeting/">Chat with us</a></div>
+<!--end chat with Sadie button-->
+  <div class="modal fade mt-0 pr-0" id="searchModal" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+      <div class="modal-dialog search-modal m-0" role="document">
+        <div class="modal-content rounded-0">
+          <div class="modal-header border-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body container">
+            <form id="main-search" class="main-search" action="https://ampd.yorku.ca/search">
+              <div class="d-flex border rounded-0">
+                <fieldset class="w-100">
+                  <legend class="sr-only">AMPD Global Search</legend>
+                  <label for="ampdsearchfield" class="sr-only">search box</label>
+                  <input class="header-search border-0 form-control bg-white" type="search" name="q" maxlength="255" id="ampdsearchfield" placeholder="What are you looking for?">
+                </fieldset>
+                <button title="Search AMPD" type="submit" class="search-button btn btn-link ml-auto"><i class="fa fa-search text-dark" aria-hidden="true"></i><span class="sr-only">search button</span></button>
+              </div>
+            </form>   
+          </div>
+          <div class="modal-footer border-0">
+          </div>
+        </div>
+      </div>
+</div>
+
+<div class="site-branding">
+<div class="item--logo"><a href="https://yorku.ca"><img id="yorklogo" src="https://ampd.yorku.ca/wp-content/themes/AMPD2020/YorkULogo.svg" border="0" title="York University Home Page" alt="York University Logo"></a></div>
+<div class="ampd-title"><span><a href="https://ampd.yorku.ca/" title="Return to the AMPD Home Page">School of the Arts, Media, Performance &amp; Design</a></span></div>
+<button title="Search" class="btn btn-link ml-4 text-dark ampd-search-glass" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search"></i><span class="sr-only">Search</span></button>
+
+<div class="wrapper cf">
+<nav id="main-nav">
+<ul class="first-nav">
+<li class="search searchspacer" data-nav-custom-content>              
+<div class="form-container">
+</div>
+</li>
+              <li class="nav-bottom admissions">
+                <span title="Open Admission">ADMISSIONS</span>
+                <ul>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/join/">Join Us</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/programs/">Programs of Study</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/programs-and-options/">Programs and Options</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/apply/">How to Apply</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/book-a-tour/">Book a Tour</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/student-life/">Students Life</a></li>
+                </ul>
+              </li>
+              <li class="nav-bottom about-us">
+                <span title="Open About Us">ABOUT US</span>
+                <ul>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/join/">Join Us</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/about/">About Us</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/annual-report/">Annual Report</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/equity-plan/">AMPD Equity Plan</a></li>
+                  <li class="nav-bottom"><a href="https://eddi.ampd.yorku.ca/">AMPD EDDI Committee</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/people-of-ampd/">People of AMPD</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/contact/employment/">Jobs at AMPD</a></li>
+                  <li class="nav-bottom"><a href="https://facilities.ampd.yorku.ca/">Facility Rentals</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/contact/">Contact Us</a></li>
+                </ul>
+              </li>
+              <li class="nav-bottom undergrad-program">
+                <span title="Open Undergraduate">UNDERGRADUATE</span>
+                <ul>
+                  <li class="nav-bottom"><a href="https://cma.ampd.yorku.ca/">Cinema & Media Arts</a></li>
+                  <li class="nav-bottom"><a href="https://computationalarts.ampd.yorku.ca/programs/">Digital Media</a></li>
+                  <li class="nav-bottom"><a href="https://dance.ampd.yorku.ca/">Dance</a></li>
+                  <li class="nav-bottom"><a href="https://design.ampd.yorku.ca/">Design</a></li>
+                  <li class="nav-bottom"><a href="https://music.ampd.yorku.ca/">Music</a></li>
+                  <li class="nav-bottom"><a href="https://theatre.ampd.yorku.ca/">Theatre</a></li>
+                  <li class="nav-bottom"><a href="https://vaah.ampd.yorku.ca/">Visual Art & Art History</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/minor-ampd/">AMPD Minor</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/integrative-arts/">Integrative Arts</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/creative-technologies/">Creative Technologies</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/pathway-to-master-of-management-program/">Pathway to Master of Management Program</a></li>
+                </ul>
+              </li>
+              <li class="nav-bottom grad-program">
+                <span title="Open Graduate">GRADUATE</span>
+                <ul>
+                  <li class="nav-bottom grad-cma">
+                    <span>Cinema & Media Arts</span>
+                    <ul>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/film/programs/mfa/">MFA in Film</a></li>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/film/programs/ma-in-cinema-media-studies/">MA in Cinema and Media Studies</a></li>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/film/programs/joint-program/">MBA/MA | MBA/MFA Joint Degree Program</a></li>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/film/programs/phd/">PhD in Cinema and Media Studies</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-bottom grad-ca">
+                    <span>Computational Arts</span>
+                    <ul>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/digitalmedia/">Digital Media</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-bottom grad-dance">
+                    <span>Dance</span>
+                    <ul>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/dance/">MFA in Dance</a></li>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/tdps/current-students/degree-requirements/#ma">MA in Dance</a></li>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/tdps/current-students/degree-requirements/#ma/mba">MA/MBA in Dance</a></li>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/tdps/current-students/degree-requirements/#phd-in-dance-studies">PhD in Dance</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-bottom grad-design">
+                    <span>Design</span>
+                    <ul>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/design/">MDes</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-bottom grad-music">
+                    <span>Music</span>
+                    <ul>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/music/current-students/degree-requirements/#master-of-arts">MA in Music</a></li>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/music/current-students/degree-requirements/#combined-MBA-and-MA">MA/MBA in Music</a></li>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/music/current-students/degree-requirements/#doctor-of-philosophy">PhD in Music</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-bottom grad-theatre">
+                    <span>Theatre</span>
+                    <ul>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/theatre/programs/">MFA in Theatre</a></li>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/tdps/current-students/degree-requirements/#ma">MA in Theatre & Performance Studies</a></li>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/tdps/current-students/degree-requirements/#phd">PhD in Theatre & Performance Studies</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-bottom grad-vaah-visual">
+                    <span>Visual Art</span>
+                    <ul>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/ahvc/">MFA in Visual Art</a></li>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/ahvc/programs/ma-mba/">Joint MBA/MFA Visual Art </a></li>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/ahvc/programs/phd/">PhD in Visual Art</a></li>
+                      
+                    </ul>
+                  </li>
+                  <li class="nav-bottom grad-vaah-history">
+                    <span>Art History and Visual Culture</span>
+                    <ul>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/ahvc/programs/ma/">MA in Art History and Visual Culture</a></li>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/ahvc/programs/ma-mba/">Joint MBA/MA Art History and Visual Culture</a></li>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/ahvc/programs/phd/">PhD in Art History & Visual Culture</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-bottom ampdelearning">
+                <span title="Open eLearning">ELEARNING</span>
+                <ul>
+                  <li class="nav-bottom"><a href="https://elearning.ampd.yorku.ca/">eLearning at AMPD</a></li>
+                  <li class="nav-bottom"><a href="https://elearning.ampd.yorku.ca/blended/">Current Blended Courses</a></li>
+                  <li class="nav-bottom"><a href="https://elearning.ampd.yorku.ca/online/">Current Fully Online Courses</a></li>
+                  <li class="nav-bottom"><a href="https://elearning.ampd.yorku.ca/student-resources/">eLearning Resources for Students</a></li>
+                  <li class="nav-bottom"><a href="https://elearning.ampd.yorku.ca/instructor-resources/">eLearning Resources for Instructors</a></li>
+                </ul>
+              </li>
+              <li class="nav-bottom student-resources">
+                <span title="Open Student Resources">STUDENT RESOURCES</span>
+                <ul>
+                  <!--<li class="nav-bottom"><a href="https://oaiss.ampd.yorku.ca/">Office of Advising and Integrated Student Services</a></li>-->
+                  <!--<li class="nav-bottom"><a href="https://ampd.yorku.ca/academic-resources/">Academic Resources</a></li>-->
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/experiential-education/">Experiential Education</a></li>
+                  <li class="nav-bottom"><a href="https://awards.ampd.yorku.ca/">Scholarships, Awards & Bursaries</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/important-dates/">Important Dates</a></li>
+                  <!--<li class="nav-bottom"><a href="https://ampd.yorku.ca/peer-mentoring/">Peer Mentoring</a></li>-->
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/career-options/">Career Options</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/concurrent-degree-studies-in-education/">Concurrent Degree Studies in Education</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/exchange-study-abroad/">Exhange/Study Abroad</a></li>
+                  <li class="nav-bottom"><a href="https://oaiss.ampd.yorku.ca/international-students/">International Students</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/student-life/">Students Life</a></li>
+                  <li class="nav-bottom"><a href="http://winters.ampd.yorku.ca/">Winters College</a></li>
+                </ul>
+              </li>
+            <li class="nav-bottom research">
+                <span title="Open Research">RESEARCH</span>
+                <ul>
+                  <li class="nav-bottom"><a href="https://yulink-new.yorku.ca/group/ampd-toolkit/research">Resources for Faculty</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/research/research-news/">Research News</a></li>
+                  <li class="nav-bottom"><a href="http://sensorium.ampd.yorku.ca/">Sensorium: Centre for Digital Art and Technology</a></li>
+                  <li class="nav-bottom"><a href="https://helencarswell.ampd.yorku.ca/">Helen Carswell Chair in Community Engaged Research in the Arts</a></li>
+                  <li class="nav-bottom"><a href="https://makerspace.ampd.yorku.ca/">Pan-Faculty Makerspace</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/research/research-contact/">Research Contact</a></li>
+                </ul>
+              </li>
+              <!--<li class="sample-menu">
+                <a href="#">menu</a>
+                <ul>
+                  <li>
+                    <a href="#">menu-1</a>
+                    <ul>
+                      <li>
+                        <a href="#">menu-1a</a>
+                        <ul>
+                          <li><a href="#">menu-1a</a></li>
+                          <li><a href="#">menu-1b</a></li>
+                          <li><a href="#">menu-1c</a></li>
+                          <li><a href="#">menu-1d</a></li>
+                          <li><a href="#">menu-1e</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">menu-2</a>
+                        <ul>
+                          <li><a href="#">menu-2a</a></li>
+                          <li><a href="#">menu-2b</a></li>
+                          <li><a href="#">menu-2c</a></li>
+                          <li><a href="#">menu-2d</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">menu-3</a>
+                  </li>
+                  <li>
+                    <a href="#">menu-4</a>
+                  </li>
+                  <li>
+                    <a href="#">menu-5</a>
+                  </li>
+                </ul>
+              </li>-->
+              <li class="nav-bottom ampd-advising"><a href="https://oaiss.ampd.yorku.ca/">ACADEMIC ADVISING</a></li>
+              <li class="nav-bottom ampd-tours"><a href="https://ampd.yorku.ca/book-a-tour/">BOOK A TOUR</a></li>
+              <li class="nav-bottom ampd-news"><a href="https://ampd.yorku.ca/news-events/ampd-news/">AMPD NEWS</a></li>
+              <li class="nav-bottom ampd-events"><a href="https://ampd.yorku.ca/events/">AMPD EVENTS</a></li>
+              <li class="nav-bottom ampd-events"><a href="https://ampd.yorku.ca/podcast/">AMPD PODCAST</a></li>
+              <li class="nav-bottom ampd-events"><a href="https://ampd.yorku.ca/year-of-the-arts/">AMPD YEAR OF THE ARTS</a></li>
+              <li class="nav-bottom ampd-box-office"><a href="https://facilities.ampd.yorku.ca/home/boxoffice">BOX OFFICE</a></li>
+              <li class="nav-bottom quick-links"><a href="https://ampd.yorku.ca/quick-links">QUICK LINKS</a></li>
+              <li class="nav-bottom covid-update"><a href="https://coronavirus.info.yorku.ca">COVID-19 UPDATE</a></li>
+            </ul>
+
+          </nav>
+
+          <a href="#" title="Open Global Navigation" class="toggle">
+            <span></span>
+          </a>
+
+
+</div>
+
+      <script>
+        (function($) {
+          'use strict';
+
+          // call our plugin
+          var Nav = new hcOffcanvasNav('#main-nav', {
+            disableAt: false,
+            customToggle: '.toggle',
+            levelSpacing: 40,
+            levelTitles: true,
+            levelTitleAsBack: true,
+            insertClose: false,
+            pushContent: '#container',
+            position: 'right',
+            levelOpen: 'expand',
+            swipeGestures: true,
+            ariaLabels: {
+            open:     'Open Menu',
+            close:    'Close Menu',
+            submenu:  'Submenu'
+      }
+          });
+
+          // add new items to original nav
+          $('#main-nav').find('li.add').children('a').on('click', function() {
+            var $this = $(this);
+            var $li = $this.parent();
+            var items = eval('(' + $this.attr('data-add') + ')');
+
+            $li.before('<li class="new"><a href="#">'+items[0]+'</a></li>');
+
+            items.shift();
+
+            if (!items.length) {
+              $li.remove();
+            }
+            else {
+              $this.attr('data-add', JSON.stringify(items));
+            }
+
+            Nav.update(true); // update DOM
+          });
+
+          // demo settings update
+
+          const update = function(settings) {
+            if (Nav.isOpen()) {
+              Nav.on('close.once', function() {
+                Nav.update(settings);
+                Nav.open();
+              });
+
+              Nav.close();
+            }
+            else {
+              Nav.update(settings);
+            }
+          };
+
+          $('.actions').find('a').on('click', function(e) {
+            e.preventDefault();
+
+            var $this = $(this).addClass('active');
+            var $siblings = $this.parent().siblings().children('a').removeClass('active');
+            var settings = eval('(' + $this.data('demo') + ')');
+
+            if ('theme' in settings) {
+              $('body').removeClass().addClass('theme-' + settings['theme']);
+            }
+            else {
+              update(settings);
+            }
+          });
+
+          $('.actions').find('input').on('change', function() {
+            var $this = $(this);
+            var settings = eval('(' + $this.data('demo') + ')');
+
+            if ($this.is(':checked')) {
+              update(settings);
+            }
+            else {
+              var removeData = {};
+              $.each(settings, function(index, value) {
+                removeData[index] = false;
+              });
+
+              update(removeData);
+            }
+          });
+        })(jQuery);
+      </script>
+
+</div><!-- .site-branding -->
+</div><!-- .site-branding-container -->
+<div class="">
+</div><!-- .entry-header -->
+</header><!-- #masthead -->
+    <!--no message-->
+<div id="content" class="site-content">
+    <div class="department-title-menu">
+    <nav id="site-navigation" class="main-navigation" aria-label="Top Menu">
+          </nav><!-- #site-navigation -->
+    	<section id="primary" class="content-area">
+		<main id="main" class="site-main">
+
+			
+<article id="post-110135" class="post-110135 page type-page status-publish hentry entry">
+		<header class="entry-header">
+		<!--<div class="the-title-page-bg-img">-->
+<h1 class="entry-title">Creative Technologies</h1><!--</div>-->
+	</header>
+	
+	<div class="entry-content">
+		<div class="ampd-special-header-img" role="img" aria-label="Join AMPD YorkU">
+<h1>Creative Technologies</h1>
+<p style="font-size:18px;color:#000;">Creative Industries | Entrepreneurship | Art &#038; Business Organizations</p>
+<!--<a href="http://www.yorku.ca/myfile" target="_blank" rel="noopener"><p class="ampdprogram-btn">Accept your offer <svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" width="35px" height="35px" viewBox="-11 -11.5 65 66"><g><g><path class="black-btn-chevron" fill="#ffffff;" d="M18.022,33.569c 0.282,0-0.566-0.105-0.781-0.323c-0.432-0.431-0.432-1.132,0-1.564l10.022-10.035 L17.241,11.615c 0.431-0.432-0.431-1.133,0-1.564c0.432-0.432,1.132-0.432,1.564,0l10.803,10.814c0.433,0.432,0.433,1.132,0,1.564 L18.805,33.243C18.59,33.464,18.306,33.569,18.022,33.569z"/></g></g></svg></p></a>-->
+</div>
+<div class="minor-header-copy">
+<div class="row">
+<div class="col-8">
+<p style="text-align:left;color:#fff;font-weight: 300;font-size:24px">Apply creativity, collaboration and entrepreneurship to address real-world problems in fast-changing industries, such as the ethics of disruptive technologies, web3, the development and application of artificial intelligence, and more.</p>
+</div>
+<div class="col-4">
+</div>
+</div>  
+</div>
+<div class="did-you-know">
+<div class="did-you-know-space">
+<div class="did-you-know-container did-you-know-container-imghalf">
+<div class="did-you-know-container-txt left-txt">
+<h2>Program overview</h2>
+<p>Offered exclusively on York University’s Markham Campus starting September 2024, the Creative Technologies (BFA) program empowers students to develop multidisciplinary creative skills and technological expertise through hands-on learning with an emphasis on social applications and contexts.<br><br>As part of the program, you will engage in collaborative research projects and digital projects that address real-world problems and contribute to emerging industries.<br><br>Through innovative skills-based courses, you will gain practical experience such as technology for fabrication, media processes, digital content creation, virtual environments, and more.</p>
+</div>
+<img src="https://ampd.yorku.ca/wp-content/uploads/2023/09/cma_betaspace-circuit_2023_4.jpg" alt="Student looking at a picture" width="640" height="506" class="alignright size-full" />
+</div>
+</div>
+
+</div>
+<div class="program-highlights">
+<h2>Program Highlights</h2>
+<p style="text-align: center;">Through the Creative Technologies (BFA) program, you will:</p>
+<div class="container">
+<div class="row">
+<div class="col-sm highlight-box"><span class="dot"><img src="https://ampd.yorku.ca/wp-content/uploads/2021/03/idea-02.png" alt="Light Bulb"/></span><br><br>Create exceptional, socially engaged projects in the creative industries using advanced digital technologies</div>
+<div class="col-sm highlight-box"><span class="dot"><img src="https://ampd.yorku.ca/wp-content/uploads/2021/03/process-03.png" alt="Pencil"/></span><br><br>Analyze and critique contemporary digital projects within aesthetic, conceptual, and historical frameworks</div>
+<div class="col-sm highlight-box"><span class="dot"><img src="https://ampd.yorku.ca/wp-content/uploads/2021/03/learning-04.png" alt="Book"/></span><br><br>Develop technological skills and creative methodologies to generate ideas, proposals, and solutions within collaborative, interdisciplinary, and professional settings</div>
+<div class="col-sm highlight-box"><span class="dot"><img src="https://ampd.yorku.ca/wp-content/uploads/2023/09/MicrosoftTeams-image-2.png" alt="Book"/></span><br><br>Gain professional experience by collaborating with industry partners, community organizations, and others in the City of Markham, the wider York Region, and within global networks</div>
+</div>
+</div>
+</div>
+<div class="what-you-need">
+<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Sample Courses</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Program Advantages</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Admission Requirements</a>
+</li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+<div class="tab-pane fade tab-content-style show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+<p style="text-align:left;font-size: 18px; color:#E31837;font-weight:400;">Sample Courses</p>
+<p><strong>First-year Courses</strong></p>
+<ul>
+  <li>Creative Methodologies I &#038; II</li>
+  <li>Fundamentals of Collaboration </li>
+  <li>Understanding Coding </li> 
+</ul>
+<br>
+<p><strong>Micro-Credit Courses</strong></p>
+<ul>
+  <li>Fabrication techniques such as 3D printing or laser cutting</li>
+  <li>Audio and visual digital content creation</li>
+  <li>Interactive media design (VR &#038; AR)</li> 
+  <li>3D graphics (modelling &#038; rendering)</li> 
+  <li>Physical computing (microcontrollers &#038; sensors)</li> 
+</ul>
+</div>
+
+<div class="tab-pane fade tab-content-style" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+<p style="text-align:left;font-size: 18px; color:#E31837;font-weight:400;">PROGRAM ADVANTAGES</p>
+<p><strong>Students in the Creative Technologies (BFA) program will enjoy York University’s Markham Campus, featuring: </strong></p>
+<ul>
+  <li>New, modern, and accessible facilities</li>
+  <li>Ten floors of teaching and learning space</li>
+  <li>A multi-faith space, and indigenous circle, and enhanced accessibility features</li> 
+  <li>Unique classrooms featuring state-of-the-art technology</li> 
+  <li>Media creation spaces, makerspaces, and a virtual reality and gaming lab</li> 
+</ul>
+</div>
+<div class="tab-pane fade tab-content-style" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+<p style="text-align:left;font-size: 18px; color:#E31837;font-weight:400;">ADMISSION REQUIREMENTS</p>
+<p><strong>For Ontario High School students, the admission requirements the Creative Technologies (BFA) program are:</strong></p>
+<ul>
+<li>Ontario Secondary School Diploma (OSSD)</li>
+<li>6 4U or M level courses including:</li>
+<ul>
+<li>ENG4U (prerequisite)</li>
+<li>12U Arts course or similar arts training (recommended)</li>
+</ul>
+<li>No portfolio is required.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="did-you-know2">
+<div class="did-you-know-space2">
+<div class="did-you-know-container did-you-know-container-imgfull">
+<div class="did-you-know-container-txt left-txt">
+<h2>Career paths</h2>
+<br/><br/>
+<div class="row">
+<div class="col-md-6">
+<ul>
+<li>Creative Technologist</li> 
+<li>Digital Content Creator</li> 
+<li>Interactive Exhibition Designer</li>
+<li>Programing Director</li>
+<li>Community Artist &#038; Organizer</li>
+</ul>
+</div>
+<div class="col-md-6">
+<img loading="lazy" width="640" height="506" class="alignleft size-full" src="https://ampd.yorku.ca/wp-content/uploads/2023/09/Lab-lifesci57.jpg" alt="Students using an iPad to FaceTime" class="aligncenter" />
+</div>
+</div>
+</div> 
+</div>
+</div>
+<div class="footer-red">
+<div class="footer-text">
+<h2>Admission</h2>
+<br>
+<br>
+<a href="https://futurestudents.yorku.ca/requirements" target="_blank" rel="noopener"><p class="ampdprogram-btn2">Apply to this program <svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" width="35px" height="35px" viewBox="-11 -11.5 65 66"><g><g><path class="black-btn-chevron" fill="#ffffff;" d="M18.022,33.569c 0.282,0-0.566-0.105-0.781-0.323c-0.432-0.431-0.432-1.132,0-1.564l10.022-10.035 L17.241,11.615c 0.431-0.432-0.431-1.133,0-1.564c0.432-0.432,1.132-0.432,1.564,0l10.803,10.814c0.433,0.432,0.433,1.132,0,1.564 L18.805,33.243C18.59,33.464,18.306,33.569,18.022,33.569z"/></g></g></svg></p></a> <!--<a href="#" target="_blank" rel="noopener"><p class="ampdprogram-btn2">Deadlines <svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" width="35px" height="35px" viewBox="-11 -11.5 65 66"><g><g><path class="black-btn-chevron" fill="#ffffff;" d="M18.022,33.569c 0.282,0-0.566-0.105-0.781-0.323c-0.432-0.431-0.432-1.132,0-1.564l10.022-10.035 L17.241,11.615c 0.431-0.432-0.431-1.133,0-1.564c0.432-0.432,1.132-0.432,1.564,0l10.803,10.814c0.433,0.432,0.433,1.132,0,1.564 L18.805,33.243C18.59,33.464,18.306,33.569,18.022,33.569z"/></g></g></svg></p></a>--> <a href="https://futurestudents.yorku.ca/tuition" target="_blank" rel="noopener"><p class="ampdprogram-btn2">Tuition Fees <svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" width="35px" height="35px" viewBox="-11 -11.5 65 66"><g><g><path class="black-btn-chevron" fill="#ffffff;" d="M18.022,33.569c 0.282,0-0.566-0.105-0.781-0.323c-0.432-0.431-0.432-1.132,0-1.564l10.022-10.035 L17.241,11.615c 0.431-0.432-0.431-1.133,0-1.564c0.432-0.432,1.132-0.432,1.564,0l10.803,10.814c0.433,0.432,0.433,1.132,0,1.564 L18.805,33.243C18.59,33.464,18.306,33.569,18.022,33.569z"/></g></g></svg></p></a>
+</div>
+</div>
+<div style="max-width: 800px;margin: auto;" id="contact-us" class="formsection-holder">
+<script type="module" src="https://futurestudents.yorku.ca/templates/york-undergrad-lead.js"></script><york-undergrad-lead one_column faculty='fa' path='program/creative-technologies' header='Request More Information' blurb='Complete this form to learn more about the Creative Technologies program at the York University School of the Arts, Media, Performance &#038; Design (AMPD).' faculty_program='fa' topic='FA-creative-technologies' recruiter='Laura Sykes' submitted_header='Thank you!' submitted_blurb='We’ll be in touch soon with information about the Creative Technologies program.'></york-undergrad-lead>
+</div>	</div><!-- .entry-content -->
+
+	</article><!-- #post-110135 -->
+
+		</main><!-- #main -->
+	</section><!-- #primary -->
+
+
+</div><!-- #content -->
+<footer id="colophon" class="site-footer">
+	</footer><!-- #colophon -->
+<div class="global-footer__contact">
+<div class="footerwrapper">
+<aside class="widget-area" role="complementary" aria-label="Footer">
+		</aside><!-- .widget-area -->
+</div>
+
+<div class="yorkbrandfooterholder">
+
+<div class="row">
+
+<div class="col-sm">
+<div class="yorkbrandfooter">
+	<div style="width:150px"><a href="https://yorku.ca"><img id="yorklogo" src="https://ampd.yorku.ca/wp-content/themes/AMPD2020/YorkULogo-white.svg" border="0" title="York University" alt="York University"></a></div>
+</div>
+</div>
+<div class="col-sm">
+<div class="yorkbrandfooter">
+<ul class="list-unstyled small">
+          <li><a href="https://www.yorku.ca/safety/" class="text-white">Community Safety</a></li>
+          <li><a href="https://www.yorku.ca/about/privacy-legal/" class="text-white">Privacy &amp; Legal</a></li>
+          <li><a href="https://accessibility.students.yorku.ca/" class="text-white">Accessibility</a></li>
+          <li><a href="https://www.yorku.ca/about/careers/" class="text-white">Careers</a></li>
+        </ul>
+</div>
+</div>
+
+</div>
+</div>
+
+</div><!-- #page -->
+
+
+<script type="text/javascript">
+const wpvCtHead = document.getElementsByTagName( "head" )[ 0 ];
+const wpvCtExtraCss = document.createElement( "style" );
+wpvCtExtraCss.textContent = '/* ----------------------------------------- *//* Content Template: creative-technologies - start *//* ----------------------------------------- */.formsection-holder {padding: 100px 50px 200px 50px;}@media only screen and (max-width: 768px){.formsection-holder {padding: 100px 10px 100px 10px;}}.su-spoiler-title {font-weight: 500 !important;}.su-spoiler-icon-plus.su-spoiler-closed .su-spoiler-icon:before {color: #4954ea;}.su-spoiler-icon-plus .su-spoiler-icon:before {color: #4954ea;}.entry .entry-title {display: none !important;}@media screen and (min-width: 55em){.desk-4-5, .desk-8-10 {width: 100% !important;}}@media screen and (min-width: 55em){.desk-push-1-10 {left: 0 !important;}}.container{padding: 0rem 0rem !important;text-align:center;}.container h1{position: absolute;top: 2%;color: #ffffff;padding: 20px;font-size: 35px;font-weight: 100;}.overview-minor{clear:both;float: left;background-color:#f5f8fd;height:auto;padding:50px;margin: 100px 0px 30px 0px !important;}.ampd-special-header {position: absolute;top: 2%;color: #ffffff;padding: 20px;font-size: 35px;font-weight: 100;}@media screen and (min-width: 767px) {.container h1 {font-size: 5rem;padding: 65px;}}.ampd-special-header-img {  /* The image used */  background-image: url(\"https://ampd.yorku.ca/wp-content/uploads/2023/09/CreativeTechnologies_webpage.jpg\");  background-color:#000; padding: 225px 225px 225px 115px;  text-align:left; color: #fff; clear: both;  /* Set a specific height */  min-height: 700px;   /* Create the parallax scrolling effect */  background-attachment: fixed;  background-position: center;  background-repeat: no-repeat;  background-size: cover;}@media screen and (max-width: 767px) {.ampd-special-header-img {padding: 225px 25px 225px 35px;}}.ampd-special-header-img h1 {color:#000;font-size: 70px;font-weight: 500;}@media screen and (max-width: 767px) {.ampd-special-header-img h1 {font-size: 50px;}}.ampd-special-preheader {background-color:#E3223A;padding-top: 40px;padding-bottom: 60px;height: auto;display: inline-block;}.ampd-special-preheader h2 {color:#ffffff;text-align: center;padding: 22px 8px 10px 8px;font-size: 40px;font-weight: 600;}.overview-minor-main-img{padding-right:35px;padding-bottom:35px;float:left;}.minor-header-copy{position: relative;margin: 0 auto!important;padding: 60px 60px 60px 60px;background-color:#324196;}.minor-faq{height:auto;clear:both;padding-bottom: 100px;}.footer-red {background-color:#E3223A; padding: 120px 75px 200px 75px;width: 100%;min-height: 385px;clear:both;}.footer-blue {background: #324196;background-image:url(\"https://ampd.yorku.ca/wp-content/uploads/2021/03/Periwinkle-book-1-1-web.jpg\");background-repeat: no-repeat;background-size: cover;height: auto;padding: 38px;}.contactform-holder{height:auto;padding:30px;max-width: 690px !important;margin: auto !important;}.footer-text-blue{text-decoration: none;white-space: nowrap; text-align: center;font-size:24px;color: #FFFFFF;}.footer-text-blue p {text-decoration: none; color:#ffffff;}.have-question-link{color:#fff;}.have-question-link:hover {color:#fff;}.footer-text{position:relative;padding:0px 0px 0px 28px;}.footer-text h2 {margin-bottom: 0.1rem;color:#ffffff !important;text-align: left;font-size: 40px;font-weight: 600;}.footer-text p {color:#ffffff;text-align: center;font-size: 25px;font-weight: 400;}.footer-text a {color:#ffffff;text-align: center;font-size: 25px;font-weight: 400;}.touchform {text-align: left;border: 1px solid #fff;width: auto;color: #fff; font-size:20px;}.footer {position:relative;text-align:right;padding:0px 180px 10px 50px;bottom:50px;}@media only screen and (max-width: 950px) {.footer {position:relative; padding:0px 30px 10px 30px; bottom:0px;}.footer-text{position:relative;top:0px;padding:0px 0px 10px 0px;}}/*no space between sections*/.entry-header {display:none !important;}.entry .entry-content > *, .entry .entry-summary > * {margin: 0px 0;}.entry-content {margin: auto !important;}.ampdprogram-btn {white-space: nowrap;font-size: 18px !important;color: #ffffff;background-color: #E31837;margin: 0px;padding: 10px 0px 0px 19px;width: 204px;height: 55px;font-weight: 400;}.ampdprogram-btn:hover {color: #000000;background-color: #ffffff;}.ampdprogram-btn:hover #black-btn-chevron {fill: #000000;}.ampdprogram-btn:hover #black-btn-chevron {fill: #ffffff;}.ampdprogram-btn2 {white-space: nowrap;font-size: 18px !important;color: #ffffff;border-color: #FFFFFE;border-style: solid;border-width: 1px;margin: 0px;padding: 10px 18px 0px 25px;width: auto;height: 55px;font-weight: 400;position: relative;float:left;margin-right: 30px;margin-top: 10px;}.ampdprogram-btn2:hover {color: #000000;background-color: #ffffff;}.ampdprogram-btn2:hover #black-btn-chevron {fill: #000000;}.ampdprogram-btn2:hover #black-btn-chevron {fill: #ffffff;}.studentprofileholder{text-align:center;padding-bottom:100px;padding-top:100px;clear:both;}.studentprofile-feed{text-align:center;height:auto;margin: auto;max-width:900px;}.studentprofile-feed h2{text-align:left;}.prev-arrow{float:left;position: absolute;top: 40%;left: -50px;cursor: pointer;font-size: 60px;}.next-arrow{float:right;position: absolute;right: -50px;top: 40%;cursor: pointer;font-size: 60px;}a.studentworklink:link{color:#000;text-decoration: none;}a.studentworklink:visited{color:#000;text-decoration: none;}a.studentworklink:hover{color:#000;text-decoration: none;}a.studentworklink:active{color:#000;text-decoration: none;}.studentprofileslider-container{text-align:left;margin:5px;}.studentworkholder{text-align:left;padding-bottom:100px;padding-top:100px;background-color:#F8F9FC;}.topreadmore-btn  {white-space: nowrap;font-size: 16px!important;color: #000;outline: none;letter-spacing: 1px;cursor: pointer;text-decoration: none;visibility: inherit;transition: none;text-align: left;margin: 0px;padding: 3px 0px 3px 18px;width: 210px;height: 42px;font-weight: 400;position: absolute;}@media screen and (max-width: 1024px) {.did-you-know-btn {position: relative;}}.topreadmore-btn:hover {background-color:#00000008;}/*right arrow*/.topreadmore-arrow {    position: relative;    top: 7px;    right: 22px;    margin: 0px;    float: right;	width: 12px;	height: 12px;}.topreadmore-arrow div {	border-radius: 0.5px;	background-color: #000;}.topreadmore-arrow-bottom:after {  content: \"\";  position: relative;  top: 0px;  right:0px;  margin: 0px;  float: right;  border-right: 1.0px solid #000;  border-bottom: 1.0px solid #000;  width: 10px;  height: 10px;  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);  transform: rotate(-45deg);}.topreadmore-arrow-stem {    content: \"\";    position: relative;    top: -45px;    right:-10px;    float: right;	width: 1px;	height: 50px;	transform-origin: 50% 100%;  	transform: rotate(-90deg);}/*right arrow end*/.slanted {background-color:#000000;height:500px;-webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);}.overlay {  position: absolute;  top: 0;  bottom: 0;  left: 0;  right: 0;  height: 100%;  width: 100%;  opacity: 0;  transition: .5s ease;  background-color: #324196;  }.studentprofileslider-container {  position: relative;  width: 50%;}.studentprofileslider-container:hover .overlay {  opacity: 1;}.text {  color: white;  font-size: 18px;  font-weight:500;  position: absolute;  top: 50%;  left: 50%;  -webkit-transform: translate(-50%, -50%);  -ms-transform: translate(-50%, -50%);  transform: translate(-50%, -50%);  text-align: center;  border: 1px solid white;  width: auto;  padding: 10px 20px 10px 20px;}.did-you-know {background-color: #fff;}.did-you-know-space {padding:70px 65px;background-color:#fff;}.did-you-know-space2 {padding:50px 25px;background-color:#e4e4e4;}.did-you-know-title {text-align:center;}.did-you-know h2{font-size: 36px; color:#000; text-align:left;margin-bottom: 0.5rem;}.did-you-know-container {justify-content: center; display: flex; padding:30px 0;}.did-you-know-container-txt {text-align: left;}.right-txt {padding:0px 20px 10px 30px;}.left-txt {padding:0px 20px 10px 30px;}.did-you-know-container span {font-size:24px; text-align: left;letter-spacing: 0px; color: #000000;font-weight:600; line-height: 1.2;}.did-you-know-container p {font-size:18px; text-align: left;letter-spacing: 0px; color: #000000;font-weight:300;padding-top: 50px;}.did-you-know-container-imghalf img{padding:0px 20px 20px 10px;}.did-you-know-container-imgfull img{width:100%; height:auto; padding:0px;}@media screen and (max-width: 65em){  .did-you-know-container {justify-content: normal; display: initial; padding:30px 0;}  .did-you-know-container img{width:100% !important;}  .right-txt {padding:10px 70px 10px 40px;}  .did-you-know-space {padding:60px 10px 10px 10px;}  .did-you-know2{min-height:750px;}  .did-you-know-full-img {background-image: url(https://ampd.yorku.ca/wp-content/uploads/2021/03/york-facilities-1.jpg);width:100%;min-height: 350px; background-repeat: no-repeat; background-position: center;}}@media screen and (max-width: 55em){.did-you-know2{min-height:850px;}}.did-you-know-btn  {white-space: nowrap;font-size: 16px!important;color: #000;outline: none;letter-spacing: 1px;cursor: pointer;text-decoration: none;visibility: inherit;transition: none;text-align: left;margin: 0px;padding: 3px 0px 3px 18px;width: 285px;height: 42px;font-weight: 400;position: absolute;}@media screen and (max-width: 1024px) {.did-you-know-btn {position: relative;}}.did-you-know-btn:hover {background-color:#00000008;}.highlight-box {padding:10px;}/*right arrow*/.arrow {    position: relative;    top: 7px;    right: 22px;    margin: 0px;    float: right;	width: 12px;	height: 12px;}.arrow div {	border-radius: 0.5px;	background-color: #000;}.arrow-bottom:after {  content: \"\";  position: relative;  top: 0px;  right:0px;  margin: 0px;  float: right;  border-right: 1.0px solid #000;  border-bottom: 1.0px solid #000;  width: 10px;  height: 10px;  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);  transform: rotate(-45deg);}.arrow-stem {    content: \"\";    position: relative;    top: -45px;    right:-10px;    float: right;	width: 1px;	height: 50px;	transform-origin: 50% 100%;  	transform: rotate(-90deg);}/*right arrow end*/.program-highlights{background: #32419608 0% 0%;min-height: 320px;width:100%;padding: 70px;clear: both;}.what-you-need{height: auto;width:100%;padding: 69px 20px 50px 20px;}.program-highlights h2 {text-align:center;}.tab-content-style{max-width: 900px;padding: 40px;}.dot {height: 38px;width: 38px;background-color: #E3223A;border-radius: 50%;display: inline-block;}/* ----------------------------------------- *//* Content Template: creative-technologies - end *//* ----------------------------------------- */';
+wpvCtHead.appendChild( wpvCtExtraCss );
+</script>
+<script type='text/javascript' src='https://ampd.yorku.ca/wp-content/themes/twentynineteen/js/touch-keyboard-navigation.js' async='async' id='base-functions-js'></script>
+<script type='text/javascript' src='https://ampd.yorku.ca/wp-content/themes/AMPD2020/js/priority-menu.js' id='twentynineteen-priority-menu-js'></script>
+<script type='text/javascript' src='https://ampd.yorku.ca/wp-content/themes/AMPD2020/js/touch-keyboard-navigation.js' id='twentynineteen-touch-navigation-js'></script>
+<script type='text/javascript' src='https://ampd.yorku.ca/wp-content/plugins/page-links-to/dist/new-tab.js' id='page-links-to-js'></script>
+	<script>
+	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
+	</script>
+	
+<script src="/wp-content/themes/AMPD2020/js/bootstrap.min.js"></script>
+<script src="/wp-content/themes/AMPD2020/js/jquery.dataTables.min.js"></script>
+<script src="/wp-content/themes/AMPD2020/jquery-accordion.js"></script>
+
+</body>
+</html>

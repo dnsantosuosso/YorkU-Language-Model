@@ -1,0 +1,13 @@
+Drupal.behaviors.fees_index = {
+	attach: function(context, settings){
+		let prefix = '/fees/courses';
+		
+		jQuery('.fees-session select').change(function(){
+			let target_select = jQuery(this);
+			if(target_select.val()){
+				let url = 		prefix + '/' + target_select.data('url') + '/' + target_select.val();
+				window.location = url;
+			}
+		});
+	}
+};

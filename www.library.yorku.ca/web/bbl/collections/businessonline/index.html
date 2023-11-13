@@ -1,0 +1,761 @@
+  <!DOCTYPE html>
+<html lang="en-US">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://www.library.yorku.ca/web/bbl/wp-content/themes/york2020/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://www.library.yorku.ca/web/bbl/wp-content/themes/york2020/favicon-16x16.png">
+  <link rel="manifest" href="https://www.library.yorku.ca/web/bbl/wp-content/themes/york2020/site.webmanifest">
+  <link rel="mask-icon" href="https://www.library.yorku.ca/web/bbl/wp-content/themes/york2020/safari-pinned-tab.svg" color="#e31837">
+  <link rel="shortcut icon" href="https://www.library.yorku.ca/web/bbl/wp-content/themes/york2020/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="https://www.library.yorku.ca/web/bbl/wp-content/themes/yul-york2020-child/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <!-- added GA verifcation by Ali - testing with google -->
+  <meta name="google-site-verification" content="3zPy8Qq7tlscZkcxUUYLnxpErGXuuCPZXPc8NVzOqEU" />
+  <!-- end of GA verifcation -->
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WB2S8R');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Hotjar Tracking Code for https://www.yorku.ca/ -->
+  <script>
+    (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:1020482,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+  <style type="text/css">
+/* File:       uki_facebook_wall_feed.css
+   Author:     Fedil Grogan
+   Date:       01/03/2011
+   Copyright:  Fedil Grogan 2011
+   Purpose:
+   This is the styling sheet for the facebook feed. I tried to make it as
+   close to facebook as possible. Feel free to change as you wish.
+*/
+#facebook_status_box {
+  background: #ffffff;
+  color: #383838;
+  margin: 0px;
+  padding: 0px;
+  width: 296px;
+  height: 450px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+#facebook_status_box h2, #facebook_status_box h5 {
+  margin: 0px;
+  padding: 0px;
+}
+#facebook_status_box p {
+  margin: 0px;
+  padding: 5px 0px 0px 0px;
+  color: #383838;
+  line-height: 150%;
+}
+#facebook_status_box h2 {
+  padding: 10px 0px 10px 30px;
+  background: #F6F6F6;
+  letter-spacing: -.5px;
+  font-size: 1.4em;
+  color: #383838;
+}
+#facebook_status_box #facebook_canvas {
+  overflow: auto;
+  height: 409px;  
+}
+#facebook_status_box .fb_post {
+  margin: 10px 4px;
+  border: 1px solid #C4CDE0;
+  padding: 3px;
+  border-radius: 3px;
+}
+#facebook_status_box .fb_post h5 {
+  padding: 0px;
+  font-size: 11px;
+  margin-bottom: 2px;
+  line-height: 1;
+}
+#facebook_status_box .fb_post h5 a {
+  color: #0A7A98;
+  text-decoration: none;
+}
+#facebook_status_box .fb_post .fb_photoblock {
+  border-bottom: 1px solid #e6e6fa;
+  overflow: hidden;
+  padding: 7px;
+  margin: 0;
+}
+#facebook_status_box .fb_post .fb_photo {
+  float: left;
+  width: 32px;
+  margin-right: 2px;
+}
+#facebook_status_box .fb_post .fb_time {
+  color: #999999;
+}
+#facebook_status_box .fb_post .fb_time img {
+  padding-right: 5px;
+}
+#facebook_status_box .fb_post .fb_photo img {
+  border: none;
+  width: 32px;
+  height: 32px;
+}
+#facebook_status_box .fb_post .fb_photo_content {
+  font-size: 11px;
+  float: left;
+  width: 85%;
+}
+#facebook_status_box .fb_post .fb_msg {
+  clear: both;
+  padding: 7px;
+  overflow: hidden;
+}
+#facebook_status_box .fb_post .fb_msg p {
+  font-size: 12px;
+}
+#facebook_status_box .fb_link_post img {
+  margin: 0px 3px 0px 0px;
+  float: left;
+}
+#facebook_status_box .fb_link_post h6 {
+  font-size: .9em;
+  margin: 3px 0px 0px 0px;
+}
+#facebook_status_box .fb_link_post a {
+  color: #0A7A98;
+  text-decoration: none;
+}
+#facebook_status_box .fb_link_post a:hover {
+  text-decoration: underline;
+}
+#facebook_status_box .fb_link_post p {
+  font-size: .9em;
+  color: #999999;
+}
+#facebook_status_box .fb_link_post p.fb_link_caption {
+  margin: 0px;
+  margin-top: -5px;
+  color: #383838;
+}
+#facebook_status_box .fb_link_post p.fb_vid_length {
+  font-size: 10px;
+}
+#facebook_status_box .fb_link_post p.fb_desc {
+  font-size: 11px;
+}
+#facebook_status_box .fb_link_post p.fb_cap {
+  font-size: 11px;
+  color: #000000;
+}
+#facebook_status_box .fb_post img.fb_post_icon {
+  float: left;
+  margin: 2px;
+}
+#facebook_status_box .fb_post .fb_commLink {
+  font-size: 11px;
+  background: #EDEFF4;
+  padding: 3px 7px;
+  clear: both;
+}
+#facebook_status_box .fb_post .fb_commLink a {
+  color: #0A7A98;
+  text-decoration: none;
+}
+#facebook_status_box .fb_post .fb_msg .fb_commLink a:hover {
+  text-decoration: underline;
+}
+#facebook_status_box .fb_post .fb_likes {
+  float: right;
+  margin-left: 5px;
+}
+#facebook_status_box .fb_post .fb_likes a {
+  background-image: url("https://fbstatic-a.akamaihd.net/rsrc.php/v2/y-/r/tbhIfdAHjXE.png");
+  background-repeat: no-repeat;
+  background-position: 0 -60px;
+  height: 14px;
+  padding-left: 18px;
+}
+#facebook_status_box .fb_msg p.fb_story {
+  font-size: 10px;
+  color: #999999;
+}
+#facebook_status_box .fb_post .fb_comments {
+  background-color: #EDEFF4;
+  font-size: 11px;
+  border-bottom: 1px solid #e6e6fa;
+  overflow: hidden;
+  padding: 7px;
+  margin: 0;
+}
+#facebook_status_box .fb_post .fb_comments p {
+  font-size: 11px;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+#facebook_status_box .fb_post .fb_comments a {
+  color: #0A7A98;
+  text-decoration: none;
+}
+
+#facebook_status_box #facebook_canvas .fb_post .fb_commLink .fb_likes .tooltip
+{
+  position: static !important;
+  padding: 0 0 0 18px !important;
+  opacity: 1 !important;
+  filter: alpha(opacity=1) !important;
+}
+
+#facebook_status_box .fb_post .fb_comments .fb_comment_likes {
+  background-image: url("https://fbstatic-a.akamaihd.net/rsrc.php/v2/y-/r/tbhIfdAHjXE.png");
+  background-repeat: no-repeat;
+  background-position: 0 -60px;
+  height: 14px;
+  padding-left: 18px;
+  margin-left: 5px;
+}
+
+</style>
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<link rel="alternate" hreflang="en-us" href="https://www.library.yorku.ca/web/bbl/collections/businessonline/" />
+<link rel="alternate" hreflang="fr-fr" href="https://www.library.yorku.ca/web/bbl/collections/businessonline/?lang=fr" />
+<link rel="alternate" hreflang="x-default" href="https://www.library.yorku.ca/web/bbl/collections/businessonline/" />
+
+	<!-- This site is optimized with the Yoast SEO plugin v21.5 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Business Resources A - Z - Bronfman Business Library</title>
+	<link rel="canonical" href="https://www.library.yorku.ca/web/bbl/collections/businessonline/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Business Resources A - Z - Bronfman Business Library" />
+	<meta property="og:description" content="The business collection includes  books, business journals,  full text databases, and specialized databases accessible in the library only. We have prepared Guides to doing business research . We encourage you to visit our reference desk in the Bronfman Business Library, Room S237, Schulich School of Business, email our reference service use our IM chat reference [&hellip;]" />
+	<meta property="og:url" content="https://www.library.yorku.ca/web/bbl/collections/businessonline/" />
+	<meta property="og:site_name" content="Bronfman Business Library" />
+	<meta property="article:modified_time" content="2023-10-17T14:34:50+00:00" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Est. reading time" />
+	<meta name="twitter:data1" content="31 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.library.yorku.ca/web/bbl/collections/businessonline/","url":"https://www.library.yorku.ca/web/bbl/collections/businessonline/","name":"Business Resources A - Z - Bronfman Business Library","isPartOf":{"@id":"https://www.library.yorku.ca/web/bbl/#website"},"datePublished":"2012-06-29T14:49:36+00:00","dateModified":"2023-10-17T14:34:50+00:00","breadcrumb":{"@id":"https://www.library.yorku.ca/web/bbl/collections/businessonline/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.library.yorku.ca/web/bbl/collections/businessonline/"]}]},{"@type":"BreadcrumbList","@id":"https://www.library.yorku.ca/web/bbl/collections/businessonline/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.library.yorku.ca/web/bbl/"},{"@type":"ListItem","position":2,"name":"Business Collections","item":"https://www.library.yorku.ca/web/bbl/collections/"},{"@type":"ListItem","position":3,"name":"Business Resources A - Z"}]},{"@type":"WebSite","@id":"https://www.library.yorku.ca/web/bbl/#website","url":"https://www.library.yorku.ca/web/bbl/","name":"Bronfman Business Library","description":"","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.library.yorku.ca/web/bbl/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//yorku.libanswers.com' />
+<link rel="alternate" type="application/rss+xml" title="Bronfman Business Library &raquo; Feed" href="https://www.library.yorku.ca/web/bbl/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Bronfman Business Library &raquo; Comments Feed" href="https://www.library.yorku.ca/web/bbl/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Bronfman Business Library &raquo; Business Resources A - Z Comments Feed" href="https://www.library.yorku.ca/web/bbl/collections/businessonline/feed/" />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.library.yorku.ca\/web\/bbl\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3.2"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wpfb-css' href='//www.library.yorku.ca/web/bbl/wp-content/plugins/wp-filebase/wp-filebase.css?t=1493832425&#038;ver=3.4.4' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css' href='https://www.library.yorku.ca/web/bbl/wp-includes/css/dist/block-library/style.min.css?ver=6.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='yorku-blocks-style-css' href='https://www.library.yorku.ca/web/bbl/wp-content/plugins/yorkublocks/dist/style.css?ver=6.3.2' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--solid-white: #ffffff;--wp--preset--color--solid-black: #000000;--wp--preset--color--york-grey-dark: #686260;--wp--preset--color--york-grey-medium: #B7AEA9;--wp--preset--color--york-grey-pewter: #D6CFCA;--wp--preset--color--york-grey-light: #E8E4DF;--wp--preset--color--york-grey-ultra-light: #FAFAFA;--wp--preset--color--york-red-pms-186: #E31837;--wp--preset--color--york-red-medium: #B82025;--wp--preset--color--york-red-dark: #8C0000;--wp--preset--color--york-light-blue: #ACE6F8;--wp--preset--color--york-bright-blue: #3AC2EF;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='exlibris_catalogue_search_box_css-css' href='https://www.library.yorku.ca/web/bbl/wp-content/plugins/exlibris-catalogue-search-box/css/exlibris-csb.css?ver=6.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='page-list-style-css' href='https://www.library.yorku.ca/web/bbl/wp-content/plugins/page-list/css/page-list.css?ver=5.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wpml-blocks-css' href='https://www.library.yorku.ca/web/bbl/wp-content/plugins/sitepress-multilingual-cms/dist/css/blocks/styles.css?ver=4.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='social-widget-css' href='https://www.library.yorku.ca/web/bbl/wp-content/plugins/social-media-widget/social_widget.css?ver=6.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-tabletools-css-css' href='https://www.library.yorku.ca/web/bbl/wp-content/plugins/tablepress-datatables-tabletools/css/TableTools.min.css?ver=2.1.5' type='text/css' media='all' />
+<link rel='stylesheet' id='yuanimatedblockpatterns-style-css' href='https://www.library.yorku.ca/web/bbl/wp-content/plugins/yu-animated-blockpatterns/style.css?ver=6.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='yublockpatterns-style-css' href='https://www.library.yorku.ca/web/bbl/wp-content/plugins/yu-blockpatterns-2.0/style.css?ver=6.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wpml-legacy-vertical-list-0-css' href='https://www.library.yorku.ca/web/bbl/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-list-vertical/style.min.css?ver=1' type='text/css' media='all' />
+<style id='wpml-legacy-vertical-list-0-inline-css' type='text/css'>
+.wpml-ls-statics-shortcode_actions, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu, .wpml-ls-statics-shortcode_actions a {border-color:#cdcdcd;}.wpml-ls-statics-shortcode_actions a, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu a, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu a:link, .wpml-ls-statics-shortcode_actions li:not(.wpml-ls-current-language) .wpml-ls-link, .wpml-ls-statics-shortcode_actions li:not(.wpml-ls-current-language) .wpml-ls-link:link {color:#444444;background-color:#ffffff;}.wpml-ls-statics-shortcode_actions a, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu a:hover,.wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu a:focus, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu a:link:hover, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu a:link:focus {color:#000000;background-color:#eeeeee;}.wpml-ls-statics-shortcode_actions .wpml-ls-current-language > a {color:#444444;background-color:#ffffff;}.wpml-ls-statics-shortcode_actions .wpml-ls-current-language:hover>a, .wpml-ls-statics-shortcode_actions .wpml-ls-current-language>a:focus {color:#000000;background-color:#eeeeee;}
+</style>
+<link rel='stylesheet' id='york2020-style-css' href='https://www.library.yorku.ca/web/bbl/wp-content/themes/york2020/style.css?ver=2019.3' type='text/css' media='all' />
+<link rel='stylesheet' id='yul-york2020-child-style-css' href='https://www.library.yorku.ca/web/bbl/wp-content/themes/yul-york2020-child/style.css?ver=2020.10.103' type='text/css' media='all' />
+<link rel='stylesheet' id='basic-library-styles-css' href='https://www.library.yorku.ca/web/bbl/wp-content/themes/yul-york2020-child/css/basic_styles.css?ver=6967' type='text/css' media='all' />
+<link rel='stylesheet' id='wpml-library-styles-css' href='https://www.library.yorku.ca/web/bbl/wp-content/themes/yul-york2020-child/css/wpml_styles.css?ver=2720' type='text/css' media='all' />
+<link rel='stylesheet' id='yul-york2020-yorku-colours-css' href='https://www.library.yorku.ca/web/bbl/wp-content/themes/yul-york2020-child/css/generated/yorku_colours.css' type='text/css' media='all' />
+<link rel='stylesheet' id='omni-styles-css' href='https://www.library.yorku.ca/web/bbl/wp-content/uploads/wp-less/yul-york2020-child/css/omni-searchbox.css-bd70517b7e.css' type='text/css' media='all' />
+<link rel='stylesheet' id='gsc-styles-css' href='https://www.library.yorku.ca/web/bbl/wp-content/uploads/wp-less/yul-york2020-child/css/google-searchbox.css-c0bbb1fa26.css' type='text/css' media='all' />
+<link rel='stylesheet' id='yul-info-card-styles-css' href='https://www.library.yorku.ca/web/bbl/wp-content/uploads/wp-less/yul-york2020-child/css/yul-card-deck.css-722a21456a.css' type='text/css' media='all' />
+<link rel='stylesheet' id='yul-libcal-card-styles-css' href='https://www.library.yorku.ca/web/bbl/wp-content/uploads/wp-less/yul-york2020-child/css/libcal-card-deck.css-de0948c3d4.css' type='text/css' media='all' />
+<link rel='stylesheet' id='library-styles-2013-css' href='https://www.library.yorku.ca/web/bbl/wp-content/uploads/wp-less/yul-york2020-child/css/legacy/library-styles.css-507036145b.css' type='text/css' media='all' />
+<link rel='stylesheet' id='bxslider-replacement-css' href='https://www.library.yorku.ca/web/bbl/wp-content/uploads/wp-less/yul-york2020-child/css/legacy/infocards-bxreplacement.css-bf57c0a524.css' type='text/css' media='all' />
+<link rel='stylesheet' id='place-of-study-replacement-css' href='https://www.library.yorku.ca/web/bbl/wp-content/uploads/wp-less/yul-york2020-child/css/legacy/places-of-study.css-e13e25f3ef.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css' href='https://www.library.yorku.ca/web/bbl/wp-content/plugins/tablepress/css/build/default.css?ver=2.1.8' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-ui-standard-css-css' href='https://www.library.yorku.ca/web/bbl/wp-content/plugins/squelch-tabs-and-accordions-shortcodes/css/jquery-ui/jquery-ui-1.11.4/smoothness/jquery-ui.theme.min.css?ver=0.4.3' type='text/css' media='' />
+<link rel='stylesheet' id='squelch_taas-css' href='https://www.library.yorku.ca/web/bbl/wp-content/plugins/squelch-tabs-and-accordions-shortcodes/css/squelch-tabs-and-accordions.css?ver=0.4.3' type='text/css' media='all' />
+<style id='kadence-blocks-global-variables-inline-css' type='text/css'>
+:root {--global-kb-font-size-sm:clamp(0.8rem, 0.73rem + 0.217vw, 0.9rem);--global-kb-font-size-md:clamp(1.1rem, 0.995rem + 0.326vw, 1.25rem);--global-kb-font-size-lg:clamp(1.75rem, 1.576rem + 0.543vw, 2rem);--global-kb-font-size-xl:clamp(2.25rem, 1.728rem + 1.63vw, 3rem);--global-kb-font-size-xxl:clamp(2.5rem, 1.456rem + 3.26vw, 4rem);--global-kb-font-size-xxxl:clamp(2.75rem, 0.489rem + 7.065vw, 6rem);}:root {--global-palette1: #3182CE;--global-palette2: #2B6CB0;--global-palette3: #1A202C;--global-palette4: #2D3748;--global-palette5: #4A5568;--global-palette6: #718096;--global-palette7: #EDF2F7;--global-palette8: #F7FAFC;--global-palette9: #ffffff;}
+</style>
+<link rel='stylesheet' id='__EPYT__style-css' href='https://www.library.yorku.ca/web/bbl/wp-content/plugins/youtube-embed-plus/styles/ytprefs.min.css?ver=14.2' type='text/css' media='all' />
+<style id='__EPYT__style-inline-css' type='text/css'>
+
+                .epyt-gallery-thumb {
+                        width: 33.333%;
+                }
+                
+</style>
+<script type='text/javascript' src='https://www.library.yorku.ca/web/bbl/wp-content/themes/york2020/js/jquery-3.4.1.min.js' id='jquery-js'></script>
+<script type='text/javascript' src='https://www.library.yorku.ca/web/bbl/wp-content/plugins/yorkublocks/dist/script.js?ver=6.3.2' id='yorku-blocks-script-js'></script>
+<script type='text/javascript' src='https://www.library.yorku.ca/web/bbl/wp-content/plugins/better-wordpress-showhide-elements/showhide.js?ver=6.3.2' id='wp-showhide-js'></script>
+<script type='text/javascript' src='https://www.library.yorku.ca/web/bbl/wp-content/plugins/exlibris-catalogue-search-box/js/exlibris-csb.js?ver=1.0' id='exlibris_catalogue_search_box_js-js'></script>
+<script type='text/javascript' src='https://www.library.yorku.ca/web/bbl/wp-content/plugins/yu-animated-blockpatterns/animate.js?ver=6.3.2' id='animate_js-js'></script>
+<script type='text/javascript' src='https://www.library.yorku.ca/web/bbl/wp-content/plugins/yu-animated-blockpatterns/animategallery.js?ver=6.3.2' id='animategallery_js-js'></script>
+<script type='text/javascript' src='https://www.library.yorku.ca/web/bbl/wp-content/themes/yul-york2020-child/js/libcal-hours.js?ver=6.3.2' id='libcal-hours-js'></script>
+<script type='text/javascript' src='https://www.library.yorku.ca/web/bbl/wp-content/themes/yul-york2020-child/js/legacy/ask-a-question-include.js?ver=6.3.2' id='live-engage-ask-a-question-js'></script>
+<script type='text/javascript' src='https://www.library.yorku.ca/web/bbl/wp-content/themes/yul-york2020-child/js/legacy/selective-library-widgets.js?ver=6.3.2' id='place_of_study-js'></script>
+<script type='text/javascript' id='__ytprefs__-js-extra'>
+/* <![CDATA[ */
+var _EPYT_ = {"ajaxurl":"https:\/\/www.library.yorku.ca\/web\/bbl\/wp-admin\/admin-ajax.php","security":"f682263747","gallery_scrolloffset":"20","eppathtoscripts":"https:\/\/www.library.yorku.ca\/web\/bbl\/wp-content\/plugins\/youtube-embed-plus\/scripts\/","eppath":"https:\/\/www.library.yorku.ca\/web\/bbl\/wp-content\/plugins\/youtube-embed-plus\/","epresponsiveselector":"[\"iframe.__youtube_prefs_widget__\"]","epdovol":"1","version":"14.2","evselector":"iframe.__youtube_prefs__[src], iframe[src*=\"youtube.com\/embed\/\"], iframe[src*=\"youtube-nocookie.com\/embed\/\"]","ajax_compat":"","maxres_facade":"eager","ytapi_load":"light","pause_others":"","stopMobileBuffer":"1","facade_mode":"","not_live_on_channel":"","vi_active":"","vi_js_posttypes":[]};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.library.yorku.ca/web/bbl/wp-content/plugins/youtube-embed-plus/scripts/ytprefs.min.js?ver=14.2' id='__ytprefs__-js'></script>
+<link rel="https://api.w.org/" href="https://www.library.yorku.ca/web/bbl/wp-json/" /><link rel="alternate" type="application/json" href="https://www.library.yorku.ca/web/bbl/wp-json/wp/v2/pages/6832625" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.library.yorku.ca/web/bbl/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.3.2" />
+<link rel='shortlink' href='https://www.library.yorku.ca/web/bbl/?p=6832625' />
+<link rel="alternate" type="application/json+oembed" href="https://www.library.yorku.ca/web/bbl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.library.yorku.ca%2Fweb%2Fbbl%2Fcollections%2Fbusinessonline%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.library.yorku.ca/web/bbl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.library.yorku.ca%2Fweb%2Fbbl%2Fcollections%2Fbusinessonline%2F&#038;format=xml" />
+<meta name="generator" content="WPML ver:4.6.6 stt:1,4;" />
+<link rel="pingback" href="https://www.library.yorku.ca/web/bbl/xmlrpc.php" />
+  </head>
+  <body class="page-template-default page page-id-6832625 page-child parent-pageid-6701500 wp-embed-responsive">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WB2S8R"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- searchModal -->
+    <div class="modal fade mt-0 pr-0" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog search-modal m-0" role="document">
+        <div class="modal-content rounded-0">
+          <div class="modal-header border-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body container">
+            <form id="main-search" class="main-search" method="get" action="https://search2.info.yorku.ca">
+              <div class="d-flex border rounded">
+                <fieldset class="w-100">
+                  <legend class="sr-only">Global Search</legend>
+                  <label for="yeb13searchfield" class="sr-only">search box</label>
+                  <input class="header-search border-0 form-control bg-white" type="search" name="q" maxlength="255" id="yeb13searchfield" placeholder="What are you looking for?"  />
+                  <input type="hidden" name="client" value="External" />
+                  <input type="hidden" name="proxystylesheet" value="External" />
+                  <input type="hidden" name="site" value="default_collection" />
+                  <input type="hidden" name="output" value="xml_no_dtd" />
+                </fieldset>
+                <button type="submit" class="search-button btn btn-link ml-auto"><i class="fa fa-search text-dark"></i><span class="sr-only">search button</span></button>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer border-0">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="yeb11skipnav">
+      <a href="#container">Skip to main content</a>
+      <a href="#navbar">Skip to local navigation</a>
+    </div>
+    <header id="header" class="bg-white">
+      <div id="branding" class="container">
+        <div class="d-sm-flex d-block justify-content-between py-3">
+          <div id="site-title" class="d-inline-block">
+            <a href="https://www.yorku.ca"><img src="https://www.library.yorku.ca/web/bbl/wp-content/themes/york2020/images/yorku-logo.jpg" alt="York University" class="yu-logo"></a>
+          </div>
+          <div class="d-flex align-items-center">
+                    <div id="yul-wpml-dropdown" class="px-2"><a href="https://www.library.yorku.ca/web/bbl/collections/businessonline/?lang=fr" class="btn btn-outline-dark rounded-0" href="#" data-toggle="modal" data-target="#translationMissingModal">Français</a></li></div><div class="modal fade" id="translationMissingModal" tabindex="-1" role="dialog" aria-labelledby="translationMissingModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="translationMissingModalLabel">Traduction Française Indisponible</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Cette page n'est pas disponible en français. <br><br>Veuillez consulter <a href="https://www.library.yorku.ca/web/services-en-francais/" target="_blank">Services en français</a> pour une collection de nos pages web en français.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                </div>
+              </div>
+            </div>
+          </div>                            <div id="popular-links" class="dropdown pt-2 pt-md-0">
+  <button class="btn btn-outline-dark dropdown-toggle rounded-0 w-100" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Popular Links  </button>
+  <div class="dropdown-menu shadow-sm border border-dark w-sm-100" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="https://futurestudents.yorku.ca/program-search/">Programs of Study</a>
+    <a class="dropdown-item" href="https://eclass.yorku.ca/">eClass</a>
+    <a class="dropdown-item" href="https://www.yorku.ca/about/email/">Email</a>
+    <a class="dropdown-item" href="https://www.yorku.ca/about/faculty-staff/">Faculty &amp; Staff</a>
+    <a class="dropdown-item" href="https://sfs.yorku.ca/">Financial Services</a>
+    <a class="dropdown-item" href="https://www.library.yorku.ca/web/">Libraries</a>
+    <a class="dropdown-item" href="https://atlas.yorku.ca/">Directory</a>
+  </div>
+</div>                            <button class="btn btn-link ml-4 text-dark" data-toggle="modal" data-target="#searchModal"><i class="fas fa-search"></i><span class="sr-only">Search</span></button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="sticky-top">
+      <div class="navbar navbar-expand-lg navbar-dark bg-primary py-1">
+        <div class="container">
+          <a class="navbar-brand" href="https://www.library.yorku.ca/web/bbl/" rel="home">Bronfman Business Library</a>
+        </div>
+      </div>
+      <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-primary-2 py-0" role="navigation">
+        <div class="container">
+          <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+            <ul id="menu-top-en-menu-2021" class="mr-auto navbar-nav"><li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-16798" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-16798 nav-item"><a href="https://www.library.yorku.ca/web/" class="nav-link">Library Home</a></li>
+<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-16803" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-16803 nav-item"><a href="https://www.library.yorku.ca/web/ask-services/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-16803">Ask &amp; Services</a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-16803" role="menu">
+	<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-16812" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16812 nav-item"><a href="https://www.library.yorku.ca/web/ask-services/accessibility-services/" class="dropdown-item">Library Accessibility Services</a></li>
+	<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-16817" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16817 nav-item"><a href="https://www.library.yorku.ca/web/services-en-francais/?lang=fr" class="dropdown-item">Services en Français</a></li>
+	<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-16804" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16804 nav-item"><a href="https://www.library.yorku.ca/web/ask-services/" class="dropdown-item">Ask Us</a></li>
+	<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-16816" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16816 nav-item"><a href="http://learningcommons.yorku.ca/" class="dropdown-item">Learning Commons</a></li>
+	<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-16809" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16809 nav-item"><a href="https://www.library.yorku.ca/web/ask-services/borrow-renew-return/" class="dropdown-item">Borrow, Renew, Return</a></li>
+	<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-16840" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16840 nav-item"><a href="https://researchguides.library.yorku.ca/dataservices" class="dropdown-item">Data Services</a></li>
+	<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-16797" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16797 nav-item"><a href="https://www.library.yorku.ca/web/ask-services/printing-and-computing/" class="dropdown-item">Printing &amp; Computing</a></li>
+</ul>
+</li>
+<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-16800" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-16800 nav-item"><a href="https://www.library.yorku.ca/web/research-learn/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-16800">Research &amp; Learn</a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-16800" role="menu">
+	<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-16818" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16818 nav-item"><a href="https://researchguides.library.yorku.ca/" class="dropdown-item">Research Guides</a></li>
+	<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-16796" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16796 nav-item"><a href="https://www.library.yorku.ca/web/research-learn/citing-your-work-academic-integrity/" class="dropdown-item">Citing Your Work &amp; Academic Integrity</a></li>
+	<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-16819" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16819 nav-item"><a href="https://spark.library.yorku.ca/" class="dropdown-item">SPARK</a></li>
+	<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-16795" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16795 nav-item"><a href="https://www.library.yorku.ca/web/research-learn/workshops-how-to-videos-and-more/" class="dropdown-item">Workshops, ‘How-to’ videos &amp; more!</a></li>
+	<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-16811" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16811 nav-item"><a href="https://www.library.yorku.ca/web/ask-services/facultyinstructor-support/" class="dropdown-item">Teaching &amp; Faculty Support</a></li>
+	<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-16822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16822 nav-item"><a href="https://www.library.yorku.ca/web/collections/research-support/" class="dropdown-item">Publishing Support, RDM &amp; ORCID</a></li>
+	<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-18019" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18019 nav-item"><a href="https://www.library.yorku.ca/ds/" class="dropdown-item">Digital Scholarship Centre</a></li>
+</ul>
+</li>
+<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-16801" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-16801 nav-item"><a href="https://www.library.yorku.ca/web/collections/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-16801">Collections</a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-16801" role="menu">
+	<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-16805" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16805 nav-item"><a href="https://ocul-yor.primo.exlibrisgroup.com/discovery/search?vid=01OCUL_YOR:YOR_DEFAULT&#038;lang=en" class="dropdown-item">Search Omni</a></li>
+	<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-16792" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16792 nav-item"><a href="https://www.library.yorku.ca/web/collections/finding-types-of-information/" class="dropdown-item">Finding Types of Information</a></li>
+	<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-16806" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16806 nav-item"><a href="/web/archives" class="dropdown-item">Clara Thomas Archives &amp; Special Collections</a></li>
+	<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-16808" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16808 nav-item"><a href="https://www.library.yorku.ca/web/collections/online-exhibits/" class="dropdown-item">Online Exhibits</a></li>
+	<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-16807" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16807 nav-item"><a href="https://www.library.yorku.ca/web/collections/suggestion-for-purchase-form/" class="dropdown-item">Suggestions for Purchase</a></li>
+	<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-26406" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26406 nav-item"><a href="https://www.library.yorku.ca/web/collections/yorkspace/" class="dropdown-item">YorkSpace</a></li>
+	<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-16793" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16793 nav-item"><a href="https://www.library.yorku.ca/web/collections/etheses-and-dissertations/" class="dropdown-item">eTheses and Dissertations</a></li>
+	<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-27306" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27306 nav-item"><a href="https://www.library.yorku.ca/web/collections/sound-and-moving-image-collection-smic/" class="dropdown-item">Sound and Moving Image Collection (SMIC)</a></li>
+</ul>
+</li>
+<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-16789" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-16789 nav-item"><a href="https://www.library.yorku.ca/web/locations-and-spaces/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-16789">Locations and Spaces</a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-16789" role="menu">
+	<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-16823" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16823 nav-item"><a href="https://www.library.yorku.ca/web/ask-services/placestostudy/book-a-study-seatspace-at-the-libraries/" class="dropdown-item">Book a Study Space</a></li>
+	<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-16790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16790 nav-item"><a href="https://www.library.yorku.ca/web/locations-and-spaces/library-and-archives-locations/" class="dropdown-item">Library and Archives Locations</a></li>
+	<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-16791" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16791 nav-item"><a href="https://www.library.yorku.ca/web/locations-and-spaces/library-spaces/" class="dropdown-item">Library Spaces</a></li>
+	<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-24983" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24983 nav-item"><a href="https://www.library.yorku.ca/web/locations-and-spaces/future-spaces/" class="dropdown-item">Future Spaces</a></li>
+	<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-16824" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16824 nav-item"><a href="https://www.library.yorku.ca/web/about-us/visitors/" class="dropdown-item">Visitors</a></li>
+</ul>
+</li>
+<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-16799" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-16799 nav-item"><a href="https://www.library.yorku.ca/web/about-us/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-16799">About Us</a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-16799" role="menu">
+	<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-16825" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16825 nav-item"><a href="https://www.library.yorku.ca/web/about-us/" class="dropdown-item">About YUL</a></li>
+	<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-16826" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16826 nav-item"><a href="https://edib.library.yorku.ca/" class="dropdown-item">Equity, Diversity, Inclusion &amp; Belonging</a></li>
+	<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-16815" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16815 nav-item"><a href="https://www.library.yorku.ca/web/about-us/news-exhibits/" class="dropdown-item">News &amp; Events</a></li>
+	<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-16814" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16814 nav-item"><a href="https://www.library.yorku.ca/web/about-us/library-policies/" class="dropdown-item">Library Policies</a></li>
+	<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-16802" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16802 nav-item"><a href="https://www.library.yorku.ca/web/about-us/work-with-us/" class="dropdown-item">Work with Us</a></li>
+	<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-16813" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16813 nav-item"><a href="https://www.library.yorku.ca/web/about-us/plans-and-reports/" class="dropdown-item">Plans &amp; Reports</a></li>
+	<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-16827" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16827 nav-item"><a href="https://www.library.yorku.ca/web/about-us/support-yul/" class="dropdown-item">Support YUL</a></li>
+</ul>
+</li>
+</ul>                                    <span class="navbar-text d-block d-md-inline-block">
+              <!-- <a class="text-uppercase text-white" href="https://www.library.yorku.ca/web/bbl/contact"> -->
+              <a class="text-uppercase text-white" href="https://www.library.yorku.ca/web/about-us/contact-us">
+              Contact              </a>
+            </span>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="wrapper" class="hfeed">
+        <div id="container">
+      <!-- english chat slideout -
+      <div id="libchat_22c206055e3509b516d28f425d8acac8"></div>
+      -->
+      <!-- french chat slideout -
+      <div id="libchat_40171520852ff7649dc0d5ccea1c0bd9"></div>
+      -->
+<main id="content" class="container">
+      <div id="crumbs" class="small mb-3"><a href="https://www.library.yorku.ca/web/bbl">Home</a> &raquo; <a href="https://www.library.yorku.ca/web/bbl/collections/">Business Collections</a> &raquo; <span class="current">Business Resources A - Z</span></div>  		<article id="post-6832625" class="post-6832625 page type-page status-publish hentry">
+	<header class="header">
+  	<h1 class="entry-title">Business Resources A - Z</h1>
+	</header>
+	<div class="entry-content">
+	<p>The business collection includes  books, business journals,  full text databases, and specialized databases accessible in the library only. We have prepared <a href="https://www.library.yorku.ca/web/bbl/guides/">Guides</a> to doing business research . We encourage you to visit our reference desk in the Bronfman Business Library, Room S237, Schulich School of Business, email our <a href="mailto:bronfref@yorku.ca">reference service</a> use our <a href="https://www.library.yorku.ca/web/bbl/ask-a-question/">IM</a> chat reference service or phone us (416-736-5139) for research assistance.</p>
+<h2>Major Business Databases</h2>
+<p><a href="/eresolver/?id=15"><strong>ABI/Inform Global</strong></a> : contains citations and abstracts for several thousand leading business and management publications, including scholarly, trade, popular and news titles. A very large majority of these titles is available in full-text or full-image, with some dating back as far as the 1920s. A wide range of business subjects is covered. This resource also incorporates industry, company and market-focused reports. This <a href="http://proquest.libguides.com/ABI">ABI Inform LibGuide</a> will give you insight into the collection and strategies for using this resource effectively.</p>
+<p><strong><a href="/eresolver/?id=63058">ABI/Inform Trade and Industry</a>: </strong>This related database covers several thousand trade publications (mainly trade magazines and journals) with a large majority available in full-text format. A very useful source of information for current and historical trade and industry news and developments with coverage to current day and extending back to 1975. This <a href="http://proquest.libguides.com/ABI">ABI Inform LibGuide</a> will give you insight into the collection and strategies for using this resource effectively.</p>
+<p><strong>ABI/Inform Global</strong>  and <strong>Trade &amp; Industry</strong> are only two of the suite of databases provided by <strong>Proquest</strong>. Search <strong><a href="https://www.library.yorku.ca/e/resolver/id/1922198">ProQuest Business</a></strong> to select all five business databases.</p>
+<p><a href="http://library.duke.edu/digitalcollections/adaccess/"><strong>Ad*Access</strong></a>  : This is a resource from Duke University which provides free access to over 7,000 U.S. and Canadian digitized advertisements in five product categories - radio, television, transportation, beauty &amp; hygiene and World War II – dated between 1911 and 1957. The advertisements are primarily from newspapers and magazines and have been made available for use in research, teaching, and private study.</p>
+<p><strong><a href="http://www.bankofcanada.ca/rates/interest-rates/">Bank of Canada Rates</a> and <a href="http://www.bankofcanada.ca/rates/">Bank of Canada Statistics</a></strong> provides tables of interest rates, bond rates, exchange rates for last ten years, as well as inflation calculator, price indexes etc. There is also a ten year currency converter which allows you to compare currencies between countries.</p>
+<p><a href="http://researchguides.library.yorku.ca/bloomberg"><strong>Bloomberg</strong></a> : Bloomberg is a real-time financial service that provides current and historical data, news and financial analysis of companies, stocks, bonds, and indices, descriptions of companies from various sources including Hoovers, etc. Economic statistics are also available. Restricted to the York University Community and available in the Bronfman Business Library.</p>
+<p style="padding-left: 30px"><a href="http://researchguides.library.yorku.ca/bloomberg">This Online Manual </a>developed by Bronfman staff members covers the common commands and basic instruction on how to navigate and get started with Bloomberg</p>
+<p><a href="http://www.brandchannel.com/"><strong>Brandchannel.com</strong></a> : sponsored by Interbrand, this online exchange resource provides a global perspective on brands and includes articles, papers, a brand directory, and links to marketing industry resources. It also includes national (including Canadian), regional and global reports on best brands which can be accessed by clicking on the “Interbrand” tab and then on the sub-tab “Branding Studies” within the “Knowledge” tab.</p>
+<p><strong><a href="http://ezproxy.library.yorku.ca/login?url=https://go.galegroup.com/ps/aboutSeries.do?userGroupName=yorku_main&amp;inPS=true&amp;prodId=GVRL&amp;seriesId=0PHU">Business Plan Handbook Series</a></strong>:  Actual business plans compiled by, and aimed at, entrepreneurs seeking funding for small businesses. Presents sample plans taken from businesses in the manufacturing, retail and service industries which serve as examples of how to approach, structure and compose business plans. BPH contains extensive financial documentation, providing examples of Cash Flows, Balance Sheets, Income Projections, and Ratio Analyses as well as business plan templates.</p>
+<p><strong><a href="http://ezproxy.library.yorku.ca/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;custid=s2867684&amp;profile=ehost&amp;defaultdb=bth&amp;groupid=main">Business Source Complete</a></strong>: Offers premium content including peer-reviewed and business-related journals, magazines and newspapers, including scholary, trade, and popular titles. Included as part of the comprehensive coverage offered are indexing and abstracts for the most important scholarly business journals, dating back as far as 1886. In addition, searchable cited references are provided for more than 1,300 journals. Other content includes business e-books, case studies, company profiles, country economic reports, faculty seminar videos, industry reports, executive and analyst interviews, market research reports, SWOT analyses, and working paper collections.</p>
+<p><strong><a title="" href="http://www.canadabusiness.ca/" target="" rel="noopener">Canada Business Network:  </a></strong>is a collaborative arrangement among federal departments and agencies, provincial and territorial governments and not-for-profit entities. This site provides information on starting a business in Canada, including planning, grants and financing, as well as resources on managing and growing a business. A range of resources on registering a business, regulations, copyright and intellectual property, and taxation are also provided.</p>
+<p><a href="http://researchguides.library.yorku.ca/content.php?pid=227895&amp;sid=1885760"><strong>Canadian Business Patterns:</strong></a><strong> (1988-2011 /2013 -) Statistics Canada  </strong>Includes: tables at the 1,2,3 and 4-digit Standard Industrial Clasification 1980 levels; tables at the 2,3,4 and 6-digit North American Industrial Classification System (as of December 1998); eight employment size categories, including "indeterminate" (as of December 1998); and data produced on a semi-annual basis beginning with June 1990 for provincial, national data, December 1990 for census metropolitan areas data and December 1996 for census agglomeration, census division and census sub-division areas data. Data for 2013 onwards is at the provincial level only. Access restrictions:</p>
+<p><a title="" href="http://researchguides.library.yorku.ca/content.php?pid=227895&amp;sid=1885872#6322188">DLI (Data liberation Initiative)</a></p>
+<p>Requires <a title="" href="http://researchguides.library.yorku.ca/content.php?pid=227895&amp;sid=1885872#6322192">Beyond 20/20 4.1+ </a></p>
+<p><a href="https://www.library.yorku.ca/e/resolver/id/328"><strong>CANSIM</strong></a> : Statistics Canada database containing over 10 milliontime series.  It is a detailed source of Canadian economic data collected by Statistics Canada and other agencies, including the Bank of Canada.  Data available includes but is not limited to the System of National Accounts, labour, manufacturing, finance, and agriculture.</p>
+<p>There are two ways of accessing CANSIM data:</p>
+<ul>
+<li><a href="http://www5.statcan.gc.ca/cansim/home-accueil?lang=eng&amp;p2=50">CANSIM</a> via Statistics Canada :  The full CANSIM database, without any visualization features available.  <em>Updated daily.</em></li>
+<li><a href="http://dc1.chass.utoronto.ca/cansimdim/">CANSIM</a> via CHASS:  Based at the University of Toronto, and restricted to York University users and members of subscribing institutions only.  Use of the database is subject to the terms of the DLI license. Some visualization capabilities.  <em>Updated daily.</em></li>
+</ul>
+<p><strong><a href="/eresolver/?id=1075281">CARDonline</a></strong> :  Canadian Advertising Rates and Data provides advertising rates and related data available on every significant medium in Canada and on selected international media. Includes newspapers, periodicals, radio stations and networks , television stations, online advertising, billboards, superboards, transit, mobile signage, sports venues, video displays, supermarkets, theatres, etc.</p>
+<p><strong><a href="http://ezproxy.library.yorku.ca/login?url=http://search.proquest.com/cbcacurrentbusiness?accountid=15182">CBCA Reference &amp; Current Events : Business</a></strong> :  Provides interdisciplinary coverage of Canadian topics including the areas of business and current affairs. Offers references, and many full text articles, from Canadian journals, magazines, newspapers, and newswires. Dates of coverage vary by title but some full-text titles are available back to the early or mid-1980s, while citations for many publications are available from the early 1970s onward.  Select <strong><a href="https://www.library.yorku.ca/e/resolver/id/1922198">ProQuest Business</a></strong> to search across all five Proquest Business databases simultaneously, including this one.</p>
+<p><strong><a href="/eresolver/?id=58502">CFMRC - TSX</a>:</strong> Canadian Financial Market Research Centre summary information database(or CFMRC TSX for short) historic  includes daily (back to 1975) and monthly (back to 1950) Toronto Stock Exchange trading data about specific securities as well as information on "price adjustments" such as dividends, stock splits, recapitalization etc.  The database also includes daily and monthly index data including information on daily and monthly index levels as well as selected other financial markets information.</p>
+<p><strong>CICA Standards &amp; Guidance Collection: </strong>see CPA Canada Standards and Guidance Collection.</p>
+<p><strong><a href="https://www.library.yorku.ca/e/resolver/id/2552752"><strong>Communication Source</strong></a>: </strong>Merges Communication and Mass Media Complete with Communication Abstracts. Comprehensive international source for communication, media studies, linguistics, and radio and broadcast journalism. Should be especially useful to students in the Arts and Media Administration MBA program specialization.</p>
+<p><strong>Compustat</strong>: (Standard and Poors). is a database of U.S. and Canadian fundamental and market information on more than 30,000 active and inactive publicly held companies. It provides thousands of Income Statement, Balance Sheet, Statement of Cash Flows, and supplemental data items. It also contains information on indices, industry segments, banks, market prices, dividends, and earnings. (1950-present). Compustat is available to York University faculty, PhDs and master students enrolled in business related programs via <strong><a href="http://researchguides.library.yorku.ca/wrds">WRDS</a></strong>. Contact Xuemei Li<strong> lixuemei@yorku.ca </strong>for more information.</p>
+<p><strong><a href="https://www.library.yorku.ca/e/resolver/id/1534746">CPA Canada Standards and Guidance Collection</a></strong>: (includes CPA Handbook - formerly known as CICA Standards &amp; Guidance Collection)  Provides access to the CPA Canada Accounting Handbook, the CPA Canada Public Sector Accounting Handbook, the CPA Canada Handbook - Assurance, Management's Discussion &amp; Analysis, CICA Handbook - Archived Highlight Summaries, CICA Handbook - Archived Revisions Releases, the Risk Oversight and Governance Collection and more.</p>
+<p><a href="/eresolver/?id=44"><strong>CRSP</strong></a> : Provides standard derived security data available from the NYSE/AMEX/Nasdaq/Arca daily and monthly security prices and other historical data related to over 29,000 companies.  The data is provided by the Centre for Research in Security Prices at the University of Chicago Booth School of Business.    CRSP is also available to York University faculty, PhDs and master students enrolled in business related programs via <strong><a href="http://researchguides.library.yorku.ca/wrds">WRDS</a></strong>.</p>
+<p><strong><a title="" href="http://pages.stern.nyu.edu/%7Eadamodar/" target="" rel="noopener">Damordaran Online</a></strong>: website of Aswath Damodaran, <span style="font-style: normal">Professor of Finance at the Stern School of Business at New York University. Contains updated tables of data related to the courses he teaches on</span> <span style="font-style: normal">valuation, portfolio management and applied corporate finance. Includes historical industry beta, along with a wealth of other data.</span></p>
+<p><strong><a href="http://ezproxy.library.yorku.ca/login?url=https://www.library.yorku.ca/find/MyResearch/Dapresy">Dapresy:</a>  </strong>Provides access to data on Canadian consumer spending habits (products &amp; services), consumer opinions, attitudes, and activities, and consumer media purchases. The data are collected from Vividata’s annual <a href="https://vividata.ca/product/survey-of-the-canadian-consumer/">Survey of the Canadian Consumer,</a> which surveys 40,000+ Canadians on over 60,000+ variables. Reports can be generated using a filtering option or a customizable cross table option. All data can be exported into Excel.</p>
+<p><a href="http://researchguides.library.yorku.ca/datastream"><strong>Datastream</strong></a>: Worldwide equity coverage direct from the stock markets, comprehensive market indices, economics data direct from national government sources as well as the OECD and IMF, fixed income securities and associated indexes, commodities, derivatives data. Fundamental data from Worldscope and added value data sets from respected sources such as MSCI, DJ Stoxx and FTSE All World. Restricted to the York University community. <a href="https://researchguides.library.yorku.ca/eikon">See the access options.</a></p>
+<p style="padding-left: 30px"><strong>Tutorial:</strong> <a href="https://training.thomsonreuters.com/datastream/?mkt=44#flr379">Watch these online tutorials to learn how to <strong>search for data</strong> on Datastream</a></p>
+<p><strong><a href="http://ezproxy.library.yorku.ca/login?url=http://webofknowledge.com/DIIDW">Derwent Innovation Index</a> </strong>(includes Derwent Patent Citation Index)  Combines unique value-added patent information indexed from over 50 patent issuing authorities in the Derwent World Patent Index (1963-present) with patent citations indexed from the Derwent Patents Citation Index (1973-present). Indexes patents and literature including those referenced by the examiner, inventor/author, or opposition/third party during the determination of patentability.</p>
+<p><a href="http://researchguides.library.yorku.ca/data"><strong>DLI</strong></a> (Data Liberation Initiative): Selected Statistics Canada products are available via DLI. This service is supported by the Data Librarian, <a href="mailto:walterg@yorku.ca">Walter Giesbrecht</a> and the link leads to a description of DLI and the services available to the York University community.</p>
+<p><strong><a href="http://www.doingbusiness.org/">Doing Business: Benchmarking Business Regulations</a></strong> provides objective measures of business regulations and their enforcement. The Doing Business indicators are comparable across 175 economies. They indicate the regulatory costs of business and can be used to analyze specific regulations that enhance or constrain investment, productivity, and growth. Published by the World Bank and the International Finance Corporation</p>
+<p><a href="/eresolver/?id=197"><strong>EconLit</strong></a> : A comprehensive, indexed bibliography with selected abstracts of the world's economic literature in the English language, produced by the American Economic Association. It includes coverage of over 400 major journals as well as articles in collective volumes (essays, proceedings, etc.), books, book reviews, dissertations, and working papers licensed from the Cambridge University Press Abstracts of Working Papers in Economics.</p>
+<p><strong><a href="https://www.library.yorku.ca/e/resolver/id/1924731">The Economist Historical Archive 1843-2010</a></strong> : Provides access to the Economist online as a fully searchable digital collection where articles etc. are provided in PDF format. Includes news, analysis, commentary, editorials, statistics, demographics, letters to the editor, obituaries, and historical photograph, as well as special surveys and supplements on countries and industries.</p>
+<p><a href="http://www.sec.gov/edgar.shtml"><strong>EDGAR</strong></a> : The US Security and Exchange Commission's database of public company information including 10k reports for public traded companies. Available via the Internet.</p>
+<p><strong>Euromonitor:</strong> see <strong>Passport</strong>)</p>
+<p><strong><a href="/eresolver/?id=984177">Europa World Plus</a></strong> : Online version of the <em>Europa World Year Book</em> and nine regional surveys. Contains news, information and selected data on countries worldwide.</p>
+<p><strong>ExecuComp</strong> - available to York University Faculty, PhDs and master students enrolled in business related programs via <strong><a href="http://researchguides.library.yorku.ca/wrds">WRDS</a></strong>. Contact <a href="mailto:lixuemei@yorku.ca">Xuemei Li</a> for more information.</p>
+<p><a href="/eresolver/?id=63997"><strong>Factiva</strong></a> : Factiva is a reputable news source, offering full-text coverage of over 3,000 national, international and regional newspapers, including major titles such as The <em>Wall Street Journal</em>, the <em>Financial Times</em>, the <em>New York Times</em>,  and the <em>Guardian</em>.  Also includes the full text of the <em>Globe &amp; Mail, Toronto Star</em> and <em>National Post</em>. Other resources in Factiva include newswires, news web sites, blogs and podcasts, and many trade and popular magazines. May also be used as a company research tool with extensive coverage of public and private companies worldwide including corporate overviews, key executives, financial data, press releases, current news and a list of competitors. The <a href="http://proquest.libguides.com/factiva">Factiva LibGuide</a> provides insight into this collection and links to live Webinars.</p>
+<p style="padding-left: 30px"><strong>Tutorial:</strong> <a href="https://www.youtube.com/watch?v=vz2Zmi_uWyw&amp;feature=youtu.be">Watch this <strong>online tutorials to learn how to search</strong> Factiva.</a></p>
+<p style="padding-left: 30px"><strong>Helpsheet:</strong> <a href="https://www.library.yorku.ca/binaries/BG/helpguides/Factiva.pdf">This <strong>online guide</strong></a> guides you through how to  create effective free text searches.</p>
+<p><strong><a title="" href="/e/resolver/id/1921753" target="" rel="noopener">Films on Demand</a>:</strong> This database contains business and economics videos on a wide range of topics. It's easy to access and view the films. You can search by title,browse by subject category, and also search within segments or transcripts.</p>
+<p><strong><a href="http://finance.yahoo.com/">finance.yahoo</a>:</strong> In addition to news and general business information, this Web site contains US and Canadian company profiles, charts, historical data, performance reports, identifies competitors, etc.</p>
+<p><strong><a id="link_12605710" href="http://www.ic.gc.ca/eic/site/pp-pp.nsf/eng/Home" target="_blank" rel="noopener noreferrer">Financial Performance Data</a></strong>  : Developed by Industry Canada, "provides access to more than 1000 industries across Canada, including more than 30 performance benchmarks to help small businesses determine how they measure up to their competitors."</p>
+<p><strong><a href="https://www.library.yorku.ca/e/resolver/id/2538480">Financial Times Historical Archive</a></strong>: This is a great source for studying public affairs and financial history of the last 120 years. Every item printed in the paper, from 1888-2010, can be searched and browsed article by article and page by page. Topics covered include industry, energy, international politics, management, personal finance and arts. See under “Help” for search tips.</p>
+<p><b><a href="https://ocul-yor.primo.exlibrisgroup.com/view/action/uresolver.do?operation=resolveService&amp;package_service_id=6401091650005164&amp;institutionId=5164&amp;customerId=5150">FitchConnect</a>: </b>This database provides access to country risk and industry reports for over 200 countries. Their industry reports cover 22 high-level industry sectors and include current and archived industry report content. Use the Data Tool to download historical and forecast data. Review our <a title="https://docs.google.com/document/d/1xANC8p5UEA7zWd2a-HMEN2_T6oCDUmTrxpLUrioQX7Y/edit?usp=sharing" href="https://docs.google.com/document/d/1xANC8p5UEA7zWd2a-HMEN2_T6oCDUmTrxpLUrioQX7Y/edit?usp=sharing" target="_blank" rel="noopener noreferrer">step-by-step FitchConnect guide</a> to learn how to navigate this database. Please note, the library's subscription does not cover all of the content in this database.</p>
+<p><strong><a href="http://ezproxy.library.yorku.ca/login?url=https://infotrac.galegroup.com/itweb/yorku_main?db=GDC">Gale Primary Sources</a></strong>:   is a cross-searchable platform which brings together millions of pages of archive content spanning over five centuries. This integrated research environment unites all Gale archives into a single, seamless experience, allowing users to explore manuscripts, monographs, newspapers, photographs, maps, and more—all in one place.</p>
+<p><a href="/eresolver/?id=63417"><strong>Gartner Intraweb</strong></a> :Reports and news that provide a valuable source of global market knowledge for IT and telecom industries.  <strong>Please note</strong> that York University does not subscribe  to ALL Gartner's research content.  For searching or Browsing assistance refer to this<a href="https://www.library.yorku.ca/binaries/BG/helpguides/Gartner.pdf"> helpguide</a>.</p>
+<p><a title="" href="http://data.worldbank.org/data-catalog" target="" rel="noopener"><strong>Global Economic Monitor</strong></a> : provides daily and monthly commentary on global economic conditions along with direct access to high frequency and forecast data from the World Bank.</p>
+<p><strong><a href="https://ocul-yor.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991036234363405164&amp;context=L&amp;vid=01OCUL_YOR:YOR_DEFAULT&amp;lang=en&amp;search_scope=MyInst_and_CI&amp;adaptor=Local%20Search%20Engine&amp;tab=Everything&amp;query=any,contains,global%20financial%20data&amp;mode=basic">Global Financial Database</a>: </strong>Global Financial Database aka Global Financial Data primarily provides finance and economics data with a deep historical backfile and coverage of 200 global markets. <strong><i>Note that individual registration with YorkU e-mail is required. </i></strong></p>
+<p>Global Financial Database is comprised of 10 databases as follows: (1) Asset Allocation Database with historical total return indices for stocks, bonds and bills for fifty countries, (2) Commodities database with historical data on 100 different commodities, (3) Economic Database   (4) Equity database  current and historical data series, (5) Fixed income including current and historical markets, (6) Exchange rates going back to 1590, (7) Development Database  with 50 years of data on non-economic variables  (8) Government and Debt  (9) International Trade and (10) National Accounts with extensive data, some going back to the 1800s on GDP and its components.  Search tips videos are available as follows: <a href="https://www.youtube.com/watch?v=IgcBTSM-wqY">General search tutorial</a> and a video on using <a href="https://www.youtube.com/watch?v=L3wfmnJpJcM">Auto Trac</a>.</p>
+<p><strong>Global New Issues:</strong> Available within - <strong><a href="http://researchguides.library.yorku.ca/sdc">SDC Platinum</a></strong> - a Thomson Financials database. Global New Issues provides coverage of global equity issues, Eurobonds, U.S. private placements, etc. It is available to York community on a stand-alone workstation in the Bronfman Business Library, opposite to Bloomberg workstation.</p>
+<p><a href="https://www.google.com/finance"><strong>Google Finance</strong> </a>In addition to news, this website provides a broad range of information about stocks, mutual funds, public and private companies, including quotes and charts.  Also available are valuation ratios that give you industry and sector comparisons for your company.  Search and display your company.  Then scroll down and click on "more from  Reuters" on the left side of screen, and then click on the Financials tab at the top of the screen.</p>
+<p><strong><a href="https://www.library.yorku.ca/e/resolver/id/2635125">The Greenleaf Online Library (GOL)</a></strong> provides access to individually searchable chapters, case studies and journal papers drawn from numerous books and selected journals. Greenleaf Publishing, the provider behind GOL, is a specialist publisher in the field of CSR research. The books in GOL cover a variety of subject areas such as: sustainability, social responsibility, corporate governance, development economics and the environment. View <strong><a href="https://www.library.yorku.ca/web/bbl/2015/06/16/welcome-to-greenleaf-online-library-a-new-online-csr-research-tool-for-york-students-faculty/">here</a></strong> for search tips for this database.</p>
+<p><strong><a href="/eresolver/?id=455931">Hoovers</a></strong> :  A database containing information on public and private enterprises worldwide. Private company information typically includes business description, news, competitors list, key people and contacts. Also provides information about the headquarters and branches where applicable. The Build a List function is very useful for creating competitors lists.</p>
+<p><a href="https://ocul-yor.primo.exlibrisgroup.com/permalink/01OCUL_YOR/1jocqcq/alma991010229849705164"><strong>IBISWorld China</strong></a> : Includes industry reports for China.</p>
+<p><a href="https://ocul-yor.primo.exlibrisgroup.com/permalink/01OCUL_YOR/1jocqcq/alma991010229849705164"><strong>IBISWorld</strong> </a>: Includes Canadian and  U.S. Industry Reports (NAICS), Specialized U.S. Industry Reports, U.S. Industry iExpert Summaries, and Business Environment Profiles. Also offers China Industry Reports, and Global industry Reports. Note the Specialized Industry Reports include small, niche industries (more granular than NAICS codes), where information can be harder to find. Industry reports are comprehensive and include the following tabs: Industry at a glance, Performance, Outlook, Products &amp; Markets, Competitive Landscape, Operating Conditions and Key Statistics.</p>
+<p><strong>IBISWorld Procurement - see ProcurementIQ</strong></p>
+<p><span lang="EN-US"><strong><a href="https://ocul-yor.primo.exlibrisgroup.com/permalink/01OCUL_YOR/1jocqcq/alma991032167839705164">IHS Markit Connect</a></strong> (formerly known as Global Insight DataInsight Web, off-campus access needs to set up <a href="http://www.yorku.ca/computing/vpn-choice.html" target="_blank" rel="noopener noreferrer" data-auth="NotApplicable" data-linkindex="2">VPN</a>: once on the IHS Markit web site, hover over the <strong>Data Browser</strong> tab on the upper-left corner and select Data Browser to search).  This database provides access to time series from numerous HIS Markit databanks (including International Financial Statistics) covering economic, financial, and demographic statistics.  Geographic coverage, date range, and periodicity vary by series and databank with some series dating back to the 1920s.  </span></p>
+<p><strong><a href="https://www.library.yorku.ca/e/resolver/id/2222109">IMF eLibrary</a></strong>: This International Monetary Fund database provides full text access to IMF periodicals, books, working papers, studies, and data and statistical tools on mainly economic and financial topics including macroeconomics, globalization, development, trade, and demographics.</p>
+<p><strong><a href="https://www.library.yorku.ca/eresolver/?id=984257">Industrials Canada via Passport (formerly GMID) </a></strong>:  This is a subcomponent within the Passport (fomerly GMID) database. It breaks down the Canadian economy into over 150 different industry sectors from a B2B perspective. Coverage includes both data and analysis for sectors covered. To access Industrials Canada within the Passport database, select the Economies tab, and then the Industrial subtab. It is possible to specify search criteria in different ways. Alternatively search for ISIC using the main search box in the top right corner of the database to see the reports on Canadian industries.</p>
+<p><strong>Industry Statistics Database (UNIDO INDSTAT4):</strong> Industat was prepared by  the United Nations Industrial Development Organization. It is time series data from 1990 to 2009, it covers 134 countries, and 151 manufacturing categories and sub-categories.The codes used are the International Standard Industrial Classification of All Economic Activities (ISIC).  Data included are: number of establishments, number of employees, wages and salaries, output, value added, gross fixed capital formation and number of female employees. Restricted to the York University community and available in the Bronfman Business Library only.</p>
+<p><strong><a href="http://www.ic.gc.ca/eic/site/icgc.nsf/eng/home">Innovation, Science &amp; Economic Development Canada (formerly Industry Canada)</a>:   </strong>This Canadian government website contains a range of useful resources including company directories, industry statistics and benchmarks, trade data, as well as resources on small business financing, incorporating a business, bankruptcy, IP and copyright and much more. Possible to browse by “All topics” or to filter to “Just for businesses” and “Just for consumers” categories.</p>
+<p><strong><a title="" href="http://www.iab.net/" target="" rel="noopener">Interactive Advertising Bureau</a></strong> : is a nonprofit group comprised of leading media and technology companies which aims to educate marketers, agencies, media companies and the wider business community about the value of interactive advertising. Click on the <strong>Research</strong> tab  for statistics and reports. Many guideline and best practice reports are also for free from the “Guidelines and Best Practices” area of the site.</p>
+<p><strong><a href="http://ezproxy.library.yorku.ca/login?url=https://go.galegroup.com/ps/aboutSeries.do?userGroupName=yorku_main&amp;inPS=true&amp;prodId=GVRL&amp;seriesId=0IAD">International Directory of Company Histories</a></strong>: Provides histories of companies that are a leading influence in a particular industry or geographic location. For students, job candidates, business executives, historians and investors. Includes public, private, nonprofit, and state-held companies with international coverage; extensive overviews featuring at-a-glance sections providing company contact information (address, phone, fax, web site), incorporation date; number of employees; sales data; stock exchange; NAICS codes; narrative company perspectives; key dates in company history; key competitors.</p>
+<p style="padding-left: 30px"><strong>Instructional Videos:   </strong><a href="https://embed.vidyard.com/share/hZeq88Jt5pgw2nemcfcNvY">A tutorial video</a> offering an overview of a <em>GVRL</em> workflow, highlighting eBook view, content limiters, basic search and advanced search functionality.</p>
+<p style="padding-left: 30px"><a href="https://embed.vidyard.com/share/cUFf1B6rUxXo1J74CGeGm4">A tutorial video</a> detailing Google Drive/Microsoft OneDrive integration. This feature allows users to save their highlights, notes, citations, and documents from their research session via cloud storage platforms.</p>
+<p><strong><b><a href="https://www.library.yorku.ca/e/resolver/id/1534746">International Financial Reporting Standards </a>(IFRS): </b></strong>A joint offering of the CPA Canada and Ernst &amp; Young Electronic Publishing Services Inc., Knotia.ca is the service available at York University Libraries to provide access to both the CPA Standards &amp; Guidance collection (formerly known as the CICA Standards and Guidance Collection) and the IFRS infobase. This includes the full-text of the International Accounting Standards Boards International Financial Reporting Standards.</p>
+<p><strong>International Monetary Fund IMF</strong> data is available in <a href="/eresolver/?id=66625">Global Insight</a> database.</p>
+<p><a href="https://ocul-yor.primo.exlibrisgroup.com/view/action/uresolver.do?operation=resolveService&amp;package_service_id=17263798160005164&amp;institutionId=5164&amp;customerId=5150&amp;VE=true"><strong>Investext</strong> (Analyst Reports)- see <strong>Mergent Online</strong></a></p>
+<p>Investext provides access to analyst reports for publicly-traded companies. The reports are produced by analysts from investment banks, brokerage houses, and consulting firms. Reports include analyses on company and industry financial performance, SWOTs, M&amp;A, trends, challenges, and much more. Investext includes current and historical analyst reports. <strong>Quick search tips: </strong>(1) Search for a publicly-traded company’s most recent analyst reports using the <strong>Company Search field </strong>&gt; On report landing page, click <strong>Reports tab &gt; </strong>click <strong>Broker Research reports link; </strong>(2) To conduct more advanced searches such as historical reports, initiating coverage reports, or reports from specific investment banks, click on the <strong>Investext tab </strong>(far right-hand side tab) to go to the advanced search form.</p>
+<p><strong><a href="https://site.warrington.ufl.edu/ritter/ipo-data/">IPO Data</a></strong> : a database created by Jay Ritter, University of Florida, that contains tables of data on IPOs plus his article " <em>Some factoids about the 2008 IPO market</em>".</p>
+<p><strong><a href="http://ezproxy.library.yorku.ca/login?url=http://www.mergentkbr.com">Key Business Ratios (KBR)</a>: </strong>Allows research of industry benchmarks from D&amp;B's database of public and private companies, featuring 14 key business ratios including solvency, efficiency and profitability. Users choose  a one-year or three-year set of ratios for public and private companies in 800 lines of business. They are broken down  into median figures, with upper and lower quartiles. Coverage is mainly of U.S. companies, though coverage of Canadian companies is growing. Browsing using Standard Industrial Classification (SIC) codes is recommended.  Steston University  has developed a useful <a href="http://guides.stetson.edu/content.php?pid=529861&amp;sid=4378245">Libguide with step-by-step instructions</a> on how to effectively  access ratios in KBR.<strong><br />
+</strong></p>
+<p><a href="http://researchguides.library.yorku.ca/data"><strong>Library Data Services</strong></a> : This Web Site provides links to available data on a wide variety of <a href="http://researchguides.library.yorku.ca/data">subjects</a> .  Some of the data is restricted to use by the York University community only.</p>
+<p><strong><a href="https://www.library.yorku.ca/e/resolver/id/1895071">Marketline Advantage</a> : </strong>Formerly Datamonitor 360, includes industry (Datamonitor) reports, country information, company analysis, case studies and financial deals. It provides SWOT analyses for over 2500 public and private enterprises worldwide, and offers fast and reliable insights of thousands of industry sectors including market value, volume and segmentation data and Porter’s Five Forces analysis, as well as offering PESTLE analyses for some 150 countries. Recent additions include the company financial analysis tools – financial deals tracker, company report generator, company prospector and investment and advisory prospector.</p>
+<p style="padding-left: 30px"><a href="http://www.marketline.com/support/video-tutorial">Video Tutorials</a>: Marketline  offers a range of tutorials which walk you through how to access Company, Industry, Country and Financial Information and data.</p>
+<p><strong>Market Share Reporter</strong> and <strong>World Market Share Reporter</strong> - available via <a href="http://ezproxy.library.yorku.ca/login?url=http://nexisuni.com/"><strong>Nexis Uni</strong></a></p>
+<p><strong>MaRs Library:</strong> Created by the experts at MaRs Market Intelligence, the MaRs Library is a collection of highly vetted resources that will enable entrepreurs to answer common market research questions.</p>
+<ul>
+<li><a href="http://www.marsdd.com/mars-library/">Main page</a></li>
+<li><a href="http://www.marsdd.com/tag/market-research/">Market research page</a></li>
+<li><a href="http://www.marsdd.com/mars-library/find-canadian-market-data/">How do I find Canadian market data?</a></li>
+<li><a href="http://www.marsdd.com/mars-library/find-us-market-data/">How do I find US market data?</a></li>
+</ul>
+<p><strong>Mergers &amp; Acquisitions</strong>: Available within<strong> <a href="http://researchguides.library.yorku.ca/sdc">SDC Platinum</a></strong> - a Thomson Reuters Database -  It is available to York community on a stand-alone workstation in the Bronfman Business Library, opposite to Bloomberg workstation.</p>
+<p><strong><a href="https://www.library.yorku.ca/e/resolver/id/2331880">Mergent Archives</a></strong>: Provides annual reports and other filings information back to the early 1900s with Canadian, U.S. and international coverage. Also includes Mergent's full collection of digitized manuals dating back to the first manual published in 1909 which includes information extracted from annual reports. Also includes digitized versions of the D&amp;B Industry Norms/Key Business Ratios books back to 1979.  Also provides the option to search current and historical U.S. industry reports.</p>
+<p><strong><a href="http://ezproxy.library.yorku.ca/login?url=http://www.mergentintellect.com">Mergent Intellect</a> : </strong>Intellect, a Mergent product, covers millions of publicly-traded and private companies around the globe (over 130 countries are included). Company records are sourced from a combination of the Hoovers and Dun and Bradstreet Million Dollar Directories. Other business information includes executive contacts, a job search tool, and a global corporate family tree feature, industry news, industry reports (First Research), and access to U.S. census data and demographic reports. Intellect also offers access to Key Business Ratios (KBR) for competitive benchmarking data.</p>
+<p><strong><a href="/eresolver/?id=133">Mergent Online</a></strong>  Provides company information and annual reports for Canadian, International, and US companies. Also includes industry reports covering current environment, sector performance, market trends, outlook, etc. for over 20 industries. Earnings Estimates and Long-term debt data included. In addition, the Horizon tab provides data on the relationships between a comapny's major customers and suppliers and partners. In addition, there is an<strong> Investext (Analyst Reports) tab</strong> enabling the search for analyst reports.</p>
+<p style="padding-left: 30px"><strong>Help sheet:</strong> This <a title="mergent_online_2010" href="/files/BG/helpguides/mergent_online_2010.pdf" target="" rel="noopener">online guide</a> guides you through how to search Mergent Online.   Mergent Horizon can be access via a tab on the  interface as<a href="https://www.library.yorku.ca/binaries/BG/helpguides/Mergent%20Horizon.pdf"> illustrated on this guide.</a></p>
+<p><strong>Morningstar Direct</strong>: Multi-currency research platform that provides performance and holdings analysis of investments. Includes data on closed-end funds, equity ownership, exchange traded funds, hedge funds, market indexes, money market funds, offshore funds, open-end mutual funds, pension/life insurance, stocks and 529 plans. Restricted to the York University Community and available in the Bronfman Business Library.   <a href="http://morningstardirect.morningstar.com/clientcomm/DirectUserGuide.pdf">Morningstar Direct User Guide</a>.</p>
+<p><strong>MSCI ESG KLD Stats: </strong>A dataset, provided by MSCI ESG Research Inc (formerly KLD), which supports CSR, corporate governance, and sustainability research and teaching. This dataset is designed to provide in-depth research, ratings and analysis of environmental, social and governance (ESG) business practices to companies worldwide and contains scores which reflect the triple bottom line (TBL)  performance companies based on key ESG factors.  Scores are awarded to those companies with demonstrated commitment to environmental and social issues, and are helpful to stakeholders who practice socially responsible investing (SRI). This dataset  is available to York University faculty, PhDs and master students enrolled in business related programs via <strong><a href="http://researchguides.library.yorku.ca/wrds">WRDS</a></strong>. Contact Xuemei Li<strong> <a href="mailto:lixuemei@yorku.ca">lixuemei@yorku.ca</a> </strong>for more information.</p>
+<p><a href="//www5.hrsdc.gc.ca/NOC/English/NOC/2011/Welcome.aspx"><strong>National Occupation Classification (NOC):</strong> </a> This is a highly regarded research source for occupations in Canada from Human Resources and Skills Development Canada. It organizes over 40,000 job titles into 500 occupational group descriptions. It can be used to compile, analyze and communicate information about occupations, and to understand the jobs found throughout Canada's labour market. It is possible to search for an occupation or to browse occupation classes by code.</p>
+<p><strong><a href="https://negotech.labour.gc.ca/cgi-bin/RechercheSearchNegotheque/index.aspx?GoCTemplateCulture=en-CA">Negotech</a>:</strong> This database is part of Ministry of Human Resources and Skills Development Canada. It provides access to Canadian collective agreements.</p>
+<p><strong><a href="http://ezproxy.library.yorku.ca/login?url=http://nexisuni.com/">Nexis Uni</a> (formerly Lexis Nexis Academic) :</strong>  makes available thousands of news, business, and legal information sources. Included are current international newspapers, as well as news magazines, newswires, broadcast transcripts, and newsletters. Business information includes business and financial news, U.S. and international company financial information from government or private sources, market research, industry reports, and actual SEC filings. The Company Dossier service covers over 30 million public and private companies worldwide.  Also offers access to case law, statutes and regulations, as well as secondary sources such as law reviews and legal news.</p>
+<p style="padding-left: 30px"><strong>Tutorial:</strong> <a href="https://www.lexisnexis.com/en-us/support/nexis-uni/default.page">Watch these online tutorials to learn how to <strong>search for data</strong> on Nexis Uni</a></p>
+<p><a href="/e/resolver/id/1885652"><strong>OECD iLibrary:</strong></a> Organisation for Economic Co-operation and Development e-library offering access to all OECD books, reports, annuals, periodicals, working papers and statistics.</p>
+<p><strong>Option Metrics</strong> : Historical prices of options &amp; their associated underlying instruments, implied volatilities, &amp; option sensitivities. Contains data on all US exchange-listed &amp; NASDAQ equities &amp; market indices, as well as all US listed index &amp; equity options. January 1996+. Option Metrics is available to York University faculty, PhDs and master students enrolled in business related programs via <strong><a href="http://researchguides.library.yorku.ca/wrds">WRDS</a></strong>. Contact Xuemei Li<strong> lixuemei@yorku.ca </strong>for more information.</p>
+<p><a href="/eresolver/?id=1215977"><strong>Oxford Language Dictionaries Online</strong></a> Choose from Chinese, French, German, Italian, Russian, and Spanish dictionaries to translate to and from English. Also included are useful phrases, a calendar of holidays and festivals, hints about the language and other useful information. Sometimes sample sentences using the terminology you selected are included.</p>
+<p><strong><a href="https://www.library.yorku.ca/eresolver/?id=984257">Passport</a></strong>: Passport (formerly GMID) from Euromonitor is a global market research database providing reports, analysis, statistics, surveys, and breaking news on industries, countries, consumers and companies worldwide. Included are reports focused on consumer goods and services industries, consumer lifestyle analysis, and brand and market share data. The Industrials (Canada) component offers reports on over 150 industry sectors from a B2B perspective.  Profiles of leading consumer goods companies are also included. Also offers demographic, economics, and marketing statistics for countries and cities globally, and historic and forecast consumer lifestyle statistics. The Library subscribes to the following modules in Passport: Consumers, Industries, Economies, and Companies.</p>
+<p style="padding-left: 30px"><strong>Tutorial:</strong> Watch these <strong><a href="http://www.portal.euromonitor.com.ezproxy.library.yorku.ca/portal/help/home?PageTypeId=9&amp;PageId=344&amp;Title=Help">online tutorials</a></strong> to learn how to search Passport. <a href="http://blog.euromonitor.com/2016/11/passport-understand-value-chain.html">This video</a> explains how to use Passport to understand a value chain and develop an effective market entry strategy.</p>
+<p style="padding-left: 30px"><strong>Help sheet:</strong> This <strong><a href="http://www.portal.euromonitor.com.ezproxy.library.yorku.ca/images/miscdocs/Passport-User-Guide.pdf">online guide</a></strong> guides you through how to navigate Passport.</p>
+<p><b><a href="https://ocul-yor.primo.exlibrisgroup.com/permalink/01OCUL_YOR/q36jf8/alma991036234655105164">Preqin Real Estate and Infrastructure</a>: </b>Preqin Real Estate provides intelligence on the private real estate fund industry including institutional investor, fund, performance, deal and asset data. Preqin Infrastructure contains details on fund managers and investors that are bidding for, buying and selling infrastructure assets. It also includes detailed searchable profiles and performance benchmarks for infrastructure funds, in addition to deals coverage. <em><strong>Note that for access to this databases users must authenticate with their Passport York login, and then sign in using a username and password option provided for York University students and faculty. Note that when Preqin loads the username/password prompt appears in the top right area of the screen.</strong></em></p>
+<p><strong>Help sheets:</strong> <a href="https://www.library.yorku.ca/binaries/BG/helpguides/Preqin_Real Estate Online_User Guide.pdf">Preqin Real Estate Online User Manual</a>, <a href="https://www.library.yorku.ca/binaries/BG/helpguides/Preqin Real Estate Product Manual.pdf">Preqin Real Estate Product Manual</a>, <a href="https://www.library.yorku.ca/binaries/BG/helpguides/Preqin Infrastructure Product Manual.pdf">Preqin Infrastructure Product Manual</a></p>
+<p><strong><a href="http://www.pressreader.com/">PressReader</a>:  </strong>Pressreader allows you to read newspaper and magazine content online while preserving the traditional newspaper and magazine format. Download and set-up the app for your mobile device (Apple, Android, Microsoft and Blackberry).</p>
+<p><strong><a href="https://www.library.yorku.ca/e/resolver/id/2535898">PrivCo</a></strong> : Business and financial data on major, non-publicly traded corporations, including family owned, private equity owned, venture backed, and international unlisted companies. PrivCo also provides information on private investors, private M&amp;A deals, and venture capital funding rounds. <strong>Note:  Users will have to create an account and log-in to Privco if they wish to go into an actual company, investor or  deal profile, or download or export information.</strong></p>
+<p><strong><a href="https://ocul-yor.primo.exlibrisgroup.com/permalink/01OCUL_YOR/1jocqcq/alma991036234654905164">ProcurementIQ </a>(formerly IBISWorld Procurement)</strong>: Covers a multitude of indirect purchasing lines for over 1,000 business-to-business product and service markets in the United States and Canada. These reports will assist York students and researchers by facilitating industry research especially in areas such as purchasing, supply chain management and strategic sourcing. These detailed reports cover price environment, product characteristics, supply chain and vendors (including supplier benchmarking and supply chain risk), elements of the purchasing process, and negotiation questions and tactics.</p>
+<p style="padding-left: 30px"><a href="http://ezproxy.library.yorku.ca/login?url=http://clients1.ibisworld.com/processlogin.aspx?u=abnMnGN3Cbhqq7E0OG0LIQ==&amp;p=+HD1bkD2uj132csB4hqr2A=="><strong>Canada Spotlight Reports</strong></a> offer focused and highly-actionable information on a variety of products and services in the Canadian market. It includes: Benchmark prices, price drivers an price trends, major vendors, key RFP elements and negotiation questions.</p>
+<p><strong><a title="" href="/e/resolver/id/1922198" target="" rel="noopener">ProQuest Business</a></strong> :  This link allows you to access the 4 preselected ProQuest business databases: ABI/Inform Global, ABI/Inform Trade and Industry, CBCA Complete,  and ProQuest Asian Business and Reference. This database contains citations and abstracts for thousands of leading business and management publications, including scholarly, trade, popular and news titles. A very large majority of these titles is available in full-text or full-image, with some dating back as far as the 1920s. A wide range of business subjects is covered. This resource also incorporates industry, company and market-focused reports. This <a href="http://proquest.libguides.com/ABI">ABI Inform LibGuide</a> will give you insight into strategies for using this database platform effectively.</p>
+<p><strong><a href="/eresolver/?id=63623">Proquest Asian Business and Reference</a>:</strong> Provides full-text coverage of Asian business and financial information from key international publications including Far Eastern Economic Review, Asiaweek, and many more. Includes information on companies, economies, markets, and overall business conditions in Asian countries.</p>
+<p><strong><a href="/eresolver/?id=175">PsycINFO</a></strong> :  Produced by the American Psychological Association, PsycINFO indexes journal articles, dissertations, reports, books, book chapters, and other scholarly documents. While a primary resource for the discipline of psychology, this database offers coverage of the related topics of human resource management and organizational behaviour.</p>
+<p><strong><a title="" href="http://www.rebrand.com/" target="" rel="noopener">ReBrand.com</a></strong> : This is a brand transformation and rebranding resource offering access to articles, interviews, videos and more . It also features information on award winning rebranding campaigns – the global REBRAND awards -  spanning a period of almost ten years .</p>
+<p><a href="https://ocul-yor.primo.exlibrisgroup.com/permalink/01OCUL_YOR/q36jf8/alma991036445083205164" target="_blank" rel="noopener noreferrer" data-auth="NotApplicable" data-linkindex="1"><strong>S&amp;P Capital IQ</strong></a> is a web-based platform that combines deep information on companies, markets and people worldwide with robust tools for analysis and idea generation. Over 62,000 public companies and 4.4 million private companies are profiled. Tap into deep fundamental data covering equities, fixed income, capital structure, credit ratings, transactions, private equity firm profiles, ownership, business relationships and more. <strong>To access Capital IQ, current York students, faculty and staff must <a href="https://researchguides.library.yorku.ca/ld.php?content_id=36013757" target="_blank" rel="noopener noreferrer" data-auth="NotApplicable" data-linkindex="2">create an account using their valid YorkU e-mail</a> and access it through this <a href="https://ocul-yor.primo.exlibrisgroup.com/permalink/01OCUL_YOR/q36jf8/alma991036445083205164" target="_blank" rel="noopener noreferrer" data-auth="NotApplicable" data-linkindex="3">link</a></strong></p>
+<p><strong><a title="" href="/eresolver/?id=61497" target="" rel="noopener">Scholars Portal Journals</a>:</strong>  Provides a single point of full-text access to thousands of peer-reviewed scholarly journals from a broad range of disciplines. Journals covered include reputable publishers, e.g,  Academic Press , Berkely Electronic Press, Cambridge University Press, Emerald Publishing, Elsevier Science, Kluwer Academic Publishers, Oxford University Press, Project MUSE, Springer, and John Wiley &amp; Sons.</p>
+<p><a href="https://ocul-yor.primo.exlibrisgroup.com/view/action/uresolver.do?operation=resolveService&amp;package_service_id=17275977460005164&amp;institutionId=5164&amp;customerId=5150&amp;VE=true"><strong>Scott's Directories</strong>:</a> Our subscription is composed of the following four directories:  Ontario Business,  Western Business, Ontario Manufacturers and Repertoire Inudstriel Quebec. Scott's business directory database covers key B2B service sectors such as transportation &amp; warehousing, customs brokers, freight forwarders, contractors, law firms, management firms, consulting, architecture, advertising, marketing, technical services in addition to manufacturers &amp; wholesalers.</p>
+<p style="text-align: left"><strong><a title="" href="/eresolver/?id=1194128" target="" rel="noopener">Scopus</a></strong> :  A database supporting cited reference searching with coverage in all subject areas with particular strength in the sciences. Coverage is back to 1996. Effective for finding post-1996 cited references for articles.</p>
+<p style="padding-left: 30px"><strong>Helpsheet:</strong> This <a href="http://researchguides.library.yorku.ca/content.php?pid=282644&amp;sid=2336614"><strong>online guide</strong></a> walks you through how to use Scopus.</p>
+<p><strong><a href="http://www.sedar.com/"><strong>SEDAR</strong></a>: </strong>is a publicly available database which provides access to full-text Canadian public securities filings.</p>
+<p><strong><a href="http://ezproxy.library.yorku.ca/login?url=https://app.simplyanalytics.com">SimplyAnalytics</a>:</strong> A web-based mapping database that lets users easily create professional looking thematic maps and reports using demographic (Statistics Canada), business and marketing data (Environics) for Canadian geographic areas.</p>
+<p>In addition SimplyAnalytics offers psychographics providing insights into behaviour and mindset of consumers via the  PRIZM Segmentation Handbook.</p>
+<ul>
+<li>To access Environic Analytics’ Prizm handbook, click <strong>Support </strong>in the header &gt; Click <strong>Data Documentation </strong>&gt; Under Environics, scroll down and click on the most recent Prizm handbook link to open it.</li>
+</ul>
+<p>You will need to <strong>create your own login</strong> the first time you use SimplyAnalytics.</p>
+<p style="padding-left: 30px"><strong>Helpsheet:</strong> See this <a href="https://www.library.yorku.ca/web/bbl/wp-content/uploads/sites/8/2012/06/SimplyAnalytics_Guide.pdf"><strong>online guide</strong></a> for step-by-step examples of how to conduct different types of market and business research using SimplyAnalytics.</p>
+<p><strong><a href="https://www.library.yorku.ca/find/Record/muler958059">SNL Metals and Mining</a></strong> (Can only be used in Internet Explorer and Chrome): Provides detailed information on global mining projects and their various stages, companies, commodities, and mining in specific geographies. Users can search preexisting reports or create custom reports that compare multiple companies or projects. M&amp;A information for the global mining industry is also available from 1995 to the present and users have access to international global mining news sources, as well as proprietary news articles written by SNL Metals and Mining analysts. Users can export data using the Excel Add-in and can use the interactive Mine Maps function to visualize global mining data. When using for the first time, <strong>users must create a login using an @yorku.ca or @schulich.yorku.ca email address.</strong> This database is restricted to current York University community members and can be used on and off-campus; however, users must sign-in to the database using their unique login. The Excel Add-in will only work for the following operating systems: Windows XP, Windows Vista, and Windows 7.</p>
+<p><strong>SourceOECD</strong> : see OECD iLibrary</p>
+<p>Standard and Poor's NetAdvantage - see link under NetAdvantage</p>
+<p><strong><a href="http://ezproxy.library.yorku.ca/login?url=https://www.statista.com/">Statista</a></strong>: Statista is a statistics portal and comprehensive, easy-to-use resource. It is international in scope with coverage of many sub-industries, and a broad range of topics in multidisciplinary categories. Statista draws on secondary sources for statistical information including the government, as well as industry, scientific, marketing, and trade organizations.  This resource also offers Statista's own proprietary/internal statistics generated through research and surveys they conduct with partner organizations. Statista offers a wide range of consumer and market data, including consumer market forecasts and digital market outlooks. Database resources can be downloaded in different formats, e.g. as statistical charts and tables, reports, dossiers, infographics etc., and results may be downloaded as PNG, PDF, Excel, and PowerPoint file formats.</p>
+<p style="padding-left: 30px"><strong><a href="https://youtu.be/ZP8l1xXsqy8">General Introduction</a></strong><br />
+<strong><a href="https://vimeo.com/206022627">Digital Market Outlook</a></strong><br />
+<strong><a href="https://vimeo.com/202712374">Search Functionality</a></strong></p>
+<p><a href="http://www.statcan.gc.ca/start-debut-eng.html"><strong>Statistics Canada</strong></a> : For a description of products and support services visit the <a href="http://researchguides.library.yorku.ca/data">Library Data Services Web</a> site. Click on <a title="" href="http://www.statcan.gc.ca/help-aide/site-eng.htm" target="" rel="noopener">tutorials</a> for online guides to help you search the Statistics Canada website.</p>
+<p><a href="https://ocul-yor.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991007426649705164&amp;context=L&amp;vid=01OCUL_YOR:YOR_DEFAULT&amp;lang=en&amp;search_scope=MyInst_and_CI&amp;adaptor=Local%20Search%20Engine&amp;tab=Everything&amp;query=any,contains,sustainalytics&amp;mode=basic"><strong>Sustainalytics</strong></a> : This database rates companies on environmental, social and governance performance (ESG) while also including commentary and qualitative analysis of company performance, e.g. policies and programs in effect and controversy reports for each company. <b>ESG Risk Ratings:</b>This universe has the most wide-reaching coverage of analyst based ESG Risk Ratings in the industry/market and covers an additional 3,700+ companies, bringing the total to over 16,000 issuers. <b>Controversies: </b>For Controversies research, we monitor 700,000 news items from more than 60,000 media and NGO sources on a daily basis, in order to identify potential incidents for a universe of over 17,000 issuers. <b>Product Involvement: </b>Product Involvement research provides coverage of more than 17,000 issuers of equity and fixed-income securities in emerging and developed markets.all the “involvement” research captured as part of incoming client portfolio screening.  Comparative reports on company ESG ratings are also available. Historical data for 2009-present are available as well upon request.</p>
+<p class="x_MsoNormal">NOTE: Sustainalytics requires an individual Morningstar login to access, if you don't have a Morningstar login, contact <a href="mailto:bronfref@yorku.ca" data-linkindex="0">bronfref@yorku.ca</a> with your name, student ID and email to set up an account.</p>
+<ul type="disc">
+<li class="x_MsoNormal"><a href="https://docs.google.com/document/d/1Yt4IN-oq67jkIK6nld7Dvu58zCUmecqLy18sMDQFgS8/edit?usp=sharing" target="_blank" rel="noopener noreferrer" data-auth="NotApplicable" data-linkindex="1">Step-by-Step: Using Sustainalytics to locate Company &amp; Industry ESG Research</a></li>
+</ul>
+<p class="x_MsoNormal">o             <a href="https://youtu.be/DiAaOOBbt5k" target="_blank" rel="noopener noreferrer" data-auth="NotApplicable" data-linkindex="2">Video tutorial on Reporting</a> <br aria-hidden="true" />o             <a href="https://youtu.be/c3vWP0YQaLM" target="_blank" rel="noopener noreferrer" data-auth="NotApplicable" data-linkindex="3">Video tutorial on Portfolios</a> <br aria-hidden="true" />o             <a href="https://youtu.be/j6wzyqA4n1I" target="_blank" rel="noopener noreferrer" data-auth="NotApplicable" data-linkindex="4">Video tutorial on Screening</a></p>
+<p><strong><a href="https://ocul-yor.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991036306249705164&amp;context=L&amp;vid=01OCUL_YOR:YOR_DEFAULT&amp;lang=en&amp;search_scope=MyInst_and_CI&amp;adaptor=Local%20Search%20Engine&amp;tab=Everything&amp;query=any,contains,sustainalytics%20academy&amp;offset=0" target="_blank" rel="noopener noreferrer">Sustainalytics Academy</a></strong> An online portal includes product methodology documentation, FAQs, video tutorials, and more for first-time users and for deepening users' knowledge and enhanced use of Sustainalytics' research.</p>
+<p><a title="" href="/e/resolver/id/395" target="" rel="noopener"><strong>TaxFind</strong></a> : The Canadian Tax Foundation's electronic search service. Contains the full text of the Annual Conference Reports, Corporate Management Reports, Canadian Tax Journal/Revue fiscal canadienne, and regional conferences starting with 1991 publications.</p>
+<p><a href="http://www.taxnotes.com" target="_blank" rel="noopener noreferrer"><strong>Tax Notes</strong> </a>: Tax Notes features in-depth articles, special reports and commentary analyzing proposed and enacted tax legislation, court decisions, regulations and other administrative guidance and new trends in the United States. <strong> NOTE: First time users must create a personal login using their @yorku.ca or @schulich.yorku.ca email. When creating your personal login, you must be on-campus. After creating your login, you can access this resource off-campus.</strong></p>
+<p><a href="http://www.taxnotes.com" target="_blank" rel="noopener noreferrer"><strong>Tax Notes International</strong> </a>: provides updates on statutes, regulations, new rulings, and court decisions from around the world. <strong>NOTE: First time users must create a personal login using their @yorku.ca or @schulich.yorku.ca email. When creating your personal login, you must be on-campus. After creating your login, you can access this resource off-campus.</strong></p>
+<p><strong><a href="https://www.toronto.ca/city-government/data-research-maps/">Toronto Data &amp; Research</a> : </strong>Provides demographic information for the city of Toronto including ward and council profiles, neighbourhood profiles, and the Toronto Social Atlas.  Census data is an important source of information, including the most recent census of 2011, and the two previous censuses of 2006 and 2001.</p>
+<p><strong>Toronto Stock Exchange</strong> <a href="/eresolver/?id=58502"><strong>CFMRC - TSX</strong></a> <strong>:</strong> Standard and Poor's Toronto Stock Exchange database provides current and historical data on stocks traded on the TSX.</p>
+<p><strong><a title="" href="/eresolver/?id=57102" target="" rel="noopener">Ullmann's Encyclopedia of Industrial Chemistry</a></strong> :  Provides information on manufacturing and industrial processes.</p>
+<p><strong><a href="https://www.library.yorku.ca/e/resolver/id/1058931">UT/DLS: Microdata Analysis and Subsetting (aka SDA)</a></strong>: Data and documentation are available for most Statistics Canada public-use microdata files, as well as a number of foreign and international datasets.</p>
+<p><strong><a href="https://www.library.yorku.ca/e/resolver/id/1879414">Wall St Journal  Online</a> :</strong> Full-text articles available via <a href="/eresolver/?id=15">ABI/Inform Global</a> and <a href="/eresolver/?id=78656">Business Source Premier</a> .</p>
+<p><strong><a href="/eresolver/?id=1058792">Ward's Business Directory</a></strong> : includes directories for 2003 to 2006. Directory listings for US public and private companies.</p>
+<p><strong><a href="/eresolver/?id=1159782">World Advertising Research Database (WARC)</a> : </strong>Provides information on marketing, advertising, branding, media and communications. This includes case studies, journal and news articles, videos, and research papers. Includes consumer trends and analysis, specific marketing, advertising and branding focused industry studies and more. Also offers best practice guides and statistical information (mainly advertising expenditures and media costs) available via the Data menu item at the top of the interface.</p>
+<p><strong><a href="/eresolver/?id=437">Web of Science (ISI)</a>:</strong>  A database supporting cited reference searching. Includes Science Citation Index, Social Sciences Citation Index and Arts &amp; Humanities Citation Index.</p>
+<p><a title="" href="http://data.worldbank.org/" target="" rel="noopener"><strong>World Bank Data</strong></a> : An extensive World Bank open access data source, browsable by country, topic or indicator type. A searchable data catalogue is also offered, as well as a microdata library.</p>
+<p><strong><a href="/eresolver/?id=459817">World Competitiveness Yearbook</a></strong> supports comparative analysis of the competitiveness performance of some 60 different countries including economic performance, government efficiency, business efficiency and infrastructure.</p>
+<p><a title="" href="http://databank.worldbank.org/ddp/home.do?Step=12&amp;id=4&amp;CNO=2" target="" rel="noopener"><strong>World Development Indicators</strong></a> : A database of the World Bank's annual compilation of development data.Includes over 800 indicators covering a wide range of topics including health, education, environment, income, finance and economic conditions.  Coverage is from 1960 - present.</p>
+<p><strong>World Markets :</strong>WMRC provides country analysis, risk and forecasts for 196 countries. See entry under Global Insight.</p>
+<p><strong><a href="http://researchguides.library.yorku.ca/wrds">WRDS</a>:</strong> Wharton Research Data Service. The following databases are currently available via WRDS: Compustat Global, CRSP, Standard and Poor's DRI, Dow Jones Averages, ExecuComp, Philadelphia Stock Exchange, and Federal Deposit Insurance Corporation. WRDS is available to York University Faculty, PhDs and master students enrolled in business related programs. Contact Xuemei Li <strong>lixuemei@yorku.ca</strong> for more information</p>
+<p><strong><a href="http://finance.yahoo.com/"><strong>Yahoo Finance</strong></a></strong> : Offers current and historical company information for companies listed on the major US and Canadian stock exchanges. Includes stock data, charting capabilities, performance, financial ratios (including beta), and comparable companies. Available via the Internet.</p>
+<p>Guides to Researching Information in the BG Library</p>
+<p><a href="http://researchguides.library.yorku.ca/companyresearch">Researching Information on Companies</a></p>
+<p><a href="http://researchguides.library.yorku.ca/industryresearch">Researching Information on Industries</a></p>
+<p>We welcome comments and suggestions for additional entries. Please send them to <a href="mailto:bronfref@yorku.ca">Bronfman Library Reference</a>, and your suggestion will be forwarded to the appropriate Librarian.</p>
+<div style="clear:both;"></div>	<div class="entry-links"></div>
+	</div>
+	</article>
+		</main>
+</div>
+<footer id="footer" class="mt-auto bg-primary">
+  <div class="container pt-5" style="background:url('https://www.library.yorku.ca/web/bbl/wp-content/themes/york2020/images/arrow.png');">
+    <div class="row pb-3">
+      <div class="col-md-3">
+        <a href="https://www.yorku.ca"><img src="https://www.library.yorku.ca/web/bbl/wp-content/themes/york2020/images/yorku-logo-ko.png" alt="York University" class="w-100 mb-4"></a>
+      </div>
+      <div class="col-md-3">
+        <p class="small text-white">
+          <span class="font-weight-bold">Keele Campus</span><br />
+          4700 Keele Street, Toronto<br />
+          ON Canada<br />
+          M3J 1P3<br />
+          <a href="tel:4167362100" class="text-white">(416) 736-2100</a>
+        </p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-unstyled small">
+          <li><a href="https://www.yorku.ca/safety/" class="text-white">Community Safety</a></li>
+          <li><a href="https://map.concept3d.com/?id=1200#!s/?ct/29101,29093" class="text-white">Campus Maps</a></li>
+          <li><a href="https://www.yorku.ca/about/privacy-legal/" class="text-white">Privacy &amp; Legal</a></li>
+          <li><a href="https://accessibility.students.yorku.ca/" class="text-white">Accessibility</a></li>
+          <li><a href="https://www.yorku.ca/about/careers/" class="text-white">Careers</a></li>
+        </ul>        
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+jQuery(document).ready(function ($) {
+var deviceAgent = navigator.userAgent.toLowerCase();
+if (deviceAgent.match(/(iphone|ipod|ipad)/)) {
+$("html").addClass("ios");
+$("html").addClass("mobile");
+}
+if (navigator.userAgent.search("MSIE") >= 0) {
+$("html").addClass("ie");
+}
+else if (navigator.userAgent.search("Chrome") >= 0) {
+$("html").addClass("chrome");
+}
+else if (navigator.userAgent.search("Firefox") >= 0) {
+$("html").addClass("firefox");
+}
+else if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
+$("html").addClass("safari");
+}
+else if (navigator.userAgent.search("Opera") >= 0) {
+$("html").addClass("opera");
+}
+});
+</script>
+<script type='text/javascript' src='//yorku.libanswers.com/load_chat.php?hash=4cbb7024b059f4ff32bd075ee3ae895e&#038;ver=5' id='springshare-libchat-english-button-js'></script>
+<script type='text/javascript' src='//yorku.libanswers.com/load_chat.php?hash=5f36a5ef6bfc1d6667d74e506930a892&#038;ver=5' id='springshare-libchat-french-button-js'></script>
+<script type='text/javascript' src='//yorku.libanswers.com/load_chat.php?hash=22c206055e3509b516d28f425d8acac8&#038;ver=5' id='springshare-libchat-english-slideout-js'></script>
+<script type='text/javascript' src='https://www.library.yorku.ca/web/bbl/wp-content/themes/york2020/js/popper.min.js?ver=6.3.2' id='popper-js'></script>
+<script type='text/javascript' src='https://www.library.yorku.ca/web/bbl/wp-content/themes/york2020/js/bootstrap.min.js?ver=6.3.2' id='bootstrap-js'></script>
+<script type='text/javascript' src='https://www.library.yorku.ca/web/bbl/wp-content/themes/york2020/js/dropdown.js?ver=6.3.2' id='dropdown-js'></script>
+<script type='text/javascript' src='https://www.library.yorku.ca/web/bbl/wp-content/themes/york2020/js/nav.js?ver=6.3.2' id='nav-js'></script>
+<script type='text/javascript' src='https://www.library.yorku.ca/web/bbl/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2' id='jquery-ui-core-js'></script>
+<script type='text/javascript' src='https://www.library.yorku.ca/web/bbl/wp-includes/js/jquery/ui/accordion.min.js?ver=1.13.2' id='jquery-ui-accordion-js'></script>
+<script type='text/javascript' src='https://www.library.yorku.ca/web/bbl/wp-includes/js/jquery/ui/tabs.min.js?ver=1.13.2' id='jquery-ui-tabs-js'></script>
+<script type='text/javascript' id='squelch_taas-js-extra'>
+/* <![CDATA[ */
+var squelch_taas_options = {"disable_magic_url":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.library.yorku.ca/web/bbl/wp-content/plugins/squelch-tabs-and-accordions-shortcodes/js/squelch-tabs-and-accordions.js?ver=0.4.3' id='squelch_taas-js'></script>
+<script type='text/javascript' src='https://www.library.yorku.ca/web/bbl/wp-content/plugins/youtube-embed-plus/scripts/fitvids.min.js?ver=14.2' id='__ytprefsfitvids__-js'></script>
+<!--[if IE]>
+<script src="https://www.library.yorku.ca/web/bbl/wp-content/themes/york2020/js/anchor.js"></script>
+<![endif]-->
+</body>
+</html>

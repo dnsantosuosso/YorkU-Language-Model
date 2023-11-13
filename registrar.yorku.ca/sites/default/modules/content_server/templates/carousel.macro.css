@@ -1,0 +1,30 @@
+.carousel.macro macro-carousel {
+
+	position:relative;
+}
+
+	.carousel.macro macro-carousel .slide {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	.carousel.macro macro-carousel .slide > *{
+		width:100%;
+		height:100%;
+	}
+
+.carousel.macro .play-control{
+	display:table;
+	margin-top:-32px;
+	z-index:5;
+	position:relative;
+}
+
+	.carousel.macro .play-control a{
+		display:none;
+	}
+	
+	.carousel.macro .play-control a.active{
+		display:inline-block;
+	}

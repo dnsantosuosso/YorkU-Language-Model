@@ -1,0 +1,19 @@
+#block-welovehearingfromyou {
+  padding-top: 60px;
+}
+
+.contact-block .icon-text-block {
+  align-items: flex-start;
+  margin-bottom: 0;
+}
+
+.contact-block .wp-block-column i {
+    margin-left: 0 !important;
+    margin-top: 8px;
+    margin-right: 8px;
+}
+
+.contact-block .wp-block-column p {
+    /*margin-left: 2.375rem !important;*/
+    margin-left:0 !important;
+}

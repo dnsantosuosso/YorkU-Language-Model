@@ -24,7 +24,7 @@ END:VTIMEZONE
 BEGIN:VEVENT
 DTSTART;TZID=America/Toronto:20231207T120000
 DTEND;TZID=America/Toronto:20231207T130000
-DTSTAMP:20231109T212048
+DTSTAMP:20231111T214459
 CREATED:20231023T155824Z
 LAST-MODIFIED:20231023T184249Z
 UID:120374-1701950400-1701954000@continue.yorku.ca
@@ -39,7 +39,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART;TZID=America/Toronto:20231130T120000
 DTEND;TZID=America/Toronto:20231130T130000
-DTSTAMP:20231109T212048
+DTSTAMP:20231111T214459
 CREATED:20231107T182348Z
 LAST-MODIFIED:20231107T182348Z
 UID:120429-1701345600-1701349200@continue.yorku.ca
@@ -54,9 +54,9 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART;TZID=America/Toronto:20231130T120000
 DTEND;TZID=America/Toronto:20231130T130000
-DTSTAMP:20231109T212048
+DTSTAMP:20231111T214459
 CREATED:20231023T155516Z
-LAST-MODIFIED:20231109T205353Z
+LAST-MODIFIED:20231110T195341Z
 UID:120371-1701345600-1701349200@continue.yorku.ca
 SUMMARY:Certificate in Cyber Security - Information Session with instructor Claude Sam-Foh
 DESCRIPTION:In today’s environment\, information security has never been more important. You can develop a portfolio of sought-after skills for an industry in critical need of qualified professionals with our award-winning Cyber Security Program.\n\nOur two stackable certificates cover all eight knowledge domains to help you prepare for the CISSP designation (Certified Information Systems Security Professional). Our delivery formats (part-time & intensive) are available so you can choose the best option for your schedule.\n  \nThrough this webinar\, you will:\n\nGet an overview of the cyber security field in Canada\nFind out what makes our professional programs different\nLearn about designations relevant to the industry (CISSP)\nGet contact information to reach out and speak with our team\nFind program details such as start times\, delivery formats\, courses\, fees and enrolment process\n\nHosted by:\n \n\n\nMarina DeBona\, M.Ed.\nProgram Manager\n\n\n\n\nClaude K. Sam-Foh\nManager\, Enterprise Architecture & Governance\, Centennial College\n\n\n\n\n                \n                        \n                            Event Registration\n                             \n                        \n                        Name*\n                            \n                            \n                                                    \n                                                    First\n                                                \n                            \n                            \n                                                    \n                                                    Last\n                                                \n                            \n                        Email*\n                            \n                        Phone* Please describe your prospective student status*Domestic - (Canadian Citizen / Permanent Resident)Domestic International - I'm an international student already in CanadaInternational - I'm an international student outside of Canada*\n								\n								I consent to my submitted data being collected and stored as outlined by the privacy policy\n							CAPTCHA
@@ -67,15 +67,30 @@ ATTACH;FMTTYPE=image/png:https://continue.yorku.ca/web-scs/wp-content/uploads/20
 ORGANIZER;CN="School%20of%20Continuing%20Studies":MAILTO:continue@yorku.ca
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;TZID=America/Toronto:20231129T120000
+DTEND;TZID=America/Toronto:20231129T130000
+DTSTAMP:20231111T214459
+CREATED:20231107T150207Z
+LAST-MODIFIED:20231110T210039Z
+UID:120421-1701259200-1701262800@continue.yorku.ca
+SUMMARY:Certificate in DevOps - Information Webinar with Instructor Juan Diego Rodriguez & Alumnus Jacky Tran
+DESCRIPTION:In this online panel discussion\, host and Program Manager\, Marina DeBona\, will begin with an overview of the program\, covering information such as delivery formats\, courses\, instructors\, fees and enrolment.   \nInstructor Juan Rodriguez will then shift the conversation to how DevOps provides business\, technology and software deployment benefits to organizations and how this program will prepare learners for a career in DevOps through a project-based curriculum. Program graduate Jacky Tran will discuss his experiences in the program and how it helped him pursue his current career path.   \n\nFeatured speakers:\n\n\nMarina DeBona\nProgram Manager\n\n\nJuan Diego Rodriguez\nDevOps Instructor and \nSenior DevOps Engineer\, TELUS\n\n\nJacky Tran\nCertificate in DevOps Graduate\n\n\n\n                \n                        \n                            Event Registration\n                             \n                        \n                        Name*\n                            \n                            \n                                                    \n                                                    First\n                                                \n                            \n                            \n                                                    \n                                                    Last\n                                                \n                            \n                        Email*\n                            \n                        Phone* Please describe your prospective student status*Domestic - (Canadian Citizen / Permanent Resident)Domestic International - I'm an international student already in CanadaInternational - I'm an international student outside of Canada*\n								\n								I consent to my submitted data being collected and stored as outlined by the privacy policy\n							CAPTCHA
+URL:https://continue.yorku.ca/event/devops-information-webinar/
+LOCATION:Online Event
+CATEGORIES:Event,Information Session,Webinar
+ATTACH;FMTTYPE=image/jpeg:https://continue.yorku.ca/web-scs/wp-content/uploads/2021/03/YorkSCS_Cetificate-in-DevOps_EmailHeader_300x250_NoLogo-e1640110433588.jpg
+ORGANIZER;CN="School%20of%20Continuing%20Studies":MAILTO:continue@yorku.ca
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;TZID=America/Toronto:20231128T120000
 DTEND;TZID=America/Toronto:20231128T130000
-DTSTAMP:20231109T212048
+DTSTAMP:20231111T214459
 CREATED:20231107T151005Z
-LAST-MODIFIED:20231107T151324Z
+LAST-MODIFIED:20231110T210237Z
 UID:120423-1701172800-1701176400@continue.yorku.ca
-SUMMARY:Certificate in Risk Management Information Session with Instructor Terry Lampropoulos & Alumni Mohamed Arale
-DESCRIPTION:Join Program Manager Marina DeBona and Instructor Terry Lampropoulos for an online information session about the Certificate in Risk Management and an overview of the risk management field. Today’s stakes are high and effective risk managers are more essential to organizations than ever before. Learn more about this emerging field and how our part-time program can help you prepare to earn your Canadian Risk Management (CRM) designation.\nHosted by:\n\n \n\n\n\n\n\n\n\n\nMarina DeBona\, \nProgram Manager\n\n\n\n \n\nTerry Lampropoulos\,\nRisk Management Program Instructor\n\n\n                \n                        \n                            Event Registration\n                             \n                        \n                        Name*\n                            \n                            \n                                                    \n                                                    First\n                                                \n                            \n                            \n                                                    \n                                                    Last\n                                                \n                            \n                        Email*\n                            \n                        Phone* Please describe your prospective student status*Domestic - (Canadian Citizen / Permanent Resident)Domestic International - I'm an international student already in CanadaInternational - I'm an international student outside of Canada*\n								\n								I consent to my submitted data being collected and stored as outlined by the privacy policy\n							CAPTCHA
-URL:https://continue.yorku.ca/event/risk-management-information-session/
+SUMMARY:Certificate in Risk Management Information Session with Instructor Terry Lampropoulos & Alumnus Mohamed Arale
+DESCRIPTION:In this online panel discussion\, host and Program Manager\, Marina DeBona\, will begin with an overview of the program\, covering information such as learning outcomes\, delivery formats\, courses\, instructors\, fees and enrolment.    \nInstructor Terry Lampropoulos will then shift the conversation to an overview of the risk management field and why effective risk managers are more essential to organizations than ever before. Terry will also discuss how the program’s project-based curriculum will prepare you to take on risk management roles\, as well as help you earn your Canadian Risk Management (CRM) designation. Program graduate Mohamed Arale will speak about his experience in this program and how what he learned and the skills he developed helped him pursue his current career path.    \n\nFeatured speakers:\n\n \n\nMarina DeBona\nProgram Manager\n\n \nTerry Lampropoulos\nRisk Management Program Instructor\n\n\n\n \nMohamed Arale\nCertificate in Risk Management Graduate \n\n\n\n                \n                        \n                            Event Registration\n                             \n                        \n                        Name*\n                            \n                            \n                                                    \n                                                    First\n                                                \n                            \n                            \n                                                    \n                                                    Last\n                                                \n                            \n                        Email*\n                            \n                        Phone* Please describe your prospective student status*Domestic - (Canadian Citizen / Permanent Resident)Domestic International - I'm an international student already in CanadaInternational - I'm an international student outside of Canada*\n								\n								I consent to my submitted data being collected and stored as outlined by the privacy policy\n							CAPTCHA
+URL:https://continue.yorku.ca/event/risk-management-information-webinar/
 LOCATION:Online Event
 CATEGORIES:Event,Information Session,Webinar
 ATTACH;FMTTYPE=image/jpeg:https://continue.yorku.ca/web-scs/wp-content/uploads/2021/08/YorkSCS_Risk-Management_EmailHeader_300x250_NoLogo-e1629145852692.jpg
@@ -84,7 +99,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART;TZID=America/Toronto:20231128T120000
 DTEND;TZID=America/Toronto:20231128T130000
-DTSTAMP:20231109T212048
+DTSTAMP:20231111T214459
 CREATED:20231023T155127Z
 LAST-MODIFIED:20231023T184342Z
 UID:120368-1701172800-1701176400@continue.yorku.ca
@@ -99,7 +114,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART;TZID=America/Toronto:20231123T120000
 DTEND;TZID=America/Toronto:20231123T130000
-DTSTAMP:20231109T212048
+DTSTAMP:20231111T214459
 CREATED:20231026T185010Z
 LAST-MODIFIED:20231027T213832Z
 UID:120387-1700740800-1700744400@continue.yorku.ca
@@ -114,7 +129,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART;TZID=America/Toronto:20231122T120000
 DTEND;TZID=America/Toronto:20231122T130000
-DTSTAMP:20231109T212048
+DTSTAMP:20231111T214459
 CREATED:20231103T190134Z
 LAST-MODIFIED:20231106T143637Z
 UID:120411-1700654400-1700658000@continue.yorku.ca
@@ -129,7 +144,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART;TZID=America/Toronto:20231121T120000
 DTEND;TZID=America/Toronto:20231121T130000
-DTSTAMP:20231109T212048
+DTSTAMP:20231111T214459
 CREATED:20231107T143541Z
 LAST-MODIFIED:20231109T214033Z
 UID:120416-1700568000-1700571600@continue.yorku.ca
@@ -144,7 +159,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART;TZID=America/Toronto:20231115T120000
 DTEND;TZID=America/Toronto:20231115T130000
-DTSTAMP:20231109T212048
+DTSTAMP:20231111T214459
 CREATED:20231019T221322Z
 LAST-MODIFIED:20231026T140403Z
 UID:120361-1700049600-1700053200@continue.yorku.ca
@@ -159,7 +174,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART;TZID=America/Toronto:20231114T120000
 DTEND;TZID=America/Toronto:20231114T130000
-DTSTAMP:20231109T212048
+DTSTAMP:20231111T214459
 CREATED:20231016T193604Z
 LAST-MODIFIED:20231019T220611Z
 UID:120320-1699963200-1699966800@continue.yorku.ca

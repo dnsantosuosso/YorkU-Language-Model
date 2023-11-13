@@ -1,0 +1,984 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<title>Design &#8211; Department of Design &#8211; School of the Arts, Media, Performance &amp; Design</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='stylesheet' id='yu-datatable-css-css'  href='https://design.ampd.yorku.ca/wp-content/plugins/yu-tables-responsive/DataTables-1.10.7/media/css/jquery.dataTables.css' media='all' />
+<link rel='stylesheet' id='yu-datatable-responsive-css-css'  href='https://design.ampd.yorku.ca/wp-content/plugins/yu-tables-responsive/dataTables.responsive.css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://design.ampd.yorku.ca/wp-includes/css/dist/block-library/style.min.css' media='all' />
+<style id='wp-block-library-theme-inline-css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-code>code{font-family:Menlo,Consolas,monaco,monospace;color:#1e1e1e;padding:.8em 1em;border:1px solid #ddd;border-radius:4px}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-pullquote{border-top:4px solid;border-bottom:4px solid;margin-bottom:1.75em;color:currentColor}.wp-block-pullquote__citation,.wp-block-pullquote cite,.wp-block-pullquote footer{color:currentColor;text-transform:uppercase;font-size:.8125em;font-style:normal}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;position:relative;font-style:normal}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-group:where(.has-background){padding:1.25em 2.375em}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto;opacity:.4}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{padding:.5em;border:1px solid;word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-template-part.has-background{padding:1.25em 2.375em;margin-top:0;margin-bottom:0}
+</style>
+<link rel='stylesheet' id='mediaelement-css'  href='https://design.ampd.yorku.ca/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css'  href='https://design.ampd.yorku.ca/wp-includes/js/mediaelement/wp-mediaelement.min.css' media='all' />
+<link rel='stylesheet' id='view_editor_gutenberg_frontend_assets-css'  href='https://design.ampd.yorku.ca/wp-content/plugins/wp-views/public/css/views-frontend.css' media='all' />
+<style id='view_editor_gutenberg_frontend_assets-inline-css'>
+.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item a {color: #444;background-color: #fff;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:focus {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #eee;}
+.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item a {color: #444;background-color: #fff;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:focus {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item a {color: #444;background-color: #eeeeee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey a:focus {color: #000;background-color: #e5e5e5;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #e5e5e5;}
+.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item a {color: #444;background-color: #fff;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:focus {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item a {color: #444;background-color: #eeeeee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey a:focus {color: #000;background-color: #e5e5e5;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #e5e5e5;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue .wpv-sort-list-item {border-color: #0099cc;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue .wpv-sort-list-item a {color: #444;background-color: #cbddeb;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue a:focus {color: #000;background-color: #95bedd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #95bedd;}
+</style>
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #FFF;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--primary: #0073a8;--wp--preset--color--secondary: #005075;--wp--preset--color--dark-gray: #111;--wp--preset--color--light-gray: #767676;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 19.5px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36.5px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-size--normal: 22px;--wp--preset--font-size--huge: 49.5px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel='stylesheet' id='twentynineteen-style-css'  href='https://design.ampd.yorku.ca/wp-content/themes/AMPD2020/style.css' media='all' />
+<link rel='stylesheet' id='twentynineteen-print-style-css'  href='https://design.ampd.yorku.ca/wp-content/themes/twentynineteen/print.css' media='print' />
+<script type='text/javascript' src='https://design.ampd.yorku.ca/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://design.ampd.yorku.ca/wp-content/plugins/wp-views/vendor/toolset/common-es/public/toolset-common-es-frontend.js' id='toolset-common-es-frontend-js'></script>
+<script type='text/javascript' src='https://design.ampd.yorku.ca/wp-content/plugins/yu-tables-responsive/DataTables-1.10.7/media/js/jquery.dataTables.min.js' id='datatable-js-js'></script>
+<script type='text/javascript' src='https://design.ampd.yorku.ca/wp-content/plugins/yu-tables-responsive/dataTables.responsive.js' id='yu-datatable-js-js'></script>
+<script type='text/javascript' src='https://design.ampd.yorku.ca/wp-content/plugins/yu-tables-responsive/jquery.dataTables.columnFilter.js' id='yu-datatable-column-filter-js-js'></script>
+<link rel="canonical" href="https://design.ampd.yorku.ca/" />
+ <script> window.addEventListener("load",function(){ var c={script:false,link:false}; function ls(s) { if(!['script','link'].includes(s)||c[s]){return;}c[s]=true; var d=document,f=d.getElementsByTagName(s)[0],j=d.createElement(s); if(s==='script'){j.async=true;j.src='https://design.ampd.yorku.ca/wp-content/plugins/wp-views/vendor/toolset/blocks/public/js/frontend.js?v=1.6.4';}else{ j.rel='stylesheet';j.href='https://design.ampd.yorku.ca/wp-content/plugins/wp-views/vendor/toolset/blocks/public/css/style.css?v=1.6.4';} f.parentNode.insertBefore(j, f); }; function ex(){ls('script');ls('link')} window.addEventListener("scroll", ex, {once: true}); if (('IntersectionObserver' in window) && ('IntersectionObserverEntry' in window) && ('intersectionRatio' in window.IntersectionObserverEntry.prototype)) { var i = 0, fb = document.querySelectorAll("[class^='tb-']"), o = new IntersectionObserver(es => { es.forEach(e => { o.unobserve(e.target); if (e.intersectionRatio > 0) { ex();o.disconnect();}else{ i++;if(fb.length>i){o.observe(fb[i])}} }) }); if (fb.length) { o.observe(fb[i]) } } }) </script>
+	<noscript>
+		<link rel="stylesheet" href="https://design.ampd.yorku.ca/wp-content/plugins/wp-views/vendor/toolset/blocks/public/css/style.css">
+	</noscript><meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="In Design, students actively explore and expand the boundaries of design in managing and communicating complex bodies of information for meaningful human experiences in our increasingly visual world." />
+    <meta name="keywords" content="ysdn, design, york university, sheridan college, graphic design, Department of Design, School of the Arts, Media, Performance and Design, York University, AMPD York University, AMPD, AMPD YorkU">
+
+    <!--nosociallink-->
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="google-site-verification" content="V7lzTsXaX9vzrJk2VXrjBH2eDX6sOsg_HmmSxY0S8uE" />
+
+<link rel="profile" href="https://gmpg.org/xfn/11" />
+<link rel="shortcut icon" href="/wp-content/themes/AMPD-2/img/favicons/favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/wp-content/themes/AMPD2020/hc-offcanvas-nav.css">
+<link rel="stylesheet" href="/wp-content/themes/AMPD2020/bootstrap-v4.3.1.css">
+<link async rel="stylesheet" type="text/css" href="https://ampd.yorku.ca/slick-org/slick.css"/>
+<link async rel="stylesheet" type="text/css" href="https://ampd.yorku.ca/slick-org/slick-theme.css"/>
+<link async rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DX5QPT1BP1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DX5QPT1BP1');
+</script>
+
+<!-- Menu -->
+<script type="text/javascript">
+"use strict";!function(e,t){if("object"==typeof module&&"object"==typeof module.exports){if(!e.document)throw new Error("HC Off-canvas Nav requires a browser to run.");module.exports=t(e)}else"function"==typeof define&&define.amd?define("hcOffcanvasNav",[],t(e)):t(e)}("undefined"!=typeof window?window:this,function(re){var ie=re.document,se=ie.getElementsByTagName("html")[0],oe=0,le="nav-open",i=function(e,t){if(t=t||{},"string"==typeof e&&(e="#"===e.charAt(0)&&-1===e.indexOf(" ")?ie.querySelector(e):ie.querySelectorAll(e)),!e)return!1;var ee=i.Helpers;void 0!==t.maxWidth&&(ee.deprecated("maxWidth","disableAt","option"),t.disableAt=t.maxWidth);var te=Object.assign({},{width:380,height:"auto",disableAt:!1,pushContent:null,swipeGestures:!0,expanded:!1,position:"left",levelOpen:"overlap",levelSpacing:40,levelTitles:!0,closeOpenLevels:!0,closeActiveLevel:!1,navTitle:null,navClass:"",disableBody:!0,closeOnClick:!0,customToggle:null,bodyInsert:"prepend",keepClasses:!0,removeOriginalNav:!1,rtl:!1,insertClose:!0,insertBack:!0,levelTitleAsBack:!0,labelClose:"",labelBack:"Back"},t);te.ariaLabels=Object.assign({},{open:"Open Menu",close:"Close Menu",submenu:"Submenu"},t.ariaLabels);var ne=[],ae=function(e){if(!ne.length)return!1;var t=!1;"string"==typeof e&&(e=[e]);for(var n=e.length,a=0;a<n;a++)-1!==ne.indexOf(e[a])&&(t=!0);return t},n=function(e){if(e.querySelector("ul")||"UL"===e.tagName){var E="hc-nav-"+ ++oe,l=ee.printStyle("hc-offcanvas-"+oe+"-style"),s="keydown.hcOffcanvasNav",L=ee.createElement("nav",{id:E}),c=ee.createElement("div",{class:"nav-container"});L.addEventListener("click",ee.stopPropagation),L.appendChild(c);var n,v,a,u=null,d=null,f=null,t={},p=!1,h=!1,m=null,b=0,g=0,y=0,A=null,x={},C=[],O=!1,k=[],o=null,N=null,T=!1,w=!1;te.customToggle?u=ee.getElements(te.customToggle):(u=[ee.createElement("a",{href:"#"},ee.createElement("span"))],e.insertAdjacentElement("afterend",u[0])),u&&u.length&&u.forEach(function(e){e.addEventListener("click",J(e)),e.classList.add("hc-nav-trigger",E),e.setAttribute("role","button"),e.setAttribute("aria-label",(te.ariaLabels||{}).open),e.setAttribute("aria-controls",E),e.setAttribute("aria-expanded",!1),e.addEventListener("keydown",function(e){"Enter"!==e.key&&13!==e.keyCode||setTimeout(function(){S(0,0)},0)})});var S=function(e,t,n){if("number"==typeof t&&("number"==typeof e||k.length)){var a=Array.prototype.filter.call(c.querySelectorAll(".nav-wrapper"),function(e){return e.getAttribute("data-level")==t&&("number"!=typeof n||"number"==typeof n&&e.getAttribute("data-index")==n)})[0];if(a=ee.children(a,".nav-content")[0],a=ee.children(a,"ul"),a=ee.children(a,"li"),a=ee.children(a,":not(.nav-wrapper)"),a=Array.prototype.map.call(a,function(e){return Array.prototype.slice.call(e.querySelectorAll('[tabindex="0"], a[href], button, textarea, input[type="text"], input[type="radio"], input[type="checkbox"], select'))}).flat(),a=Array.prototype.filter.call(a,function(e){return"-1"!==e.getAttribute("tabindex")})){L.classList.add("user-is-tabbing");var r=a[0],i=a[a.length-1];"number"==typeof e?a[e].focus():(k[k.length-1].focus(),k.pop()),ie.removeEventListener(s),ie.addEventListener(s,function(e){"Tab"!==e.key&&9!==e.keyCode||(e.shiftKey?ie.activeElement===r&&(e.preventDefault(),i.focus()):ie.activeElement===i&&(e.preventDefault(),r.focus()))})}}},M=function(){ie.removeEventListener(s),d&&setTimeout(function(){d.focus()},v)},j=function(){c.style.transition="none",L.style.display="block";var e=ee.formatSizeVal(g=c.offsetWidth),t=ee.formatSizeVal(y=c.offsetHeight);l.add(".hc-offcanvas-nav."+E+".nav-position-left .nav-container","transform: translate3d(-"+e+", 0, 0)"),l.add(".hc-offcanvas-nav."+E+".nav-position-right .nav-container","transform: translate3d("+e+", 0, 0)"),l.add(".hc-offcanvas-nav."+E+".nav-position-top .nav-container","transform: translate3d(0, -"+t+", 0)"),l.add(".hc-offcanvas-nav."+E+".nav-position-bottom .nav-container","transform: translate3d(0, "+t+", 0)"),l.insert(),L.style.display="",c.style.transition="",n=re.getComputedStyle(c).transitionProperty,v=ee.toMs(re.getComputedStyle(c).transitionDuration),a=re.getComputedStyle(c).transitionTimingFunction,te.pushContent&&f&&n&&l.add(ee.getElementCssTag(f),"transition: "+n+" "+v+"ms "+a),l.insert()},r=function(e){var t=!!u&&re.getComputedStyle(u[0]).display,n=!!te.disableAt&&"max-width: "+(te.disableAt-1)+"px",a=ee.formatSizeVal(te.width),r=ee.formatSizeVal(te.height),i=ee.formatSizeVal(te.levelSpacing);(ee.isNumeric(a)||-1!==a.indexOf("px"))&&(g=parseInt(a)),(ee.isNumeric(r)||-1!==r.indexOf("px"))&&(y=parseInt(r)),ae(["disableAt","position"])&&l.reset(),l.add(".hc-offcanvas-nav."+E,"display: block",n),l.add(".hc-nav-original."+E,"display: none",n),t&&l.add(".hc-nav-trigger."+E,"display: "+(t&&"none"!==t?t:"block"),n),-1!==["left","right"].indexOf(te.position)?l.add(".hc-offcanvas-nav."+E+" .nav-container","width: "+a):l.add(".hc-offcanvas-nav."+E+" .nav-container","height: "+r),l.add(".hc-offcanvas-nav."+E+".nav-position-left .nav-container","transform: translate3d(-"+a+", 0, 0);"),l.add(".hc-offcanvas-nav."+E+".nav-position-right .nav-container","transform: translate3d("+a+", 0, 0);"),l.add(".hc-offcanvas-nav."+E+".nav-position-top .nav-container","transform: translate3d(0, -"+r+", 0);"),l.add(".hc-offcanvas-nav."+E+".nav-position-bottom .nav-container","transform: translate3d(0, "+r+", 0);"),l.add(".hc-offcanvas-nav."+E+".nav-levels-overlap.nav-position-left li.level-open > .nav-wrapper","transform: translate3d(-"+i+", 0, 0)",n),l.add(".hc-offcanvas-nav."+E+".nav-levels-overlap.nav-position-right li.level-open > .nav-wrapper","transform: translate3d("+i+", 0, 0)",n),l.add(".hc-offcanvas-nav."+E+".nav-levels-overlap.nav-position-top li.level-open > .nav-wrapper","transform: translate3d(0, -"+i+", 0)",n),l.add(".hc-offcanvas-nav."+E+".nav-levels-overlap.nav-position-bottom li.level-open > .nav-wrapper","transform: translate3d(0, "+i+", 0)",n),l.insert(),(!e||e&&ae("pushContent"))&&(f=te.pushContent?ee.getElements(te.pushContent)[0]:null),c.style.transition="none";var s=L.classList.contains(le),o=["hc-offcanvas-nav",te.navClass||"",E,"nav-levels-"+(te.levelOpen||"none"),"nav-position-"+te.position,te.disableBody?"disable-body":"",ee.isIos?"is-ios":"",ee.isTouchDevice?"touch-device":"",s?le:"",te.rtl?"rtl":"",!0!==te.insertClose||te.labelClose?"":"nav-close-button-empty"].join(" ").trim().replace(/  +/g," ");L.removeEventListener("click"),L.className=o,L.setAttribute("aria-hidden",!0),ie.documentElement.style.setProperty("--nav-level-spacing",te.levelSpacing+"px"),te.disableBody&&L.addEventListener("click",$),e?j():setTimeout(j,0)},i=function(){t=function c(e,t){var n=[];Array.prototype.forEach.call(e,function(e){if("UL"===e.tagName||e instanceof HTMLHeadingElement){var l={tagName:e.tagName,id:t,htmlClass:e.getAttribute("class")||null,items:[]};e instanceof HTMLHeadingElement?l.content=ee.clone(e,!1,!0):(null!==e.getAttribute("data-nav-active")&&(m=t,e.removeAttribute("data-nav-active")),Array.prototype.forEach.call(e.children,function(e){var t=null!==e.getAttribute("data-nav-custom-content"),n=t?e.children:Array.prototype.filter.call(e.children,function(e){return"UL"!==e.tagName&&!e.querySelector("ul")}).concat(e.children.length?[]:[e.firstChild]),a=t?[]:Array.prototype.slice.call(e.querySelectorAll("ul")),r=a.length?[].concat(Array.prototype.filter.call(a[0].parentNode.children,function(e){return"UL"===e.tagName||e instanceof HTMLHeadingElement})):[],i=null;if(!n.length){for(var s="",o=0;o<e.childNodes.length;o++)e.childNodes[o].nodeType===Node.TEXT_NODE&&(s+=e.childNodes[o].textContent.trim());n=[ie.createTextNode(s)]}r.length&&(ee.data(e,"hc-uniqid")?i=ee.data(e,"hc-uniqid"):(i=Math.random().toString(36).substr(2),ee.data(e,"hc-uniqid",i))),null!==e.getAttribute("data-nav-active")&&(m=i,e.removeAttribute("data-nav-active")),l.items.push({id:i,htmlClass:e.getAttribute("class")||"",content:n,custom:t,subnav:r.length?c(r,i):[],highlight:null!==e.getAttribute("data-nav-highlight")})})),n.push(l)}});return n}("UL"===e.tagName?[e]:Array.prototype.filter.call(e.children,function(e){return"UL"===e.tagName||e instanceof HTMLHeadingElement}),null)},P=function(e){if(e){for(;c.firstChild;)c.removeChild(c.firstChild);x={}}!function h(n,e,m,b,t,a){var g=ee.createElement("div",{class:"nav-wrapper nav-wrapper-"+m,"data-level":m,"data-index":t||0});var r=ee.createElement("div",{class:"nav-content"});g.addEventListener("click",ee.stopPropagation);g.appendChild(r);e.appendChild(g);if(b&&(0===m||0<m&&"overlap"===te.levelOpen)){var i="string"==typeof b?b:ee.clone(re.jQuery&&b instanceof re.jQuery&&b.length?b[0]:b,!0,!0);r.insertBefore(ee.createElement("h2",{id:0===m?E+"-nav-title":null,class:0===m?"nav-title":"level-title"},i),r.firstChild),0===m&&"string"==typeof b&&L.setAttribute("aria-labelledby",E+"-nav-title")}var s=-1;n.forEach(function(e,t){if("UL"===e.tagName){s++;var p=ee.createElement("ul",{id:e.id?1<n.length?"menu-"+e.id+"-"+s:"menu-"+e.id:null,role:"menu","aria-level":m+1});r.appendChild(p),te.keepClasses&&e.htmlClass&&p.classList.add.apply(p.classList,e.htmlClass.split(" ")),e.items.forEach(function(t,e){var n=t.content;if(t.custom){var a=ee.createElement("li",{class:"nav-item nav-item-custom"},ee.createElement("div",{class:"nav-custom-content"},Array.prototype.map.call(n,function(e){return ee.clone(e,!0,!0)})));return te.keepClasses&&t.htmlClass&&a.classList.add.apply(a.classList,t.htmlClass.split(" ")),void p.appendChild(a)}var r,i=Array.prototype.filter.call(n,function(e){return"A"===e.tagName||e.nodeType!==Node.TEXT_NODE&&e.querySelector("a")})[0];i?(r=ee.clone(i,!1,!0)).classList.add("nav-item-link"):r=ee.createElement(t.subnav.length?"a":"span",{class:"nav-item-link"},Array.prototype.map.call(n,function(e){return ee.clone(e,!0,!0)})),"A"===r.tagName&&(r.setAttribute("tabindex","0"),r.setAttribute("role","menuitem"),r.getAttribute("href")||r.setAttribute("href","#")),i&&r.addEventListener("click",function(e){e.stopPropagation(),ee.hasListener(i,"click")&&i.click()}),"#"===r.getAttribute("href")&&r.addEventListener("click",ee.preventDefault),te.closeOnClick&&(W()?"A"!==r.tagName||"false"===r.dataset.navClose||null!==r.getAttribute("disabled")&&"false"!==r.getAttribute("disabled")||t.subnav.length&&(!r.getAttribute("href")||"#"===r.getAttribute("href").charAt(0))||r.addEventListener("click",$):"A"!==r.tagName||"false"===r.dataset.navClose||null!==r.getAttribute("disabled")&&"false"!==r.getAttribute("disabled")||r.addEventListener("click",$));var s=ee.createElement("li",{class:"nav-item"});if(s.appendChild(r),p.appendChild(s),te.keepClasses&&t.htmlClass&&s.classList.add.apply(s.classList,t.htmlClass.split(" ")),t.highlight&&s.classList.add("nav-highlight"),ee.wrap(r,ee.createElement("div",{class:"nav-item-wrapper"})),t.subnav.length){var o=m+1,l=t.id,c="";if(x[o]||(x[o]=0),s.classList.add("nav-parent"),W()){var v=x[o],u=ee.createElement("input",{type:"checkbox",title:"Nav Button",id:E+"-"+o+"-"+v,class:"hc-chk",tabindex:-1,"data-level":o,"data-index":v,value:l});u.addEventListener("click",ee.stopPropagation),u.addEventListener("change",Q),s.insertBefore(u,s.firstChild);var d=function(e){e.addEventListener("click",function(e){if(e.stopPropagation(),u.setAttribute("checked","true"!==u.getAttribute("checked")),"createEvent"in ie){var t=ie.createEvent("HTMLEvents");t.initEvent("change",!1,!0),u.dispatchEvent(t)}}),e.addEventListener("keydown",function(e){"Enter"!==e.key&&13!==e.keyCode||(O=!0,k.push(this))}),e.setAttribute("aria-controls",1<t.subnav.length?t.subnav.filter(function(e){return"UL"===e.tagName}).map(function(e,t){return"menu-"+e.id+"-"+t}).join(" "):"menu-"+l),e.setAttribute("aria-haspopup","overlap"===te.levelOpen),e.setAttribute("aria-expanded",!1)};if(-1!==C.indexOf(l)&&(g.classList.add("sub-level-open"),g.addEventListener("click",function(){return Z(o,v)}),s.classList.add("level-open"),u.setAttribute("checked",!0)),c=!0===te.levelTitles?n[0].textContent.trim():"",r.getAttribute("href")&&"#"!==r.getAttribute("href")){var f=ee.createElement("a",{href:"#",class:"nav-next","aria-label":(te.ariaLabels||{}).submenu+": "+c,role:"menuitem",tabindex:0},ee.createElement("span"));f.addEventListener("click",ee.preventClick()),d(f),te.rtl?r.parentNode.appendChild(f):r.parentNode.insertBefore(f,r.nextSibling)}else r.appendChild(ee.createElement("span",{class:"nav-next"},ee.createElement("span"))),d(r)}else r.setAttribute("aria-expanded",!0);x[o]++,h(t.subnav,s,o,c,x[o]-1,"string"==typeof b?b:"")}})}else r.appendChild(e.content)});if(m&&void 0!==t&&!1!==te.insertBack&&"overlap"===te.levelOpen){var o=ee.children(r,"ul"),l=te.levelTitleAsBack&&a||te.labelBack||"",c=ee.createElement("a",{href:"#",class:"nav-back-button",role:"menuitem",tabindex:0},[l,ee.createElement("span")]);if(!0===te.insertBack||0===te.insertBack){var v=ee.createElement("div",{class:"nav-back"},c);r.insertBefore(v,ee.children(r,":not(.level-title)")[0])}else{var u=ee.createElement("li",{class:"nav-item nav-back"},c);ee.insertAt(u,!0===te.insertBack?0:te.insertBack,o)}var d=function(){return Z(m,t)};ee.wrap(c,ee.createElement("div",{class:"nav-item-wrapper"})),c.addEventListener("click",ee.preventClick(d)),c.addEventListener("keydown",function(e){"Enter"!==e.key&&13!==e.keyCode||(O=!0)})}if(0===m&&!1!==te.insertClose){var f=ee.createElement("a",{href:"#",class:"nav-close-button"+(te.labelClose?" has-label":""),role:"menuitem",tabindex:0,"aria-label":te.labelClose?"":(te.ariaLabels||{}).close},[te.labelClose||"",ee.createElement("span")]);if(f.addEventListener("click",ee.preventClick($)),f.addEventListener("keydown",function(e){"Enter"!==e.key&&13!==e.keyCode||M()}),b&&!0===te.insertClose)r.insertBefore(ee.createElement("div",{class:"nav-close"},f),r.children[1]);else if(!0===te.insertClose)r.insertBefore(ee.createElement("div",{class:"nav-close"},f),r.firstChild);else{var p=ee.children(r,"ul"),y=ee.createElement("li",{class:"nav-item nav-close"},f);ee.wrap(f,ee.createElement("div",{class:"nav-item-wrapper"})),ee.insertAt(y,te.insertClose,p)}}}(t,c,0,te.navTitle)},_=function(t){return function(e){"left"!==te.position&&"right"!==te.position||(o=e.touches[0].clientX,N=e.touches[0].clientY,"doc"===t?w||(ie.addEventListener("touchmove",H,ee.supportsPassive),ie.addEventListener("touchend",D,ee.supportsPassive)):(w=!0,c.addEventListener("touchmove",U,ee.supportsPassive),c.addEventListener("touchend",z,ee.supportsPassive)))}},B=function(e,t){re.addEventListener("touchmove",ee.preventDefault,ee.supportsPassive),L.style.visibility="visible",c.style[ee.browserPrefix("transition")]="none",ee.setTransform(c,e,te.position),f&&(f.style[ee.browserPrefix("transition")]="none",ee.setTransform(f,t,te.position))},q=function(e,t,n,a){void 0===t&&(t=!0),void 0===n&&(n=!1),void 0===a&&(a=!1),re.removeEventListener("touchmove",ee.preventDefault,ee.supportsPassive),c.style[ee.browserPrefix("transition")]="",ee.setTransform(c,n,te.position),f&&(f.style[ee.browserPrefix("transition")]="",ee.setTransform(f,a,te.position)),"open"===e?K():($(),t?setTimeout(function(){L.style.visibility=""},v):L.style.visibility="")},H=function(e){var t=0-(o-e.touches[0].clientX),n="overlap"===te.levelOpen?Y()*te.levelSpacing:0,a=g+n;t="left"===te.position?Math.min(Math.max(t,0),a):Math.abs(Math.min(Math.max(t,-a),0)),("left"===te.position&&o<50||"right"===te.position&&o>ie.clientWidth-50)&&(T=!0,B(0-(g-t),Math.abs(t)))},D=function e(t){if(ie.removeEventListener("touchmove",H),ie.removeEventListener("touchend",e),T){var n=t.changedTouches[t.changedTouches.length-1],a=0-(o-n.clientX),r="overlap"===te.levelOpen?Y()*te.levelSpacing:0,i=g+r;(a="left"===te.position?Math.min(Math.max(a,0),i):Math.abs(Math.min(Math.max(a,-i),0)))?q(70<a?"open":"close"):q("close",!1),N=o=null,T=!1}},U=function(e){var t=0-(o-e.touches[0].clientX),n=0-(N-e.touches[0].clientY);if(!(Math.abs(t)<Math.abs(n))){var a="overlap"===te.levelOpen?Y()*te.levelSpacing:0,r=g+a;t="left"===te.position?Math.min(Math.max(t,-r),0):Math.min(Math.max(t,0),r),("left"===te.position&&t<0||"right"===te.position&&0<t)&&(T=!0,B(-Math.abs(t)+a,r-Math.abs(t)))}},z=function e(t){if(c.removeEventListener("touchmove",U),c.removeEventListener("touchend",e),w=!1,T){var n=t.changedTouches[t.changedTouches.length-1],a=0-(o-n.clientX),r="overlap"===te.levelOpen?Y()*te.levelSpacing:0,i=g+r;(a="left"===te.position?Math.abs(Math.min(Math.max(a,-i),0)):Math.abs(Math.min(Math.max(a,0),i)))===i?q("close",!1):50<a?q("close"):q("open",!0,r,i),N=o=null,T=!1}};r(),i(),P(),!0===te.removeOriginalNav?e.parentNode.removeChild(e):e.classList.add("hc-nav-original",E),"prepend"===te.bodyInsert?ie.body.insertBefore(L,ie.body.firstChild):"append"===te.bodyInsert&&ie.body.appendChild(L),!0===te.expanded&&(h=!0,K()),te.swipeGestures&&(c.addEventListener("touchstart",_("nav"),ee.supportsPassive),ie.addEventListener("touchstart",_("doc"),ee.supportsPassive)),ie.addEventListener("keydown",function(e){if(F()&&("Escape"===e.key||27===e.keyCode)){var t=Y();0===t?($(),M()):(Z(t,G()),S(null,t-1))}});var I=ee.debounce(j,500);re.addEventListener("resize",I,ee.supportsPassive);var X=function(e,t,n){var a=ie.querySelector("#"+E+"-"+e+"-"+t);if(a){var r=a.value,i=a.parentNode,s=i.closest(".nav-wrapper");if(a.setAttribute("checked",!1),s.classList.remove("sub-level-open"),i.classList.remove("level-open"),i.querySelectorAll("[aria-controls]")[0].setAttribute("aria-expanded",!1),-1!==C.indexOf(r)&&C.splice(C.indexOf(r),1),n&&"overlap"===te.levelOpen&&(s.removeEventListener("click"),s.addEventListener("click",ee.stopPropagation),ee.setTransform(c,(e-1)*te.levelSpacing,te.position),f)){var o="x"===ee.getAxis(te.position)?g:y;ee.setTransform(f,o+(e-1)*te.levelSpacing,te.position)}}};return L.on=function(e,t){L.addEventListener(e,t)},L.off=function(e,t){L.removeEventListener(e,t)},L.getSettings=function(){return Object.assign({},te)},L.isOpen=F,L.open=K,L.close=$,L.toggle=J(null),L.update=function(e,t){if(ne=[],"object"==typeof e){for(var n in e)te[n]!==e[n]&&ne.push(n);te=Object.assign({},te,e)}if(!0===e||!0===t){if(te.removeOriginalNav)return void console.warn("%c! HC Offcanvas Nav:%c Can't update because original navigation has been removed. Disable `removeOriginalNav` option.","color: #fa253b","color: default");r(!0),i(),P(!0)}else r(!0),P(!0)},L}function Q(){var e=Number(this.dataset.level),t=Number(this.dataset.index);"true"===this.getAttribute("checked")?R(e,t):Z(e,t)}function V(e){e.classList.remove("toggle-open"),e.setAttribute("aria-expanded",!1)}function W(){return!1!==te.levelOpen&&"none"!==te.levelOpen}function F(){return p}function Y(){return C.length?Number(Array.prototype.filter.call(c.querySelectorAll(".hc-chk"),function(e){return e.value==C[C.length-1]})[0].dataset.level):0}function G(){return C.length?Number(Array.prototype.filter.call(c.querySelectorAll(".hc-chk"),function(e){return e.value==C[C.length-1]})[0].dataset.index):0}function K(e,t){if((!F()||void 0!==t)&&(function(){if(F())return;p=!0,L.style.visibility="visible",L.setAttribute("aria-hidden",!1),L.classList.add(le),u&&(u.forEach(V),d&&(d.classList.add("toggle-open"),d.setAttribute("aria-expanded",!0)));"expand"===te.levelOpen&&A&&clearTimeout(A);te.disableBody&&(b=re.pageYOffset||se.scrollTop||ie.documentElement.scrollTop||ie.body.scrollTop,ie.documentElement.scrollHeight>ie.documentElement.clientHeight&&se.classList.add("hc-nav-yscroll"),ie.body.classList.add("hc-nav-open"),b&&(ie.body.style.top=-b+"px"));if(f){var e="x"===ee.getAxis(te.position)?g:y;ee.setTransform(f,e,te.position)}if(h)return h=!1;L._eventListeners.toggle&&L._eventListeners.toggle.forEach(function(e){e.fn(ee.customEventObject("toggle",L,L,{action:"open"}),Object.assign({},te))});setTimeout(function(){L._eventListeners.open&&L._eventListeners.open.forEach(function(e){e.fn(ee.customEventObject("open",L,L),Object.assign({},te))})},v)}(),W())){var n;if("number"!=typeof e&&!ee.isNumeric(e)||"number"!=typeof t&&!ee.isNumeric(t))m?(n=Array.prototype.filter.call(c.querySelectorAll(".hc-chk"),function(e){return e.value==m})[0],!te.closeActiveLevel&&te.closeOpenLevels||(m=null)):!1===te.closeOpenLevels&&(n=(n=Array.prototype.filter.call(c.querySelectorAll(".hc-chk"),function(e){return"true"===e.getAttribute("checked")}))[n.length-1]);else if(!(n=ie.querySelector("#"+E+"-"+e+"-"+t)))return void console.warn("HC Offcanvas Nav: level "+e+" doesn't have index "+t);if(n){var a=[];if(e=Number(n.dataset.level),t=Number(n.dataset.index),1<e){for(var r=[];n&&n!==ie;n=n.parentNode)n.matches(".nav-wrapper")&&r.push(n);for(var i=0;i<r.length;i++){var s=r[i],o=Number(s.dataset.level);0<o&&a.push({level:o,index:Number(s.dataset.index)})}a=a.reverse()}a.push({level:e,index:t});for(var l=0;l<a.length;l++)R(a[l].level,a[l].index,!1)}}}function $(){if(F()){if(p=!1,f&&ee.setTransform(f,!1),L.classList.remove(le),L.classList.remove("user-is-tabbing"),L.setAttribute("aria-hidden",!0),c.removeAttribute("style"),u&&u.forEach(V),"expand"===te.levelOpen&&-1!==["top","bottom"].indexOf(te.position)?Z(0):W()&&(A=setTimeout(function(){Z(0)},"expand"===te.levelOpen?v:0)),te.disableBody&&(ie.body.classList.remove("hc-nav-open"),se.classList.remove("hc-nav-yscroll"),b)){if(ie.body.style.top="",ie.body.scrollTop=b,se.scrollTop=b,"bottom"===te.position){var e=b;setTimeout(function(){ie.body.scrollTop=e,se.scrollTop=e},0)}b=0}L._eventListeners.toggle&&L._eventListeners.toggle.forEach(function(e){e.fn(ee.customEventObject("toggle",L,L,{action:"close"}),Object.assign({},te))}),setTimeout(function(){L.style.visibility="",L._eventListeners.close&&L._eventListeners.close.forEach(function(e){e.fn(ee.customEventObject("close",L,L),Object.assign({},te))}),L._eventListeners["close.once"]&&L._eventListeners["close.once"].forEach(function(e){e.fn(ee.customEventObject("close.once",L,L),Object.assign({},te))}),L.removeEventListener("close.once")},v)}}function J(t){return function(e){e&&(e.preventDefault(),e.stopPropagation()),t&&(d=t),p?$():K()}}function R(t,n,e){void 0===e&&(e=!0);var a=ie.querySelector("#"+E+"-"+t+"-"+n),r=a.value,i=a.parentNode,s=i.closest(".nav-wrapper"),o=ee.children(i,".nav-wrapper")[0];if(!1===e&&(o.style.transition="none"),a.setAttribute("checked",!0),s.classList.add("sub-level-open"),i.classList.add("level-open"),i.querySelectorAll("[aria-controls]")[0].setAttribute("aria-expanded",!0),!1===e&&setTimeout(function(){o.style.transition=""},v),-1===C.indexOf(r)&&C.push(r),"overlap"===te.levelOpen&&(s.addEventListener("click",function(){return Z(t,n)}),ee.setTransform(c,t*te.levelSpacing,te.position),f)){var l="x"===ee.getAxis(te.position)?g:y;ee.setTransform(f,l+t*te.levelSpacing,te.position)}L._eventListeners["open.level"]&&L._eventListeners["open.level"].forEach(function(e){e.fn(ee.customEventObject("open.level",L,o,{currentLevel:t,currentIndex:n}),Object.assign({},te))}),O&&(S(0,t,n),O=!1)}function Z(t,e){for(var n=t;n<=Object.keys(x).length;n++)if(n===t&&void 0!==e)X(t,e,!0);else if(0!==t||te.closeOpenLevels)for(var a=0;a<x[n];a++)X(n,a,n===t);else;if(0<t&&L._eventListeners["close.level"]){var r=ie.querySelector("#"+E+"-"+t+"-"+e).closest(".nav-wrapper");L._eventListeners["close.level"].forEach(function(e){e.fn(ee.customEventObject("close.level",L,r,{currentLevel:t-1,currentIndex:G()}),Object.assign({},te))})}O&&(S(null,t-1),O=!1)}console.error("%c! HC Offcanvas Nav:%c Navigation must contain <ul> element.","color: #fa253b","color: default")};if(Array.isArray(e)||e instanceof NodeList){for(var a=[],r=0;r<e.length;r++)a.push(n(e[r]));return 1<a.length?a:a[0]}return n(e)};if(void 0!==re.jQuery){var n=re.jQuery,a="hcOffcanvasNav";n.fn.extend({hcOffcanvasNav:function(t){return this.length?this.each(function(){var e=n.data(this,a);e?e.update(t):(e=new i(this,t),n.data(this,a,e))}):this}})}return re.hcOffcanvasNav=re.hcOffcanvasNav||i,i}),function(n){var e=n.hcOffcanvasNav,o=n.document;"function"!=typeof Object.assign&&Object.defineProperty(Object,"assign",{value:function(e,t){if(null==e)throw new TypeError("Cannot convert undefined or null to object");for(var n=Object(e),a=1;a<arguments.length;a++){var r=arguments[a];if(null!=r)for(var i in r)Object.prototype.hasOwnProperty.call(r,i)&&(n[i]=r[i])}return n},writable:!0,configurable:!0}),Element.prototype.closest||(Element.prototype.closest=function(e){var t=this;do{if(Element.prototype.matches.call(t,e))return t;t=t.parentElement||t.parentNode}while(null!==t&&1===t.nodeType);return null}),Array.prototype.flat||Object.defineProperty(Array.prototype,"flat",{configurable:!0,value:function n(){var a=isNaN(arguments[0])?1:Number(arguments[0]);return a?Array.prototype.reduce.call(this,function(e,t){return Array.isArray(t)?e.push.apply(e,n.call(t,a-1)):e.push(t),e},[]):Array.prototype.slice.call(this)},writable:!0}),Element.prototype.matches||(Element.prototype.matches=Element.prototype.msMatchesSelector||Element.prototype.matchesSelector||Element.prototype.mozMatchesSelector||Element.prototype.oMatchesSelector||Element.prototype.webkitMatchesSelector);var t=!1;try{var a=Object.defineProperty({},"passive",{get:function(){t={passive:!1}}});n.addEventListener("testPassive",null,a),n.removeEventListener("testPassive",null,a)}catch(e){}var r=(/iPad|iPhone|iPod/.test(navigator.userAgent)||!!navigator.platform&&/iPad|iPhone|iPod/.test(navigator.platform))&&!n.MSStream,i="ontouchstart"in n||navigator.maxTouchPoints||n.DocumentTouch&&o instanceof DocumentTouch,s=function(e){return!isNaN(parseFloat(e))&&isFinite(e)},l=function(e){return"auto"===e?"100%":s(e)&&0!==e?e+"px":e},c=function(e){var t=["Webkit","Moz","Ms","O"],n=(o.body||o.documentElement).style,a=e.charAt(0).toUpperCase()+e.slice(1);if(void 0!==n[e])return e;for(var r=0;r<t.length;r++)if(void 0!==n[t[r]+a])return t[r]+a;return!1},v=function(e,t){if(e instanceof Element)return t?Array.prototype.filter.call(e.children,function(e){return e.matches(t)}):e.children;var n=[];return Array.prototype.forEach.call(e,function(e){n=t?n.concat(Array.prototype.filter.call(e.children,function(e){return e.matches(t)})):n.concat(Array.prototype.slice.call(e.children))}),n},u=function(o){var l=Node.prototype[o+"EventListener"];return function(e,t,n){if(this){var a=e.split(".")[0];if(this._eventListeners=this._eventListeners||{},"add"===o){this._eventListeners[e]=this._eventListeners[e]||[];var r={fn:t};n&&(r.options=n),this._eventListeners[e].push(r),l.call(this,a,t,n)}else if("function"==typeof t)for(var i in l.call(this,a,t,n),this._eventListeners)this._eventListeners[i]=this._eventListeners[i].filter(function(e){return e.fn!==t}),this._eventListeners[i].length||delete this._eventListeners[i];else if(this._eventListeners[e]){for(var s=this._eventListeners[e].length;s--;)l.call(this,a,this._eventListeners[e][s].fn,this._eventListeners[e][s].options),this._eventListeners[e].splice(s,1);this._eventListeners[e].length||delete this._eventListeners[e]}}}};Node.prototype.addEventListener=u("add"),Node.prototype.removeEventListener=u("remove");var d=function(e,t,n){void 0===t&&(t={});var a=o.createElement(e);for(var r in t)"class"!==r?(t[r]||0===t[r])&&a.setAttribute(r,t[r]):a.className=t[r];if(n){Array.isArray(n)||(n=[n]);for(var i=0;i<n.length;i++)if("object"==typeof n[i]&&n[i].length&&!n[i].nodeType)for(var s=0;s<n[i].length;s++)a.appendChild(n[i][s]);else a.appendChild("string"==typeof n[i]?o.createTextNode(n[i]):n[i])}return a},f=function(e){return-1!==["left","right"].indexOf(e)?"x":"y"},p=function(){c("transform");return function(e,t,n){if(!1===t||""===t)e.style.transform="";else if("x"===f(n)){var a="left"===n?t:"-"+t;e.style.transform="translate3d("+l(a)+",0,0)"}else{var r="top"===n?t:"-"+t;e.style.transform="translate3d(0,"+l(r)+",0)"}}}(),h=function(e,t,n){console.warn("%cHC Off-canvas Nav:%c "+n+"%c '"+e+"'%c is now deprecated and will be removed in the future. Use%c '"+t+"'%c option instead. See details about plugin usage at https://github.com/somewebmedia/hc-offcanvas-nav.","color: #fa253b","color: default","color: #5595c6","color: default","color: #5595c6","color: default")};e.Helpers={supportsPassive:t,isIos:r,isTouchDevice:i,isNumeric:s,formatSizeVal:l,toMs:function(e){return parseFloat(e)*(/\ds$/.test(e)?1e3:1)},stopPropagation:function(e){return e.stopPropagation()},preventDefault:function(e){return e.preventDefault()},preventClick:function(t){return function(e){e.preventDefault(),e.stopPropagation(),"function"==typeof t&&t()}},browserPrefix:c,children:v,wrap:function(e,t){e.parentNode.insertBefore(t,e),t.appendChild(e)},data:function(e,t,n){if(e.hcOffcanvasNav=e.hcOffcanvasNav||{},void 0===n)return e.hcOffcanvasNav[t];e.hcOffcanvasNav[t]=n},clone:function(e,t,n){var a=e.cloneNode(n||!1),r=e instanceof Element?[e].concat(Array.prototype.slice.call(e.getElementsByTagName("*"))):[],i=a instanceof Element?[a].concat(Array.prototype.slice.call(a.getElementsByTagName("*"))):[];return t||(r.shift(),i.shift()),n&&function(e,t){for(var n=0;n<e.length;n++)if(e[n]._eventListeners)for(var a in e[n]._eventListeners)for(var r=0;r<e[n]._eventListeners[a].length;r++)t[r].addEventListener(a,e[n]._eventListeners[a][r].fn,e[n]._eventListeners[a][r].options)}(r,i),a},customEventObject:function(e,n,a,r){return new function(e){for(var t in this.bubbles=!1,this.cancelable=!1,this.composed=!1,this.currentTarget=a,this.data=r?{}:null,this.defaultPrevented=!1,this.eventPhase=0,this.isTrusted=!1,this.target=n,this.timeStamp=Date.now(),this.type=e,r)this.data[t]=r[t]}(e)},hasListener:function(e,t){return(t?(e._eventListeners||{})[t]:e._eventListeners)||!1},debounce:function(a,r,i){var s;return function(){var e=this,t=arguments,n=i&&!s;clearTimeout(s),s=setTimeout(function(){s=null,i||a.apply(e,t)},r),n&&a.apply(e,t)}},createElement:d,getElements:function(e){var t=null;return"string"==typeof e?t=o.querySelectorAll(e):n.jQuery&&e instanceof n.jQuery&&e.length?t=e.toArray():e instanceof Element&&(t=[e]),t},getElementCssTag:function e(t){return"string"==typeof t?t:t.getAttribute("id")?"#"+t.getAttribute("id"):t.getAttribute("class")?t.tagName.toLowerCase()+"."+t.getAttribute("class").replace(/\s+/g,"."):e(t.parentNode)+" > "+t.tagName.toLowerCase()},printStyle:function(e){var r=d("style",{id:e}),i={},s={};o.head.appendChild(r);var a=function(e){return";"!==e.substr(-1)&&(e+=";"!==e.substr(-1)?";":""),e};return{reset:function(){i={},s={}},add:function(e,t,n){e=e.trim(),t=t.trim(),n?(n=n.trim(),s[n]=s[n]||{},s[n][e]=a(t)):i[e]=a(t)},remove:function(e,t){e=e.trim(),t?(t=t.trim(),void 0!==s[t][e]&&delete s[t][e]):void 0!==i[e]&&delete i[e]},insert:function(){var e="";for(var t in s){for(var n in e+="@media screen and ("+t+") {\n",s[t])e+="  "+n+" { "+s[t][n]+" }\n";e+="}\n"}for(var a in i)e+=a+" { "+i[a]+" }\n";r.innerHTML=e}}},insertAt:function(e,t,n){var a=v(n),r=a.length,i=-1<(t="last"===(t="first"===t?0:t)?r:t)?Math.max(0,Math.min(t,r)):Math.max(0,Math.min(r+t,r));0===i?n[0].insertBefore(e,n[0].firstChild):a[i-1].insertAdjacentElement("afterend",e)},getAxis:f,setTransform:p,deprecated:h}}(window);
+</script>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WB2S8R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WB2S8R');</script>
+<!-- End Google Tag Manager -->
+<script>
+/*!
+ * scripts.js
+ *
+ * Call any plugins and other regular JavaScript and jQuery code here.
+ */
+;(function ($, window, document, undefined) {
+    /**
+     * jQuery.
+     */
+    $(function() {
+
+        // Accordions.
+        $('.accordion').accordion({
+            trigger: '.accordion__heading, .accordion__arrow'
+        });
+
+    });
+    /**
+     * Anychronous embeded video loader.
+     */
+    (function() {
+
+        var videos,
+            call_video;
+
+        // Select all videos on the page.
+        videos = document.querySelectorAll('.figure--video');
+
+        // Callback function to load a video.
+        call_video = function(index) {
+            return function() {
+                loadVideo(this, videos[index]);
+            };
+        };
+
+        // Attach the callback to all the play buttons.
+        for (var i = 0; i < videos.length; i++) {
+            videos[i].querySelector('.js-play-video').onclick = call_video(i);
+        }
+
+        /**
+         * Loads a video based on the button being clicked.
+         * 
+         * @param  {Object} button The button node.
+         * @param  {Object} video  The video node.
+         */
+        function loadVideo(button, video) {
+
+            var embedcode,
+                hasvideo;
+            
+            embedcode = video.dataset.embedcode;
+            hasvideo = video.dataset.hasvideo;
+
+            // Only append the video if it isn't yet appended. Also remove the
+            // play button.
+            if (!hasvideo) {
+                video.querySelector('.figure__image').insertAdjacentHTML('afterbegin', embedcode);
+                video.dataset.hasvideo = "true";
+                button.remove();
+            }
+        }
+
+    })();
+
+})(jQuery, window, document);
+</script>
+</head>
+<body class="home page-template page-template-template-departmenthomepage page-template-template-departmenthomepage-php page page-id-6 wp-embed-responsive singular image-filters-enabled">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><!--Holiday Message Open-->
+<!--<div class="alert alert-warning" role="alert">AMPD Winter Orientation for new students begins January 6, 2023 and classes for all students start January 9, 2023.</div>-->
+<!--Holdiday Message End-->
+<div id="page" class="site">
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+<header id="masthead" class="site-header">
+<div class="site-branding-container">
+<script type="text/javascript">
+(function() {
+    var cx = '012772715479672969817:u1sknwdu6mo';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+
+ jQuery(document).ready(function($){
+
+    var url = window.location.href; 
+
+    $("#menu-main-menu a").each(function() {
+
+        if(url == (this.href)) { 
+            $(this).closest("li").addClass("active-menu");
+        }
+    });
+
+});
+
+</script>
+<!--chat with Sadie button-->
+<style>.vmeeting-window{z-index: 105;position: fixed;right: 9%;bottom: -1px;width: 12.5em;/* margin-top: -2.5em; */margin-right: 0em;background-color: #e31837;padding: 18px 0px 14px 20px;border: 1px solid #fff;border-radius: 15px 15px 0px 0px;}
+@media only screen and (max-width: 600px) {.vmeeting-window {margin-right: 0em;width: 100%;right: 0%}}
+.vmeeting-window a{color:#fff;font-weight: 500;}
+.vmeeting-window a:hover{color:#fff;font-weight: 500;}
+.chat-img{width: 30px;float: left;margin-right: 10px;margin-top: -3px;fill: #fff;}</style>
+<div class="vmeeting-window"><svg class="chat-img" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" role="img" aria-label="Chat Window"><path class="cls-1a" d="M45,13H18.1A4.12,4.12,0,0,0,14,17.07V34a4.12,4.12,0,0,0,4.12,4.11H37a.63.63,0,0,1,.51.25l6.1,7.72a1.23,1.23,0,0,0,1,.47,1.53,1.53,0,0,0,.41-.07,1.22,1.22,0,0,0,.82-1.16V38.05a4.14,4.14,0,0,0,3.37-4V17.07A4.12,4.12,0,0,0,45,13Zm2.7,21a2.69,2.69,0,0,1-2.66,2.69.71.71,0,0,0-.7.71V44.8L38.6,37.49A2,2,0,0,0,37,36.71H18.1A2.71,2.71,0,0,1,15.4,34V17.07a2.7,2.7,0,0,1,2.7-2.7H45a2.7,2.7,0,0,1,2.7,2.7Z"/><path class="cls-1a" d="M11.29,24.65a1.88,1.88,0,0,0-1.22.7L5.21,31.5V25.34a.71.71,0,0,0-.7-.71,2.27,2.27,0,0,1-2.23-2.26V7.63A2.26,2.26,0,0,1,4.54,5.37H28a2.26,2.26,0,0,1,2.26,2.26v2.73a.7.7,0,0,0,.7.7.7.7,0,0,0,.71-.7V7.63A3.67,3.67,0,0,0,28,4H4.54A3.67,3.67,0,0,0,.87,7.63V22.37A3.7,3.7,0,0,0,3.79,26v6.26a1.14,1.14,0,0,0,.79,1.09,1,1,0,0,0,.38.07A1.18,1.18,0,0,0,5.87,33l5.31-6.72a.45.45,0,0,1,.31-.18.71.71,0,1,0-.2-1.4Z"/></svg><a href="https://ampd.yorku.ca/virtualmeeting/">Chat with us</a></div>
+<!--end chat with Sadie button-->
+  <div class="modal fade mt-0 pr-0" id="searchModal" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+      <div class="modal-dialog search-modal m-0" role="document">
+        <div class="modal-content rounded-0">
+          <div class="modal-header border-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body container">
+            <form id="main-search" class="main-search" action="https://design.ampd.yorku.ca/search">
+              <div class="d-flex border rounded-0">
+                <fieldset class="w-100">
+                  <legend class="sr-only">AMPD Global Search</legend>
+                  <label for="ampdsearchfield" class="sr-only">search box</label>
+                  <input class="header-search border-0 form-control bg-white" type="search" name="q" maxlength="255" id="ampdsearchfield" placeholder="What are you looking for?">
+                </fieldset>
+                <button title="Search AMPD" type="submit" class="search-button btn btn-link ml-auto"><i class="fa fa-search text-dark" aria-hidden="true"></i><span class="sr-only">search button</span></button>
+              </div>
+            </form>   
+          </div>
+          <div class="modal-footer border-0">
+          </div>
+        </div>
+      </div>
+</div>
+
+<div class="site-branding">
+<div class="item--logo"><a href="https://yorku.ca"><img id="yorklogo" src="https://ampd.yorku.ca/wp-content/themes/AMPD2020/YorkULogo.svg" border="0" title="York University Home Page" alt="York University Logo"></a></div>
+<div class="ampd-title"><span><a href="https://ampd.yorku.ca/" title="Return to the AMPD Home Page">School of the Arts, Media, Performance &amp; Design</a></span></div>
+<button title="Search" class="btn btn-link ml-4 text-dark ampd-search-glass" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search"></i><span class="sr-only">Search</span></button>
+
+<div class="wrapper cf">
+<nav id="main-nav">
+<ul class="first-nav">
+<li class="search searchspacer" data-nav-custom-content>              
+<div class="form-container">
+</div>
+</li>
+              <li class="nav-bottom admissions">
+                <span title="Open Admission">ADMISSIONS</span>
+                <ul>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/join/">Join Us</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/programs/">Programs of Study</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/programs-and-options/">Programs and Options</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/apply/">How to Apply</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/book-a-tour/">Book a Tour</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/student-life/">Students Life</a></li>
+                </ul>
+              </li>
+              <li class="nav-bottom about-us">
+                <span title="Open About Us">ABOUT US</span>
+                <ul>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/join/">Join Us</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/about/">About Us</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/annual-report/">Annual Report</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/equity-plan/">AMPD Equity Plan</a></li>
+                  <li class="nav-bottom"><a href="https://eddi.ampd.yorku.ca/">AMPD EDDI Committee</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/people-of-ampd/">People of AMPD</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/contact/employment/">Jobs at AMPD</a></li>
+                  <li class="nav-bottom"><a href="https://facilities.ampd.yorku.ca/">Facility Rentals</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/contact/">Contact Us</a></li>
+                </ul>
+              </li>
+              <li class="nav-bottom undergrad-program">
+                <span title="Open Undergraduate">UNDERGRADUATE</span>
+                <ul>
+                  <li class="nav-bottom"><a href="https://cma.ampd.yorku.ca/">Cinema & Media Arts</a></li>
+                  <li class="nav-bottom"><a href="https://computationalarts.ampd.yorku.ca/programs/">Digital Media</a></li>
+                  <li class="nav-bottom"><a href="https://dance.ampd.yorku.ca/">Dance</a></li>
+                  <li class="nav-bottom"><a href="https://design.ampd.yorku.ca/">Design</a></li>
+                  <li class="nav-bottom"><a href="https://music.ampd.yorku.ca/">Music</a></li>
+                  <li class="nav-bottom"><a href="https://theatre.ampd.yorku.ca/">Theatre</a></li>
+                  <li class="nav-bottom"><a href="https://vaah.ampd.yorku.ca/">Visual Art & Art History</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/minor-ampd/">AMPD Minor</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/integrative-arts/">Integrative Arts</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/creative-technologies/">Creative Technologies</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/pathway-to-master-of-management-program/">Pathway to Master of Management Program</a></li>
+                </ul>
+              </li>
+              <li class="nav-bottom grad-program">
+                <span title="Open Graduate">GRADUATE</span>
+                <ul>
+                  <li class="nav-bottom grad-cma">
+                    <span>Cinema & Media Arts</span>
+                    <ul>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/film/programs/mfa/">MFA in Film</a></li>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/film/programs/ma-in-cinema-media-studies/">MA in Cinema and Media Studies</a></li>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/film/programs/joint-program/">MBA/MA | MBA/MFA Joint Degree Program</a></li>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/film/programs/phd/">PhD in Cinema and Media Studies</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-bottom grad-ca">
+                    <span>Computational Arts</span>
+                    <ul>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/digitalmedia/">Digital Media</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-bottom grad-dance">
+                    <span>Dance</span>
+                    <ul>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/dance/">MFA in Dance</a></li>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/tdps/current-students/degree-requirements/#ma">MA in Dance</a></li>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/tdps/current-students/degree-requirements/#ma/mba">MA/MBA in Dance</a></li>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/tdps/current-students/degree-requirements/#phd-in-dance-studies">PhD in Dance</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-bottom grad-design">
+                    <span>Design</span>
+                    <ul>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/design/">MDes</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-bottom grad-music">
+                    <span>Music</span>
+                    <ul>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/music/current-students/degree-requirements/#master-of-arts">MA in Music</a></li>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/music/current-students/degree-requirements/#combined-MBA-and-MA">MA/MBA in Music</a></li>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/music/current-students/degree-requirements/#doctor-of-philosophy">PhD in Music</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-bottom grad-theatre">
+                    <span>Theatre</span>
+                    <ul>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/theatre/programs/">MFA in Theatre</a></li>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/tdps/current-students/degree-requirements/#ma">MA in Theatre & Performance Studies</a></li>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/tdps/current-students/degree-requirements/#phd">PhD in Theatre & Performance Studies</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-bottom grad-vaah-visual">
+                    <span>Visual Art</span>
+                    <ul>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/ahvc/">MFA in Visual Art</a></li>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/ahvc/programs/ma-mba/">Joint MBA/MFA Visual Art </a></li>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/ahvc/programs/phd/">PhD in Visual Art</a></li>
+                      
+                    </ul>
+                  </li>
+                  <li class="nav-bottom grad-vaah-history">
+                    <span>Art History and Visual Culture</span>
+                    <ul>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/ahvc/programs/ma/">MA in Art History and Visual Culture</a></li>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/ahvc/programs/ma-mba/">Joint MBA/MA Art History and Visual Culture</a></li>
+                      <li class="nav-bottom"><a href="https://www.yorku.ca/gradstudies/ahvc/programs/phd/">PhD in Art History & Visual Culture</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-bottom ampdelearning">
+                <span title="Open eLearning">ELEARNING</span>
+                <ul>
+                  <li class="nav-bottom"><a href="https://elearning.ampd.yorku.ca/">eLearning at AMPD</a></li>
+                  <li class="nav-bottom"><a href="https://elearning.ampd.yorku.ca/blended/">Current Blended Courses</a></li>
+                  <li class="nav-bottom"><a href="https://elearning.ampd.yorku.ca/online/">Current Fully Online Courses</a></li>
+                  <li class="nav-bottom"><a href="https://elearning.ampd.yorku.ca/student-resources/">eLearning Resources for Students</a></li>
+                  <li class="nav-bottom"><a href="https://elearning.ampd.yorku.ca/instructor-resources/">eLearning Resources for Instructors</a></li>
+                </ul>
+              </li>
+              <li class="nav-bottom student-resources">
+                <span title="Open Student Resources">STUDENT RESOURCES</span>
+                <ul>
+                  <!--<li class="nav-bottom"><a href="https://oaiss.ampd.yorku.ca/">Office of Advising and Integrated Student Services</a></li>-->
+                  <!--<li class="nav-bottom"><a href="https://ampd.yorku.ca/academic-resources/">Academic Resources</a></li>-->
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/experiential-education/">Experiential Education</a></li>
+                  <li class="nav-bottom"><a href="https://awards.ampd.yorku.ca/">Scholarships, Awards & Bursaries</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/important-dates/">Important Dates</a></li>
+                  <!--<li class="nav-bottom"><a href="https://ampd.yorku.ca/peer-mentoring/">Peer Mentoring</a></li>-->
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/career-options/">Career Options</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/concurrent-degree-studies-in-education/">Concurrent Degree Studies in Education</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/exchange-study-abroad/">Exhange/Study Abroad</a></li>
+                  <li class="nav-bottom"><a href="https://oaiss.ampd.yorku.ca/international-students/">International Students</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/student-life/">Students Life</a></li>
+                  <li class="nav-bottom"><a href="http://winters.ampd.yorku.ca/">Winters College</a></li>
+                </ul>
+              </li>
+            <li class="nav-bottom research">
+                <span title="Open Research">RESEARCH</span>
+                <ul>
+                  <li class="nav-bottom"><a href="https://yulink-new.yorku.ca/group/ampd-toolkit/research">Resources for Faculty</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/research/research-news/">Research News</a></li>
+                  <li class="nav-bottom"><a href="http://sensorium.ampd.yorku.ca/">Sensorium: Centre for Digital Art and Technology</a></li>
+                  <li class="nav-bottom"><a href="https://helencarswell.ampd.yorku.ca/">Helen Carswell Chair in Community Engaged Research in the Arts</a></li>
+                  <li class="nav-bottom"><a href="https://makerspace.ampd.yorku.ca/">Pan-Faculty Makerspace</a></li>
+                  <li class="nav-bottom"><a href="https://ampd.yorku.ca/research/research-contact/">Research Contact</a></li>
+                </ul>
+              </li>
+              <!--<li class="sample-menu">
+                <a href="#">menu</a>
+                <ul>
+                  <li>
+                    <a href="#">menu-1</a>
+                    <ul>
+                      <li>
+                        <a href="#">menu-1a</a>
+                        <ul>
+                          <li><a href="#">menu-1a</a></li>
+                          <li><a href="#">menu-1b</a></li>
+                          <li><a href="#">menu-1c</a></li>
+                          <li><a href="#">menu-1d</a></li>
+                          <li><a href="#">menu-1e</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">menu-2</a>
+                        <ul>
+                          <li><a href="#">menu-2a</a></li>
+                          <li><a href="#">menu-2b</a></li>
+                          <li><a href="#">menu-2c</a></li>
+                          <li><a href="#">menu-2d</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">menu-3</a>
+                  </li>
+                  <li>
+                    <a href="#">menu-4</a>
+                  </li>
+                  <li>
+                    <a href="#">menu-5</a>
+                  </li>
+                </ul>
+              </li>-->
+              <li class="nav-bottom ampd-advising"><a href="https://oaiss.ampd.yorku.ca/">ACADEMIC ADVISING</a></li>
+              <li class="nav-bottom ampd-tours"><a href="https://ampd.yorku.ca/book-a-tour/">BOOK A TOUR</a></li>
+              <li class="nav-bottom ampd-news"><a href="https://ampd.yorku.ca/news-events/ampd-news/">AMPD NEWS</a></li>
+              <li class="nav-bottom ampd-events"><a href="https://ampd.yorku.ca/events/">AMPD EVENTS</a></li>
+              <li class="nav-bottom ampd-events"><a href="https://ampd.yorku.ca/podcast/">AMPD PODCAST</a></li>
+              <li class="nav-bottom ampd-events"><a href="https://ampd.yorku.ca/year-of-the-arts/">AMPD YEAR OF THE ARTS</a></li>
+              <li class="nav-bottom ampd-box-office"><a href="https://facilities.ampd.yorku.ca/home/boxoffice">BOX OFFICE</a></li>
+              <li class="nav-bottom quick-links"><a href="https://ampd.yorku.ca/quick-links">QUICK LINKS</a></li>
+              <li class="nav-bottom covid-update"><a href="https://coronavirus.info.yorku.ca">COVID-19 UPDATE</a></li>
+            </ul>
+
+          </nav>
+
+          <a href="#" title="Open Global Navigation" class="toggle">
+            <span></span>
+          </a>
+
+
+</div>
+
+      <script>
+        (function($) {
+          'use strict';
+
+          // call our plugin
+          var Nav = new hcOffcanvasNav('#main-nav', {
+            disableAt: false,
+            customToggle: '.toggle',
+            levelSpacing: 40,
+            levelTitles: true,
+            levelTitleAsBack: true,
+            insertClose: false,
+            pushContent: '#container',
+            position: 'right',
+            levelOpen: 'expand',
+            swipeGestures: true,
+            ariaLabels: {
+            open:     'Open Menu',
+            close:    'Close Menu',
+            submenu:  'Submenu'
+      }
+          });
+
+          // add new items to original nav
+          $('#main-nav').find('li.add').children('a').on('click', function() {
+            var $this = $(this);
+            var $li = $this.parent();
+            var items = eval('(' + $this.attr('data-add') + ')');
+
+            $li.before('<li class="new"><a href="#">'+items[0]+'</a></li>');
+
+            items.shift();
+
+            if (!items.length) {
+              $li.remove();
+            }
+            else {
+              $this.attr('data-add', JSON.stringify(items));
+            }
+
+            Nav.update(true); // update DOM
+          });
+
+          // demo settings update
+
+          const update = function(settings) {
+            if (Nav.isOpen()) {
+              Nav.on('close.once', function() {
+                Nav.update(settings);
+                Nav.open();
+              });
+
+              Nav.close();
+            }
+            else {
+              Nav.update(settings);
+            }
+          };
+
+          $('.actions').find('a').on('click', function(e) {
+            e.preventDefault();
+
+            var $this = $(this).addClass('active');
+            var $siblings = $this.parent().siblings().children('a').removeClass('active');
+            var settings = eval('(' + $this.data('demo') + ')');
+
+            if ('theme' in settings) {
+              $('body').removeClass().addClass('theme-' + settings['theme']);
+            }
+            else {
+              update(settings);
+            }
+          });
+
+          $('.actions').find('input').on('change', function() {
+            var $this = $(this);
+            var settings = eval('(' + $this.data('demo') + ')');
+
+            if ($this.is(':checked')) {
+              update(settings);
+            }
+            else {
+              var removeData = {};
+              $.each(settings, function(index, value) {
+                removeData[index] = false;
+              });
+
+              update(removeData);
+            }
+          });
+        })(jQuery);
+      </script>
+
+</div><!-- .site-branding -->
+</div><!-- .site-branding-container -->
+<div class="">
+</div><!-- .entry-header -->
+</header><!-- #masthead -->
+    <!--no message-->
+<div id="content" class="site-content">
+    <div class="department-title-menu">
+    <nav id="site-navigation" class="main-navigation" aria-label="Top Menu">
+      <div class="menu-main-menu-container"><ul id="menu-main-menu" class="main-menu"><li id="menu-item-1602" class="site-title-name menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-1602"><a title="Design Home" href="/" aria-current="page">Design</a></li>
+<li id="menu-item-1607" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1607"><a title="Design Programs" href="https://design.ampd.yorku.ca/programs/">Undergraduate</a></li>
+<li id="menu-item-1942" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1942"><a title="Graduate Programs" href="https://www.yorku.ca/gradstudies/design/">Graduate</a></li>
+<li id="menu-item-1885" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1885"><a title="Design Student Work" href="https://design.ampd.yorku.ca/student-work/">Student Work</a></li>
+<li id="menu-item-1604" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1604"><a title="Design Student Jobs Board" href="https://design.ampd.yorku.ca/jobs/">Job Board</a></li>
+<li id="menu-item-1605" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1605"><a title="About Design" href="https://design.ampd.yorku.ca/about/">About</a></li>
+<li id="menu-item-1608" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1608"><a title="Contact Us" href="https://design.ampd.yorku.ca/contact/">Contact</a></li>
+</ul></div>
+			<div class="main-menu-more">
+				<ul class="main-menu">
+					<li class="menu-item menu-item-has-children">
+						<button class="submenu-expand main-menu-more-toggle is-empty" tabindex="-1"
+							aria-label="More" aria-haspopup="true" aria-expanded="false"><svg class="svg-icon" width="24" height="24" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path fill="currentColor" fill-rule="nonzero" d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zM6 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm6 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm6 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></g></svg>
+						</button>
+						<ul class="sub-menu hidden-links">
+							<li class="mobile-parent-nav-menu-item">
+								<button class="menu-item-link-return"><svg class="svg-icon" width="24" height="24" aria-hidden="true" role="img" focusable="false" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>Back
+								</button>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>    </nav><!-- #site-navigation -->
+      </div>
+
+
+	<aside class="widget-area" role="complementary" aria-label="Slider">
+							<div class="widget-column slider-widget-1">
+					<section id="custom_html-5" class="widget_text widget widget_custom_html slide-column"><div class="textwidget custom-html-widget"><button class="slick-pause" title="Stop Slides from rotating"><svg aria-hidden="true" x="0px" y="0px" width="15px" height="15px" data-prefix="fas" data-icon="pause" class="svg-inline--fa fa-pause fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#000000" d="M144 479H48c-26.5 0-48-21.5-48-48V79c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48zm304-48V79c0-26.5-21.5-48-48-48h-96c-26.5 0-48 21.5-48 48v352c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48z"></path></svg> </button>
+<div class="sliderautoplay">
+<div><a href="https://virtualtour.ampd.yorku.ca/yorku/home/tours/" Target=&quot;_blank&quot;><div style="display:none" class="ampdslider--text"><span class="ampdslider--heading"><span style="color:#ffffff; background-color:#0000009c; padding:10px; margin:5px;"></span></span><p><span style="color:#ffffff; background-color:#0000009c; padding:10px; margin:5px;">   <svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px" viewBox="-11 -11.5 65 66"><g><g><path fill="#ffffff" d="M22.118,54.736C4.132,54.736-10.5,40.103-10.5,22.118C-10.5,4.132,4.132-10.5,22.118-10.5  c17.985,0,32.618,14.632,32.618,32.618C54.736,40.103,40.103,54.736,22.118,54.736z M22.118-8.288  c-16.765,0-30.406,13.64-30.406,30.406c0,16.766,13.641,30.406,30.406,30.406c16.768,0,30.406-13.641,30.406-30.406 C52.524,5.352,38.885-8.288,22.118-8.288z"/><path fill="#ffffff" d="M18.022,33.569c 0.282,0-0.566-0.105-0.781-0.323c-0.432-0.431-0.432-1.132,0-1.564l10.022-10.035 L17.241,11.615c 0.431-0.432-0.431-1.133,0-1.564c0.432-0.432,1.132-0.432,1.564,0l10.803,10.814c0.433,0.432,0.433,1.132,0,1.564 L18.805,33.243C18.59,33.464,18.306,33.569,18.022,33.569z"/></g></g></svg></span></p> </div><div><img src="https://ampd.yorku.ca/wp-content/uploads/2023/11/virtual-tour-360-2.jpg" alt="Virtual Tour 360"/></div></a></div><div><a href="https://www.eventbrite.ca/e/cinesiege-2023-tickets-740596152027?aff=oddtdtcreator" Target=&quot;_blank&quot;><div style="display:none" class="ampdslider--text"><span class="ampdslider--heading"><span style="color:#ffffff; background-color:#0000009c; padding:10px; margin:5px;"></span></span><p><span style="color:#ffffff; background-color:#0000009c; padding:10px; margin:5px;">   <svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px" viewBox="-11 -11.5 65 66"><g><g><path fill="#ffffff" d="M22.118,54.736C4.132,54.736-10.5,40.103-10.5,22.118C-10.5,4.132,4.132-10.5,22.118-10.5  c17.985,0,32.618,14.632,32.618,32.618C54.736,40.103,40.103,54.736,22.118,54.736z M22.118-8.288  c-16.765,0-30.406,13.64-30.406,30.406c0,16.766,13.641,30.406,30.406,30.406c16.768,0,30.406-13.641,30.406-30.406 C52.524,5.352,38.885-8.288,22.118-8.288z"/><path fill="#ffffff" d="M18.022,33.569c 0.282,0-0.566-0.105-0.781-0.323c-0.432-0.431-0.432-1.132,0-1.564l10.022-10.035 L17.241,11.615c 0.431-0.432-0.431-1.133,0-1.564c0.432-0.432,1.132-0.432,1.564,0l10.803,10.814c0.433,0.432,0.433,1.132,0,1.564 L18.805,33.243C18.59,33.464,18.306,33.569,18.022,33.569z"/></g></g></svg></span></p> </div><div><img src="https://ampd.yorku.ca/wp-content/uploads/2021/10/CineSiege2023-Webbanner-.jpg" alt="CineSiege 2023"/></div></a></div><div><a href="https://ampd.yorku.ca/news/eight-new-faces-join-the-school-of-the-arts-media-performance-design/" Target=&quot;_blank&quot;><div style="display:none" class="ampdslider--text"><span class="ampdslider--heading"><span style="color:#ffffff; background-color:#0000009c; padding:10px; margin:5px;"></span></span><p><span style="color:#ffffff; background-color:#0000009c; padding:10px; margin:5px;">   <svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px" viewBox="-11 -11.5 65 66"><g><g><path fill="#ffffff" d="M22.118,54.736C4.132,54.736-10.5,40.103-10.5,22.118C-10.5,4.132,4.132-10.5,22.118-10.5  c17.985,0,32.618,14.632,32.618,32.618C54.736,40.103,40.103,54.736,22.118,54.736z M22.118-8.288  c-16.765,0-30.406,13.64-30.406,30.406c0,16.766,13.641,30.406,30.406,30.406c16.768,0,30.406-13.641,30.406-30.406 C52.524,5.352,38.885-8.288,22.118-8.288z"/><path fill="#ffffff" d="M18.022,33.569c 0.282,0-0.566-0.105-0.781-0.323c-0.432-0.431-0.432-1.132,0-1.564l10.022-10.035 L17.241,11.615c 0.431-0.432-0.431-1.133,0-1.564c0.432-0.432,1.132-0.432,1.564,0l10.803,10.814c0.433,0.432,0.433,1.132,0,1.564 L18.805,33.243C18.59,33.464,18.306,33.569,18.022,33.569z"/></g></g></svg></span></p> </div><div><img src="https://ampd.yorku.ca/wp-content/uploads/2023/09/AMPD-New-faces_slider_2023-2.jpg" alt="Photos of smiling faculty members"/></div></a></div>
+</div>
+<script type="text/javascript" src="../slick-org/slick.min.js"></script></div></section><section id="custom_html-17" class="widget_text widget widget_custom_html slide-column"><div class="textwidget custom-html-widget"><div id="theatre" class="explore-div explore-undergrade-graduate">
+<h3>EXPLORE THE POSSIBILITIES</h3>
+<h2>Design</h2>
+<div class="dropdown">
+<button onclick="myFunction()" title="Undergraduate" class="theatre-button-overlay">Undergraduate
+<p class="arrow-bottom"></p>
+
+
+</button>
+<div id="myDropdown" class="dropdown-content">
+<a class="arrow-right" href="https://design.ampd.yorku.ca/programs/#interaction-design" title="Interaction Design">Interaction Design(UX &amp; UI)</a>
+<div class="line"></div>
+<a class="arrow-right" href="https://design.ampd.yorku.ca/programs/#information-design" title="Information Design">Information Design</a>
+<div class="line"></div>
+<a class="arrow-right" href="https://design.ampd.yorku.ca/programs/#visual-communication" title="Visual Communication Design">Visual Communication Design</a>
+
+</div>
+</div>
+<div class="dropdown">
+<button onclick="myFunction1()" title="Graduate" class="theatre-button-overlay">Graduate
+<p class="arrow-bottom"></p>
+
+
+</button>
+<div id="myDropdown1" class="dropdown-content">
+<a class="arrow-right" href="https://www.yorku.ca/gradstudies/design/" title="Master of Design">Master of Design</a>
+
+</div>
+</div>
+</div></div></section><section id="custom_html-18" class="widget_text widget widget_custom_html slide-column"><div class="textwidget custom-html-widget"><div class="three-box">
+  <div class="section group">
+	<div class="col span_1_of_3"><a title="24-7 access"><div class="center-text"><img src="https://design.ampd.yorku.ca/wp-content/uploads/sites/9/2020/11/LandingPage_Design_24-7.png" alt="LandingPage_Design_24-7.png"/><h2>24-7 access</h2><p>to dedicated studios. Supported by technicians on staff</p></div></a></div>
+	<div class="col span_1_of_3"><a title="Placement"><div class="center-text-up"><img src="https://design.ampd.yorku.ca/wp-content/uploads/sites/9/2020/11/LandingPage_Design_Placement.png" alt="LandingPage_Design_Placement"/><p>All students complete a professional field placement</p></div></a></div>
+	<div class="col span_1_of_3"><a title="FacultyRatio"><div class="center-text-down"><img src="https://design.ampd.yorku.ca/wp-content/uploads/sites/9/2020/11/LandingPage_Design_FacultyRatio.png" alt="LandingPage_Design_FacultyRatio"/><h2>13:1</h2><p>student-faculty ratio</p></div></a></div>
+</div>
+</div>
+
+</div></section><section id="custom_html-21" class="widget_text widget widget_custom_html slide-column"><div class="textwidget custom-html-widget">
+
+
+<div id="wpv-view-layout-1919" class="js-wpv-view-layout js-wpv-layout-responsive js-wpv-view-layout-1919" data-viewnumber="1919" data-pagination="{&quot;id&quot;:&quot;1919&quot;,&quot;query&quot;:&quot;normal&quot;,&quot;type&quot;:&quot;disabled&quot;,&quot;effect&quot;:&quot;fade&quot;,&quot;duration&quot;:500,&quot;speed&quot;:5,&quot;pause_on_hover&quot;:&quot;disabled&quot;,&quot;stop_rollover&quot;:&quot;false&quot;,&quot;cache_pages&quot;:&quot;enabled&quot;,&quot;preload_images&quot;:&quot;enabled&quot;,&quot;preload_pages&quot;:&quot;enabled&quot;,&quot;preload_reach&quot;:1,&quot;spinner&quot;:&quot;builtin&quot;,&quot;spinner_image&quot;:&quot;https://design.ampd.yorku.ca/wp-content/plugins/wp-views/embedded/res/img/ajax-loader.gif&quot;,&quot;callback_next&quot;:&quot;&quot;,&quot;manage_history&quot;:&quot;enabled&quot;,&quot;has_controls_in_form&quot;:&quot;disabled&quot;,&quot;infinite_tolerance&quot;:&quot;0&quot;,&quot;max_pages&quot;:1,&quot;page&quot;:1,&quot;base_permalink&quot;:&quot;/?wpv_view_count=1919&amp;wpv_paged=WPV_PAGE_NUM&quot;,&quot;loop&quot;:{&quot;type&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;,&quot;data&quot;:[],&quot;id&quot;:0}}" data-permalink="/?wpv_view_count=1919">
+
+	
+	
+<div class="student-work-widget">
+	
+		<h1 style="text-align:center;color:#000000;">Student Work</h1>
+<a href="https://design.ampd.yorku.ca/student-work/" title="View Full Gallery List">
+<div class="student-widget-holder student-widget-profile-fade">
+
+<p class="student-work-widget-title"> You are Here: Discovering the Magic of the Present Moment </p>
+<p class="student-work-widget-name"> Luxvna Uthayakumar </p>
+
+<img src="https://design.ampd.yorku.ca/wp-content/uploads/sites/9/2021/05/You-are-Here-Discovering-the-Magic-of-the-Present-Moment-2.jpg" alt="You are Here: Discovering the Magic of the Present Moment" title="You-are-Here--Discovering-the-Magic-of-the-Present-Moment-2" class="attachment-custom aligncenter" />
+
+<div class="overlay"><div class="viewtext">View Student Work</div></div>
+</div>
+
+</a>
+	
+</div>
+	
+	
+	
+</div>
+</div></section><section id="custom_html-8" class="widget_text widget widget_custom_html slide-column"><div class="textwidget custom-html-widget"><!--new edits: Title of slide-->
+<div id="theatre-alumni-profile" class="alumni-div alumni-sectionoverview">
+<p style="color:#e31837;font-weight:bold;">DESIGN AT YORK GRADUATES</p>
+<h2 style="color:#000;font-weight:bold;">Our Alumni</h2>
+<!--new edits END-->
+<div class="autoplay">
+<div class="alumni-slide"><div class="alumni-featured-img"><img src="https://ampd.yorku.ca/wp-content/uploads/2020/07/Amanda-Cohen-400x400-1.jpg" alt="Amanda Cohen"/></div><p class="alumni-quote">With over 15 years of design experience, Amanda Cohen has worked professionally as a Graphic Designer in Toronto and Ottawa. She is currently a Senior Graphic Designer at The Linux Foundation and has previously worked for the design firm Hypenotic and Level Platforms, a computer software company.</p><p class="alumni-name"><strong>Amanda Cohen</strong> Senior Graphic Designer at The Linux Foundation<br/>BDes 2008</p></div><div class="alumni-slide"><div class="alumni-featured-img"><img src="https://ampd.yorku.ca/wp-content/uploads/2020/07/elsie-ng.jpg" alt="Elsie Ng"/></div><p class="alumni-quote">Elsie Ng is a product designer from Toronto.  She has previously worked as a product designer at Ripple, Unity3D, and Twitch in San Francisco. In her spare time, she likes traveling and collecting old, obscure, retro video games. Occasionally Elsie also dabbles in game development side projects to keep her skills fresh.</p><p class="alumni-name"><strong>Elsie Ng</strong> Product Designer<br/>BDes 2012</p></div><div class="alumni-slide"><div class="alumni-featured-img"><img src="https://ampd.yorku.ca/wp-content/uploads/2020/07/Lauren-Holden_AlumniPhoto.jpg" alt="Lauren Holden"/></div><p class="alumni-quote">Lauren Holden has completed artist residencies in Newfoundland, Canada and Spokane, Washington in addition to presenting her research on visual poetry at the Unscripted Digital Arts Festival. She was named a &ldquo;Student to Watch&rdquo; by Graphic Design USA, and her work has received accolades for its social impact, typography and website design. Lauren&rsquo;s writing on design was also published in The Devil&rsquo;s Artisan: Journal of the Printing Arts.</p><p class="alumni-name"><strong>Lauren Holden</strong> MFA 2D Design candidate at Cranbrook Academy of Art<br/>BDes 2017</p></div><div class="alumni-slide"><div class="alumni-featured-img"><img src="https://ampd.yorku.ca/wp-content/uploads/2020/07/Winnie_Chang-sq.jpg" alt="Winnie Chang"/></div><p class="alumni-quote">Winnie is a strategic designer who has worked with several multidisciplinary teams  &ndash; from being a researcher and educator, to applying strategic design approaches to social innovation. She currently works at UNICEF&rsquo;s Office of Innovation, where she collaborates on digital innovation initiatives finding solutions for the world&rsquo;s most marginalized children.</p><p class="alumni-name"><strong>Winnie Chang</strong> Design Lead, Office of Innovation at UNICEF, New York<br/>BDes 2013</p></div><div class="alumni-slide"><div class="alumni-featured-img"><img src="https://ampd.yorku.ca/wp-content/uploads/2020/07/Brian-Kall.jpg" alt="Brian Kall"/></div><p class="alumni-quote">Brian Kall is a designer living in Toronto, Canada. He is a 2017 graduate of the York/Sheridan Program in Design and holds a Bachelor of Applied Science in Civil Engineering from the University of Ottawa. He is currently a graphic designer with UNIQLO Canada, and recently worked with The Bokeh Collective and Buck Productions as a motion designer, packaging editor and assistant post-production supervisor.</p><p class="alumni-name"><strong>Brian Kall</strong> UNIQLO Canada, Graphic Designer<br/>BDes 2017</p></div><div class="alumni-slide"><div class="alumni-featured-img"><img src="https://ampd.yorku.ca/wp-content/uploads/2020/07/Aloke-Pillai-sq.jpg" alt="Aloke Pillai"/></div><p class="alumni-quote">Aloke Pillai is an entrepreneur and designer in Toronto. He is currently the Head of Product at Pastel, creating the next generation feedback tool for designers and agencies. In 2015, Aloke helped startup studio Expa create and launch Kit, a product recommendation community, which scaled to millions of users and over $15M in products sold. In 2018, Kit was acquired by Patreon to help creators deliver products to their fans.</p><p class="alumni-name"><strong>Aloke Pillai</strong> Co-Founder Pastel HQ<br/>BDes 2014</p></div><div class="alumni-slide"><div class="alumni-featured-img"><img src="https://ampd.yorku.ca/wp-content/uploads/2020/07/Pavel-Samsonov.jpg" alt="Pavel Samsonov"/></div><p class="alumni-quote">Pavel is a design architect specializing in user experience and systems design. Pavel helped Google transform the in-person shopping experience as part of his Master of Human-Computer Interaction degree at Carnegie Mellon University. Pavel has gone on to build Enterprise-scale innovation at companies such as Bloomberg and Amazon.</p><p class="alumni-name"><strong>Pavel Samsonov</strong> Senior User Experience Architect at Amazon Web Services, New York<br/>BDes 2013</p></div><div class="alumni-slide"><div class="alumni-featured-img"><img src="https://ampd.yorku.ca/wp-content/uploads/2018/07/FionaYeung.jpg" alt="Fiona Yeung"/></div><p class="alumni-quote">Fiona Yeung is a designer based in San Francisco. Originating from Toronto and obtaining her degree at York in 2015, Yeung is now on the Material Design team at Google HQ California. She&#039;s currently working on Google&#039;s Fuchsia OS and the Director of Hexagon, a 501(c)3 non-profit supporting women and non-binary folks in UX.</p><p class="alumni-name"><strong>Fiona Yeung</strong> Interaction Designer, Google<br/>BDes 2015</p></div>
+</div>
+</div></div></section>					</div>
+					</aside><!-- .widget-area -->
+
+	<section id="primary" class="content-area">
+		<main id="main" class="site-main">
+
+			
+
+<article id="post-6" class="post-6 page type-page status-publish hentry entry">
+		<!--<header class="entry-header">
+		
+	</header>-->
+	
+	<div class="entry-content entry-homepage">
+		
+	
+	<aside class="widget-area" role="complementary" aria-label="Main Content Area">
+							<div class="widget-column main-content-widget-1">
+					<section id="custom_html-15" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><h1 style="text-align:center;color:#000000;">News</h1>
+<div class="section section--news">
+<div class="autoplayNews">
+<a href="https://ampd.yorku.ca/news/ampd-launches-new-virtual-tour/" class="article article--news"><div><div class="news-tag">NEWS</div><div class="article__image" style="background: url(https://ampd.yorku.ca/wp-content/uploads/2023/11/students-on-AMPD-soundstage-2048x683-1-1568x523.png) center center; background-size: cover;"></div><div class="article__body"><h3 class="article__heading">AMPD Launches New Virtual Tour</h3> <p class="news-btn">Read more <svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" width="35px" height="35px" viewBox="-11 -11.5 65 66"><g><g><path id="black-btn-chevron" fill="#000000" d="M18.022,33.569c 0.282,0-0.566-0.105-0.781-0.323c-0.432-0.431-0.432-1.132,0-1.564l10.022-10.035 L17.241,11.615c 0.431-0.432-0.431-1.133,0-1.564c0.432-0.432,1.132-0.432,1.564,0l10.803,10.814c0.433,0.432,0.433,1.132,0,1.564 L18.805,33.243C18.59,33.464,18.306,33.569,18.022,33.569z"/></g></g></svg></p></div></div></a><a href="https://ampd.yorku.ca/news/ampd-to-host-national-portfolio-day-on-november-4/" class="article article--news"><div><div class="news-tag">NEWS</div><div class="article__image" style="background: url(https://ampd.yorku.ca/wp-content/uploads/2023/10/AMPD-NPD-Banner-1568x523.jpg) center center; background-size: cover;"></div><div class="article__body"><h3 class="article__heading">AMPD to host National Portfolio Day on November 4</h3> <p class="news-btn">Read more <svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" width="35px" height="35px" viewBox="-11 -11.5 65 66"><g><g><path id="black-btn-chevron" fill="#000000" d="M18.022,33.569c 0.282,0-0.566-0.105-0.781-0.323c-0.432-0.431-0.432-1.132,0-1.564l10.022-10.035 L17.241,11.615c 0.431-0.432-0.431-1.133,0-1.564c0.432-0.432,1.132-0.432,1.564,0l10.803,10.814c0.433,0.432,0.433,1.132,0,1.564 L18.805,33.243C18.59,33.464,18.306,33.569,18.022,33.569z"/></g></g></svg></p></div></div></a><a href="https://ampd.yorku.ca/news/eight-new-faces-join-the-school-of-the-arts-media-performance-design/" class="article article--news"><div><div class="news-tag">NEWS</div><div class="article__image" style="background: url(https://ampd.yorku.ca/wp-content/uploads/2023/09/AMPD-New-faces_thumb_2023.jpg) center center; background-size: cover;"></div><div class="article__body"><h3 class="article__heading">Eight new faces join the School of the Arts, Media, Performance &#038; Design</h3> <p class="news-btn">Read more <svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" width="35px" height="35px" viewBox="-11 -11.5 65 66"><g><g><path id="black-btn-chevron" fill="#000000" d="M18.022,33.569c 0.282,0-0.566-0.105-0.781-0.323c-0.432-0.431-0.432-1.132,0-1.564l10.022-10.035 L17.241,11.615c 0.431-0.432-0.431-1.133,0-1.564c0.432-0.432,1.132-0.432,1.564,0l10.803,10.814c0.433,0.432,0.433,1.132,0,1.564 L18.805,33.243C18.59,33.464,18.306,33.569,18.022,33.569z"/></g></g></svg></p></div></div></a><a href="https://ampd.yorku.ca/news/royal-canadian-mint-selects-alum-lily-kao-to-design-minted-year-of-the-rabbit-coin/" class="article article--news"><div><div class="news-tag">NEWS</div><div class="article__image" style="background: url(https://ampd.yorku.ca/wp-content/uploads/2023/01/Screen-Shot-2023-01-24-at-10.50.35-AM.png) center center; background-size: cover;"></div><div class="article__body"><h3 class="article__heading">Royal Canadian Mint selects alum Lily Kao to design minted Year of the Rabbit coin</h3> <p class="news-btn">Read more <svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" width="35px" height="35px" viewBox="-11 -11.5 65 66"><g><g><path id="black-btn-chevron" fill="#000000" d="M18.022,33.569c 0.282,0-0.566-0.105-0.781-0.323c-0.432-0.431-0.432-1.132,0-1.564l10.022-10.035 L17.241,11.615c 0.431-0.432-0.431-1.133,0-1.564c0.432-0.432,1.132-0.432,1.564,0l10.803,10.814c0.433,0.432,0.433,1.132,0,1.564 L18.805,33.243C18.59,33.464,18.306,33.569,18.022,33.569z"/></g></g></svg></p></div></div></a><a href="https://ampd.yorku.ca/news/the-inaugural-york-university-game-jam-address-the-united-nations-sustainable-development-goals/" class="article article--news"><div><div class="news-tag">NEWS</div><div class="article__image" style="background: url(https://ampd.yorku.ca/wp-content/uploads/2022/10/IMG_2549-1568x1045.jpg) center center; background-size: cover;"></div><div class="article__body"><h3 class="article__heading">The Inaugural York University Game Jam addresses the United Nations Sustainable Development Goals</h3> <p class="news-btn">Read more <svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" width="35px" height="35px" viewBox="-11 -11.5 65 66"><g><g><path id="black-btn-chevron" fill="#000000" d="M18.022,33.569c 0.282,0-0.566-0.105-0.781-0.323c-0.432-0.431-0.432-1.132,0-1.564l10.022-10.035 L17.241,11.615c 0.431-0.432-0.431-1.133,0-1.564c0.432-0.432,1.132-0.432,1.564,0l10.803,10.814c0.433,0.432,0.433,1.132,0,1.564 L18.805,33.243C18.59,33.464,18.306,33.569,18.022,33.569z"/></g></g></svg></p></div></div></a>
+</div>
+</div>
+<div class="section--events--me">
+<h1 style="text-align:center;color:#000000;">Events</h1>
+<script type="text/javascript" src="https://events.yorku.ca/mecExternalScript?id=11976&#038;t=calendar"></script>
+</div>
+<a href="https://design.ampd.yorku.ca/events"><div class="all-events-tag">View all events <svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" width="35px" height="35px" viewBox="-11 -11.5 65 66"><g><g><path id="black-btn-chevron" fill="#ffffff" d="M18.022,33.569c 0.282,0-0.566-0.105-0.781-0.323c-0.432-0.431-0.432-1.132,0-1.564l10.022-10.035 L17.241,11.615c 0.431-0.432-0.431-1.133,0-1.564c0.432-0.432,1.132-0.432,1.564,0l10.803,10.814c0.433,0.432,0.433,1.132,0,1.564 L18.805,33.243C18.59,33.464,18.306,33.569,18.022,33.569z"></path></g></g></svg></div>
+</a></div></section>					</div>
+					</aside><!-- .widget-area -->
+
+
+
+
+	<aside class="widget-area" role="complementary" aria-label="Webpart Area">
+							<div class="widget-column slider-widget-1">
+					<section id="custom_html-9" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div class="autoplay3">
+<div class="student-quote-holder"><div class="student-quote-section"><div class="student-quote">The skills that York Design students develop within their program are key differentiators when evaluating them with other interaction designers I&rsquo;ve encountered.</div><div class="student-quote-info"><div><span class="student-name">Hassan Jaferi</span></div><div><span class="student-title">Commercialization Manager</span></div><div><span class="student-employment"><em>MaRS Innovation</em></span></div></div>  </div></div>
+</div></div></section><section id="custom_html-6" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><!--Take the next footer-->
+<br>
+<div class="module-container-footer">
+<div class="module-left-footer">
+<h2>Take the next step toward a career in art and design.</h2>
+<div class="module-btn-footer module-btn-apply"><a href="https://ampd.yorku.ca/apply/"><h2 class="module-news-btn-footer">Apply Now </h2></a></div>
+<!--<div class="module-btn-footer module-btn-bring"><a href="https://ampd.yorku.ca/bringing-ampd-to-you/"><h2 class="module-news-btn-footer">Bringing AMPD to You</h2></a></div>-->
+</div>
+</div></div></section>					</div>
+					</aside><!-- .widget-area -->
+
+
+
+
+
+	</div><!-- .entry-content -->
+
+	
+</article><!-- #post-6 -->
+
+
+		</main><!-- #main -->
+	</section><!-- #primary -->
+
+
+
+
+</div><!-- #content -->
+<footer id="colophon" class="site-footer">
+	</footer><!-- #colophon -->
+<div class="global-footer__contact">
+<div class="footerwrapper">
+<aside class="widget-area" role="complementary" aria-label="Footer">
+							<div class="widget-column">
+					<section id="custom_html-19" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div class="global-footer">
+	<div class="footerwrapper group">
+      	<div class="footer-col span_1_of_3">
+          
+          <p class="subheading">DEPARTMENT OF</p>
+          <p class="heading">Design</p>
+      	
+			<div class="section-content">
+                 <p><a title="Contact Us" href="https://ampd.yorku.ca/contact/" style="color:#000;">CONTACT US</a></p>
+                 <p><a title="Frequently Asked Questions" href="https://ampd.yorku.ca/frequently-asked-questions/" style="color:#000;">FAQS</a></p>
+                 <p><a title="Book a Tour" href="https://ampd.yorku.ca/book-a-tour/" style="color:#000;">BOOK A TOUR</a></p>
+                 <p><a title="Jobs at AMPD" href="https://ampd.yorku.ca/employment/" style="color:#000;">JOBS AT AMPD</a></p>
+                 <p><a title="Support AMPD" href="http://ampd.yorku.ca/impact" style="color:#000;">SUPPORT AMPD</a></p>
+			</div>
+		</div>
+
+		<div class="footer-col span_1_of_3">
+      		<div class="address address-content">
+                <div class="address-heading">OUR ADDRESS</div>
+                <p><strong>4008 Dahdaleh Building (formerly TEL)</strong><br>
+                4700 Keele St.<br>York University</p>
+			</div>
+          
+            <div class="address address-content">
+                <div class="address-heading">AMPD ADDRESS</div>
+                <p><strong>Joan &#038; Martin Goldfarb Centre for Fine Arts</strong><br>
+                York University<br>4700 Keele Street<br>Toronto, ON, Canada<br>M3J 1P3</p>
+	
+			</div>
+        </div>
+		
+		<div class="footer-col span_1_of_3">
+			<div class="address number-content-th">
+				<div class="address-heading">DEPARTMENT OF DESIGN</div>
+           	   <p><span>P</span> 416.736.5885<br>
+                  <span>E</span> <a title="Theatre E-mail" href="mailto:desn@yorku.ca" style="color:#000">desn@yorku.ca</a>
+              </p>
+            </div>
+            <div class="address number-content-ampd">
+              <div class="address-heading">AMPD CONTACTS</div>
+              <span>Incoming Students Advising</span>
+   				<p><a title="Incoming E-mail" href="mailto:ampd@yorku.ca" style="color:#000">ampd@yorku.ca</a></p><br>
+              <span>Undergraduate Students Advising</span>
+    			<p><a title="Undergraduate E-mail" href="mailto:oaiss@yorku.ca" style="color:#000">oaiss@yorku.ca</a></p>
+
+			</div> 
+		</div>
+    </div>
+</div>
+          </div></section>					</div>
+				</aside><!-- .widget-area -->
+</div>
+
+<div class="footer-social-meda-area">
+	<aside class="widget-area" role="complementary" aria-label="Footer">
+							<div class="widget-column footer-widget-0">
+					<section id="custom_html-14" class="widget_text footer-social-meda-area one-column"><div class="textwidget custom-html-widget"><div class="global-footer__links">
+<div class="social-footer-wrapper">
+<div class="social-background">
+<ul class="socfooter">
+<li><a href="https://www.facebook.com/YorkuAMPD" target="_blank" class="icon-10 facebook" title="Facebook" rel="noopener noreferrer"><svg viewBox="0 0 512 512"><path d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z"></path></svg><!--[if lt IE 9]><em>Facebook</em><![endif]--></a></li>
+<li><a href="https://www.instagram.com/yorkuampd/" target="_blank" class="icon-15 instagram" title="Instagram" rel="noopener noreferrer"><svg viewBox="0 0 512 512"><g><path d="M256 109.3c47.8 0 53.4 0.2 72.3 1 17.4 0.8 26.9 3.7 33.2 6.2 8.4 3.2 14.3 7.1 20.6 13.4 6.3 6.3 10.1 12.2 13.4 20.6 2.5 6.3 5.4 15.8 6.2 33.2 0.9 18.9 1 24.5 1 72.3s-0.2 53.4-1 72.3c-0.8 17.4-3.7 26.9-6.2 33.2 -3.2 8.4-7.1 14.3-13.4 20.6 -6.3 6.3-12.2 10.1-20.6 13.4 -6.3 2.5-15.8 5.4-33.2 6.2 -18.9 0.9-24.5 1-72.3 1s-53.4-0.2-72.3-1c-17.4-0.8-26.9-3.7-33.2-6.2 -8.4-3.2-14.3-7.1-20.6-13.4 -6.3-6.3-10.1-12.2-13.4-20.6 -2.5-6.3-5.4-15.8-6.2-33.2 -0.9-18.9-1-24.5-1-72.3s0.2-53.4 1-72.3c0.8-17.4 3.7-26.9 6.2-33.2 3.2-8.4 7.1-14.3 13.4-20.6 6.3-6.3 12.2-10.1 20.6-13.4 6.3-2.5 15.8-5.4 33.2-6.2C202.6 109.5 208.2 109.3 256 109.3M256 77.1c-48.6 0-54.7 0.2-73.8 1.1 -19 0.9-32.1 3.9-43.4 8.3 -11.8 4.6-21.7 10.7-31.7 20.6 -9.9 9.9-16.1 19.9-20.6 31.7 -4.4 11.4-7.4 24.4-8.3 43.4 -0.9 19.1-1.1 25.2-1.1 73.8 0 48.6 0.2 54.7 1.1 73.8 0.9 19 3.9 32.1 8.3 43.4 4.6 11.8 10.7 21.7 20.6 31.7 9.9 9.9 19.9 16.1 31.7 20.6 11.4 4.4 24.4 7.4 43.4 8.3 19.1 0.9 25.2 1.1 73.8 1.1s54.7-0.2 73.8-1.1c19-0.9 32.1-3.9 43.4-8.3 11.8-4.6 21.7-10.7 31.7-20.6 9.9-9.9 16.1-19.9 20.6-31.7 4.4-11.4 7.4-24.4 8.3-43.4 0.9-19.1 1.1-25.2 1.1-73.8s-0.2-54.7-1.1-73.8c-0.9-19-3.9-32.1-8.3-43.4 -4.6-11.8-10.7-21.7-20.6-31.7 -9.9-9.9-19.9-16.1-31.7-20.6 -11.4-4.4-24.4-7.4-43.4-8.3C310.7 77.3 304.6 77.1 256 77.1L256 77.1z"></path><path d="M256 164.1c-50.7 0-91.9 41.1-91.9 91.9s41.1 91.9 91.9 91.9 91.9-41.1 91.9-91.9S306.7 164.1 256 164.1zM256 315.6c-32.9 0-59.6-26.7-59.6-59.6s26.7-59.6 59.6-59.6 59.6 26.7 59.6 59.6S288.9 315.6 256 315.6z"></path><circle cx="351.5" cy="160.5" r="21.5"></circle></g></svg><!--[if lt IE 9]><em>Instagram</em><![endif]--></a></li>
+<li><a href="http://twitter.com/YorkuAMPD" target="_blank" class="icon-26 twitter" title="Twitter" rel="noopener noreferrer"><svg viewBox="0 0 512 512"><path d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z"></path></svg><!--[if lt IE 9]><em>Twitter</em><![endif]--></a></li>
+<li><a href="https://www.youtube.com/channel/UCHwJMM1S1QwM0s6wPb3a7Eg" target="_blank" class="icon-28 youtube" title="YouTube" rel="noopener noreferrer"><svg viewBox="0 0 512 512"><path d="M422.6 193.6c-5.3-45.3-23.3-51.6-59-54 -50.8-3.5-164.3-3.5-215.1 0 -35.7 2.4-53.7 8.7-59 54 -4 33.6-4 91.1 0 124.8 5.3 45.3 23.3 51.6 59 54 50.9 3.5 164.3 3.5 215.1 0 35.7-2.4 53.7-8.7 59-54C426.6 284.8 426.6 227.3 422.6 193.6zM222.2 303.4v-94.6l90.7 47.3L222.2 303.4z"></path></svg><!--[if lt IE 9]><em>YouTube</em><![endif]--></a></li>
+</ul>
+</div>
+</div>
+</div></div></section>					</div>
+					</aside><!-- .widget-area -->
+</div>
+<div class="yorkbrandfooterholder">
+
+<div class="row">
+
+<div class="col-sm">
+<div class="yorkbrandfooter">
+	<div style="width:150px"><a href="https://yorku.ca"><img id="yorklogo" src="https://ampd.yorku.ca/wp-content/themes/AMPD2020/YorkULogo-white.svg" border="0" title="York University" alt="York University"></a></div>
+</div>
+</div>
+<div class="col-sm">
+<div class="yorkbrandfooter">
+<ul class="list-unstyled small">
+          <li><a href="https://www.yorku.ca/safety/" class="text-white">Community Safety</a></li>
+          <li><a href="https://www.yorku.ca/about/privacy-legal/" class="text-white">Privacy &amp; Legal</a></li>
+          <li><a href="https://accessibility.students.yorku.ca/" class="text-white">Accessibility</a></li>
+          <li><a href="https://www.yorku.ca/about/careers/" class="text-white">Careers</a></li>
+        </ul>
+</div>
+</div>
+
+</div>
+</div>
+
+</div><!-- #page -->
+
+
+<script type="text/javascript">
+const wpvViewHead = document.getElementsByTagName( "head" )[ 0 ];
+const wpvViewExtraCss = document.createElement( "style" );
+wpvViewExtraCss.textContent = '/* ----------------------------------------- *//* View slug: student-work-widget - start *//* ----------------------------------------- */.student-work-widget{width:100%;height:auto;background-color:#ffffff;margin: 100px 0 1px 0;clear:both;}/* ----------------------------------------- *//* View slug: student-work-widget - end *//* ----------------------------------------- */<!--[if IE 7]><style>.wpv-pagination { *zoom: 1; }</style><![endif]-->';
+wpvViewHead.appendChild( wpvViewExtraCss );
+</script>
+
+<script type="text/javascript">
+const wpvCtHead = document.getElementsByTagName( "head" )[ 0 ];
+const wpvCtExtraCss = document.createElement( "style" );
+wpvCtExtraCss.textContent = '/* ----------------------------------------- *//* Content Template: design-slider-view-template - start *//* ----------------------------------------- */.slick-pause {padding: 4px 10px;z-index: 5;position: absolute;border: 0px solid;text-decoration: none;display: inline-block;background-color: #efefef7a;}.paused {background-color: #e82f32;}.slick-dots {bottom: 10px !important;}.slick-dotted.slick-slider {margin-bottom: 0px !important;}.ampdslider--text {position: absolute;}.ampdslider--heading {font-size: 1.5em;font-weight: 100;line-height: 0em;}@media screen and (min-width: 33.75em){.ampdslider--heading{font-size: 1.5em;}}@media screen and (min-width:45em){.ampdslider--heading{font-size: 2em;}}@media screen and (min-width:55em){.ampdslider--heading{font-size: 2em;}}@media screen and (min-width:70em){.ampdslider--heading{font-size: 2.5em;}}.ampdslider--text p{font-size: 1.2em;font-weight: 200;}.ampdslider--text{height: 100%;position: absolute;z-index: 3;color: #ffffff;background-color: #00000000;min-width: 200px;width: 1280px;}.ampdslider--text p {font-size: 14px; line-height: 0em;padding-top: 8px;}@media screen and (min-width: 768px) {.ampdslider--text p {font-size: 18px; top:12px;padding-top: 35px;}}@media screen and (min-width:45em){.ampdslider--text{padding:80px 50px 50px 50px}}@media screen and (min-width:55em){.ampdslider--text{padding:160px 50px 50px 50px}}@media screen and (min-width:70em){.ampdslider--text{padding-top: 250px;padding-right: 0px;padding-bottom: 0px;padding-left: 95px;}}@media screen and (max-width: 768px) {.ampdslider--text {top:135px;padding:5px 20px 5px 10px}}@media screen and (max-width: 414px) {.ampdslider--text {top:65px;padding:5px 20px 5px 10px}}.slider__overlay {pointer-events: none !important;display: none;}.page-template-template-landingpage .container--main {margin-top: 1em !important; background-color: transparent;}/*NEW SLIDER SIZE*/.slider {position: relative;padding-top: 45%; }.slider.is-loaded .loader {display: none;}@media screen and (min-width: 33.75em) {.slider {margin: 0;padding-top: 50em; }}@media screen and (min-width: 45em) {.slider {padding-top: 17em; }}@media screen and (min-width: 55em) {.slider {padding-top: 26em }}@media screen and (min-width: 70em) {.slider {padding-top: 91em; }}/*mobile setting for image slider*/.slider__heading {margin-top: 0;margin-bottom: 1rem;font-size: 0.9rem;font-weight: 300;}@media screen and (min-width: 55em) {.slider__heading {font-size: 1.0rem; }}@media screen and (min-width: 70em) {.slider__heading {font-size: 1.1rem; }}@media screen and (max-width: 475px) {.slider__heading {display: none; }}.slider__content {margin-top: 1rem;margin-bottom: 0;font-weight: 300; }@media screen and (max-width: 475px) {.slider__content {display: none; }}.slider__images, .slider__overlay {position: absolute;top: 0;left: 0;z-index: 1;width: 100%;height: 60%;}@media screen and (min-width: 33.75em) {.slider__images, .slider__overlay {position: absolute;top: 0;left: 0;z-index: 1;width: 100%;height: 100vh; }}@media screen and (max-width: 475px) {.slider__images, .slider__overlay {position: absolute;top: 0;left: 0;z-index: 1;width: 100%;height: 100%; }}.slider__bodies {position: absolute;bottom: 0;left: 0;width: 100%;height: 40%;}@media screen and (min-width: 33.75em) {.slider__bodies {z-index: 2;height: 40%; }}@media screen and (min-width: 45em) {.slider__bodies {left: 50%;width: 20em;height: 15em;margin: 0 auto 2em -10em; }}@media screen and (min-width: 55em) {.slider__bodies {height: 15em;margin-bottom: 5em; }}@media screen and (min-width: 70em) {.slider__bodies {margin-bottom: 7em; }}@media screen and (max-width: 475px) {.slider__bodies {display:none; }}.ai1ec-stream-view .ai1ec-allday-badge {display:none;}.media-previous_btn {bottom: 0;margin: auto;position: absolute;left: 50px;z-index: 4;}.media-next_btn {bottom: 0;margin: auto;position: absolute;right: 50px;}.media-previous_btn, .media-next_btn {cursor: pointer;height: 50px;opacity: 0.4;-webkit-transition: opacity 0.4s ease-in-out;-moz-transition: opacity 0.4s ease-in-out;-ms-transition: opacity 0.4s ease-in-out;-o-transition: opacity 0.4s ease-in-out;transition: opacity 0.4s ease-in-out;width: 65px;top:80%;}.media-previous_btn:hover, .media-next_btn:hover {opacity: 1;}@media only screen and (max-width: 767px) {.media-previous_btn {left: 10px;}.media-next_btn {right: 10px;}}/* ----------------------------------------- *//* Content Template: design-slider-view-template - end *//* ----------------------------------------- *//* ----------------------------------------- *//* Content Template: explore-the-possibilities - start *//* ----------------------------------------- *//*.explore-div{display:inline-block;}*/.explore-undergrade-graduate{background-color:#e31e37;min-height:375px; margin: 0; padding:50px;}.explore-undergrade-graduate h3 {color:#ffffff; font-weight:bold;font-size:16px;margin-left:15px;margin-bottom:25px;margin-top:20px;display:inline-block;}.explore-undergrade-graduate h2 {color:#ffffff;font-size:55px;font-weight:500;line-height:10px;margin-left: 15px;margin-bottom: 50px;}.theatre-button-overlay {background-color:#e31e37; color:#ffffff;font-size:24px; text-align:left; border: 1px solid white; margin-top: 20px;width:525px; height:80px; top:50%;}.dropdown{margin-left:15px; position: relative; display: inline-block; }.dropdown-content{display: none; position: absolute; background-color: #fff; width: 525px; overflow: auto; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;}.arrow-right, .dropdown-content a{color:#e31e37; font-size:20px; font-weight: 500; padding: 12px 16px;text-decoration: none !important; display: block; position:relative;}.show{display:block;}/*.dropdown:hover .dropdown-content{display: block;}*//*.dropdown:hover .theatre-button-overlay {background-color:red;}*/.theatre-button-overlay:hover, .theatre-button-overlay:focus {  background-color: #e31e37;}.theatre h3 {font-size:55px;}.line {border-bottom: 1px solid rgba(0,0,0,.25);  width: 100%; margin: 0;  position: absolute;  left: 50%;  transform: translate(-50%, -50%);}/*bottom arrow*/.arrow-bottom:after {  content: \"\";  position: relative;  top: -25px;  right:15px;  margin: 0px;  float: right;  border-right: 2px solid #fff;  border-bottom: 2px solid #fff;  width: 15px;  height: 15px;  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);}/*right arrow*/.arrow-right:hover{  color:#000;}.dropdown-content a:hover{  color:#000;}.arrow-right:after {  content: \"\";  position: relative;  top:10px;  right:15px;  margin:0;  float: right;  border-right: 2px solid #e31e37;  border-bottom: 2px solid #e31e37;  width: 15px; height: 15px;  transform: rotate(-45deg);  -o-transform: rotate(-45deg);  -webkit-transform: rotate(-45deg);  -moz-transform: rotate(-45deg);}.arrow-right:hover:after{  border-right: 2px solid #000;  border-bottom: 2px solid #000;}/*  SECTIONS  */.section {	clear: both;	padding: 0px;	margin: 0px;}/*  COLUMN SETUP  */.col {	display: block;	float:left;	margin: 1% 0 1% 1.6%;}.col:first-child { margin-left: 0; }/*  GROUPING  */.group:before,.group:after { content:\"\"; display:table; }.group:after { clear:both;}.group { zoom:1; /* For IE 6/7 */ }/*  GRID OF TWO  */.span_2_of_2 {	width: 100%;}.span_1_of_2 {	width: 49.2%;}/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */@media only screen and (max-width: 600px) {	.col { 		margin: 1% 0 1% 0%;	}}@media only screen and (max-width: 800px) {  .span_2_of_2, .span_1_of_2 { width: 100%; }  .theatre-button-overlay, .dropdown-content{width: 405px !important;}}@media only screen and (max-width: 600px) {  .span_2_of_2, .span_1_of_2 { width: 100%; }  .theatre-button-overlay, .dropdown-content{width: 345px !important;}  .explore-undergrade-graduate{padding:15px;}  .dropdown,.explore-undergrade-graduate h3, .explore-undergrade-graduate h2{margin-left:0px;}}/* ----------------------------------------- *//* Content Template: explore-the-possibilities - end *//* ----------------------------------------- *//* ----------------------------------------- *//* Content Template: three-box-information - start *//* ----------------------------------------- */.three-box{width:100%}.three-box img{width:100%;}/*  SECTIONS  */.section {	clear: both;	padding: 0px;	margin: 0px;}/*  COLUMN SETUP  */.col {	display: block;	float:left;	margin: 0;  /*margin: 1% 0 1% 2%;*/    padding:0px 0px 0px 0px;  /*    padding-right: 0px !important;    padding-left: 0px !important;  */}.col:first-child { margin-left: 0; }/*  GROUPING  */.group:before,.group:after { content:\"\"; display:table; }.group:after { clear:both;}.group { zoom:1; /* For IE 6/7 */ }/*  GRID OF THREE  */.span_3_of_3 { width: 100%; }.span_2_of_3 { width: 66.66%; }.span_1_of_3 { width: 33.33%; }/*  GO FULL WIDTH BELOW 480 PIXELS */@media only screen and (max-width: 550px) {.col {  margin: 0/*1% 0 1% 0%; */}.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }}@media only screen and (min-width: 1000px) {} .center-text-up p{position:absolute;top:50%; left:50%;transform: translate(-50%, -50%);margin:0;text-align: center;font-size: 16px;font-weight: 600;width: 250px; line-height:20px; color: #ffffff;background-color: #0000000a;} .center-text h2{position:absolute;top:40%; left:50%;transform: translate(-50%, -50%);margin:0;text-align: center;font-size: 20px;font-weight: 700; width: 300px; line-height:20px; color: #ffffff;background-color: #0000000a;} .center-text p{position:absolute;top:60%; left:50%;transform: translate(-50%, -50%);margin:0;text-align: center;font-size: 16px;font-weight: 600;width: 250px; line-height:20px; color: #ffffff;background-color: #0000000a;} .center-text-down h2{position:absolute;top:45%; left:50%;transform: translate(-50%, -50%);margin:0;text-align: center;font-size: 20px;font-weight: 700; width: 300px; line-height:20px; color: #ffffff;background-color: #0000000a;} .center-text-down p{position:absolute;top:60%; left:50%;transform: translate(-50%, -50%);margin:0;text-align: center;font-size: 16px;font-weight: 600;width: 250px; line-height:20px; color: #ffffff;background-color: #0000000a;}@media only screen and (max-width: 900px) {  .center-text h2, .center-text-down h2 {font-size: 14px;}  .center-text p, .center-text-down p, .center-text-up p{font-size: 12px;}}@media only screen and (max-width: 550px) {  .center-text h2, .center-text-down h2 {font-size: 20px;}  .center-text p, .center-text-down p, .center-text-up p{font-size: 16px;}}/* ----------------------------------------- *//* Content Template: three-box-information - end *//* ----------------------------------------- *//* ----------------------------------------- *//* Content Template: loop-item-in-student-work-widget - start *//* ----------------------------------------- */.student-widget-holder{position: relative;}.student-widget-profile-fade {opacity: 1;transition: opacity .25s ease-in-out;-moz-transition: opacity .25s ease-in-out;-webkit-transition: opacity .25s ease-in-out;}.overlay {  position: absolute;  z-index:2;  top: 0;  bottom: 0;  left: 0;  right: 0;  height: 100%;  width: 100%;  opacity: 0;  transition: .5s ease;  background-color: #324196;}.overlay:hover {opacity: 0.9;}.viewtext {color: white;font-size: 18px;font-weight:500;position: absolute;top: 50%;left: 50%;-webkit-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);transform: translate(-50%, -50%);text-align: center;border: 1px solid rgb(255 255 255);width: auto;padding: 10px 70px 10px 70px;}.student-work-widget-title{z-index:1;text-transform: none;font-size: 35px;font-weight: 200;color:#ffffff;background:#000000;position: absolute;top:30px;left: 50px;padding: 10px;}.student-work-widget-name{z-index:1;text-transform: none;font-size: 18px;font-weight: 200;color:#ffffff;background:#000000;position: absolute;top:110px;left: 50px;padding: 10px;}/* ----------------------------------------- *//* Content Template: loop-item-in-student-work-widget - end *//* ----------------------------------------- *//* ----------------------------------------- *//* Content Template: alumni-profile-display - start *//* ----------------------------------------- *//*new edits: Title of slide*/.alumni-div{clear:both;padding:20px;}@media only screen and (min-width: 768px) {.alumni-div{padding:75px;}}.alumni-sectionoverview{background-color:#e8e5df;clear: both;padding-top: 70px;}.alumni-sectionoverview p {font-size:18px;}.alumni-sectionoverview h2 {font-size:48px;}/*new edits END*/@media screen and (max-width: 1024px) {#custom_html-8 {display:none;}}.ampd-next{position: absolute;top: 165px;cursor: pointer;right: 2%;}@media screen and (max-width: 768px) {.ampd-next {top: 75px;}}.ampd-next:hover{opacity:.5;}@media screen and (max-width: 1120px) {.ampd-next{display:none;}}.alumni-slide{/*padding:20px 100px 20px 0px;*/background-color:#e8e5df;}.alumni-quote{font-size:20px;font-weight:200;padding-right:20px;}.alumni-name{font-size:14px;}.alumni-degree{font-size:14px;}.alumni-featured-img{float:left;margin-right: 50px;}.alumni-profile-btn{font-size: 14px;font-weight: 300;}.programbtn a{color:#ffffff;background-color: #e31837;padding-left:22px;padding-right:8px;padding-top:8px;padding-bottom:8px;text-decoration: none;}.programbtn a:hover {color: #e31837;background-color: #ffffff;}.programbtn a:hover #red-btn-chevron {fill: #e31837;}.alumni-featured-img{width:250px;height:250px;position:relative;overflow:hidden;border-radius:50%;margin-bottom:50px;}.alumni-featured-img img{display:inline;margin:0 auto;height: auto;width: auto;}/* ----------------------------------------- *//* Content Template: alumni-profile-display - end *//* ----------------------------------------- *//* ----------------------------------------- *//* Content Template: news-and-events-2020 - start *//* ----------------------------------------- */.news-tag{position: absolute;color:#fff; background-color: #E3223A;margin: 10px;padding: 5px;font-size: 13px;z-index: 3;}.events-tag{position: absolute;color:#fff; background-color: #000;margin: 10px;padding: 5px;font-size: 13px;z-index: 3;}.all-events-tag{white-space: nowrap;font-size: 15px;color: #fff;background-color: #000;border-color: #fff;border-style: solid;border-width: 2px;outline: none;letter-spacing: 1px;cursor: pointer;text-decoration: none;visibility: inherit;transition: none;text-align: left;padding: 3px 14px 0px 24px;width: 178px;height: 42px;font-weight: 400;margin: auto;clear:both;}@media screen and (min-width:45em){.all-events-tag{/*margin-top: 90px;*/}}@media screen and (min-width:55em){.all-events-tag{/*margin-top: 90px;*/}}@media screen and (min-width:70em){.all-events-tag{/*margin-top: 90px;*/}}.all-events-tag:hover {color: #000000;background-color: #ffffff;}.all-events-tag:hover #black-btn-chevron {fill: #000000;}.section--news, .section--events {color: #fff;background-color: rgba(255, 255, 0, 0);float:left;}.section--news {width: 100%;overflow: hidden;}/*@media screen and (min-width:45em){.section--news{width: 502px;}}@media screen and (min-width:55em){.section--news{width: 572px;}}@media screen and (min-width:70em){.section--news{width: 874px;}*/}.article--news, .article--event{display:block;position:relative;margin-bottom:0.25em;color:#fff;float: left;padding-left: 0px;}.article--news, .article--event, .article--news:link, .article--event:link, .article--news:visited, .article--event:visited{color:#000000;}.article--news:hover, .article--event:hover, .article--news:focus, .article--event:focus{text-decoration:none;}.article--news:hover .article__image::after, .article--event:hover .article__image::after, .article--news:focus .article__image::after, .article--event:focus .article__image::after{border-right-color:#ac172e;}@media screen and (min-width:45em){.article--news:hover .article__image::after, .article--event:hover .article__image::after, .article--news:focus .article__image::after, .article--event:focus .article__image::after{border-right-color:#a3172d;}}.article--news:hover .article__body, .article--event:hover .article__body, .article--news:focus .article__body, .article--event:focus .article__body{background-color:rgba(255, 255, 255, 0.9);}@media screen and (min-width:45em){.article--news:hover .article__body, .article--event:hover .article__body, .article--news:focus .article__body, .article--event:focus .article__body{background-color:#ffffff;}}.article--news .article__image, .article--event .article__image{/*position:absolute;*/top:0;left:0;z-index:1;height:300px;max-width: 432px;overflow:hidden;-webkit-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out;}.article--news .article__image::after, .article--event .article__image::after{display:none; content:\'\';position:absolute;top:50%;right:0;width:0;height:0;margin-top:-20px;border:20px solid transparent;border-right-color:#cc1631;-webkit-transition:all 0.1s ease-in-out;transition:all 0.1s ease-in-out;-webkit-transition-property:border-color;transition-property:border-color;}@media screen and (min-width:45em){.article--news .article__image::after, .article--event .article__image::after{border-right-color:#b91a33;}}}@media screen and (min-width: 33.5em) {.article--news .article__image, .article--event .article__image {width: 405px;}}@media screen and (min-width: 45em) {.article--news .article__image, .article--event .article__image {width: 245px;}}@media screen and (min-width: 55em) {.article--news .article__image, .article--event .article__image {width: 283px;}}@media screen and (min-width: 70em) {.article--news .article__image, .article--event .article__image {min-width: 432px;}}.news-btn  {white-space: nowrap;font-size: 15px;color: #000000;background-color: #ffffff;border-color: #000000;border-style: solid;border-width: 2px;outline: none;letter-spacing: 1px;cursor: pointer;text-decoration: none;visibility: inherit;transition: none;text-align: left;margin: 0px;padding: 3px 0px 0px 24px;width: 150px;height: 42px;font-weight: 400;margin-top: 40px;position: absolute;}@media screen and (max-width: 1024px) {.news-btn {position: relative;}}.news-btn:hover {color: #ffffff;background-color: #000000;}.news-btn:hover #black-btn-chevron {fill: #ffffff;}.article--news .article__heading, .article--event .article__heading{margin:0;color:#000;font-size:1.2em;font-weight:400;line-height:1.4;}@media screen and (min-width:45em){.article--news .article__heading, .article--event .article__heading{font-size:1em;}}@media screen and (min-width:55em){.article--news .article__heading, .article--event .article__heading{font-size:1.1em;}}@media screen and (min-width:70em){.article--news .article__heading, .article--event .article__heading{font-size:1.5em;}}.section--events--me{clear:both;padding-top:50px;margin-bottom:100px;text-align:center;}.section--events{/*color:#e31837;background-color:#fff;*/float: left;padding-left: 5px;}@media screen and (min-width:45em){.section--events{margin-left:0;/*margin-right:30%;*/}}@media screen and (min-width:55em){.section--events{/*margin-right:45%;*/padding-left: 5px;}}.section--events .section__heading{color:#e31837;}.section--events {margin-right: 0%;}.section--events .section__more{background-color:#f2f2f2;}.section--events .section__more, .section--events .section__more:link, .section--events .section__more:visited{color:#e31837;text-decoration:none;}.section--events .section__more:hover, .section--events .section__more:focus{background-color:#e6e6e6;}.section--news, .section--events {color: #fff;background-color: rgba(255, 255, 0, 0);float:left;}.section--events .section__more:active{background-color:#d9d9d9;}.section--news, .section--events{color:#fff;/*background-color:#e31837;*/}@media screen and (min-width:45em){.section--news, .section--events{margin-left:0%;}}@media screen and (min-width:55em){.section--news, .section--events{margin-left:0%;}}.section--news .section__heading, .section--events .section__heading{margin:0;padding:0.75em 0.5em;color:#fff;font-size:1.8em;font-weight:300;text-align:center;}@media screen and (min-width:45em){.section--news .section__heading, .section--events .section__heading{padding:0.25em 2rem;font-size:3em;text-align:left;}}.section--news .section__more, .section--events .section__more{display:block;padding:1em 0.5em;font-size:1em;text-align:center;background-color:#cc1631;-webkit-transition:all 0.1s ease-in-out;transition:all 0.1s ease-in-out;}.section--news .section__more, .section--events .section__more, .section--news .section__more:link, .section--events .section__more:link, .section--news .section__more:visited, .section--events .section__more:visited{color:#fff;text-decoration:none;}.section--news .section__more:hover, .section--events .section__more:hover, .section--news .section__more:focus, .section--events .section__more:focus{background-color:#b5132c;}.section--news .section__more:active, .section--events .section__more:active{background-color:#9e1126;}.section--news .section__more::after, .section--events .section__more::after{margin-left:1em;}@media screen and (min-width:33.75em){.section--news .section__more, .section--events .section__more{font-size:0.9em;}}@media screen and (min-width:45em){.section--news .section__more, .section--events .section__more{font-size:0.9em;}}@media screen and (min-width:55em){.section--news .section__more, .section--events .section__more{font-size:0.9em;}}@media screen and (min-width:70em){.section--news .section__more, .section--events .section__more{font-size:1.125rem;}}#events_wrap {background-color: rgb(255, 255, 255);height: auto;margin-bottom: 100px;}.article--search .article__heading, .article--tag .article__heading, .article--category .article__heading{font-size:2em;}.article--news .article__body, .article--event .article__body {    padding: 2.3rem 2rem;    min-height: 215px;    max-width: 432px;    height: 300px;}/* ----------------------------------------- *//* Content Template: news-and-events-2020 - end *//* ----------------------------------------- *//* ----------------------------------------- *//* Content Template: student-quote - start *//* ----------------------------------------- */.student-quote-holder{padding-top: 0px;padding-bottom: 0px;}@media screen and (max-width: 1191px) {#custom_html-9 {display:none;}}.student-quote-section{background: url(https://ampd.yorku.ca/wp-content/uploads/2018/09/quote-1.png) no-repeat;height: auto;background-color: #e31837;padding: 160px;margin-left: 0px;}.student-quote{font-size:26px;font-weight:200;margin: 20px 200px 20px 200px;color:#ffffff;}.student-quote-info{font-size:14px;}.student-name{font-size:14px;color:#000000;background-color:#ffffff;padding:4px;margin:2px;float: right;clear: right;}.student-title{font-size:14px;color:#000000;background-color:#ffffff;padding:4px;margin:2px;float: right;clear: right;}.student-employment{font-size:14px;color:#ffffff;background-color:#000000;padding:4px;margin:2px;float: right;clear: right;}/* ----------------------------------------- *//* Content Template: student-quote - end *//* ----------------------------------------- *//* ----------------------------------------- *//* Content Template: three-circle-feature - start *//* ----------------------------------------- *//*Take the next footer start*/.module-container-footer {position: relative;text-align: left;color: white;clear: both;background-image: url(\"https://ampd.yorku.ca/wp-content/uploads/2021/02/york-facilities-3.jpg\");background-position: center;background-repeat: no-repeat;background-size: cover;}.module-left-footer {background-color: #0000009c;font-size: 30px;font-weight: 500;padding: 115px 125px 105px 125px;height: auto;text-align: left;}.module-btn-footer{padding: 20px 150px 20px 0px; margin-right:55px; position: relative; display: inline-block;text-align:left;}.module-news-btn-footer {white-space: nowrap;font-size: 18px;color: #ffffff;border-color: #ffffff;border-style: solid;border-width: 1px;outline: none;letter-spacing: 1px;cursor: pointer;text-decoration: none;visibility: inherit;transition: none;text-align: left;padding: 3px 24px 0px 24px;height: 42px;font-weight: 600; position: absolute; margin:0 auto; line-height: 32px; float:left;/*left: 50%;transform: translate(-50%, -50%);*/}.module-news-btn-footer:hover {color: #000;background-color: #fff;}.module-news-btn-footer:hover #black-btn-chevron {fill: #000;}@media screen and (max-width: 650px) {.module-left-footer{padding: 115px 115px 115px 115px;}.module-btn-footer{left: 50%;transform: translate(-50%, -50%);}}/*Take the next footer End*//* ----------------------------------------- *//* Content Template: three-circle-feature - end *//* ----------------------------------------- *//* ----------------------------------------- *//* Content Template: design-footer - start *//* ----------------------------------------- */.global-footer {width:100%;}/*  COLUMN SETUP  */.footer-col {	display: block;	float:left;	margin: 0;    padding:0px;}.footer-col:first-child { margin-left: 0; }/*  GROUPING  */.group:before,.group:after { content:\"\"; display:table; }.group:after { clear:both;}.group { zoom:1; /* For IE 6/7 */ }/*  GRID OF THREE  */.span_3_of_3 { width: 100%; }.span_2_of_3 { width: 66.66%; }.span_1_of_3 { width: 33.33%; }/*  GO FULL WIDTH BELOW 950 PIXELS */@media only screen and (max-width: 950px) {.footer-col {  margin: 0/*1% 0 1% 0%; */}.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }}.footerwrapper{padding-top: 20px; min-height: 430px;}.heading {color:#e31837;font-size: 48px;font-weight:bold;line-height:10px;padding:0px 5px 0px 5px;}.subheading {color:#e31837;font-size:18px;font-weight:bold;padding:10px 5px 10px 5px;}.section-content {padding:30px 5px 0px 5px;}.section-content p {color:#000;font-size:20px;font-weight:bold;}.address-heading {color:#e31837;font-size:18px;font-weight:bold;padding:10px 0px 10px 0px;}.address{padding:10px;}.address-content p {color:#000;font-size:20px;}.address-content span {color:#e31837;font-size:20px;font-weight:600px;}.number-content-th p {color:#000;font-size:20px;font-weight:bold;}.number-content-th span {color:#e31837;font-size:20px;font-weight:bold;}.number-content-ampd p {color:#000;font-size:20px;font-weight:bold;}.number-content-ampd span {color:#e31837;font-size:20px;}/* ----------------------------------------- *//* Content Template: design-footer - end *//* ----------------------------------------- *//* ----------------------------------------- *//* Content Template: footer-social-media-links - start *//* ----------------------------------------- */.global-footer .social-footer-wrapper{padding:0 1.4em;}.global-footer__links, .global-footer__contact{padding:2em 0 0 0;}.global-footer__links{padding:1em 0;background-color:#e2e2e2;}.socfooter-left{text-align: left;}.socfooter {display: block;font-size: 0;list-style: none;margin: 0;padding: 1em;}.socfooter li {display: inline-block;margin: 10px;margin-top: 0rem;}.socfooter a, .socfooter svg {display: block;}.socfooter a {position: relative;height: auto;width: 35px;border-bottom: 0px;}.socfooter svg {height: 100%;width: 100%;}.socfooter em {font-size: 14px;line-height: 1.5;margin-top: -0.75em;position: absolute;text-align: center;top: 50%;right: 0;bottom: 0;left: 0;}.atyorkuampd {width: 200px !important;}.social-footer-wrapper{position:relative;margin:0 auto;padding:0 1em;}.global-footer__links{padding:2em 0;}.global-footer__links{padding:1em 0;background-color:#000000;}.socfooter-left{text-align: left;}.facebook,.instagram,.twitter,.youtube {  color: #fff!important;  fill: #fff;  border-radius: 100%;  transition: background-color 0.5s, -webkit-transform 0.5s ease-out;  transition: background-color 0.5s, transform 0.5s ease-out;  transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;  -webkit-transition: background-color 0.5s, -webkit-transform 0.5s ease-out;}.facebook:hover,.instagram:hover,.twitter:hover,.youtube:hover {  color: #e31837!important;  fill: #e31837;  -webkit-transform: scale(1.25);  transform: scale(1.25);}/* ----------------------------------------- *//* Content Template: footer-social-media-links - end *//* ----------------------------------------- */';
+wpvCtHead.appendChild( wpvCtExtraCss );
+</script>
+<script type='text/javascript' src='https://design.ampd.yorku.ca/wp-content/themes/twentynineteen/js/touch-keyboard-navigation.js' async='async' id='base-functions-js'></script>
+<script type='text/javascript' src='https://design.ampd.yorku.ca/wp-content/themes/AMPD2020/js/priority-menu.js' id='twentynineteen-priority-menu-js'></script>
+<script type='text/javascript' src='https://design.ampd.yorku.ca/wp-content/themes/AMPD2020/js/touch-keyboard-navigation.js' id='twentynineteen-touch-navigation-js'></script>
+<script type='text/javascript' src='https://design.ampd.yorku.ca/wp-includes/js/jquery/ui/core.min.js' id='jquery-ui-core-js'></script>
+<script type='text/javascript' src='https://design.ampd.yorku.ca/wp-includes/js/jquery/ui/datepicker.min.js' id='jquery-ui-datepicker-js'></script>
+<script type='text/javascript' src='https://design.ampd.yorku.ca/wp-includes/js/jquery/ui/mouse.min.js' id='jquery-ui-mouse-js'></script>
+<script type='text/javascript' src='https://design.ampd.yorku.ca/wp-includes/js/jquery/ui/slider.min.js' id='jquery-ui-slider-js'></script>
+<script type='text/javascript' src='https://design.ampd.yorku.ca/wp-includes/js/jquery/jquery.ui.touch-punch.js' id='jquery-touch-punch-js'></script>
+<script type='text/javascript' id='mediaelement-core-js-before'>
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+</script>
+<script type='text/javascript' src='https://design.ampd.yorku.ca/wp-includes/js/mediaelement/mediaelement-and-player.min.js' id='mediaelement-core-js'></script>
+<script type='text/javascript' src='https://design.ampd.yorku.ca/wp-includes/js/mediaelement/mediaelement-migrate.min.js' id='mediaelement-migrate-js'></script>
+<script type='text/javascript' id='mediaelement-js-extra'>
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://design.ampd.yorku.ca/wp-includes/js/mediaelement/wp-mediaelement.min.js' id='wp-mediaelement-js'></script>
+<script type='text/javascript' src='https://design.ampd.yorku.ca/wp-includes/js/underscore.min.js' id='underscore-js'></script>
+<script type='text/javascript' id='wp-util-js-extra'>
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://design.ampd.yorku.ca/wp-includes/js/wp-util.min.js' id='wp-util-js'></script>
+<script type='text/javascript' src='https://design.ampd.yorku.ca/wp-includes/js/backbone.min.js' id='backbone-js'></script>
+<script type='text/javascript' src='https://design.ampd.yorku.ca/wp-includes/js/mediaelement/wp-playlist.min.js' id='wp-playlist-js'></script>
+<script type='text/javascript' id='views-blocks-frontend-js-extra'>
+/* <![CDATA[ */
+var wpv_pagination_local = {"front_ajaxurl":"https:\/\/design.ampd.yorku.ca\/wp-admin\/admin-ajax.php","calendar_image":"https:\/\/design.ampd.yorku.ca\/wp-content\/plugins\/wp-views\/embedded\/res\/img\/calendar.gif","calendar_text":"Select date","datepicker_min_date":null,"datepicker_max_date":null,"datepicker_min_year":"1582","datepicker_max_year":"3000","resize_debounce_tolerance":"100","datepicker_style_url":"https:\/\/design.ampd.yorku.ca\/wp-content\/plugins\/types\/vendor\/toolset\/toolset-common\/toolset-forms\/css\/wpt-jquery-ui\/jquery-ui-1.11.4.custom.css","wpmlLang":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://design.ampd.yorku.ca/wp-content/plugins/wp-views/public/js/views-frontend.js' id='views-blocks-frontend-js'></script>
+	<script>
+	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
+	</script>
+	
+<script type="text/javascript">
+//-----------------------------------------
+// Content Template: design-slider-view-template - start
+//-----------------------------------------
+jQuery(document).ready(function($){
+$('.sliderautoplay').slick({
+lazyLoad: 'progressive',
+adaptiveHeight:true,
+slidesToShow: 1,
+slidesToScroll: 1,
+autoplay: true,
+fade : true,
+autoplaySpeed: 5000,
+pauseOnHover : false,
+prevArrow: '<div class="media-previous_btn" title="Previous Slide"><svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="-11 -11.5 65 66"><g><g><path fill="#ffffff" d="M25.43,33.243L14.628,22.429c-0.433-0.432-0.433-1.132,0-1.564L25.43,10.051c0.432-0.432,1.132-0.432,1.563,0 c0.431,0.431,0.431,1.132,0,1.564L16.972,21.647l10.021,10.035c0.432,0.433,0.432,1.134,0,1.564  c-0.215,0.218-0.498,0.323-0.78,0.323C25.929,33.569,25.646,33.464,25.43,33.243z"/></g></g></svg></div>',
+nextArrow: '<div class="media-next_btn" title="Next Slide"><svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="-11 -11.5 65 66"><g><g><path fill="#ffffff" d="M18.022,33.569c 0.282,0-0.566-0.105-0.781-0.323c-0.432-0.431-0.432-1.132,0-1.564l10.022-10.035 L17.241,11.615c 0.431-0.432-0.431-1.133,0-1.564c0.432-0.432,1.132-0.432,1.564,0l10.803,10.814c0.433,0.432,0.433,1.132,0,1.564 L18.805,33.243C18.59,33.464,18.306,33.569,18.022,33.569z"/></g></g></svg></div>',
+accessibility: true,
+dots: true,
+infinite: true,
+});	
+  $('.slick-pause').on('click', function(){
+    var $pauseBtn = $(this);
+    if ($pauseBtn.hasClass('paused')){
+        $(".sliderautoplay").slick('slickPlay');
+        $pauseBtn.removeClass('paused');
+    } else {
+        $(".sliderautoplay").slick('slickPause');
+        $pauseBtn.addClass('paused');
+    }
+});
+});
+
+//-----------------------------------------
+// Content Template: design-slider-view-template - end
+//-----------------------------------------
+//-----------------------------------------
+// Content Template: explore-the-possibilities - start
+//-----------------------------------------
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+function myFunction1() {
+  document.getElementById("myDropdown1").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.theatre-button-overlay')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+//-----------------------------------------
+// Content Template: explore-the-possibilities - end
+//-----------------------------------------
+//-----------------------------------------
+// Content Template: alumni-profile-display - start
+//-----------------------------------------
+jQuery(document).ready(function($){
+     $('.autoplay').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 6000,
+prevArrow: false,
+nextArrow: '<div class="ampd-next"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px" viewBox="-11 -11.5 65 66"><g><g><path fill="#000000" d="M18.022,33.569c 0.282,0-0.566-0.105-0.781-0.323c-0.432-0.431-0.432-1.132,0-1.564l10.022-10.035 L17.241,11.615c 0.431-0.432-0.431-1.133,0-1.564c0.432-0.432,1.132-0.432,1.564,0l10.803,10.814c0.433,0.432,0.433,1.132,0,1.564 L18.805,33.243C18.59,33.464,18.306,33.569,18.022,33.569z"/></g></g></svg></div>',
+accessibility: true,
+});	
+  
+});
+//-----------------------------------------
+// Content Template: alumni-profile-display - end
+//-----------------------------------------
+//-----------------------------------------
+// Content Template: news-and-events-2020 - start
+//-----------------------------------------
+jQuery(document).ready(function($){
+$('.autoplayNews').slick({
+accessibility: true,
+slidesToShow: 3,
+slidesToScroll: 3,
+responsive: [
+        {
+            breakpoint: 767, // tablet breakpoint
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
+}); 
+});
+//-----------------------------------------
+// Content Template: news-and-events-2020 - end
+//-----------------------------------------
+//-----------------------------------------
+// Content Template: student-quote - start
+//-----------------------------------------
+jQuery(document).ready(function($){
+$('.autoplay3').slick({
+slidesToShow: 1,
+slidesToScroll: 1,
+autoplay: false,
+autoplaySpeed: 6000,
+prevArrow: false,
+nextArrow: false,
+accessibility: true,
+});	
+});
+//-----------------------------------------
+// Content Template: student-quote - end
+//-----------------------------------------
+</script>
+
+<script src="/wp-content/themes/AMPD2020/js/bootstrap.min.js"></script>
+<script src="/wp-content/themes/AMPD2020/js/jquery.dataTables.min.js"></script>
+<script src="/wp-content/themes/AMPD2020/jquery-accordion.js"></script>
+
+</body>
+</html>

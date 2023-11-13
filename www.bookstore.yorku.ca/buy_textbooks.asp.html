@@ -1,0 +1,810 @@
+
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8">    <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9">    <![endif]-->
+<html lang="en">
+<head>
+	<title>Shop Course Materials | York University Bookstore</title>
+	<!--Tells IE to use the highest mode available to prevent compatability mode-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta name="format-detection" content="telephone=no">
+	
+	<style type="text/css" media="all">
+    @import url("/innerweb/v4.0/styles/campushub.css");
+    @import url("/innerweb/v4.0/styles/delta/delta.css");
+</style>
+<script type="text/javascript" src="/innerweb/v4.0/include/js/jquery-3.6.0_min.js"></script>
+<script type="text/javascript" src="/innerweb/v4.0/include/js/campushub.js"></script>
+<script type="text/javascript" src="/innerweb/v4.0/include/js/modals.js"></script>
+<script type="text/javascript" src="/innerweb/v4.0/include/js/jqmodal.js"></script>
+<script type="text/javascript" src="/innerweb/v4.0/include/js/set_modal_div_and_cart_summary_values.js"></script>
+<script type="text/javascript" src="/innerweb/v4.0/include/js/modernizr.min.js"></script>
+
+
+<script type="text/javascript">
+    
+
+    function doLoad(){
+        setFocusOnError();enableSimpleFormValidation();autoLinkInit();
+    }
+    window.addEventListener("load", doLoad);
+</script>
+
+
+
+<!-- set different prefix to be able to use a newer version of jQuery -->
+<script type="text/javascript">  
+    var $jq = $;   
+</script>
+<!-- LocalRef:4 -->
+
+<script type="text/javascript" src="/innerweb/v4.0/include/js/cookies.js"></script>
+<script type="text/javascript">
+<!--
+var referrer;
+var rootURL = 'http://www.bookstore.yorku.ca/';
+var rootSURL = 'https://www.bookstore.yorku.ca/';
+
+if (cookies_enabled) {
+
+referrer = getCookie('referring_url');
+if (!referrer) {
+    referrer = 'https://sfs.yorku.ca/aid/usloans';
+if (referrer == ''){
+referrer = 'None';
+}else if((referrer.indexOf(rootURL) >= 0) || (referrer.indexOf(rootSURL) >= 0)){
+referrer = 'Local';
+}
+setCookie('referring_url', referrer);
+referrer = getCookie('referring_url');
+if(!referrer){
+referrer = 'Unknown';
+}
+}else{
+    var referring_page = 'https://sfs.yorku.ca/aid/usloans';
+if ((referring_page.indexOf(rootURL) >= 0) ||(referring_page.indexOf(rootSURL) >= 0) ||(referring_page == '')) {
+} else {
+referrer = referring_page
+setCookie('referring_url', referrer);
+}
+}
+} else {
+referrer = 'Unknown';
+}
+//-->
+</script>
+
+
+<!-- Google site tag (gtag.js) - Google Universal Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-58519873-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){window.dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-58519873-1', {'anonymize_ip': false, 'debug_mode': false });
+</script>
+
+	
+	<!-- gives ability to assign CSS specific to ie10 -->
+	<script>
+		if(Function('/*@cc_on return document.documentMode===10@*/')()){document.documentElement.className+=' ie10';}
+	</script>	
+	
+	<script type="text/javascript">
+	/*! A fix for the iOS orientationchange zoom bug. Script by @scottjehl, rebound by @wilto.MIT / GPLv2 License.*/
+	(function(a){function m(){d.setAttribute("content",g),h=!0}function n(){d.setAttribute("content",f),h=!1}function o(b){l=b.accelerationIncludingGravity,i=Math.abs(l.x),j=Math.abs(l.y),k=Math.abs(l.z),(!a.orientation||a.orientation===180)&&(i>7||(k>6&&j<8||k<8&&j>6)&&i>5)?h&&n():h||m()}var b=navigator.userAgent;if(!(/iPhone|iPad|iPod/.test(navigator.platform)&&/OS [1-5]_[0-9_]* like Mac OS X/i.test(b)&&b.indexOf("AppleWebKit")>-1))return;var c=a.document;if(!c.querySelector)return;var d=c.querySelector("meta[name=viewport]"),e=d&&d.getAttribute("content"),f=e+",maximum-scale=1",g=e+",maximum-scale=10",h=!0,i,j,k,l;if(!d)return;a.addEventListener("orientationchange",m,!1),a.addEventListener("devicemotion",o,!1)})(this); 
+	</script>
+	
+	<!-- Add style sheets -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,700%7CRoboto:400,700" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://www.bookstore.yorku.ca/css/main.css">
+	<link rel="stylesheet" type="text/css" href="https://www.bookstore.yorku.ca/css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="https://www.bookstore.yorku.ca/fonts/fonts.css">
+	<link rel="stylesheet" type="text/css" href="../innerweb/v4.0/template/2016-1/slick/slick.min.css">
+	<link rel="stylesheet" type="text/css" href="https://www.bookstore.yorku.ca/css/print.css" media="print">
+	<link rel="shortcut icon" href="https://www.bookstore.yorku.ca/images/favicon.png" type="image/x-icon" />
+	
+</head>
+
+<!-- body layout options: one-column | two-column | left-vert-nav | right-vert-nav -->
+<body id="home" class="one-column ">
+
+	<div id="main-wrapper">
+
+<div class="top-banner">
+<div>
+	<h1 class="top-banner-store-name"><a href="https://www.bookstore.yorku.ca/default.asp?"><span class="accessibility">Welcome to </span>York University Bookstore</a></h1>
+	<span class="top-banner-info">
+		<!--<a class="contact-phone" href="tel:416-736-5701">416-736-5701</a>-->
+		<a href="https://www.bookstore.yorku.ca/site_about_us.asp?">Store Hours / Contact Us</a>
+	</span>
+</div>
+</div>
+
+<header>
+	
+		<div id="site-name">
+		<a href="https://www.bookstore.yorku.ca/default.asp?">
+		<img src="https://www.bookstore.yorku.ca/images/logo.png" alt="York University Bookstore logo">
+		<span>York University Bookstore</span></a>
+		</div>
+		
+		<div class="menu-container">
+		<div id="menu">
+			<!-- INCLUDE NAV STYLE SHEET -->
+<link rel="stylesheet" type="text/css" href="css/nav.css">
+
+<!-- HTML FOR BASE NAV -->
+<nav>
+	<!-- MOBILE MENU OVERLAY -->
+	<div class="mobile-menu-overlay"></div>
+	<!-- INCLUDED FOR ACCESSIBILITY REASONS -->
+	<div class="accessibility"><h2>Navigation</h2></div>
+	<!-- Only displays in mobile menu -->
+	<div class="mobile-menu-open"><a>Menu</a></div>
+	
+<div id="sitenav">
+	<!-- CLOSE MENU - MOBILE ONLY -->
+	<div class="mobile-menu-close"><a>Close Menu</a></div>
+	<!-- ACCOUNT INFO - MOBILE ONLY -->
+	<div class="mobile-login">
+		
+			<a href="https://www.bookstore.yorku.ca/account_login.asp?">Sign In</a><a href="https://www.bookstore.yorku.ca/account_create.asp?">Create an Account</a>
+		
+	</div>
+
+	<!-- BEGIN NAVIGATION LINKS -->
+	<ul>
+		<li class="nav-home-link"><a href="default.asp">Home</a></li>
+		<li><span>Textbooks</span>
+			<ul>
+				<li class="arrow-up"></li>
+				<li><a href="https://www.bookstore.yorku.ca/site_textbook_landing_page.asp?">Buy Textbooks</a></li>
+				<li><a href="https://www.bookstore.yorku.ca/sell_access_codes.asp?">eBooks & Digital Materials</a></li>
+				<li><a href="https://www.bookstore.yorku.ca/site_Day1Digital.asp?">Day1Digital eBooks</a></li>
+				<li><a href="https://www.bookstore.yorku.ca/site_osgoode.asp?">Osgoode Hall</a></li>
+				<li><a href="https://www.bookstore.yorku.ca/buyback.asp?">Sell Textbooks</a></li>
+				
+				<!--
+				<li><span>Textbook A</span>
+					<ul>
+						<li class="nav-back-one"><a>Back</a></li>
+						<li><a href="Textbook-A-1">Textbook A-1</a></li>
+						<li><a href="Textbook-A-2">Textbook A-2</a></li>
+						<li><a href="Textbook-A-3">Textbook A-3</a></li>
+					</ul>
+				</li>-->
+			</ul>
+		</li>
+		<li><span>Merchandise & General Books</span>
+			<ul class="mega">
+				<li class="arrow-up"></li>
+				<li><a href="https://www.bookstore.yorku.ca/shop_main.asp?">Shop All Merchandise</a></li>
+				<li><span>Frames and Graduation Gifts</span>
+					<ul>
+						<li class="nav-back-one"><a>Back</a></li>
+						<li>
+							<ul> <!-- COLUMN 1 -->
+								<li class="heading">Frames and Graduation Gifts</li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MTU&catalog_group_name=R3JhZHVhdGlvbiBHaWZ0cw&catalog_id=2262&catalog_name=RGlwbG9tYSBGcmFtZXM">Diploma Frames</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MTU&catalog_group_name=R3JhZHVhdGlvbiBHaWZ0cw&catalog_id=2263&catalog_name=UG9ydHJhaXQgUGhvdG8gRnJhbWVz">Portrait Frames</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MTU&catalog_group_name=R3JhZHVhdGlvbiBHaWZ0cw&catalog_id=2264&catalog_name=Q2VydGlmaWNhdGUgRnJhbWVz">Certificate Frames</a></li>
+								<li><a href="shop_product_list.asp?catalog_name=Q2xhc3MgUGhvdG8gRnJhbWVz&catalog_id=2265">Class Photo Frames</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MTU&catalog_group_name=RnJhbWVzICZhbXA7IEdyYWQgR2lmdHM&catalog_id=2284&catalog_name=Q2xhc3Mgb2YgMjAyMw">Class of 2023</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MTU&catalog_group_name=RnJhbWVzICZhbXA7IEdyYWQgR2lmdHM&catalog_id=2269&catalog_name=Q2xhc3Mgb2YgMjAyMg">Class of 2022</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MTU&catalog_group_name=R3JhZHVhdGlvbiBHaWZ0cw&catalog_id=2147&catalog_name=QWx1bW5p">Alumni</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MTU&catalog_group_name=R3JhZHVhdGlvbiBHaWZ0cw&catalog_id=2169&catalog_name=R3JhZCBHaWZ0IElkZWFz">Grad Gift Ideas</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MTU&catalog_group_name=R3JhZHVhdGlvbiBHaWZ0cw&catalog_id=2170&catalog_name=R3JhZCBTcGlyaXQgSXRlbXM">Grad Spirit Items</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MTU&catalog_group_name=R3JhZHVhdGlvbiBHaWZ0cw&catalog_id=2145&catalog_name=TW9tIGFuZCBEYWQ">Mom and Dad</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MTU&catalog_group_name=R3JhZHVhdGlvbiBHaWZ0cw&catalog_id=2171&catalog_name=RHJpbmt3YXJl">Drinkware</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MTU&catalog_group_name=R3JhZHVhdGlvbiBHaWZ0cw&catalog_id=2168&catalog_name=UGx1c2ggJmFtcDsgU3R1ZmZlZCBBbmltYWxz">Plush & Stuffed Animals</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			
+							<li><span>Equity, Diversity and Inclusion</span>
+					<ul>
+						<li class="nav-back-one"><a>Back</a></li>
+						<li>
+							<ul> <!-- COLUMN 1 -->
+								<li class="heading">Equity, Diversity and Inclusion</li>
+								<li><a href="shop_product_list.asp?catalog_group_id=Mg&catalog_group_name=R2VuZXJhbCBCb29rcw&catalog_id=2277&catalog_name=U3VzdGFpbmFiaWxpdHkgYW5kIENsaW1hdGUgQ2hhbmdl">Sustainability and Climate Change</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MjM&catalog_group_name=RXF1aXR5ICYgRGl2ZXJzaXR5&catalog_id=2273&catalog_name=MlNsZ2J0cWlh">2SLGBTQIA</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MjM&catalog_group_name=RXF1aXR5ICYgRGl2ZXJzaXR5&catalog_id=2261&catalog_name=Q2VsZWJyYXRpbmcgQmxhY2sgSGlzdG9yeSBNb250aA">Black History 
+								&amp; Culture</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MjM&catalog_group_name=RXF1aXR5ICYgRGl2ZXJzaXR5&catalog_id=2244&catalog_name=Q2VsZWJyYXRpbmcgSW5kaWdlbm91cyBQZW9wbGU">Truth and Reconciliation</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+
+				
+				
+				<li><span>Art Supplies</span>
+					<ul>
+						<li class="nav-back-one"><a>Back</a></li>
+						<li>
+							<ul> <!-- COLUMN 1 -->
+								<li class="heading">Art Supplies</li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MTI&catalog_group_name=QXJ0IFN1cHBsaWVz&catalog_id=2135&catalog_name=QWNyeWxpYyBQYWludHM">Acrylic Paints</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MTI&catalog_group_name=QXJ0IFN1cHBsaWVz&catalog_id=51&catalog_name=QXJ0IEJlZ2lubmVycw">Art Beginners</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MTI&catalog_group_name=QXJ0IFN1cHBsaWVz&catalog_id=2164&catalog_name=SGlnaGxpZ2h0ZXJzIGFuZCBNYXJrZXJz">Highlighters and Markers</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MTI&catalog_group_name=QXJ0IFN1cHBsaWVz&catalog_id=2239&catalog_name=UGhvdG9ncmFwaHkgU3VwcGxpZXM">Photography Supplies</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MTI&catalog_group_name=QXJ0IFN1cHBsaWVz&catalog_id=2130&catalog_name=U2tldGNocGFkcw">Sketchpads</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MTI&catalog_group_name=QXJ0IFN1cHBsaWVz&catalog_id=2133&catalog_name=V2F0ZXJjb2xvdXJz">Watercolours</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><span>Clothing</span>
+					<ul>
+						<li class="nav-back-one"><a>Back</a></li>
+						<li>
+							<ul> <!-- COLUMN 1 -->
+								<li class="heading">Men's Apparel</li>
+								<li><a href="shop_product_list.asp?catalog_group_id=NQ&catalog_group_name=Q2xvdGhpbmc&catalog_id=2129&catalog_name=TWVucy9VbmlzZXggSmFja2V0cw">Mens/Unisex Jackets</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=NQ&catalog_group_name=Q2xvdGhpbmc&catalog_id=1078&catalog_name=TWVucy9VbmlzZXggUGFudHMgJmFtcDsgU2hvcnRz">Mens/Unisex Pants & Shorts</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=NQ&catalog_group_name=Q2xvdGhpbmc&catalog_id=1076&catalog_name=TWVucy9VbmlzZXggU2hpcnRz">Mens/Unisex Shirts</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=NQ&catalog_group_name=Q2xvdGhpbmc&catalog_id=1077&catalog_name=TWVucy9VbmlzZXggU3dlYXRlcnMgJmFtcDsgSG9vZGllcw">Mens/Unisex Sweaters & Hoodies</a></li>
+								
+								<li class="heading">Women's Apparel</li>
+								<li><a href="shop_product_list.asp?catalog_group_id=NQ&catalog_group_name=Q2xvdGhpbmc&catalog_id=2128&catalog_name=V29tZW5zIEphY2tldHM">Womens Jackets</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=NQ&catalog_group_name=Q2xvdGhpbmc&catalog_id=1075&catalog_name=V29tZW5zIFBhbnRzICZhbXA7IFNob3J0cw">Womens Pants & Shorts</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=NQ&catalog_group_name=Q2xvdGhpbmc&catalog_id=2127&catalog_name=V29tZW5zIFNoaXJ0cw">Womens Shirts</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=NQ&catalog_group_name=Q2xvdGhpbmc&catalog_id=1074&catalog_name=V29tZW5zIFN3ZWF0ZXJzICZhbXA7IEhvb2RpZXM">Womens Sweaters & Hoodies</a></li>
+							</ul>
+							
+							<ul> <!-- COLUMN 2 -->
+								<li class="heading">Children</li>
+								<li><a href="shop_product_list.asp?catalog_group_id=NQ&catalog_group_name=Q2xvdGhpbmc&catalog_id=1072&catalog_name=Q2hpbGRyZW5z">Childrens</a></li>
+								
+								<li class="heading">Misc</li>
+								<li><a href="shop_product_list.asp?catalog_group_id=NQ&catalog_group_name=Q2xvdGhpbmc&catalog_id=2255&catalog_name=Q2FtcHVzIENvbGxlY3Rpb24gMjAyMQ">Campus Collection 2023</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=NQ&catalog_group_name=Q2xvdGhpbmc&catalog_id=2282&catalog_name=UHJvZ3JhbSBBcHBhcmVs">Program Apparel</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=NQ&catalog_group_name=Q2xvdGhpbmc&catalog_id=2148&catalog_name=SGF0cywgU2NhcmZzICZhbXA7IEdsb3Zlcw">Hats, Scarfs & Gloves</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=NQ&catalog_group_name=Q2xvdGhpbmc&catalog_id=2172&catalog_name=RmFpciBUcmFkZSBBcHBhcmVs">Fair Trade Apparel</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=NQ&catalog_group_name=Q2xvdGhpbmc&catalog_id=2259&catalog_name=U2lnbmF0dXJlIENvbGxlY3Rpb24">Signature Collection</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=NQ&catalog_group_name=Q2xvdGhpbmc&catalog_id=2258&catalog_name=Q2hhbXBpb24gQ29sbGVjdGlvbg">Champion Collection</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><span>Electronics</span>
+					<ul>
+						<li class="nav-back-one"><a>Back</a></li>
+						<li>
+							<ul> <!-- COLUMN 1 -->
+								<li class="heading">Electronics</li>
+								<li><a href="shop_product_list.asp?catalog_group_id=Nw&catalog_group_name=RWxlY3Ryb25pY3M&catalog_id=2225&catalog_name=RW5naW5lZXJpbmcgS2l0cw">Engineering Kits</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=Nw&catalog_group_name=RWxlY3Ryb25pY3M&catalog_id=2242&catalog_name=Q2FibGVzIGFuZCBDaGFyZ2Vycw">Cables and Chargers</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=Nw&catalog_group_name=RWxlY3Ryb25pY3M&catalog_id=41&catalog_name=Q2FsY3VsYXRvcnM">Calculators</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=Nw&catalog_group_name=RWxlY3Ryb25pY3M&catalog_id=1085&catalog_name=RHJpdmVzICZhbXA7IFN0b3JhZ2U">Drives & Storage</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><span>General Books</span>
+					<ul>
+						<li class="nav-back-one"><a>Back</a></li>
+						<li>
+							<ul> <!-- COLUMN 1 -->
+								<li class="heading">General Books</li>
+								<li><a href="shop_product_list.asp?catalog_group_id=Mg&catalog_group_name=R2VuZXJhbCBCb29rcw&catalog_id=2210&catalog_name=QW50aHJvcG9sb2d5ICZhbXA7IEN1bHR1cmFsIFN0dWRpZXM">Anthropology & Cultural Studies</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=Mg&catalog_group_name=R2VuZXJhbCBCb29rcw&catalog_id=54&catalog_name=QXJ0IEdhbGxlcnk">Art Gallery</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=Mg&catalog_group_name=R2VuZXJhbCBCb29rcw&catalog_id=2209&catalog_name=QXJ0LCBGaWxtICZhbXA7IFRoZWF0cmU">Art, Film & Theatre</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=Mg&catalog_group_name=R2VuZXJhbCBCb29rcw&catalog_id=2224&catalog_name=QmlvZ3JhcGh5">Biography</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=Mg&catalog_group_name=R2VuZXJhbCBCb29rcw&catalog_id=2215&catalog_name=QnVzaW5lc3MsIEVjb25vbWljcyAmYW1wOyBMYXc">Business, Economics & Law</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=Mg&catalog_group_name=R2VuZXJhbCBCb29rcw&catalog_id=2208&catalog_name=Q2FuYWRhLU1lZGl0ZXJyYW5lYW4gQ2VudHJl">Canada-Mediterranean Centre</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MjM&catalog_group_name=RXF1aXR5ICYgRGl2ZXJzaXR5&catalog_id=2261&catalog_name=Q2VsZWJyYXRpbmcgQmxhY2sgSGlzdG9yeSBNb250aA">Celebrating Black History Month</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=Mg&catalog_group_name=R2VuZXJhbCBCb29rcw&catalog_id=2217&catalog_name=RWR1Y2F0aW9u">Education</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=Mg&catalog_group_name=R2VuZXJhbCBCb29rcw&catalog_id=2223&catalog_name=RW1vdGlvbiBGb2N1c2VkIFRoZXJhcHk">Emotion Focused Therapy</a></li>							
+								<li><a href="shop_product_list.asp?catalog_group_id=Mg&catalog_group_name=R2VuZXJhbCBCb29rcw&catalog_id=2216&catalog_name=RW52aXJvbm1lbnQgJmFtcDsgR2VvZ3JhcGh5">Environment & Geography</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=Mg&catalog_group_name=R2VuZXJhbCBCb29rcw&catalog_id=2221&catalog_name=RmljdGlvbg">Fiction</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=Mg&catalog_group_name=R2VuZXJhbCBCb29rcw&catalog_id=2218&catalog_name=R2VuZGVyIFN0dWRpZXM">Gender Studies</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=Mg&catalog_group_name=R2VuZXJhbCBCb29rcw&catalog_id=2222&catalog_name=R3JhcGhpYyBOb3ZlbHM">Graphic Novels</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=Mg&catalog_group_name=R2VuZXJhbCBCb29rcw&catalog_id=2213&catalog_name=SGlzdG9yeQ">History</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=Mg&catalog_group_name=R2VuZXJhbCBCb29rcw&catalog_id=2207&catalog_name=TmV3IFJlbGVhc2Vz">New Releases</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=Mg&catalog_group_name=R2VuZXJhbCBCb29rcw&catalog_id=2219&catalog_name=UGhpbG9zb3BoeSAmYW1wOyBSZWxpZ2lvbg">Philosophy & Religion</a></li>							
+								<li><a href="shop_product_list.asp?catalog_group_id=Mg&catalog_group_name=R2VuZXJhbCBCb29rcw&catalog_id=2211&catalog_name=UGxheXMgJmFtcDsgUG9ldHJ5">Plays & Poetry</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=Mg&catalog_group_name=R2VuZXJhbCBCb29rcw&catalog_id=2177&catalog_name=UmVmZXJlbmNlIE1hdGVyaWFsIGFuZCBEaWN0aW9uYXJpZXM">Reference Material and Dictionaries</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=Mg&catalog_group_name=R2VuZXJhbCBCb29rcw&catalog_id=2214&catalog_name=U2NpZW5jZSAmYW1wOyBNYXRo">Science & Math</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=Mg&catalog_group_name=R2VuZXJhbCBCb29rcw&catalog_id=2212&catalog_name=U29jaW9sZ3kgJmFtcDsgQ29tbXVuaWNhdGlvbg">Sociolgy & Communication</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=Mg&catalog_group_name=R2VuZXJhbCBCb29rcw&catalog_id=2226&catalog_name=U3BlY2lhbCBFdmVudHM">Special Events</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=Mg&catalog_group_name=R2VuZXJhbCBCb29rcw&catalog_id=2206&catalog_name=U3BlY2lhbCBJbnRlcmVzdA">Special Interest</a></li>
+								<li><a href="https://staging.prismservices.net/yorku/shop_product_list.asp?catalog_name=U3BlY2lhbCBUcmFkZSBCb29rIFNhbGU&catalog_id=2234">Special Trade Book Sale</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=Mg&catalog_group_name=R2VuZXJhbCBCb29rcw&catalog_id=2277&catalog_name=U3VzdGFpbmFiaWxpdHkgYW5kIENsaW1hdGUgQ2hhbmdl">Sustainability and Climate Change</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=Mg&catalog_group_name=R2VuZXJhbCBCb29rcw&catalog_id=58&catalog_name=WW9yayBBdXRob3Jz">York Authors</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=Mg&catalog_group_name=R2VuZXJhbCBCb29rcw&catalog_id=2220&catalog_name=WW91bmcgQWR1bHRz">Young Adults</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><span>General Merchandise</span>
+					<ul>
+						<li class="nav-back-one"><a>Back</a></li>
+						<li>
+							<ul> <!-- COLUMN 1 -->
+								<li class="heading">General Merchandise</li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MQ&catalog_group_name=R2VuZXJhbCBNZXJjaGFuZGlzZQ&catalog_id=2237&catalog_name=U3VzdGFpbmFibGUgUHJvZHVjdHM">Sustainable Products</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MQ&catalog_group_name=R2VuZXJhbCBNZXJjaGFuZGlzZQ&catalog_id=2240&catalog_name=RXF1aXR5LCBEaXZlcnNpdHkgYW5kIEluY2x1c2lvbiBQcm9kdWN0cw">Equity, Diversity and Inclusion Products </a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MQ&catalog_group_name=R2VuZXJhbCBNZXJjaGFuZGlzZQ&catalog_id=2163&catalog_name=QWNjZXNzb3JpZXM">Accessories</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MQ&catalog_group_name=R2VuZXJhbCBNZXJjaGFuZGlzZQ&catalog_id=1113&catalog_name=QmFja3BhY2tzICZhbXA7IEJhZ3M">Backpacks & Bags</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MQ&catalog_group_name=R2VuZXJhbCBNZXJjaGFuZGlzZQ&catalog_id=32&catalog_name=TGFib3JhdG9yeSBTdXBwbGllcw">Laboratory Supplies</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MQ&catalog_group_name=R2VuZXJhbCBNZXJjaGFuZGlzZQ&catalog_id=1091&catalog_name=TGFueWFyZHMgJmFtcDsgS2V5Y2hhaW5z">Lanyards & Keychains</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MQ&catalog_group_name=R2VuZXJhbCBNZXJjaGFuZGlzZQ&catalog_id=31&catalog_name=TXVncw">Mugs</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MQ&catalog_group_name=R2VuZXJhbCBNZXJjaGFuZGlzZQ&catalog_id=2183&catalog_name=Tm9uLU1lZGljYWwgU3VwcGxpZXM">Non-Medical Supplies</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MQ&catalog_group_name=R2VuZXJhbCBNZXJjaGFuZGlzZQ&catalog_id=2181&catalog_name=Tm92ZWx0aWVz">Novelties</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MQ&catalog_group_name=R2VuZXJhbCBNZXJjaGFuZGlzZQ&catalog_id=2257&catalog_name=U2Nob29sIEVzc2VudGlhbHMgMjAyMg">School Essentials 2023</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MQ&catalog_group_name=R2VuZXJhbCBNZXJjaGFuZGlzZQ&catalog_id=2155&catalog_name=VHJhdmVsIE11Z3M">Travel Mugs</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MQ&catalog_group_name=R2VuZXJhbCBNZXJjaGFuZGlzZQ&catalog_id=2154&catalog_name=V2F0ZXIgQm90dGxlcw">Water Bottles</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><span>Gifts</span>
+					<ul>
+						<li class="nav-back-one"><a>Back</a></li>
+						<li>
+							<ul> <!-- COLUMN 1 -->
+								<li class="heading">Gifts</li>
+								<li><a href="shop_product_list.asp?catalog_group_id=OQ&catalog_group_name=R2lmdHM&catalog_id=37&catalog_name=R2lmdCBDYXJkcw">Gift Cards</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=OQ&catalog_group_name=R2lmdHM&catalog_id=1093&catalog_name=R2lmdCBJZGVhcw">Gift Ideas</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=OQ&catalog_group_name=R2lmdHM&catalog_id=2145&catalog_name=TW9tIGFuZCBEYWQ">Mom and Dad</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=OQ&catalog_group_name=R2lmdHM&catalog_id=1092&catalog_name=U2Nob29sIFNwaXJpdA">School Spirit</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=OQ&catalog_group_name=R2lmdHM&catalog_id=1101&catalog_name=VG95cy9QbHVzaA">Toys/Plush</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><span>Glendon</span>
+					<ul>
+						<li class="nav-back-one"><a>Back</a></li>
+						<li>
+							<ul> <!-- COLUMN 1 -->
+								<li class="heading">Glendon</li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MTc&catalog_group_name=R2xlbmRvbg&catalog_id=2150&catalog_name=R2xlbmRvbiBNZW4mIzM5O3MgYW5kIFVuaXNleCBDbG90aGluZw">Glendon Mens and Unisex Clothing</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MTc&catalog_group_name=R2xlbmRvbg&catalog_id=2251&catalog_name=R2xlbmRvbiBXb21lbiYjMzk7cyBDbG90aGluZw">Glendon Womens Clothing</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MTc&catalog_group_name=R2xlbmRvbg&catalog_id=2252&catalog_name=R2xlbmRvbiBHaWZ0cw">Glendon Gifts</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MTc&catalog_group_name=R2xlbmRvbg&catalog_id=2253&catalog_name=R2xlbmRvbiBEcmlua3dhcmU">Glendon Drinkware</a></li>
+								<!--
+								<li><a href="shop_product_list.asp?catalog_group_id=MTc&catalog_group_name=R2xlbmRvbg&catalog_id=2250&catalog_name=R2xlbmRvbiBDbGVhcmFuY2U">Glendon Clearance</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MTc&catalog_group_name=R2xlbmRvbg&catalog_id=2249&catalog_name=R2xlbmRvbiBMYXN0IENoYW5jZSA2MCUgT2Zm">Glendon Last Chance 60% Off</a></li>
+								-->
+								<li><a href="shop_product_list.asp?catalog_group_id=MTc&catalog_group_name=R2xlbmRvbg&catalog_id=2254&catalog_name=R2xlbmRvbiBTdGF0aW9uZXJ5">Glendon Stationery</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><span>Lassonde</span>
+					<ul>
+						<li class="nav-back-one"><a>Back</a></li>
+						<li>
+							<ul> <!-- COLUMN 1 -->
+								<li class="heading">Lassonde</li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MjQ&catalog_group_name=TGFzc29uZGU&catalog_id=2268&catalog_name=TGFzc29uZGUgR2lmdHM">Lassonde Gifts</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MjQ&catalog_group_name=TGFzc29uZGU&catalog_id=2267&catalog_name=TGFzc29uZGUgRHJpbmt3YXJl">Lassonde Drinkware</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MjQ&catalog_group_name=TGFzc29uZGU&catalog_id=2271&catalog_name=TGFzc29uZGUgTWVuJiMzOTtzIGFuZCBVbmlzZXggQ2xvdGhpbmc">Lassonde Men’s and Unisex Clothing</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MjQ&catalog_group_name=TGFzc29uZGU&catalog_id=2272&catalog_name=TGFzc29uZGUgV29tZW4mIzM5O3MgQ2xvdGhpbmc">Lassonde Women’s Clothing</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><span>Markham</span>
+					<ul>
+						<li class="nav-back-one"><a>Back</a></li>
+						<li>
+							<ul> <!-- COLUMN 1 -->
+								<li class="heading">Markham</li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MjU&catalog_group_name=TWFya2hhbQ&catalog_id=2286&catalog_name=TWFya2hhbSBHaWZ0cw">Markham Gifts</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MjU&catalog_group_name=TWFya2hhbQ&catalog_id=2285&catalog_name=TWFya2hhbSBNZW4mIzM5O3MgYW5kIFVuaXNleCBDbG90aGluZw">Markham Men’s and Unisex Clothing</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+
+				<li><span>Osgoode</span>
+					<ul>
+						<li class="nav-back-one"><a>Back</a></li>
+						<li>
+							<ul> <!-- COLUMN 1 -->
+								<li class="heading">Osgoode</li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MTM&catalog_group_name=T3Nnb29kZQ&catalog_id=1102&catalog_name=T3Nnb29kZSBNZW4mIzM5O3MgQ2xvdGhpbmc">Osgoode Mens 
+								&amp; Unisex Clothing</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MTM&catalog_group_name=T3Nnb29kZQ&catalog_id=2134&catalog_name=T3Nnb29kZSBXb21lbiYjMzk7cyBDbG90aGluZw">Osgoode Womens Clothing</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MTM&catalog_group_name=T3Nnb29kZQ&catalog_id=1105&catalog_name=T3Nnb29kZSBHaWZ0cw">Osgoode Gifts</a></li>								
+								<li><a href="shop_product_list.asp?catalog_group_id=MTM&catalog_group_name=T3Nnb29kZQ&catalog_id=2149&catalog_name=T3Nnb29kZSBEcmlua3dhcmU">Osgoode Drinkware</a></li>
+								<!--
+								<li><a href="shop_product_list.asp?catalog_group_id=MTM&catalog_group_name=T3Nnb29kZQ&catalog_id=2245&catalog_name=T3Nnb29kZSBDbGVhcmFuY2U">Osgoode Clearance</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MTM&catalog_group_name=T3Nnb29kZQ&catalog_id=2246&catalog_name=T3Nnb29kZSBMYXN0IENoYW5jZSA2MCUgT2Zm">Osgoode Last Chance 60% Off</a></li>
+								-->
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><span>Schulich School of Business</span>
+					<ul>
+						<li class="nav-back-one"><a>Back</a></li>
+						<li>
+							<ul> <!-- COLUMN 1 -->
+								<li class="heading">Schulich</li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MTA&catalog_group_name=U2NodWxpY2g&catalog_id=49&catalog_name=aGF0">Schulich Mens 
+								&amp; Unisex Clothing</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MTA&catalog_group_name=U2NodWxpY2g&catalog_id=2137&catalog_name=U2NodWxpY2ggV29tZW4mIzM5O3MgQ2xvdGhpbmc">Schulich Womens Clothing</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MTA&catalog_group_name=U2NodWxpY2g&catalog_id=2136&catalog_name=U2NodWxpY2ggR2lmdHM">Schulich Gifts</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MTA&catalog_group_name=U2NodWxpY2g&catalog_id=1115&catalog_name=U2NodWxpY2ggTXVncw">Schulich Mugs</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MTA&catalog_group_name=U2NodWxpY2g&catalog_id=2176&catalog_name=U2NodWxpY2ggVHJhdmVsIE11Z3M">Schulich Travel Mugs</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MTA&catalog_group_name=U2NodWxpY2g&catalog_id=2175&catalog_name=U2NodWxpY2ggV2F0ZXIgQm90dGxlcw">Schulich Water Bottles</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MTA&catalog_group_name=U2NodWxpY2g&catalog_id=2151&catalog_name=U2NodWxpY2ggQWNjZXNzb3JpZXM">Schulich Accessories</a></li>
+								<!--
+								<li><a href="shop_product_list.asp?catalog_group_id=MTA&catalog_group_name=U2NodWxpY2g&catalog_id=2248&catalog_name=U2NodWxpY2ggQ2xlYXJhbmNl">Schulich Clearance</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MTA&catalog_group_name=U2NodWxpY2g&catalog_id=2247&catalog_name=U2NodWxpY2ggTGFzdCBDaGFuY2UgNjAlIE9mZg">Schulich Last Chance 60% Off</a></li>
+								-->
+								<li><a href="shop_product_list.asp?catalog_group_id=MTA&catalog_group_name=U2NodWxpY2g&catalog_id=2157&catalog_name=S2VsbG9nZyBTY2h1bGljaA">Kellogg Schulich</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MTA&catalog_group_name=U2NodWxpY2g&catalog_id=2185&catalog_name=S2VsbG9nZyBTY2h1bGljaCBFbWJhIEZyYW1lcw">Kellogg Schulich Emba Frames</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><span>Stationery</span>
+					<ul>
+						<li class="nav-back-one"><a>Back</a></li>
+						<li>
+							<ul> <!-- COLUMN 1 -->
+								<li class="heading">Stationery</li>
+								<li><a href="shop_product_list.asp?catalog_group_id=Ng&catalog_group_name=U3RhdGlvbmVyeQ&catalog_id=1117&catalog_name=Q3JheW9sYQ">Crayola</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=Ng&catalog_group_name=U3RhdGlvbmVyeQ&catalog_id=2178&catalog_name=QWdlbmRhcyAmYW1wOyBDYWxlbmRhcnM">Agendas & Calendars</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=Ng&catalog_group_name=U3RhdGlvbmVyeQ&catalog_id=2131&catalog_name=Rm91bnRhaW4gUGVucw">Fountain Pens</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=Ng&catalog_group_name=U3RhdGlvbmVyeQ&catalog_id=1084&catalog_name=Tm90ZWJvb2tzICZhbXA7IEJpbmRlcnM">Notebooks & Binders</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=Ng&catalog_group_name=U3RhdGlvbmVyeQ&catalog_id=2164&catalog_name=SGlnaGxpZ2h0ZXJzIGFuZCBNYXJrZXJz">Highlighters and Markers</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=Ng&catalog_group_name=U3RhdGlvbmVyeQ&catalog_id=2144&catalog_name=UGFwZXIgJmFtcDsgTm90ZWJvb2tz">Paper & Notebooks</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=Ng&catalog_group_name=U3RhdGlvbmVyeQ&catalog_id=1099&catalog_name=UG9ydGZvbGlvcyAmYW1wOyBBZ2VuZGFz">Portfolios & Agendas</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=Ng&catalog_group_name=U3RhdGlvbmVyeQ&catalog_id=2166&catalog_name=UGVuY2lscyBhbmQgUGVuY2lsIFNldHM">Pencils and Pencil Sets</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=Ng&catalog_group_name=U3RhdGlvbmVyeQ&catalog_id=2165&catalog_name=UGVucyBhbmQgUGVuIFNldHM">Pens and Pen Sets</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><span>York Lions</span>
+					<ul>
+						<li class="nav-back-one"><a>Back</a></li>
+						<li>
+							<ul> <!-- COLUMN 1 -->
+								<li class="heading">York Lions</li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MjA&catalog_group_name=WW9yayBMaW9ucw&catalog_id=2161&catalog_name=WW9yayBMaW9ucw">York Lions</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><span>Special Sale Events</span>
+					<ul>
+						<li class="nav-back-one"><a>Back</a></li>
+						<li>
+							<ul> <!-- COLUMN 1 -->
+								<li class="heading">Special Sale Events</li>
+								
+								<li><a href="shop_product_list.asp?catalog_group_id=MTk&catalog_group_name=U3BlY2lhbCBTYWxlIEV2ZW50cw&catalog_id=2260&catalog_name=TGltaXRlZCBFZGl0aW9ucw">Limited Editions</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MQ&catalog_group_name=R2VuZXJhbCBNZXJjaGFuZGlzZQ&catalog_id=2257&catalog_name=U2Nob29sIEVzc2VudGlhbHMgMjAyMg">School Essentials 2022</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!--<li><span>Clearance</span>
+					<ul>
+						<li class="nav-back-one"><a>Back</a></li>
+						<li>
+							<ul> <!-- COLUMN 1 --><!--
+								<li class="heading">CLOTHING CLEARANCE</li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MjI&catalog_group_name=Q2xlYXJhbmNl&catalog_id=2228&catalog_name=V29tZW4gQ2xvdGhpbmcgQ2xlYXJhbmNl">Women Clothing Clearance</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MjI&catalog_group_name=Q2xlYXJhbmNl&catalog_id=2229&catalog_name=TWVuIGFuZCBVbmlzZXggQ2xvdGhpbmcgQ2xlYXJhbmNl">Men and Unisex Clothing Clearance</a></li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MjI&catalog_group_name=Q2xlYXJhbmNl&catalog_id=2233&catalog_name=Q2FtcHVzIENvbGxlY3Rpb24gQ2xvdGhpbmcgQ2xlYXJhbmNl">Campus Collection Clothing Clearance</a></li>
+								<li class="heading">GIFTS CLEARANCE</li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MjI&catalog_group_name=Q2xlYXJhbmNl&catalog_id=2230&catalog_name=R2lmdHMgQ2xlYXJhbmNl">Gifts Clearance</a></li>
+								<li class="heading">SUPPLIES CLEARANCE</li>
+								<li><a href="shop_product_list.asp?catalog_group_id=MjI&catalog_group_name=Q2xlYXJhbmNl&catalog_id=2231&catalog_name=U3VwcGxpZXMgYW5kIEJhZ3MgQ2xlYXJhbmNl">Supplies  &amp; Bags Clearance</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>-->
+
+				<li><span>2FA Tokens</span>
+					<ul>
+						<li class="nav-back-one"><a>Back</a></li>
+						<li>
+							<ul> <!-- COLUMN 1 -->
+								<li class="heading">2FA Tokens</li>
+								<li><a href="shop_product_detail.asp?product_name=RFVPIDJGQSBIQVJEV0FSRSBUT0tFTg&pf_id=294616&type=1&catalog_name=MkZBIEhBUkRXQVJFIFRPS0VO&catalog_id=2227">2FA Tokens</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li><span>Store Info</span>
+			<ul>
+				<li class="arrow-up"></li>
+				<li><a href="https://www.bookstore.yorku.ca/site_about_us.asp?">About Us</a></li>
+				<li><a href="https://www.bookstore.yorku.ca/site_policies.asp?">Store Policies</a></li>
+				<li><a href="https://www.bookstore.yorku.ca/site_scholar_dollars.asp?">Scholar Dollars</a></li>
+				<li><a href="https://www.bookstore.yorku.ca/site_about_us.asp?">Store Hours</a></li>
+			</ul>
+		</li>
+		<li><span>Faculty & Staff</span>
+			<ul>
+				<li class="arrow-up"></li>
+				<li><a href="https://www.bookstore.yorku.ca/site_faculty.asp?">Textbook/Course Materials</a></li>
+				<li><a href="https://www.bookstore.yorku.ca/site_supplies.asp?">Supplies & Custom Orders</a></li>
+				<li><a target="_blank" href="http://bookstore.apps01.yorku.ca/machform/view.php?id=15046">Special Orders</a></li>
+			</ul>
+		</li>
+	</ul>
+</div> <!-- END #sitenav -->
+	
+</nav> <!-- END nav -->
+<script type='text/javascript' src='js/nav.js'></script>
+
+			
+			<div id="user-nav">	
+
+			<!-- USER-SUMMARY DISPLAY -->
+                <div id="user-summary"><span class="user-message logged-out">You are not signed in</span><br /><a class="user-login" href="https://www.bookstore.yorku.ca/account_login.asp?">Sign In</a></div>
+			
+			<!-- CART-SUMMARY DISPLAY -->
+			    			<div id="cart-summary"><a href="https://www.bookstore.yorku.ca/cart.asp?">				<strong class="accessibility">My Cart</strong><br /><span id="cartSummaryValues"><span class="cartSummaryCount">0 items</span></span><br/><span id="cartSummaryLink"></span><br/></a></div>
+
+						
+			<!-- MOBILE SEARCH BUTTON -->
+			<div class="mobile-search">
+				<a title="open search">Search</a>
+			</div>
+			
+			</div> <!-- END USER-NAV -->
+			
+			<div id="site-search">
+	<form action="https://www.bookstore.yorku.ca/search_index_results.asp?" method="get" name="siteSearch" id="frm-sitesearch">
+		<label class="accessibility" for="txtSearch">Search website for products</label>
+		<input name="search_text" id="txtSearch" type="text" class="box" autofocus title="Search" spellcheck="false" autocomplete="off" maxlength="50" placeholder="Search">
+		<input type="hidden" name="pageaction" value="redirect">
+		<input type="submit" value="GO" class="button">
+	</form>
+</div><!-- end #site-search -->
+
+		</div>
+		</div>
+		
+		<a href="#main" title="skip navigation" class="accessibility">skip to main content</a>
+							
+</header>
+
+<div id="page">
+<div class="subheader">
+    <!-- BEGIN ALERT -->
+    
+    <!-- END ALERT -->
+</div>
+		
+	<div id="content" class="two-col buy-text">
+		<div id="content-top"></div>
+			<div id="main" role="main">
+			<head>
+</head>
+
+<p>York University Bookstore makes it easy to find the exact textbooks you need for every class. Add your courses to view a list of textbooks and materials as specified by your instructor(s).</p>
+
+<div class="hr"><hr></div>
+
+<div class="course-help">
+<h2>Find It <span></span> Add It <span></span> Buy It</h2>
+
+<div class="trigger-button">Not sure what to do? Click for instructions.</div>
+<ul class="accordion text-instructions" style="display:none">
+		<li>Select the Term, Department, Course, and Section affiliated with your class.</li>
+		<li>Click the ADD COURSE TO LIST button to add the class to your course list.</li>
+		<li>Click the GET YOUR BOOKS button to see a full list of all your books for each selected class</li>
+		
+		<p><strong><em>Have more than one class to buy books for?</em></strong><br>
+		No Problem! Simply repeat the above steps to add as many classes as you need.</p>
+</ul>
+</div>
+
+
+
+<script type="text/javascript" src="/innerweb/v4.0/include/js/buy_textbookexpress.js"></script>
+<script type="text/javascript" src="/innerweb/v4.0/include/js/home_textbook_express.js"></script>
+
+
+
+
+<div class="block-onecol  block-textbookexpress highlight">
+		<h3>Find Your Books</h3>
+		York University textbooks
+<form action="https://www.bookstore.yorku.ca/textbook_express.asp?mode=2&step=2" method="post" id="TextbookForm" name="TextbookForm">
+		<input type="hidden" name="tbe-block-mode" id="tbe-block-mode" value="0"/>
+		<a href="#" class="action-link" id="add-courses-to-list">Add courses to list</a>
+		<div class="block-course-select" id="course-selector">
+			<p>
+				<label for="fTerm">Select a Campus Term</label><br/>
+				<input type="hidden" name="__CSRFToken" id="__CSRFToken" value="hYR7%2flw0WU4e3sWcxLtOHSCrJBZs6xP3vAIzTLqmUyGka4vBYii4DKC3hAsZMq3GfLRJ89mEyX4tgdd03uuqcHuH3BkOdgA%2fYCktAUVfhrJ6OXLdB%2b02eICPkGxt4X%2bz"><select name="selTerm" id="fTerm" class="box" title="Select a campus term"><option value="0|0">------- Select A Campus Term -------</option><option value="3|132">KEELE CAMPUS - FALL TERM 2023 - KEELE CAMPUS</option><option value="3|131">KEELE CAMPUS - FALL WINTER TERM 2023 - KEELE CAMPUS</option><option value="3|128">KEELE CAMPUS - 2023 SCHOOL OF CONTINUING STUDIES - KEELE CAMPUS</option><option value="3|133">KEELE CAMPUS - OSGOODE FALL 2023 - KEELE CAMPUS</option></select>
+			</p>
+			<p>
+				<label for="fDept">Select a Department</label><br/>
+				<select class="box" id="fDept" name="selDept" disabled="disabled">
+				</select>
+			</p>
+			<p>
+				<label for="fCourse">Select a Course</label><br/>
+				<select class="box" id="fCourse" name="selCourse" disabled="disabled">
+				</select>
+			</p>
+			<p>
+				<label for="fSection">Select a Section</label><br/>
+				<select class="box" id="fSection" name="selSection" disabled="disabled">
+				</select> <input type="button" class="button" value="Add Course To List" id="tbe-add-section" name="tbe-add-section"/>
+			</p>
+		</div>
+		<div class="block-item" id="no-items">
+			<p>There are currently no courses added to your list.</p>
+		</div>
+		<div id="course-list">
+			<div class="block-item">
+				<h4><span>Your Course List</span></h4>
+				<ol id="section-list">
+				</ol>
+
+			</div>
+			<p>
+				<input id="sectionIds" type="hidden" name="sectionIds"/>
+				<input type="submit" class="button" value="Get Your Books" id="generate-book-list" name="generate-book-list"/>
+			</p>
+		</div>
+		</form>
+
+		
+	</div>
+	
+	
+	
+			</div>
+			<div id="advertising">
+<div id="adblock">
+
+
+</div>
+
+</div>
+		<div id="content-bottom"></div>
+	</div>
+		
+</div><!-- end page -->
+
+<footer>
+	<div id="footer-box">
+	<h1 class="accessibility">York University Bookstore - Website Footer</h1>
+		<div class="footer-leftcol">
+			<h2 class="accessibility">Info and Sign Ups</h2>
+			
+			
+			<div class="footer-block">
+				<!-- BEGIN STORE HOURS -->
+<div class="store-hours"><div class="hours-block-1"><h3>Store Hours (Keele Bookstore) - Open for Merch AND Textbooks</h3><table><caption class="accessibility">Store hours</caption><tbody><tr><th scope="row">Monday</th><td>9:00AM - 5:00PM</td></tr><tr><th scope="row">Tuesday</th><td>9:00AM - 5:00PM</td></tr><tr><th scope="row">Wednesday</th><td>9:00AM - 5:00PM</td></tr><tr><th scope="row">Thursday</th><td>9:00AM - 5:00PM</td></tr><tr><th scope="row">Friday</th><td>9:00AM - 5:00PM</td></tr><tr><th scope="row">Saturday</th><td>CLOSED</td></tr><tr><th scope="row">Sunday</th><td>CLOSED</td></tr></tbody></table><p class="hours-text-link"><a href="site_about_us.asp">Please click here for more info and other stores.</a></p><div class="hours-text"><h4></h4><p><strong>The Keele York Lanes Bookstore is open to in person shopping of all products. The&nbsp;Canada Post Outlet is open Monday-Friday and closed on weekends.</strong></p>
+<p>We are here to help and have a team of our best people dedicated to responding to customer requests during regular business hours.&nbsp; <a href="http://bookstore.apps01.yorku.ca/machform/view.php?id=26645">Ask us a question</a>.</p></div></div><div class="hours-block-2"><h3>Glendon Bookstore</h3><table><caption class="accessibility">Store hours</caption><tbody><tr><th scope="row">Monday</th><td>11:00AM - 4:00PM</td></tr><tr><th scope="row">Tuesday</th><td>11:00AM - 4:00PM</td></tr><tr><th scope="row">Wednesday</th><td>11:00AM - 4:00PM</td></tr><tr><th scope="row">Thursday</th><td>11:00AM - 4:00PM</td></tr><tr><th scope="row">Friday</th><td>CLOSED</td></tr><tr><th scope="row">Saturday</th><td>CLOSED</td></tr><tr><th scope="row">Sunday</th><td>CLOSED</td></tr></tbody></table><p class="hours-text-link"><a href="site_about_us.asp">Please click here for more info and other stores.</a></p><div class="hours-text"><h4></h4><p><strong>The Glendon Store is open to in person shopping of all products including Textbooks and General Merchandise. Textbooks can also be purchased online.&nbsp; Online orders are being processed daily.&nbsp; </strong><strong><br /></strong></p>
+<p>Our <a href="https://www.bookstore.yorku.ca/sell_access_codes.asp">selection of e-books</a> is vastly expanded with instant access.</p>
+<p>We are here to help and have a team of our best people dedicated to responding to customer requests during regular business hours.&nbsp; <a href="http://bookstore.apps01.yorku.ca/machform/view.php?id=26645">Ask us a question</a>.</p></div></div><div class="hours-block-3"><h3>Osgoode Material Distribution Centre</h3><table><caption class="accessibility">Store hours</caption><tbody><tr><th scope="row">Monday</th><td>CLOSED</td></tr><tr><th scope="row">Tuesday</th><td>CLOSED</td></tr><tr><th scope="row">Wednesday</th><td>CLOSED</td></tr><tr><th scope="row">Thursday</th><td>CLOSED</td></tr><tr><th scope="row">Friday</th><td>CLOSED</td></tr><tr><th scope="row">Saturday</th><td>CLOSED</td></tr><tr><th scope="row">Sunday</th><td>CLOSED</td></tr></tbody></table><p class="hours-text-link"><a href="site_about_us.asp">Please click here for more info and other stores.</a></p><div class="hours-text"><h4></h4><p>Osgoode Students - please <a href="https://www.bookstore.yorku.ca/site_osgoode.asp">visit our Osgoode Site</a> for regular updates including how to rent an Osgoode locker or purchase your textbooks.</p>
+<p><strong><span style="mso-fareast-font-family: 'Times New Roman';">The Osgoode Bookstore is currently closed for the Fall semester and will reopen in the new year for the winter term.&nbsp; Osgoode books are available to purchase year round at the Keele Bookstore in York Lanes and Online.</span>&nbsp; Online orders are being processed daily.&nbsp; </strong></p>
+<p>We are here to help and have a team of our best people dedicated to responding to customer requests during regular business hours.&nbsp; <a href="http://bookstore.apps01.yorku.ca/machform/view.php?id=26645">Ask us a question</a>.</p></div></div><div class="hours-block-4"><h3>Schulich Trading Floor (General Merchandise Only)</h3><table><caption class="accessibility">Store hours</caption><tbody><tr><th scope="row">Monday</th><td>CLOSED</td></tr><tr><th scope="row">Tuesday</th><td>CLOSED</td></tr><tr><th scope="row">Wednesday</th><td>CLOSED</td></tr><tr><th scope="row">Thursday</th><td>11:00AM - 2:00PM</td></tr><tr><th scope="row">Friday</th><td>CLOSED</td></tr><tr><th scope="row">Saturday</th><td>CLOSED</td></tr><tr><th scope="row">Sunday</th><td>CLOSED</td></tr></tbody></table><p class="hours-text-link"><a href="site_about_us.asp">Please click here for more info and other stores.</a></p><div class="hours-text"><h4></h4><p>Schulich branded products are also available to purchase year round at the Keele Campus Store in York Lanes and <a href="https://bookstore.yorku.ca/shop_product_list.asp?catalog_group_id=MTA&amp;catalog_group_name=U2NodWxpY2g&amp;catalog_id=49&amp;catalog_name=U2NodWxpY2ggTWVuJ3MgQ2xvdGhpbmc">shop for Schulich branded products online at bookstore.yorku.ca</a>.&nbsp; We are here to help and have a team of our best people dedicated to responding to customer requests during regular business hours.&nbsp; <a href="http://bookstore.apps01.yorku.ca/machform/view.php?id=26645">Ask us a question</a>.</p></div></div></div>
+<!-- END STORE HOURS -->
+			</div>
+			
+		</div>
+		
+		<div class="footer-rightcol">
+			<h2 class="accessibility">Footer Navigation Links</h2>
+			<div id="footer-menu" class="footer-links">
+			
+				<div class="footer-block checkout-hide">
+					<h3>Textbooks</h3>
+					<a href="https://www.bookstore.yorku.ca/site_textbook_landing_page.asp?">Buy Textbooks</a>
+					<a href="https://www.bookstore.yorku.ca/sell_access_codes.asp?">eBooks & Digital Materials</a>
+					<a href="https://www.bookstore.yorku.ca/site_Day1Digital.asp?">Day1Digital eBooks</a>
+					<a href="https://www.bookstore.yorku.ca/buyback.asp?">Sell Textbooks</a>
+					<!--<a href="https://www.bookstore.yorku.ca/site_rent_books.asp?">Rent Textbooks</a>-->
+					<!--<a href="https://www.bookstore.yorku.ca/buy_textbooks.asp?">Find Textbooks</a>
+					
+					-->
+					
+				</div>
+				
+				<div class="footer-block checkout-hide">
+					<h3>Merchandise</h3>
+					<a href="https://www.bookstore.yorku.ca/shop_main.asp?">Shop All Merchandise</a>
+					<a href="shop_main.asp?catalog_group_id=MTI&catalog_group_name=QXJ0IFN1cHBsaWVz">Art Supplies</a>
+					<a href="shop_main.asp?catalog_group_id=NQ&catalog_group_name=Q2xvdGhpbmc">Clothing</a>
+					<a href="shop_main.asp?catalog_group_id=Nw&catalog_group_name=RWxlY3Ryb25pY3M">Electronics</a>
+					<a href="shop_main.asp?catalog_group_id=Mg&catalog_group_name=R2VuZXJhbCBCb29rcw">General Books</a>
+					<a href="shop_main.asp?catalog_group_id=MQ&catalog_group_name=R2VuZXJhbCBNZXJjaGFuZGlzZQ">General Merchandise</a>
+					<a href="shop_main.asp?catalog_group_id=OQ&catalog_group_name=R2lmdHM">Gifts</a>
+					<!--
+					<a href="shop_product_list.asp?catalog_name=R2xlbmRvbiBDbG90aGluZw&catalog_id=2150">Glendon</a>
+					<a href="shop_main.asp?catalog_group_id=MTU&catalog_group_name=R3JhZHVhdGlvbiBHaWZ0cw">Graduation Gifts</a>
+					<a href="shop_product_list.asp?catalog_group_id=MTM&catalog_group_name=T3Nnb29kZQ&catalog_id=1105&catalog_name=T3Nnb29kZSBHaWZ0cw">Osgoode</a>
+					<a href="shop_product_list.asp?catalog_group_id=MTA&catalog_group_name=U2NodWxpY2g&catalog_id=49&catalog_name=U2NodWxpY2ggTWVuJ3MgQ2xvdGhpbmc">Schulich School of Business</a>
+					<a href="shop_main.asp?catalog_group_id=Ng&catalog_group_name=U3RhdGlvbmVyeQ">Stationery</a>
+					<a href="shop_product_list.asp?catalog_name=WW9yayBMaW9ucw&catalog_id=2161">York Lions</a>
+					<a href="shop_main.asp?catalog_group_id=MTk&catalog_group_name=U3BlY2lhbCBTYWxlIEV2ZW50cw">Special Sale Events</a>
+					-->
+				</div>
+				
+				<div class="footer-block checkout-hide">
+					<h3>Store</h3>
+					<a href="https://www.bookstore.yorku.ca/default.asp?">Home</a>
+					<a href="https://www.bookstore.yorku.ca/site_about_us.asp?">Contact Us</a>
+					<a href="https://www.bookstore.yorku.ca/site_policies.asp?">Store Policies</a>					
+					<a href="https://www.bookstore.yorku.ca/site_policies.asp?#contest">Contest Rules</a>
+					<a href="https://www.bookstore.yorku.ca/site_policies.asp?#refunds">Returns</a>
+					<a href="https://www.bookstore.yorku.ca/site_policies.asp?#shipping">Shipping</a>
+					<a href="https://www.bookstore.yorku.ca/site_faculty.asp?">Faculty Adoptions</a>
+					<a href="https://www.bookstore.yorku.ca/site_supplies.asp?">Supplies & Custom Orders</a>
+				</div>
+				
+				<div class="footer-block">
+					<!--<h3>Find Us</h3>
+                    <a target="_blank" href="">4700 Keele Street<br>Toronto, ON<span>&nbsp;</span>M3J 1P3</a>
+					<a href="tel:416-736-5701">416-736-5701</a>
+					<a target="_blank" href="https://www.yorku.ca/">York University homepage</a>-->
+					<img style="width:200px" src="images/footerarrow.png" alt="YorkU arrow graphic">
+				</div>
+
+			</div>
+			
+			<hr>
+			
+			<div class="footer-block checkout-hide">
+				<h3>Stay Connected</h3>
+				<div class="sociallinks">
+				<a class="twitter" target="_blank" title="Link to Twitter" href="https://twitter.com/YorkUBookstore"><span class="accessibility">Visit us on Twitter</span></a>
+				<a class="instagram" target="_blank" title="Link to Instagram" href="http://instagram.com/YorkuBookstore"><span class="accessibility">Visit us on Instagram</span></a>
+				<a class="youtube" target="_blank" title="Link to YouTube" href="https://www.youtube.com/user/YorkUniversity"><span class="accessibility">Visit us on YouTube</span></a>
+				<a target="_blank" href="http://yfile.news.yorku.ca/"><img alt="Visit us on yFile" src="https://www.bookstore.yorku.ca/images/yfile.png" /></a>
+				<!--
+				<a class="linkedin" target="_blank" title="Link to LinkedIn" href="https://www.linkedin.com/company/27071?trk=tyah&trkInfo=clickedVertical:company,clickedEntityId:27071,idx:2-1-2,tarId:1452116565480,tas:nebraska%20book%20com"><span class="accessibility">Visit us on LinkedIn</span></a>				
+				<a class="googleplus" target="_blank" title="Link to Google+" href="http://www.plus.google.com"><span class="accessibility">Visit us on Google+</span></a>
+				<a class="facebook" target="_blank" title="Link to Facebook" href="https://www.facebook.com/nbctextbooks/"><span class="accessibility">Visit us on Facebook</span></a>
+				<a class="pinterest" target="_blank" title="Link to Pinterest" href="https://www.pinterest.com/"><span class="accessibility">Visit us on Pinterest</span></a>
+				<a class="flickr" target="_blank" title="Link to Flickr" href="https://www.flickr.com/"><span class="accessibility">Visit us on Flickr</span></a>
+				<a class="foursquare" target="_blank" title="Link to Foursquare" href="https://www.foursquare.com/"><span class="accessibility">Visit us on Foursquare</span></a>
+				<a class="yelp" target="_blank" title="Link to Yelp" href="https://www.yelp.com/"><span class="accessibility">Visit us on Yelp</span></a>
+				-->
+				<a class="contact-email" href="mailto:askyub@yorku.ca" title="Link to Email Us"><span class="accessibility">Email Us</span></a>
+				</div>
+				<img src="outerweb/various/3li_EnFr_Wordmark_C.png" height="28">
+			</div>
+
+		</div>
+		<a class="to-top" title="click to go to the top of the page"></a>
+		
+	</div><!-- end footer-box -->
+	<div class="copy-info checkout-hide">
+		&copy;&nbsp;2023&nbsp;York University Bookstore
+		 | 
+		<a href="https://www.bookstore.yorku.ca/site_terms_of_use.asp?">Privacy Policy / Terms of Use</a>
+	</div>
+
+</footer>
+
+<!-- DO NOT REMOVE -->
+
+<script type='text/javascript' src='js/responsive.js'></script>
+<script type='text/javascript' src='js/custom.js'></script>	
+		
+	
+	<div id="extra1"><div></div></div>
+	<div id="extra2">&nbsp;</div>
+	
+</div> <!-- end main-wrapper -->
+<script type="text/javascript" src="/bnith__VEK83c-iA6XwvlyhIPkyNFX3zzOXD0KKqx38JWM_vESB4k9rijuB2ZEp22_vTs_zWkTaQTqk2y4="></script> <script language="JavaScript" type="text/javascript">const _0x35e8=['visitorId','18127kSXadA','356575NPKVMA','7306axxsAH','get','657833TzFjkt','717302TQdBjl','34lMHocq','x-bni-rncf=1699813365213;expires=Thu, 01 Jan 2037 00:00:00 UTC;path=/;','61XMWbpU','cookie',';expires=Thu, 01 Jan 2037 00:00:00 UTC;path=/;','then','651866OSUgMa','811155xdatvf','x-bni-fpc='];function _0x258e(_0x5954fe,_0x43567d){return _0x258e=function(_0x35e81f,_0x258e26){_0x35e81f=_0x35e81f-0x179;let _0x1280dc=_0x35e8[_0x35e81f];return _0x1280dc;},_0x258e(_0x5954fe,_0x43567d);}(function(_0x5674de,_0xdcf1af){const _0x512a29=_0x258e;while(!![]){try{const _0x55f636=parseInt(_0x512a29(0x17b))+-parseInt(_0x512a29(0x179))*parseInt(_0x512a29(0x17f))+-parseInt(_0x512a29(0x183))+-parseInt(_0x512a29(0x184))+parseInt(_0x512a29(0x187))*parseInt(_0x512a29(0x17d))+parseInt(_0x512a29(0x188))+parseInt(_0x512a29(0x17c));if(_0x55f636===_0xdcf1af)break;else _0x5674de['push'](_0x5674de['shift']());}catch(_0xd3a1ce){_0x5674de['push'](_0x5674de['shift']());}}}(_0x35e8,0x6b42d));function getClientIdentity(){const _0x47e86b=_0x258e,_0x448fbc=FingerprintJS['load']();_0x448fbc[_0x47e86b(0x182)](_0x4bb924=>_0x4bb924[_0x47e86b(0x17a)]())[_0x47e86b(0x182)](_0x2f8ca1=>{const _0x44872c=_0x47e86b,_0xa48f50=_0x2f8ca1[_0x44872c(0x186)];document[_0x44872c(0x180)]=_0x44872c(0x185)+_0xa48f50+_0x44872c(0x181),document[_0x44872c(0x180)]=_0x44872c(0x17e);});}getClientIdentity();</script></body>
+
+</html>

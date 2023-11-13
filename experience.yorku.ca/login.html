@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+
+
+  
+ 
+  
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+	
+
+<html lang="en-CA">
+
+	
+	
+
+		<head>
+			<title>York University Portal - Admin Login</title>
+			<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+			<meta name="apple-mobile-web-app-capable" content="yes">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+			
+
+  
+ 
+  
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+	
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="icon" href="/site/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/site/images/favicon.ico" type="image/x-icon">
+
+<link href="https://orbisv4head.blob.core.windows.net/core/bootstrap/core/css/bootstrap.min-231.css" rel="stylesheet" type="text/css" />
+<link href="https://orbisv4head.blob.core.windows.net/core/bootstrap/core/css/bootstrap-responsive.min-231.css" rel="stylesheet" type="text/css" />
+<link href="https://orbisv4head.blob.core.windows.net/core/bootstrap/bootstrap-modal/css/bootstrap-modal-233.css" rel="stylesheet" type="text/css" />
+<link href="https://orbisv4head.blob.core.windows.net/core/bootstrap/font-awesome/css/font-awesome.min-231.css" rel="stylesheet" type="text/css" />
+<link href="https://orbisv4head.blob.core.windows.net/core/bootstrap/jqueryui-bootstrap-theme/jquery-ui-1.10.0.custom.css" rel="stylesheet" type="text/css" />
+<link href="/core/orbis/css/bootstrap/bootstrap.mods-287.css" rel="stylesheet" type="text/css" />
+<link href="https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/css/protip.min.css" rel="stylesheet" type="text/css" />
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet" />
+
+
+
+
+
+
+	
+
+
+<link href="/core/orbis/css/core-253.css" rel="stylesheet" type="text/css">
+
+<link href="/core/orbis/css/bootstrap/update-102.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="https://orbisv4head.blob.core.windows.net/core/scripts/jquery/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="/core/spiralRobot/scripts/orbisScriptManager/0.3/orbisScriptManager.js"></script>
+
+<script type="text/javascript" src="https://orbisv4head.blob.core.windows.net/core/scripts/jquery/jquery-ui-1.10.2.custom/js/jquery-ui-1.10.2.custom.min.js"></script>
+
+
+<script type="text/javascript" src="https://orbisv4head.blob.core.windows.net/core/bootstrap/core/js/bootstrap.min-231.js"></script>
+
+<script type="text/javascript" src="https://orbisv4head.blob.core.windows.net/core/bootstrap/bootstrap-modal/js/bootstrap-modalmanager-233.js"></script>
+<script type="text/javascript" src="https://orbisv4head.blob.core.windows.net/core/bootstrap/bootstrap-modal/js/bootstrap-modal-233.js"></script>
+<script type="text/javascript" src="https://orbisv4head.blob.core.windows.net/core/scripts/ckeditor-4.5.6/ckeditor.js"></script>
+<script type="text/javascript" src="https://orbisv4head.blob.core.windows.net/core/scripts/ckeditor-4.5.6/adapters/jquery-232.js"></script>
+<script type="text/javascript" src="/core/ckfinder/ckfinder-2.4.2-custom.js"></script>
+<link href="https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/css/animate.css" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<script type="text/javascript">
+	var orbisLocale = "en";
+	var isL1 = true;
+	var isL2 = false;
+	var i18n = {
+		answered: "Answered",
+		answeredFilterDescription: "Shows answered chats",
+		unanswered: "Unanswered",
+		unansweredFilterDescription: "Shows unanswered chats",
+		unclaimedFilterDescription: "Shows chats with no claimants",
+		claimedByMeFilterDescription: "Shows chats you\'ve claimed",
+		claimedByMe: "Claimed By Me",
+		unclaimed: "Unclaimed",
+		noChatsToShow: "No chats to show",
+		helpQueue: "Help Queue",
+		participantType: "Participant Type",
+		participant: "Participant",
+		sent: "Sent",
+		claim: "Claim",
+		unclaim: "Unclaim",
+		claimed: "Claimed By",
+		title: "Title",
+		groupInterview: "Group Interview",
+		close: "Close",
+		confirm: "Confirm",
+		kickUser: "Remove Participant",
+		kickConfirm: "Are you sure you want to remove this participant?",
+		numOfAdminsOnline: "{num} Admin(s) Online",
+		viewInterviewees: "View Interviewees",
+		viewRegistrants: "View Registrants",
+		online: "Online",
+		offline: "Offline",
+		registrants: "Registrants",
+		presenters: "Presenters",
+		category: "Category",
+		presentedBy: "Presented by {presenters}",
+		interviewerEmailAlreadyInUse: "This email is already being used by another interviewer.",
+		joinButtonPastTooltip: "The meeting is over. You can\'t join past meetings.",
+		joinButtonFutureTooltip: "Please wait for the meeting to start.",
+		youSentAMessage: "You",
+		schedule: "Schedule",
+		helpNeeded: "Help Needed",
+		helpNeededFilterDescription: "Shows meetings where at least one of the participants has sent a help message that hasn\'t been responded to",
+		lateParticipant: "Late Participant",
+		lateParticipantFilterDescription: "Shows meetings where at least one of the participants is late",
+		notReady: "Participant Not Ready",
+		notReadyFilterDescription: "Shows meetings that start in the next {beforeBufferMinutes} minute(s) where at least one participant hasn\'t joined yet",
+		upcoming: "Upcoming",
+		upcomingFilterDescription: "Shows current and upcoming meetings",
+		searchPlaceholder: "Search...",
+		event: "Meeting",
+		actions: "Actions",
+		noEventsToShow: "No meetings to show.",
+		appointmentWith: "Appointment with {user}",
+		join: "Join",
+		information: "Information",
+		time: "Time",
+		organization: "Organization",
+		job: "Job Posting",
+		jobs: "Job Postings",
+		interviewer: "Interviewer",
+		interviewee: "Interviewee",
+		interviewees: "Interviewees",
+		saType: "Appointment Type",
+		provider: "Provider",
+		customer: "Attendee",
+		chat: "Chat",
+		sendAMessage: "Send a message...",
+		sendMessage: "Send message",
+		interviewWith: "Interview with {user}",
+		broadcastMessage: "Broadcast Message",
+		broadcastMessageModalTitle: "Message Broadcaster",
+		broadcastMessageModalButtonText: "Broadcast Message",
+		broadcastMessageInputLabel: "Message Content",
+		broadcastMessageContentLabel: "Broadcasted Message Content",
+		unsaved: "(unsaved)",
+		active: "(active)",
+		inactive: "(inactive)",
+		i14581551: "Are you sure you want to delete this task?",
+		i55453541: "Are you sure you want to delete this note?",
+		i34534531: "Are you sure you want to delete this time-slot?",
+		i98413981: "deleteInterviewer - unsuccessful",
+		i74513741: "ERROR",
+		i882266335: "Delete this time-slot",
+		i909878654: "Delete this interviewer",
+		u876543678: "Edit this interviewer",
+		x894392000: "Add day for this interviewer",
+		d888987896: "Are you sure you want to delete this Interviewer?",
+		u71664225: "Delete this group?",
+		s60971652: "Could not add new group - invalid parameters.",
+		a05352565: "ERROR",
+		d76200733: "Columns",
+		w73107591: "Reorder Columns",
+		l43035401: "View Details",
+		q40274238: "View More Details",
+		i74855411: "No Restrictions.",
+		a40369725: "SELECT ALL",
+		c53266207: "There has been a communication error with the server(1). Please try again.",
+		t14685232: "There has been a communication error with the server(4). Please try again.",
+		g92510331: "There has been a communication error with the server(2). Please try again.",
+		x410443028: "There has been a communication error with the server(3). Please try again.",
+		o312666927: "Alert",
+		e037553076: "Please Wait...",
+		h17743726: "Are you sure?",
+		m536012143: "MAX CHARS",
+		w24268703: "CHARS REMAINING",
+		u93742358: "You have inputed incorrect parameters within the checkboxWidget plugin.",
+		j07234968: "Fetching news feed",
+		i413033843: "News feed unavailable!",
+		s55118689: "Click here for more information",
+		q8366135: "OK",
+		n968294344: "Confirmation",
+		cl1723834: "Close",
+		z121936338: "Cancel",
+		i56321831: "Save",
+		i59165711: "Delete",
+		j20071968: "Success",
+		j20071969: "Information",
+		j20071970: "Warning",
+		j20071971: "Error",
+		h76451855: "No data to display",
+		x86501475: "The student doesn\'t have a valid address.",
+		x54414921: "The opportunity doesn\'t have a valid address.",
+		x30489942: "The industry partner doesn\'t have a valid address.",
+		filter: "Filter: ",
+		selected: "selected",
+		hc_noData: "No data to display",
+		hc_zoom: "Reset Zoom",
+		hc_shortMonthsJan: "Jan",
+		hc_shortMonthsFeb: "Feb",
+		hc_shortMonthsMar: "Mar",
+		hc_shortMonthsApr: "Apr",
+		hc_shortMonthsMay: "May",
+		hc_shortMonthsJun: "Jun",
+		hc_shortMonthsJul: "Jul",
+		hc_shortMonthsAug: "Aug",
+		hc_shortMonthsSep: "Sep",
+		hc_shortMonthsOct: "Oct",
+		hc_shortMonthsNov: "Nov",
+		hc_shortMonthsDec: "Dec",
+		hc_longMonthsJan: "January",
+		hc_longMonthsFeb: "February",
+		hc_longMonthsMar: "March",
+		hc_longMonthsApr: "April",
+		hc_longMonthsMay: "May",
+		hc_longMonthsJun: "June",
+		hc_longMonthsJul: "July",
+		hc_longMonthsAug: "August",
+		hc_longMonthsSep: "September",
+		hc_longMonthsOct: "October",
+		hc_longMonthsNov: "November",
+		hc_longMonthsDec: "December",
+		hc_weekdaysSun: "Sunday",
+		hc_weekdaysMon: "Monday",
+		hc_weekdaysTue: "Tuesday",
+		hc_weekdaysWed: "Wednesday",
+		hc_weekdaysThu: "Thursday",
+		hc_weekdaysFri: "Friday",
+		hc_weekdaysSat: "Saturday",		
+		hc_loading: "Loading...",
+		hc_decimalPoint: ".",
+		hc_downloadCSV: "Download CSV",
+		hc_downloadJPEG: "Download JPEG",
+		hc_downloadPDF: "Download PDF",
+		hc_downloadPNG: "Download PNG",
+		hc_downloadSVG: "Download SVG",
+		hc_downloadXLS: "Download XLS",
+		hc_viewData: "View data table",
+		hc_contextButtonTitle: "Chart Context Menu",
+		hc_printChart: "Print Chart",
+		availExp: "Available experiences by type",
+		activityTime: "Timeline of activity",
+		expW0: "Experiences with 0 participants",
+		last30: "Last 30 days",
+		totalOpp: "Total opportunities: ",
+		chooseFile: "Choose a file",
+        charLimReached: "Character limit reached, the text has been truncated."
+	};
+</script>
+
+
+<script type="text/javascript">
+	var ResourcesURL = "https://orbisv4head.blob.core.windows.net";
+	
+	ckFinder(ResourcesURL + '/core/ckfinder');
+</script>
+
+<script type='text/javascript' src='https://orbisv4head.blob.core.windows.net/core/scripts/json/json2-231.js' charset='UTF-8'></script>
+<script type='text/javascript'>orbisScriptManager.scriptLoaded('https://orbisv4head.blob.core.windows.net/core/scripts/json/json2-231.js');</script>
+<script type='text/javascript' src='/core/orbis/scripts/orbis-363.js' charset='UTF-8'></script>
+<script type='text/javascript'>orbisScriptManager.scriptLoaded('/core/orbis/scripts/orbis-363.js');</script>
+
+
+<script type="text/javascript" src="/core/orbis/scripts/update-5.js"></script>
+<script type="text/javascript">
+	document.title = "York University Portal - Admin Login";
+</script>
+
+		 
+
+<script type="text/javascript">
+	$.datepicker.setDefaults(orbisApp.defaultDatePickerOpts);
+	$.ajaxPrefilter(function( options, originalOptions, jqXHR ) { 
+		if ( options.dataType == 'script' || originalOptions.dataType == 'script' ) { 
+			options.cache= true;
+		} 
+	});
+	orbisApp.checkboxWidgetProperties = {
+		showFilter : true,
+		showFilterOnNumberOfCheckboxes : 0,
+		widgetPropertiesLoaded : false
+	}
+	
+	orbisApp.actions = {
+		loadVcChatTable: "_-_-KTCS0Gkkrh-G2JAi3ljjEThHm7pxGq9LEfXxnKCAiihUyG2VVHe4JaBEvei1VA5leur5upupDpwPg78u2UpkeoEwAxXL2rjcLuNsIHhA0FjiqtFVHGNTmZ9clEeCoO4gjoC5cRmUxzv4jdA9JcD1HigODBFzg7TaAi9OCpfn6H9_cY0waiAPorDIt_BWyKJRkaiWFnxoONPWc8_rOQ-_BnQ_",
+		loadChatClaimants: "_-_-XeG4RO6QKGxdGNeqAT0N7PXy7sQJrKZ_-AQJv-RKz36fMdOhr0AUtG_KW8QZyam99txM_1hC3W1o4GzqH2O_MTkooJYLkymZoJyYcSmFYWLePwrNjTNQ-NiQomq_5NO4iaF1PgtsKNmDMPjKaNsdJGchaT1EO1aezDF3q53ThpkAIIgcjtgu9ctag04uat6HzdV8XqS6HQxbeXWoV9O4_D3suEM",
+		claimChat: "_-_-sp-LF0Nfl-aXCyWv4yWuCJf-txmYiusxWBtRSoKU-YVi_taWQSuILnJO6NkQBFDgeyf3RIaqayeLOt22A_YKyVoEgScavnBUNM7fLt0iWSnrmjngX-WY04j0K31gyOhkLrXMMnMZVC9wFPFzda8U8kpldkOuGTVwKmA94xouT7pYzSxn9JBqztCCXKCbD5MFQZTR_GE4Y_UsTmJd",
+		unclaimChat: "_-_-d1MWfOUgPBr6faEg7nJFZBcS8Yd4w_DvwIgWQ0ytJpT3i4c6pnixdwxxNiMxJogfmv9m2FAbJegVk1si4MhCMlNKSy-BbON8-0ZJJmL9wN3gWyIRz9fKw4vuujOvw5ai1FnBl27Sy4TuFyPrYALBHHKsfZp9Vytoa2qz3pCHlGUQGGILsaY4NeWoN_fB1-qEywlqhu8ZFJ-POyJmFjU",
+		loadVcHelpState: "_-_-KBEZiAGufB2qhbj1nq93SWtQ9D6Zfzc75OZUz2i55y5oGmxY5oEAv5x-iP8yhndPhV0t8MVpqJ9DcnVFozGbRptlQFS1i2e1Cpndy1dBsxSNxUdQiIV0aOI50Z0mc0ENtDgqqVHII2aluuplwMokhNvMFy2zrYfNbpqyRBzPsXJnTuV5lp_T_4O8BLWEHG1_WM_96hhpwUcFHdV-0xDjKVss",
+		loadVcOnlineScheduleState: "_-_--da0CWxEVBSt_6n8l1Y4aTOdzqreM2d8ZWNuyrPY7CY2ufywRiEFELC1vYJSNZaMKCi4NQN7h8T8wcV8VxLvj93XuQOxyhiaRcj_eLXK1DGmc54ygZUmQyI67WDIfN20enLs9-1TOSvOh__BAW_MM7O7-s5BLlB05PGGxRV85ocXy73AAlQfCotT-0env9E8yU95y799H2oSM240fEoY1jjRN36KAyGSyquxsQ",
+		displayGlobalEventDetails: "_-_-8wwAbGjvUzt4ZTDHGf3QK5rj9keWOcJfbJ2ufhPFmZrqUHfL8uTpIR0ksosOYWiCy4X3mPvakHtxvE2pCYdYV6k_pz2bPAcMoXB22QGlBVD6Q0bT88wl26buVzvQ_FpTdb6asWgIT6nsBqaeZBC75APLZHdFsJutATUSeaRtUDqPeg4Ak7SY-5X8uz9Q4ey88eEuUp6s9-DCYdxZ_o7Gz-ssNcnS5i2w4uLmuw",
+		displaySlot: "_-_-GHUaE7uEEnMmCnfN4I_q2I2sZmYJ-tc1dqvxTmPUtl8I1E2wy5ZmlQCy8We2H054QTSFkpuE6VnpsiVXu6UJm6vbCD94tZa8iGhrmYJMM87vV2dEkd9LWMOvRjagn4V2NCENo7vqvKGqEZb5tvcQ13_KR_vBys8xqeSPi9SVVzHllCBEekPM6EnngLeV5eGSTLO_3y3LAulUxwQocPM",
+		displayInterviewSchedule: "_-_-w3aVzcQsOaPAPqifs-SCSqEhIaXhN5mzS3WIStPYf7TTHWvWW3ccbxpnIRa4VI439H-ha4IUHiblhREkvqm5TW2_8SPV8ayJ8SUqWvT8383CMxbioiVaGpVvn8EN313xKFR1cn4VFxO0hmwdsl1lC9elhWHG7cNm4KLbMXKAApRU-dctizMXV2gwsqDyq55PdZs0a1kaZWH1_yNAaIE0epeJf5sF6O2HiwlB",
+		loadIsHelpChatEnabled: "_-_-FjYOzOEp-gubMJqF7IBwlTUKOO8RUwzJu-6WMJ4BQjwtbwlmctll4C6m5GNM_-900tjJLwYRMhpUUCAtit0rf3p5YHcyzcGfKmZWqoPXShVBxGxsI7JvCytpfxuG3Fxe1Zi635el3VLWMAXh7r-vXWCITGKkZMQdpLrIqHR3_EiRTIL97VBxXS2l-JduyoxIJIvs2Bg0rIO_rX7s6JL2-M8gLeoRLNW2",
+		loadVcAdminsOnlineCount: "_-_-X7DHP5IOxi0rfbf7r9uJGPEi70ftVqnmJ3CREhypzBmymRdwIAKtQMmBX7_oSkJacde5YX17zoAFSudhii8AmTO5LsdL0Nytc5QnYQ96XkRrT2QTTXTEeOPvdBQSmEw6qXYVxEQjzdJC5IkWWK189zLqzfzmqQKki2JG7jIH01gEa6jfzU0OpbJ2v2_4Auik77_F4rse54XCaiKFGNbr_xD3nxTagbm5ef0",
+		getVcSessionState: "_-_-Npqj1PNxU2vvtr5X5wasGpiekhJK7oHfYbekxMmlFfZHFKjHOsgkw_mjXnsvqPDuq-B0m-4XwIviyPywPR1VUfV-6bRA_-MDjf-0gq_G9ZmHYrMvd770EJLgubsmzWppZ3TLa25QXPrqQhs0Azp-7nKXSCUsEc9eIuh8Vxsm2Nxu3G8TAC3HtvHfv2HHbvXZOtyOMxCH8eyjaWcBKAV9puZ9FOo",
+		displayPosting: '_-_-pJht5oY1oVJkLiF5WSWA_lBws8hmQ-pHh930ZGSAUumARoV7WY1OqM6G-gacCQA9uhfjz7MQCzolN1f1XYOKKVcAcLMeapI1WaUkl68tvVb7InLXEUaxelVSUp0qhepM6pwJw_4DhFnmRJwEU_6mUT4gkdBFpfzMaA_q60aku4lzlkh2Y8VMWSiS-8Ql4hgpBCvRLTiiH-xdwAKwQNFoixo',
+		renderHelpTags : "_-_-Jyjco56PK-MR_emZh5BRDvVCAXiFFVsm_KXDmgDf4kgwdiwNjnlb5GFomj_NLQT1aSRUiS5vwEE810uRred_KGLYNTXY40XgVR5cZupgfNddGTe96CMfsYzyObhETkZewapldUsDRIpUzY9IVspe4g0GMml8tIEpijT_UA8V0jZgmV8STAwuafo_7R1fdE_LWv3j_Nzsk5Lc4pnNwpS3kA3SWmXyn1a3",
+		populateMsgEditorBody : "_-_-f21zioZ3ZguwTSy6tc_EvM0niDjQ04s6ygwm3dFXPG-Yqx-7a49HVXawehWI49Rvrhkux1nnMPPG78MvWRnUocHhCZF2hmGn_XD_m5r9nYHNpDRJQpQ0IgDwnJObGzs-KQS6tNtIX9YqFldJg5NcxhVbOA1y-1fxXpw1E5rwI3d0f8Y2gEnc7SF7NGkiL2RnOEJfiFCEWr5adKK5ajoAq5Ex7u1E3w",
+		rssWidget : "_-_-LtGjPmuJjhwFragHL8jSIY9xfzV29bhuFUL524b9xylFu1mPzSNQlkxjXixkS7JB-eooP6rdZeTyqcmS5e5FdpZxJCqSQNGh1huN9YjrNzft5quWhK9Byj3aHNyu7FXbeWjy_jGbuIasB45kswrfSqUkuyjn40q9omqZz5MR-eae782WchZ4huWpkPxmIrlVL4gjV5qm3EIGRNx7yUhC",
+		isPlaceable: "_-_-OEdyxaBYOTS7NyCcvcWN2ohG-w4_s4A_byDMCO7pRX1eVeZe-wH1pwNDDO8Yd2HSw7-1nj9f3WoV9fxb73Pfw6hjtAWeGQSCTj-bvHjVUlNtkw9MNogYm2E0XJ9-HtNpcO1aFwcdTyOfQH8t9LUsBmVQxsw77u4puJe1VhQUEbO8bgdO_djERuMdnY_9e3hpO4gFc-2yM5dmLkKv1Qvl7j-o",
+		expStudentGeoDatum: "_-_-fuxAdlcJCoazpvppr4DUIHMBbNrsijClboKOuhatauFEnUnUaOBJY_eN3vEOLQayhAiuORZ8ixZ7vCak85dfPUIRnGZMo2VkIOvR_-wlzp321AsYQd652QZVc5IKPCEaFeMBqR5dt6ySasBF-COBBcJLaxKeZ2BycwzIs39xJVwFcRmuXHToZsXHOb4svKG2LpW0nTtBO93VEzGHHHF7rBvwoAy1",
+		expPostingGeoDatum: "_-_-hGj1NzFc0RouVtBN68d9VLUThCdS8OlKOEzhy9chAA1dyiBjhFZhOV4em33qQIP_4uC3ZsmPCoozqz_0tAVKnj0oyReJbGzNcBe3fitgDppYF8z4oUYLVR1GtSHr0dnX2LSot8ROTDNM2mOH3AjA5lh8PZT6b07NDLCCAjLWLS7OMNxMcbF0fEPhGOrejWyI_gnxuvjBaMl0MMluBiXs2pHkLz2l",
+		expIndustryPartnerGeoDatum: "_-_-PBDQjxzClaF5DopR3Tux8_U4b8N8jBwOUa0VBEbrHblte1zMBvep13h-nyFBVZQjK4JWAVe_GMm171VcknShK50WODi4XIEzwsQDjDTS-0SFFJsHlYhMZWd3TAExumO6C4wF7c1JW-ku34yZPujDyHzba7KFnKC-9-VfGj_wmdMDW8T7cOodGTkcIIJaNWw7NHaRqL7OpMws4k6UZdsq1IEUNWUVB6qiSPj5p4Y",
+		sendChatMessage: "_-_-NKS8kgoUFDw84jKaXcX5YqveEnMqcp4Xwd2bZev7c-NDLsTQUedHO5gfSTF6JRK00F5gvzc8N36y4Ag1x18w3hCJ6BtKLzCCVOrFKKe5bWR6cRfmL9lMaAsV-pTY_ZgKEghY4X3GYyXYGOKhmOS0b61SNPYlRUTPWA6zKscaTFNI0aFTou8j31bjSmv6YdC5MHtSRsTcxXYAfORdhDYUfURc",
+		createChat: "_-_-IdoiWDZO93o_kQ17a5v0U3Eoqegk5zzXP0j6ljRDMfeOUq6_Bj4lcAJdZVjpEARgTsDFp09JCeKTV2WguNEVnkQieVfkFcB2Fo_PFXGUZYsWaGd9bqTlMcffCNQvipvUaxq5Kf5U7Ln5_BxjAjYxhGehITX4nCmzxaKNSj9GmlWJn1i1qH0-X_umm3CSUT2XIT52Vc5az0v1pu6wRA",
+		loadChat: "_-_-purZ2qUFv6ddBFeq3wJQNuv0iwiQ4UKzgqJ1Ottl_1fmaMVAdtRQrjlVivJLyEIk_J5MotNWKbQ2nhnnAIBwXnfQSd2sUe8-vfnNiqlcsVNZPyMnqblgZtBscuc4yvKEeKoci6IPjsBVcLxyg5EqdqukeCSl-PqsTpcylqPCIn7TrH0ZDkWVUZHi-xvhcXYk-r7eOJZ1TbAZB-s",
+		loadVcOnlineSchedule: "_-_-kndhKDpFKOPwtbn7MAmBcqACsZHhbuBjm0ctxxr-vx4kulJX3q0BPM3taSq6pgYslxYM5jXNPkTqKPSmqJg2-TIyyKxiZgTyFqUncCm7f7k7qGSVF5t8ZGLRPizsTH8nJV6MC9-9JuqRDFmBQFjxi7xomJGLscOVZGzPwKUVV_x4yTD_cf1-xiwY2BZVwarOm93pT9Pd288LevoM75rx1QpsJ8ADYgI",
+		createVcSessionUserChat: '_-_-9FdB2szqC_VvScH5tnGGPJd5rGHxcsZM2TAiYtzpldk-R5Gwqr6T9HOYTRK0brkwyaGxW8lMw1vmRMUmqYai0yvV1FziMT3gv2mZg1-L-iRP5VAzYd08GkQ4gpyXALmrrHg-TKA_89CodpfLAkUyNyYZAhhxLtvN8H-LybQ9410_PC2qrC9KA8d0dvQjFzLkVkdNkaMnCmzWhSJUh3lQRKjA8Qw0QaH4_kg',
+		startVideoConferenceSession: '_-_-TGG0_nUQOUFXgL04O4UZJSeEU9A2xO8_OeNdZek2NUSra-ocLqHLtTNBu3Lw6DfhBOsTstPSZ4GPwghZMcY9VJPZTMqXF1fexnEuN2C4qzKD5oCJLe1oSTLMadP-WmNpNS44-HSK01UODw6-_g-ne1uA_iDal20Nf72rrKBt3x8Yf9cekWe1HiU46FMf8sYptr0I-iD2Tp0HeAvoiOpuPZ6WzZomM0G6h2p1vxwT',
+		loadVcBroadcastMessageState: '_-_-aTHsfvOK4U71ahPEUE4EXg0T23-9c7Y9tz2iqF1WTwf0CWy-sTz-UpXn7FzZ6tQh8fKmuFokcZMz4iFGRmgnpFGV1ZfvpVzpbd7ptTA7nuiyzJ6qFJvK3VWp1Cd3IENAqJHOKqEonpazJDCl-Q__Gh9Y5FLipcnQ3F56NsVwPb-MwO6oRy6KKf_XvmTrTmgh3Af4sPcNJDNzGzWRRmN1IB-ELjyir1Bx89QYBOVv',
+		saveVcBroadcastMessageState: '_-_-O8h6fQtw-vxKdnt95je2VgawNq3vNhK_NYwQE5vUWYznpcQjb1DAMJmp9HuTgyI0c9Xd3S8wS7DlCKYt0puz_GuBSH4HInJOr1n2f4j_-I0dPdGNLzjbovSvuAWuu5ZdF06-E-fKvLNz1YAWcbEV9TiPsJk4XR9x-Kl4zMfWJxMBtiBZu7AUQlcq7BA2bSEEABMzWEBsUXEci0wxa526y9rkJvTH3GXcELZjbq3t'
+	};
+</script>
+
+<script type="text/javascript">
+	var orbisAppLocalized = {
+		locale : "en",
+		dateTimeFormats : {
+			php : {
+				dateShort : "m/d/Y",
+				timeShort : "h:i A"
+			},
+			java : {
+				dateShort : "MM/dd/yyyy",
+				timeShort : "hh:mm a",
+				timeShort2 : "h:mm a"
+			}
+		},
+		
+		translations : {
+			htmlStructures : {
+				modals : {
+					confirmModal : {
+						confirmation : "Confirmation",
+						yes : "Yes",
+						no : "No"
+					},
+					alertModal : {
+						alert : "Alert",
+						ok : "ok"
+					}
+				}
+			},
+			functions : {
+				checkAjaxResponse : {
+					c53266207: "There has been a communication error with the server(1). Please try again.",
+					t14685232: "There has been a communication error with the server(4). Please try again.",
+					g92510331: "There has been a communication error with the server(2). Please try again.",
+					x410443028: "There has been a communication error with the server(3). Please try again."
+				},
+				showLoadingOverlay : {
+					loading : "Loading..."
+				}
+			},
+			tags : {
+				uiCheckboxGroup : {
+					youMustSelectAtLeastOneItem: "You must select at least one item"
+				},
+				uiCalendar : {
+					filters: "Filters",
+					updateEventError: "There has been an error updating the event.",
+					failedEventFeaturesError: "Event change randomly failed to show off some failed features."
+				},
+				uiFileUpload : {
+					chooseFile: "Choose a file",
+					removeFileConfirmation: "Are you sure you want to delete the uploaded file?",
+					fileUploadFailed: "File upload failed",
+					fileFormatIsNotPermitted: "The file format \'.{0}\' is not permitted for upload",
+					maxFileSizeExceeded: "Max file size of {0} exceeded"
+				}
+			}
+		},
+		
+		resourceURL : 'https://orbisv4head.blob.core.windows.net'
+	};
+	
+	var spiralRobotMigration = {
+		stopClickGuard: true
+	};
+	
+	
+</script>
+
+
+
+<script type='text/javascript' src='https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/js/sprintf.min.js' charset='UTF-8'></script>
+<script type='text/javascript'>orbisScriptManager.scriptLoaded('https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/js/sprintf.min.js');</script>
+<script type='text/javascript' src='/core/spiralRobot/scripts/orbisApp/0.44/OrbisApp.js' charset='UTF-8'></script>
+<script type='text/javascript'>orbisScriptManager.scriptLoaded('/core/spiralRobot/scripts/orbisApp/0.44/OrbisApp.js');</script>
+
+<script type='text/javascript' src='/core/spiralRobot/scripts/orbisAppLegacy/0.1/legacy.js' charset='UTF-8'></script>
+<script type='text/javascript'>orbisScriptManager.scriptLoaded('/core/spiralRobot/scripts/orbisAppLegacy/0.1/legacy.js');</script>
+
+
+<script type='text/javascript' src='https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/validate/1.15.0/jquery.validate.min.js' charset='UTF-8'></script>
+<script type='text/javascript'>orbisScriptManager.scriptLoaded('https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/validate/1.15.0/jquery.validate.min.js');</script>
+<script type='text/javascript' src='https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/validate/1.15.0/localization/messages_en.min.js' charset='UTF-8'></script>
+<script type='text/javascript'>orbisScriptManager.scriptLoaded('https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/validate/1.15.0/localization/messages_en.min.js');</script>
+<script type='text/javascript'>orbisScriptManager.loadScript('https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/validate/1.15.0/jquery.validate.min.js');</script>
+<script type='text/javascript' src='https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/validate/1.15.0/additional-methods.min.js' charset='UTF-8'></script>
+<script type='text/javascript'>orbisScriptManager.scriptLoaded('https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/validate/1.15.0/additional-methods.min.js');</script>
+<script type='text/javascript' src='/core/orbis/scripts/orbisValidationRules.js' charset='UTF-8'></script>
+<script type='text/javascript'>orbisScriptManager.scriptLoaded('/core/orbis/scripts/orbisValidationRules.js');</script>
+
+<script type='text/javascript' src='/core/spiralRobot/scripts/prototype/hammerjs/2.0.8/hammer.min.js' charset='UTF-8'></script>
+<script type='text/javascript'>orbisScriptManager.scriptLoaded('/core/spiralRobot/scripts/prototype/hammerjs/2.0.8/hammer.min.js');</script>
+<script type='text/javascript' src='/core/spiralRobot/scripts/prototype/webAnimationjs/2.3.1/web-animations.min.js' charset='UTF-8'></script>
+<script type='text/javascript'>orbisScriptManager.scriptLoaded('/core/spiralRobot/scripts/prototype/webAnimationjs/2.3.1/web-animations.min.js');</script>
+<script type='text/javascript' src='/core/spiralRobot/scripts/prototype/muuri/0.7.1/muuri.min.js' charset='UTF-8'></script>
+<script type='text/javascript'>orbisScriptManager.scriptLoaded('/core/spiralRobot/scripts/prototype/muuri/0.7.1/muuri.min.js');</script>
+
+<script type='text/javascript' src='https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/perfect-scrollbar/1.4.0/perfect-scrollbar.min.js' charset='UTF-8'></script>
+<script type='text/javascript'>orbisScriptManager.scriptLoaded('https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/perfect-scrollbar/1.4.0/perfect-scrollbar.min.js');</script>
+<script type='text/javascript'>$('head title, .addComponent').filter(':last').after($('<link/>', {rel: 'stylesheet',type: 'text/css', href: 'https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/perfect-scrollbar/1.4.0/perfect-scrollbar.css', class:'addComponent'}));</script>
+<script type='text/javascript' src='https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/perfect-scrollbar/1.4.0/perfectScrollbarJqueryWrapper.js' charset='UTF-8'></script>
+<script type='text/javascript'>orbisScriptManager.scriptLoaded('https://orbisv4head.blob.core.windows.net/core/spiralRobot/lib/perfect-scrollbar/1.4.0/perfectScrollbarJqueryWrapper.js');</script>
+
+<script type='text/javascript' src='/core/spiralRobot/scripts/jqueryExtensions/1.1/JQueryExtensions.js' charset='UTF-8'></script>
+<script type='text/javascript'>orbisScriptManager.scriptLoaded('/core/spiralRobot/scripts/jqueryExtensions/1.1/JQueryExtensions.js');</script>
+
+<script type='text/javascript' src='/core/spiralRobot/scripts/SpiralRobotTagLib-07032023.js' charset='UTF-8'></script>
+<script type='text/javascript'>orbisScriptManager.scriptLoaded('/core/spiralRobot/scripts/SpiralRobotTagLib-07032023.js');</script>
+
+
+<script type="text/javascript">
+	orbisAppSr.actions = {
+		handleUiState: '_-_-o5HUbQBaf_yNC_9ph_mjWSrDJU34bkprEub0vhkdJU6y3wjCArDSEp8nfRAL8dQYxThkG5oROs9m8adTC5RZsQWjau9ChnmKBg4SXla8yOM1dBssHu3MTkNPGOf1xdv-9bzBL6vkm6LaiNeL3906o57e0QQwf565KYJrHcwiP6qKIA1etsd7HX3YDb7VtwIZ20EjCpiZpM5DqOUNtcFC'
+	};
+	
+	orbisAppSr.uiState = {"mainNavDisplayed":true};
+	
+	
+		orbisAppSr.ajaxSend({
+			action: '_-_-lgLmg26XqbhAjsAe1-ui1h7wgLxUYKhAOgjjTZLrKaZ3dJFNy49hwzjTq_BY7FRYWR6GFwQzMRWbrDU9XrHTYLWgXz-YyxlXlgfOZ5tNLPnE2Ja2E3UXKPUeH4X14MkFoApmtgxX1OTbMC90gbdv1Vuwq4U6PasK4ISF0h29kMhS5v9v4VdJQuS4lKpJtPp1b3LhHVgW1rubuUa2bKk5',
+			viewportWidth: window.innerWidth
+		});
+	
+	
+</script>
+
+<link rel="stylesheet" href="/core/spiralRobot/css/spiralRobotBootstrapMix/0.12/index.outcome.myAccount.css" type="text/css"/>
+
+
+
+
+
+
+<style>
+	/*Top Header Bar*/
+.header--branding {
+background-color: #FFFFFF !important;
+}
+
+/*Mobile Left Nav (should match Left Nav)*/
+.navigation--mobile {
+background-color: #171717 !important;
+}
+
+/*Left Nav (should match mobile)*/
+.header--side-nav, .is--spiral--robot .header--side-nav {
+ background: #171717 !important;
+ width: 100%;
+ z-index: 40;
+ box-shadow: 2px 4px 3px 1px rgba(0, 0, 0, 0.22);
+ transition: all 300ms ease;
+}
+
+/*Active tab for top Admin Header*/
+.is--spiral--robot .header--admin.has--tabs .items.active {
+ background-color: #171717 !important;
+}
+
+/* Link Background (nav) (active) */
+html.is--spiral--robot .nav--my-account a.is--active, .is--spiral--robot .nav--my-account a.is--active {
+ background-color: #9999999 !important;
+}
+
+/* Link Background (nav) (hover) */
+html.is--spiral--robot .nav--my-account a:hover, .is--spiral--robot .nav--my-account a:hover {
+ background-color: #9999999 !important;
+}
+
+
+
+body.is--my-account .nav--my-account a:hover{
+background:#e31837 !important;
+}
+body.is--my-account .nav--my-account a.is--active{
+background:#e31837 !important;
+}
+.is--spiral--robot .switcher__toggle{
+background-color:#e31837 !important;
+}
+
+
+
+/*Old Branding*/
+.sidebar-nav {
+	background-color: #171717;
+	border: 10px solid #171717;
+}
+
+.sectionRow .nav-tabs&gt;li&gt;a {
+background: none repeat scroll 0 0 #fd0;
+}
+
+.account-name {
+color: #fff;
+}
+
+.boxcontent {
+font-size: 14px !important;
+}
+
+.nbs--fixed-nav .nav-tabs&gt;li&gt;a {
+ background: none;
+ border: none;
+ line-height: 60px;
+ padding: 0px 8px;
+}
+.btn-primary {
+ color: #fff; 
+ background-color: #e31837;
+ border-color: #e31837;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
+ color: #fff;
+ background-color: #9a0100;
+ border-color: #eeeeee;
+}
+
+.btn-group.open .btn-primary.dropdown-toggle {
+ background-color: #e31837;
+}
+
+a.btn-primary, a:active.btn-primary, a:link.btn-primary, a:visited.btn-primary {
+ color: #fff;
+}
+
+#brandingNav .navbar-inner {
+ background-color: #FFFFFF;
+}
+
+.navbar-inverse .navbar-inner {
+ background-color: #333;
+ background-image: none;
+ /*border-color: #e5b325;*/
+ padding: 10px;
+}
+
+.orbisFooter {
+ background-color: #171717;
+}
+
+.bs--hide__column {
+ background: #171717;
+}
+
+.bg-stats {
+ background: #e31837 !important;
+}
+
+@media (min-width: 980px)
+.sidebar-nav .nav-list&gt;.active&gt;a, .sidebar-nav .nav-list&gt;.active&gt;a:hover {
+ background: #999;
+ color: #fff;
+}
+
+.orbisTableHeader {
+ background-color: #ccc;
+ border-color: #7e7e7e;
+}
+
+/* Mobile Header Icon Colors */
+button.js--btn-search{
+ color:#005baa;
+}
+
+.navbar .btn-navbar .icon-bar{
+ background-color:#005baa;
+}
+
+/* logo stuff */
+.img--branding-left {
+ height: 60px;
+ float: left;
+ margin-top: -10px;
+ margin-left: -10px;
+}
+
+/* Menu active and hover styles */
+
+.sidebar-nav .nav-list&gt;.active&gt;a, .sidebar-nav .nav-list&gt;.active&gt;a:hover{
+background: #999 !important;
+color: #171717;
+}
+
+@media (min-width: 980px){
+.sidebar-nav .nav-list&gt;li&gt;a:hover, .sidebar-nav .nav-list&gt;li&gt;a:focus {
+ background: #999 !important;
+ color: #171717;
+}
+}
+
+@media (min-width: 980px){
+.nbs--fixed-nav sticky .nav-list&gt;li&gt;a:hover, .nbs--fixed-nav sticky .nav-list&gt;li&gt;a:focus {
+ background: #900324 !important;
+ 
+}
+}
+
+@media (min-width: 980px){
+.sidebar-nav .nbs--fixed-nav .nav-list&gt;li&gt;a:hover, .sidebar-nav .nbs--fixed-nav .nav-list&gt;li&gt;a:focus {
+ background: #900324 !important;
+ 
+}
+}
+
+
+table.alternateCols col:nth-child(even) {
+	background-color: #f1f1f1;
+}
+
+@media (min-width: 1024px){
+.nbs--fixed-nav .nav-list li a .caret {
+ border-top: 4px solid #fff;
+ border-top-color: #fff;
+ border-bottom-color: #fff;
+margin-top: 9px;
+ margin-left: 4px;
+}
+}
+
+@media (min-width: 1024px){
+.nbs--fixed-nav .nav-list li a .caret:hover {
+ border-top: 4px solid #fff;
+}
+}
+
+.nav .dropdown-toggle:hover .caret, .nav .dropdown-toggle:focus .caret {
+ border-top-color: #fff;
+ border-bottom-color: #fff;
+}
+
+.lvItem a:hover, .lvItem a:focus {
+ background: #e31837 !important;
+ color: #171717;
+}
+
+/* Kiosk Overrides */
+
+body.color--bg--white.is--hidden .navbar-inverse .brand, .navbar-inverse .nav&gt;li&gt;a{
+ color:#fff;
+ font-weight:bold; 
+}
+
+body.color--bg--white.is--hidden .navbar-inverse .divider-vertical{
+ border-right-color: #fff;
+ border-left-color: #eee; 
+}
+
+
+body.color--bg--white.is--hidden .titleHeader {
+ background-color:#e31837;
+ color:#222;
+}
+
+body.color--bg--white.is--hidden .navbar-inverse .nav li.dropdown&gt;.dropdown-toggle .caret {
+ border-top-color: #fff;
+ border-bottom-color: #fff;
+}
+
+body.color--bg--white.is--hidden {
+ padding-top:75px;
+}
+/* This will protect the aspect ratio of your img */
+.postings__header__logo {
+ 
+ flex-basis: auto !important;
+ 
+ min-width: auto !important;
+ 
+ width: auto !important;
+}
+/* This will change the background colour of the campus connect postings header*/
+
+.postings__header{
+ 
+ /* Don't forget to change me */
+ 
+ background:#FFFFFF !important;
+}
+
+/* START: Override actions group colour */
+html.is--spiral--robot .nav--interaction, .is--spiral--robot .nav--interaction {
+ background: #e31837 !important;
+}
+html.is--spiral--robot .btn--menu--circular, .is--spiral--robot .btn--menu--circular {
+ background:#e31837 !important;
+ color: #FFFFFF !important;
+}
+.is--spiral--robot nav.actions-group--transform-into--sidebar.is--visible.nav--interaction {
+ color: white;
+}
+/* END: Override actions group colour */
+
+#competencies1350241087 .card {
+	width: 100%;	
+}
+
+.is--spiral--robot .btn--default
+{
+ color:#FFFFFF; 
+ background-color: #e31837;
+ border-color: #e31837;
+}
+
+.color--bg--default {
+	background: #e31837 !important;
+}
+/*New BRanding  white card change*/
+body.lp-theme--004 .lp__hero-h2 {
+    color: #FFFFFF;
+}
+body.lp-theme--004 .lp__content-box__title {
+    color: #000;
+}
+body.lp-theme--004 .lp__content-box__description {
+
+    color: #000;
+}
+
+body.lp-theme--004 .lp__content-box__action {
+   color: #FFFFFF;
+}
+
+body.lp-theme--004 .lp__footer__heading-title {
+    color: #FFFFFF;
+}
+</style>
+
+		</head>
+
+	
+
+
+ 
+
+
+
+
+		
+
+
+
+
+
+
+
+
+  
+ 
+  
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+	
+
+
+
+
+
+	
+	
+	
+
+	
+	<div class="row-fluid">
+		<div class="span12">
+			
+			
+				
+			
+
+  
+ 
+  
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+	
+
+
+	
+		<div class="orbisModuleHeader">
+			<div class="row-fluid">
+				<div class="span10">
+					<h1 class="sel_testHeadingPage">
+						Admin Login
+						
+					</h1>
+				</div>
+				<div class="span2">
+					
+
+  
+ 
+  
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+	
+
+
+
+
+	<div class="pull-right">
+		
+
+  
+ 
+  
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+	
+
+
+
+
+		
+
+  
+ 
+  
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+	
+
+
+
+	
+	
+		
+	
+
+
+
+
+	</div>
+
+
+
+
+
+				</div>
+			</div>
+		</div>
+	
+	
+
+
+
+
+
+
+
+
+
+
+		</div>
+	</div>
+	<div class="box boxContent">
+		
+		
+			
+			
+			<div class="row-fluid">
+				<div class="span12">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<strong>PLEASE LOGIN BELOW</strong>
+						</div>
+						<div class="panel-body">
+							<div class="row-fluid">
+								<div class="span12">
+										<form method="post" name="loginForm"
+											action="https://experience.yorku.ca/j_acegi_security_check"
+											autocomplete="off">
+											<input type="hidden" name="loginPageUrl" id="loginPageUrl"
+												value="https://experience.yorku.ca/login.htm" /> <input
+												type="hidden" name="orbisRedirectAfterLogin"
+												value="">
+											<div class="control-group">
+												<label class="control-label" for="j_username">
+													
+													
+														Login
+													
+												</label>
+												<div class="controls">
+													<input type="text" name="j_username" id="j_username" size="18" value="">
+												</div>
+											</div>
+											<div class="control-group">
+												<label class="control-label" for="j_password">
+													
+													
+														Password
+													
+												</label>
+												<div class="controls">
+													<input type="password" name="j_password" id="j_password"
+														size="18">
+												</div>
+											</div>
+											
+											<div class="control-group">
+												<div class="controls">
+													
+													<input type="submit" class="btn btn-primary btn-small"
+														value="Submit">
+													
+												</div>
+											</div>
+										</form>
+										<script type="text/javascript">
+											document.loginForm.j_username.focus();
+										</script>
+										<div>
+											
+											<hr>
+												
+												<br>
+											
+										</div>
+		
+										
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+	</div>
+
+
+
+
+
+
+ 
+
+
+
+
+
+</html>
+

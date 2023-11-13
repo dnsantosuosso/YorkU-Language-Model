@@ -1,0 +1,172 @@
+(function ($) {
+  'use strict';
+
+  function toggleDisplay(show, hide) {
+    $(hide).removeClass("selected");
+    $(show).addClass("selected");
+
+    if(show.indexOf('#resources-') !== 0){
+      let event = new CustomEvent('admission-requirements-shown', {detail:{id:show}});//https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events
+      document.dispatchEvent(event);
+    }
+  }
+
+  // Program selector for Ontario High School Students.
+  $('.canadian-on .program-selector').on('change', function () {
+    const programSelector = $(this);
+    const selectedProgram = programSelector.val();
+    const program = "#" + selectedProgram;
+    toggleDisplay(program, ".canadian-on .program-reqs");
+    toggleDisplay('#resources-' + selectedProgram, ".canadian-on .program-resources");
+  });
+
+  // Curricula and program selector for Canadian High School Students outside of Ontario.
+  $('.canadian-not-on .program-selector').on('change', function () {
+    const programSelector = $(this);
+    const selectedProgram = programSelector.val();
+    const curricula = $('.canadian-not-on .curricula-selector').val();
+    const program = "#" + curricula + '-' + selectedProgram;
+    toggleDisplay(program, ".canadian-not-on .program-reqs");
+    toggleDisplay('#resources-' + curricula + '-' + selectedProgram, ".canadian-not-on .program-resources");
+  });
+
+  $('.canadian-not-on .curricula-selector').on('change', function () {
+    const selectedProgram = $('.canadian-not-on .program-selector').val();
+    if (selectedProgram) {
+      const curricula = $('.canadian-not-on .curricula-selector').val();
+      const program = "#" + curricula + '-' + selectedProgram;
+      toggleDisplay(program, ".canadian-not-on .program-reqs");
+      toggleDisplay('#resources-' + curricula + '-' + selectedProgram, ".canadian-not-on .program-resources");
+    }
+  });
+
+  // Curricula and program selector for International High School Students.
+  $('.international .program-selector').on('change', function () {
+    const programSelector = $(this);
+    const selectedProgram = programSelector.val();
+    const curricula = $('.international .curricula-selector').val();
+    const program = "#" + curricula + '-' + selectedProgram;
+    toggleDisplay(program, ".international .program-reqs");
+    toggleDisplay('#resources-' + curricula + '-' + selectedProgram, ".international .program-resources");
+  });
+
+  $('.international .curricula-selector').on('change', function () {
+    const redirectUrl = $(this).find(':selected').data('redirect');
+    if(redirectUrl){
+      window.location.href = redirectUrl;
+    }
+
+    const selectedProgram = $('.international .program-selector').val();
+
+    if (selectedProgram) {
+      const curricula = $(this).val();
+      const program = "#" + curricula + '-' + selectedProgram;
+      toggleDisplay(program, ".international .program-reqs");
+      toggleDisplay('#resources-' + curricula + '-' + selectedProgram, ".international .program-resources");
+    }
+  });
+
+  // Program selector for Mature Students.
+  $('.mature .program-selector').on('change', function () {
+    const programSelector = $(this);
+    const selectedProgram = programSelector.val();
+    const program = "#" + selectedProgram;
+    toggleDisplay(program, ".mature .program-reqs");
+    toggleDisplay('#resources-' + selectedProgram, ".mature .program-resources");
+  });
+
+  // Selector for Transfer Students.
+  $('.transfer .program-selector').on('change', function () {
+    const programSelector = $(this);
+    const selectedProgram = programSelector.val();
+    const transferFrom = $('.transfer .transfer-selector').val();
+    const program = "#" + transferFrom + '-' + selectedProgram;
+    toggleDisplay(program, ".transfer .program-reqs");
+    toggleDisplay('#resources-' + transferFrom + '-' + selectedProgram, ".transfer .program-resources");
+  });
+
+  $('.transfer .transfer-selector').on('change', function () {
+    const selectedProgram = $('.transfer .program-selector').val();
+    if (selectedProgram) {
+      const transferFrom = $('.transfer .transfer-selector').val();
+      const element = "#" + transferFrom + '-' + selectedProgram;
+      toggleDisplay(element, ".transfer .program-reqs");
+      toggleDisplay('#resources-' + transferFrom + '-' + selectedProgram, ".transfer .program-resources");
+    }
+  });
+
+  // Selector for Indigenous students.
+  $('#identification-selector').on('change', function() {
+    const idSelector = $(this);
+    const id = idSelector.val();
+
+    const redirectUrl = idSelector.find(':selected').data('redirect');
+    if(redirectUrl){
+      window.location.href = redirectUrl;
+    }
+
+    toggleDisplay("#" + id + "-selector", ".selector");
+
+    const selectedProgram = $('.indigenous .program-selector').val();
+    if (selectedProgram) {
+      const code = $('#' + id + '-selector select').val();
+      const element = "#" + id + '-' + code + '-' + selectedProgram;
+      toggleDisplay(element, ".indigenous .program-reqs");
+      toggleDisplay('#resources-' + id + '-' + code + '-' + selectedProgram, ".indigenous .program-resources");
+    }
+  });
+
+  $('.indigenous .program-selector').on('change', function () {
+    const programSelector = $(this);
+    const selectedProgram = programSelector.val();
+    const type = $('#identification-selector').val();
+    const code = $('#' + type + '-selector select').val();
+    const program = "#" + type + '-' + code + '-' + selectedProgram;
+    toggleDisplay(program, ".indigenous .program-reqs");
+    toggleDisplay('#resources-' + type + '-' + code + '-' + selectedProgram, ".indigenous .program-resources");
+  });
+
+  $('#canada-selector select, #international-selector select, #transfer-selector select').on('change', function () {
+    const selector = $(this);
+    const redirectUrl = selector.find(':selected').data('redirect');
+    if(redirectUrl){
+      window.location.href = redirectUrl;
+    }
+
+    const selectedProgram = $('.indigenous .program-selector').val();
+    if (selectedProgram) {
+      const type = $('#identification-selector').val();
+      const code = selector.val();
+      const program = "#" + type + '-' + code + '-' + selectedProgram;
+      toggleDisplay(program, ".indigenous .program-reqs");
+      toggleDisplay('#resources-' + type + '-' + code + '-' + selectedProgram, ".indigenous .program-resources");
+    }
+  });
+
+
+  $('.admission-requirements-program .student-identification-selector').on('change', function () {
+    let program;
+    let selectedProgram = $('.uuid-program').data('parent-uuid');
+    const type = $('#identification-selector').val();
+    if ($(this).val() === 'mature') {
+      program = '#' + type + '-on_cmu_m-' + selectedProgram;
+    } else {
+      program = '#program-reqs-empty';
+      $('#canada-selector select, #international-selector select, #transfer-selector select').val('def');
+    }
+    toggleDisplay(program, ".admission-requirements-program .program-reqs");
+  });
+
+  $('.admission-requirements-program #canada-selector select, .admission-requirements-program #international-selector select,.admission-requirements-program #transfer-selector select').on('change', function () {
+    let program;
+    let selectedProgram = $('.uuid-program').data('parent-uuid');
+    const type = $('#identification-selector').val();
+    const code = $(this).val();
+    program = "#" + type + '-' + code + '-' + selectedProgram;
+    if (code === 'def') {
+      program = '#program-reqs-empty';
+    }
+    toggleDisplay(program, ".admission-requirements-program .program-reqs");
+  });
+
+})(jQuery);

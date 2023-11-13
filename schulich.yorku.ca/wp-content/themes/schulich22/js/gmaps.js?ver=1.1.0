@@ -1,0 +1,266 @@
+function initialize() {
+
+  var mapOptions = {
+    center: { lat: 25, lng: 3 },
+    zoom: 2,
+    minZoom: 2,
+    zoomControl: true,
+    scrollwheel: false,
+    scaleControl: true,
+    rotateControl: false,
+    mapTypeControl: false,
+    streetViewControl: true,
+    draggable: true,
+    disableDefaultUI: true,
+    disableDoubleClickZoom: true,
+    backgroundColor: '#FFFFFF',
+    styles: [
+       {
+           "featureType": "all",
+           "elementType": "all",
+           "stylers": [
+               {
+                   "visibility": "off"
+               }
+           ]
+       },
+       {
+           "featureType": "road",
+           "elementType": "geometry",
+           "stylers": [
+               {
+                   "visibility": "on"
+               },
+               {
+                   "color": "#807552"
+               }
+           ]
+       },
+       {
+           "featureType": "landscape",
+           "elementType": "all",
+           "stylers": [
+               {
+                   "visibility": "off"
+               }
+           ]
+       },
+       {
+           "featureType": "landscape.natural",
+           "elementType": "all",
+           "stylers": [
+               {
+                   "visibility": "on"
+               },
+               {
+                   "color": "#d6d4c4"
+               }
+           ]
+       },
+       {
+           "featureType": "water",
+           "elementType": "all",
+           "stylers": [
+               {
+                   "visibility": "on"
+               },
+               {
+                   "lightness": -100
+               }
+           ]
+       },
+       {
+           "featureType": "water",
+           "elementType": "geometry.fill",
+           "stylers": [
+               {
+                   "color": "#ffffff"
+               }
+           ]
+       },
+       {
+           "featureType": "water",
+           "elementType": "labels",
+           "stylers": [
+               {
+                   "visibility": "off"
+               }
+           ]
+       }
+    ]
+  };
+
+
+  var mapCanvas = document.getElementById('map-canvas');
+  var mapModule = mapCanvas.parentNode;
+  var mapTypeId = mapModule.getAttribute('data-map-type');
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+
+  //load the chapters into the map
+  var ajax_data = {
+    'action': 'get-map-pins',
+    'mapType': mapTypeId
+  };
+
+  jQuery.post(ajax_object.ajax_url, ajax_data, function(response) {
+
+    chapters = JSON.parse(response);
+
+    if (chapters.length > 1) {
+      addMarkers(map, chapters);
+    }
+  });
+}
+
+//empty array to hold all infowindows so we can close them all later
+var infoWindows = [];
+
+//close all windows
+function closeAllInfoWindows() {
+  for (var i=0;i<infoWindows.length;i++) {
+     infoWindows[i].close();
+  }
+}
+
+//add all chapters to the map (AND LIST)
+function addMarkers(map, chapters) {
+
+  var locIcon = {
+    path: 'M0,1a1,1 0 1,0 2,0a1,1 0 1,0 -2,0',
+    fillColor: '#54514e',
+    fillOpacity: 1,
+    scale: 4,
+    strokeWeight: 0
+  };
+
+  var locIconHover = {
+    path: 'M0,1a1,1 0 1,0 2,0a1,1 0 1,0 -2,0',
+    fillColor: '#f44538',
+    fillOpacity: 1,
+    scale: 4,
+    strokeWeight: 0
+  };
+
+  //this will be the list of options for the country filter
+  var countryOptions = [];
+
+  var mapList = document.getElementById('map-list');
+  var isAlumniMap = mapList.classList.contains('map-list--alumni');
+
+  //use the first row to create the column headers
+  var tbody = '<thead><tr>';
+  var headers = [];
+  for (var j = 0; j < chapters[0].length - 2; j++) {
+
+    if (j === 0) {
+      tbody += '<th scope="col">' + chapters[0][j] + '</th>';
+    } else {
+      tbody += '<th scope="col">' + chapters[0][j] + '</th>';
+    }    
+    headers.push(chapters[0][j]);
+  }
+  tbody += '</tr><tbody>';
+
+  //i starts at 1 because 0 is always the key of column headers
+  for (var i = 1; i < chapters.length; i++) {
+
+    var chapter = chapters[i];
+    var chapterLength = chapter.length;
+
+    var chapterTitle;
+
+    if (isAlumniMap) {
+      chapterTitle = chapter[3].toLowerCase().replace(' / ', '-').replace('/', '-').replace(' ', '-');
+    } else {
+      chapterTitle = chapter[1].toLowerCase().replace(' / ', '-').replace('/', '-').replace(' ', '-');
+    }
+
+    //first item in chapter is the title
+    tbody += '<tr class="country-' + chapterTitle +'"><th scope="row">' + chapter[0] + '</th>';
+    var contentString = '<div class="map-marker"><h2 class="map-marker__heading">' + chapter[0] + '</h2>';
+
+    //go through all the fields and output the fields
+    //we start at 1, to skip the title, and end at -2 because the last 2 fields are lat and lng
+    for (var k = 1; k < chapterLength - 2; k++) {
+
+      //add option to country options if not already there (for most map types - continent is for alum)
+      if ((k == 1 && headers[1] == 'Country') || (k == 3 && headers[3] == 'Continent')) {
+        countryOptions.push(chapter[k]);
+      }
+
+      //formatting
+      if (chapter[k].substring(0,4) == 'http') {
+        chapter[k] = '<a target="_blank" href="' + chapter[k] + '">' + chapter[k] + '</a>';
+      }      
+
+      if (chapter[k].length > 0) {
+        tbody += '<td><div style="min-width:200px;"><span class="map-marker__context">' + headers[k] + ':</span> ' + chapter[k] + '</div></td>';
+        contentString += '<p class="map-marker__name"><b>' + headers[k] + ':</b> ' + chapter[k] + '</p>';
+      } else {
+        tbody += '<td><div style="min-width:200px;"><span class="map-marker__context">' + headers[k] + ':</span> N/A</div></td>';
+      }
+    }
+    tbody += '</tr>';
+
+    //lat and lng are always last two fields
+    var myLatLng = new google.maps.LatLng(chapter[chapterLength - 2], chapter[chapterLength - 1]);
+
+    contentString += '</div>';
+    var myInfoWindow = new google.maps.InfoWindow({
+      content: contentString
+    });
+
+    var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        icon: locIcon,
+        title: chapter[0],
+        infowindow: myInfoWindow
+    });
+
+    infoWindows.push(myInfoWindow); 
+    
+    google.maps.event.addListener(marker, 'click', function() {
+      closeAllInfoWindows();
+      this.infowindow.open(map,this);
+    });
+
+    google.maps.event.addListener(marker, 'mouseover', function() {
+      this.setIcon(locIconHover);
+    });
+
+    google.maps.event.addListener(marker, 'mouseout', function() {
+      this.setIcon(locIcon);
+    });
+  }
+
+  tbody += '</tbody>';
+
+  
+  mapList.innerHTML = tbody;
+
+  var mapCountrySelect = document.getElementById('map-country-select');
+  var countryOptionsHtml;
+
+  if (isAlumniMap) {
+    countryOptionsHtml = '<option value="none">Select a continent to view its locations</option>';
+  } else {
+    countryOptionsHtml = '<option value="none">Select a country to view its locations</option>';
+  }
+
+  //remove duplicates
+  countryOptions = countryOptions.filter(function(item, pos) {
+      return countryOptions.indexOf(item) == pos;
+  });
+
+  //add options
+  for(var l = 0; l < countryOptions.length; l++) {
+    countryOptionsHtml += '<option value="' + countryOptions[l].toLowerCase().replace(' / ', '-').replace('/', '-').replace(' ', '-') + '">' + countryOptions[l] + '</option>';
+  }
+
+  mapCountrySelect.innerHTML = countryOptionsHtml;  
+}
+
+if (document.getElementById('map-canvas') !== null && typeof google !== 'undefined' ) {
+  google.maps.event.addDomListener(window, 'load', initialize);
+}

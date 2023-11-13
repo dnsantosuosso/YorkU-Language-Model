@@ -1,0 +1,250 @@
+/**
+ * Functionality specific to Twenty Thirteen.
+ *
+ * Provides helper functions to enhance the theme experience.
+ */
+var currentMenu ="";
+
+( function( $ ) {
+
+	var html               = $( 'html' ),
+	    navbar             = $( '#navbar' ),
+	    scrollOffsetMethod = ( typeof window.scrollY === 'undefined' ),
+	    adjustAnchor;
+
+
+        var body    = $( 'body' ),
+            _window = $( window );
+
+        /**
+         * Adds a top margin to the footer if the sidebar widget area is higher
+         * than the rest of the page, to help the footer always visually clear
+         * the sidebar.
+         */
+        $( function() {
+                if ( body.is( '.sidebar' ) ) {
+                        var sidebar   = $( '#tertiary .widget-area' ),
+                            secondary = ( 0 === sidebar.length ) ? -40 : sidebar.height(),
+                            margin    = $( '#tertiary .widget-area' ).height() - $( '#content' ).height() - secondary;
+
+                        if ( margin > 0 && _window.innerWidth() > 999 ) {
+                                $( '#colophon' ).css( 'margin-top', margin + 'px' );
+                        }
+                        $(".site-content").css({'min-height':($("#tertiary .widget-area").height()+'px')});
+                }
+        } );
+
+                                
+$("#iatwitter-widget-0").ready(function(){
+    //twh = $(#twitter-widget-0).height();
+    //thisHeight = $("#tertiary .widget-area").height() + $("#tertiary .widget-area iframe.twitter-timeline").height() + "px";
+    // May need to add callback to Twitter widget to calculate properly
+    if ( $("#tertiary .widget-area").height() >  $(".site-content").height()) {
+       $(".site-content").css('min-height',$("#tertiary .widget-area").height()+ 100 + "px");
+       $(".site-content").resize();
+    }
+});
+
+//$(twttr.widgets.createTimeline.length).ready(function(){
+if ( $("#tertiary .widget-area").height() >  $(".site-content").height()) {
+       $(".site-content").css('min-height',$("#tertiary .widget-area").height()+ 300 + "px");
+       $(".site-content").resize();
+}
+//});
+
+
+	/**
+	 * Repositions the window on jump-to-anchor to account for navbar
+	 * height.
+	 */
+	adjustAnchor = function() {
+		if ( window.location.hash )
+			window.scrollBy( 0, -49 );
+	};
+
+	$( function() {
+		adjustAnchor();
+	} );
+	_window.on( 'hashchange.twentythirteen', adjustAnchor );
+
+	/**
+	 * Displays the fixed navbar based on screen position.
+	 */
+	if ( _window.innerWidth() > 111644 ) {
+		_window.on( 'scroll.twentythirteen', function() {
+			var scrollOffset = scrollOffsetMethod ? document.documentElement.scrollTop : window.scrollY;
+
+			if ( scrollOffset > navbarOffset )
+				html.addClass( 'navbar-fixed' );
+			else
+				html.removeClass( 'navbar-fixed' );
+		} );
+	}
+
+	/**
+	 * Allows clicking the navbar to scroll to top.
+	 */
+	navbar.on( 'click.twentythirteen', function( event ) {
+		// Ensure that the navbar element was the target of the click.
+		if ( 'navbar' == event.target.id  || 'site-navigation' == event.target.id )
+			$( 'html, body' ).animate( { scrollTop: 0 }, 'fast' );
+	} );
+
+	/**
+	 * Enables menu toggle for small screens.
+	 */
+	 
+	 
+	( function() {
+		var nav = $( '#site-navigation' ), button, menu;
+		if ( ! nav )
+			return;
+
+		button = nav.find( '.menu-toggle' );
+		menu   = nav.find( '.nav-menu' );
+		if ( ! button )
+			return;
+
+		// Hide button if menu is missing or empty.
+		if ( ! menu || ! menu.children().length ) {
+			button.hide();
+			return;
+		}
+                
+                var mousedown = false;
+		$( '.menu-toggle' ).on( 'mousedown', function(e) {
+		    nav.toggleClass( 'toggled-on' );
+                    mousedown = true;
+                     console.log(e);
+
+		});
+
+                $( '.menu-toggle' ).on( 'focus', function(e) {
+                    if (mousedown == false) {
+                      nav.toggleClass( 'toggled-on' );
+                      console.log(e);
+                    }
+                } );
+
+
+	} )();
+
+	/**
+	 * Makes "skip to content" link work correctly in IE9 and Chrome for better
+	 * accessibility.
+	 *
+	 * @link http://www.nczonline.net/blog/2013/01/15/fixing-skip-to-content-links/
+	 */
+	_window.on( 'hashchange.twentythirteen', function() {
+		var element = document.getElementById( location.hash.substring( 1 ) );
+
+		if ( element ) {
+			if ( ! /^(?:a|select|input|button|textarea)$/i.test( element.tagName ) )
+				element.tabIndex = -1;
+
+			element.focus();
+		}
+	});
+
+	/**
+	 * Arranges footer widgets vertically.
+	 */
+	if ( $.isFunction( $.fn.masonry ) ) {
+		var columnWidth = body.is( '.sidebar' ) ? 228 : 245;
+
+		$( '#secondary .widget-area' ).masonry( {
+			itemSelector: '.widget',
+			columnWidth: columnWidth,
+			gutterWidth: 20,
+			isRTL: body.is( '.rtl' )
+		} );
+	}
+
+	//Don't display page title if it is empty
+	$("h1.entry-title:empty").css("display","none");
+       
+        //Toggle Quicklinks menu 
+        $(".btn-navbar").on("click", function(){
+	        //$("#yorklinks-container").slideToggle();
+                $("#yorklinks-container").toggleClass("nav-container-open");
+		$(this).toggleClass("btn-nav-open");
+	});
+
+        // Listen for escape key to close quicklinks
+        
+        
+        $(document).keyup(function(e) {
+
+          var key = e.keyCode || event.which;
+
+ 
+           if (key === 27) { // esc keycode
+              if ($( "#ql-button" ).hasClass("AnimateOn")) {
+                 $("#ql-button" ).trigger( "click");
+              }
+
+              // close megamenu on escape
+              if ($( ".menu-item" ).hasClass("megaHover")) {
+                  $(".megaHover ul.sub-menu").css("display","none");
+              }
+            
+           }
+
+       });
+
+jQuery( "#ql-button,#hide" ).click(function() {
+  jQuery( "#quick-links-container" ).slideToggle( "fast", function() {
+    if ( !jQuery("#ql-button").hasClass("AnimateOn")) {
+       jQuery("#ql-button").addClass("AnimateOn");
+    } else {
+       jQuery("#ql-button").removeClass("AnimateOn");
+    }
+  });
+});
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("#quick-links-container").hide();
+  });
+});
+
+// Set Search behavior
+
+$('.search-button2').on("click", function(){ $("#yeb13searchfield").focus() });
+//$('#yeb11searchfield').on("blur", function(){ $("#yeb11banner").css("height","50px") });
+
+$("form.search-form .header-search").attr("placeholder","");
+$("form.search-form .header-search").attr("value","Search this site");
+
+//$("form.search-form .search-submit").addClass("icon-search-widget");
+//$("form.search-form .search-submit").attr("value","&#xf002; Search");
+
+$("form.search-form .header-search").click(function() {if (!this.cleared) { this.cleared = true; this.value = ''; } });
+
+//$("form.search-form .search-field").on("click", function() {
+//  if (!this.cleared) { this.cleared = true; this.value = ''; }
+//});
+
+$('.squelch-taas-accordion > h3').replaceWith(function() {
+        return $('<div>').html($(this).html());
+});
+
+
+// Add for attribute to search from label:
+$(".search-form label").attr("for","s");
+
+
+// Make= Menu button tabbable
+$(".menu-toggle").attr("tabindex",0);
+/*
+if ($.browser.msie) {
+  var ieversion = new Number($.browser.version);
+  if (ieversion <= 7) {
+    var r = confirm('You are using an outdated and unsupported web browser. Please click "OK" if you would like to install a newer version.');
+    if (r == true) {
+      window.location="http://computing.yorku.ca/students/technology-used-in-courses/a-better-browser/";
+    };
+    return;
+  };
+};
+*/
+} )( jQuery );

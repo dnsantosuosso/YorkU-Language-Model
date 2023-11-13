@@ -1,0 +1,141 @@
+Drupal.behaviors.program_search = {
+	attach:function(context, settings){
+		let target_checkboxes = jQuery('input[type="checkbox"]');
+		let target_input = 		jQuery('.text-search-control input');
+		let target_links = 		jQuery('.program__link a');
+		
+		let program_theme = 	window.program_theme;
+		let program_theme_checkbox = target_checkboxes.filter('[value="theme-' + program_theme + '"]');
+		
+		if(program_theme_checkbox.length == 1){
+			program_theme_checkbox[0].checked = true;
+		}
+		
+		let uuid = 	'';
+		fetch('/ajax/uuid').then((response) => response.text()).then((text)=>{uuid = text});
+		
+		target_checkboxes.change(function(event){
+			updateProgramSearch();
+			
+			if(typeof ga === 'function'){
+				ga('create', 'UA-54028600-1', {'name':'main'});
+				ga('main.send', 'event', 'futurestudents.yorku.ca', "program-search_checkbox-" + (event.currentTarget.checked ? 'checked' : 'unchecked'), uuid + ':' + event.currentTarget.value);
+			}
+		});
+		
+		if(target_input.length > 0){
+			target_input.keypress(function(event){
+				if(event.which == 13){
+					updateProgramSearch();
+					
+					if(typeof ga === 'function'){
+						ga('create', 'UA-54028600-1', {'name':'main'});
+						ga('main.send', 'event', 'futurestudents.yorku.ca', "program-search_keyword-changedv2", uuid + ':' + target_input.val().toLowerCase());
+					}
+				}
+			});
+		}
+		
+		if(target_links.length > 0){
+			target_links.click(function(event){
+				let target_link = this;
+				if(typeof ga === 'function'){
+					ga('create', 'UA-54028600-1', {'name':'main'});
+					ga('main.send', 'event', 'futurestudents.yorku.ca', "program-search_clicked", uuid + ':' + target_link.href);
+				}
+			});
+		}
+		
+		
+		
+		//if the person has come back from another page
+		setTimeout(function(){
+			let target_checkboxes_checked = jQuery('input[type="checkbox"]:checked');
+			let target_parents = 	[];
+			
+			target_checkboxes_checked.each(function(){
+				let target_parent = jQuery(this).closest('.kt-accordion-wrap');
+				if(target_parents.indexOf(target_parent[0]) === -1){
+					target_parents.push(target_parent[0]);
+				}
+			});
+	
+			for(let target_parent of target_parents){
+				jQuery('.kt-blocks-accordion-header', target_parent).click(); //open on initialize
+			}
+		}, 500);
+		setTimeout(updateProgramSearch, 500);
+	}
+}
+
+function updateProgramSearch(){
+	let target_parent = 	jQuery('.program-search-view');
+	let target_programs = 	jQuery('.program, .event, #on-campus-event-sessions .on-campus-event-session', target_parent);
+	let target_checkboxes = jQuery('input[type="checkbox"]');
+	let target_input = 		jQuery('.text-search-control input');
+	
+	target_programs.css('display', 'none').css('order', 0);
+	let target_checkboxes_checked = jQuery('input[type="checkbox"]:checked');
+	
+	if(target_checkboxes_checked.length == 0){
+		target_programs.css('display', 'block');
+	}
+	else{
+		let target_programs_filtered = target_programs;
+		target_checkboxes_checked.each(function(){
+			let checkbox_value = 	this.value;
+			let checkbox_group = 	this.name;
+			
+			let requirements = 		'';
+			
+			let checkbox_group_checked = jQuery('input[type="checkbox"][name="' + checkbox_group + '"]:checked');
+			if(checkbox_group_checked.length == 1){ //just the current checkbox
+				requirements = 		'.' + checkbox_value;
+			}
+			else{
+				checkbox_group_checked.each(function(){
+					requirements += (requirements !== '' ? ',' : '') + '.' + this.value;
+				});
+			}
+			
+			target_programs_filtered = target_programs_filtered.filter(requirements);
+		});
+		
+		target_programs_filtered.css('display', 'block');
+	}
+	
+	if(target_input.length > 0 && target_input.length > 0){
+		var input = target_input.val().toLowerCase();
+		jQuery.get('/ajax/program-search', { query: input }, function(data){
+			target_programs.each(function(){
+				var target_program = 	jQuery(this);
+				if(target_program.css('display') == 'none'){
+					return;
+				}
+				
+				var not_found_in_source = 		jQuery('h3', target_program).text().toLowerCase().search(input) == -1;
+				var not_found_in_keywords = 	!target_program.data('keywords') || target_program.data('keywords').search(input) == -1;		
+				
+				var uuid_matches = 				data.results.length ? data.results.indexOf(target_program.data('uuid')) : -1;	
+				
+				if((not_found_in_source && not_found_in_keywords) && !(uuid_matches >= 0)){
+					target_program.css('display', 'none');
+				}
+				else{
+					let order = 0;
+					
+					if(data.results.length && uuid_matches >= 0){
+						order -= (data.results.length - uuid_matches);
+					}
+					if(!not_found_in_source){
+						order -= 1000;
+					}
+					
+					target_program.css('order', order);
+				}
+			});	
+		}, 'json');		
+	}
+	
+	target_input.parent().css('order', Number.MIN_SAFE_INTEGER);
+}

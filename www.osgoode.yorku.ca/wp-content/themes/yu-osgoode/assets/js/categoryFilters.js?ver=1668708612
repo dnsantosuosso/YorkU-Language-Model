@@ -1,0 +1,162 @@
+(function ($) {
+    'use strict';
+
+    var filterByCategory = '#yu-filter-by-category',
+        sortByDate = '#yu-filter-by-date',
+        loader = '.yu__loader',
+        contentBlockName = '.yu__category-block',
+        doFilter = function (page_number) {
+            var contentBlock = $(contentBlockName).first();
+
+
+            //$('#yu__category-title').html($(filterByCategory + ' option:selected').text().trim());
+            $('#yu__category-slug').removeClass().addClass($(filterByCategory + ' option:selected').attr('data-slug'));
+
+            let ajax_action = 'yu_filter_by_category';
+            if ($('#yu__category-slug').data('post-type') === 'newsroom') {
+                ajax_action = 'yu_filter_by_category_newsroom';
+            }
+
+            $(loader).show();
+            $.ajax({
+                url: yu_data.ajax,
+                type: 'POST',
+                dataType: 'json',
+                data: {
+                    action: ajax_action,
+                    term_id: $('#yu-filter-by-category').val(),
+                    sortByDate: $(sortByDate).val(),
+                    page_number: page_number,
+                    wpnonce: yu_data.security
+                },
+                beforeSend: function () {
+                    contentBlock.html('');
+                    $(loader).show();
+                    console.log('show');
+                },
+                success: function (data) {
+                    contentBlock.html(getTemplate(data)).hide().slideDown('slow');
+                },
+                complete: function () {
+                    $(loader).hide();
+                    console.log('complete: hide');
+                },
+                error: function (xhr) {
+                    console.log('Error occured.please try again' + xhr.statusText + xhr.responseText);
+                    $(loader).hide();
+                    console.log('error: hide');
+                },
+            });
+        },
+        getTemplate = function (data) {
+            var html = '';
+
+            html += '<div class="yu__category-content">';
+            for (var post of data.posts) {
+                html += '<div class="yu__category-post" data-url="' + post.post_link + '" data-external="' + (post.is_external ? 1 : 0) + '">';
+                html += '<div class="yu__category-meta">';
+                html += '<div class="yu__category"><a href="' + post.category.link + '">' + post.category.name + '</a></div>';
+
+                html += '<div class="yu__category-title"><a href="' + post.post_link + '">' + post.title + '</a></div>';
+
+                console.log('post.post_type', post.post_type);
+
+                if (post.post_type === 'research-posts') {
+                    html += '<div class="yu__author">' + post.author + '</div>';
+                    html += '<div class="yu__publication">' + post.publication + '</div>';
+                }
+
+                if (['news', 'media_releases'].includes(post.post_type)) {
+                    html += '<div class="yu__post-content">' + post.post_content + '</div>';
+                }
+
+                if (['osgoode_news'].includes(post.post_type)) {
+                    html += '<div class="yu__post-related-people">' + post.post_related_people + '</div>';
+                    html += '<div class="yu__post-published-author">' + post.post_published_author + '</div>';
+                }
+
+                html += '<div class="yu__posted-on">' + post.post_date + '</div>';
+
+                if (post.is_external) {
+                    html += '<div class="yu__external-link-icon-block">' +
+                        '        <i class="yu__external-link-icon"></i>' +
+                        '     </div>';
+                }
+                html += '</div></div>';
+            }
+
+            html += '</div>';
+
+            html += '<div class="yu__category-pagination">';
+
+            var current_page = parseInt(data.page.current_page);
+            var total_pages = parseInt(data.page.total_pages);
+            var page_limit = 10;
+
+            if (current_page != 1) {
+                html += '<div class="yu__category-page" data-yu-page="1"><a href="#">first</a></div>';
+            } else {
+                html += '<div class="yu__category-page">first</div>';
+            }
+
+            if (current_page > 1) {
+                html += '<div class="yu__category-page" data-yu-page="' + (current_page - 1) + '"><a href="#">prev</a></div>';
+            } else {
+                html += '<div class="yu__category-page">prev</div>';
+            }
+
+            var page_offset = 4;
+            var start_from = current_page - page_offset <= 0 ? 1 : current_page - page_offset;
+            start_from = current_page + page_limit >= total_pages ? total_pages - page_limit : start_from;
+            start_from = start_from < 1 ? 1 : start_from;
+            var end_at = start_from + page_limit > total_pages ? total_pages : start_from + page_limit;
+
+            if (start_from > 1 && current_page != 1) {
+                html += '<div class="yu__category-page">...</div>';
+            }
+
+            for (var i = start_from; i <= end_at; i++) {
+                if (i == data.page.current_page) {
+                    html += '<div class="yu__category-page yu__category-current">' + i + '</div>';
+                } else {
+                    html += '<div class="yu__category-page" data-yu-page="' + i + '"><a href="#">' + i + '</a></div>';
+                }
+            }
+
+            if (current_page < total_pages && total_pages > page_limit) {
+                html += '<div class="yu__category-page">...</div>';
+            }
+
+            if (current_page < total_pages) {
+                html += '<div class="yu__category-page" data-yu-page="' + (current_page + 1) + '"><a href="#">next</a></div>';
+            } else {
+                html += '<div class="yu__category-page">next</div>';
+            }
+
+            if (current_page != total_pages) {
+                html += '<div class="yu__category-page" data-yu-page="' + total_pages + '"><a href="#">last</a></div>';
+            } else {
+                html += '<div class="yu__category-page">last</div>';
+            }
+
+            html += '</div>';
+
+            return html;
+        };
+
+    $(document).ready(function () {
+        doFilter(1);
+    });
+
+    $('body').on('change', filterByCategory + ', ' + sortByDate, function () {
+        var url = $(filterByCategory).find(':selected').data('url');
+        var add = (url.indexOf('?') === -1) ? '?' : '&';
+        location.href = url + add + 'o=' + $(sortByDate).find(':selected').val();
+    });
+
+    $('body').on('click', '.yu__category-page', function (e) {
+        e.preventDefault();
+        doFilter($(this).attr('data-yu-page'));
+    });
+
+})(jQuery);

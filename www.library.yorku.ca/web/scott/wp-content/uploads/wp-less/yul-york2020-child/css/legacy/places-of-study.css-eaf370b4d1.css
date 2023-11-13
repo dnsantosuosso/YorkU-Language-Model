@@ -1,0 +1,83 @@
+.places_of_study {
+  width: 95%;
+}
+.places_of_study p {
+  line-height: 1.4em;
+}
+.places_of_study span {
+  color: #686260;
+  background-image: none;
+  padding: 5px 5px 5px 10px;
+  /* icon :Before merged here as well */
+  text-align: left;
+  vertical-align: middle;
+}
+.places_of_study [class^="fa fa-"],
+.places_of_study [class*=" fa fa-"] {
+  font-size: 20px;
+  color: #444;
+}
+.places_of_study .filter-icons {
+  display: inline;
+}
+.places_of_study .place-listing {
+  padding: 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #a5a5a5;
+}
+.places_of_study .place-listing:nth-child(odd) {
+  background-color: #fafafa;
+}
+.places_of_study .study-image {
+  vertical-align: text-top;
+  margin: 0px 10px 10px 0;
+  display: inline-block;
+}
+.places_of_study .study-description {
+  max-width: 750px;
+  vertical-align: top;
+  display: inline-block;
+}
+.places_of_study .study-text-content {
+  min-width: 50px;
+}
+.places_of_study .nice-horizontal-line {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+/** End Places of Study Content Page **/
+#places_of_study_filters ul {
+  /* Spacing issue between li items. Its font related and not display:inline-block.
+    * Other solutions involved floating but font in ul to zero was the safest with multiple
+    * browsers - Tested in Chrome, FF, Safari
+    */
+  font-size: 0;
+  padding-left: 0px;
+  /* Updated UIT template adds padding of 25px to both left and right. Needed to set this to 0 for alignment with heading */
+}
+#places_of_study_filters li {
+  display: inline-block;
+  font-size: 14px;
+  vertical-align: middle;
+  text-align: left;
+  word-wrap: break-word;
+  border-left: 1px solid #eee;
+  padding: 3px;
+  margin: 0;
+  width: 33.3%;
+}
+@media (max-width: 640px) {
+  #places_of_study_filters li {
+    width: 100%;
+  }
+}
+#places_of_study_filters .icon-selected {
+  line-height: 1.8em;
+  background-color: #dbdbdb;
+  font-family: inherit;
+  padding: 3px;
+  margin: 0;
+}
+/* End of Places of Study & Places of Study Filters */

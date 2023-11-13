@@ -1,0 +1,176 @@
+  /* ===========================
+   ===== Primo Search Box ====
+   =========================== */
+  
+  .elbsb-search-container {
+    background-color: #eee;
+    padding: 15px;
+    margin: 25px auto;
+  }
+  
+  .elbsb-search-container .omni-logo {
+    padding-bottom: 10px;
+  }
+
+  .elbsb-search-container .omni-links {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:5px;
+    color: #333;
+  }
+  .elbsb-search-container .omni-links a {
+    margin-left:5px;
+    margin-right:5px;
+  }
+  
+/*  .elbsb-search-container .omni-links a:last-child {
+    text-align:right;
+    float:right;
+  }
+*/  
+  .elbsb-search-container form {
+    background: #fff;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+  }
+  
+  .elbsb-search-field {
+    height: 55px;
+  }
+
+  .elbsb-search-container form .elbsb-search-field input {
+    height: 100%;
+    background: transparent;
+    border: 0;
+    display: block;
+    width: 100%;
+    padding: 10px 32px;
+    font-size: 1.1rem;
+    color: #000;
+  }
+  
+  .elbsb-search-field input.placeholder {
+    color: #A5A5A5;
+    font-size: 1.1rem;
+  }
+
+  .elbsb-search-field input:-moz-placeholder {
+    color: #A5A5A5;
+    font-size: 1.1rem;
+  }
+
+  .elbsb-search-field input::-webkit-input-placeholder {
+    color: #A5A5A5;
+    font-size: 1.1rem;
+  }
+
+  .elbsb-search-container form .elbsb-query-box input {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+  
+  form .elbsb-search-field input:hover, form .elbsb-search-field input:focus {
+    box-shadow: none;
+    outline: 0;
+    border-color: #fff;
+  }
+  .elbsb-search-field.elbsb-query-box {
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+  
+  .elbsb-search-field.elbsb-search-button-box {
+/*    width: 74px;*/
+  }
+  form .elbsb-search-field.elbsb-search-button-box input {
+	    height: 100%;
+	    width: 100%;
+	    white-space: nowrap;
+	    color: #fff;
+	    border: 0;
+	    cursor: pointer;
+	    background: #e31837;
+	    transition: all .2s ease-out, color .2s ease-out;
+      padding: 10px 15px;
+      border-radius: 0 3px 3px 0px;
+  }
+  
+  form .elbsb-search-field.elbsb-search-button-box input:hover {
+    background: #9a0100;
+  }
+
+  form .elbsb-search-field.elbsb-search-button-box input:focus {
+    outline: 0;
+    box-shadow: none;
+  }
+  
+  /* ===============================================
+     ====== Medua Query for  Primo Search Box ====== 
+     =============================================== */
+
+  /* Tablet */
+  @media screen and (max-width: 992px) {
+    .elbsb-search-container {
+      margin: 25px 20px 25px 0;
+    }
+
+    .elbsb-search-container form .elbsb-search-field {
+      height: 50px;
+    }
+  }
+
+  /* Phone */
+  @media screen and (max-width: 767px) {
+
+    .mobile_hide {
+      display: none;
+    }
+    .elbsb-search-container .omni-logo {
+/*      margin-left:auto;
+      margin-right:auto;
+      display:block;
+*/  
+      margin-left: 25%;
+      margin-right: 25%;
+      
+    }
+    
+    .elbsb-search-container {
+      margin: 25px 20px 25px 0;
+    }
+    .elbsb-search-container .omni-links a {
+      display:inline-block;
+      width: 45%;
+      text-align: center;
+    }    
+    .elbsb-search-container form {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      padding: 20px;
+    }
+    .elbsb-search-container form .elbsb-search-field {
+      margin-bottom: 20px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .elbsb-search-container form .elbsb-search-field input {
+      padding: 10px 15px;
+    }
+    .elbsb-search-container form .elbsb-search-field.query-box  {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    .elbsb-search-container form .elbsb-search-field.query-box input {
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    .elbsb-search-container form .elbsb-search-field.elbsb-search-button-box {
+      margin-bottom: 0;
+      width: 100%;
+    }
+  }

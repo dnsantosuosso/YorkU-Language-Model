@@ -1,0 +1,28 @@
+.border-ybb {
+  border-color: #3AC2EF !important;
+}
+/* York Light Blue Blocks */
+.border-ylb, .border-lg.border-ylb {
+  border-color: #ACE6F8 !important;
+}
+.bg-ylb {
+  background: #ACE6F8 !important;
+}
+.bg-ybb {
+  background: #3AC2EF !important;
+}
+/* Brand Block */
+.brand-block figure.border-ybb {
+  background: #3AC2EF !important;
+}
+.brand-block.ylb .wp-block-group__inner-container {
+  background: #ACE6F8;
+  color: #212529;
+}
+.brand-block.ybb .wp-block-group__inner-container {
+    background: #3AC2EF;
+  color: #212529;
+}
+.brand-block.ylb .wp-block-group__inner-container a, .brand-block.ylb .wp-block-group__inner-container a:hover, .brand-block.ylb .wp-block-group__inner-container a:focus, .brand-block.ybb .wp-block-group__inner-container a, .brand-block.ybb .wp-block-group__inner-container a:hover, .brand-block.ybb .wp-block-group__inner-container a:focus {
+  color: #212529 !important;
+}

@@ -1,0 +1,78 @@
+<html>
+<!--[if IE 7]>
+<html class="ie ie7 " lang="en-CA">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8 " lang="en-CA">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html class="" lang="en-CA">
+<!--<![endif]--> 
+<head>
+  <meta charset="utf-8">
+  <title>Passport York Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link href="/albacommon/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/albacommon/css/apptemplate.css" rel="stylesheet">
+  <link href="/albacommon/css/ppylogout.css" rel="stylesheet">
+  <!-- javascript -->
+  <script src="/albacommon/css/jquery.min.js"></script>
+  <script src="/albacommon/css/bootstrap.min.js"></script>
+  <link href="/albacommon/css/font-awesome.min.css" rel="stylesheet">
+  <script src="/ppylogin/js/ppylogin.js"></script>
+  </head>
+
+  <body role="document">
+  
+<div id="yapp-outer">
+      <div class="yapp-logo-container container" id="yapp-logo-container">
+        <a href="index.html">
+           <img id="york-logo" src="/albacommon/images/YorkULogo.svg" border="0" alt="York University">
+        </a>
+        
+          <div class="la_buttons">
+          </div>
+      </div>
+    </div>
+    
+    <div class="app-title-bar">
+  <div class="container"><h1>Passport York Login</h1>
+  </div>
+</div>
+
+    <div class="container page-content" role="main">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="page-header">
+    	<h2>Passport York Sign-Up for New Students</h2>
+      </div>
+      <p><strong>Note:</strong> You can only use the New Student Sign-Up page once.</p>
+      <form name="loginform" method="POST" action="/ppylogin/ppylogin"><p>
+         <label for="mli">Your Student Number:</label>
+         <br />
+         <input type="text" id="mli" maxlength="9" name="mli" /></p>
+      <p>
+        <label for="password">Your Date of Birth (YYYYMMDD):</label>
+	    <br />
+        <input type="password" id="password" maxlength="8" name="password" /></p>
+      <input type="hidden" name="signup" value="1" /><p><input type="submit" class="btn btn-primary" name="dologin" value="Sign Up" /></p>
+      <div><input type="hidden" name="__albform__" value="eJxLPnFs/kNu576dMZeiNlQyhnozzgtqYKotZNQI5ShILC4uzy9KKWTyZghlzs3JLGQGMtiKM9Pz
+SgsKWYBs9pT8nPz0zLxCVm+mUj0AWssaKQ==
+" /></div>
+<div><input type="hidden" name="__albstate__" value="eJzjYAx++OxXttuXyK+HLVfNWf3tZgVHA1NtIaNGKEd8fEFiemp8fCFTKGtOfnpmXiFzKCdEsBgo
+yhJbyFqqBwCwuhmL
+" /></div>
+<div><input type="hidden" name="__pybpp__" value="iWo2qMtP5fjZRK5XPB/MMSuig20w"></div></form></div>
+    <div class="col-sm-6">
+      <div class="page-header"><img align="left" alt="Passport York logo" style="margin-right:15px;width:120px;" src="/albacommon/images/PYLogo.svg"><strong>Passport York</strong> authenticates you as a member of the York community and gives you access to a wide range of computing resources and services.
+      </div>
+      <p>If you have never used Passport York before, then enter the information on the left to create your Passport York username and password.</p>
+      <p>Once you have created your username and password, you can use them to sign in at Passport York login pages, such as registering for courses, checking your grades, MOODLE and using AirYork wireless internet on campus.</p>
+      <p>If you need help, please contact us at <a href="http://student.computing.yorku.ca/uit-service-desk-counter/">http://student.computing.yorku.ca/uit-service-desk-counter/</a></p>
+    </div>
+  </div>
+</div>
+</div> <!-- /container -->
+
+</body></html>

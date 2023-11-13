@@ -1,0 +1,65 @@
+.program-reqs,
+.program-resources,
+.admission-requirements .selector {
+  display: none;
+}
+.program-reqs.selected,
+.program-resources.selected,
+.admission-requirements .selector.selected {
+  display: block;
+}
+.admission-requirements .all-programs,
+.admission-requirements .all-countries {
+  display: block;
+  text-align: right;
+}
+.program-switcher.col-md-6 {
+  padding-left: 0;
+}
+.admission-requirements .program__links .btn {
+  border-radius: 0;
+}
+.admission-requirements .program__apply-links {
+  display: flex;
+}
+.admission-requirements .program__requirements li.ds-list-no-style {
+  list-style-type: none;
+}
+.admission-requirements .program__requirements li i.fa {
+  color: #CC0000;
+}
+h3.requirements__title,
+h3.program__name {
+  font-size: 28px;
+}
+h4.requirements__heading {
+  font-size: 22px;
+}
+
+.equivalency-requirement-average .equivalency-admitted-offering{
+  display:none;
+}
+
+.program__requirements_prefix{
+}
+
+  .program__requirements_prefix .fs-admit-req-general-req-header{
+    margin-bottom:16px;
+    font-size:1.5rem;
+  }
+  
+  .program__requirements_prefix h4{
+    margin:12px auto 8px;
+  }  
+
+  .program__requirements_prefix li{
+    list-style:none;
+  }
+
+.ds-admitreq-conditional-5years-turnoff .ds-admitreq-conditional-5years{
+  display:none;
+}
+.admission-requirements-program .window-frame {
+  width: 100%;
+}
+

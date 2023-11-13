@@ -1,0 +1,458 @@
+/* ===========================
+   ===== Primo Search Box ====
+   =========================== */
+   /** OMNI WP5 SEARCH BOX **/
+
+.omni-form-container {
+  background: #E8E4DF;
+  /* background: #fafafa; */
+  padding: 2em;
+  margin: 0 auto;
+  border-radius: 10px;
+  width: 90%;
+}
+
+.omni-form-container-tabbed {
+  background: none;
+  padding: 0.8rem;
+  margin: 0 auto;
+  border-radius: 10px;
+  width: auto;
+}
+
+.omni-search-form {
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 85%; */
+  margin: 0 auto;
+  justify-content: flex-start;
+  padding-bottom: 10px;
+}
+
+
+.omni-search-form input[type="search"] {
+
+  flex: 2 0 250px;
+  //margin-left: 15px;
+  //margin-top: 15px;
+  border: none;
+  whitespace: wrap;
+  border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 0px 0px 5px;
+  background: #E9E9E9;
+  background: #FFFFFF;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0.35em 0.75em;
+  border: none;
+  font-size: 1.1em;
+  text-decoration: none;
+  line-height: normal;
+  min-height: 3rem;
+  max-height: 3.3rem;
+}
+
+.omni-search-form input[type="search"]:focus {
+  background: #f1f1f1;
+  color: #000000;
+  transition: background 400ms ease-in-out;
+  outline: none;
+  /* letter-spacing: .1em; */
+  box-shadow: 0 0 3px rgba(277,24,55, 1);
+  border: 1px solid rgba(277,24,55, 0);
+}
+
+.omni-search-form button,
+.omni-search-form input[type="submit"] {
+  flex: 1 0 20px;
+
+  max-height: 3em;
+  font-size: 1.1em;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  border-radius: 0px 5px 5px 0px;
+  background: #B82025;
+  color: white;
+  /* border: none; */
+  border: 3px solid #B82025;
+  padding: 0.35em 0.75em;
+  cursor: pointer;
+
+}
+.omni-search-form button:hover,
+.omni-search-form input[type="submit"]:hover {
+  background: #8C0000;
+}
+
+/* OMNI-LOGO */
+.omni-logo {
+  padding-right: 10px;
+  /* width: 85%; */
+  margin: 8px auto 15px 0;
+  flex: 1 0 0;
+}
+
+/* OMNI-LIBRARY-LINKS */
+.omni-links {
+  text-align: center;
+}
+.omni-links a {
+  display: inline-block;
+}
+.omni-links .divider {
+  display: inline;
+}
+/* ==========================
+====== Searcb Box Tabs ======
+=========================== */
+
+.worko-tabs {
+  margin: 20px;
+  margin: 2% 5% 2% 5%;
+  width: 80%;
+  width: auto;
+}
+.worko-tabs .state {
+  position: absolute;
+  left: -10000px;
+}
+.worko-tabs .flex-tabs {
+  display: flex;
+  justify-content: space-between;
+  //justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.worko-tabs .flex-tabs .tab {
+  flex-grow: 1;
+  max-height: 60px;
+  text-align: center;
+}
+.worko-tabs .flex-tabs .panel {
+  background-color: #e31837;
+  background: rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.85);
+  min-height: 150px;
+  padding: 20px;
+  flex-basis: auto;
+  display: none;
+  width: 100%;
+
+  color: #000;
+  //border-radius: 0px 0px 10px 10px;
+}
+.worko-tabs .tab {
+  display: inline-block;
+  padding: 10px;
+  vertical-align: top;
+  background-color: #eee;
+  background-color: #000;
+  background: rgba(255, 255, 255, 0.85);
+  cursor: hand;
+  cursor: pointer;
+  border-left: 10px solid #ccc;
+  border-left: 10px solid #686260;
+  border-left: 0px solid rgba(255, 255, 255, 0.85);
+  border-bottom: 0px solid rgba(255, 255, 255, 0.85);
+  color: #000;
+}
+
+  .worko-tabs .tab:first-child {
+    border-radius: 10px 10px 0px 0px;
+  }
+  .worko-tabs .tab:nth-child(2) {
+    border-radius: 0px 0px 10px 10px;
+  }
+
+
+
+.worko-tabs .tab:hover {
+  background-color: #e31837;
+  background-color: #fafafa;
+}
+
+#tab-one:checked ~ .tabs #tab-one-label,
+#tab-two:checked ~ .tabs #tab-two-label {
+  //background-color: #fff;
+  cursor: default;
+  border-left-color: #69be28;
+  border-left-color: #e31837;
+  border-bottom: 4px solid #686260;
+  border-bottom: 4px solid #d6cfca;
+  border-bottom: 4px solid #b7aea9;
+  color: #000;
+  font-weight: bold;
+}
+
+#tab-one:checked ~ .tabs #tab-one-panel,
+#tab-two:checked ~ .tabs #tab-two-panel {
+  display: block;
+}
+
+// Desktop
+@media (min-width: 768px) {
+
+  .worko-tabs .flex-tabs {
+    //justify-content: space-between;
+  }
+  .worko-tabs .flex-tabs .tab {
+    //flex-grow: 0.20;
+    //max-height: 60px;
+  }
+  .worko-tabs .tab:first-child {
+    border-radius: 10px 0px 0px 0px;
+  }
+  .worko-tabs .tab:nth-child(2) {
+    border-radius: 0px 10px 0px 0px;
+  }
+
+  .worko-tabs .flex-tabs .panel {
+    border-radius: 0px 0px 10px 10px;
+  }
+  .omni-search-form input[type="search"] { margin-top: 0; }
+
+  .omni-links {
+    //padding-bottom: 10px;
+    padding-left: 10px;
+    color: #333;
+    text-align:left;
+  }
+  .omni-links a {
+    margin-left:5px;
+    margin-right:5px;
+    text-align: center;
+  }
+
+} // media-min-768
+
+@media (max-width: 600px) {
+  .flex-tabs {
+    flex-direction: column;
+  }
+  .flex-tabs .tab {
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+  }
+  .flex-tabs .tab:last-of-type {
+    border-bottom: none;
+  }
+  .flex-tabs #tab-one-label {
+    order: 1;
+  }
+  .flex-tabs #tab-two-label {
+    order: 3;
+  }
+  .flex-tabs #tab-one-panel {
+    order: 2;
+  }
+  .flex-tabs #tab-two-panel {
+    order: 4;
+  }
+
+  #tab-one:checked ~ .tabs #tab-one-label,
+  #tab-two:checked ~ .tabs #tab-two-label {
+    border-bottom: none;
+  }
+
+  #tab-one:checked ~ .tabs #tab-one-panel,
+  #tab-two:checked ~ .tabs #tab-two-panel {
+    border-bottom: 1px solid #ccc;
+  }
+
+
+  .omni-links a { text-align: center; }
+  .omni-links .divider { display: none; }
+
+} //media-max-600
+
+
+
+   @media (max-width: 450px) {
+
+     .omni-form-container {
+       width: 100%;
+       /* margin: 25px 20px 25px 0; */
+     }
+
+     .omni-search-form { }
+     .omni-search-form input[type="search"] {
+       border-radius: 5px 5px 5px 5px;
+       flex: 2 0 100%;
+     }
+     .omni-search-form button {
+       border-radius: 5px 5px 5px 5px;
+       margin-top: 10px;
+     }
+     .omni-form-container .omni-links a { display: inline-block; }
+     .omni-links .divider { display: none; }
+     //.omni-form-container .omni-logo { width: 100%; display: block; }
+   }
+
+
+
+
+/*************************/
+/** 2014-Theme styling ** /
+/*************************/
+/*
+  .search-container {
+    background-color: #eee;
+    background-color: #E8E4DF;
+    padding: 15px;
+    margin: 25px auto;
+  }
+  .search-container .omni-logo {
+    padding-bottom: 10px;
+  }
+
+  .search-container .omni-links {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:5px;
+    color: #333;
+  }
+  .search-container .omni-links a {
+    margin-left:5px;
+    margin-right:5px;
+    padding-top: 10px;
+    color: #B82025;
+  }
+  .form-content {
+    background: #fff;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+  }
+  .search-field {
+    height: 55px;
+  }
+
+  .form-content .search-field input {
+    height: 100%;
+    background: transparent;
+    border: 0;
+    display: block;
+    width: 100%;
+    padding: 2px 32px;
+    font-size: 1.1rem;
+    color: #000;
+  }
+
+  .search-field input.placeholder {
+    color: #A5A5A5;
+    font-size: 1.1rem;
+  }
+
+  .search-field input:-moz-placeholder {
+    color: #A5A5A5;
+    font-size: 1.1rem;
+  }
+
+  .search-field input::-webkit-input-placeholder {
+    color: #A5A5A5;
+    font-size: 1.1rem;
+  }
+  .form-content .query-box input {
+    /* border-right: 1px solid rgba(0, 0, 0, 0.1); *
+  }
+
+  .search-field input:hover, .search-field input:focus {
+    box-shadow: none;
+    outline: 0;
+    border-color: #fff;
+  }
+  .search-field.query-box {
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+
+  .search-field.search-button-box {
+    /*    width: 74px; *
+  }
+  .search-field.search-button-box input {
+    height: 100%;
+    width: 100%;
+    white-space: nowrap;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    background: #e31837;
+    transition: all .2s ease-out, color .2s ease-out;
+    text-shadow: none;
+    padding: 10px 15px;
+    border-radius: 0 3px 3px 0px;
+  }
+
+  .search-field.search-button-box input:hover {
+    background: #9a0100;
+  }
+
+  .search-field.search-button-box input:focus {
+    outline: 0;
+    box-shadow: none;
+  }
+  /* ===============================================
+     ====== Medua Query for  Primo Search Box ======
+     =============================================== *
+
+  @media screen and (max-width: 992px) {
+    .search-container {
+      margin: 25px 20px 25px 0;
+    }
+
+    .form-content .search-field {
+      height: 50px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+
+    .search-container {
+      margin: 25px 20px 25px 0;
+    }
+
+    .form-content {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      padding: 20px;
+      width: auto;
+    }
+    .form-content .search-field {
+      margin-bottom: 20px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .form-content .search-field input {
+      padding: 10px 15px;
+    }
+    .form-content .search-field.query-box  {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    .form-content .search-field.query-box input {
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    .form-content .search-field.search-button-box {
+      margin-bottom: 0;
+      width: 100%;
+    }
+    .form-content .search-field input.placeholder {
+      color: #A5A5A5;
+      font-size: 1rem;
+    }
+    .form-content .search-field input:-moz-placeholder {
+      color: #A5A5A5;
+      font-size: 1rem;
+    }
+
+    .form-content .search-field input::-webkit-input-placeholder {
+      color: #A5A5A5;
+      font-size: 1rem;
+    }
+
+  } /* end of max-width: 767px */

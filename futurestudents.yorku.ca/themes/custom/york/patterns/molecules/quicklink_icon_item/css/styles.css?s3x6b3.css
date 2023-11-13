@@ -1,0 +1,15 @@
+.quicklink-icon .wp-block-columns .wp-block-column:first-child {
+  flex-basis: 33.33%;
+  max-width:75px;
+}
+
+.quicklink-icon .wp-block-columns .wp-block-column:last-child {
+  flex-basis: 66.66%;
+  margin-left:16px;
+}
+
+@media (max-width:599px){
+  .quicklink-icon .wp-block-columns .wp-block-column:last-child {
+    margin-left:0px;
+  }  
+}

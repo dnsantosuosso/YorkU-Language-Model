@@ -1,0 +1,101 @@
+#block-york-page-title{
+  display:none;
+}
+
+.fs-quick-links li{
+  margin:12px 0;
+}
+
+.program h3 {
+  font-size: 1.5em;
+}
+
+  .program h3.h5{
+    font-size:1.25rem;
+  }
+
+.program h4 {
+  font-size: 1em;
+}
+
+.program__additional_info,
+.program__resources{
+  margin: 40px auto;
+}
+
+/*.container .program .grey-bg-block {
+  padding-top: 0;
+  padding-bottom: 0;
+}*/
+
+.program__title{
+  color:#e31837;
+}
+
+.program__faculty{
+  font-size:1.25em;
+}
+
+.program__additional_info h3{
+  font-size:1.5em !important;
+}
+
+  .program__additional_info ul{
+    margin-top:16px;
+    list-style:none;
+    padding:0;
+  }
+  
+    .program__additional_info ul li{
+      margin:4px 0;
+    }  
+
+/*.program__details .wp-block-column p{
+  text-transform:capitalize;
+}*/
+
+.program__common_questions ul,
+.program__related_programs ul{
+  padding:0;
+  list-style:none;
+}
+
+  .program__common_questions ul li,
+  .program__related_programs ul li{
+    margin:8px 0;
+  }
+
+.viewbook-deck{
+  display:flex;
+}
+
+  .viewbook-deck > div{
+    text-align:center;
+    margin-right:16px;
+  }
+
+  .viewbook-deck img{
+    max-width:150px;
+  }
+  
+  .viewbook-deck .viewbook-label{
+    display:block;
+  }
+  
+@media (max-width:599px){
+  .program__resources .wp-block-columns .wp-block-column:last-child{
+    margin-top:24px;
+  }    
+}
+
+.program__graduate_degrees{
+}
+
+  .program__graduate_degrees .highlights-module{
+    margin-top:0 !important;
+  }
+  
+  .program__graduate_degrees ul,
+  .program__graduate_degrees ol{
+    margin-top:0;
+  }

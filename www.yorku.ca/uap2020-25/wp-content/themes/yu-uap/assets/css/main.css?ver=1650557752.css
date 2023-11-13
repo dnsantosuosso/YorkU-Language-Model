@@ -1,0 +1,2890 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/ibm-plex-sans-v8-latin-100.eot");
+  src: local("IBM Plex Sans Thin"), local("IBMPlexSans-Thin"), url("../fonts/ibm-plex-sans-v8-latin-100.eot?#iefix") format("embedded-opentype"), url("../fonts/ibm-plex-sans-v8-latin-100.woff2") format("woff2"), url("../fonts/ibm-plex-sans-v8-latin-100.woff") format("woff"), url("../fonts/ibm-plex-sans-v8-latin-100.ttf") format("truetype"), url("../fonts/ibm-plex-sans-v8-latin-100.svg#IBMPlexSans") format("svg");
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 100;
+  src: url("../fonts/ibm-plex-sans-v8-latin-100italic.eot");
+  src: local("IBM Plex Sans Thin Italic"), local("IBMPlexSans-ThinItalic"), url("../fonts/ibm-plex-sans-v8-latin-100italic.eot?#iefix") format("embedded-opentype"), url("../fonts/ibm-plex-sans-v8-latin-100italic.woff2") format("woff2"), url("../fonts/ibm-plex-sans-v8-latin-100italic.woff") format("woff"), url("../fonts/ibm-plex-sans-v8-latin-100italic.ttf") format("truetype"), url("../fonts/ibm-plex-sans-v8-latin-100italic.svg#IBMPlexSans") format("svg");
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/ibm-plex-sans-v8-latin-200.eot");
+  src: local("IBM Plex Sans ExtraLight"), local("IBMPlexSans-ExtraLight"), url("../fonts/ibm-plex-sans-v8-latin-200.eot?#iefix") format("embedded-opentype"), url("../fonts/ibm-plex-sans-v8-latin-200.woff2") format("woff2"), url("../fonts/ibm-plex-sans-v8-latin-200.woff") format("woff"), url("../fonts/ibm-plex-sans-v8-latin-200.ttf") format("truetype"), url("../fonts/ibm-plex-sans-v8-latin-200.svg#IBMPlexSans") format("svg");
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 200;
+  src: url("../fonts/ibm-plex-sans-v8-latin-200italic.eot");
+  src: local("IBM Plex Sans ExtraLight Italic"), local("IBMPlexSans-ExtraLightItalic"), url("../fonts/ibm-plex-sans-v8-latin-200italic.eot?#iefix") format("embedded-opentype"), url("../fonts/ibm-plex-sans-v8-latin-200italic.woff2") format("woff2"), url("../fonts/ibm-plex-sans-v8-latin-200italic.woff") format("woff"), url("../fonts/ibm-plex-sans-v8-latin-200italic.ttf") format("truetype"), url("../fonts/ibm-plex-sans-v8-latin-200italic.svg#IBMPlexSans") format("svg");
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/ibm-plex-sans-v8-latin-300.eot");
+  src: local("IBM Plex Sans Light"), local("IBMPlexSans-Light"), url("../fonts/ibm-plex-sans-v8-latin-300.eot?#iefix") format("embedded-opentype"), url("../fonts/ibm-plex-sans-v8-latin-300.woff2") format("woff2"), url("../fonts/ibm-plex-sans-v8-latin-300.woff") format("woff"), url("../fonts/ibm-plex-sans-v8-latin-300.ttf") format("truetype"), url("../fonts/ibm-plex-sans-v8-latin-300.svg#IBMPlexSans") format("svg");
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 300;
+  src: url("../fonts/ibm-plex-sans-v8-latin-300italic.eot");
+  src: local("IBM Plex Sans Light Italic"), local("IBMPlexSans-LightItalic"), url("../fonts/ibm-plex-sans-v8-latin-300italic.eot?#iefix") format("embedded-opentype"), url("../fonts/ibm-plex-sans-v8-latin-300italic.woff2") format("woff2"), url("../fonts/ibm-plex-sans-v8-latin-300italic.woff") format("woff"), url("../fonts/ibm-plex-sans-v8-latin-300italic.ttf") format("truetype"), url("../fonts/ibm-plex-sans-v8-latin-300italic.svg#IBMPlexSans") format("svg");
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/ibm-plex-sans-v8-latin-italic.eot");
+  src: local("IBM Plex Sans Italic"), local("IBMPlexSans-Italic"), url("../fonts/ibm-plex-sans-v8-latin-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/ibm-plex-sans-v8-latin-italic.woff2") format("woff2"), url("../fonts/ibm-plex-sans-v8-latin-italic.woff") format("woff"), url("../fonts/ibm-plex-sans-v8-latin-italic.ttf") format("truetype"), url("../fonts/ibm-plex-sans-v8-latin-italic.svg#IBMPlexSans") format("svg");
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ibm-plex-sans-v8-latin-regular.eot");
+  src: local("IBM Plex Sans"), local("IBMPlexSans"), url("../fonts/ibm-plex-sans-v8-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ibm-plex-sans-v8-latin-regular.woff2") format("woff2"), url("../fonts/ibm-plex-sans-v8-latin-regular.woff") format("woff"), url("../fonts/ibm-plex-sans-v8-latin-regular.ttf") format("truetype"), url("../fonts/ibm-plex-sans-v8-latin-regular.svg#IBMPlexSans") format("svg");
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/ibm-plex-sans-v8-latin-500.eot");
+  src: local("IBM Plex Sans Medium"), local("IBMPlexSans-Medium"), url("../fonts/ibm-plex-sans-v8-latin-500.eot?#iefix") format("embedded-opentype"), url("../fonts/ibm-plex-sans-v8-latin-500.woff2") format("woff2"), url("../fonts/ibm-plex-sans-v8-latin-500.woff") format("woff"), url("../fonts/ibm-plex-sans-v8-latin-500.ttf") format("truetype"), url("../fonts/ibm-plex-sans-v8-latin-500.svg#IBMPlexSans") format("svg");
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/ibm-plex-sans-v8-latin-600.eot");
+  src: local("IBM Plex Sans SemiBold"), local("IBMPlexSans-SemiBold"), url("../fonts/ibm-plex-sans-v8-latin-600.eot?#iefix") format("embedded-opentype"), url("../fonts/ibm-plex-sans-v8-latin-600.woff2") format("woff2"), url("../fonts/ibm-plex-sans-v8-latin-600.woff") format("woff"), url("../fonts/ibm-plex-sans-v8-latin-600.ttf") format("truetype"), url("../fonts/ibm-plex-sans-v8-latin-600.svg#IBMPlexSans") format("svg");
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 500;
+  src: url("../fonts/ibm-plex-sans-v8-latin-500italic.eot");
+  src: local("IBM Plex Sans Medium Italic"), local("IBMPlexSans-MediumItalic"), url("../fonts/ibm-plex-sans-v8-latin-500italic.eot?#iefix") format("embedded-opentype"), url("../fonts/ibm-plex-sans-v8-latin-500italic.woff2") format("woff2"), url("../fonts/ibm-plex-sans-v8-latin-500italic.woff") format("woff"), url("../fonts/ibm-plex-sans-v8-latin-500italic.ttf") format("truetype"), url("../fonts/ibm-plex-sans-v8-latin-500italic.svg#IBMPlexSans") format("svg");
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 600;
+  src: url("../fonts/ibm-plex-sans-v8-latin-600italic.eot");
+  src: local("IBM Plex Sans SemiBold Italic"), local("IBMPlexSans-SemiBoldItalic"), url("../fonts/ibm-plex-sans-v8-latin-600italic.eot?#iefix") format("embedded-opentype"), url("../fonts/ibm-plex-sans-v8-latin-600italic.woff2") format("woff2"), url("../fonts/ibm-plex-sans-v8-latin-600italic.woff") format("woff"), url("../fonts/ibm-plex-sans-v8-latin-600italic.ttf") format("truetype"), url("../fonts/ibm-plex-sans-v8-latin-600italic.svg#IBMPlexSans") format("svg");
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ibm-plex-sans-v8-latin-700.eot");
+  src: local("IBM Plex Sans Bold"), local("IBMPlexSans-Bold"), url("../fonts/ibm-plex-sans-v8-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/ibm-plex-sans-v8-latin-700.woff2") format("woff2"), url("../fonts/ibm-plex-sans-v8-latin-700.woff") format("woff"), url("../fonts/ibm-plex-sans-v8-latin-700.ttf") format("truetype"), url("../fonts/ibm-plex-sans-v8-latin-700.svg#IBMPlexSans") format("svg");
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/ibm-plex-sans-v8-latin-700italic.eot");
+  src: local("IBM Plex Sans Bold Italic"), local("IBMPlexSans-BoldItalic"), url("../fonts/ibm-plex-sans-v8-latin-700italic.eot?#iefix") format("embedded-opentype"), url("../fonts/ibm-plex-sans-v8-latin-700italic.woff2") format("woff2"), url("../fonts/ibm-plex-sans-v8-latin-700italic.woff") format("woff"), url("../fonts/ibm-plex-sans-v8-latin-700italic.ttf") format("truetype"), url("../fonts/ibm-plex-sans-v8-latin-700italic.svg#IBMPlexSans") format("svg");
+}
+@font-face {
+  font-family: "IBM Plex Serif";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/ibm-plex-serif-v9-latin-100.eot");
+  src: local("IBM Plex Serif Thin"), local("IBMPlexSerif-Thin"), url("../fonts/ibm-plex-serif-v9-latin-100.eot?#iefix") format("embedded-opentype"), url("../fonts/ibm-plex-serif-v9-latin-100.woff2") format("woff2"), url("../fonts/ibm-plex-serif-v9-latin-100.woff") format("woff"), url("../fonts/ibm-plex-serif-v9-latin-100.ttf") format("truetype"), url("../fonts/ibm-plex-serif-v9-latin-100.svg#IBMPlexSerif") format("svg");
+}
+@font-face {
+  font-family: "IBM Plex Serif";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/ibm-plex-serif-v9-latin-200.eot");
+  src: local("IBM Plex Serif ExtraLight"), local("IBMPlexSerif-ExtraLight"), url("../fonts/ibm-plex-serif-v9-latin-200.eot?#iefix") format("embedded-opentype"), url("../fonts/ibm-plex-serif-v9-latin-200.woff2") format("woff2"), url("../fonts/ibm-plex-serif-v9-latin-200.woff") format("woff"), url("../fonts/ibm-plex-serif-v9-latin-200.ttf") format("truetype"), url("../fonts/ibm-plex-serif-v9-latin-200.svg#IBMPlexSerif") format("svg");
+}
+@font-face {
+  font-family: "IBM Plex Serif";
+  font-style: italic;
+  font-weight: 100;
+  src: url("../fonts/ibm-plex-serif-v9-latin-100italic.eot");
+  src: local("IBM Plex Serif Thin Italic"), local("IBMPlexSerif-ThinItalic"), url("../fonts/ibm-plex-serif-v9-latin-100italic.eot?#iefix") format("embedded-opentype"), url("../fonts/ibm-plex-serif-v9-latin-100italic.woff2") format("woff2"), url("../fonts/ibm-plex-serif-v9-latin-100italic.woff") format("woff"), url("../fonts/ibm-plex-serif-v9-latin-100italic.ttf") format("truetype"), url("../fonts/ibm-plex-serif-v9-latin-100italic.svg#IBMPlexSerif") format("svg");
+}
+@font-face {
+  font-family: "IBM Plex Serif";
+  font-style: italic;
+  font-weight: 200;
+  src: url("../fonts/ibm-plex-serif-v9-latin-200italic.eot");
+  src: local("IBM Plex Serif ExtraLight Italic"), local("IBMPlexSerif-ExtraLightItalic"), url("../fonts/ibm-plex-serif-v9-latin-200italic.eot?#iefix") format("embedded-opentype"), url("../fonts/ibm-plex-serif-v9-latin-200italic.woff2") format("woff2"), url("../fonts/ibm-plex-serif-v9-latin-200italic.woff") format("woff"), url("../fonts/ibm-plex-serif-v9-latin-200italic.ttf") format("truetype"), url("../fonts/ibm-plex-serif-v9-latin-200italic.svg#IBMPlexSerif") format("svg");
+}
+@font-face {
+  font-family: "IBM Plex Serif";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/ibm-plex-serif-v9-latin-300.eot");
+  src: local("IBM Plex Serif Light"), local("IBMPlexSerif-Light"), url("../fonts/ibm-plex-serif-v9-latin-300.eot?#iefix") format("embedded-opentype"), url("../fonts/ibm-plex-serif-v9-latin-300.woff2") format("woff2"), url("../fonts/ibm-plex-serif-v9-latin-300.woff") format("woff"), url("../fonts/ibm-plex-serif-v9-latin-300.ttf") format("truetype"), url("../fonts/ibm-plex-serif-v9-latin-300.svg#IBMPlexSerif") format("svg");
+}
+@font-face {
+  font-family: "IBM Plex Serif";
+  font-style: italic;
+  font-weight: 300;
+  src: url("../fonts/ibm-plex-serif-v9-latin-300italic.eot");
+  src: local("IBM Plex Serif Light Italic"), local("IBMPlexSerif-LightItalic"), url("../fonts/ibm-plex-serif-v9-latin-300italic.eot?#iefix") format("embedded-opentype"), url("../fonts/ibm-plex-serif-v9-latin-300italic.woff2") format("woff2"), url("../fonts/ibm-plex-serif-v9-latin-300italic.woff") format("woff"), url("../fonts/ibm-plex-serif-v9-latin-300italic.ttf") format("truetype"), url("../fonts/ibm-plex-serif-v9-latin-300italic.svg#IBMPlexSerif") format("svg");
+}
+@font-face {
+  font-family: "IBM Plex Serif";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ibm-plex-serif-v9-latin-regular.eot");
+  src: local("IBM Plex Serif"), local("IBMPlexSerif"), url("../fonts/ibm-plex-serif-v9-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ibm-plex-serif-v9-latin-regular.woff2") format("woff2"), url("../fonts/ibm-plex-serif-v9-latin-regular.woff") format("woff"), url("../fonts/ibm-plex-serif-v9-latin-regular.ttf") format("truetype"), url("../fonts/ibm-plex-serif-v9-latin-regular.svg#IBMPlexSerif") format("svg");
+}
+@font-face {
+  font-family: "IBM Plex Serif";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/ibm-plex-serif-v9-latin-italic.eot");
+  src: local("IBM Plex Serif Italic"), local("IBMPlexSerif-Italic"), url("../fonts/ibm-plex-serif-v9-latin-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/ibm-plex-serif-v9-latin-italic.woff2") format("woff2"), url("../fonts/ibm-plex-serif-v9-latin-italic.woff") format("woff"), url("../fonts/ibm-plex-serif-v9-latin-italic.ttf") format("truetype"), url("../fonts/ibm-plex-serif-v9-latin-italic.svg#IBMPlexSerif") format("svg");
+}
+@font-face {
+  font-family: "IBM Plex Serif";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/ibm-plex-serif-v9-latin-500.eot");
+  src: local("IBM Plex Serif Medium"), local("IBMPlexSerif-Medium"), url("../fonts/ibm-plex-serif-v9-latin-500.eot?#iefix") format("embedded-opentype"), url("../fonts/ibm-plex-serif-v9-latin-500.woff2") format("woff2"), url("../fonts/ibm-plex-serif-v9-latin-500.woff") format("woff"), url("../fonts/ibm-plex-serif-v9-latin-500.ttf") format("truetype"), url("../fonts/ibm-plex-serif-v9-latin-500.svg#IBMPlexSerif") format("svg");
+}
+@font-face {
+  font-family: "IBM Plex Serif";
+  font-style: italic;
+  font-weight: 500;
+  src: url("../fonts/ibm-plex-serif-v9-latin-500italic.eot");
+  src: local("IBM Plex Serif Medium Italic"), local("IBMPlexSerif-MediumItalic"), url("../fonts/ibm-plex-serif-v9-latin-500italic.eot?#iefix") format("embedded-opentype"), url("../fonts/ibm-plex-serif-v9-latin-500italic.woff2") format("woff2"), url("../fonts/ibm-plex-serif-v9-latin-500italic.woff") format("woff"), url("../fonts/ibm-plex-serif-v9-latin-500italic.ttf") format("truetype"), url("../fonts/ibm-plex-serif-v9-latin-500italic.svg#IBMPlexSerif") format("svg");
+}
+@font-face {
+  font-family: "IBM Plex Serif";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/ibm-plex-serif-v9-latin-600.eot");
+  src: local("IBM Plex Serif SemiBold"), local("IBMPlexSerif-SemiBold"), url("../fonts/ibm-plex-serif-v9-latin-600.eot?#iefix") format("embedded-opentype"), url("../fonts/ibm-plex-serif-v9-latin-600.woff2") format("woff2"), url("../fonts/ibm-plex-serif-v9-latin-600.woff") format("woff"), url("../fonts/ibm-plex-serif-v9-latin-600.ttf") format("truetype"), url("../fonts/ibm-plex-serif-v9-latin-600.svg#IBMPlexSerif") format("svg");
+}
+@font-face {
+  font-family: "IBM Plex Serif";
+  font-style: italic;
+  font-weight: 600;
+  src: url("../fonts/ibm-plex-serif-v9-latin-600italic.eot");
+  src: local("IBM Plex Serif SemiBold Italic"), local("IBMPlexSerif-SemiBoldItalic"), url("../fonts/ibm-plex-serif-v9-latin-600italic.eot?#iefix") format("embedded-opentype"), url("../fonts/ibm-plex-serif-v9-latin-600italic.woff2") format("woff2"), url("../fonts/ibm-plex-serif-v9-latin-600italic.woff") format("woff"), url("../fonts/ibm-plex-serif-v9-latin-600italic.ttf") format("truetype"), url("../fonts/ibm-plex-serif-v9-latin-600italic.svg#IBMPlexSerif") format("svg");
+}
+@font-face {
+  font-family: "IBM Plex Serif";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ibm-plex-serif-v9-latin-700.eot");
+  src: local("IBM Plex Serif Bold"), local("IBMPlexSerif-Bold"), url("../fonts/ibm-plex-serif-v9-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/ibm-plex-serif-v9-latin-700.woff2") format("woff2"), url("../fonts/ibm-plex-serif-v9-latin-700.woff") format("woff"), url("../fonts/ibm-plex-serif-v9-latin-700.ttf") format("truetype"), url("../fonts/ibm-plex-serif-v9-latin-700.svg#IBMPlexSerif") format("svg");
+}
+@font-face {
+  font-family: "IBM Plex Serif";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/ibm-plex-serif-v9-latin-700italic.eot");
+  src: local("IBM Plex Serif Bold Italic"), local("IBMPlexSerif-BoldItalic"), url("../fonts/ibm-plex-serif-v9-latin-700italic.eot?#iefix") format("embedded-opentype"), url("../fonts/ibm-plex-serif-v9-latin-700italic.woff2") format("woff2"), url("../fonts/ibm-plex-serif-v9-latin-700italic.woff") format("woff"), url("../fonts/ibm-plex-serif-v9-latin-700italic.ttf") format("truetype"), url("../fonts/ibm-plex-serif-v9-latin-700italic.svg#IBMPlexSerif") format("svg");
+}
+header#masthead {
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  background: none;
+  box-shadow: none;
+  padding: 0 0 0 1rem;
+}
+header#masthead .container-fluid {
+  padding-right: 0;
+}
+header#masthead .navbar {
+  position: static;
+  margin: 0.5rem 0 0 4rem;
+}
+header#masthead .navbar .navbar-brand {
+  z-index: 999;
+}
+header#masthead .navbar .navbar-brand a:focus {
+  outline: dotted 1px #fff;
+  outline-offset: 5px;
+}
+header#masthead .navbar .navbar-brand a img {
+  width: 250px;
+}
+header#masthead.yu__header-sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #E31837;
+}
+header#masthead.yu__header-sticky .navbar {
+  margin-top: 0;
+  margin-left: 4rem;
+}
+header#masthead.yu__header-sticky .navbar .navbar-brand img {
+  width: 150px;
+}
+
+header#masthead {
+  padding: 0.74rem 1rem 0.74rem 0;
+}
+header#masthead.yu__header-sticky .navbar #main-nav {
+  padding: 4.3rem 0 0 0;
+}
+header#masthead .navbar #main-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #000000;
+  min-width: 30%;
+  padding: 5.5rem 0 0 0;
+  z-index: 9;
+  height: 100vh;
+  min-height: 55rem;
+}
+header#masthead .navbar #main-nav ul {
+  padding-left: 0;
+  list-style: none;
+}
+header#masthead .navbar #main-nav ul li a {
+  white-space: pre-wrap;
+}
+header#masthead .navbar #main-nav ul li a:after {
+  content: none;
+}
+header#masthead .navbar #main-nav ul li a:after:hover:after {
+  content: none;
+}
+header#masthead .navbar #main-nav ul[id^=menu-primary-menu] > li:before {
+  content: none;
+}
+header#masthead .navbar #main-nav ul[id^=menu-primary-menu] > li a {
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  font-weight: normal;
+  padding: 1rem 1rem 0.75rem 2rem;
+  text-decoration: none;
+}
+header#masthead .navbar #main-nav ul[id^=menu-primary-menu] > li a:before {
+  display: block;
+  content: attr(title);
+  text-decoration: none !important;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  font-weight: 600;
+}
+header#masthead .navbar #main-nav ul[id^=menu-primary-menu] > li a:hover {
+  text-decoration: none !important;
+  font-weight: 600;
+}
+header#masthead .navbar #main-nav ul[id^=menu-primary-menu] > li > ul {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 0;
+}
+header#masthead .navbar #main-nav ul[id^=menu-primary-menu] > li > ul li:before {
+  content: none;
+}
+header#masthead .navbar #main-nav ul[id^=menu-primary-menu] > li > ul li a {
+  background-color: #E31837;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+header#masthead .navbar #main-nav ul[id^=menu-primary-menu] > li > ul li > ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+header#masthead .navbar #main-nav ul[id^=menu-primary-menu] > li > ul li > ul li:before {
+  content: none;
+}
+header#masthead .navbar #main-nav ul[id^=menu-primary-menu] > li > ul li > ul li a {
+  background-color: #AF0D1A;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+header#masthead .navbar .navbar-toggler {
+  border: none;
+  outline: none;
+  font-size: 30px;
+  z-index: 999;
+}
+header#masthead .navbar .navbar-toggler:focus {
+  outline: dotted 1px #fff;
+  outline-offset: 5px;
+}
+header#masthead .navbar .navbar-toggler .white-menu {
+  width: 38px;
+  height: 28px;
+}
+header#masthead .navbar .navbar-toggler[aria-expanded=false] .white-menu {
+  background-image: url(/wp-content/themes/yu-uap/assets/css/svg/menu.svg);
+}
+header#masthead .navbar .navbar-toggler[aria-expanded=true] .white-menu {
+  background-image: url(/wp-content/themes/yu-uap/assets/css/svg/close.svg);
+}
+
+@media only screen and (min-width: 1200px) {
+  header#masthead {
+    padding: 0 0 0 0;
+  }
+  header#masthead.yu__header-sticky .navbar #main-nav {
+    position: relative;
+    background: #E31837;
+    min-width: auto;
+    padding: 0;
+    z-index: 9;
+    height: auto;
+    min-height: auto;
+  }
+  header#masthead.yu__header-sticky .navbar #main-nav ul[id^=menu-primary-menu] > li {
+    padding: 1.5rem 0;
+    position: relative;
+  }
+  header#masthead.yu__header-sticky .navbar #main-nav ul[id^=menu-primary-menu] > li > ul.dropdown-menu-ext {
+    position: absolute;
+    top: 100%;
+    display: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+  }
+  header#masthead.yu__header-sticky .navbar #main-nav ul[id^=menu-primary-menu] > li > ul.dropdown-menu-ext li {
+    background-color: #810001;
+    border-top: 1px solid #FFFFFF;
+    padding: 1rem;
+  }
+  header#masthead.yu__header-sticky .navbar #main-nav ul[id^=menu-primary-menu] > li > ul.dropdown-menu-ext li:hover {
+    background-color: #E31837;
+  }
+  header#masthead.yu__header-sticky .navbar #main-nav ul[id^=menu-primary-menu] > li > ul.dropdown-menu-ext li:hover a {
+    background-color: #E31837;
+  }
+  header#masthead.yu__header-sticky .navbar #main-nav ul[id^=menu-primary-menu] > li > ul.dropdown-menu-ext li a {
+    background-color: #810001;
+    padding: 0;
+    margin: 0;
+  }
+  header#masthead.yu__header-sticky .navbar #main-nav ul[id^=menu-primary-menu] > li > ul.dropdown-menu-ext li a span.wpml-ls-display {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+  header#masthead.yu__header-sticky .navbar #main-nav ul[id^=menu-primary-menu] > li > ul.dropdown-menu-ext.show {
+    display: block;
+  }
+  header#masthead.yu__header-sticky .navbar #main-nav ul[id^=menu-primary-menu] > li:hover {
+    background-color: #810001;
+  }
+  header#masthead.yu__header-sticky .navbar #main-nav ul[id^=menu-primary-menu] > li a {
+    padding: 0 3rem;
+    font-size: 21px;
+    line-height: 30px;
+  }
+  header#masthead.yu__header-sticky .navbar #main-nav ul[id^=menu-primary-menu] > li a:hover {
+    font-weight: 400;
+  }
+  header#masthead.yu__header-sticky .navbar #main-nav ul[id^=menu-primary-menu] > li a span.wpml-ls-display {
+    white-space: unset;
+  }
+}
+#content article .entry-content {
+  margin: 0;
+}
+#content.yu__banner-container {
+  padding: 0;
+  margin: 0;
+}
+#content.yu__banner-container section#primary {
+  padding: 0;
+}
+
+.yu__top-banner {
+  padding-left: 3rem;
+  padding-right: 5rem;
+  background-position: 50% top;
+  border: 1rem solid #E31837;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+.yu__top-banner > div {
+  margin-top: 12rem;
+  margin-bottom: 1rem;
+}
+.yu__top-banner .yu__tb-description {
+  margin-top: 12rem;
+}
+.yu__top-banner figure.yu__spinning-wheel {
+  position: absolute;
+  top: -18rem;
+  right: -39rem;
+}
+.yu__top-banner figure.yu__spinning-wheel img {
+  animation: rotation 15s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.yu__top-banner figure.yu__spinning-wheel.rotate-upper-right-corner {
+  top: -36rem;
+  right: -36rem;
+}
+.yu__top-banner figure.yu__spinning-wheel.rotate-upper-right-corner img {
+  max-width: 90%;
+}
+.yu__top-banner figure.yu__spinning-wheel.rotate-lower-right-corner {
+  top: unset;
+  right: -39rem;
+  bottom: -30rem;
+}
+.yu__top-banner figure.yu__spinning-wheel.rotate-lower-right-corner img {
+  max-width: 90%;
+}
+.yu__top-banner figure.yu__spinning-wheel.rotate-center {
+  top: -18rem;
+  right: -24rem;
+}
+.yu__top-banner figure.yu__spinning-wheel.rotate-small-lower-right-corner {
+  top: unset;
+  right: -46rem;
+  bottom: 0;
+}
+.yu__top-banner figure.yu__spinning-wheel.rotate-small-lower-right-corner img {
+  max-width: 30%;
+}
+.yu__top-banner figure.yu__spinning-wheel.rotate-small-upper-right-corner {
+  top: -6rem;
+  right: -50rem;
+}
+.yu__top-banner figure.yu__spinning-wheel.rotate-small-upper-right-corner img {
+  max-width: 25%;
+}
+.yu__top-banner p.yu__body-intro {
+  font-weight: 500;
+  padding-left: 1rem;
+  margin-bottom: 0;
+}
+.yu__top-banner p.yu__body-intro.banner-description {
+  padding: 2rem 0 0 4rem;
+}
+.yu__top-banner .yu__two-columns .yu__header1 {
+  position: relative;
+  animation: animateleft 2s;
+}
+@keyframes animateleft {
+  from {
+    left: -300px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+.yu__top-banner ~ .yu__paragraph {
+  margin-top: 2rem;
+}
+.yu__top-banner.no-button > div {
+  margin-bottom: 15rem;
+}
+
+@media only screen and (max-width: 1199px) {
+  .yu__tb_text {
+    display: none;
+  }
+
+  .yu__top-banner .yu__tb-description {
+    margin-top: 3rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .yu__top-banner .yu__body-intro {
+    padding-left: 0 !important;
+  }
+}
+.yu__homepage_menu {
+  flex-wrap: wrap;
+  align-items: stretch;
+  background-color: #D6CFCA;
+  margin-bottom: 0;
+  letter-spacing: -0.01em;
+}
+.yu__homepage_menu:last-child {
+  border-right: 1px solid #FFFFFF;
+}
+.yu__homepage_menu .wp-block-column {
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #FFFFFF;
+  border-right: none;
+  outline: 1rem solid transparent;
+  border-right: none;
+  margin-left: 0;
+  padding: 1rem;
+  transition: 0.5s;
+}
+.yu__homepage_menu .wp-block-column:hover {
+  border: 1rem solid #FFFFFF;
+  padding: 1px;
+  background-color: #E31837;
+}
+.yu__homepage_menu .wp-block-column:hover p a {
+  color: #FFFFFF;
+  text-decoration: none !important;
+}
+.yu__homepage_menu .wp-block-column p {
+  padding: 2rem;
+}
+.yu__homepage_menu .wp-block-column p a {
+  color: #000000;
+  text-decoration: none !important;
+}
+
+.yu__info_with_icon_on_right_side {
+  border: 1rem solid #B7AEA9;
+  background-color: #FFFFFF;
+  padding: 5rem;
+}
+.yu__info_with_icon_on_right_side h2 {
+  padding-bottom: 1rem;
+}
+.yu__info_with_icon_on_right_side .yu__block_header {
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: #E31837;
+}
+.yu__info_with_icon_on_right_side .yu__text_block .yu__info_text {
+  width: 75%;
+}
+.yu__info_with_icon_on_right_side .yu__icon_block .yu__big_icon img {
+  max-width: 375px;
+  max-height: 375px;
+}
+
+.yu__img-cover-with-info {
+  border: 1rem solid #E31837;
+  padding: 5rem 2.5rem;
+}
+.yu__img-cover-with-info > div {
+  margin-top: 16rem;
+}
+.yu__img-cover-with-info p.yu__body-intro {
+  font-weight: 500;
+  padding-left: 1rem;
+  margin-bottom: 0;
+}
+
+.yu__paragraph {
+  padding: 2rem 0;
+}
+
+@media only screen and (max-width: 450px) {
+  .yu__paragraph h2 {
+    line-height: 34px;
+  }
+}
+.yu__tile .wp-block-column {
+  padding-left: 0;
+}
+.yu__tile .wp-block-column .yu__tile-item {
+  margin: 5px;
+  padding: 4rem 2rem 2rem 2rem;
+  border: 5px solid #B7AEA9;
+  height: 95%;
+  transition: 0.5s;
+}
+.yu__tile .wp-block-column .yu__tile-item h3 {
+  color: #000000;
+}
+.yu__tile .wp-block-column .yu__tile-item h3 a {
+  color: #000000;
+  text-decoration: none;
+}
+.yu__tile .wp-block-column .yu__tile-item figure {
+  margin-bottom: 4rem;
+}
+.yu__tile .wp-block-column .yu__tile-item figure img {
+  width: 190px;
+  height: 190px;
+}
+.yu__tile .wp-block-column .yu__tile-item:hover {
+  background-color: #000000;
+  border-color: #E31837;
+}
+.yu__tile .wp-block-column .yu__tile-item:hover h3 {
+  color: #FFFFFF;
+}
+.yu__tile .wp-block-column .yu__tile-item:hover h3 a {
+  color: #FFFFFF;
+  text-decoration: none !important;
+}
+
+.yu__info-block-with-arrow {
+  background: #000000;
+}
+.yu__info-block-with-arrow ~ p {
+  margin-bottom: 0;
+}
+.yu__info-block-with-arrow .container {
+  align-items: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.yu__info-block-with-arrow .container .wp-block-image {
+  margin-bottom: 0;
+}
+.yu__info-block-with-arrow .container h3 {
+  color: #FFFFFF;
+}
+.yu__info-block-with-arrow .container h3 a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.yu__info-block-with-arrow.yu__gray {
+  background: #e1dfdc;
+  padding: 4rem;
+  margin: 4rem auto;
+  max-width: 85vw;
+  cursor: pointer;
+}
+.yu__info-block-with-arrow.yu__gray figure {
+  text-align: center;
+}
+.yu__info-block-with-arrow.yu__gray figure img {
+  width: 87px;
+}
+.yu__info-block-with-arrow.yu__gray .yu__info-label {
+  font-size: 25px;
+  line-height: 27px;
+  color: #000000;
+}
+.yu__info-block-with-arrow.yu__gray .yu__info-label a {
+  color: #000000;
+}
+.yu__info-block-with-arrow.yu__gray h3 {
+  color: #E31837;
+}
+.yu__info-block-with-arrow.yu__gray h3 a {
+  color: #E31837;
+}
+
+@media only screen and (max-width: 767px) {
+  .yu__info-block-with-arrow .container {
+    padding: 3rem 0 0 0;
+  }
+  .yu__info-block-with-arrow .container .wp-block-image {
+    text-align: right;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .yu__info-block-with-arrow.yu__gray {
+    padding: 0 0 1rem 0;
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .yu__info-block-with-arrow.yu__gray {
+    margin: 1rem auto;
+  }
+  .yu__info-block-with-arrow.yu__gray figure img {
+    width: 65px;
+  }
+}
+.yu__info-image {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+.yu__info-image img {
+  border: 1rem solid #E31837;
+  width: 100%;
+}
+.yu__info-image figcaption {
+  text-align: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.yu__info-image.yu__info-image-shorter {
+  max-width: 80%;
+  margin-left: 0;
+}
+
+@media only screen and (max-width: 575px) {
+  .yu__info-image {
+    padding: 0;
+  }
+}
+.yu__quote {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  padding: 0 10%;
+}
+.yu__quote .wp-block-group__inner-container {
+  background-color: #000000;
+  padding: 2rem 0 1rem 0;
+}
+.yu__quote blockquote, .yu__quote p, .yu__quote cite {
+  color: #FFFFFF;
+}
+.yu__quote cite {
+  font-size: 22px;
+  line-height: 46px;
+  font-style: normal;
+}
+
+.yu__separator {
+  margin-bottom: 2rem;
+}
+.yu__separator.container {
+  padding: 0;
+}
+.yu__separator.container hr {
+  border-top: 2px solid #686260;
+}
+.yu__separator.yu__separator-red {
+  margin: 0 auto 4rem auto;
+  max-width: 85vw;
+}
+.yu__separator.yu__separator-red hr {
+  border-color: #E31837;
+}
+
+.yu__tile-buttons {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.yu__tile-buttons.container {
+  padding: 0;
+}
+.yu__tile-buttons.container .yu__tile-button {
+  padding: 2rem;
+  border: 1rem solid #E31837;
+  color: #000000;
+  transition: 0.5s;
+}
+.yu__tile-buttons.container .yu__tile-button a {
+  color: #000000;
+  text-decoration: none;
+}
+.yu__tile-buttons.container .yu__tile-button:hover {
+  background-color: #000000;
+}
+.yu__tile-buttons.container .yu__tile-button:hover a {
+  color: #FFFFFF;
+}
+.yu__tile-buttons.container .yu__tile-button figure {
+  text-align: right;
+  margin-top: 7rem;
+}
+.yu__tile-buttons.container .yu__tile-button figure img {
+  width: 100px;
+}
+
+.yu__stats-info-block {
+  background-color: #ACE6F8;
+  color: #000000;
+}
+.yu__stats-info-block .container {
+  padding: 0;
+}
+.yu__stats-info-block .container .wp-block-columns:first-child .wp-block-column {
+  padding-top: 4rem;
+  padding-bottom: 0;
+}
+.yu__stats-info-block .container .wp-block-columns .wp-block-column {
+  padding: 2.5rem 3rem 5rem 0;
+}
+.yu__stats-info-block .container .wp-block-columns .yu__digits {
+  font-size: 95px;
+  line-height: 105px;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  padding: 1rem 0;
+  border-top: 5px solid #E31837;
+}
+.yu__stats-info-block .container .wp-block-columns .yu__stats-description {
+  font-size: 19px;
+  line-height: 29px;
+  width: 70%;
+}
+
+.yu__accordion {
+  margin-bottom: 1rem;
+}
+.yu__accordion:last-child {
+  margin-bottom: 5rem;
+}
+.yu__accordion.accordion-open .wp-block-columns {
+  background-color: #E31837;
+}
+.yu__accordion.accordion-open .yu__accordion-title {
+  color: #FFFFFF;
+}
+.yu__accordion.accordion-open .yu__accordion-title a {
+  color: #FFFFFF;
+}
+.yu__accordion.accordion-open .yu__accordion-title:hover a {
+  color: #FFFFFF;
+}
+.yu__accordion.accordion-open .yu__accordion-title:after {
+  content: " ";
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  margin-right: 10px;
+  position: absolute;
+  background-image: url("/wp-content/themes/yu-uap/assets/css/svg/accordion-minus.svg");
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 75px;
+  height: 75px;
+  margin: auto 0;
+}
+.yu__accordion .wp-block-columns {
+  border: 5px solid #E31837;
+  padding: 1rem;
+  margin-bottom: 0;
+}
+.yu__accordion .yu__accordion-image .wp-block-cover {
+  min-height: 230px;
+  background-color: unset;
+}
+.yu__accordion .yu__accordion-image .wp-block-image {
+  margin-bottom: 0;
+}
+.yu__accordion .yu__accordion-title {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.yu__accordion .yu__accordion-title:hover a {
+  color: #E31837;
+}
+.yu__accordion .yu__accordion-title:after {
+  content: " ";
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  margin-right: 10px;
+  position: absolute;
+  background-image: url("/wp-content/themes/yu-uap/assets/css/svg/accordion-plus.svg");
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 75px;
+  height: 75px;
+  margin: auto 0;
+}
+.yu__accordion .yu__accordion-title a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  padding-right: 5rem;
+}
+.yu__accordion .yu__accordion-data {
+  padding: 4rem;
+  background-color: #D6CFCA;
+  font-size: 19px;
+  line-height: 29px;
+  display: none;
+}
+.yu__accordion .yu__accordion-data.show-data {
+  display: block;
+}
+.yu__accordion .yu__accordion-data a {
+  font-weight: 600;
+  color: #E31837;
+}
+
+.yu__two-blocks {
+  margin: 5rem auto;
+  background-color: #FFFFFF;
+}
+.yu__two-blocks .yu__block-01 p {
+  padding: 2rem;
+  color: #FFFFFF;
+  background-color: #000000;
+  letter-spacing: -0.02rem;
+}
+.yu__two-blocks .yu__block-01 p a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.yu__two-blocks .yu__block-02 {
+  margin-left: 0;
+}
+.yu__two-blocks .yu__block-02 figure {
+  margin: 0;
+}
+.yu__two-blocks .yu__block-02 figure img {
+  border: 1rem solid #E31837;
+}
+.yu__two-blocks.yu__option-02 .wp-block-columns {
+  flex-wrap: nowrap !important;
+  flex-direction: column;
+}
+.yu__two-blocks.yu__option-02 .wp-block-columns .yu__block-01 {
+  max-width: 50%;
+  align-self: flex-end;
+}
+.yu__two-blocks.yu__option-02 .wp-block-columns .yu__block-01 p {
+  margin-bottom: 0;
+}
+.yu__two-blocks.yu__option-02 .wp-block-columns .yu__block-02 {
+  max-width: 90%;
+  border: 1rem solid #E31837;
+}
+.yu__two-blocks.yu__option-03 .wp-block-columns .yu__block-02 {
+  margin-top: 6rem;
+}
+.yu__two-blocks.yu__option-04 .wp-block-columns .yu__block-01 {
+  order: 1;
+}
+.yu__two-blocks.yu__option-04 .wp-block-columns .yu__block-02 {
+  order: 0;
+  margin-top: 6rem;
+}
+
+@media only screen and (max-width: 599px) {
+  .yu__two-blocks .yu__block-01 p {
+    font-size: 25px !important;
+    line-height: 25px !important;
+    margin-bottom: 0;
+  }
+  .yu__two-blocks.yu__option-01 .yu__block-02 {
+    max-width: 90%;
+    height: 450px;
+  }
+  .yu__two-blocks.yu__option-02 .wp-block-columns .yu__block-01 {
+    max-width: 90%;
+    align-self: center;
+  }
+  .yu__two-blocks.yu__option-02 .wp-block-columns .yu__block-02 {
+    max-width: 100%;
+  }
+  .yu__two-blocks.yu__option-03 .wp-block-columns {
+    flex-direction: column;
+  }
+  .yu__two-blocks.yu__option-03 .wp-block-columns .yu__block-01 p {
+    margin-bottom: 0;
+  }
+  .yu__two-blocks.yu__option-03 .wp-block-columns .yu__block-02 {
+    margin-top: 0;
+    max-width: 80%;
+    align-self: flex-end;
+  }
+  .yu__two-blocks.yu__option-04 .wp-block-columns {
+    flex-direction: column;
+  }
+  .yu__two-blocks.yu__option-04 .wp-block-columns .yu__block-01 {
+    order: 0;
+  }
+  .yu__two-blocks.yu__option-04 .wp-block-columns .yu__block-01 p {
+    margin-bottom: 0;
+  }
+  .yu__two-blocks.yu__option-04 .wp-block-columns .yu__block-02 {
+    order: 1;
+    margin-top: 0;
+    max-width: 80%;
+    align-self: flex-start;
+  }
+}
+.yu__priorities {
+  background-color: #E0DFDA;
+  padding: 5rem 0;
+}
+.yu__priorities h3 {
+  margin-bottom: 3rem;
+}
+.yu__priorities .yu__button {
+  margin-top: 0;
+}
+.yu__priorities figure ~ p {
+  margin-top: 3rem;
+}
+.yu__priorities .wp-block-columns {
+  margin-bottom: 0;
+}
+.yu__priorities h4 {
+  margin-bottom: 2rem;
+}
+.yu__priorities .yu__all-latest-activities .ultp-block-item {
+  position: relative;
+  padding: 2rem;
+  background-color: #FFFFFF;
+  margin-bottom: 3rem;
+  border: 0.3rem solid transparent;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.yu__priorities .yu__all-latest-activities .ultp-block-item:after {
+  content: " ";
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  margin-right: 10px;
+  position: absolute;
+  margin-right: 0;
+  background-image: url("/wp-content/themes/yu-uap/assets/css/svg/arrow-red-white.svg");
+  width: 58px;
+  height: 51px;
+  background-size: contain;
+  bottom: 1rem;
+  right: 1rem;
+}
+.yu__priorities .yu__all-latest-activities .ultp-block-item:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+  border: 0.3rem solid #E31837;
+}
+.yu__priorities .yu__all-latest-activities .ultp-block-item:hover:after {
+  background-image: url("/wp-content/themes/yu-uap/assets/css/svg/arrow-red-red.svg");
+}
+.yu__priorities .yu__all-latest-activities .ultp-block-item:hover h5 a {
+  color: #FFFFFF;
+}
+.yu__priorities .yu__all-latest-activities .ultp-block-item h5 {
+  margin-bottom: 1rem;
+  max-width: 83%;
+}
+.yu__priorities .yu__all-latest-activities .ultp-block-item h5 a {
+  text-decoration: none;
+  font-weight: 400;
+}
+.yu__priorities .yu__all-latest-activities .ultp-block-item .ultp-block-excerpt {
+  padding-right: 5rem;
+  position: relative;
+}
+
+@media only screen and (min-width: 651px) and (max-width: 768px) {
+  .yu__priorities .yu__all-latest-activities h5 {
+    padding-right: 2rem;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .yu__priorities h4 {
+    margin-top: 2rem;
+    font-size: 25px;
+    line-height: 34px;
+  }
+  .yu__priorities .yu__all-latest-activities .ultp-block-item {
+    padding: 1.5rem;
+  }
+  .yu__priorities .yu__all-latest-activities .ultp-block-item h5 {
+    font-size: 19px;
+    line-height: 29px;
+  }
+}
+.yu__info-block {
+  padding: 3rem;
+}
+.yu__info-block .yu__button {
+  margin-top: 0;
+}
+.yu__info-block .yu__button.btn-no-filling a:hover {
+  text-decoration: none !important;
+}
+.yu__info-block .yu__button.btn-no-filling a:hover:after {
+  background-image: url("/wp-content/themes/yu-uap/assets/css/svg/button_arrow_white.svg");
+}
+.yu__info-block .yu__category-activities .ultp-block-item {
+  margin: 2rem 0 1rem 0;
+  border-bottom: 0.5px solid rgba(255, 253, 220, 0.5);
+  background: transparent;
+  padding-bottom: 2rem;
+}
+.yu__info-block .yu__category-activities .ultp-block-item .ultp-block-image {
+  width: 230px;
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: baseline;
+}
+.yu__info-block .yu__category-activities .ultp-block-item .ultp-block-image a {
+  border: 1px solid #000000;
+}
+.yu__info-block .yu__category-activities .ultp-block-item .ultp-block-image a img {
+  min-width: 100%;
+  min-height: 100%;
+  flex-shrink: 0;
+}
+.yu__info-block .yu__category-activities .ultp-block-item h3, .yu__info-block .yu__category-activities .ultp-block-item p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.yu__info-block .yu__category-activities .ultp-block-item h3 a, .yu__info-block .yu__category-activities .ultp-block-item p a {
+  text-decoration: none;
+}
+.yu__info-block .yu__category-activities .ultp-block-item h3 a:hover, .yu__info-block .yu__category-activities .ultp-block-item p a:hover {
+  text-decoration: underline;
+}
+.yu__info-block .yu__category-activities .ultp-block-item p {
+  font-weight: 400;
+}
+.yu__info-block .yu__category-activities .ultp-block-item .ultp-block-content-wrap {
+  display: flex;
+}
+.yu__info-block .yu__category-activities .ultp-block-item .ultp-block-content {
+  max-width: 60%;
+  padding-left: 1rem;
+}
+.yu__info-block.yu__ib-red {
+  background-color: #E31837;
+  color: #FFFFFF;
+}
+.yu__info-block.yu__ib-red h4 {
+  color: #FFFFFF;
+}
+.yu__info-block.yu__ib-red .yu__button.btn-no-filling a:hover {
+  color: #FFFFFF !important;
+}
+.yu__info-block.yu__ib-red .yu__button.btn-no-filling a:hover:after {
+  background-image: url("/wp-content/themes/yu-uap/assets/css/svg/button_arrow_white.svg");
+}
+.yu__info-block.yu__ib-red .yu__category-activities .ultp-block-item h3 a:hover, .yu__info-block.yu__ib-red .yu__category-activities .ultp-block-item p a:hover {
+  color: #FFFFFF;
+}
+.yu__info-block.yu__ib-red .yu__button.btn-no-filling a {
+  text-align: left;
+}
+.yu__info-block.yu__ib-grey {
+  background-color: #E0DFDA;
+  color: #000000;
+}
+.yu__info-block.yu__ib-grey h2, .yu__info-block.yu__ib-grey h2 a {
+  color: #E31837;
+}
+.yu__info-block.yu__ib-grey h3, .yu__info-block.yu__ib-grey h3 a {
+  color: #000000;
+}
+.yu__info-block.yu__ib-grey .yu__button.btn-no-filling a {
+  color: #E31837 !important;
+  text-align: left;
+}
+.yu__info-block.yu__ib-grey .yu__button.btn-no-filling a:after {
+  background-image: url("/wp-content/themes/yu-uap/assets/css/svg/button_arrow.svg");
+}
+.yu__info-block.yu__ib-grey .yu__button.btn-no-filling a:hover {
+  color: #E31837 !important;
+}
+.yu__info-block.yu__ib-grey .yu__button.btn-no-filling a:hover:after {
+  background-image: url("/wp-content/themes/yu-uap/assets/css/svg/button_arrow.svg");
+}
+.yu__info-block.yu__ib-grey .yu__category-activities .ultp-block-item h3 a:hover, .yu__info-block.yu__ib-grey .yu__category-activities .ultp-block-item p a:hover {
+  color: #000000;
+}
+.yu__info-block h2, .yu__info-block h3, .yu__info-block a {
+  color: #FFFFFF;
+}
+.yu__info-block h2 {
+  margin-top: 3rem;
+  margin-bottom: 7rem;
+}
+.yu__info-block h3 {
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .yu__info-block {
+    padding: 1rem;
+  }
+  .yu__info-block h2 {
+    font-size: 43px;
+    line-height: 46px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+  .yu__info-block .yu__button a {
+    font-size: 19px;
+    line-height: 29px;
+  }
+  .yu__info-block .yu__button a:after {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}
+.yu__priorities-top-banner {
+  background-color: #E0DFDA;
+  margin-top: 5rem;
+  padding: 7rem 7rem 4rem 7rem;
+  border: 1rem solid #E31837;
+}
+.yu__priorities-top-banner h1 {
+  max-width: 70%;
+  margin-bottom: 4rem;
+}
+.yu__priorities-top-banner figure {
+  text-align: center;
+  position: relative;
+}
+.yu__priorities-top-banner figure:after {
+  content: " ";
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  margin-right: 10px;
+  position: absolute;
+  background-image: url("/wp-content/themes/yu-uap/assets/css/svg/arrow-down-black.svg");
+  width: 58px;
+  height: 51px;
+  background-size: contain;
+  bottom: 2rem;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  cursor: pointer;
+  -moz-animation: bounce1 2s infinite;
+  -webkit-animation: bounce1 2s infinite;
+  animation: bounce1 2s infinite;
+}
+@keyframes bounce1 {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+.yu__priorities-top-banner figure img {
+  padding-bottom: 10rem;
+}
+
+@media only screen and (max-width: 450px) {
+  .yu__priorities-top-banner {
+    padding: 3rem 2rem 1rem 2rem;
+  }
+  .yu__priorities-top-banner h1 {
+    line-height: 45px;
+    margin-bottom: 2rem;
+  }
+}
+.yu__tile-buttons-enhanced {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+}
+.yu__tile-buttons-enhanced.container {
+  padding: 0;
+}
+.yu__tile-buttons-enhanced.container .yu__tile-button {
+  padding: 2rem;
+  border: 1rem solid #E31837;
+  color: #FFFFFF;
+  transition: 0.5s;
+  background-color: #E31837;
+  height: 100%;
+  cursor: pointer;
+}
+.yu__tile-buttons-enhanced.container .yu__tile-button .wp-block-group__inner-container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.yu__tile-buttons-enhanced.container .yu__tile-button h3 {
+  margin-bottom: 10rem;
+}
+.yu__tile-buttons-enhanced.container .yu__tile-button a, .yu__tile-buttons-enhanced.container .yu__tile-button .yu__tile-text, .yu__tile-buttons-enhanced.container .yu__tile-button yu__tile-text a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.yu__tile-buttons-enhanced.container .yu__tile-button .yu__tile-text {
+  padding-right: 5rem;
+}
+.yu__tile-buttons-enhanced.container .yu__tile-button .yu__tile-text:after {
+  content: " ";
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  margin-right: 10px;
+  position: absolute;
+  margin-right: 0;
+  background-image: url("/wp-content/themes/yu-uap/assets/css/svg/arrow-white.svg");
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  bottom: -2rem;
+  right: -1rem;
+}
+.yu__tile-buttons-enhanced.container .yu__tile-button:hover {
+  background-color: #000000;
+}
+.yu__tile-buttons-enhanced.container .yu__tile-button:hover .yu__tile-text:after {
+  background-image: url("/wp-content/themes/yu-uap/assets/css/svg/arrow-red-red.svg");
+}
+.yu__tile-buttons-enhanced.container .yu__tile-button:hover a, .yu__tile-buttons-enhanced.container .yu__tile-button:hover .yu__tile-text, .yu__tile-buttons-enhanced.container .yu__tile-button:hover yu__tile-text a {
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 599px) {
+  .yu__tile-buttons-enhanced.container .wp-block-columns {
+    margin-bottom: 0;
+  }
+  .yu__tile-buttons-enhanced.container .wp-block-columns .wp-block-column {
+    margin-bottom: 2rem;
+  }
+  .yu__tile-buttons-enhanced.container .wp-block-columns .wp-block-column .yu__tile-button .yu__tile-text:after {
+    width: 50px;
+    height: 50px;
+    bottom: 1rem;
+  }
+}
+.yu__category-posts .yu__see-more {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+}
+.yu__category-posts .yu__see-more a {
+  color: #E31837;
+  font-weight: 600;
+  text-decoration: underline;
+  font-size: 25px;
+  line-height: 31px;
+}
+.yu__category-posts .ultp-heading-filter {
+  height: 4rem;
+}
+.yu__category-posts .ultp-heading-filter .ultp-filter-navigation {
+  position: relative;
+}
+.yu__category-posts .ultp-heading-filter .ultp-filter-navigation .ultp-filter-wrap {
+  width: 100%;
+}
+.yu__category-posts .ultp-heading-filter .ultp-filter-navigation .ultp-filter-wrap .ultp-flex-menu {
+  display: flex;
+}
+.yu__category-posts .ultp-heading-filter .ultp-filter-navigation .ultp-filter-wrap .ultp-flex-menu li {
+  display: block;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+.yu__category-posts .ultp-heading-filter .ultp-filter-navigation .ultp-filter-wrap .ultp-flex-menu li a {
+  background-color: #999999;
+  display: block;
+  padding: 1rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.yu__category-posts .ultp-heading-filter .ultp-filter-navigation .ultp-filter-wrap .ultp-flex-menu li a.filter-active {
+  background-color: #000000;
+}
+.yu__category-posts .ultp-heading-filter .ultp-filter-navigation .ultp-filter-wrap .ultp-flex-menu li:before {
+  content: none;
+}
+.yu__category-posts .ultp-block-item .ultp-block-excerpt {
+  color: #E31837;
+}
+.yu__category-posts .ultp-block-item h3, .yu__category-posts .ultp-block-item h3 a, .yu__category-posts .ultp-block-item a {
+  color: #E31837 !important;
+}
+.yu__category-posts .ultp-block-item h3 a {
+  text-decoration: underline !important;
+}
+.yu__category-posts .ultp-block-item .ultp-block-image {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  overflow: hidden;
+  max-height: 300px;
+  border-bottom: 1px solid #000000;
+}
+.yu__category-posts .ultp-block-item .ultp-block-image img {
+  border-top: 1px solid #000000;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+  min-width: 100%;
+  min-height: 100%;
+  flex-shrink: 0;
+}
+
+@media only screen and (max-width: 1199px) {
+  .yu__category-posts .ultp-block-item .ultp-block-image {
+    max-height: 250px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .yu__category-posts .ultp-block-item .ultp-block-image {
+    max-height: 200px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .yu__category-posts .ultp-block-item .ultp-block-image {
+    max-height: 150px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .yu__category-posts h3 a {
+    font-size: 17px !important;
+    line-height: 27px !important;
+  }
+  .yu__category-posts .ultp-block-item .ultp-block-image {
+    max-height: 120px;
+  }
+  .yu__category-posts .ultp-heading-filter .ultp-filter-navigation .ultp-filter-wrap .ultp-flex-menu li a {
+    font-size: 1rem;
+  }
+}
+.yu__priority-filter-block {
+  margin-top: 5rem;
+}
+.yu__priority-filter-block select {
+  font-size: 16px;
+  line-height: 32px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("/wp-content/themes/yu-uap/assets/css/svg/select_arrow_down.svg");
+  background-repeat: no-repeat;
+  background-position-x: 97%;
+  background-position-y: 9px;
+  border: 1px solid #000000;
+  border-radius: 2px;
+  margin-right: 2rem;
+  padding: 0.2rem 2.5rem 0.2rem 0.7rem;
+}
+.yu__priority-filter-block select:first-child {
+  margin-right: 1rem;
+}
+.yu__priority-filter-block ~ .ultp-block-wrapper .ultp-heading-filter {
+  height: 3rem;
+}
+.yu__priority-filter-block ~ .ultp-block-wrapper .ultp-loadmore {
+  margin-top: 0rem !important;
+  margin-bottom: 4rem !important;
+}
+.yu__priority-filter-block ~ .ultp-block-wrapper .ultp-loadmore .ultp-spin {
+  display: none !important;
+}
+.yu__priority-filter-block ~ .ultp-block-wrapper .ultp-loadmore .ultp-loadmore-action {
+  background-color: #FFFFFF !important;
+  color: #E31837 !important;
+  font-weight: 600;
+  text-decoration: underline;
+  font-size: 25px;
+  line-height: 31px;
+  text-align: center;
+  transition: none !important;
+}
+
+@media only screen and (max-width: 767px) {
+  select {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+.yu__text-in-red-frame {
+  border: 0.7rem solid #E31837;
+  padding: 4rem 3rem;
+}
+.yu__text-in-red-frame.yu__out-border {
+  margin: 0 auto 2rem auto;
+  max-width: 85vw;
+}
+
+@media only screen and (max-width: 650px) {
+  .yu__text-in-red-frame {
+    padding: 2rem 1.5rem;
+    font-size: 30px !important;
+    line-height: 35px !important;
+  }
+  .yu__text-in-red-frame.yu__out-border {
+    max-width: 95%;
+  }
+}
+.yu__goal-tiles {
+  padding: 0;
+}
+.yu__goal-tiles .yu__tile-row .wp-block-group__inner-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.yu__goal-tiles .yu__tile-row .wp-block-group__inner-container figure img {
+  max-width: 170px !important;
+}
+
+@media only screen and (max-width: 1199px) {
+  .yu__goal-tiles .yu__tile-row .wp-block-group__inner-container figure img {
+    max-width: 150px !important;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .yu__goal-tiles .yu__tile-row .wp-block-group__inner-container figure {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .yu__goal-tiles .yu__tile-row .wp-block-group__inner-container figure {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .yu__goal-tiles {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .yu__goal-tiles .yu__tile-row .wp-block-group__inner-container figure img {
+    max-width: 150px !important;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .yu__goal-tiles {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .yu__goal-tiles .yu__tile-row .wp-block-group__inner-container figure img {
+    max-width: 100px !important;
+  }
+}
+@media only screen and (max-width: 374px) {
+  .yu__goal-tiles {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .yu__goal-tiles .yu__tile-row .wp-block-group__inner-container figure img {
+    max-width: 90px !important;
+  }
+}
+.yu__button {
+  display: flex;
+  margin-top: 3rem;
+}
+.yu__button a {
+  color: #FFFFFF;
+  position: relative;
+  display: block;
+  font-size: 22px;
+  line-height: 31px;
+  font-weight: 600;
+  padding: 1rem 5.5rem 1rem 1rem;
+  transition: 0.5s;
+}
+.yu__button a:after {
+  content: " ";
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  margin-right: 10px;
+  position: absolute;
+  background-image: url("/wp-content/themes/yu-uap/assets/css/svg/button_arrow_white.svg");
+  height: 35px;
+  width: 35px;
+  top: 1.2rem;
+  right: 0;
+  margin-right: 1rem;
+  transition: 0.5s;
+}
+.yu__button a:hover {
+  border-color: #E31837;
+  background-color: #FFFFFF;
+  color: #E31837 !important;
+  text-decoration: none !important;
+}
+.yu__button a:hover:after {
+  background-image: url("/wp-content/themes/yu-uap/assets/css/svg/button_arrow.svg");
+}
+.yu__button.btn-red a {
+  color: #E31837;
+}
+.yu__button.btn-red a:after {
+  content: " ";
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  margin-right: 10px;
+  position: absolute;
+  background-image: url("/wp-content/themes/yu-uap/assets/css/svg/button_arrow.svg");
+}
+.yu__button.btn-red a:hover {
+  background-color: #E31837;
+  color: #FFFFFF !important;
+  text-decoration: none !important;
+}
+.yu__button.btn-red a:hover:after {
+  background-image: url("/wp-content/themes/yu-uap/assets/css/svg/button_arrow_white.svg");
+}
+.yu__button.btn-white a {
+  color: #FFFFFF;
+}
+.yu__button.btn-no-filling:hover a, .yu__button.yu__btn-red:hover a {
+  padding-left: 0;
+  background: unset;
+  color: #E31837;
+  text-decoration: underline !important;
+}
+.yu__button.btn-no-filling a, .yu__button.yu__btn-red a {
+  padding-left: 0;
+  background: unset;
+  border: 0;
+  color: #FFFFFF;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.yu__button.btn-no-filling a:after, .yu__button.yu__btn-red a:after {
+  width: 22px;
+  height: 22px;
+  background-size: contain;
+  margin-right: 0;
+  top: 1.5rem;
+}
+.yu__button.btn-no-filling.animate-to-right a:after, .yu__button.yu__btn-red.animate-to-right a:after {
+  -moz-animation: animate-to-right 2s infinite;
+  -webkit-animation: animate-to-right 2s infinite;
+  animation: animate-to-right 2s infinite;
+}
+@keyframes animate-to-right {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(10px);
+  }
+  60% {
+    transform: translateX(20px);
+  }
+}
+.yu__button.yu__btn-red a {
+  color: #E31837;
+}
+.yu__button.yu__btn-red a:after {
+  background-image: url("/wp-content/themes/yu-uap/assets/css/svg/button_arrow.svg");
+}
+.yu__button.yu__btn-red a:hover:after {
+  background-image: url("/wp-content/themes/yu-uap/assets/css/svg/button_arrow_black.svg");
+}
+.yu__button.yu__btn-red:hover a {
+  color: #000000 !important;
+}
+
+html[lang=fr-FR] .yu__button a {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+ul {
+  list-style: none;
+}
+ul li:before {
+  content: "•";
+  color: #E31837;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+ol {
+  margin: 0 0 1.5em;
+  padding: 0;
+  counter-reset: item;
+}
+ol > li {
+  margin: 0;
+  padding: 0 0 0 2em;
+  text-indent: -1.1em;
+  list-style-type: none;
+  counter-increment: item;
+}
+ol > li:before {
+  display: inline-block;
+  width: 1em;
+  padding-right: 0.5em;
+  font-weight: bold;
+  text-align: right;
+  content: counter(item) ".";
+}
+
+footer#yu__footer {
+  background-color: #E31837;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+footer#yu__footer .widget.widget_media_image img {
+  width: 157px;
+}
+footer#yu__footer .widget, footer#yu__footer p {
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+  margin-bottom: 0.3rem;
+}
+footer#yu__footer [id^=menu-footer-menu] li a {
+  font-weight: 500;
+  padding: 0.15rem 1rem;
+  text-decoration: underline;
+  color: #FFFFFF;
+}
+footer#yu__footer [id^=menu-footer-menu] li a:hover {
+  background-color: unset;
+  color: #FFFFFF;
+}
+footer#yu__footer [id^=menu-footer-menu] li:before {
+  content: none;
+}
+
+body, boby p {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 20px;
+  line-height: 27px;
+  background-color: #FFFFFF;
+}
+
+h1, h2, h3, h4, h5, h6, a, blockquote, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "IBM Plex Sans", sans-serif;
+  opacity: 100%;
+}
+
+h1, .h1 {
+  font-family: "IBM Plex Serif", sans-serif;
+  font-size: 106px;
+  line-height: 106px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  word-break: keep-all;
+  overflow-wrap: normal;
+}
+
+h2, .h2 {
+  font-family: "IBM Plex Serif", sans-serif;
+  font-size: 88px;
+  line-height: 88px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+h3, .h3 {
+  font-size: 35px;
+  line-height: 39px;
+  font-weight: 500;
+}
+
+h4, .h4 {
+  font-size: 25px;
+  line-height: 27px;
+  font-weight: 500;
+}
+
+h5, .h5 {
+  font-size: 22px;
+  line-height: 25px;
+  font-weight: 600;
+}
+
+p.yu__body-intro {
+  font-size: 28px;
+  line-height: 35px;
+}
+
+.yu__homepage_menu {
+  font-size: 53px;
+  line-height: 53px;
+}
+
+.yu__block_header {
+  font-size: 22px;
+  line-height: 31px;
+}
+
+header#masthead .navbar #main-nav ul[id^=menu-primary-menu] > li a {
+  font-size: 28px;
+  line-height: 30px;
+}
+
+blockquote {
+  font-size: 35px;
+  line-height: 40px;
+  font-style: italic;
+}
+
+figcaption {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: normal;
+  color: #686260;
+}
+
+a {
+  color: #000000;
+  text-decoration: underline;
+  word-break: normal;
+  word-wrap: break-word;
+}
+a:visited {
+  color: inherit;
+}
+a:hover {
+  color: #E31837;
+  text-decoration: underline;
+}
+
+.yu__two-blocks .yu__block-01 p {
+  font-size: 52px;
+  line-height: 52px;
+}
+
+html[lang=fr-FR] h1, html[lang=fr-FR] .h1 {
+  font-size: 88px;
+  line-height: 88px;
+}
+html[lang=fr-FR] h2, html[lang=fr-FR] .h2 {
+  font-size: 70px;
+  line-height: 70px;
+}
+
+.container-ext {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container-ext {
+    max-width: 540px;
+  }
+}
+@media (min-width: 776px) {
+  .container-ext {
+    max-width: 740px;
+  }
+}
+@media (min-width: 968px) {
+  .container-ext {
+    max-width: 920px;
+  }
+}
+@media (min-width: 1192px) {
+  .container-ext {
+    max-width: 1160px;
+  }
+}
+@media (min-width: 1400px) {
+  .container-ext {
+    max-width: 1340px;
+  }
+}
+/*==========  Desktop First  ==========*/
+@media only screen and (max-width: 1660px) {
+  h1 {
+    font-size: 90.1px;
+    line-height: 90.1px;
+  }
+
+  .yu__quote {
+    padding: 0 5%;
+  }
+}
+@media only screen and (max-width: 1550px) {
+  .yu__homepage_menu .wp-block-column p a {
+    font-size: 2.5rem;
+    line-height: 2rem;
+  }
+}
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1460px) {
+  h1 {
+    font-size: 79.5px;
+    line-height: 79.5px;
+  }
+
+  h2 {
+    font-size: 66px;
+    line-height: 66px;
+  }
+}
+@media only screen and (max-width: 1310px) {
+  h1 {
+    font-size: 74.2px;
+    line-height: 74.2px;
+  }
+
+  h2 {
+    font-size: 57.2px;
+    line-height: 57.2px;
+  }
+
+  .yu__quote {
+    padding: 0 1rem;
+  }
+}
+@media only screen and (max-width: 1210px) {
+  h1 {
+    font-size: 68.9px;
+    line-height: 68.9px;
+  }
+}
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1199px) {
+  body, boby p {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 20px;
+    line-height: 27px;
+    background-color: #FFFFFF;
+  }
+
+  h1, h2, h3, h4, h5, h6, a, blockquote, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "IBM Plex Sans", sans-serif;
+    opacity: 100%;
+  }
+
+  h1, .h1 {
+    font-family: "IBM Plex Serif", sans-serif;
+    font-size: 79.5px;
+    line-height: 79.5px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    word-break: keep-all;
+    overflow-wrap: normal;
+  }
+
+  h2, .h2 {
+    font-family: "IBM Plex Serif", sans-serif;
+    font-size: 66px;
+    line-height: 66px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  h3, .h3 {
+    font-size: 33.25px;
+    line-height: 37.05px;
+    font-weight: 500;
+  }
+
+  h4, .h4 {
+    font-size: 23.75px;
+    line-height: 25.65px;
+    font-weight: 500;
+  }
+
+  h5, .h5 {
+    font-size: 20.9px;
+    line-height: 23.75px;
+    font-weight: 600;
+  }
+
+  p.yu__body-intro {
+    font-size: 26.6px;
+    line-height: 33.25px;
+  }
+
+  .yu__homepage_menu {
+    font-size: 50.35px;
+    line-height: 50.35px;
+  }
+
+  .yu__block_header {
+    font-size: 20.9px;
+    line-height: 29.45px;
+  }
+
+  header#masthead .navbar #main-nav ul[id^=menu-primary-menu] > li a {
+    font-size: 26.6px;
+    line-height: 28.5px;
+  }
+
+  blockquote {
+    font-size: 33.25px;
+    line-height: 38px;
+    font-style: italic;
+  }
+
+  figcaption {
+    font-size: 15.2px;
+    line-height: 20.9px;
+    font-weight: normal;
+    color: #686260;
+  }
+
+  a {
+    color: #000000;
+    text-decoration: underline;
+    word-break: normal;
+    word-wrap: break-word;
+  }
+  a:visited {
+    color: inherit;
+  }
+  a:hover {
+    color: #E31837;
+    text-decoration: underline;
+  }
+
+  .yu__two-blocks .yu__block-01 p {
+    font-size: 39px;
+    line-height: 39px;
+  }
+
+  html[lang=fr-FR] h1, html[lang=fr-FR] .h1 {
+    font-size: 66px;
+    line-height: 66px;
+  }
+  html[lang=fr-FR] h2, html[lang=fr-FR] .h2 {
+    font-size: 52.5px;
+    line-height: 52.5px;
+  }
+
+  .yu__top-banner p.yu__body-intro.banner-description {
+    padding-left: 1rem;
+  }
+
+  .yu__info_with_icon_on_right_side .yu__text_block {
+    order: 1;
+  }
+  .yu__info_with_icon_on_right_side .yu__text_block h2 {
+    margin-bottom: 5rem;
+  }
+  .yu__info_with_icon_on_right_side .yu__icon_block {
+    order: 0;
+    margin-top: 5rem;
+  }
+  .yu__info_with_icon_on_right_side .yu__icon_block .yu__big_icon img {
+    max-width: 281.25px;
+    max-height: 281.25px;
+  }
+
+  .yu__homepage_menu .wp-block-column {
+    min-height: auto;
+  }
+  .yu__homepage_menu .wp-block-column p a {
+    font-size: 2rem;
+    line-height: 1rem;
+  }
+}
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 992px) {
+  body, boby p {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 20px;
+    line-height: 27px;
+    background-color: #FFFFFF;
+  }
+
+  h1, h2, h3, h4, h5, h6, a, blockquote, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "IBM Plex Sans", sans-serif;
+    opacity: 100%;
+  }
+
+  h1, .h1 {
+    font-family: "IBM Plex Serif", sans-serif;
+    font-size: 71.02px;
+    line-height: 71.02px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    word-break: keep-all;
+    overflow-wrap: normal;
+  }
+
+  h2, .h2 {
+    font-family: "IBM Plex Serif", sans-serif;
+    font-size: 58.96px;
+    line-height: 58.96px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  h3, .h3 {
+    font-size: 31.5px;
+    line-height: 35.1px;
+    font-weight: 500;
+  }
+
+  h4, .h4 {
+    font-size: 22.5px;
+    line-height: 24.3px;
+    font-weight: 500;
+  }
+
+  h5, .h5 {
+    font-size: 19.8px;
+    line-height: 22.5px;
+    font-weight: 600;
+  }
+
+  p.yu__body-intro {
+    font-size: 25.2px;
+    line-height: 31.5px;
+  }
+
+  .yu__homepage_menu {
+    font-size: 47.7px;
+    line-height: 47.7px;
+  }
+
+  .yu__block_header {
+    font-size: 19.8px;
+    line-height: 27.9px;
+  }
+
+  header#masthead .navbar #main-nav ul[id^=menu-primary-menu] > li a {
+    font-size: 25.2px;
+    line-height: 27px;
+  }
+
+  blockquote {
+    font-size: 31.5px;
+    line-height: 36px;
+    font-style: italic;
+  }
+
+  figcaption {
+    font-size: 14.4px;
+    line-height: 19.8px;
+    font-weight: normal;
+    color: #686260;
+  }
+
+  a {
+    color: #000000;
+    text-decoration: underline;
+    word-break: normal;
+    word-wrap: break-word;
+  }
+  a:visited {
+    color: inherit;
+  }
+  a:hover {
+    color: #E31837;
+    text-decoration: underline;
+  }
+
+  .yu__two-blocks .yu__block-01 p {
+    font-size: 34.84px;
+    line-height: 34.84px;
+  }
+
+  html[lang=fr-FR] h1, html[lang=fr-FR] .h1 {
+    font-size: 58.96px;
+    line-height: 58.96px;
+  }
+  html[lang=fr-FR] h2, html[lang=fr-FR] .h2 {
+    font-size: 46.9px;
+    line-height: 46.9px;
+  }
+
+  .yu__homepage_menu .wp-block-column {
+    min-height: 350px;
+  }
+  .yu__homepage_menu .wp-block-column p a {
+    font-size: 2rem;
+    line-height: 1rem;
+  }
+
+  .yu__stats-info-block .wp-block-columns:first-child .wp-block-column {
+    padding-bottom: 0;
+  }
+  .yu__stats-info-block .wp-block-columns .wp-block-column {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .yu__stats-info-block .wp-block-columns .wp-block-column .yu__digits {
+    font-size: 80px;
+    line-height: 95px;
+  }
+  .yu__stats-info-block .wp-block-columns .wp-block-column .yu__stats-description {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  header#masthead.yu__header-sticky .navbar {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  header#masthead.yu__header-sticky .navbar .navbar-brand {
+    padding-left: 1rem;
+  }
+  header#masthead.yu__header-sticky .navbar #main-nav {
+    min-width: unset;
+    width: 100%;
+  }
+  header#masthead.yu__header-sticky .navbar #main-nav ul[id^=menu-primary-menu] > li a {
+    padding-left: 2rem;
+  }
+
+  .yu__top-banner {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .yu__top-banner p.yu__body-intro.banner-description {
+    padding-left: 0;
+  }
+
+  .yu__homepage_menu .wp-block-column {
+    padding: 0.5rem;
+    border: 1px solid #FFFFFF;
+    outline: 0.5rem solid transparent;
+  }
+  .yu__homepage_menu .wp-block-column:hover {
+    border: 0.5rem solid #FFFFFF;
+  }
+  .yu__homepage_menu .wp-block-column p {
+    padding: 2rem 2.5rem;
+  }
+
+  .yu__info_with_icon_on_right_side {
+    padding: 5rem 2.5rem;
+    border-width: 0.5rem;
+  }
+
+  .yu__tile .wp-block-column .yu__tile-item h3 {
+    white-space: pre-wrap;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .yu__tile .wp-block-column .yu__tile-item figure img {
+    width: 125px;
+    height: 125px;
+  }
+
+  .yu__img-cover-with-info {
+    border-width: 0.5rem;
+    padding: 5rem 0;
+  }
+
+  .yu__tb_header {
+    padding: 1rem;
+  }
+
+  footer#yu__footer {
+    padding-left: 2rem;
+  }
+  footer#yu__footer #footer-widget .container {
+    max-width: none;
+  }
+  footer#yu__footer #footer-widget .container #footer-1 {
+    margin-bottom: 1rem;
+  }
+  footer#yu__footer #footer-widget .container #footer-2 {
+    margin-bottom: 3rem;
+  }
+  footer#yu__footer #footer-widget .container #footer-3 li a {
+    padding-left: 0;
+  }
+}
+@media (min-width: 782px) {
+  .wp-block-column[style] {
+    flex-grow: 1;
+  }
+}
+@media (min-width: 600px) and (max-width: 781px) {
+  body, boby p {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 20px;
+    line-height: 27px;
+    background-color: #FFFFFF;
+  }
+
+  h1, h2, h3, h4, h5, h6, a, blockquote, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "IBM Plex Sans", sans-serif;
+    opacity: 100%;
+  }
+
+  h1, .h1 {
+    font-family: "IBM Plex Serif", sans-serif;
+    font-size: 53px;
+    line-height: 53px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    word-break: keep-all;
+    overflow-wrap: normal;
+  }
+
+  h2, .h2 {
+    font-family: "IBM Plex Serif", sans-serif;
+    font-size: 44px;
+    line-height: 44px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  h3, .h3 {
+    font-size: 28px;
+    line-height: 31.2px;
+    font-weight: 500;
+  }
+
+  h4, .h4 {
+    font-size: 20px;
+    line-height: 21.6px;
+    font-weight: 500;
+  }
+
+  h5, .h5 {
+    font-size: 17.6px;
+    line-height: 20px;
+    font-weight: 600;
+  }
+
+  p.yu__body-intro {
+    font-size: 22.4px;
+    line-height: 28px;
+  }
+
+  .yu__homepage_menu {
+    font-size: 42.4px;
+    line-height: 42.4px;
+  }
+
+  .yu__block_header {
+    font-size: 17.6px;
+    line-height: 24.8px;
+  }
+
+  header#masthead .navbar #main-nav ul[id^=menu-primary-menu] > li a {
+    font-size: 22.4px;
+    line-height: 24px;
+  }
+
+  blockquote {
+    font-size: 28px;
+    line-height: 32px;
+    font-style: italic;
+  }
+
+  figcaption {
+    font-size: 12.8px;
+    line-height: 17.6px;
+    font-weight: normal;
+    color: #686260;
+  }
+
+  a {
+    color: #000000;
+    text-decoration: underline;
+    word-break: normal;
+    word-wrap: break-word;
+  }
+  a:visited {
+    color: inherit;
+  }
+  a:hover {
+    color: #E31837;
+    text-decoration: underline;
+  }
+
+  .yu__two-blocks .yu__block-01 p {
+    font-size: 26px;
+    line-height: 26px;
+  }
+
+  html[lang=fr-FR] h1, html[lang=fr-FR] .h1 {
+    font-size: 44px;
+    line-height: 44px;
+  }
+  html[lang=fr-FR] h2, html[lang=fr-FR] .h2 {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .yu__tile .wp-block-column .yu__tile-item h3 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .wp-block-column.col-12, .wp-block-column.col-6 {
+    flex-basis: auto !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .yu__stats-info-block .wp-block-columns:first-child .wp-block-column:first-child {
+    padding-top: 4rem;
+  }
+  .yu__stats-info-block .wp-block-columns:last-child .wp-block-column:last-child {
+    padding-bottom: 4rem;
+  }
+  .yu__stats-info-block .wp-block-columns .wp-block-column {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .yu__stats-info-block .wp-block-columns .wp-block-column .yu__digits {
+    font-size: 60px;
+    line-height: 75px;
+  }
+  .yu__stats-info-block .wp-block-columns .wp-block-column .yu__stats-description {
+    font-size: 17px;
+    width: 100%;
+  }
+
+  .yu__accordion .yu__accordion-title, .yu__accordion.accordion-open .yu__accordion-title {
+    font-size: 0.8rem;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+  }
+  .yu__accordion .yu__accordion-title:after, .yu__accordion.accordion-open .yu__accordion-title:after {
+    width: 39px;
+    height: 39px;
+    background-size: contain;
+  }
+  .yu__accordion .yu__accordion-image .wp-block-cover, .yu__accordion.accordion-open .yu__accordion-image .wp-block-cover {
+    min-height: 150px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body, boby p {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 20px;
+    line-height: 27px;
+    background-color: #FFFFFF;
+  }
+
+  h1, h2, h3, h4, h5, h6, a, blockquote, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "IBM Plex Sans", sans-serif;
+    opacity: 100%;
+  }
+
+  h1, .h1 {
+    font-family: "IBM Plex Serif", sans-serif;
+    font-size: 47.7px;
+    line-height: 47.7px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    word-break: keep-all;
+    overflow-wrap: normal;
+  }
+
+  h2, .h2 {
+    font-family: "IBM Plex Serif", sans-serif;
+    font-size: 39.6px;
+    line-height: 39.6px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  h3, .h3 {
+    font-size: 28px;
+    line-height: 31.2px;
+    font-weight: 500;
+  }
+
+  h4, .h4 {
+    font-size: 20px;
+    line-height: 21.6px;
+    font-weight: 500;
+  }
+
+  h5, .h5 {
+    font-size: 17.6px;
+    line-height: 20px;
+    font-weight: 600;
+  }
+
+  p.yu__body-intro {
+    font-size: 22.4px;
+    line-height: 28px;
+  }
+
+  .yu__homepage_menu {
+    font-size: 42.4px;
+    line-height: 42.4px;
+  }
+
+  .yu__block_header {
+    font-size: 17.6px;
+    line-height: 24.8px;
+  }
+
+  header#masthead .navbar #main-nav ul[id^=menu-primary-menu] > li a {
+    font-size: 22.4px;
+    line-height: 24px;
+  }
+
+  blockquote {
+    font-size: 28px;
+    line-height: 32px;
+    font-style: italic;
+  }
+
+  figcaption {
+    font-size: 12.8px;
+    line-height: 17.6px;
+    font-weight: normal;
+    color: #686260;
+  }
+
+  a {
+    color: #000000;
+    text-decoration: underline;
+    word-break: normal;
+    word-wrap: break-word;
+  }
+  a:visited {
+    color: inherit;
+  }
+  a:hover {
+    color: #E31837;
+    text-decoration: underline;
+  }
+
+  .yu__two-blocks .yu__block-01 p {
+    font-size: 23.4px;
+    line-height: 23.4px;
+  }
+
+  html[lang=fr-FR] h1, html[lang=fr-FR] .h1 {
+    font-size: 39.6px;
+    line-height: 39.6px;
+  }
+  html[lang=fr-FR] h2, html[lang=fr-FR] .h2 {
+    font-size: 31.5px;
+    line-height: 31.5px;
+  }
+
+  .yu__paragraph {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .yu__stats-info-block .wp-block-columns .wp-block-column {
+    padding-left: 2rem;
+    padding-right: 7rem;
+  }
+
+  .yu__stats-info-block .wp-block-columns .wp-block-column {
+    padding-left: 3rem !important;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .yu__separator.container {
+    width: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .yu__tile-buttons .yu__tile-button {
+    margin-bottom: 2rem;
+  }
+  .yu__tile-buttons img {
+    border-width: 0.5rem;
+  }
+
+  .yu__quote p, .yu__quote cite {
+    padding: 0 1rem;
+  }
+
+  .yu__tile-buttons.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .yu__tile-buttons.container .yu__tile-button {
+    border-width: 0.5rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  body, boby p {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 20px;
+    line-height: 27px;
+    background-color: #FFFFFF;
+  }
+
+  h1, h2, h3, h4, h5, h6, a, blockquote, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "IBM Plex Sans", sans-serif;
+    opacity: 100%;
+  }
+
+  h1, .h1 {
+    font-family: "IBM Plex Serif", sans-serif;
+    font-size: 39.22px;
+    line-height: 39.22px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    word-break: keep-all;
+    overflow-wrap: normal;
+  }
+
+  h2, .h2 {
+    font-family: "IBM Plex Serif", sans-serif;
+    font-size: 32.56px;
+    line-height: 32.56px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  h3, .h3 {
+    font-size: 28px;
+    line-height: 31.2px;
+    font-weight: 500;
+  }
+
+  h4, .h4 {
+    font-size: 20px;
+    line-height: 21.6px;
+    font-weight: 500;
+  }
+
+  h5, .h5 {
+    font-size: 17.6px;
+    line-height: 20px;
+    font-weight: 600;
+  }
+
+  p.yu__body-intro {
+    font-size: 22.4px;
+    line-height: 28px;
+  }
+
+  .yu__homepage_menu {
+    font-size: 42.4px;
+    line-height: 42.4px;
+  }
+
+  .yu__block_header {
+    font-size: 17.6px;
+    line-height: 24.8px;
+  }
+
+  header#masthead .navbar #main-nav ul[id^=menu-primary-menu] > li a {
+    font-size: 22.4px;
+    line-height: 24px;
+  }
+
+  blockquote {
+    font-size: 28px;
+    line-height: 32px;
+    font-style: italic;
+  }
+
+  figcaption {
+    font-size: 12.8px;
+    line-height: 17.6px;
+    font-weight: normal;
+    color: #686260;
+  }
+
+  a {
+    color: #000000;
+    text-decoration: underline;
+    word-break: normal;
+    word-wrap: break-word;
+  }
+  a:visited {
+    color: inherit;
+  }
+  a:hover {
+    color: #E31837;
+    text-decoration: underline;
+  }
+
+  .yu__two-blocks .yu__block-01 p {
+    font-size: 19.24px;
+    line-height: 19.24px;
+  }
+
+  html[lang=fr-FR] h1, html[lang=fr-FR] .h1 {
+    font-size: 32.56px;
+    line-height: 32.56px;
+  }
+  html[lang=fr-FR] h2, html[lang=fr-FR] .h2 {
+    font-size: 25.9px;
+    line-height: 25.9px;
+  }
+
+  h1 {
+    margin-top: 1rem;
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  .yu__homepage_menu .wp-block-column {
+    padding: 0;
+    min-height: 245px;
+  }
+  .yu__homepage_menu .wp-block-column p {
+    padding: 0 2rem 0 2rem;
+  }
+  .yu__homepage_menu .wp-block-column p a {
+    font-size: 1.8rem;
+    line-height: 1rem;
+  }
+  .yu__homepage_menu:hover .wp-block-column p {
+    padding: 0 1.8rem 0 1.8rem;
+  }
+
+  .yu__block_header {
+    width: 60%;
+    font-size: 1.5rem;
+  }
+
+  .yu__info_with_icon_on_right_side .yu__icon_block {
+    margin-top: 2rem;
+  }
+  .yu__info_with_icon_on_right_side .yu__text_block .yu__info_text {
+    width: 100%;
+  }
+
+  .yu__h3-block {
+    padding-left: 3rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  body, boby p {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 20px;
+    line-height: 27px;
+    background-color: #FFFFFF;
+  }
+
+  h1, h2, h3, h4, h5, h6, a, blockquote, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "IBM Plex Sans", sans-serif;
+    opacity: 100%;
+  }
+
+  h1, .h1 {
+    font-family: "IBM Plex Serif", sans-serif;
+    font-size: 31.8px;
+    line-height: 31.8px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    word-break: keep-all;
+    overflow-wrap: normal;
+  }
+
+  h2, .h2 {
+    font-family: "IBM Plex Serif", sans-serif;
+    font-size: 26.4px;
+    line-height: 26.4px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  h3, .h3 {
+    font-size: 24.5px;
+    line-height: 27.3px;
+    font-weight: 500;
+  }
+
+  h4, .h4 {
+    font-size: 17.5px;
+    line-height: 18.9px;
+    font-weight: 500;
+  }
+
+  h5, .h5 {
+    font-size: 15.4px;
+    line-height: 17.5px;
+    font-weight: 600;
+  }
+
+  p.yu__body-intro {
+    font-size: 19.6px;
+    line-height: 24.5px;
+  }
+
+  .yu__homepage_menu {
+    font-size: 37.1px;
+    line-height: 37.1px;
+  }
+
+  .yu__block_header {
+    font-size: 15.4px;
+    line-height: 21.7px;
+  }
+
+  header#masthead .navbar #main-nav ul[id^=menu-primary-menu] > li a {
+    font-size: 19.6px;
+    line-height: 21px;
+  }
+
+  blockquote {
+    font-size: 24.5px;
+    line-height: 28px;
+    font-style: italic;
+  }
+
+  figcaption {
+    font-size: 11.2px;
+    line-height: 15.4px;
+    font-weight: normal;
+    color: #686260;
+  }
+
+  a {
+    color: #000000;
+    text-decoration: underline;
+    word-break: normal;
+    word-wrap: break-word;
+  }
+  a:visited {
+    color: inherit;
+  }
+  a:hover {
+    color: #E31837;
+    text-decoration: underline;
+  }
+
+  .yu__two-blocks .yu__block-01 p {
+    font-size: 15.6px;
+    line-height: 15.6px;
+  }
+
+  html[lang=fr-FR] h1, html[lang=fr-FR] .h1 {
+    font-size: 26.4px;
+    line-height: 26.4px;
+  }
+  html[lang=fr-FR] h2, html[lang=fr-FR] .h2 {
+    font-size: 21px;
+    line-height: 21px;
+  }
+
+  h1 {
+    line-height: 39px;
+  }
+
+  .yu__tile .wp-block-column .yu__tile-item {
+    padding: 4rem 1rem 2rem 1rem;
+  }
+  .yu__tile .wp-block-column .yu__tile-item h3, .yu__tile .wp-block-column .yu__tile-item .h3 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  body, boby p {
+    font-size: 17px;
+    line-height: 27px;
+  }
+
+  header#masthead .navbar #main-nav ul[id^=menu-primary-menu] > li a {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .yu__tile .wp-block-column .yu__tile-item figure img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .yu__tile .wp-block-column .yu__tile-item figure img {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

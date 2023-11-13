@@ -1,0 +1,20 @@
+jQuery(document).ready(function($){
+if ($(".grid-block-animated .blocks-gallery-item")[0]){ 
+  $(window).scroll(function() {
+
+  var wScroll = $(this).scrollTop();
+
+  if(wScroll > $('.grid-block-animated .blocks-gallery-item').offset().top -($(window).height() / 1.2)) {
+
+    $('.grid-block-animated .blocks-gallery-item').each(function(i){
+      setTimeout(function(){
+      $('.grid-block-animated .blocks-gallery-item').eq(i).addClass('active');
+      }, 400 * (i+1));
+    });
+  } else {
+    /*$('.blocks-gallery-item').removeClass('active');*/
+  }
+  });
+}
+else {}
+});

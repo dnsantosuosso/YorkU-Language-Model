@@ -1,0 +1,30 @@
+.box-with-links img{
+  height: 23px;
+}
+.box-with-links {
+  border: #E1DFDC solid 2px;
+}
+.box-with-links ul li::marker {
+  color: #CC0000;
+}
+.box-with-links ul li a {
+  color: #CC0000;
+}
+.box-with-links svg.ext {
+  vertical-align: baseline;
+  margin-left: 5px;
+  width: 20px;
+  height: 20px;
+  fill: #CC0000;
+}
+.box-with-links svg.ext path, svg.mailto path {
+  stroke: #CC0000;
+}
+.box-with-links .links a {
+  text-decoration: underline;
+}
+@media (min-width: 768px) and (max-width: 990px) {
+  .wp-block-column.box-with-links {
+    min-width: 250px;
+  }
+}

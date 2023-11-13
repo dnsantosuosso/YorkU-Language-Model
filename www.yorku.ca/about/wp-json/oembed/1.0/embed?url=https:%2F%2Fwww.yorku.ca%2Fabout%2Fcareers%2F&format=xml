@@ -11,7 +11,7 @@
 Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
 
 Page Caching using memcached (Requested URI contains query) 
-Database Caching 21/86 queries in 0.294 seconds using memcached
+Database Caching 84/86 queries in 0.051 seconds using memcached
 
-Served from: 130.63.73.76 @ 2023-11-09 21:03:04 by W3 Total Cache
+Served from: 130.63.73.76 @ 2023-11-11 21:27:30 by W3 Total Cache
 -->

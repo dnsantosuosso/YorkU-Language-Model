@@ -1,0 +1,324 @@
+:root{
+	--yorkred:#e31837;
+	--darkred:#9A0100;
+	--yorkgrey:#666;
+}
+
+html,
+body{
+	/* overflow-x:hidden; /* overflow will not work with sticky */
+}
+
+#page-wrapper{
+	overflow-x:hidden; /* some 2020 theme elements will extend beyond pages*/
+	padding-bottom:48px;
+	overflow-y:hidden; /* some scrollbars appear with AOS? */
+}
+
+#content .full-width{
+	left:50%;
+}
+
+.yorkred{
+	color:var(--yorkred);
+}
+
+.wp-block-column button:focus {
+	outline:2px dotted red;
+}
+
+
+@media (min-width: 800px){
+	#navigation .region-navigation > ul.menu{
+		display:flex;
+		flex-direction:row;
+	}
+		
+		#navigation .region-navigation > ul.menu li{
+			padding:0;
+			align-self:stretch;
+		}
+		
+		#navigation .region-navigation > ul.menu div.spacer{
+			flex:1;
+		}	
+		
+			#navigation .region-navigation > ul.menu div.spacer + li > a,
+			#navigation .region-navigation > ul.menu div.spacer + li + li > a{
+				height:100%;
+				display:inline-block;
+			}			
+}
+
+
+#footer{
+	/*margin-top:20px !important;*/ /* where did we need this? :( */
+	padding:0;
+}
+
+/*
+#cs-quick-links-footer{
+display:inline-block;
+width:100%;
+background-color:#E1DFDC !important;
+padding:20px 10px 10px;
+margin:0px auto -6px;
+height:auto;
+}
+
+
+#cs-quick-links-footer ul {
+display:inline-block;
+width:auto;
+list-style:none;
+padding: 0 0 0 15px;
+}
+
+.cs-quick-links-footer ul.first {
+margin: 0 40px 0 0 !important;
+}
+
+#cs-quick-links-footer ul li a {
+text-decoration: underline;
+}
+
+.cs-quick-links-footer {
+float:none;
+width:40%;
+margin:0px auto 0;
+text-align:left;
+padding: 0 0 0 7%;
+}
+
+.cs-quick-links-footer h4 {
+margin:0 0 0 15px;
+}
+*/
+
+.sticky-top{
+	z-index:90;
+}
+
+	#content article{
+		margin-bottom:0;
+	}
+
+#name-and-slogan h1#site-name {
+  padding: 20px 0;
+}
+
+nav{
+	margin:0 -30px 0 -11px;
+}
+
+	nav#toolbar-bar, nav.toolbar-lining{
+		margin:0;
+	}
+
+#navigation,
+#navigation .region-navigation ul.menu li a{
+	/* background-color:#9A0100;
+	color:#FFF; */
+	background-color:#810001;
+	color:#FFF;
+}
+
+	#navigation .region-navigation ul.menu li:hover > a{
+		background-color:#e31837;
+	}
+
+.york2020-highlights3,
+.york2020-highlights4{
+	display:grid;
+	grid-gap: 32px;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));	
+}
+
+	.york2020-highlights4{
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));	
+	}
+
+	.york2020-highlights3 .wp-block-column:not(:first-child),
+	.york2020-highlights4 .wp-block-column:not(:first-child){
+		margin-left:0 !important;
+	}
+	
+	.york2020-highlights3 hr.wp-block-separator,
+	.york2020-highlights4 hr.wp-block-separator{	
+		margin-top:0;
+	}
+	
+/*	.york2020-highlights3 figure,
+	.york2020-highlights4 figure{
+		margin:0;
+	}
+*/	
+	/*.card-deck .card{
+		margin:0 !important;
+	}
+	
+		.card-deck .card-body{
+			padding-top:0;
+		}	*/
+		
+
+/*.infographics-block .mb-2{
+	margin-bottom:0 !important;
+}*/
+
+@media (max-width: 992px) {
+	.profile-block{
+		margin-left:calc(-50vw + 10px); /* compensate for two-column*/
+	}
+}
+
+
+.container .has-background.grey-bg-block.transparent-bg-block,
+.container .has-background.grey-bg-block.Transparent{
+	background:transparent !important;
+}
+
+
+
+
+
+
+
+
+
+
+#cs-quick-links-footer{
+/*display:inline-block;
+width:100%;*/
+background-color:#E1DFDC !important;
+padding:20px 10px 10px;
+margin:0px auto -6px;
+height:auto;
+/*
+display: flex;
+flex-wrap: wrap;
+*/
+}
+
+
+#cs-quick-links-footer ul {
+/* float:left; */
+width:auto;
+list-style:none;
+padding: 0 0 0 0px;
+}
+
+.cs-quick-links-footer-flex.first {
+/* margin: 0 40px 0 0 !important; */
+flex: 0 0 51%;
+max-width: 51%;
+/* position:relative; */
+}
+
+.cs-quick-links-footer-flex.last {
+/* margin: 0 40px 0 0 !important; */
+flex: 0 0 49%;
+max-width: 49%;
+}
+
+#cs-quick-links-footer ul li a {
+text-decoration: underline;
+}
+
+.cs-quick-links-footer {
+/* float:none; */
+/* width:75%; */
+max-width: 490px;
+padding: 0 0 0 0;
+margin:0px auto 0;
+text-align:left;
+display: flex;
+flex-wrap: wrap;
+}
+
+.cs-quick-links-footer h4 {
+margin:0 0 0 0px;
+flex: 0 0 100%;
+max-width: 100%;
+}
+
+
+@media (max-width: 799px){
+.cs-quick-links-footer {
+width:100%;
+padding: 0;
+}
+.cs-quick-links-footer-cols {
+columns:1;
+column-width:100%;
+height:100%;
+padding: 0;
+}
+.cs-quick-links-footer-flex, .cs-quick-links-footer-flex.first, .cs-quick-links-footer-flex.last {
+flex: 0 0 100%;
+max-width: 100%;
+/* position:relative; */
+}
+#cs-quick-links-footer ul {
+width:100%;
+}
+}
+
+/* DAVIDYIM - PATTERNS */
+.pattern-preview{
+	margin:64px 0;
+}
+
+.pattern-preview__preview .pattern-preview__markup{
+	margin-bottom:48px;
+}
+
+
+table.v3-table-tightpair th{
+	text-align:right;
+	width:25%;
+	min-width:25%;
+	max-width:25%;
+}
+
+table.v3-table-tightpair th, table.v3-table-tightpair td{
+	height:auto;
+	line-height:1;
+	vertical-align:middle;
+}
+
+ul.list-adjusted:not(.menu, .links){
+	margin-top:24px;
+}
+
+ol.list-adjusted:not(.menu, .links) > li, 
+ul.list-adjusted:not(.menu, .links) > li{
+	margin-bottom:24px;
+}
+
+	ol.list-adjusted:not(.menu, .links) > li > ol > li, 
+	ol.list-adjusted:not(.menu, .links) > li > ul > li,
+	ul.list-adjusted:not(.menu, .links) > li > ol > li,
+	ul.list-adjusted:not(.menu, .links) > li > ul > li{
+		margin:12px 0;
+	}
+	
+@media (max-width: 600px){	
+	.wp-block-cover.full-width.pattern-full-image-width{
+		display:none;
+	}
+	
+	.page-title{
+		margin-top:0;
+	}
+}
+
+article p + ul {
+	margin-top: 0;
+}
+
+.wp-block-columns figure.full-width{
+	width:100% !important;
+	margin:0;
+	left:0 !important;
+}

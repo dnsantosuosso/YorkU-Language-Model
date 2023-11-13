@@ -1,0 +1,16 @@
+@media(min-width: 782px){
+	.wp-block-columns.batch-3{
+		flex-wrap:wrap;
+	}
+	
+	.wp-block-columns.batch-3 .wp-block-column{
+		min-width:calc(33% - 32px);
+		max-width:calc(33% - 32px);
+	}
+	
+	.wp-block-columns.batch-3 .wp-block-column,
+	.wp-block-columns.batch-3 .wp-block-column:not(:first-child){
+		margin-left:0;
+		margin-right:32px;
+	}
+}

@@ -1,0 +1,2256 @@
+/* UIT Template adds a border-bottom on focus of ANY element. Removing it on case by case basis. */
+a {
+  border-bottom: none;
+}
+li a:focus {
+  outline: none;
+  border-bottom: none !important;
+}
+/* End of UIT Override */
+@media all and (min-width: 801px) {
+  #global_search_tabs {
+    margin-bottom: 20px;
+  }
+}
+@media all and (max-width: 800px) {
+  #global_search_tabs {
+    margin-bottom: 20px;
+  }
+  #global_search_tabs input[type="submit"] {
+    display: none;
+  }
+  .content-area {
+    margin-right: 0;
+  }
+  .content-area .entry-header {
+    padding-right: 0;
+  }
+  .homepage-banner {
+    margin-right: 15px;
+  }
+}
+/** Apply full styling to the  global search tabs only for desktop/laptop with screen at least 768px wide **/
+@media all and (min-width: 768px) {
+  #global_search_tabs {
+    border: none;
+    border-radius: 0 0 0 0;
+    padding: 0;
+    min-width: 640px;
+  }
+  #global_search_tabs ul.ui-widget-header {
+    border: none;
+    border-top: 10px solid #DBDBDB;
+    border-left: 25px solid #DBDBDB;
+    border-radius: 0 0 0 0;
+    background: none;
+    background-color: #dbdbdb;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  #global_search_tabs ul.ui-widget-header li {
+    background: none;
+    background-color: #dbdbdb;
+    border: none;
+    border-radius: 0 0 0 0;
+    margin: 0;
+    padding: 0;
+  }
+  #global_search_tabs ul.ui-widget-header li a {
+    color: #0e4c8c;
+    font-size: 0.8em;
+  }
+  #global_search_tabs ul.ui-widget-header li a:active,
+  #global_search_tabs ul.ui-widget-header li a:hover {
+    border-bottom: none;
+  }
+  #global_search_tabs ul.ui-widget-header li :focus {
+    border-bottom: none;
+  }
+  #global_search_tabs ul.ui-widget-header li.ui-tabs-active a {
+    background-color: #666666;
+    color: white;
+  }
+  #global_search_tabs .ui-tabs-panel {
+    padding: 0;
+    border: none;
+    border-radius: 0 0 0 0;
+  }
+  #global_search_tabs li,
+  #global_search_tabs li a {
+    border-bottom: none !important;
+  }
+  /** Research Guides CSS - Second tab on search box **/
+  #browse_subjects_container {
+    background-color: #dbdbdb;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+  }
+  #browse_subjects_container span.label {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  #browse_subjects_container span.label a {
+    color: #e31837;
+  }
+  #browse_subjects_container select {
+    width: 100%;
+  }
+  #browse_subjects_container #subject_guides {
+    float: left;
+    padding: 10px;
+    margin-left: 20px;
+    width: 45%;
+  }
+  #browse_subjects_container #guides_to_resources {
+    float: right;
+    padding: 10px;
+    margin-right: 20px;
+    width: 45%;
+  }
+}
+#vufind_search_form {
+  width: 100%;
+  /** wordpress editor adds extra br and p tags, best to ignore them **/
+}
+#vufind_search_form br {
+  display: none;
+}
+#vufind_search_form p {
+  display: none;
+}
+#vufind_search_form input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #fff;
+  opacity: 0.7;
+  padding-top: 5px;
+}
+#vufind_search_form input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #fff;
+  opacity: 0.7;
+}
+#vufind_search_form input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #fff;
+  opacity: 0.7;
+}
+#vufind_search_form input:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #fff !important;
+  opacity: 0.7;
+}
+#vufind_search_form input[type="search"] {
+  color: white;
+  background-color: #666666;
+  background-image: url("https://www.library.yorku.ca/web/bbl/wp-content/themes/yul-york2020-child/css/legacy/../images/magnifyingglass.gif");
+  /* image is 18px by 26px */
+  background-size: 14px;
+  background-position: 15px center;
+  background-repeat: no-repeat;
+  border: 2px solid #444444;
+  border-radius: 0 0 0 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 80%;
+  height: 2em;
+  font-size: 1.1em;
+  line-height: 0.8em;
+  padding-left: 40px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+#vufind_search_form #search_form_lookfor_container {
+  background-color: #dbdbdb;
+  border-left: 25px solid #DBDBDB;
+  border-bottom: 10px solid #DBDBDB;
+}
+#vufind_search_form #search_form_lookfor_container input[type="submit"] {
+  background-color: #666;
+  width: 15%;
+  height: 2em;
+  font-size: 1.1em;
+  line-height: 0.8em;
+  border: 2px solid #444444;
+  border-radius: 0 0 0 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff !important;
+}
+#vufind_search_form #search_form_lookfor_container input[type="submit"]:hover,
+#vufind_search_form #search_form_lookfor_container input[type="submit"]:focus {
+  text-shadow: none;
+  color: #000 !important;
+  background-color: #eee;
+  background: -moz-linear-gradient(center top, #ffffff 0%, #dbdbdb 100%);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom, #ffffff 0px, #dbdbdb 100%);
+  /* Standard syntax */
+}
+#vufind_search_form #search_form_type_container {
+  background-color: #eeeeee;
+  padding: 5px 25px;
+  font-size: 0.8em;
+}
+#vufind_search_form #search_form_type_container select {
+  background-color: #dbdbdb;
+  border: none;
+  font-size: 0.9em;
+}
+#vufind_search_form #advanced_search_links {
+  float: right;
+  margin-right: 10px;
+  color: #666666;
+  font-size: 0.8em;
+}
+#vufind_search_form #advanced_search_links a,
+#vufind_search_form #advanced_search_links a:hover,
+#vufind_search_form #advanced_search_links a:active,
+#vufind_search_form #advanced_search_links a:visited {
+  color: #666666;
+  font-size: 0.9em;
+  text-decoration: none;
+}
+@media all and (max-width: 767px) {
+  .content-area {
+    margin-right: 0;
+  }
+  .content-area .entry-header {
+    padding-right: 0;
+  }
+  #global_search_tabs {
+    border: none;
+    padding: 0;
+  }
+  #global_search_tabs #global_library_resources_tab {
+    padding: 0;
+  }
+  #global_search_tabs ul.ui-widget-header {
+    display: none;
+  }
+  #global_search_tabs #vufind_search_form #search_form_type_container {
+    display: none;
+  }
+  #global_search_tabs #vufind_search_form #search_form_lookfor_container {
+    border: none;
+    background-color: #dbdbdb;
+    padding: 5px 10px 5px 5px;
+  }
+  #global_search_tabs #vufind_search_form input[type="search"] {
+    color: white;
+    background-color: #666666;
+    background-image: url("https://www.library.yorku.ca/web/bbl/wp-content/themes/yul-york2020-child/css/legacy/../images/magnifyingglass.gif");
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    border: 2px solid #444444;
+    border-radius: 0 0 0 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 2em;
+    font-size: 1em;
+    padding-left: 30px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+  }
+}
+#main {
+  /** right side bar widgets **/
+}
+#main #tertiary {
+  /*.widget-area {
+			margin-top: 20px;
+		} */
+  /* library-facebook-widget */
+  /* End of Sidebar Menu */
+  /** Exploring at the moment. So far Simple Social Icon is the best candidate **/
+}
+#main #tertiary .widget {
+  padding: 0;
+  color: #444444;
+  background: none repeat scroll 0 0 #FFFFFF;
+  /* a { font-weight: bold; } */
+}
+#main #tertiary .widget .widget-title {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 2px #444444 solid;
+  padding-bottom: 4px;
+  color: #444;
+}
+#main #tertiary .widget .rssSummary {
+  font-size: 12px;
+}
+#main #tertiary h3.widget-title .fa fa-inbox,
+#main #tertiary h3.widget-title .fa fa-file-text-alt {
+  font-size: 24px;
+}
+#main #tertiary aside.widget {
+  clear: both;
+}
+#main #tertiary .lcs-language-switcher {
+  padding-bottom: 20px;
+}
+#main #tertiary .lcs-language-switcher li:before {
+  display: none;
+}
+#main #tertiary .lcs-language-switcher li {
+  padding: 0 10px 0 0;
+  margin: 0;
+  float: left;
+}
+#main #tertiary .library-workshops-widget li:before {
+  display: none;
+}
+#main #tertiary .library-workshops-widget a:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+#main #tertiary .library-workshops-widget a span.workshop {
+  display: inline-block;
+  float: left;
+  width: 80%;
+}
+#main #tertiary .library-workshops-widget a span.date {
+  background: #ddd;
+  color: #000;
+  /*        float: right; */
+  display: inline-block;
+  font-size: 10px;
+  padding: 0 2px;
+  text-align: center;
+  width: 40px;
+}
+#main #tertiary .library-workshops-calendar-widget {
+  min-height: 550px;
+}
+@media (max-width: 800px) {
+  #main #tertiary .library-workshops-calendar-widget table,
+  #main #tertiary .library-workshops-calendar-widget thead,
+  #main #tertiary .library-workshops-calendar-widget tbody {
+    display: inline-table;
+    width: 100%;
+  }
+  #main #tertiary .library-workshops-calendar-widget tr {
+    display: table-row;
+  }
+  #main #tertiary .library-workshops-calendar-widget th,
+  #main #tertiary .library-workshops-calendar-widget td {
+    display: table-cell;
+    width: 20%;
+  }
+  #main #tertiary .library-workshops-calendar-widget thead tr {
+    position: relative;
+  }
+}
+#main #tertiary .library-workshops-calendar-widget .cal {
+  text-align: center;
+  width: auto;
+  /*width:16em;*/
+  height: auto;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  background: #fafafa;
+  border: solid 1px #ddd;
+  margin: 0;
+  padding: 0.2em;
+  padding: 10px;
+}
+#main #tertiary .library-workshops-calendar-widget .cal input[type=image] {
+  border: none;
+}
+#main #tertiary .library-workshops-calendar-widget .cal .month {
+  display: block;
+  color: #002a5f;
+  border: solid 1px #ddd;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  background: #fafafa;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 0px;
+  padding: 3px;
+  font-size: 9pt !important;
+  text-align: center;
+}
+#main #tertiary .library-workshops-calendar-widget .month:hover {
+  background-color: #CCCCCC;
+}
+#main #tertiary .library-workshops-calendar-widget #CurrMonth {
+  position: relative;
+  padding-top: 5px;
+}
+#main #tertiary .library-workshops-calendar-widget div.hr {
+  padding-top: 0px;
+  margin-top: 30px;
+  height: 1px;
+  background: #CCC;
+  width: 100%;
+}
+#main #tertiary .library-workshops-calendar-widget .cal table {
+  background: #fbfbfb;
+  width: 100%;
+  margin: 0 0 0.5em 0;
+  padding: 0;
+  border: solid thin #f2f2f2;
+  border-collapse: separate !important;
+}
+#main #tertiary .library-workshops-calendar-widget .cal td,
+#main #tertiary .library-workshops-calendar-widget .cal th {
+  width: auto;
+  /* width:14.3%; */
+  height: 2.3em;
+  border: solid thin #ddd;
+  padding: 0;
+  font-size: 8pt;
+  text-align: center;
+}
+#main #tertiary .library-workshops-calendar-widget .cal tbody td {
+  text-align: center;
+  vertical-align: middle;
+}
+#main #tertiary .library-workshops-calendar-widget .cal tbody a {
+  display: block;
+  width: 20px;
+  line-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#main #tertiary .library-workshops-calendar-widget .cal td.out {
+  background: #f8f8f8;
+  font-family: Arial Narrow;
+}
+#main #tertiary .library-workshops-calendar-widget .cal td.out a {
+  color: #6d6d6d;
+}
+#main #tertiary .library-workshops-calendar-widget .cal .weekend {
+  background: #f2f2f2;
+}
+#main #tertiary .library-workshops-calendar-widget .cal .weekend.out {
+  background: #f0f0f0;
+}
+#main #tertiary .library-workshops-calendar-widget .cal td.hover,
+#main #tertiary .library-workshops-calendar-widget .cal td.weekend.out.hover {
+  color: #224cff;
+  background: #ff8;
+  cursor: pointer;
+}
+#main #tertiary .library-workshops-calendar-widget .cal td.current {
+  color: #ffffff;
+  font-weight: bold;
+  padding: 0;
+  background: gold !important;
+}
+#main #tertiary .library-workshops-calendar-widget .cal td.current a {
+  color: #FFFFFF !important;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 5px;
+  padding-bottom: 7px;
+  background: green;
+}
+#main #tertiary .library-workshops-calendar-widget .cal td.today a:link {
+  coloiMr: #ffffff !important;
+  font-weight: bold;
+  padding: 0;
+  background: #CC0000 !important;
+}
+#main #tertiary .library-workshops-calendar-widget .cal td.today {
+  color: #ffffff !important;
+  font-weight: bold;
+  padding: 0;
+  background: #CC0000 !important;
+}
+#main #tertiary .library-workshops-calendar-widget .today a {
+  color: #ffffff;
+  background: #CC0000;
+}
+#main #tertiary .library-workshops-calendar-widget .cal a {
+  text-decoration: none;
+  color: #000;
+}
+#main #tertiary .library-workshops-calendar-widget .today a {
+  text-decoration: none;
+  color: #ffffff;
+}
+#main #tertiary .library-hours-locations-widget .widget-text {
+  line-height: 1em;
+  padding-left: 24px;
+}
+#main #tertiary .library-hours-locations-widget h3 span.today {
+  float: right;
+  font-size: .8em;
+}
+#main #tertiary .library-hours-locations-widget h4 {
+  margin-bottom: 0;
+}
+#main #tertiary .library-hours-locations-widget [class^="fa fa-"]:before,
+#main #tertiary .library-hours-locations-widget [class*=" fa fa-"]:before {
+  font-size: 24px;
+}
+#main #tertiary .library-hours-locations-widget [class^="fa fa-"],
+#main #tertiary .library-hours-locations-widget [class*=" fa fa-"] {
+  background-image: none;
+  vertical-align: middle;
+  display: inline-block;
+  width: 24px;
+}
+#main #tertiary .library-hours-locations-widget ul {
+  margin-bottom: 1em;
+}
+#main #tertiary .library-hours-locations-widget ul li {
+  line-height: 1em;
+  margin-top: 5px;
+  padding: 0;
+}
+#main #tertiary .library-hours-locations-widget ul li span.day {
+  font-weight: bold;
+}
+#main #tertiary .library-hours-locations-widget ul li span.hours {
+  float: right;
+  background-color: #dbdbdb;
+}
+#main #tertiary .library-hours-locations-widget ul.branches li {
+  border: 1px solid #dbdbdb;
+}
+#main #tertiary .library-hours-locations-widget ul.branches li a.library-branch {
+  display: inline-block;
+  width: 140px;
+  padding: 5px 0 5px 5px;
+}
+#main #tertiary .library-link-boxes-widget [class^="fa fa-"]:before,
+#main #tertiary .library-link-boxes-widget [class*=" fa fa-"]:before {
+  font-size: 26px;
+  text-align: center;
+}
+#main #tertiary .library-link-boxes-widget [class^="fa fa-"],
+#main #tertiary .library-link-boxes-widget [class*=" fa fa-"] {
+  background-image: none;
+  vertical-align: middle;
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#main #tertiary .library-link-boxes-widget ul {
+  /* Spacing issue between li items. Its font related and not display:inline-block.
+				 * Other solutions involved floating but font in ul to zero was the safest with multiple
+				 * browsers - Tested in Chrome, FF, Safari
+				 */
+  font-size: 0;
+}
+#main #tertiary .library-link-boxes-widget li:before {
+  display: none;
+}
+#main #tertiary .library-link-boxes-widget li {
+  display: inline-block;
+  font-size: 14px;
+  vertical-align: top;
+  text-align: center;
+  word-wrap: break-word;
+}
+#main #tertiary .library-link-boxes-widget li:hover,
+#main #tertiary .library-link-boxes-widget li:nth-child(even):hover,
+#main #tertiary .library-link-boxes-widget li:nth-child(odd):hover {
+  background-color: #eee;
+}
+#main #tertiary .library-link-boxes-widget li:hover a,
+#main #tertiary .library-link-boxes-widget li:nth-child(even):hover a,
+#main #tertiary .library-link-boxes-widget li:nth-child(odd):hover a,
+#main #tertiary .library-link-boxes-widget li:hover a:visited,
+#main #tertiary .library-link-boxes-widget li:nth-child(even):hover a:visited,
+#main #tertiary .library-link-boxes-widget li:nth-child(odd):hover a:visited {
+  color: #e31837;
+}
+#main #tertiary .library-link-boxes-widget li:nth-child(even) {
+  background-color: #fff;
+  width: 50%;
+  min-height: 104px;
+  border-left: 2px solid #dbdbdb;
+  border-bottom: 2px solid #dbdbdb;
+  border-right: 2px solid #dbdbdb;
+}
+#main #tertiary .library-link-boxes-widget li:nth-child(odd) {
+  background-color: #fff;
+  width: 50%;
+  min-height: 104px;
+  border-right: 2px solid #dbdbdb;
+  border-bottom: 2px solid #dbdbdb;
+}
+#main #tertiary .library-link-boxes-widget li:nth-child(odd):after {
+  content: "\A";
+  white-space: pre;
+}
+#main #tertiary .library-link-boxes-widget li:first-child {
+  background-color: #fff;
+  width: 100%;
+  border: 2px solid #dbdbdb;
+}
+#main #tertiary .library-twitter-widget .really_simple_twitter_widget {
+  position: relative;
+  background: #FFFFFF;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: #dbdbdb solid 3px;
+  border-bottom-color: #00aced;
+  border-width: 1px 1px 3px 1px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+#main #tertiary .library-twitter-widget .really_simple_twitter_widget .rstw_comma {
+  display: none;
+}
+#main #tertiary .library-twitter-widget .really_simple_twitter_widget .twitter-timestamp {
+  display: block;
+  font-weight: bold;
+}
+#main #tertiary .library-twitter-widget .rstw_link_user .fa fa-twitter {
+  color: #00aced;
+  font-size: 24px;
+  margin-left: 18px;
+  padding-right: 5px;
+  vertical-align: middle;
+}
+#main #tertiary .library-twitter-widget .rstw_link_user a,
+#main #tertiary .library-twitter-widget .rstw_link_user a:active,
+#main #tertiary .library-twitter-widget .rstw_link_user a:visited,
+#main #tertiary .library-twitter-widget .rstw_link_user a:hover {
+  text-decoration: none;
+}
+#main #tertiary .library-twitter-widget .really_simple_twitter_widget:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 12px 11px 0;
+  border-color: #FFFFFF transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  margin-left: -14px;
+  bottom: -12px;
+  left: 15%;
+}
+#main #tertiary .library-twitter-widget .really_simple_twitter_widget:before {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 14px 13px 0;
+  border-color: #00aced transparent;
+  display: block;
+  width: 0;
+  z-index: 0;
+  margin-left: -16px;
+  bottom: -16px;
+  left: 15%;
+}
+#main #tertiary .library-facebook-widget {
+  /* JSL3 Facebook Widget Customization */
+  /* Facebook_status_box close */
+}
+#main #tertiary .library-facebook-widget .facebook-icon {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #3B5998;
+  width: 25px;
+  margin-left: 18px;
+  margin-top: 16px;
+  text-align: right;
+}
+#main #tertiary .library-facebook-widget .fa fa-facebook {
+  color: #fff;
+  font-size: 18px;
+  padding-right: 5px;
+  vertical-align: bottom;
+  display: inline-block;
+}
+#main #tertiary .library-facebook-widget .facebook-fa fa-text {
+  margin-left: 50px;
+  margin-top: -25px;
+}
+#main #tertiary .library-facebook-widget #facebook_status_box {
+  height: auto;
+  width: auto;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: #dbdbdb solid 3px;
+  border-bottom-color: #3B5998;
+  border-width: 1px 1px 3px 1px;
+  position: relative;
+}
+#main #tertiary .library-facebook-widget #facebook_status_box h2,
+#main #tertiary .library-facebook-widget #facebook_status_box .fb_photoblock,
+#main #tertiary .library-facebook-widget #facebook_status_box .fb_commLink {
+  display: none;
+}
+#main #tertiary .library-facebook-widget #facebook_status_box .fb_post {
+  border-width: 0px 0px 0px 0px;
+  padding: 0px 7px 0px 7px;
+}
+#main #tertiary .library-facebook-widget #facebook_status_box .fb_msg {
+  padding: 0px 7px 0px 7px;
+}
+#main #tertiary .library-facebook-widget #facebook_status_box #facebook_canvas {
+  height: auto;
+  max-height: 350px;
+}
+#main #tertiary .library-facebook-widget #facebook_status_box #facebook_canvas:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 12px 11px 0;
+  border-color: #FFFFFF transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  margin-left: -14px;
+  bottom: -12px;
+  left: 15%;
+}
+#main #tertiary .library-facebook-widget #facebook_status_box #facebook_canvas:before {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 14px 13px 0;
+  border-color: #3B5998 transparent;
+  display: block;
+  width: 0;
+  z-index: 0;
+  margin-left: -16px;
+  bottom: -16px;
+  left: 15%;
+}
+#main #tertiary .library-study-widget {
+  min-height: 825px;
+}
+#main #tertiary .library-study-widget [class^="fa fa-"]:before,
+#main #tertiary .library-study-widget [class*=" fa fa-"]:before {
+  font-size: 16px;
+  text-align: left;
+}
+#main #tertiary .library-study-widget [class^="fa fa-"],
+#main #tertiary .library-study-widget [class*=" fa fa-"] {
+  background-image: none;
+  padding: 5px 5px 5px 10px;
+}
+#main #tertiary .library-study-widget ul {
+  /* Spacing issue between li items. Its font related and not display:inline-block.
+				 * Other solutions involved floating but font in ul to zero was the safest with multiple
+				 * browsers - Tested in Chrome, FF, Safari
+				 */
+  font-size: 0;
+}
+#main #tertiary .library-study-widget li {
+  display: block;
+  font-size: 14px;
+  vertical-align: middle;
+  text-align: left;
+  word-wrap: break-word;
+  border: 1px solid #dbdbdb;
+  padding: 3px;
+  margin: 0;
+}
+#main #tertiary .library-study-widget li:first-child,
+#main #tertiary .library-study-widget li:nth-child(2) {
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  min-height: 90px;
+  word-wrap: break-word;
+}
+#main #tertiary .library-study-widget li:first-child [class^="fa fa-"]:before,
+#main #tertiary .library-study-widget li:nth-child(2) [class^="fa fa-"]:before,
+#main #tertiary .library-study-widget li:first-child [class*=" fa fa-"]:before,
+#main #tertiary .library-study-widget li:nth-child(2) [class*=" fa fa-"]:before {
+  font-size: 36px;
+  text-align: center;
+}
+#main #tertiary .library-study-widget li:first-child [class^="fa fa-"],
+#main #tertiary .library-study-widget li:nth-child(2) [class^="fa fa-"],
+#main #tertiary .library-study-widget li:first-child [class*=" fa fa-"],
+#main #tertiary .library-study-widget li:nth-child(2) [class*=" fa fa-"] {
+  background-image: none;
+  padding: 5px 10px 5px 0px;
+  text-align: center;
+  vertical-align: middle;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+#main #tertiary .library-study-widget li:nth-child(2) {
+  padding-top: 15px;
+}
+#main #tertiary .library-study-widget .icon-selected {
+  display: block;
+  line-height: 1.8em;
+  border: 1px solid #666;
+  background-color: #dbdbdb;
+  font-family: inherit;
+  padding: 3px;
+  margin: 0;
+}
+#main #tertiary .library-sidebar-menu .menu li:before {
+  display: none;
+}
+#main #tertiary .library-sidebar-menu .menu li a {
+  color: #e31837;
+}
+#main #tertiary .library-sidebar-menu .menu li a:hover {
+  color: #9a0100;
+}
+#main #tertiary .library-sidebar-menu .menu li {
+  display: block;
+  padding: 1% 0;
+}
+#main #tertiary .library-simple-social-icons .social-facebook a,
+#main #tertiary .library-simple-social-icons .social-facebook a:hover {
+  background-color: #4965a0 !important;
+}
+#main #tertiary .library-simple-social-icons .social-flickr a,
+#main #tertiary .library-simple-social-icons a:hover {
+  background-color: #fc0589 !important;
+}
+#main #tertiary .library-simple-social-icons .social-gplus a:hover {
+  background-color: #dd4b39 !important;
+}
+#main #tertiary .library-simple-social-icons .social-instagram a:hover {
+  background-color: #406e94 !important;
+}
+#main #tertiary .library-simple-social-icons .social-linkedin a:hover {
+  background-color: #1b86bc !important;
+}
+#main #tertiary .library-simple-social-icons .social-pinterest a:hover {
+  background-color: #ca2027 !important;
+}
+#main #tertiary .library-simple-social-icons .social-rss a:hover {
+  background-color: #f38f36 !important;
+}
+#main #tertiary .library-simple-social-icons .social-twitter a:hover {
+  background-color: #00abf0 !important;
+}
+/** sliders **/
+.lcs-slider-container .bx-wrapper {
+  background: #eeeeee;
+  -webkit-box-shadow: -6px 0 6px -3px #222222 inset;
+  -moz-box-shadow: -6px 0 6px -3px #222222 inset;
+  box-shadow: -6px 0 6px -3px #222222 inset;
+  padding: 8px 5px 0 12px;
+}
+.lcs-slider-container .bx-wrapper a,
+.lcs-slider-container .bx-wrapper a:hover,
+.lcs-slider-container .bx-wrapper a:visited,
+.lcs-slider-container .bx-wrapper a:active {
+  text-decoration: none;
+}
+.lcs-slider-container .bx-wrapper .bx-viewport {
+  background: none;
+  box-shadow: none;
+  border: none;
+}
+.lcs-slider-container .bx-wrapper .bx-viewport .bxslider li:last-child .lcs-slider-door {
+  margin-right: 0;
+}
+.lcs-slider-container .bx-wrapper ul.slider-links {
+  padding: 0 !important;
+}
+.lcs-slider-container .bx-wrapper .lcs-slider-door {
+  height: 310px;
+  background: #444444;
+  max-width: 200px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  /** INTRO SLIDER **/
+}
+.lcs-slider-container .bx-wrapper .lcs-slider-door img {
+  height: 180px;
+  border-radius: 5px 5px 0 0;
+}
+.lcs-slider-container .bx-wrapper .lcs-slider-door .caption {
+  height: 100%;
+}
+.lcs-slider-container .bx-wrapper .lcs-slider-door .caption h2,
+.lcs-slider-container .bx-wrapper .lcs-slider-door .caption h3 {
+  margin: 0 5px;
+  line-height: 30px;
+  text-transform: none;
+  font-weight: bold;
+}
+.lcs-slider-container .bx-wrapper .lcs-slider-door .caption h2 span,
+.lcs-slider-container .bx-wrapper .lcs-slider-door .caption h3 span {
+  font-size: 90%;
+  margin-top: 0;
+  display: block;
+}
+.lcs-slider-container .bx-wrapper .lcs-slider-door .caption h3 {
+  color: #fff;
+}
+.lcs-slider-container .bx-wrapper .lcs-slider-door .caption p {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 5px;
+  padding: 0;
+}
+.lcs-slider-container .bx-wrapper .lcs-slider-door .caption:hover {
+  background: #666666;
+  color: #ffffff;
+}
+.lcs-slider-container .bx-wrapper .lcs-slider-door .caption-no-hover {
+  height: auto;
+}
+.lcs-slider-container .bx-wrapper .lcs-slider-door .caption-no-hover:hover {
+  background: #444444;
+  color: #fff;
+}
+.lcs-slider-container .bx-wrapper .lcs-slider-door .arrow-down {
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #444444;
+  bottom: 0;
+  right: 15px;
+  float: right;
+  height: 0;
+  width: 0;
+  position: relative;
+}
+.lcs-slider-container .bx-wrapper .lcs-slider-door .arrow-down:hover {
+  background: #dadada;
+}
+.lcs-slider-container .bx-wrapper .lcs-slider-door.intro {
+  background-position: right 5px bottom 5px;
+  background-repeat: no-repeat;
+  background-color: #dbdbdb;
+  background-image: url('https://www.library.yorku.ca/web/bbl/wp-content/themes/yul-york2020-child/css/legacy/../images/slider/intro_arrow.png');
+  color: #444444;
+  /** iphone fix **/
+  background-position-x: 95%;
+  background-position-y: 100%;
+}
+.lcs-slider-container .bx-wrapper .lcs-slider-door.intro img {
+  height: 44px;
+  /*display: inline !important;*/
+  margin: 60px 0 0 5px;
+}
+.lcs-slider-container .bx-wrapper .lcs-slider-door.intro .caption:hover {
+  color: #444444;
+  background-color: #dbdbdb;
+}
+.lcs-slider-container .bx-wrapper .lcs-slider-door .slider-links {
+  background-color: #dbdbdb;
+  display: none;
+  font-weight: bold;
+  height: 100%;
+  margin: 0;
+}
+.lcs-slider-container .bx-wrapper .lcs-slider-door .slider-links > li:first-child,
+.lcs-slider-container .bx-wrapper .lcs-slider-door .slider-links > li {
+  position: relative;
+  list-style: none;
+}
+.lcs-slider-container .bx-wrapper .lcs-slider-door .slider-links > li > a {
+  color: #e31837;
+  display: block;
+  font-size: .9em;
+  padding: 0 5px;
+}
+.ask-and-services-button:hover {
+  border-bottom: none;
+}
+.ask-and-services-buttons-container {
+  /** wordpress editor keeps adding br and/or p tags automatically, we want to ignore them here */
+  /** make the 3 buttons align evenly across the page **/
+  text-align: justify;
+  -ms-text-justify: distribute-all-lines;
+  text-justify: distribute-all-lines;
+  background-color: #eee;
+  padding: 0.5% 0px 0px 1.9%;
+  /****** Not in use ATM
+	.ask-and-services-button a:hover{
+		border: 1px #cc0000;
+		width: 160px;
+		height: 163px;
+
+	} */
+  /*
+	.chat-with-a-librarian-offline {
+		background-image: url('https://www.library.yorku.ca/web/bbl/wp-content/themes/yul-york2020-child/css/legacy/../images/ask_librarian_offline_square_icon_205x194.png');
+    background-size:160px 163px;
+	}
+	.chat-with-a-librarian-offline:hover {
+		background-image: url('https://www.library.yorku.ca/web/bbl/wp-content/themes/yul-york2020-child/css/legacy/../images/ask_librarian_offline_square_icon_over_205x194.png');
+    background-size:160px 163px;
+    cursor: pointer;
+	}
+  ******/
+}
+.ask-and-services-buttons-container br,
+.ask-and-services-buttons-container p {
+  display: none;
+}
+.ask-and-services-buttons-container .stretch {
+  width: 100%;
+  display: inline;
+  font-size: 0;
+  line-height: 0;
+}
+.ask-and-services-buttons-container .ask-and-services-button {
+  display: inline-block;
+  /** IE 6/7 inline-block hack **/
+  zoom: 1;
+  *display: inline;
+  background-color: #eee;
+  width: 150px;
+  min-height: 165px;
+  border: none;
+  margin-left: 5px;
+}
+.ask-and-services-buttons-container .chat-with-a-librarian {
+  background-size: 150px 165px;
+}
+.ask-and-services-buttons-container .chat-with-a-librarian:hover {
+  cursor: pointer;
+}
+.ask-and-services-buttons-container .get-your-libanswers {
+  background-image: url('https://www.library.yorku.ca/web/bbl/wp-content/themes/yul-york2020-child/css/legacy/../images/faqs_square_icon-pixlr.png');
+  background-size: 150px 165px;
+}
+.ask-and-services-buttons-container .get-your-libanswers:hover {
+  cursor: pointer;
+}
+.ask-and-services-buttons-container .in-person-assistance {
+  background-image: url('https://www.library.yorku.ca/web/bbl/wp-content/themes/yul-york2020-child/css/legacy/../images/inperson_assistance_square_icon-pixlr.png');
+  background-size: 150px 165px;
+}
+.ask-and-services-buttons-container .email-and-telephone {
+  background-image: url('https://www.library.yorku.ca/web/bbl/wp-content/themes/yul-york2020-child/css/legacy/../images/email_and_telephone_icon-pixlr.png');
+  background-size: 150px 165px;
+}
+.ask-and-services-buttons-container #online,
+.ask-and-services-buttons-container #onlinefr,
+.ask-and-services-buttons-container #offline,
+.ask-and-services-buttons-container #offlinefr {
+  float: left;
+  margin-left: 4px;
+}
+.ask-and-services-buttons-container #online a,
+.ask-and-services-buttons-container #onlinefr a,
+.ask-and-services-buttons-container #offline a,
+.ask-and-services-buttons-container #offlinefr a {
+  margin-right: 5px;
+}
+@media (max-width: 640px) {
+  .ask-and-services-buttons-container #online,
+  .ask-and-services-buttons-container #onlinefr,
+  .ask-and-services-buttons-container #offline,
+  .ask-and-services-buttons-container #offlinefr {
+    margin: 2px 5px;
+  }
+}
+/** footer menu **/
+.menu-footer-menu-container ul.menu,
+.menu-footer-menu-french-container ul.menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-image: none;
+}
+.menu-footer-menu-container ul.menu li,
+.menu-footer-menu-french-container ul.menu li {
+  display: inline-block;
+  vertical-align: top;
+  width: 175px;
+  min-width: 175px;
+}
+.menu-footer-menu-container ul.menu li a,
+.menu-footer-menu-french-container ul.menu li a {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.menu-footer-menu-container ul.menu li ul.sub-menu li,
+.menu-footer-menu-french-container ul.menu li ul.sub-menu li {
+  display: list-item;
+  width: 100%;
+}
+.menu-footer-menu-container ul.menu li ul.sub-menu li a,
+.menu-footer-menu-french-container ul.menu li ul.sub-menu li a {
+  text-transform: none;
+  font-weight: normal;
+}
+/** TableSorter **/
+/* Over writting UIT styling for mobile for tablesorter */
+@media (max-width: 800px) {
+  table.tablesorter,
+  table.tablesorter thead,
+  table.tablesorter tbody {
+    display: table;
+    width: 100%;
+  }
+  table.tablesorter tr {
+    display: table-row;
+  }
+  table.tablesorter th,
+  table.tablesorter td {
+    display: table-cell;
+  }
+  thead tr {
+    position: relative;
+  }
+  table.tablesorter thead tr .header {
+    padding: 5px 15px 5px 5px;
+  }
+}
+/* tablesorter content page */
+table.tablesorter thead tr th,
+table.tablesorter tfoot tr th {
+  background-color: #dbdbdb !important;
+  border: 1px solid #FFF;
+  padding: 4px 4px 4px 10px;
+  color: #000;
+  font-size: 1em;
+}
+table.tablesorter thead tr .header {
+  background-image: url('https://www.library.yorku.ca/web/bbl/wp-content/themes/yul-york2020-child/css/legacy/../images/tablesorter/blue/bg.gif') !important;
+  background-repeat: no-repeat !important;
+  background-position: center right !important;
+  cursor: pointer;
+  padding: 5px 15px 5px 5px;
+}
+table.tablesorter tbody td {
+  color: #3D3D3D;
+  padding: 4px;
+  background-color: #FFF;
+  vertical-align: top;
+  min-width: 200px;
+}
+table.tablesorter tbody tr.odd td {
+  background-color: #F0F0F6;
+}
+table.tablesorter thead tr .headerSortUp {
+  background-image: url('https://www.library.yorku.ca/web/bbl/wp-content/themes/yul-york2020-child/css/legacy/../images/tablesorter/blue/asc.gif');
+}
+table.tablesorter thead tr .headerSortDown {
+  background-image: url('https://www.library.yorku.ca/web/bbl/wp-content/themes/yul-york2020-child/css/legacy/../images/tablesorter/blue/desc.gif');
+}
+table.tablesorter thead tr .headerSortDown {
+  background-color: #eee;
+}
+table.tablesorter tbody td:nth-child(2) {
+  padding-top: 10px;
+  text-align: center;
+  min-width: 100px;
+}
+table.tablesorter td ul li {
+  font-size: 1em;
+}
+/* Sort settings, just add class tablesorter and sortme */
+.table-container {
+  width: 100%;
+  overflow-y: auto;
+  _overflow: auto;
+  margin: 0 0 1em;
+}
+table.sortme tbody td {
+  color: #3D3D3D;
+  padding: 4px;
+  background-color: #FFF;
+  vertical-align: top;
+  min-width: 80px;
+  font-size: 1em;
+}
+table.sortme th {
+  background-color: #dbdbdb;
+}
+table.sortme tbody td:nth-child(2) {
+  text-align: left;
+  min-width: 80px;
+}
+/* End of Table sorter modifications */
+/** Places of Study Content Page **/
+.dark_info {
+  background-color: #444444;
+  color: #ffffff;
+  padding: 10px;
+  font-size: 16px;
+}
+.action-buttons {
+  background-color: #fefefe;
+  padding: 5px 5px 5px 0;
+  vertical-align: middle;
+}
+.action-buttons div.wrapper {
+  /*     display: inline-block;*/
+  display: inline;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: solid 1px #e31837;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: #e31837;
+  color: #FFF;
+  text-decoration: none;
+  min-width: 200px;
+  /*     float: left;*/
+  padding: 10px;
+  margin-right: 10px;
+}
+.action-buttons div.wrapper a,
+.action-buttons div.wrapper span {
+  color: #fff;
+  display: inline;
+}
+.action-buttons div.wrapper [class^="fa fa-"],
+.action-buttons div.wrapper [class*=" fa fa-"] {
+  font-size: 20px;
+  color: #fff;
+  display: inline;
+}
+.action-buttons div.wrapper:hover {
+  background-color: #910000;
+  border: solid 1px #eee;
+}
+.action-buttons div.wrapper:hover a,
+.action-buttons div.wrapper:hover span {
+  color: #fff;
+  font-weight: normal;
+}
+@media (max-width: 640px) {
+  .action-buttons {
+    max-width: 200px;
+  }
+  .action-buttons div {
+    margin-top: 5px;
+  }
+}
+/* End of action-buttons */
+/** Racer InterLibrary Loans & Racer Requests **/
+.red_link_box {
+  display: inline-block;
+  border: 1px solid #dbdbdb;
+  padding: 15px;
+  margin-left: 25px;
+  margin-top: 10px;
+  color: #ffffff;
+  background-color: #910000;
+  font-size: 16px;
+  font-weight: bold;
+}
+.red_link_box a,
+.red_link_box a:hover {
+  color: #ffffff;
+}
+.racer_container {
+  /** wordpress editor keeps adding br and/or p tags automatically, we want to ignore them here */
+  font-size: 0;
+  padding: 20px 20px 0 20px;
+  width: 95%;
+  text-align: center;
+  background-color: #dbdbdb;
+  margin-bottom: 15px;
+}
+.racer_container br,
+.racer_container p {
+  display: none;
+}
+.racer_container .stretch {
+  width: 95%;
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
+}
+.racer_container .racer_button {
+  background-color: #fff;
+  display: inline-block;
+  /** IE 6/7 inline-block hack **/
+  zoom: 1;
+  *display: inline;
+  padding: 5px;
+  width: 245px;
+  height: 70px;
+  border: 1px solid #dbdbdb;
+  font-size: 14px;
+  text-align: center;
+  overflow: hidden;
+  vertical-align: middle;
+  line-height: 1.2em;
+  margin-top: 5px;
+  padding-top: 10px;
+}
+.racer_container span {
+  font-size: 32px;
+  vertical-align: middle;
+  padding-right: 10px;
+}
+.racer_content {
+  padding: 5px 25px 15px 25px;
+  width: 95%;
+}
+.racer_content ol.racer_numbered_list {
+  counter-reset: li;
+  /* Initiate a counter */
+  list-style: none;
+  /* Remove default numbering */
+  *list-style: decimal;
+  /* Keep using default numbering for IE6/7 */
+  font: 15px 'trebuchet MS', 'lucida sans';
+  padding: 0;
+  margin-bottom: 4em;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  min-height: 225px;
+}
+.racer_content ol.racer_numbered_list ol {
+  margin: 0 0 0 2em;
+  /* Add some left margin for inner lists */
+}
+.racer_content .racer_numbered_list li {
+  position: relative;
+  display: block;
+  padding: .4em .4em .4em 2em;
+  *padding: .4em;
+  margin: .5em 0;
+  background: #ddd;
+  color: #444;
+  text-decoration: none;
+  border-radius: .3em;
+  transition: all 0.3s ease-out;
+}
+.racer_content .racer_numbered_list li:hover {
+  background: #eee;
+}
+.racer_content .racer_numbered_list li:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: -0.3em;
+  top: 5px;
+  background: #910000;
+  color: #fff;
+  height: 1.5em;
+  width: 1.5em;
+  line-height: 1.5em;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 1.5em;
+  transition: all 0.3s ease-out;
+}
+.racer_content .racer_sign_in_content .red_link_box {
+  display: inline-block;
+  margin: 0 10px 10px 0;
+}
+.racer_content .racer_sign_in_content .fixed_width_text_box {
+  width: 80%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.racer_content .racer_column_container {
+  background-color: #dbdbdb;
+  float: left;
+  padding: 10px;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+.racer_content .racer_column_container div {
+  min-width: 200px;
+  max-width: 350px;
+  float: left;
+  padding: 10px;
+}
+.racer_content .racer_tip {
+  padding: 3px;
+  border: 1px dashed #000;
+  font-weight: bold;
+}
+.racer_content .racer_tip span {
+  padding-right: 2px;
+}
+/* Table Adjustments */
+table th {
+  font-weight: bold;
+}
+table td,
+table th {
+  padding: 9px 10px;
+  text-align: left;
+}
+/* Override table font size to 1em or inherit from body. */
+table {
+  font-size: inherit;
+}
+/* Custom Styling For tables converted into Divs */
+.tabular-data-wrapper .heading {
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: #666;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+.tabular-data-wrapper .data-columns {
+  display: inline-block;
+  width: 46%;
+  padding: 10px 15px 10px 0;
+  vertical-align: top;
+  margin-right: 10px;
+}
+.tabular-data-wrapper .data-columns dl {
+  margin: 0px;
+}
+.tabular-data-wrapper .data-columns dt {
+  float: left;
+  padding: 5px 5px 5px 10px;
+  clear: left;
+}
+.tabular-data-wrapper .data-columns dd {
+  padding: 5px;
+  text-align: right;
+  border-bottom: 2px solid #dbdbdb;
+}
+.tabular-data-wrapper .data-two-columns {
+  width: 100%;
+}
+.tabular-data-wrapper .data-two-columns .row {
+  border-bottom: 2px solid #dbdbdb;
+}
+.tabular-data-wrapper .data-two-columns .content {
+  display: inline-block;
+  width: 48%;
+  vertical-align: top;
+  padding: 5px;
+}
+.tabular-data-wrapper .data-two-columns .content-thumbnail-left {
+  width: 20%;
+  display: inline-block;
+  vertical-align: center;
+  padding: 10px;
+}
+.tabular-data-wrapper .data-two-columns .content-right {
+  width: 75%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 5px;
+}
+@media screen and (max-width: 640px) {
+  .tabular-data-wrapper .data-columns {
+    width: 100%;
+  }
+  .tabular-data-wrapper .data-two-columns .content-thumbnail-left,
+  .tabular-data-wrapper .data-two-columns .content-right {
+    width: 100%;
+  }
+}
+/* Styles for library hours that use responsive tabs */
+.hours-container .section {
+  border: 1px solid #eee;
+}
+.hours-container .hours-box {
+  background-color: #fff;
+  display: inline-block;
+  padding: 10px;
+  min-width: 49%;
+  margin-top: 5px;
+  margin-right: 0px;
+}
+@media all and (min-width: 801px) {
+  .hours-container .hours-box {
+    margin-left: 3px;
+    max-width: 49%;
+  }
+}
+.hours-container .hours-box .row {
+  display: table-row;
+}
+.hours-container .hours-box .row div:first-child {
+  font-weight: bold;
+  min-width: 50%;
+}
+.hours-container .hours-box .row div {
+  display: table-cell;
+  padding-left: 10px;
+  vertical-align: middle;
+}
+.hours-container .hours-box .library-hours ul {
+  list-style-type: none;
+  padding-left: 3% !important;
+}
+.hours-container .hours-box .library-hours li {
+  display: table-row;
+}
+.hours-container .hours-box .day {
+  min-width: 50%;
+  display: table-cell;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.hours-container .hours-box .day:odd-child {
+  background-color: red;
+}
+.hours-container .hours-box .hours {
+  display: table-cell;
+  padding-left: 10px;
+  vertical-align: middle;
+}
+.hours-container .hours-header {
+  /* may not be in use. Double check */
+  width: 100%;
+  background-color: #fafafa;
+  display: inline-block;
+  padding: 10px;
+  vertical-align: middle;
+  font-weight: bold;
+}
+.hours-container .hours-header .title {
+  font-size: inherit;
+  text-align: left;
+  display: inline;
+  width: 45%;
+}
+.hours-container .hours-header .link {
+  text-align: right;
+  display: inline;
+  float: right;
+}
+.hours-container .hours-header-half {
+  background-color: #fafafa;
+  display: inline-block;
+  padding: 10px;
+  vertical-align: middle;
+  margin-bottom: 5px;
+  width: 100%;
+  min-height: 115px;
+}
+.hours-container .hours-header-half .title h2 {
+  font-size: 1.3em;
+}
+/* hours-container close */
+/* Google Custom Search */
+/*
+.library-google-custom-search {
+    min-height: 80px;
+
+    form.gsc-search-box {
+	border: 1px solid #eee;
+    }
+    form.gsc-search-box td {
+        //background-color: #eee;
+    }
+
+
+    .gsc-search-box td {
+        background-color: #fff;
+    }
+
+    .gsc-input {
+        font-size: 14px;
+	margin: auto;
+    }
+
+    td.gsc-input, table.gsc-search-box td.gsc-input {
+        padding-right: 0px;
+
+    }
+
+    .gsc-search-button {
+        font-size: inherit;
+        margin-top: 5px;
+    }
+    .gsc-clear-button {
+        display: none;
+    }
+
+    td {
+        display: table-cell;
+
+    }
+}
+.gsc-control-wrapper-cse {
+
+    form.gsc-search-box td {
+        background-color: #eee;
+    }
+
+    .gsc-selected-option-container {
+        min-width: 75px;
+    }
+
+    .gsc-selected-option {
+        word-wrap: normal;
+    }
+
+    table, td {
+        background-color: #fff;
+        border-top: none;
+        border-bottom: 1px solid #eee;
+	margin: auto;
+    }
+
+    table.gsc-resultsHeader td {
+        background-color: #fff;
+        border: none;
+    }
+
+    table.gsc-search-box {
+        background-color: red;
+    }
+
+    .gsc-search-button {
+        font-size:inherit;
+    }
+
+
+    .gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+        color: #cc0000;
+    }
+    .gsc-result-info-container, .gsc-orderby-container {
+        background-color: #eee;
+    }
+
+    @media (max-width: 800px) {
+
+        table, thead, tbody {
+            display: inline-table;
+            width: 100%;
+            border:none;
+        }
+
+        tr {
+            display: table-row;
+        }
+        th, td {
+            display: table-cell;
+        }
+
+    }
+
+}
+*/
+/* End of Google Custom Search */
+/* Library Libanswers Buttons */
+/* Order: Bronfman, Frost eng & fre, YorkU General, scott, Steacie */
+.library-chat-button div[id^="libchat_"] button,
+.library-chat-button #libchat_6448f640265b50a68b5597d2a5ce3cce button,
+.library-chat-button #libchat_01cc2f5e12880a60a19b9a449ed99c63 button,
+.library-chat-button #libchat_7b5ffa108c334e40cf914ba96cd935d9 button,
+.library-chat-button #libchat_9aae2762124fe98edaf9d185ef730012 button,
+.library-chat-button #libchat_9ded54076b7ae08146a55875484f1064 button,
+.library-chat-button #libchat_0277e8d98356bce621614f1cfd475c67 button {
+  /* padding: 12px 12px;
+      font-size: x-large;
+   */
+  padding: 9px 9px;
+  font-size: large;
+  width: 100%;
+  -webkit-appearance: button;
+}
+.library-chat-button div[id^="libchat_"] button:focus,
+.library-chat-button #libchat_6448f640265b50a68b5597d2a5ce3cce button:focus,
+.library-chat-button #libchat_01cc2f5e12880a60a19b9a449ed99c63 button:focus,
+.library-chat-button #libchat_7b5ffa108c334e40cf914ba96cd935d9 button:focus,
+.library-chat-button #libchat_9aae2762124fe98edaf9d185ef730012 button:focus,
+.library-chat-button #libchat_9ded54076b7ae08146a55875484f1064 button:focus,
+.library-chat-button #libchat_0277e8d98356bce621614f1cfd475c67 button:focus,
+.library-chat-button div[id^="libchat_"] button:hover,
+.library-chat-button #libchat_6448f640265b50a68b5597d2a5ce3cce button:hover,
+.library-chat-button #libchat_01cc2f5e12880a60a19b9a449ed99c63 button:hover,
+.library-chat-button #libchat_7b5ffa108c334e40cf914ba96cd935d9 button:hover,
+.library-chat-button #libchat_9aae2762124fe98edaf9d185ef730012 button:hover,
+.library-chat-button #libchat_9ded54076b7ae08146a55875484f1064 button:hover,
+.library-chat-button #libchat_0277e8d98356bce621614f1cfd475c67 button:hover {
+  background: none repeat scroll 0 0 #9A0100;
+  /*#9A0100;*/
+  color: #fff;
+}
+.library-chat-button a {
+  width: 100%;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  font-size: 14px;
+  padding: 8px;
+  border: medium none;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  background: none repeat scroll 0 0 #E31837;
+  /*#CC2030;*/
+}
+.library-chat-button a:active {
+  background: none repeat scroll 0 0 #9A0100;
+  /*#CC2030;*/
+  color: #fff;
+}
+.library-chat-button a:focus,
+.library-chat-button a:hover {
+  background: none repeat scroll 0 0 #9A0100;
+  /*#9A0100;*/
+  color: #fff;
+}
+.library-buttons-outline a {
+  width: 100%;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  font-size: 14px;
+  padding: 8px;
+  border: 1px solid #e31837;
+  display: inline-block;
+  text-decoration: none;
+  color: #e31837;
+  text-align: center;
+  background: none;
+  /*#CC2030;*/
+}
+.library-buttons-outline a:active {
+  background: none repeat scroll 0 0 #9A0100;
+  /*#CC2030;*/
+  color: #fff;
+}
+.library-buttons-outline a:focus,
+.library-buttons-outline a:hover {
+  background: none repeat scroll 0 0 #E31837;
+  /*#9A0100;*/
+  color: #fff;
+}
+.library-buttons a {
+  width: 100%;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  font-size: 14px;
+  padding: 8px;
+  border: medium none;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  background: none repeat scroll 0 0 #E31837;
+  /*#CC2030;*/
+}
+.library-buttons a:active {
+  background: none repeat scroll 0 0 #9A0100;
+  /*#CC2030;*/
+  color: #fff;
+}
+.library-buttons a:focus,
+.library-buttons a:hover {
+  background: none repeat scroll 0 0 #9A0100;
+  /*#9A0100;*/
+  color: #fff;
+}
+/* Library bxSlider Widget */
+.library-bx-slider-widget li:before {
+  display: none;
+}
+/* Google Scholar Search CSS */
+.form-wrapper-wrapper {
+  font: 13px 'Lucida sans', Arial, Helvetica;
+  color: #eee;
+  text-align: center;
+}
+.form-wrapper-wrapper h2,
+.form-wrapper-wrapper h3 {
+  text-align: center;
+  color: #5575AB;
+}
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  zoom: 1;
+}
+/*-------------------------------------*/
+.form-wrapper {
+  width: 450px;
+  width: 95%;
+  padding: 15px 15px 12px 15px;
+  /*margin: 150px auto 50px auto;*/
+  background: #666;
+  background: rgba(0, 0, 0, 0.6);
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4) inset, 0 1px 0 rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4) inset, 0 1px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4) inset, 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+.form-wrapper input {
+  width: 330px;
+  width: 80%;
+  /*height: 20px;*/
+  padding: 10px 5px;
+  float: left;
+  font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+  border: 0;
+  /* background: #eee; */
+  background: #fff;
+  -moz-border-radius: 3px 0 0 3px;
+  -webkit-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+}
+.form-wrapper input:focus {
+  outline: 0;
+  background: #fff;
+  -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.8) inset;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.8) inset;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.8) inset;
+}
+.form-wrapper input::-webkit-input-placeholder {
+  color: #999;
+  font-weight: normal;
+  font-style: italic;
+}
+.form-wrapper input:-moz-placeholder {
+  color: #999;
+  font-weight: normal;
+  font-style: italic;
+}
+.form-wrapper input:-ms-input-placeholder {
+  color: #999;
+  font-weight: normal;
+  font-style: italic;
+}
+.form-wrapper button {
+  overflow: visible;
+  position: relative;
+  float: right;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  height: 40px;
+  width: 110px;
+  width: 20%;
+  font: bold 15px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
+  color: #fff;
+  text-transform: uppercase;
+  background: #d83c3c;
+  -moz-border-radius: 0 3px 3px 0;
+  -webkit-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+.form-wrapper button:hover {
+  background: #e54040;
+}
+.form-wrapper button:active,
+.form-wrapper button:focus {
+  background: #c42f2f;
+}
+.form-wrapper button:before {
+  content: '';
+  position: absolute;
+  border-width: 8px 8px 8px 0;
+  border-style: solid solid solid none;
+  border-color: transparent #d83c3c transparent;
+  top: 12px;
+  left: -6px;
+}
+.form-wrapper button:hover:before {
+  border-right-color: #e54040;
+}
+.form-wrapper button:focus:before {
+  border-right-color: #c42f2f;
+}
+.form-wrapper button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/*------ END OF GOOGLE SCHOLAR SEARCH -------*/
+/* Instructional Workshops, Responsive tabs, places of study: height Fix for JS generated content*/
+@media all and (min-width: 801px) {
+  #workshop_listing {
+    /*   min-height: 1200px; */
+  }
+  .places_of_study {
+    /*   min-height: 1500px; */
+  }
+}
+@media print {
+  body {
+    background: white;
+    color: black;
+    margin: 0;
+    font-size: 10pt;
+  }
+  #page a[href]:after {
+    content: none;
+  }
+  /* Removes url after link */
+  #yeb11banner {
+    display: none;
+  }
+  /*  #navbar { display: none; }*/
+  #content {
+    float: left;
+  }
+  #primary {
+    display: block;
+  }
+  #pageheader {
+    display: none;
+  }
+  #tertiary {
+    display: block;
+  }
+  /*  #sidebar { display: none; }*/
+  #colophon {
+    display: none;
+  }
+  /* Footer Menu */
+}
+/* New Department Page Styling */
+body.page-template-no-sidebar-topbar-full-width-php .entry-header {
+  padding: 0 10px 0 0;
+}
+body.page-template-no-sidebar-topbar-full-width-php .entry-content {
+  padding: 0 10px 0 0;
+}
+.link-block {
+  background: #eee;
+  font-size: 16px;
+  padding: 5px 15px;
+  margin-bottom: 2px;
+}
+.link-block:hover {
+  background: #9a0100;
+  color: #fff;
+  font-size: 16px;
+  padding: 5px 15px;
+}
+.link-block:hover a {
+  color: #fff;
+  text-align: left;
+}
+.banner-heading {
+  background: #cc2030;
+  color: #fff;
+  padding: 10px;
+}
+.text-center {
+  text-align: center;
+}
+/* OMNI Release, Banner CSS */
+.homepage-banner {
+  background-color: #f5f5f7;
+  text-align: center;
+  padding-top: 15px;
+  margin-bottom: 15px;
+}
+.homepage-banner img {
+  width: 175px;
+}
+.homepage-banner .yorku-logo {
+  display: inline;
+  padding-right: 20px;
+}
+.homepage-banner .yorku-logo img {
+  width: 100px;
+}
+.homepage-banner .omni-logo {
+  display: inline;
+  padding-left: 20px;
+}
+.homepage-banner .omni-logo img {
+  width: 100px;
+}
+.homepage-banner .headerDivider {
+  border-left: 1px solid #666;
+  border-right: 1px solid #666;
+  text-align: center;
+  display: inline;
+  padding-top: 10px;
+  padding-bottom: 12px;
+}
+.homepage-banner .lead-heading {
+  font-size: 2em;
+  font-family: "Garmond, Times";
+  color: #454245;
+}
+.homepage-banner .lead-sub-heading {
+  font-size: 1.6em;
+  color: #cc2030;
+  margin: .2em 0 .2em;
+}
+.homepage-banner .homepage-banner-button {
+  margin-top: 15px;
+  margin: .9em 0 .2em;
+}
+.homepage-banner .homepage-banner-button a {
+  padding: 5px 50px;
+  font-size: 1.2em;
+  color: #454245;
+  font-weight: 600;
+  background-color: #eee;
+  border-radius: 14px;
+}
+.homepage-banner .homepage-banner-button a:hover,
+.homepage-banner .homepage-banner-button a:active {
+  border-bottom: none;
+  color: #9a0100;
+  background-color: #fff;
+}
+.section-grey {
+  background-color: #eee;
+  padding: 20px;
+  float: left;
+}
+.section-grey .infobox {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  min-height: 200px;
+}
+@media screen and (max-width: 640px) {
+  .half-width {
+    width: 100%;
+  }
+}
+@media all and (min-width: 768px) {
+  .half-width {
+    width: 50%;
+  }
+}
+/** SQUELCH TABS AND ACCORDION PLUGIN STYLES **/
+.squelch-taas-group-title {
+  font-weight: 700;
+  color: #cc0000;
+  border-bottom: 2px solid #eee;
+}
+#squelch-taas-accordion-0 {
+  padding-top: 10px;
+}
+.squelch-taas-override.squelch-taas-accordion .ui-accordion-content p {
+  /* Styles relating to the contents of the accordion panes */
+  font-size: 1em;
+}
+.squelch-taas-override.squelch-taas-accordion .ui-accordion-content h4 {
+  font-size: 1.1em;
+}
+.squelch-taas-override.squelch-taas-accordion .ui-accordion-content a {
+  color: #cc0000;
+}
+.squelch-taas-override.squelch-taas-accordion .ui-accordion-content {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+/* for Sustainalytics */
+.yul-dl-listing dt {
+  color: #666666;
+}
+.yul-dl-listing dd {
+  font-weight: bold;
+}
+/* NEW ASK & Services page June 2020 */
+.section-title {
+  padding: 15px;
+  background-color: #eee;
+  border-bottom: 2px solid #e31837;
+}
+.infobox-section {
+  border-top: 2px solid #666;
+  padding-top: 10px;
+}
+.infobox-section .heading-box {
+  background-color: #eee;
+  padding: 10px;
+  padding-left: 20px;
+  min-height: 250px;
+}
+.infobox-section .infobox:hover {
+  background-color: #eee;
+}
+.infobox-section .infobox-title {
+  color: #333;
+}
+.infobox-section .infobox-subtitle {
+  color: #B82025;
+}
+.infobox-section .infobox img {
+  width: 100%;
+}
+.infobox-section .infobox-text {
+  padding: 0 10px;
+}
+.infobox-section .infobox-text p {
+  color: #333;
+  font-size: 14px;
+}
+.infobox-section.border-top-none {
+  border-top: 0px;
+}
+.library-ask-services-chat-button #libchat_9ded54076b7ae08146a55875484f1064 button,
+.library-ask-services-chat-button #libchat_7b5ffa108c334e40cf914ba96cd935d9 button {
+  padding: 9px 9px;
+  width: 90%;
+  font-size: large;
+  -webkit-appearance: button;
+}
+/*** LIBCAL HOURS ***/
+.libcal-library-hours h3 {
+  color: #e31837;
+  padding: 10px 0;
+  border-bottom: 1px solid #333;
+}
+.libcal-library-hours .heading {
+  padding: 10px 15px 10px 0;
+}
+.libcal-library-hours .heading a {
+  text-align: right;
+  vertical-align: middle;
+  float: right;
+}
+.libcal-library-hours h4 {
+  text-transform: none;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+  font-size: 1em;
+}
+.libcal-library-hours .section {
+  padding: 10px;
+}
+.libcal-library-hours .today_date {
+  color: #e31837;
+}
+.dept-container {
+  margin-bottom: 5px;
+}
+.dept-container .hidden {
+  display: none;
+}
+#content .dept-flex .flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+#content .dept-flex .flex-row:nth-child(odd) {
+  background: #eee;
+}
+#content .dept-flex .date,
+#content .dept-flex .day,
+#content .dept-flex .hours {
+  font-size: 16px;
+  flex-grow: 1;
+}
+#content .dept-flex .date {
+  min-width: 25%;
+}
+#content .dept-flex .day {
+  width: 40%;
+  font-weight: bold;
+}
+#content .dept-container {
+  border-right: 1px solid #eee;
+}
+.libcal-library-hours .libcal-navbar {
+  background-color: #eee;
+  margin-right: 10px;
+}
+.libcal-library-hours .arrows a {
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #e31837;
+}
+.libcal-library-hours .arrows a:hover {
+  border-bottom: none;
+  color: #fff;
+  background-color: #9a0100;
+}
+.libcal-library-hours .arrows #left_arrow {
+  margin-left: 10px;
+  margin-right: 20px;
+}
+.libcal-library-hours .arrows #right_arrow {
+  margin-right: 10px;
+  margin-left: 20px;
+}
+.libcal-library-hours .scroll2top {
+  padding: 35px 0px 0px 0;
+  text-align: right;
+}
+@media (min-width: 785px) {
+  /* .libcal-library-hours .arrows { padding: 0 25%; } */
+}
+.libcal-library-hours nav {
+  text-align: center;
+}
+.libcal-library-hours .arrows nav {
+  padding: 10px;
+}
+.libcal-library-hours .libcal-menu {
+  list-style-type: none;
+  background-color: #fff;
+  padding: 10px 0;
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+.libcal-library-hours .libcal-menu li a {
+  display: block;
+  font-size: 1rem;
+}
+.libcal-library-hours .libcal-menu li a:hover {
+  color: #333;
+  border-bottom: none;
+}
+.libcal-library-hours .item {
+  padding: 5px;
+  width: 100%;
+}
+.libcal-library-hours .item:hover,
+.libcal-library-hours .item:active {
+  background-color: #eee;
+}
+@media only screen and (min-width: 768px) {
+  .libcal-library-hours .libcal-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .libcal-library-hours .libcal-menu li a {
+    display: inline-block;
+    flex: 1;
+  }
+  .libcal-library-hours .libcal-menu .item:first-child {
+    border-right: 1px solid #ddd;
+  }
+  .libcal-library-hours .libcal-menu .item:last-child {
+    border: none;
+  }
+  .libcal-library-hours .libcal-menu .item {
+    border-right: 1px solid #ddd;
+  }
+  .libcal-library-hours .item {
+    width: auto;
+    padding: 5px;
+  }
+}
+@media (max-width: 800px) {
+  .libcal-library-hours .scroll2top {
+    padding: 0px 0px 0px 0;
+    text-align: right;
+  }
+}

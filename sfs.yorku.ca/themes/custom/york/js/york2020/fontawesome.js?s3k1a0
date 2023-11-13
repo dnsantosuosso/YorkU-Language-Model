@@ -1,0 +1,1 @@
+jQuery('i').attr("aria-hidden", "true")

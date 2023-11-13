@@ -1,0 +1,10 @@
+jQuery(function() {
+       jQuery('#yu-smartmenu').smartmenus({
+           markCurrentItem: true,
+           subMenusSubOffsetY: -8,
+           showTimeout: 10,            // timeout before showing the sub menus
+           hideTimeout: 500            // timeout before hiding the sub menus
+       });
+       jQuery('#yu-smartmenu').smartmenus('keyboardSetHotkey', '123', 'shiftKey');
+});
+

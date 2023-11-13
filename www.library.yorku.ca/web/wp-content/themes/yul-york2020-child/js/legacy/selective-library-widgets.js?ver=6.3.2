@@ -1,0 +1,104 @@
+$=jQuery;
+$( document ).ready(function() {
+  place_of_study();
+});
+
+function place_of_study() {
+  // Places of Study
+  $(".none_found").hide();
+
+  ($(".places_of_study").is(":visible")) ? $(".library-study-widget").show() : $(".library-study-widget").hide();
+
+  $("#feature_list li").click(function(e) {
+    if (!($(this).hasClass("ignore"))) {
+
+        var list = new Array();
+        if($(this).attr("id") == "all"){
+
+            //Remove all other icon-selected classes
+            //add class icon-selected
+            //check input box
+                $("#feature_list").find(".icon-selected").each(function(e){
+                        $(this).removeClass("icon-selected");
+                    $(this).children("input[type=checkbox]:first").prop('checked', false);
+                });
+
+                $(this).addClass("icon-selected");
+            $(this).children("input[type=checkbox]:first").prop('checked', true);
+            list.push("all");
+
+        } else {
+          $("#all").removeClass("icon-selected");
+          $("#all").children("input[type=checkbox]:first").prop('checked', false);
+
+          if ($(this).hasClass("icon-selected")) {
+                  $(this).removeClass("icon-selected");
+              $(this).children("input[type=checkbox]:first").prop('checked', false);
+          }else {
+                  $(this).addClass("icon-selected");
+              $(this).children("input[type=checkbox]:first").prop('checked', true);
+          }
+        }
+        $("#feature_list").find(".icon-selected").each(function() {
+          list.push($(this).attr('id'));
+        });
+
+        $(".all").hide();
+        var counter = 0;
+        $("#places_of_study div").each(function(e) {
+          var p = $(this);
+          counter = 0;
+
+          $.each(list, function( index, value ) {
+              if (p.hasClass(value)){
+                      counter = counter + 1;
+              }
+          });
+
+          if (counter == list.length) {
+            p.show();
+          }
+        });
+
+        if ($("#feature_list").find(".icon-selected").length == 0) {
+            $(".all").show();
+            $(".study-text-content").hide();
+        }
+        if ($(".places_of_study .all:visible").length == 0 && $("#feature_list").find(".icon-selected").length >= 1)
+        {
+          $(".none_found").show();
+        } else {
+          $(".none_found").hide();
+        }
+      } // has ignore class
+    });
+    $(".study-text-content").each(function(){
+     if ($(this).text().length > 0) {
+         // $(this).addClass("short-text");
+         $(this).hide();
+         $(this).after("<div class=\"show-more\"><a href=\"#\">Show more about this room</a></div><br/>");
+     }
+    });
+
+    $(".show-more a").on("click", function() {
+        var $link = $(this);
+        var $content = $link.parent().prev("div.study-text-content");
+        var linkText = $link.text().toUpperCase();
+
+        ($content.is(":visible")) ? $content.hide(400) : $content.show(400);
+
+        $link.text(getShowLinkText(linkText));
+
+        return false;
+    });
+    function getShowLinkText(currentText){
+      var newText = '';
+
+      if (currentText === "SHOW MORE ABOUT THIS ROOM") {
+          newText = "Show less about this room";
+      } else {
+          newText = "Show more about this room";
+      }
+      return newText;
+    }
+} // function end

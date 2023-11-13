@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+
+    <link rel="apple-touch-icon" sizes="180x180"
+          href="https://www.osgoode.yorku.ca/wp-content/themes/yu-osgoode/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+          href="https://www.osgoode.yorku.ca/wp-content/themes/yu-osgoode/favicon-16x16.png">
+    <link rel="manifest" href="https://www.osgoode.yorku.ca/wp-content/themes/yu-osgoode/site.webmanifest">
+    <link rel="mask-icon" href="https://www.osgoode.yorku.ca/wp-content/themes/yu-osgoode/safari-pinned-tab.svg"
+          color="#e31837">
+    <link rel="shortcut icon" href="https://www.osgoode.yorku.ca/wp-content/themes/yu-osgoode/favicon.ico">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5X6V8KC');</script>
+    <!-- End Google Tag Manager -->
+
+    <style>:root,::before,::after{--mec-color-skin: #e31837;--mec-color-skin-rgba-1: rgba(227,24,55,.25);--mec-color-skin-rgba-2: rgba(227,24,55,.5);--mec-color-skin-rgba-3: rgba(227,24,55,.75);--mec-color-skin-rgba-4: rgba(227,24,55,.11);--mec-container-normal-width: 1196px;--mec-container-large-width: 1690px;--mec-fes-main-color: #40d9f1;--mec-fes-main-color-rgba-1: rgba(64, 217, 241, 0.12);--mec-fes-main-color-rgba-2: rgba(64, 217, 241, 0.23);--mec-fes-main-color-rgba-3: rgba(64, 217, 241, 0.03);--mec-fes-main-color-rgba-4: rgba(64, 217, 241, 0.3);--mec-fes-main-color-rgba-5: rgb(64 217 241 / 7%);--mec-fes-main-color-rgba-6: rgba(64, 217, 241, 0.2);--mec-fluent-main-color: #ade7ff;--mec-fluent-main-color-rgba-1: rgba(173, 231, 255, 0.3);--mec-fluent-main-color-rgba-2: rgba(173, 231, 255, 0.8);--mec-fluent-main-color-rgba-3: rgba(173, 231, 255, 0.1);--mec-fluent-main-color-rgba-4: rgba(173, 231, 255, 0.2);--mec-fluent-main-color-rgba-5: rgba(173, 231, 255, 0.7);--mec-fluent-main-color-rgba-6: rgba(173, 231, 255, 0.7);--mec-fluent-bold-color: #00acf8;--mec-fluent-bg-hover-color: #ebf9ff;--mec-fluent-bg-color: #f5f7f8;--mec-fluent-second-bg-color: #d6eef9;}.mec-wrap, .mec-wrap div:not([class^="elementor-"]), .lity-container, .mec-wrap h1, .mec-wrap h2, .mec-wrap h3, .mec-wrap h4, .mec-wrap h5, .mec-wrap h6, .entry-content .mec-wrap h1, .entry-content .mec-wrap h2, .entry-content .mec-wrap h3, .entry-content .mec-wrap h4, .entry-content .mec-wrap h5, .entry-content .mec-wrap h6, .mec-wrap .mec-totalcal-box input[type="submit"], .mec-wrap .mec-totalcal-box .mec-totalcal-view span, .mec-agenda-event-title a, .lity-content .mec-events-meta-group-booking select, .lity-content .mec-book-ticket-variation h5, .lity-content .mec-events-meta-group-booking input[type="number"], .lity-content .mec-events-meta-group-booking input[type="text"], .lity-content .mec-events-meta-group-booking input[type="email"],.mec-organizer-item a, .mec-single-event .mec-events-meta-group-booking ul.mec-book-tickets-container li.mec-book-ticket-container label{ font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;}.mec-event-content p, .mec-search-bar-result .mec-event-detail{ font-family: Roboto, sans-serif;} .mec-wrap .mec-totalcal-box input, .mec-wrap .mec-totalcal-box select, .mec-checkboxes-search .mec-searchbar-category-wrap, .mec-wrap .mec-totalcal-box .mec-totalcal-view span{ font-family: "Roboto", Helvetica, Arial, sans-serif; }.mec-event-grid-modern .event-grid-modern-head .mec-event-day, .mec-event-list-minimal .mec-time-details, .mec-event-list-minimal .mec-event-detail, .mec-event-list-modern .mec-event-detail, .mec-event-grid-minimal .mec-time-details, .mec-event-grid-minimal .mec-event-detail, .mec-event-grid-simple .mec-event-detail, .mec-event-cover-modern .mec-event-place, .mec-event-cover-clean .mec-event-place, .mec-calendar .mec-event-article .mec-localtime-details div, .mec-calendar .mec-event-article .mec-event-detail, .mec-calendar.mec-calendar-daily .mec-calendar-d-top h2, .mec-calendar.mec-calendar-daily .mec-calendar-d-top h3, .mec-toggle-item-col .mec-event-day, .mec-weather-summary-temp{ font-family: "Roboto", sans-serif; } .mec-fes-form, .mec-fes-list, .mec-fes-form input, .mec-event-date .mec-tooltip .box, .mec-event-status .mec-tooltip .box, .ui-datepicker.ui-widget, .mec-fes-form button[type="submit"].mec-fes-sub-button, .mec-wrap .mec-timeline-events-container p, .mec-wrap .mec-timeline-events-container h4, .mec-wrap .mec-timeline-events-container div, .mec-wrap .mec-timeline-events-container a, .mec-wrap .mec-timeline-events-container span{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important; }</style><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v21.5 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Financial Services | Osgoode Hall Law School</title>
+	<link rel="canonical" href="https://www.osgoode.yorku.ca/programs/juris-doctor/access-and-support/financial-services/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Financial Services | Osgoode Hall Law School" />
+	<meta property="og:description" content="We’re committed to helping students understand, plan for, and navigate the financial side of law school – from accessing scholarships and bursaries, to reducing debt after graduation. Our Student Financial Services Office is available to help current and prospective students with all aspects of their law school investment. Funding Sources An overview of the wide [&hellip;]" />
+	<meta property="og:url" content="https://www.osgoode.yorku.ca/programs/juris-doctor/access-and-support/financial-services/" />
+	<meta property="og:site_name" content="Osgoode Hall Law School" />
+	<meta property="article:publisher" content="https://www.facebook.com/Osgoode" />
+	<meta property="article:modified_time" content="2023-09-07T19:21:18+00:00" />
+	<meta property="og:image" content="https://www.osgoode.yorku.ca/wp-content/uploads/2023/09/osgoode-web-graphics-cover.jpg" />
+	<meta property="og:image:width" content="2000" />
+	<meta property="og:image:height" content="1124" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@OsgoodeNews" />
+	<meta name="twitter:label1" content="Est. reading time" />
+	<meta name="twitter:data1" content="1 minute" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.osgoode.yorku.ca/programs/juris-doctor/access-and-support/financial-services/","url":"https://www.osgoode.yorku.ca/programs/juris-doctor/access-and-support/financial-services/","name":"Financial Services | Osgoode Hall Law School","isPartOf":{"@id":"https://www.osgoode.yorku.ca/#website"},"datePublished":"2014-06-13T20:04:26+00:00","dateModified":"2023-09-07T19:21:18+00:00","breadcrumb":{"@id":"https://www.osgoode.yorku.ca/programs/juris-doctor/access-and-support/financial-services/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.osgoode.yorku.ca/programs/juris-doctor/access-and-support/financial-services/"]}]},{"@type":"BreadcrumbList","@id":"https://www.osgoode.yorku.ca/programs/juris-doctor/access-and-support/financial-services/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.osgoode.yorku.ca/"},{"@type":"ListItem","position":2,"name":"Programs","item":"https://www.osgoode.yorku.ca/programs/"},{"@type":"ListItem","position":3,"name":"Juris Doctor","item":"https://www.osgoode.yorku.ca/programs/juris-doctor/"},{"@type":"ListItem","position":4,"name":"Access and Support","item":"https://www.osgoode.yorku.ca/programs/juris-doctor/access-and-support/"},{"@type":"ListItem","position":5,"name":"Financial Services"}]},{"@type":"WebSite","@id":"https://www.osgoode.yorku.ca/#website","url":"https://www.osgoode.yorku.ca/","name":"Osgoode Hall Law School","description":"","publisher":{"@id":"https://www.osgoode.yorku.ca/#organization"},"alternateName":"Osgoode Hall","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.osgoode.yorku.ca/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://www.osgoode.yorku.ca/#organization","name":"Osgoode Hall Law School","alternateName":"Osgoode Law","url":"https://www.osgoode.yorku.ca/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://www.osgoode.yorku.ca/#/schema/logo/image/","url":"https://www.osgoode.yorku.ca/wp-content/uploads/2023/09/Osgoode-Hall-Law-School-YorkU-Logo.png","contentUrl":"https://www.osgoode.yorku.ca/wp-content/uploads/2023/09/Osgoode-Hall-Law-School-YorkU-Logo.png","width":763,"height":580,"caption":"Osgoode Hall Law School"},"image":{"@id":"https://www.osgoode.yorku.ca/#/schema/logo/image/"},"sameAs":["https://www.facebook.com/Osgoode","https://twitter.com/OsgoodeNews","https://www.youtube.com/user/OsgoodeHallLawSchool","https://soundcloud.com/osgoode_yorku","https://www.instagram.com/osgoodehalllawschool/","https://en.wikipedia.org/wiki/Osgoode_Hall_Law_School"]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Osgoode Hall Law School &raquo; Feed" href="https://www.osgoode.yorku.ca/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Osgoode Hall Law School &raquo; Comments Feed" href="https://www.osgoode.yorku.ca/comments/feed/" />
+<link rel='stylesheet' id='mec-select2-style-css' href='https://www.osgoode.yorku.ca/wp-content/plugins/modern-events-calendar/assets/packages/select2/select2.min.css?ver=7.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='mec-font-icons-css' href='https://www.osgoode.yorku.ca/wp-content/plugins/modern-events-calendar/assets/css/iconfonts.css?ver=6.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='mec-frontend-style-css' href='https://www.osgoode.yorku.ca/wp-content/plugins/modern-events-calendar/assets/css/frontend.min.css?ver=7.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='mec-tooltip-style-css' href='https://www.osgoode.yorku.ca/wp-content/plugins/modern-events-calendar/assets/packages/tooltip/tooltip.css?ver=6.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='mec-tooltip-shadow-style-css' href='https://www.osgoode.yorku.ca/wp-content/plugins/modern-events-calendar/assets/packages/tooltip/tooltipster-sideTip-shadow.min.css?ver=6.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='featherlight-css' href='https://www.osgoode.yorku.ca/wp-content/plugins/modern-events-calendar/assets/packages/featherlight/featherlight.css?ver=6.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='mec-google-fonts-css' href='//fonts.googleapis.com/css?family=Montserrat%3A400%2C700%7CRoboto%3A100%2C300%2C400%2C700&#038;ver=6.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='mec-lity-style-css' href='https://www.osgoode.yorku.ca/wp-content/plugins/modern-events-calendar/assets/packages/lity/lity.min.css?ver=6.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='mec-general-calendar-style-css' href='https://www.osgoode.yorku.ca/wp-content/plugins/modern-events-calendar/assets/css/mec-general-calendar.css?ver=6.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css' href='https://www.osgoode.yorku.ca/wp-includes/css/dist/block-library/style.min.css?ver=6.3.2' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='yu-parent-style-css' href='https://www.osgoode.yorku.ca/wp-content/themes/wp-bootstrap-starter/style.css?ver=1668708612' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-bootstrap-starter-fontawesome-cdn-css' href='https://www.osgoode.yorku.ca/wp-content/themes/wp-bootstrap-starter/inc/assets/css/fontawesome.min.css?ver=6.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-bootstrap-starter-bootstrap-css-css' href='https://www.osgoode.yorku.ca/wp-content/themes/wp-bootstrap-starter/inc/assets/css/bootstrap.min.css?ver=6.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-bootstrap-starter-style-css' href='https://www.osgoode.yorku.ca/wp-content/themes/yu-osgoode/style.css?ver=6.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='yu-theme-style-css' href='https://www.osgoode.yorku.ca/wp-content/themes/yu-osgoode/assets/css/main.css?ver=1690471509' type='text/css' media='all' />
+<link rel='stylesheet' id='york-slick-style-css' href='https://www.osgoode.yorku.ca/wp-content/themes/yu-osgoode/assets/css/slick-slider/slick.css?ver=1668708612' type='text/css' media='all' />
+<link rel='stylesheet' id='york-owl-style-css' href='https://www.osgoode.yorku.ca/wp-content/themes/yu-osgoode/assets/css/owl-carousel/assets/owl.carousel.min.css?ver=1668708612' type='text/css' media='all' />
+<link rel='stylesheet' id='york-owl-theme-style-css' href='https://www.osgoode.yorku.ca/wp-content/themes/yu-osgoode/assets/css/owl-carousel/assets/owl.theme.default.min.css?ver=1668708612' type='text/css' media='all' />
+<link rel='stylesheet' id='york-revolution-settings-css' href='https://www.osgoode.yorku.ca/wp-content/themes/yu-osgoode/assets/css/revolution/css/settings.css?ver=1672263554' type='text/css' media='all' />
+<link rel='stylesheet' id='york-revolution-layers-css' href='https://www.osgoode.yorku.ca/wp-content/themes/yu-osgoode/assets/css/revolution/css/layers.css?ver=1672263554' type='text/css' media='all' />
+<link rel='stylesheet' id='york-revolution-navigation-css' href='https://www.osgoode.yorku.ca/wp-content/themes/yu-osgoode/assets/css/revolution/css/navigation.css?ver=1672263554' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.osgoode.yorku.ca/wp-includes/js/jquery/jquery.min.js?ver=3.7.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://www.osgoode.yorku.ca/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='https://www.osgoode.yorku.ca/wp-content/plugins/modern-events-calendar/assets/js/mec-general-calendar.js?ver=7.2.2' id='mec-general-calendar-script-js'></script>
+<script type='text/javascript' src='https://www.osgoode.yorku.ca/wp-content/plugins/modern-events-calendar/assets/packages/tooltip/tooltip.js?ver=7.2.2' id='mec-tooltip-script-js'></script>
+<script type='text/javascript' id='mec-frontend-script-js-extra'>
+/* <![CDATA[ */
+var mecdata = {"day":"day","days":"days","hour":"hour","hours":"hours","minute":"minute","minutes":"minutes","second":"second","seconds":"seconds","next":"Next","prev":"Prev","elementor_edit_mode":"no","recapcha_key":"","ajax_url":"https:\/\/www.osgoode.yorku.ca\/wp-admin\/admin-ajax.php","fes_nonce":"d6975c0104","fes_thankyou_page_time":"2000","fes_upload_nonce":"c4c5b04819","current_year":"2023","current_month":"11","datepicker_format":"yy-mm-dd&Y-m-d"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.osgoode.yorku.ca/wp-content/plugins/modern-events-calendar/assets/js/frontend.js?ver=7.2.2' id='mec-frontend-script-js'></script>
+<script type='text/javascript' src='https://www.osgoode.yorku.ca/wp-content/plugins/modern-events-calendar/assets/js/events.js?ver=7.2.2' id='mec-events-script-js'></script>
+<script type='text/javascript' id='yu-custom-script-js-extra'>
+/* <![CDATA[ */
+var yu_main_data = {"home_url":"https:\/\/www.osgoode.yorku.ca"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.osgoode.yorku.ca/wp-content/themes/yu-osgoode/assets/js/main.js?ver=1674673349' id='yu-custom-script-js'></script>
+<script type='text/javascript' src='https://www.osgoode.yorku.ca/wp-content/themes/yu-osgoode/assets/css/slick-slider/slick.min.js?ver=1668708612' id='york-slick-script-js'></script>
+<script type='text/javascript' src='https://www.osgoode.yorku.ca/wp-content/themes/yu-osgoode/assets/css/owl-carousel/owl.carousel.min.js?ver=1668708612' id='york-owl-script-js'></script>
+<script type='text/javascript' src='https://www.osgoode.yorku.ca/wp-content/themes/yu-osgoode/assets/css/revolution/js/jquery.themepunch.tools.min.js?ver=1672263555' id='york-revolution-tools-js'></script>
+<script type='text/javascript' src='https://www.osgoode.yorku.ca/wp-content/themes/yu-osgoode/assets/css/revolution/js/jquery.themepunch.revolution.min.js?ver=1672263555' id='york-revolution-js'></script>
+<!--[if lt IE 9]>
+<script type='text/javascript' src='https://www.osgoode.yorku.ca/wp-content/themes/wp-bootstrap-starter/inc/assets/js/html5.js?ver=3.7.0' id='html5hiv-js'></script>
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.osgoode.yorku.ca/xmlrpc.php?rsd" />
+<link rel="pingback" href="https://www.osgoode.yorku.ca/xmlrpc.php">    <style type="text/css">
+        #page-sub-header { background: #fff; }
+    </style>
+    	<style type="text/css">
+			.site-title,
+		.site-description {
+			position: absolute;
+			clip: rect(1px, 1px, 1px, 1px);
+		}
+		</style>
+	</head>
+
+<body class="page-template-default page page-id-8617 page-parent page-child parent-pageid-40659 mec-theme-wp-bootstrap-starter">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5X6V8KC"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div id="page" class="site">
+    <a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+        <header id="masthead"
+            class="site-header navbar-static-top navbar-light"
+            role="banner">
+        <nav class="container-fluid">
+
+            <div class="yu__navbar-block">
+                <div class="yu__navbar-wrapper">
+                    <nav class="yu__navbar navbar navbar-light">
+                        <div id="main-nav-header" class="justify-content-start"><ul id="menu-header-menu" class="navbar-nav"><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58529" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58529 nav-item"><a title="Community Legal Services" href="https://www.osgoode.yorku.ca/community-legal-services/" class="nav-link">Community Legal Services</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-179" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-179 nav-item"><a title="Newsroom" href="https://www.osgoode.yorku.ca/newsroom/" class="nav-link">Newsroom</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-184" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-184 nav-item"><a title="Contact" href="https://www.osgoode.yorku.ca/contact/" class="nav-link">Contact</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58530" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-58530 nav-item"><a title="MyOsgoode" href="/my" class="nav-link">MyOsgoode</a></li>
+</ul></div>                    </nav>
+
+                </div>
+
+            </div>
+
+            <nav id="nav-main-nav-menu" style="display: none">
+                <div class="nav-main-nav-menu-wrapper">
+                    <div class="nav-main-nav-menu-block">
+                        <div class="yu__menu-col-1">
+                            <div id="main-nav-menu" class="navbar-collapse justify-content-end collapse"><ul id="menu-primary-menu" class="navbar-nav"><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58532" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-has-children menu-item-58532 nav-item"><a title="Admissions" href="#" aria-haspopup="true" aria-expanded="false" class="nav-link" id="menu-item-dropdown-58532">Admissions</a><i class="yu__menu-expand-collapse"></i>
+<ul aria-labelledby="menu-item-dropdown-58532" role="menu">
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58534" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58534 nav-item"><a title="Juris Doctor Admissions" href="https://www.osgoode.yorku.ca/programs/juris-doctor/juris-doctor-admissions/" class="dropdown-item">Juris Doctor Admissions</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58533" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58533 nav-item"><a title="Graduate Admissions" href="https://www.osgoode.yorku.ca/programs/graduate-program/admissions/" class="dropdown-item">Graduate Admissions</a></li>
+</ul>
+</li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58535" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current_page_ancestor menu-item-has-children menu-item-has-children menu-item-58535 nav-item"><a title="Programs" href="https://www.osgoode.yorku.ca/programs/" aria-haspopup="true" aria-expanded="false" class="nav-link" id="menu-item-dropdown-58535">Programs</a><i class="yu__menu-expand-collapse"></i>
+<ul aria-labelledby="menu-item-dropdown-58535" role="menu">
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58737" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-58737 nav-item"><a title="Programs Overview" href="https://www.osgoode.yorku.ca/programs/" class="dropdown-item">Programs Overview</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58536" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-has-children active menu-item-58536 nav-item"><a title="Juris Doctor Program" href="https://www.osgoode.yorku.ca/programs/juris-doctor/" class="dropdown-item">Juris Doctor Program</a><i class="yu__menu-expand-collapse"></i>
+	<ul aria-labelledby="menu-item-dropdown-58535" role="menu">
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58537" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58537 nav-item"><a title="Admissions" href="https://www.osgoode.yorku.ca/programs/juris-doctor/juris-doctor-admissions/" class="dropdown-item">Admissions</a></li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58538" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58538 nav-item"><a title="Academic Program" href="https://www.osgoode.yorku.ca/programs/juris-doctor/jd-academic-program/" class="dropdown-item">Academic Program</a></li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58539" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-page-parent menu-item-58539 nav-item"><a title="Access and Support" href="https://www.osgoode.yorku.ca/programs/juris-doctor/access-and-support/" class="dropdown-item">Access and Support</a></li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58540" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58540 nav-item"><a title="Experiential Education" href="https://www.osgoode.yorku.ca/programs/juris-doctor/experiential-education/" class="dropdown-item">Experiential Education</a></li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58541" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-8617 current_page_item active menu-item-58541 nav-item"><a title="Financial Services" href="https://www.osgoode.yorku.ca/programs/juris-doctor/access-and-support/financial-services/" class="dropdown-item" aria-current="page">Financial Services</a></li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58544" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58544 nav-item"><a title="Your Flexible JD Journey" href="https://www.osgoode.yorku.ca/programs/juris-doctor/your-flexible-jd-journey/" class="dropdown-item">Your Flexible JD Journey</a></li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58542" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58542 nav-item"><a title="Career Development" href="https://www.osgoode.yorku.ca/programs/juris-doctor/career-development/" class="dropdown-item">Career Development</a></li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58543" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58543 nav-item"><a title="Life at Osgoode" href="https://www.osgoode.yorku.ca/life-at-osgoode/" class="dropdown-item">Life at Osgoode</a></li>
+	</ul>
+</li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58545" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58545 nav-item"><a title="Graduate Program" href="https://www.osgoode.yorku.ca/programs/graduate-program/" class="dropdown-item">Graduate Program</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58547" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58547 nav-item"><a title="International Students" href="https://www.osgoode.yorku.ca/programs/international-students/" class="dropdown-item">International Students</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58548" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-58548 nav-item"><a title="Professional Development" href="https://osgoodepd.ca/" class="dropdown-item">Professional Development</a></li>
+</ul>
+</li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58549" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-has-children menu-item-58549 nav-item"><a title="Life at Osgoode" href="https://www.osgoode.yorku.ca/life-at-osgoode/" aria-haspopup="true" aria-expanded="false" class="nav-link" id="menu-item-dropdown-58549">Life at Osgoode</a><i class="yu__menu-expand-collapse"></i>
+<ul aria-labelledby="menu-item-dropdown-58549" role="menu">
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58738" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58738 nav-item"><a title="Life at Osgoode Overview" href="https://www.osgoode.yorku.ca/life-at-osgoode/" class="dropdown-item">Life at Osgoode Overview</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58550" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-58550 nav-item"><a title="Campus Map" href="https://map.concept3d.com/?id=1200#!s/?ct/29101,29093" class="dropdown-item">Campus Map</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58551" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58551 nav-item"><a title="Living on Campus" href="https://www.osgoode.yorku.ca/life-at-osgoode/living-on-campus/" class="dropdown-item">Living on Campus</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58552" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-58552 nav-item"><a title="Student Government" href="http://studentcaucus.legalandlit.ca/" class="dropdown-item">Student Government</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58553" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58553 nav-item"><a title="Osgoode Publications" href="https://www.osgoode.yorku.ca/research/journals/" class="dropdown-item">Osgoode Publications</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58554" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-58554 nav-item"><a title="Student Organizations" href="http://www.legalandlit.ca/clubs/" class="dropdown-item">Student Organizations</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58555" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58555 nav-item"><a title="Indigenous Students" href="https://www.osgoode.yorku.ca/life-at-osgoode/indigenous-students/" class="dropdown-item">Indigenous Students</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58556" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58556 nav-item"><a title="Services and Accommodations" href="https://www.osgoode.yorku.ca/programs/juris-doctor/access-and-support/services-and-accommodations/" class="dropdown-item">Services and Accommodations</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58557" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58557 nav-item"><a title="Student Wellness and Success" href="https://www.osgoode.yorku.ca/programs/juris-doctor/access-and-support/student-wellness-and-success/" class="dropdown-item">Student Wellness and Success</a></li>
+</ul>
+</li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58558" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-has-children menu-item-58558 nav-item"><a title="Faculty" href="https://www.osgoode.yorku.ca/faculty/" aria-haspopup="true" aria-expanded="false" class="nav-link" id="menu-item-dropdown-58558">Faculty</a><i class="yu__menu-expand-collapse"></i>
+<ul aria-labelledby="menu-item-dropdown-58558" role="menu">
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-112310" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-112310 nav-item"><a title="Faculty" href="https://www.osgoode.yorku.ca/faculty/" class="dropdown-item">Faculty</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-112312" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-112312 nav-item"><a title="Faculty Emeritus" href="https://www.osgoode.yorku.ca/faculty/faculty-emeritius/" class="dropdown-item">Faculty Emeritus</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-112311" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-112311 nav-item"><a title="Adjunct Faculty" href="https://www.osgoode.yorku.ca/faculty/adjunct-faculty/" class="dropdown-item">Adjunct Faculty</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-111181" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111181 nav-item"><a title="Academic Employment Opportunities" href="https://www.osgoode.yorku.ca/academic-employment-opportunities/" class="dropdown-item">Academic Employment Opportunities</a></li>
+</ul>
+</li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58559" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-has-children menu-item-58559 nav-item"><a title="Research" href="https://www.osgoode.yorku.ca/research/" aria-haspopup="true" aria-expanded="false" class="nav-link" id="menu-item-dropdown-58559">Research</a><i class="yu__menu-expand-collapse"></i>
+<ul aria-labelledby="menu-item-dropdown-58559" role="menu">
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58739" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58739 nav-item"><a title="Research Overview" href="https://www.osgoode.yorku.ca/research/" class="dropdown-item">Research Overview</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58560" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58560 nav-item"><a title="Osgoode Research Showcase" href="https://www.osgoode.yorku.ca/research/osgoode-research-showcase/" class="dropdown-item">Osgoode Research Showcase</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58561" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58561 nav-item"><a title="Research Centres and Institutes" href="https://www.osgoode.yorku.ca/research/research-centres-and-institutes/" class="dropdown-item">Research Centres and Institutes</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58562" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58562 nav-item"><a title="Journals" href="https://www.osgoode.yorku.ca/research/journals/" class="dropdown-item">Journals</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58563" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-58563 nav-item"><a title="SSRN Paper Series" href="http://papers.ssrn.com/sol3/JELJOUR_Results.cfm?form_name=journalbrowse&#038;journal_id=722488" class="dropdown-item">SSRN Paper Series</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58564" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58564 nav-item"><a title="Visitors Program" href="https://www.osgoode.yorku.ca/research/visitors/" class="dropdown-item">Visitors Program</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58565" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58565 nav-item"><a title="Research Events" href="https://www.osgoode.yorku.ca/research/research-events/" class="dropdown-item">Research Events</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58566" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-58566 nav-item"><a title="Digital Commons" href="https://digitalcommons.osgoode.yorku.ca/" class="dropdown-item">Digital Commons</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58567" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58567 nav-item"><a title="Faculty" href="https://www.osgoode.yorku.ca/faculty/" class="dropdown-item">Faculty</a></li>
+</ul>
+</li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58568" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-has-children menu-item-58568 nav-item"><a title="Library" href="https://www.osgoode.yorku.ca/library/" aria-haspopup="true" aria-expanded="false" class="nav-link" id="menu-item-dropdown-58568">Library</a><i class="yu__menu-expand-collapse"></i>
+<ul aria-labelledby="menu-item-dropdown-58568" role="menu">
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-70558" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-70558 nav-item"><a title="Library Overview" href="https://www.osgoode.yorku.ca/library/" class="dropdown-item">Library Overview</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-70554" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-70554 nav-item"><a title="Digital Commons" href="https://digitalcommons.osgoode.yorku.ca/" class="dropdown-item">Digital Commons</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-70754" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-70754 nav-item"><a title="Omni Catalogue" href="https://www.library.yorku.ca/web/" class="dropdown-item">Omni Catalogue</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-70555" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-70555 nav-item"><a title="Discover eResources" href="https://researchguides.library.yorku.ca/az.php?s=127175" class="dropdown-item">Discover eResources</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-70556" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-70556 nav-item"><a title="Book a Study Room" href="https://rooms.osgoode.yorku.ca/" class="dropdown-item">Book a Study Room</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-70557" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-70557 nav-item"><a title="Hours and Contact" href="https://www.osgoode.yorku.ca/library/about-the-library/contact/" class="dropdown-item">Hours and Contact</a></li>
+</ul>
+</li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58572" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-has-children menu-item-58572 nav-item"><a title="Alumni" href="https://www.osgoode.yorku.ca/alumni/" aria-haspopup="true" aria-expanded="false" class="nav-link" id="menu-item-dropdown-58572">Alumni</a><i class="yu__menu-expand-collapse"></i>
+<ul aria-labelledby="menu-item-dropdown-58572" role="menu">
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58741" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58741 nav-item"><a title="Alumni Overview" href="https://www.osgoode.yorku.ca/alumni/" class="dropdown-item">Alumni Overview</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58573" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-58573 nav-item"><a title="Make a Gift" href="https://give.yorku.ca/s/1853/osgoode/interior.aspx?sid=1853&#038;gid=3&#038;pgid=446&#038;cid=1116&#038;appealcode=14081" class="dropdown-item">Make a Gift</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58575" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-58575 nav-item"><a title="Submit a Class Note" href="/alumni/#stay-connected" class="dropdown-item">Submit a Class Note</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58576" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58576 nav-item"><a title="Alumni Board of Directors" href="https://www.osgoode.yorku.ca/alumni/osgoode-hall-law-school-alumni-association/" class="dropdown-item">Alumni Board of Directors</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58578" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58578 nav-item"><a title="Osgoode Alumni Awards" href="https://www.osgoode.yorku.ca/alumni/alumni-awards/" class="dropdown-item">Osgoode Alumni Awards</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-59155" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-59155 nav-item"><a title="Transcripts and Diploma Services" href="https://www.osgoode.yorku.ca/transcripts/" class="dropdown-item">Transcripts and Diploma Services</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-114998" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-114998 nav-item"><a title="Get Involved" href="https://www.osgoode.yorku.ca/alumni/get-involved/" class="dropdown-item">Get Involved</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58580" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-58580 nav-item"><a title="Update Your Contact Information" href="https://machformext.osgoode.yorku.ca/machform/view.php?id=47586" class="dropdown-item">Update Your Contact Information</a></li>
+</ul>
+</li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58581" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-has-children menu-item-58581 nav-item"><a title="About" href="https://www.osgoode.yorku.ca/about/" aria-haspopup="true" aria-expanded="false" class="nav-link" id="menu-item-dropdown-58581">About</a><i class="yu__menu-expand-collapse"></i>
+<ul aria-labelledby="menu-item-dropdown-58581" role="menu">
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58742" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58742 nav-item"><a title="About Osgoode" href="https://www.osgoode.yorku.ca/about/" class="dropdown-item">About Osgoode</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58583" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58583 nav-item"><a title="Equity, Diversity and Inclusion" href="https://www.osgoode.yorku.ca/about/equity-diversity-and-inclusion-at-osgoode/" class="dropdown-item">Equity, Diversity and Inclusion</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-59058" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-59058 nav-item"><a title="Milestones and Pioneering Graduates" href="https://www.osgoode.yorku.ca/about/milestones-and-pioneering-graduates/" class="dropdown-item">Milestones and Pioneering Graduates</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-122681" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-122681 nav-item"><a title="Academic Employment Opportunities" href="https://www.osgoode.yorku.ca/academic-employment-opportunities/" class="dropdown-item">Academic Employment Opportunities</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-58585" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58585 nav-item"><a title="Our Current Strategic Plan" href="https://www.osgoode.yorku.ca/about/our-current-strategic-plan/" class="dropdown-item">Our Current Strategic Plan</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-59901" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-59901 nav-item"><a title="Newsroom" href="https://www.osgoode.yorku.ca/newsroom/" class="dropdown-item">Newsroom</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-59914" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-59914 nav-item"><a title="Contact" href="https://www.osgoode.yorku.ca/contact/" class="dropdown-item">Contact</a></li>
+</ul>
+</li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-59610" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-59610 nav-item"><a title="MyOsgoode" href="/my/" class="nav-link">MyOsgoode</a></li>
+</ul></div>                            <p>
+                                <strong>Looking for legal help?</strong><br/>
+                                Contact one of Osgoode’s legal services clinics                            </p>
+
+                            <a href="/community-legal-services/">
+                                <button>
+                                    Community Legal Services                                </button>
+                            </a>
+
+                        </div>
+                        <div class="yu__menu-col-2"></div>
+                        <div class="yu__menu-col-3"></div>
+                    </div>
+                    <div class="yu__nav-menu-footer">
+                        ©2021 Osgoode Hall Law School                    </div>
+                </div>
+            </nav>
+
+            <div class="yu__logo-block">
+
+                <div class="yu__logo navbar-brand animate-up">
+                    <div class="yu__site-logo">
+                        <a href="/" class="yu__site-logo-osgoode"
+                           title="Return to York Osgoode Home">
+
+
+                            <svg id="yu__osgoode-logo" width="126" height="34" viewBox="0 0 126 34" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <title>Return Home</title>
+                                <path
+                                    d="M6.58203 33.9999C5.30846 33.9999 4.41719 33.1145 4.41016 31.8631C4.41016 30.5928 5.28735 29.7334 6.58203 29.7334C7.86968 29.7334 8.74922 30.5928 8.74922 31.8631C8.74922 33.1145 7.85091 33.9999 6.58203 33.9999ZM6.58203 30.4134C5.80804 30.4134 5.24044 31.0367 5.24044 31.8655C5.24044 32.7013 5.81038 33.3176 6.58203 33.3176C7.34899 33.3176 7.91893 32.7013 7.91893 31.8655C7.91893 31.0344 7.34899 30.4134 6.58203 30.4134Z"
+                                    fill="black"/>
+                                <path
+                                    d="M13.2054 30.7862C12.7715 30.5926 12.4197 30.4934 12.1477 30.4934C11.7818 30.4934 11.5472 30.6422 11.5472 30.8736C11.5472 31.0483 11.6457 31.1545 11.9366 31.3104C12.5628 31.648 12.9709 31.9077 13.1609 32.1037C13.3344 32.2784 13.44 32.5523 13.44 32.838C13.44 33.5723 12.9076 34.002 12.0046 34.002C11.8803 34.002 11.756 33.9902 11.6387 33.9784C11.3479 33.9359 11.2118 33.8911 10.785 33.6927C10.7287 33.6691 10.6372 33.6243 10.5176 33.5676L10.8459 32.8451C11.1438 33.0057 11.2681 33.0694 11.4276 33.1308C11.6317 33.2063 11.8545 33.2488 12.0163 33.2488C12.3752 33.2488 12.6097 33.0859 12.6097 32.838C12.6097 32.6633 12.5159 32.5452 12.2509 32.3941L11.6199 32.0329C10.8952 31.615 10.6724 31.3411 10.6724 30.8925C10.6724 30.687 10.7334 30.4745 10.8342 30.3187C10.9022 30.2125 11.0078 30.1062 11.1368 30.0141C11.4346 29.8087 11.688 29.7402 12.1641 29.7402C12.4361 29.7402 12.6777 29.7709 12.931 29.8465C13.128 29.9079 13.2406 29.9527 13.5127 30.0826L13.2054 30.7862Z"
+                                    fill="black"/>
+                                <path
+                                    d="M18.6614 33.8627C18.2275 33.969 17.9742 33.9997 17.6341 33.9997C16.2784 33.9997 15.3379 33.1284 15.3379 31.8581C15.3379 31.2348 15.5724 30.6918 16.0134 30.288C16.4356 29.9032 16.9046 29.7402 17.6106 29.7402C17.9085 29.7402 18.204 29.7709 18.4644 29.8323C18.6614 29.8819 18.7857 29.9268 19.0718 30.0519L18.8865 30.7059C18.7388 30.6493 18.6262 30.6115 18.5511 30.5879C18.2603 30.4887 17.9695 30.4391 17.7091 30.4391C16.7921 30.4391 16.1564 31.0058 16.1564 31.8227C16.1564 32.6633 16.8554 33.3055 17.7654 33.3055C17.9507 33.3055 18.0563 33.2866 18.2978 33.2182V32.0848H19.0765V33.7636C18.8912 33.8061 18.7552 33.8462 18.6614 33.8627Z"
+                                    fill="black"/>
+                                <path
+                                    d="M23.3418 33.9999C22.0682 33.9999 21.177 33.1145 21.1699 31.8631C21.1699 30.5928 22.0471 29.7334 23.3418 29.7334C24.6294 29.7334 25.509 30.5928 25.509 31.8631C25.509 33.1145 24.6107 33.9999 23.3418 33.9999ZM23.3418 30.4134C22.5678 30.4134 22.0002 31.0367 22.0002 31.8655C22.0002 32.7013 22.5701 33.3176 23.3418 33.3176C24.1087 33.3176 24.6787 32.7013 24.6787 31.8655C24.6787 31.0344 24.1111 30.4134 23.3418 30.4134Z"
+                                    fill="black"/>
+                                <path
+                                    d="M29.5156 33.9999C28.2397 33.9999 27.3508 33.1145 27.3438 31.8631C27.3438 30.5928 28.2233 29.7334 29.5156 29.7334C30.8033 29.7334 31.6828 30.5928 31.6828 31.8631C31.6828 33.1145 30.7845 33.9999 29.5156 33.9999ZM29.5156 30.4134C28.7416 30.4134 28.174 31.0367 28.174 31.8655C28.174 32.7013 28.744 33.3176 29.5156 33.3176C30.2826 33.3176 30.8525 32.7013 30.8525 31.8655C30.8525 31.0344 30.2826 30.4134 29.5156 30.4134Z"
+                                    fill="black"/>
+                                <path
+                                    d="M37.0077 33.3153C36.6301 33.719 36.0907 33.9197 35.3542 33.9197H33.8438V29.8066H35.3589C36.1329 29.8066 36.6161 29.9814 37.0171 30.4111C37.3689 30.7912 37.5683 31.3154 37.5683 31.849C37.5707 32.3991 37.3666 32.928 37.0077 33.3153ZM36.2596 30.7416C36.0438 30.5811 35.7271 30.4984 35.2815 30.4984H34.6623V33.2279H35.2815C36.2103 33.2279 36.7286 32.7344 36.7286 31.8561C36.7286 31.3909 36.5504 30.9612 36.2596 30.7416Z"
+                                    fill="black"/>
+                                <path
+                                    d="M39.7324 33.9197V29.8066H42.2209V30.4748H40.5135V31.4901H41.9113V32.1583H40.5135V33.2539H42.303V33.9221H39.7324V33.9197Z"
+                                    fill="black"/>
+                                <path
+                                    d="M50.6454 33.9197V32.1559H48.5463V33.9197H47.7676V29.8066H48.5463V31.4523H50.6454V29.8066H51.4241V33.9197H50.6454Z"
+                                    fill="black"/>
+                                <path
+                                    d="M56.2837 33.9197L55.9623 32.9044H54.595L54.2596 33.9197H53.4434L54.9233 29.8066H55.6223L57.1022 33.9197H56.2837ZM55.2751 30.7487L54.8061 32.2386H55.7536L55.2751 30.7487Z"
+                                    fill="black"/>
+                                <path d="M59.123 33.9197V29.8066H59.9017V33.2515H61.5717V33.9197H59.123Z" fill="black"/>
+                                <path d="M63.6367 33.9197V29.8066H64.4154V33.2515H66.0854V33.9197H63.6367Z"
+                                      fill="black"/>
+                                <path d="M71.1523 33.9197V29.8066H71.931V33.2515H73.601V33.9197H71.1523Z" fill="black"/>
+                                <path
+                                    d="M77.9634 33.9197L77.642 32.9044H76.2747L75.9393 33.9197H75.123L76.603 29.8066H77.3019L78.7819 33.9197H77.9634ZM76.9548 30.7487L76.4857 32.2386H77.4333L76.9548 30.7487Z"
+                                    fill="black"/>
+                                <path
+                                    d="M92.3011 30.7862C91.8672 30.5926 91.5154 30.4934 91.2434 30.4934C90.8775 30.4934 90.6429 30.6422 90.6429 30.8736C90.6429 31.0483 90.7414 31.1545 91.0323 31.3104C91.6585 31.648 92.0666 31.9077 92.2566 32.1037C92.4301 32.2784 92.5357 32.5523 92.5357 32.838C92.5357 33.5723 92.0033 34.002 91.1003 34.002C90.976 34.002 90.8517 33.9902 90.7344 33.9784C90.4436 33.9359 90.3075 33.8911 89.8807 33.6927C89.8244 33.6691 89.7329 33.6243 89.6133 33.5676L89.9416 32.8451C90.2395 33.0057 90.3638 33.0694 90.5233 33.1308C90.7274 33.2063 90.9502 33.2488 91.112 33.2488C91.4709 33.2488 91.7054 33.0859 91.7054 32.838C91.7054 32.6633 91.6116 32.5452 91.3466 32.3941L90.7156 32.0329C89.9909 31.615 89.7681 31.3411 89.7681 30.8925C89.7681 30.687 89.8291 30.4745 89.9299 30.3187C89.9979 30.2125 90.1035 30.1062 90.2325 30.0141C90.5303 29.8087 90.7837 29.7402 91.2598 29.7402C91.5318 29.7402 91.7734 29.7709 92.0267 29.8465C92.2237 29.9079 92.3363 29.9527 92.6084 30.0826L92.3011 30.7862Z"
+                                    fill="black"/>
+                                <path
+                                    d="M97.5445 30.7483C97.2771 30.5547 96.9628 30.4626 96.6039 30.4626C95.8182 30.4626 95.2553 31.0222 95.2553 31.8013C95.2553 32.6867 95.837 33.2652 96.7282 33.2652C97.0191 33.2652 97.2607 33.2156 97.6265 33.0716L97.7696 33.7327C97.5093 33.8508 97.4037 33.8885 97.2184 33.9334C97.0214 33.9759 96.8033 34.0019 96.5617 34.0019C95.9238 34.0019 95.4664 33.8413 95.0818 33.4919C94.6478 33.0999 94.3945 32.4884 94.3945 31.8485C94.3945 31.2512 94.6173 30.7081 95.0184 30.3091C95.4265 29.9053 95.8839 29.7354 96.5594 29.7354C97.0801 29.7354 97.4882 29.8605 97.84 30.1273L97.5445 30.7483Z"
+                                    fill="black"/>
+                                <path
+                                    d="M102.872 33.9197V32.1559H100.773V33.9197H99.9941V29.8066H100.773V31.4523H102.872V29.8066H103.651V33.9197H102.872Z"
+                                    fill="black"/>
+                                <path
+                                    d="M108.021 33.9999C106.746 33.9999 105.857 33.1145 105.85 31.8631C105.85 30.5928 106.727 29.7334 108.021 29.7334C109.309 29.7334 110.189 30.5928 110.189 31.8631C110.189 33.1145 109.29 33.9999 108.021 33.9999ZM108.021 30.4134C107.247 30.4134 106.68 31.0367 106.68 31.8655C106.68 32.7013 107.25 33.3176 108.021 33.3176C108.788 33.3176 109.358 32.7013 109.358 31.8655C109.358 31.0344 108.788 30.4134 108.021 30.4134Z"
+                                    fill="black"/>
+                                <path
+                                    d="M114.193 33.9999C112.92 33.9999 112.029 33.1145 112.021 31.8631C112.021 30.5928 112.901 29.7334 114.193 29.7334C115.481 29.7334 116.361 30.5928 116.361 31.8631C116.361 33.1145 115.465 33.9999 114.193 33.9999ZM114.193 30.4134C113.419 30.4134 112.852 31.0367 112.852 31.8655C112.852 32.7013 113.422 33.3176 114.193 33.3176C114.96 33.3176 115.53 32.7013 115.53 31.8655C115.533 31.0344 114.963 30.4134 114.193 30.4134Z"
+                                    fill="black"/>
+                                <path d="M118.561 33.9197V29.8066H119.342V33.2515H121.012V33.9197H118.561Z"
+                                      fill="black"/>
+                                <path
+                                    d="M82.9331 33.9178H83.4444L84.6312 29.793H83.8713L83.1794 32.3005L82.5461 29.793H81.88L81.2468 32.3005L80.5549 29.793H79.7949L80.9817 33.9178H81.4954L82.2154 31.3348L82.9331 33.9178Z"
+                                    fill="black"/>
+                                <path
+                                    d="M62.4219 7.33594C61.2656 7.33594 60.3016 7.71608 59.5581 8.46455C58.5871 9.44205 58.0312 11.0051 58.0312 12.7523C58.0312 15.2622 58.7161 17.3329 59.9569 18.5819C60.7238 19.3587 61.6948 19.7861 62.6916 19.7861C66.8313 19.7861 67.0401 14.7569 67.0401 13.7487C67.0401 11.475 66.4514 9.68052 65.3349 8.55899C64.5516 7.77038 63.5172 7.33594 62.4219 7.33594Z"
+                                    fill="#E31837"/>
+                                <path
+                                    d="M11.7442 7.33594C10.5902 7.33594 9.62859 7.71608 8.88039 8.46455C7.91173 9.43969 7.35352 11.0027 7.35352 12.7523C7.35352 15.2622 8.03838 17.3329 9.27912 18.5819C10.0461 19.3587 11.0171 19.7861 12.0139 19.7861C16.1536 19.7861 16.3623 14.7569 16.3623 13.7487C16.3623 11.475 15.7713 9.68052 14.6549 8.55899C13.8738 7.77038 12.8395 7.33594 11.7442 7.33594Z"
+                                    fill="#E31837"/>
+                                <path
+                                    d="M80.4903 7.33594C79.3363 7.33594 78.3723 7.71608 77.6265 8.46455C76.6555 9.44205 76.0996 11.0051 76.0996 12.75C76.0996 15.2598 76.7821 17.3305 78.0252 18.5796C78.7945 19.3564 79.7655 19.7837 80.7577 19.7837C84.8974 19.7837 85.1084 14.7546 85.1084 13.7464C85.1084 11.4726 84.5197 9.67816 83.4033 8.55663C82.6152 7.77038 81.5832 7.33594 80.4903 7.33594Z"
+                                    fill="#E31837"/>
+                                <path
+                                    d="M97.4574 7.52246H95.8086V17.8759C95.8086 18.7236 95.8907 19.2194 96.0619 19.3894C96.2542 19.5854 96.8195 19.5972 97.7272 19.5972C101.25 19.5972 102.962 17.5005 102.962 13.1868C102.962 11.3286 102.477 9.89774 101.522 8.93441C100.591 7.99704 99.2259 7.52246 97.4574 7.52246Z"
+                                    fill="#E31837"/>
+                                <path
+                                    d="M0 0V25.7999H125.591V0H0ZM17.3727 19.2242C15.8317 20.7754 13.7278 21.6278 11.4528 21.6278C9.44273 21.6278 7.56169 20.8462 6.15677 19.4272C4.69791 17.9586 3.89343 15.9706 3.89343 13.829C3.89343 11.5293 4.75655 9.41139 6.3233 7.86014C7.86894 6.3325 9.95403 5.48958 12.1963 5.48958C14.7833 5.48958 16.5095 6.68194 17.504 7.68069C18.9535 9.1375 19.8189 11.1728 19.8189 13.1254C19.8213 15.47 18.9535 17.6375 17.3727 19.2242ZM31.8956 19.9892C30.873 21.0163 29.2312 21.6301 27.5002 21.6301C26.1915 21.6301 25.0047 21.4058 23.764 20.9242L23.7288 20.9076C23.4403 20.766 23.2761 20.4756 23.2761 20.1167V16.5703H24.871L24.9203 17.0756C25.0868 18.7992 26.0953 19.7861 27.6832 19.7861C28.8629 19.7861 29.7871 18.8747 29.7871 17.7083C29.7871 16.7969 29.5197 15.8643 26.2267 13.6732L26.0672 13.5693C24.9766 12.8444 23.4825 11.8504 23.4825 9.3925C23.4825 7.24153 25.7177 5.48958 28.4666 5.48958C29.0271 5.48958 30.4508 5.53208 31.5367 5.91458C31.6892 5.96653 32.0527 6.14833 32.0527 6.67486V9.94972H30.4602L30.4086 9.44681C30.3007 8.48583 29.8551 7.33597 28.3657 7.33597C27.8098 7.33597 27.3454 7.49653 27.0546 7.78931C26.7896 8.05611 26.6535 8.44097 26.6535 8.93444C26.6535 9.92611 27.6668 10.6793 29.203 11.8174L29.9348 12.3651C32.2591 14.1076 33.0425 15.3354 33.0425 17.229C33.0449 18.2797 32.6485 19.2336 31.8956 19.9892ZM51.8811 14.9576L51.1493 15.0403C50.706 15.0946 50.2486 15.1489 50.1806 15.2292C50.1079 15.3165 50.1079 15.7793 50.1079 16.2728L50.1103 16.5065V20.511L49.7444 20.6432C48.6092 21.0918 46.7868 21.6301 44.6313 21.6301C41.8942 21.6301 39.652 20.8297 38.1485 19.3186C36.7483 17.909 36.0376 15.9422 36.0376 13.4796C36.0376 10.1622 38.7677 5.49194 44.833 5.49194C46.7469 5.49194 47.7414 5.82014 48.7007 6.13889L48.7265 6.14833L48.9633 6.22625C49.9953 6.55917 50.1501 7.21083 50.1501 7.56972V10.8044H48.5177L48.5036 10.259C48.4638 9.17056 47.9126 7.33833 44.6688 7.33833C41.2586 7.33833 39.5183 9.35 39.4948 13.3167C39.4831 15.3921 40.1375 17.2526 41.2891 18.4237C42.1827 19.3304 43.3484 19.7885 44.7486 19.7885C46.9979 19.7885 46.9979 19.1156 46.9979 17.7768V16.3129C46.9979 15.7982 47.0002 15.3543 46.9111 15.2693C46.7962 15.1607 46.2778 15.1087 45.6211 15.0426L44.8143 14.9671V13.3568H51.8811V14.9576ZM68.0505 19.2242C66.5096 20.7754 64.408 21.6278 62.133 21.6278C60.1206 21.6278 58.2395 20.8462 56.8346 19.4272C55.3758 17.961 54.5713 15.9729 54.5713 13.829C54.5713 11.534 55.4344 9.41375 57.0035 7.86014C58.5491 6.3325 60.6342 5.48958 62.8765 5.48958C65.4635 5.48958 67.1921 6.68194 68.1865 7.68069C69.6337 9.1375 70.4968 11.1728 70.4968 13.1254C70.4968 15.4724 69.6266 17.6375 68.0505 19.2242ZM86.1198 19.2242C84.5788 20.7754 82.4773 21.6278 80.1999 21.6278C78.1898 21.6278 76.3088 20.8462 74.9039 19.4272C73.445 17.961 72.6429 15.9729 72.6429 13.829C72.6429 11.5293 73.506 9.40903 75.0751 7.86014C76.6207 6.3325 78.7058 5.48958 80.9457 5.48958C83.5351 5.48958 85.2637 6.68194 86.2581 7.68069C87.7076 9.14222 88.5707 11.1775 88.5707 13.1254C88.566 15.47 87.6982 17.6351 86.1198 19.2242ZM104.116 18.9267C102.521 20.5299 100.312 21.3775 97.7273 21.3775H90.9279V19.7838L91.6667 19.6964C92.1053 19.6444 92.5603 19.5901 92.6283 19.5099C92.701 19.4225 92.701 18.9574 92.701 18.4662V8.65583C92.701 8.16236 92.7034 7.69958 92.6283 7.61222C92.5603 7.53194 92.1053 7.47528 91.6644 7.42333L90.9279 7.33361V5.74458H98.3254C101.025 5.74458 103.105 6.46 104.51 7.86722C105.779 9.15167 106.424 10.9272 106.424 13.1467C106.42 15.3756 105.601 17.4274 104.116 18.9267ZM121.773 17.1794L121.069 21.3775H109.914V19.7838L110.651 19.6964C111.089 19.6444 111.544 19.5901 111.612 19.5099C111.687 19.4225 111.685 18.9574 111.685 18.4662L111.683 18.2349L111.685 8.65583C111.685 8.16708 111.687 7.70194 111.612 7.61458C111.544 7.53431 111.108 7.48 110.646 7.42333L109.912 7.33361V5.74458H120.234V10.2H118.651L118.592 9.70653C118.367 8.05611 117.992 7.5225 117.042 7.5225H114.793V12.3368H115.97C116.979 12.3368 117.279 12.0535 117.312 11.0712L117.326 10.5329H118.956V16.0697H117.326L117.312 15.5267C117.277 14.4783 116.939 14.1242 115.97 14.1242H114.793V18.249C114.793 18.7803 114.877 19.1321 115.041 19.2974C115.292 19.55 115.911 19.5972 116.897 19.5972C119.094 19.5972 119.237 19.2383 119.831 17.7249C119.929 17.4675 120.044 17.1771 120.178 16.8631L120.328 16.5278H121.881L121.773 17.1794Z"
+                                    fill="#E31837"/>
+                            </svg>
+                        </a>
+                        <a href="http://yorku.ca" class="yu__site-logo-york"
+                           title="Go to York University">
+
+                            <svg width="2" height="34" viewBox="0 0 2 34" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.01437 0H0.0761719V34H1.01437V0Z" fill="#929497"/>
+                            </svg>
+
+                            <svg id="yu__york-word-logo" width="113" height="27" viewBox="0 0 113 27" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <title>York University</title>
+                                <path
+                                    d="M8.35679 25.3285H9.21756C11.0095 25.3285 11.4035 24.6438 11.4035 22.7667V17.0694L4.52433 4.66408C3.12644 2.14005 2.66205 1.81422 0.905309 1.81422H0.583984V0.730469C2.12494 0.765885 3.62837 0.83908 5.09896 0.83908C6.60474 0.83908 8.14334 0.765885 9.64912 0.730469V1.81186H9.00412C8.25123 1.81186 7.67895 2.0645 7.67895 2.96644C7.67895 3.47172 8.10816 4.4445 8.46702 5.0938L13.7701 14.7224L18.7143 5.20241C19.0004 4.66172 19.6806 3.28991 19.6806 2.64061C19.6806 2.02672 19.2514 1.81186 18.2827 1.81186H17.6002V0.730469C19.0684 0.765885 20.0371 0.83908 21.1465 0.83908C22.3286 0.83908 23.5459 0.765885 24.6928 0.730469V1.81186H23.7968C22.3286 1.81186 22.0049 2.28172 20.8955 4.3713L14.5534 16.3091V22.7644C14.5534 24.8917 15.3415 25.3262 16.7394 25.3262H17.4548V26.4076C15.949 26.3721 14.4104 26.2989 12.9046 26.2989C11.3285 26.2989 9.67962 26.3721 8.35444 26.4076V25.3285H8.35679Z"
+                                    fill="black"/>
+                                <path
+                                    d="M40.5636 0.262695C47.6937 0.262695 53.9255 6.06867 53.9255 13.5699C53.9255 19.9166 49.0541 26.8771 40.4557 26.8771C32.7181 26.8771 27.1289 20.998 27.1289 13.858C27.1289 5.81603 33.5061 0.262695 40.5636 0.262695ZM40.4557 1.77617C35.4411 1.77617 30.7104 4.87867 30.7104 13.2441C30.7104 19.0855 34.5076 25.5053 40.6691 25.5053C47.2973 25.5053 50.3417 20.6013 50.3417 13.9642C50.3417 8.16061 46.725 1.77617 40.4557 1.77617Z"
+                                    fill="black"/>
+                                <path
+                                    d="M59.5508 25.3285H60.1958C61.8446 25.3285 62.56 24.7146 62.56 22.3724V4.77033C62.56 2.42575 61.8423 1.81422 60.1958 1.81422H59.5508V0.730469C60.8056 0.765885 62.5248 0.83908 64.1361 0.83908C66.5355 0.83908 68.257 0.730469 69.8332 0.730469C76.1752 0.730469 77.3198 5.74311 77.3198 7.40297C77.3198 12.1276 74.0245 13.5702 72.2326 14.1463L77.0337 22.1528C79.0038 25.3994 79.5761 25.6142 82.4798 25.796V26.5539C81.7996 26.5539 81.1546 26.5894 80.4744 26.5894C77.3222 26.5894 75.8539 26.1927 73.9541 23.0548L69.7628 16.1674C68.9396 14.8334 68.4728 14.7602 65.7146 14.6894V21.5059C65.7146 24.9319 66.3244 25.3285 67.7575 25.3285H68.7965V26.4099C67.2204 26.3745 65.7146 26.3013 64.1385 26.3013C62.5271 26.3013 60.8079 26.3745 59.5531 26.4099V25.3285H59.5508ZM65.7122 13.0649C66.3221 13.2821 67.218 13.3176 68.1492 13.3176C71.3741 13.3176 74.0245 11.8395 74.0245 8.08769C74.0245 6.50103 72.9503 2.09991 67.9709 2.09991C67.1101 2.09991 66.43 2.17311 65.7146 2.24394V13.0649H65.7122Z"
+                                    fill="black"/>
+                                <path
+                                    d="M88.0668 25.3285H88.7118C90.3606 25.3285 91.076 24.7146 91.076 22.3724V4.77033C91.076 2.42575 90.3583 1.81422 88.7118 1.81422H88.0668V0.730469C89.3216 0.765885 91.0408 0.83908 92.6521 0.83908C94.2283 0.83908 95.734 0.765885 97.3102 0.730469V1.81186H96.2711C94.8381 1.81186 94.2283 2.20852 94.2283 5.6345V14.1085L102.074 5.30866C102.433 4.912 103.793 3.46936 103.793 2.74686C103.793 2.09755 103.291 1.8095 102.611 1.8095H101.966V0.730469C103.291 0.765885 104.794 0.83908 106.192 0.83908C107.625 0.83908 109.021 0.765885 110.456 0.730469V1.81186H109.811C108.057 1.81186 107.447 2.13533 105.334 4.3713L98.4195 11.6931L107.663 22.5849C109.668 24.9649 110.707 25.3262 112.176 25.3262H112.713V26.4076C111.566 26.3721 110.384 26.2989 109.237 26.2989C108.09 26.2989 106.908 26.3721 105.761 26.4076C105.583 25.3616 105.475 24.8209 103.432 22.4763L96.0882 14.0023L94.2259 15.9856V21.5035C94.2259 24.9295 94.8334 25.3262 96.2688 25.3262H97.3078V26.4076C95.7317 26.3721 94.2259 26.2989 92.6498 26.2989C91.0385 26.2989 89.3193 26.3721 88.0645 26.4076V25.3285H88.0668Z"
+                                    fill="black"/>
+                            </svg>
+
+                            <svg id="yu__york-logo" width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <title>York University</title>
+                                <path
+                                    d="M23.556 29.8893C17.8261 29.8893 12.8678 26.324 12.8678 18.53V0H0.0664062V34H33.8407V21.5947C32.8252 26.5389 29.2531 29.8893 23.556 29.8893Z"
+                                    fill="#E31837"/>
+                                <path
+                                    d="M23.5567 22.9287C26.6315 22.9287 27.5744 20.2087 27.5744 17.5501V0H19.7148V17.5501C19.7125 20.3197 20.6929 22.9287 23.5567 22.9287Z"
+                                    fill="#E31837"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="yu__search-block">
+                    <div class="yu__searchbar">
+                        <a href="#">
+                            <img alt="search"
+                                 src="https://www.osgoode.yorku.ca/wp-content/themes/yu-osgoode/assets/css/svg/search.svg"/>
+                            <span>Search</span>
+                        </a>
+                    </div>
+                    <div class="yu__main-navbar navbar navbar-light">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls=""
+                                aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon white-menu"></span>
+                            <span class="navbar-toggler-text">Menu</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="yu__search-menu" style="display: none">
+                <div class="yu__search-menu-wrapper">
+                    <div class="yu__search-wrapper">
+                        <input class="h3" name="s" type="text" placeholder="Search Osgoode"
+                               aria-label="search">
+                        <a class="yu__i-close" href="#">
+                            <img alt="close search form"
+                                 src="https://www.osgoode.yorku.ca/wp-content/themes/yu-osgoode/assets/css/svg/search_form_close.svg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+</div>
+</header><!-- #masthead -->
+
+
+<div id="content"
+     class="site-content yu__banner-container yu__page">
+    <div class="container-fluid">
+        <div class="row">
+            
+
+<div class="yu__page-breadcrumbs col-sm-12">
+    <div class="yu__page-breadcrumbs-block">
+        <div class="yu__page-breadcrumbs-sub-block">
+            <a href="/">Home</a> &gt; <a href="https://www.osgoode.yorku.ca/programs/">Programs</a> &gt; <a href="https://www.osgoode.yorku.ca/programs/juris-doctor/">Juris Doctor</a> &gt; <a href="https://www.osgoode.yorku.ca/programs/juris-doctor/access-and-support/">Access and Support</a> &gt; <span class="yu__page-breadcrumb-active">Financial Services</span>        </div>
+            </div>
+</div>
+
+    <section id="primary" class="content-area col-sm-10">
+        <main id="main" class="site-main" role="main">
+
+            
+<article id="post-8617" class="post-8617 page type-page status-publish hentry">
+
+            <header class="entry-header">
+            <h1 class="entry-title">Financial Services</h1>        </header>
+    
+    <div class="yu__post-img post-thumbnail">
+                <div class="yu__post-featured-image">
+                    </div>
+    </div>
+
+    <div class="entry-content">
+        
+<p>We’re committed to helping students understand, plan for, and navigate the financial side of law school – from accessing scholarships and bursaries, to reducing debt after graduation. Our Student Financial Services Office is available to help current and prospective students with all aspects of their law school investment.</p>
+
+
+
+<div class="wp-block-group yu__tile-grey-block is-layout-flow wp-block-group-is-layout-flow"><div class="wp-block-group__inner-container">
+<div class="wp-block-columns is-layout-flex wp-container-4 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33%">
+<h4 class="wp-block-heading" id="funding-sources">Funding Sources</h4>
+
+
+
+<p>An overview of the wide range of supports that are available to help you fund your law school education.</p>
+
+
+
+<p class="yu__explore-button"><a href="https://www.osgoode.yorku.ca/programs/juris-doctor/access-and-support/financial-services/funding-sources/" data-type="page" data-id="8624">Explore ›</a></p>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33%">
+<h4 class="wp-block-heading" id="tuition-fees-and-key-dates">Tuition, Fees and Key Dates</h4>
+
+
+
+<p>How and when to remit payments.</p>
+
+
+
+<p class="yu__explore-button"><a href="https://www.osgoode.yorku.ca/programs/juris-doctor/access-and-support/financial-services/tuition-fees-and-key-dates/" data-type="page" data-id="8673">Explore ›</a></p>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33%">
+<h4 class="wp-block-heading" id="budgeting">Budgeting</h4>
+
+
+
+<p>Typical costs for a year of law school, and tips on managing your finances.</p>
+
+
+
+<p class="yu__explore-button"><a href="https://www.osgoode.yorku.ca/programs/juris-doctor/access-and-support/financial-services/budgeting/" data-type="page" data-id="8667">Explore ›</a></p>
+</div>
+</div>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-6 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.34%">
+<h4 class="wp-block-heading" id="graduating-students">Graduating Students</h4>
+
+
+
+<p>Important information about debt reduction, support available to graduates, and settling your York University accounts.</p>
+
+
+
+<p class="yu__explore-button"><a href="https://www.osgoode.yorku.ca/programs/juris-doctor/access-and-support/financial-services/graduating-students/" data-type="page" data-id="8680">Explore ›</a></p>
+</div>
+</div>
+</div></div>
+
+
+
+<p></p>
+
+
+
+<p>Reach out with any questions. We’re here to help. <a href="https://www.osgoode.yorku.ca/programs/juris-doctor/access-and-support/financial-services/contact/" data-type="page" data-id="17585">Contact the Student Financial Services Office ›</a></p>
+    </div>
+</article>
+
+        </main><!-- #main -->
+    </section><!-- #primary -->
+
+
+    </div><!-- .row -->
+    </div><!-- .container -->
+    </div><!-- #content -->
+
+    
+    <footer id="yu__footer" class="site-footer navbar-light" role="contentinfo">
+            <div id="footer-widget" class="row">
+                    <div id="footer-1" class="col-md-6 col-lg-3"><section id="block-2" class="widget widget_block"><p>
+<strong>Osgoode Hall Law School</strong><br>
+<strong>York University</strong><br>
+Ignat Kaneff Building<br>
+4700 Keele Street<br>
+Toronto, Ontario M3J 1P3<br>
+Canada
+</p></section></div>
+                            <div id="footer-2" class="col-md-6 col-lg-3"><section id="block-6" class="widget widget_block"><p>
+<strong>Osgoode Professional Development</strong><br>
+<strong>Osgoode Hall Law School </strong><br>
+1 Dundas Street West Suite 2602,<br>
+P.O. Box 42<br>
+Toronto, Ontario M5G 1Z3<br> Canada<br>
+<a href="https://osgoodepd.ca/" target="_blank" style="color:#FFF;">osgoodepd.ca</a>
+</p></section></div>
+                            <div id="footer-3" class="col-md-6 col-lg-3"><section id="nav_menu-2" class="widget widget_nav_menu"><div class="menu-footer-menu-container"><ul id="menu-footer-menu" class="menu"><li id="menu-item-30588" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30588"><a href="https://www.osgoode.yorku.ca/contact/">Directory</a></li>
+<li id="menu-item-122684" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-122684"><a href="https://www.osgoode.yorku.ca/academic-employment-opportunities/">Academic Employment Opportunities</a></li>
+<li id="menu-item-30589" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30589"><a href="https://www.osgoode.yorku.ca/contact/departments/">Departments</a></li>
+<li id="menu-item-30590" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30590"><a href="https://www.osgoode.yorku.ca/contact/maps-and-addresses/">Directions</a></li>
+<li id="menu-item-30591" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-30591"><a href="https://www.yorku.ca/about/privacy-legal/">Privacy &#038; Legal</a></li>
+</ul></div></section></div>
+                            <div id="footer-4" class="col-md-6 col-lg-3"><section id="block-4" class="widget widget_block"><p>
+<a href="https://twitter.com/OsgoodeNews" target="_blank"><img decoding="async" alt="Visit us on Twitter" src="/wp-content/themes/yu-osgoode/assets/css/svg/social-share-twitter-x.svg"></a>
+<a href="https://www.facebook.com/Osgoode" target="_blank"><img decoding="async" alt="Visit us on Facebook" src="/wp-content/themes/yu-osgoode/assets/css/svg/social-share-facebook.svg"></a>
+<a href="https://www.youtube.com/user/OsgoodeHallLawSchool" target="_blank"><img decoding="async" alt="Visit us on YouTube" src="/wp-content/themes/yu-osgoode/assets/css/svg/social-share-youtube.svg"></a>
+</p>
+<p>
+<a href="https://www.instagram.com/osgoodehalllawschool/" target="_blank"><img decoding="async" alt="Visit us on Instagram" src="/wp-content/themes/yu-osgoode/assets/css/svg/social-share-instagram.svg"></a>
+<a href="https://soundcloud.com/osgoode_yorku/" target="_blank"><img decoding="async" alt="Visit us on SoundCloud" src="/wp-content/themes/yu-osgoode/assets/css/svg/social-share-soundcloud.svg"></a>
+</p></section></div>
+            </div>
+
+
+        
+    </footer><!-- #colophon -->
+</div><!-- #page -->
+
+<style id='core-block-supports-inline-css' type='text/css'>
+.wp-container-4.wp-container-4,.wp-container-6.wp-container-6{flex-wrap:nowrap;}
+</style>
+<script type='text/javascript' src='https://www.osgoode.yorku.ca/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2' id='jquery-ui-core-js'></script>
+<script type='text/javascript' src='https://www.osgoode.yorku.ca/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.13.2' id='jquery-ui-datepicker-js'></script>
+<script id="jquery-ui-datepicker-js-after" type="text/javascript">
+jQuery(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":0,"isRTL":false});});
+</script>
+<script type='text/javascript' src='https://www.osgoode.yorku.ca/wp-content/plugins/modern-events-calendar/assets/js/jquery.typewatch.js?ver=7.2.2' id='mec-typekit-script-js'></script>
+<script type='text/javascript' src='https://www.osgoode.yorku.ca/wp-content/plugins/modern-events-calendar/assets/packages/featherlight/featherlight.js?ver=7.2.2' id='featherlight-js'></script>
+<script type='text/javascript' src='https://www.osgoode.yorku.ca/wp-content/plugins/modern-events-calendar/assets/packages/select2/select2.full.min.js?ver=7.2.2' id='mec-select2-script-js'></script>
+<script type='text/javascript' src='https://www.osgoode.yorku.ca/wp-content/plugins/modern-events-calendar/assets/packages/lity/lity.min.js?ver=7.2.2' id='mec-lity-script-js'></script>
+<script type='text/javascript' src='https://www.osgoode.yorku.ca/wp-content/plugins/modern-events-calendar/assets/packages/colorbrightness/colorbrightness.min.js?ver=7.2.2' id='mec-colorbrightness-script-js'></script>
+<script type='text/javascript' src='https://www.osgoode.yorku.ca/wp-content/plugins/modern-events-calendar/assets/packages/owl-carousel/owl.carousel.min.js?ver=7.2.2' id='mec-owl-carousel-script-js'></script>
+<script type='text/javascript' id='yu-category-filters-js-extra'>
+/* <![CDATA[ */
+var yu_data = {"ajax":"https:\/\/www.osgoode.yorku.ca\/wp-admin\/admin-ajax.php","security":"6ea321b121"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.osgoode.yorku.ca/wp-content/themes/yu-osgoode/assets/js/categoryFilters.js?ver=1668708612' id='yu-category-filters-js'></script>
+<script type='text/javascript' src='https://www.osgoode.yorku.ca/wp-content/themes/yu-osgoode/assets/css/slick-slider/slick-custom.js?ver%5B0%5D=jquery' id='york-slick-custom-script-js'></script>
+<script type='text/javascript' src='https://www.osgoode.yorku.ca/wp-content/themes/wp-bootstrap-starter/inc/assets/js/popper.min.js?ver=6.3.2' id='wp-bootstrap-starter-popper-js'></script>
+<script type='text/javascript' src='https://www.osgoode.yorku.ca/wp-content/themes/wp-bootstrap-starter/inc/assets/js/bootstrap.min.js?ver=6.3.2' id='wp-bootstrap-starter-bootstrapjs-js'></script>
+<script type='text/javascript' src='https://www.osgoode.yorku.ca/wp-content/themes/wp-bootstrap-starter/inc/assets/js/theme-script.min.js?ver=6.3.2' id='wp-bootstrap-starter-themejs-js'></script>
+<script type='text/javascript' src='https://www.osgoode.yorku.ca/wp-content/themes/wp-bootstrap-starter/inc/assets/js/skip-link-focus-fix.min.js?ver=20151215' id='wp-bootstrap-starter-skip-link-focus-fix-js'></script>
+</body>
+</html>

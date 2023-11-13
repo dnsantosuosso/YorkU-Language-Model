@@ -1,0 +1,8 @@
+$(document).ready(function() {     
+    $('.dropdown.active').hover(function(){     
+        $('.dropdown-menu.show .dropdown-menu').addClass('show');    
+    },     
+    function(){    
+        $('.dropdown-menu .dropdown-menu').removeClass('show');     
+    });
+}); 

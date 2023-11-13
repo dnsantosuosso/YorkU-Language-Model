@@ -1,0 +1,5 @@
+Drupal.behaviors.events_url = {
+	attach:function(context, settings){
+		//console.log(window.location.pathname);
+	}
+}

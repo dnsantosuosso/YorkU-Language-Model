@@ -1,0 +1,64 @@
+/** LDSI NOTES:
+* Temp code put in, style it better after upgrade
+*
+*/
+/* Google Custom Search */
+.gsc-control-searchbox-only {
+  padding-top: 10px;
+}
+button.gsc-search-button.gsc-search-button-v2 {
+  height: 50px;
+}
+.gsc-input {
+  font-size: 1.4rem;
+}
+.gsc-control-wrapper-cse form.gsc-search-box td {
+  background-color: #eee;
+}
+.gsc-control-wrapper-cse .gsc-selected-option-container {
+  min-width: 75px;
+}
+.gsc-control-wrapper-cse .gsc-selected-option {
+  word-wrap: normal;
+}
+.gsc-control-wrapper-cse table,
+.gsc-control-wrapper-cse td {
+  background-color: #fff;
+  border-top: none;
+  border-bottom: 1px solid #eee;
+  margin: auto;
+}
+.gsc-control-wrapper-cse table.gsc-resultsHeader td {
+  background-color: #fff;
+  border: none;
+}
+.gsc-control-wrapper-cse table.gsc-search-box {
+  background-color: red;
+}
+.gsc-control-wrapper-cse .gsc-search-button {
+  font-size: inherit;
+}
+.gsc-control-wrapper-cse .gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+  color: #cc0000;
+}
+.gsc-control-wrapper-cse .gsc-result-info-container,
+.gsc-control-wrapper-cse .gsc-orderby-container {
+  background-color: #eee;
+}
+@media (max-width: 800px) {
+  .gsc-control-wrapper-cse table,
+  .gsc-control-wrapper-cse thead,
+  .gsc-control-wrapper-cse tbody {
+    display: inline-table;
+    width: 100%;
+    border: none;
+  }
+  .gsc-control-wrapper-cse tr {
+    display: table-row;
+  }
+  .gsc-control-wrapper-cse th,
+  .gsc-control-wrapper-cse td {
+    display: table-cell;
+  }
+}
+/* End of Google Search box */

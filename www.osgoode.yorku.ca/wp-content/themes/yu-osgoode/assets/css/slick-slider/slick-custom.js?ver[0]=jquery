@@ -1,0 +1,42 @@
+(function ($) {
+
+    $(document).ready(function () {
+        $('.york__carousel-block > .wp-block-group__inner-container').slick({
+            dots: true,
+            arrows: false,
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            speed: 300,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            // centerPadding: '60px',
+
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        }).on('setPosition', function (event, slick) {
+            slick.$slides.css('height', slick.$slideTrack.height() + 'px');
+        });
+    });
+
+})(jQuery);
+
+

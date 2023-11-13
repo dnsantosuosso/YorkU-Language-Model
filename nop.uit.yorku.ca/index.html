@@ -1,0 +1,597 @@
+
+
+<!DOCTYPE html>
+<html class="html-home-page">
+<head>
+    <title>York University Diploma Ordering Service</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="generator" content="nopCommerce" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    
+    
+
+    
+    <link href="/Content/jquery-ui-themes/smoothness/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" type="text/css" />
+<link href="/Themes/yorku/Content/css/styles_vps.css" rel="stylesheet" type="text/css" />
+<link href="/Themes/yorku/Content/css/styles_main.css" rel="stylesheet" type="text/css" />
+<link href="/Themes/yorku/Content/css/styles.css" rel="stylesheet" type="text/css" />
+<link href="/Plugins/Widgets.NivoSlider/Content/nivoslider/nivo-slider.css" rel="stylesheet" type="text/css" />
+<link href="/Plugins/Widgets.NivoSlider/Content/nivoslider/themes/custom/custom.css" rel="stylesheet" type="text/css" />
+
+    <script src="/Themes/yorku/Content/js/smartmenu.js" type="text/javascript"></script>
+<script src="/Themes/yorku/Content/js/functions.js" type="text/javascript"></script>
+<script src="/Themes/yorku/Content/js/jquery.js" type="text/javascript"></script>
+<script src="/Scripts/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="/Scripts/jquery.validate.min.js" type="text/javascript"></script>
+<script src="/Scripts/jquery.validate.unobtrusive.min.js" type="text/javascript"></script>
+<script src="/Scripts/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+<script src="/Scripts/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+<script src="/Scripts/public.common.js" type="text/javascript"></script>
+<script src="/Scripts/public.ajaxcart.js" type="text/javascript"></script>
+<script src="/Plugins/Widgets.NivoSlider/Scripts/jquery.nivo.slider.js" type="text/javascript"></script>
+
+    
+    
+    
+    
+    
+<link rel="shortcut icon" href="http://nop.uit.yorku.ca/favicon.ico" />
+    <!--Powered by nopCommerce - http://www.nopCommerce.com-->
+
+	<!--<script type='text/javascript' src='http://vpstudents.yorku.ca/vpsnews/wp-includes/js/jquery/jquery.js'></script>-->
+	<link rel='stylesheet' id='font-awesome-css' href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' type='text/css' media='all' />
+
+</head>
+	<body class="home page-template page-template-homepage_template page-template-homepage_template-php page page-id-574 single-author sidebar horizontal_nav" style="overflow: visible;">
+		
+
+
+
+<div class="ajax-loading-block-window" style="display: none">
+</div>
+<div id="dialog-notifications-success" title="Notification" style="display:none;">
+</div>
+<div id="dialog-notifications-error" title="Error" style="display:none;">
+</div>
+<div id="dialog-notifications-warning" title="Warning" style="display:none;">
+</div>
+<div id="bar-notification" class="bar-notification">
+    <span class="close" title="Close">&nbsp;</span>
+</div>
+
+
+
+
+<!--[if lte IE 7]>
+    <div style="clear:both;height:59px;text-align:center;position:relative;">
+        <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank">
+            <img src="/Themes/yorku/Content/images/ie_warning.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        </a>
+    </div>
+<![endif]-->
+
+
+<!--<div class="master-wrapper-page">-->
+<div class="nothing-here">
+    
+    <header id="masthead" role="banner" style="background-color: rgba(255, 255, 255, 1.0);">
+	<div class="yeb11skipnav"><a href="#content">Skip to main content</a><a href="#navbar">Skip to local navigation</a></div>
+	<!-- 2011 YORK EXTERNAL BANNER - html code -->
+	<div id="yeb11banner">
+		<!--<div class="york-logo-holder"><a href="http://yorku.ca"><img class="yorklogo" src="http://www.yorku.ca/yorkweb/demos/test-header/images/yorku-logo-rgb-240-122.jpg" border="0" alt="York University" /></a></div>-->
+		<div class="york-logo-holder">
+			<a href="/">
+    <img class="yorklogo" title="" alt="York University Office of the University Registrar" src="http://nop.uit.yorku.ca/content/images/thumbs/0000079.jpeg">
+</a>
+		</div>
+		<button class="button quick-links" id="ql-button">Quick Links <i class="fa fa-caret-up"></i></button>
+		<div id="quick-links-container">
+			<div class="col4">
+				<div class="accessible">
+					<h1>Quick Links Menus</h1>
+				</div>
+				<h2>York U <span class="accessible">Organization Menu</span></h2>
+				<ul>
+					<li><a href="http://about.yorku.ca/">About York U</a></li>
+					<li><a href="http://president.yorku.ca/">President's Message</a></li>
+					<li><a href="http://teachingandlearning.yorku.ca">Teaching &amp; Learning</a></li>
+					<li><a href="http://www.yorku.ca/research/">Research</a> </li>
+					<li><a href="http://www.glendon.yorku.ca/">Glendon Campus</a></li>
+					<li><a href="http://about.yorku.ca/careers/">Careers</a></li>
+					<li><a href="http://about.yorku.ca/our-faculties/">Faculties</a></li>
+					<li><a href="http://about.yorku.ca/organization/">York U Organization</a></li>
+					<li><a href="http://campuslife.yorku.ca/">Campus Life</a></li>
+					<li><a href="http://socialmedia.yorku.ca/yorku-social-media-directory/">York U Social Media Directory</a></li>
+				</ul>
+			</div>
+			<div class="col4">
+				<h2>Students <span class="accessible">Menu</span></h2>
+				<ul>
+					<li><a href="http://futurestudents.yorku.ca/programsearch/">Programs of Study</a></li>
+					<li><a href="http://futurestudents.yorku.ca/requirements/apply">Undergraduate Admissions</a></li>
+					<li><a href="http://futurestudents.yorku.ca/graduate/">Graduate Admissions</a></li>
+					<li><a href="http://futurestudents.yorku.ca/continuing/">Continuing Education</a></li>
+					<li><a href="http://futurestudents.yorku.ca/tour/">Book a Tour</a></li>
+					<li><a href="http://www.library.yorku.ca/">Libraries</a></li>
+					<li><a href="http://yorkinternational.yorku.ca/">York International</a></li>
+					<li><a href="http://mail.my.yorku.ca">Google Mail</a></li>
+					<li><a href="https://mymail.yorku.ca/">MyMail</a></li>
+					<li><a href="https://moodle.yorku.ca">Moodle</a></li>
+				</ul>
+			</div>
+			<div class="mobile-header-clear"></div>
+			<div class="col4">
+				<h2>Faculty &amp; Staff</h2>
+				<ul>
+					<li><a href="http://facultyandstaff.yorku.ca/">Faculty &amp; Staff Home</a></li>
+					<li><a href="https://yulink.yorku.ca/">YU Link</a></li>
+					<li><a href="http://webmail.notes.yorku.ca/">Lotus Notes</a></li>
+					<li><a href="http://mymail.yorku.ca/">MyMail</a></li>
+				</ul>
+				<div class="desktop-quicklinks-btns">
+					<button onclick="javascript:location.href='http://www.library.yorku.ca/web/'" class="header-btn"><i class="fa fa-book"></i> Libraries</button>
+					<button onclick="javascript:location.href='http://mocha.yorku.ca/atlas/servlet/atlas'" class="header-btn"><i class="fa fa-binoculars"></i> Directory</button>
+					<button onclick="javascript:location.href='http://maps.info.yorku.ca/'" class="header-btn"><i class="fa fa-map-marker"></i> Campus Maps</button>
+				</div>
+			</div>
+			<div class="col4">
+				<h2>Community <span class="accessible">Menu</span></h2>
+				<ul>
+					<li><a href="http://family.yorku.ca/">Parents &amp; Family</a></li>
+					<li><a href="http://futurestudents.yorku.ca/counsellors/">Counsellors &amp; Teachers</a> </li>
+					<li><a href="http://news.yorku.ca/">Media</a></li>
+					<li><a href="http://yorku.ca/community/">Community Engagement</a></li>
+					<li><a href="http://advancement.yorku.ca/">Giving to York</a></li>
+					<li><a href="http://www.yorkulions.ca/">York U Lions</a></li>
+					<li><a href="http://accessibilityhub.info.yorku.ca/">Accessibility</a></li>
+					<li><a href="http://site.info.yorku.ca/weather-status/">Weather Status</a></li>
+					<li><a href="http://sexual-violence-response.info.yorku.ca/">Sexual Violence Response and Support</a></li>
+					<li><a href="http://safety.yorku.ca/">Community Safety</a></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+
+
+		</div>
+		<div class="greyed-page"></div>
+		<div id="yorklinks" class="nav-collapse">
+			<div id="yorklinks-container">
+				<div class="col4">
+					
+					<form action="/search" id="small-search-box-form" method="get">    <input type="text" class="search-box-text" id="small-searchterms" autocomplete="off" name="q" placeholder="Search store" />
+    <input type="submit" class="button-1 search-box-button" value="Search" />
+        <script type="text/javascript">
+            $("#small-search-box-form").submit(function(event) {
+                if ($("#small-searchterms").val() == "") {
+                    alert('Please enter some search keyword');
+                    $("#small-searchterms").focus();
+                    event.preventDefault();
+                }
+            });
+        </script>
+        
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    $('#small-searchterms').autocomplete({
+                            delay: 500,
+                            minLength: 3,
+                            source: '/catalog/searchtermautocomplete',
+                            appendTo: '.search-box',
+                            select: function(event, ui) {
+                                $("#small-searchterms").val(ui.item.label);
+                                setLocation(ui.item.producturl);
+                                return false;
+                            }
+                        })
+                        .data("ui-autocomplete")._renderItem = function(ul, item) {
+                            var t = item.label;
+                            //html encode
+                            t = htmlEncode(t);
+                            return $("<li></li>")
+                                .data("item.autocomplete", item)
+                                .append("<a><span>" + t + "</span></a>")
+                                .appendTo(ul);
+                        };
+                });
+            </script>
+        
+</form>
+					<button type="button" class="search-button2" onclick="window.location.href='search'"><div class="icon-search icon-medium"></div><span class="accessible">search button</span></button>
+
+					<div class="menu2-new">
+						<ul class="menu">
+							<li><a class="roll-link ie1" href="http://futurestudents.yorku.ca/"><span data-title="Future Students">Future Students</span></a></li>
+							<li><a class="roll-link ie2" href="http://www.yorku.ca/yorkweb/cs.htm"><span data-title="Current Students">Current Students</span></a></li>
+							<li><a class="roll-link ie3" href="http://alumniandfriends.yorku.ca"><span data-title="Alumni & Friends">Alumni & Friends</span></a></li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- yeb11banner -->
+	<!-- end of 2014 YORK EXTERNAL BANNER - html code 3-7-13 -->
+	<div class="short-banner">
+		<hgroup>
+			<a href="/">
+				<h1 class="site-title">York University</h1>
+			</a>
+		</hgroup>
+	</div>
+	
+	
+	<!--Slideshow Widget-->
+</header>
+
+    <script type="text/javascript">
+        AjaxCart.init(false, '.header-links .cart-qty', '.header-links .wishlist-qty', '#flyout-cart');
+    </script>
+    
+
+	<div id="navbar" class="navbar" style="background-color: rgba(238, 238, 238, 0.5);">
+		<nav id="site-navigation" class="navigation main-navigation horizontal-menu" role="navigation">
+			<div class="menu-new_top_menu-container">
+				<div class="menu-toggle">Menu</div>
+					<!--<div class="header-menu">-->
+					
+
+<ul class="nav-menu">
+	
+	
+	<li class="menu-item">
+		<a href="/duplicate-diploma">
+			Diploma - Mailing
+	</a>
+
+</li>
+	<li class="menu-item">
+		<a href="/letterverification-request-payment-2">
+			Letter/Verification Request Payment
+	</a>
+
+</li>
+								
+</ul>
+
+	<!--<div class="menu-toggle">Menu</div>-->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('.menu-toggle').click(function () {
+				$(this).siblings('.nav-menu').slideToggle('slow');
+			});
+			$('.nav-menu .sublist-toggle').click(function () {
+				$(this).siblings('.sub-menu').slideToggle('slow');
+			});
+		});
+	</script>
+
+
+
+
+
+					<!--</div>-->
+
+				</div>
+		</nav>
+		<!-- #site-navigation -->
+	</div>
+	<div class="header">
+		
+		<div class="header-upper">
+			<div class="header-links-wrapper">
+
+				<div class="header-links">
+    <ul>
+        
+            <li><a href="/register" class="ico-register">Register</a></li>
+            <li><a href="/login" class="ico-login">Log in</a></li>
+                            <li>
+                <a href="/wishlist" class="ico-wishlist">
+                    <span class="wishlist-label">Wishlist</span>
+                    <span class="wishlist-qty">(0)</span>
+                </a>
+            </li>
+                    <li id="topcartlink">
+                <a href="/cart" class="ico-cart">
+                    <span class="cart-label">Shopping cart</span>
+                    <span class="cart-qty">(0)</span>
+                </a>
+            </li>
+        
+    </ul>
+            <script type="text/javascript">
+            $(document).ready(function () {
+                $('.header').on('mouseenter', '#topcartlink', function () {
+                    $('#flyout-cart').addClass('active');
+                });
+                $('.header').on('mouseleave', '#topcartlink', function () {
+                    $('#flyout-cart').removeClass('active');
+                });
+                $('.header').on('mouseenter', '#flyout-cart', function () {
+                    $('#flyout-cart').addClass('active');
+                });
+                $('.header').on('mouseleave', '#flyout-cart', function () {
+                    $('#flyout-cart').removeClass('active');
+                });
+            });
+        </script>
+</div>
+
+				<div id="flyout-cart" class="flyout-cart">
+    <div class="mini-shopping-cart">
+        <div class="count">
+You have no items in your shopping cart.        </div>
+    </div>
+</div>
+
+
+			</div>
+		</div>
+	</div>
+    <div class="master-wrapper-content">
+        
+
+        <div class="master-column-wrapper">
+            
+<div class="center-1">
+    
+    
+<div class="page home-page">
+    <div class="page-body">
+        
+
+<div class="slider-wrapper theme-custom">
+    <div id="nivo-slider" class="nivoSlider">
+                    <a href="http://nop.uit.yorku.ca/">
+                <img src="http://nop.uit.yorku.ca/content/images/thumbs/0000149.jpeg" data-thumb="http://nop.uit.yorku.ca/content/images/thumbs/0000149.jpeg" data-transition="" alt="" title="" />
+            </a>
+
+                    <a href="http://nop.uit.yorku.ca/">
+                <img src="http://nop.uit.yorku.ca/content/images/thumbs/0000150.jpeg" data-thumb="http://nop.uit.yorku.ca/content/images/thumbs/0000150.jpeg" data-transition="" alt="" title="" />
+            </a>
+
+                    <a href="http://nop.uit.yorku.ca/">
+                <img src="http://nop.uit.yorku.ca/content/images/thumbs/0000151.jpeg" data-thumb="http://nop.uit.yorku.ca/content/images/thumbs/0000151.jpeg" data-transition="slideInLeft" alt="" title="" />
+            </a>
+
+        
+        
+    </div>
+</div>
+<script type="text/javascript">
+    $(window).load(function () {
+        $('#nivo-slider').nivoSlider();
+    });
+</script>
+
+            <div class="topic-block">
+        <div class="topic-block-body">
+            
+        </div>
+    </div>
+
+        
+            <div class="category-grid home-page-category-grid">
+        <div class="item-grid">
+                <div class="item-box">
+                    <div class="category-item">
+                        <h2 class="title">
+                            <a href="/duplicate-diploma" title="Show products in category Diploma - Mailing">
+                                Diploma - Mailing
+                            </a>
+                        </h2>
+                        <div class="picture">
+                            <a href="/duplicate-diploma" title="Show products in category Diploma - Mailing">
+                                <img alt="Picture for category Diploma - Mailing" src="http://nop.uit.yorku.ca/content/images/thumbs/0000163_diploma-mailing_307.jpeg" title="Show products in category Diploma - Mailing" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+        
+        
+    <div class="product-grid home-page-product-grid">
+        <div class="title">
+            <strong>Featured products</strong>
+        </div>
+        <div class="item-grid">
+                <div class="item-box">
+                    
+<div class="product-item" data-productid="85">
+    <div class="picture">
+        <a href="/transcript-payment-misc" title="Show details for Transcript Request Payment (non-student request)">
+            <img alt="Picture of Transcript Request Payment (non-student request)" src="http://nop.uit.yorku.ca/content/images/thumbs/default-image_300.png" title="Show details for Transcript Request Payment (non-student request)" />
+        </a>
+    </div>
+    <div class="details">
+        <h2 class="product-title">
+            <a href="/transcript-payment-misc">Transcript Request Payment (non-student request)</a>
+        </h2>
+                <div class="description">
+            Use is for miscellaneous payment of transcript requests outside student requests.
+        </div>
+        <div class="add-info">
+            
+            <div class="prices">
+                <span class="price actual-price">$50.00</span>
+                            </div>
+            
+            <div class="buttons">
+                
+                    <input type="button" value="Add to cart" class="button-2 product-box-add-to-cart-button" onclick="AjaxCart.addproducttocart_catalog('/addproducttocart/catalog/85/1/1');return false;" />
+                                            </div>
+            
+        </div>
+    </div>
+</div>
+
+                </div>
+                <div class="item-box">
+                    
+<div class="product-item" data-productid="86">
+    <div class="picture">
+        <a href="/transcript-3" title="Show details for HireRight - tr request">
+            <img alt="Picture of HireRight - tr request" src="http://nop.uit.yorku.ca/content/images/thumbs/default-image_300.png" title="Show details for HireRight - tr request" />
+        </a>
+    </div>
+    <div class="details">
+        <h2 class="product-title">
+            <a href="/transcript-3">HireRight - tr request</a>
+        </h2>
+                <div class="description">
+            
+        </div>
+        <div class="add-info">
+            
+            <div class="prices">
+                <span class="price actual-price">$15.00</span>
+                            </div>
+            
+            <div class="buttons">
+                
+                    <input type="button" value="Add to cart" class="button-2 product-box-add-to-cart-button" onclick="AjaxCart.addproducttocart_catalog('/addproducttocart/catalog/86/1/1');return false;" />
+                                            </div>
+            
+        </div>
+    </div>
+</div>
+
+                </div>
+        </div>
+    </div>
+
+        
+        
+        
+        
+        
+        
+        
+    </div>
+</div>
+
+    
+</div>
+
+        </div>
+        
+    </div>
+    <div class="footer">
+    <div class="footer-upper">
+        <div class="footer-block information">
+            <div class="title">
+                <strong>Information</strong>
+            </div>
+            <ul class="list">
+                                    <li><a href="/shipping-returns">Shipping</a></li>
+                    <li><a href="/privacy-notice">Privacy notice</a></li>
+                <li><a href="/contactus">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="footer-block customer-service">
+            <div class="title">
+                <strong>Customer service</strong>
+            </div>
+            <ul class="list">
+                <li><a href="/search">Search</a> </li>
+                                                                                                            </ul>
+        </div>
+        <div class="footer-block my-account">
+            <div class="title">
+                <strong>My account</strong>
+            </div>
+            <ul class="list">
+                <li><a href="/customer/info">My account</a></li>
+                <li><a href="/order/history">Orders</a></li>
+                <li><a href="/customer/addresses">Addresses</a></li>
+                    <li><a href="/cart">Shopping cart</a></li>
+                                    <li><a href="/wishlist">Wishlist</a></li>
+                                            </ul>
+        </div>
+        <div class="footer-block follow-us">
+            <div class="social">
+                <div class="title">
+                    <strong>Follow us</strong>
+                </div>
+                <ul class="networks">
+		<li class="facebook"><a href="http://www.facebook.com/yorkuniversity" target="_blank">Facebook</a></li>
+			<li class="twitter"><a href="http://twitter.com/yorkuniversity" target="_blank">Twitter</a></li>
+				<li class="youtube"><a href="http://www.youtube.com/user/YorkUniversity" target="_blank">YouTube</a></li>
+			<li class="google-plus"><a href="http://plus.google.com/+yorkuniversity" target="_blank">Google+</a></li>
+</ul>
+            </div>
+            
+        </div>
+    </div>
+    
+</div>
+
+<div class="footer-lower">
+	<div class="footer-info">
+		<span class="footer-disclaimer">Copyright &copy; 2023 York University Office of the University Registrar. All rights reserved.</span>
+	</div>
+		<div class="footer-powered-by">
+			<div>DIVISION OF STUDENTS - Partners in Student Success</div>
+
+			<div>
+				<ul class="menu fs-margin-t-0">
+					<li><a href="http://site.info.yorku.ca/site-index" title="Site Index page">Site Index</a></li>
+					<li><a href="http://site.info.yorku.ca/privacy-legal" title="Privacy and Legal page">Privacy &amp; Legal</a></li>
+					<li><a href="http://site.info.yorku.ca" title="Contact page">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	    <div class="theme-selector">
+        <select id="store-theme" name="store-theme" onchange="setLocation(this.value);"><option value="/common/setstoretheme?themename=defaultclean&amp;returnurl=%2f">Default clean</option>
+<option selected="selected" value="/common/setstoretheme?themename=yorku&amp;returnurl=%2f">York University</option>
+</select>
+    </div>
+
+</div>
+
+<!--<script type="text/javascript" src="http://yorkinternational.yorku.ca/wp-content/themes/York-Template-2014/js/functions.js"></script>-->
+<!--<script type="text/javascript" src="http://yorkinternational.yorku.ca/wp-content/themes/York-Template-2014/js/smartmenu.js"></script>-->
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.footer-block .title').click(function () {
+            var e = window, a = 'inner';
+            if (!('innerWidth' in window)) {
+                a = 'client';
+                e = document.documentElement || document.body;
+            }
+            var result = { width: e[a + 'Width'], height: e[a + 'Height'] };
+            if (result.width < 769) {
+                $(this).siblings('.list').slideToggle('slow');
+            }
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.block .title').click(function () {
+            var e = window, a = 'inner';
+            if (!('innerWidth' in window)) {
+                a = 'client';
+                e = document.documentElement || document.body;
+            }
+            var result = { width: e[a + 'Width'], height: e[a + 'Height'] };
+            if (result.width < 1001) {
+                $(this).siblings('.listbox').slideToggle('slow');
+            }
+        });
+    });
+</script>
+</div>
+
+
+		
+		
+	</body>
+</html>

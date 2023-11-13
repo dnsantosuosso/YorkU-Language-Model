@@ -1,0 +1,707 @@
+/* SFS */
+
+.views-element-container caption {
+font-size:1.6em;
+font-weight:bold;
+margin-bottom:5px;
+text-align:left;
+}
+
+caption {
+font-size:1.1em;
+font-weight:bold;
+border:1px solid #000;
+border-top:2px solid #000;
+border-bottom:none;
+background-color:#fff;
+text-transform:uppercase;
+}
+
+
+#block-views-block-sfs-fees-courses-undergraduate-select, #block-views-block-sfs-fees-courses-graduate-select, #block-views-block-sfs-fees-courses-undergraduate-faculty-program-sele, #block-views-block-sfs-fees-courses-graduate-faculty-program-select {
+width:49%;
+float:left;
+/*height:85px;
+overflow:auto;*/
+margin:10px 10px 30px 0;
+border-top:1px #000 solid;
+border-bottom:1px #000 solid;
+padding:0;
+}
+
+#block-views-block-sfs-fees-undergraduate-dropdown .views-row:first-child::before, #block-views-block-sfs-fees-graduate-dropdown .views-row:first-child::before {
+content: "Please select a Faculty/Program";
+}
+
+#block-views-block-sfs-course-program-fees-2019-2020-fw-tuition h2, #block-views-block-sfs-course-program-fees-2019-2020-fall-winter-cca h2, #block-views-block-sfs-course-program-fees-2019-2020-fall-winter-levy h2, #block-views-block-sfs-fees-courses-additional-charges h2 {
+color: #004a8d;
+font-size: 1.4em;
+font-weight:900;
+font-family: 'Lato', arial, sans-serif;
+}
+
+.views-field-FTEssential, .views-field-FTNonEssential, .views-field-PTEssential, .views-field-PTNonEssential {
+text-align:right;
+}
+
+[class^="views-field-TIMINGOFAWARD"], [class^="views-field-AWARDDEFINITION"], [class^="views-field-NUMBEROFAWARDS"], [class^="views-field-AWARDVALUE"]
+.views-field-TIMINGOFAWARD, .views-field-AWARDDEFINITION, .views-field-NUMBEROFAWARDS, .views-field-AWARDVALUE {
+display:inline-block;
+margin-right:0px;
+width:25%;
+}
+
+[class^="form-item-faculty-ed:first-child"], [class^="form-item-faculty-es:first-child"],
+.form-item-faculty-ed:first-child, .form-item-faculty-es:first-child, .form-item-faculty-gl:first-child, .form-item-faculty-gs:first-child, .form-item-faculty-hh:first-child, .form-item-faculty-le:first-child, .form-item-faculty-ap:first-child, .form-item-faculty-lw:first-child, .form-item-faculty-fa:first-child, .form-item-faculty-as:first-child, .form-item-faculty-fse:first-child, .form-item-faculty-sb:first-child {
+display:none;
+}
+
+[id^="edit-faculty-"][id$="--wrapper"], [id^="edit-degreestatus-"][id$="--wrapper"], [class^="form-item-"], #edit-faculty-none--wrapper, #edit-faculty-ed--wrapper, #edit-faculty-es--wrapper, #edit-faculty-gl--wrapper, #edit-faculty-gs--wrapper, #edit-faculty-hh--wrapper, #edit-faculty-le--wrapper, #edit-faculty-lw--wrapper, #edit-faculty-ap--wrapper, #edit-faculty-fa--wrapper, #edit-faculty-fse--wrapper, #edit-faculty-sb--wrapper, .form-item-faculty, #edit-degreestatus--wrapper, .form-item-degreestatus, .form-item-statusincanada, .form-item-awarddefinition, .form-item-timingofaward, .form-item-awardname, #edit-actions {
+display:inline-block;
+margin-right:0px;
+}
+
+[id^="edit-faculty-ed-"][id$="--wrapper"], #edit-faculty-none--wrapper, #edit-faculty-ed--wrapper, #edit-degreestatus--wrapper legend {
+font-weight:bold;
+}
+
+[id^="edit-degreestatus-"][id$="--wrapper"] .fieldset-legend {
+font-weight:bold;
+}
+
+#edit-degreestatus--wrapper, [id^="edit-degreestatus-"][id$="--wrapper"] {
+clear:left;
+}
+
+#edit-faculty-none--wrapper {
+display:none;
+}
+
+.form-item {
+margin:0 15px 5px 0;
+}
+
+.form-actions {
+width:auto;
+float:right;
+margin-top:15px;
+}
+
+#block-views-block-sfs-award-search-block-sfs-award-search {
+margin:10px 0px 30px 0;
+border-top:1px #000 solid;
+border-bottom:1px #000 solid;
+padding:20px 0;
+}
+
+
+#block-views-block-sfs-fees-courses-block-sfs-fees-courses-levy table,
+#block-views-block-sfs-fees-courses-block-sfs-fees-courses-cca table,
+#block-views-block-centrally-collected-ancillary-fees-sub-total table,
+#block-views-block-student-levy-fees-sub-total table,
+#block-views-block-supplementary-fees-total table {
+/* max-width:155px !important; */
+width:1180px !important;
+}
+
+
+#block-views-block-sfs-fees-courses-block-sfs-fees-courses-cca .views-field-FTEssential,
+#block-views-block-centrally-collected-ancillary-fees-sub-total .views-field-FTEssential,
+#block-views-block-sfs-fees-courses-block-sfs-fees-courses-levy .views-field-FTEssential,
+#block-views-block-student-levy-fees-sub-total .views-field-FTEssential,
+#block-views-block-supplementary-fees-total .views-field-FTEssential {
+/* max-width:170px !important; */
+width:150px !important;
+}
+
+#block-views-block-sfs-fees-courses-block-sfs-fees-courses-cca .views-field-FTNonEssential,
+#block-views-block-centrally-collected-ancillary-fees-sub-total .views-field-FTNonEssential,
+#block-views-block-sfs-fees-courses-block-sfs-fees-courses-levy .views-field-FTNonEssential,
+#block-views-block-student-levy-fees-sub-total .views-field-FTNonEssential,
+#block-views-block-supplementary-fees-total .views-field-FTNonEssential {
+/* min-width:135px !important; */
+/* max-width:170px !important; */
+width:150px !important;
+}
+
+#block-views-block-sfs-fees-courses-block-sfs-fees-courses-cca .views-field-PTEssential,
+#block-views-block-centrally-collected-ancillary-fees-sub-total .views-field-PTEssential,
+#block-views-block-sfs-fees-courses-block-sfs-fees-courses-levy .views-field-PTEssential,
+#block-views-block-student-levy-fees-sub-total .views-field-PTEssential,
+#block-views-block-supplementary-fees-total .views-field-PTEssential {
+/* min-width:135px !important; */
+/* max-width:170px !important; */
+width:150px !important;
+}
+
+#block-views-block-sfs-fees-courses-block-sfs-fees-courses-cca .views-field-PTNonEssential,
+#block-views-block-centrally-collected-ancillary-fees-sub-total .views-field-PTNonEssential,
+#block-views-block-sfs-fees-courses-block-sfs-fees-courses-levy .views-field-PTNonEssential,
+#block-views-block-student-levy-fees-sub-total .views-field-PTNonEssential,
+#block-views-block-supplementary-fees-total .views-field-PTNonEssential {
+/* min-width:135px !important; */
+/* max-width:170px !important; */
+width:150px !important;
+}
+
+#block-views-block-sfs-fees-courses-block-sfs-fees-courses-levy .views-field-FeeDataTypeDesc,
+#block-views-block-sfs-fees-courses-block-sfs-fees-courses-cca .views-field-FeeDataTypeDesc,
+#block-views-block-centrally-collected-ancillary-fees-sub-total .centrally-collected-ancillary-fees-sub-total,
+#block-views-block-student-levy-fees-sub-total .total-supplementary-fees {
+/* max-width:155px !important; */
+width:370px !important;
+}
+
+#block-views-block-supplementary-fees-total .total-supplementary-fees {
+width:370px !important;
+/* min-width:415px !important; */
+/* max-width:614px !important; */
+}
+
+.tuition-domestic-label, .tuition-domestic-field {
+display:inline-block;
+width:50%;
+border:1px solid #000;
+padding:6px 15px;
+}
+
+.tuition-domestic-label {
+text-align:left;
+border-right:none;
+}
+
+.tuition-domestic-field {
+border-left:none;
+}
+
+.tuition-domestic {
+border:1px solid #000;
+}
+
+#block-views-block-sfs-fees-courses-block-sfs-fees-courses-tuition {
+display:inline-block;
+/*float:left;*/
+width:100%;
+}
+
+#block-views-block-sfs-fees-courses-block-sfs-fees-courses-tuition .views-field-FTEssential, #block-views-block-sfs-fees-courses-block-sfs-fees-courses-tuition .views-field-PTEssential {
+/*min-width:80px;*/
+/*width:80px;*/
+}
+
+#block-views-block-sfs-fees-courses-block-sfs-fees-courses-tuition .views-field-FeeDataTypeDesc {
+min-width:170px;
+width:170px;
+}
+
+#block-views-block-supplementary-fees-total-tuition-domestic {
+display:inline-block;
+/* float:left; */
+width:100%;
+/*margin:-26px 0 0;*/
+}
+
+#block-views-block-sfs-fees-courses-block-sfs-fees-courses-tuition h2, #block-views-block-supplementary-fees-total-tuition-domestic h2, #block-views-block-tuition-and-supplementary-fees-total-domestic h2 {
+color: #004a8d;
+font-size: 1.4em;
+font-weight:900;
+font-family: 'Lato', arial, sans-serif;
+}
+
+#block-views-block-supplementary-fees-total-tuition-domestic table {
+margin:0px 0 0;
+}
+
+#block-views-block-supplementary-fees-total-tuition-international {
+display:inline-block;
+/* float:left; */
+width:100%;
+}
+
+#block-views-block-tuition-and-supplementary-fees-total-domestic {
+/*display:inline-block;*/
+float:left;
+/* width:auto; */
+width:100%;
+/* margin: -102px 0 0; */
+}
+
+/*
+@-moz-document url-prefix() {
+#block-views-block-tuition-and-supplementary-fees-total-domestic { 
+margin: -104px 0 0;
+}
+}
+*/
+
+#block-views-block-tuition-and-supplementary-fees-total-domestic table {
+margin:0px 0 0;
+}
+
+#block-views-block-tuition-and-supplementary-fees-total-international {
+/*display:inline-block;*/
+float:left;
+/* width:auto; */
+width:100%;
+/*margin: -102px 0 0;*/
+}
+
+#block-views-block-tuition-and-supplementary-fees-total-domestic .views-field-nothing, #block-views-block-tuition-and-supplementary-fees-total-domestic .views-field-nothing-1, #block-views-block-tuition-and-supplementary-fees-total-international .views-field-nothing, #block-views-block-tuition-and-supplementary-fees-total-international .views-field-nothing-1 {
+min-width:80px;
+width:80px;
+text-align:right;
+}
+
+#block-views-block-sfs-fees-courses-block-sfs-fees-courses-tuition {
+margin:0px 0 0;
+}
+
+#block-views-block-sfs-fees-courses-basis-of-fee, #block-views-block-sfs-fees-courses-basis-of-fee-supplementary, #block-views-block-sfs-courses-basis-of-fee-total {
+position:relative;
+top:78px;
+text-transform:capitalize;
+color:#fff;
+font-weight:bold;
+margin-left:8px;
+}
+
+#block-views-block-supplementary-fees-total-tuition-international td, #block-views-block-tuition-and-supplementary-fees-total-international td {
+background-color:#fff;
+}
+
+.views-field-TuitionNote {
+margin-bottom:30px;
+}
+
+#block-views-block-centrally-collected-ancillary-fees-sub-total, #block-views-block-student-levy-fees-sub-total, #block-views-block-supplementary-fees-total {
+border-top:1px solid #000;
+padding-right:10px;
+}
+
+#undergraduateselect-form, #graduateselect-form {
+max-width:49%;
+float:left;
+margin:15px 10px 30px 0;
+border-top:1px #000 solid;
+border-bottom:1px #000 solid;
+padding:15px 0px 20px 0;
+}
+
+#undergraduateselect-form #edit-actions, #graduateselect-form #edit-actions--2 {
+float:right;
+margin:-60px 15px 0 0;
+font-size:.75em;
+}
+
+
+table tr td, table th {
+padding:6px 12px 6px 6px !important;
+}
+
+table {
+margin-bottom:20px;
+overflow-x: auto !important;
+}
+
+
+#sfs-fees {
+margin:-20px 0 10px;
+}
+
+#sfs-fees #entry-date {
+padding:10px 0 20px;
+}
+
+#sfs-fees #totals {
+width:100%;
+}
+
+#sfs-fees th {
+/* min-width:100% !important; */
+/* white-space:nowrap; */
+}
+
+#sfs-fees th.border-left {
+border-left:1px #fff solid;
+}
+
+#sfs-fees th.border-right {
+border-right:1px #fff solid;
+}
+
+#sfs-fees th.text-right, #sfs-fees td.text-right {
+text-align:right;
+}
+
+#sfs-fees th.supplementary-fees-totals {
+/* min-width:70%; */
+/* width:70%; */
+text-align:center;
+}
+
+#sfs-fees .text-center {
+text-align:center;
+}
+
+#sfs-fees .no-wrap {
+white-space:nowrap;
+}
+
+#sfs-fees .fee {
+text-align:right;
+}
+
+#sfs-fees #notes-sfs-fees-courses-form {
+padding:10px 0 0px;
+}
+
+#sfs-fees tfoot tr, .cca-tfoot {
+border-top:2px #000 solid;
+}
+
+#sfs-fees tfoot tr td, .cca-tfoot td {
+font-weight:bold;
+}
+
+#sfs-fees .sub-total-text {
+text-transform:uppercase;
+font-weight:bold;
+font-size:1.4em;
+padding-right:10px;
+}
+
+#sfs-fees #total-supplementary-fees .sub-total-text {
+font-style:italic;
+letter-spacing:0.08em;
+font-weight:bolder;
+}
+
+#sfs-fees-courses-keele-campus {
+margin:30px 0 20px;
+}
+
+#sfs-fees #additional-charges {
+margin:30px 0 20px;
+}
+
+#sfs-fees #additional-charges #hst-note {
+margin:0px 0 30px;
+}
+
+
+.ancillary-and-student-levy-fees-international {
+width:120px;
+background-color:#fff;
+}
+
+.ancillary-and-student-levy-fees-international-fte, .ancillary-and-student-levy-fees-international-ftn, .ancillary-and-student-levy-fees-international-pte, .ancillary-and-student-levy-fees-international-ptn {
+background-color:#fff;
+}
+
+.ancillary-and-student-levy-fees-international-fte {
+padding-right:33px !important;
+}
+
+.ancillary-and-student-levy-fees-international-ftn {
+padding-right:9px !important;
+}
+
+.ancillary-and-student-levy-fees-international-pte {
+padding-right:37px !important;
+}
+
+
+#sfs-fees-dropdowns-accordions {
+padding:30px 0 0;
+}
+
+.sfs-fees-dropdowns {
+float:left;
+width:100%;
+border-top:1px solid #000;
+border-bottom:1px solid #000;
+margin:20px 0 30px;
+padding:20px 0;
+}
+
+.select-dropdown {
+float:left;
+width:49%;
+margin-right:10px;
+}
+
+
+#sfs-fees-2020-summer, #sfs-fees-2020-2021-fall-winter {
+float:left;
+width:100%;
+margin:20px 0 10px !important;
+}
+
+
+.button {
+float:right;
+width:auto;
+background-color:#e31837;
+padding:5px 10px;
+text-align:center;
+color:#fff !important;
+font-size:0.9em;
+margin:0 0 0 10px;
+}
+
+.button-center button a, .button-center button a:visited {
+color:#fff !important;
+}
+
+.button-center {
+text-align:center;
+}
+
+.edit .form-item label {
+display:none;
+}
+
+.edit .show-labels .form-item label {
+display:block;
+}
+
+.edit .form-item {
+margin: 0;
+text-alight:right;
+}
+
+.fee .edit  {
+width:80px;
+float:right;
+}
+
+.fee .edit .form-item input  {
+width:100%;
+text-align:right;
+float:right;
+}
+
+
+/* SFS AWARDS  */
+
+#awards, 
+#awards-introduction, 
+#awards-search, 
+#awards-result, 
+#awards-detail, 
+#awardfaculty-search, 
+#awards-post-amble, 
+#award-details, 
+#award-description, 
+#application-process,
+#awardfaculty-search-firefox {
+float:left;
+width:100%;
+margin:0 0 20px 0;
+}
+
+#awards-search {
+border-top:1px solid #000;
+border-bottom:1px solid #000;
+margin:20px 0 20px 0;
+padding:20px 0 20px 0;
+}
+
+#award-post-amble {
+border-top:1px solid #000;
+margin:20px 0 0;
+padding:20px 0 0;
+}
+
+#awards-search-button {
+border:1px solid #000;
+margin:14px 0 15px 0;
+padding:5px 8px;
+background-color:#e31837;
+color:#fff;
+font-size:1.2em;
+cursor:pointer;
+float:right;
+width:auto;
+}
+
+#awards-search-button:hover {
+background-color:#9a0100;
+}
+
+#awardfaculty-search .form-item {
+float:left;
+width:100%;
+margin:0 30px 0 0;
+}
+
+#awardfaculty-search #edit-faculties-checkboxes, #awardfaculty-search-firefox #edit-faculties-checkboxes {
+columns:3 !important;
+}
+
+#awardfaculty-search #edit-faculties-checkboxes .form-item, #awardfaculty-search-firefox #edit-faculties-checkboxes .form-item {
+width:340px;
+}
+
+#awardfaculty-search .fieldset-legend, #awardfaculty-search-firefox .fieldset-legend {
+display:none;
+}
+
+.award-search, .form-item-level-search-ug, .form-item-level-search-gr, .form-item-level-search-show-all, .form-item-level-search-none {
+float:left;
+width:auto;
+margin:0 20px 0 0 !important;
+}
+
+.form-item-level-search-ug, .form-item-level-search-show-all {
+margin:0 !important;
+}
+
+#awardlevel-search legend {
+font-weight:bold;
+font-size:1.0em;
+margin:0px 0;
+}
+
+#awardlevel-search {
+width:215px;
+}
+
+#edit-awardname-search {
+width:385px;
+}
+
+#awardname-search {
+margin:0 0px 0 0 !important;
+}
+
+#award-details .form-item {
+width:auto;
+float:left;
+margin:0 20px 0 0 !important;
+}
+
+#award-details #edit-timingofaward {
+width:220px;
+}
+
+#award-details #edit-awarddefinition {
+width:130px;
+}
+
+#award-details #edit-awardvalue {
+width:130px;
+}
+
+#award-details #edit-numberofawards {
+width:130px;
+}
+
+#award-details #edit-statusincanada {
+width:400px;
+}
+
+.form-item .form-item-statusincanada, #award-details .form-item:last-child {
+margin:0 0 0 0 !important;
+}
+
+.description-process-heading {
+width:100%;
+font-weight:bold;
+}
+
+
+.col {
+width:49% !important;
+}
+
+
+@media (max-width:1080px){
+#undergraduateselect-form, #graduateselect-form {
+max-width:100%;
+}
+}
+
+
+@media (max-width:999px){
+
+#block-views-block-sfs-fees-courses-block-sfs-fees-courses-levy table,
+#block-views-block-sfs-fees-courses-block-sfs-fees-courses-cca table,
+#block-views-block-centrally-collected-ancillary-fees-sub-total table,
+#block-views-block-student-levy-fees-sub-total table,
+#block-views-block-supplementary-fees-total table {
+width:980px !important;
+}
+}
+
+
+@media (max-width:799px){
+
+table {
+margin-bottom:20px;
+overflow-x: auto !important;
+}
+
+#awardfaculty-search {
+column-count:1;
+}
+
+.col {
+width:100% !important;
+}
+
+}
+
+
+@media (max-width: 575.98px) {
+	table, .table-responsive-sm {
+		display:block;
+		width:100%;
+		overflow-x:auto;
+		-webkit-overflow-scrolling:touch;
+	}
+	
+	.table-responsive-sm > .table-bordered {
+		border:0;
+	}
+
+#awardfaculty-search #edit-faculties-checkboxes, #awardfaculty-search-firefox #edit-faculties-checkboxes {
+columns:1 !important;
+}
+
+}
+
+
+/* SCROLL TO TOP ARROW */
+
+#scroll {
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background-color:#e31837;
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px;
+	z-index:1000;
+}
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff;
+}
+#scroll:hover {
+    background-color:#9a0100;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}

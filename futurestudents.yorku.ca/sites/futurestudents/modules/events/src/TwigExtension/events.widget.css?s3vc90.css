@@ -1,0 +1,54 @@
+.fs-events-widget{
+	display:flex;
+	overflow-x:auto;
+	overflow-y:hidden;
+}
+
+	.fs-events-widget .fs-event-widget-event{
+		padding:16px;
+		min-width:240px;
+		width:240px;
+		border:8px transparent solid;
+		max-height:400px;
+	}
+	
+			.fs-events-widget .fs-event-widget-event:hover{
+				border:8px #e31837 solid;
+				background-color:#666;
+				color:#FFF;
+				max-height:none;
+			}	
+			
+			.fs-events-widget .fs-event-widget-event:hover a{
+				color:#FFF;
+			}
+
+		.fs-events-widget .fs-event-widget-event > *{
+			display:block;
+		}
+		
+		.fs-events-widget .fs-event-widget-event .faculty{
+			font-size:0.9rem;
+			line-height:1.1;
+			height:40px;
+			margin-bottom:8px;
+			position:relative;
+		}
+		
+			.fs-events-widget .fs-event-widget-event .faculty span{
+				bottom:0;
+				position:absolute;
+			}
+		
+		.fs-events-widget .fs-event-widget-event .title{
+			font-size:1.25rem;
+		}
+	
+		.fs-events-widget .fs-event-widget-event .datetime{
+			margin:16px 0;
+		}
+		
+			.fs-events-widget .fs-event-widget-event .datetime span{
+				font-weight:bold;
+				display:block;
+			}

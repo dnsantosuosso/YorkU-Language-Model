@@ -1,0 +1,12 @@
+html, body{
+	overflow-x:hidden;
+}
+
+.container.fees{
+	padding-left:0;
+	padding-right:0;
+}
+
+.fees-session .two-columns{
+	margin-top:24px;
+}

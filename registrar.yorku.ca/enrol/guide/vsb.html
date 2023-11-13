@@ -1,0 +1,910 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		
+		<meta charset="utf-8" />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="canonical" href="https://registrar.yorku.ca/enrol/guide/vsb" />
+<link rel="shortlink" href="https://registrar.yorku.ca/node/511" />
+<link rel="revision" href="https://registrar.yorku.ca/enrol/guide/vsb" />
+
+		<title>Visual Schedule Builder | Registrar&#039;s Office | York University</title>
+
+		<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/ajax-progress.module.css?s3k1a0" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/align.module.css?s3k1a0" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/autocomplete-loading.module.css?s3k1a0" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/fieldgroup.module.css?s3k1a0" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/container-inline.module.css?s3k1a0" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/clearfix.module.css?s3k1a0" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/details.module.css?s3k1a0" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/hidden.module.css?s3k1a0" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/item-list.module.css?s3k1a0" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/js.module.css?s3k1a0" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/nowrap.module.css?s3k1a0" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/position-container.module.css?s3k1a0" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/progress.module.css?s3k1a0" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/reset-appearance.module.css?s3k1a0" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/resize.module.css?s3k1a0" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/sticky-header.module.css?s3k1a0" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/system-status-counter.css?s3k1a0" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/system-status-report-counters.css?s3k1a0" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/system-status-report-general-info.css?s3k1a0" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/tabledrag.module.css?s3k1a0" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/tablesort.module.css?s3k1a0" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/tree-child.module.css?s3k1a0" />
+<link rel="stylesheet" media="all" href="/sites/all/modules/fields/templates/field--psa-field.css?s3k1a0" />
+<link rel="stylesheet" media="all" href="/themes/custom/york/css/styles.css?s3k1a0" />
+<link rel="stylesheet" media="all" href="/themes/custom/york/css/styles.2020.css?s3k1a0" />
+<link rel="stylesheet" media="all" href="/themes/custom/york/css/styles.2020wp.css?s3k1a0" />
+<link rel="stylesheet" media="all" href="/themes/custom/york/css/york_styles.css?s3k1a0" />
+<link rel="stylesheet" media="all" href="/themes/custom/york/css/york_styles.2020.css?s3k1a0" />
+<link rel="stylesheet" media="all" href="/themes/custom/york/css/york_styles.registrar.css?s3k1a0" />
+
+		<link rel="stylesheet" id="font-awesome-official-css" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" type="text/css" media="all" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">		
+		<link rel="stylesheet" id="font-awesome-official-v4shim-css" href="https://use.fontawesome.com/releases/v5.13.1/css/v4-shims.css" type="text/css" media="all" integrity="sha384-KkCLkpBvvcSnFQn3PbNkSgmwKGj7ln8pQe/6BOAE0i+/fU9QYEx5CtwduPRyTNob" crossorigin="anonymous">
+		<style id="font-awesome-official-v4shim-inline-css" type="text/css">
+			@font-face {
+			font-family: "FontAwesome";
+			src: url("https://use.fontawesome.com/releases/v5.13.1/webfonts/fa-brands-400.eot"),
+					url("https://use.fontawesome.com/releases/v5.13.1/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"),
+					url("https://use.fontawesome.com/releases/v5.13.1/webfonts/fa-brands-400.woff2") format("woff2"),
+					url("https://use.fontawesome.com/releases/v5.13.1/webfonts/fa-brands-400.woff") format("woff"),
+					url("https://use.fontawesome.com/releases/v5.13.1/webfonts/fa-brands-400.ttf") format("truetype"),
+					url("https://use.fontawesome.com/releases/v5.13.1/webfonts/fa-brands-400.svg#fontawesome") format("svg");
+			}
+			
+			@font-face {
+			font-family: "FontAwesome";
+			src: url("https://use.fontawesome.com/releases/v5.13.1/webfonts/fa-solid-900.eot"),
+					url("https://use.fontawesome.com/releases/v5.13.1/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"),
+					url("https://use.fontawesome.com/releases/v5.13.1/webfonts/fa-solid-900.woff2") format("woff2"),
+					url("https://use.fontawesome.com/releases/v5.13.1/webfonts/fa-solid-900.woff") format("woff"),
+					url("https://use.fontawesome.com/releases/v5.13.1/webfonts/fa-solid-900.ttf") format("truetype"),
+					url("https://use.fontawesome.com/releases/v5.13.1/webfonts/fa-solid-900.svg#fontawesome") format("svg");
+			}
+			
+			@font-face {
+			font-family: "FontAwesome";
+			src: url("https://use.fontawesome.com/releases/v5.13.1/webfonts/fa-regular-400.eot"),
+					url("https://use.fontawesome.com/releases/v5.13.1/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"),
+					url("https://use.fontawesome.com/releases/v5.13.1/webfonts/fa-regular-400.woff2") format("woff2"),
+					url("https://use.fontawesome.com/releases/v5.13.1/webfonts/fa-regular-400.woff") format("woff"),
+					url("https://use.fontawesome.com/releases/v5.13.1/webfonts/fa-regular-400.ttf") format("truetype"),
+					url("https://use.fontawesome.com/releases/v5.13.1/webfonts/fa-regular-400.svg#fontawesome") format("svg");
+			unicode-range: U+F004-F005,U+F007,U+F017,U+F022,U+F024,U+F02E,U+F03E,U+F044,U+F057-F059,U+F06E,U+F070,U+F075,U+F07B-F07C,U+F080,U+F086,U+F089,U+F094,U+F09D,U+F0A0,U+F0A4-F0A7,U+F0C5,U+F0C7-F0C8,U+F0E0,U+F0EB,U+F0F3,U+F0F8,U+F0FE,U+F111,U+F118-F11A,U+F11C,U+F133,U+F144,U+F146,U+F14A,U+F14D-F14E,U+F150-F152,U+F15B-F15C,U+F164-F165,U+F185-F186,U+F191-F192,U+F1AD,U+F1C1-F1C9,U+F1CD,U+F1D8,U+F1E3,U+F1EA,U+F1F6,U+F1F9,U+F20A,U+F247-F249,U+F24D,U+F254-F25B,U+F25D,U+F267,U+F271-F274,U+F279,U+F28B,U+F28D,U+F2B5-F2B6,U+F2B9,U+F2BB,U+F2BD,U+F2C1-F2C2,U+F2D0,U+F2D2,U+F2DC,U+F2ED,U+F328,U+F358-F35B,U+F3A5,U+F3D1,U+F410,U+F4AD;
+			}
+		</style>
+		
+		<script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/511","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"user":{"uid":0,"permissionsHash":"bfd731245e29f2b73b40f40582b5280738239af505ffac473c93e756a04bc575"}}</script>
+
+<!--[if lte IE 8]>
+<script src="/core/assets/vendor/html5shiv/html5shiv.min.js?v=3.7.3"></script>
+<![endif]-->
+<script src="/core/assets/vendor/jquery/jquery.min.js?v=3.5.1"></script>
+<script src="/core/assets/vendor/jquery-once/jquery.once.min.js?v=2.2.3"></script>
+<script src="/core/misc/drupalSettingsLoader.js?v=8.9.19"></script>
+<script src="/core/misc/drupal.js?v=8.9.19"></script>
+<script src="/core/misc/drupal.init.js?v=8.9.19"></script>
+<script src="/themes/custom/york/js/york.js?s3k1a0"></script>
+<script src="/themes/custom/york/js/york.default.js?s3k1a0"></script>
+<script src="/themes/custom/york/js/york2020/bootstrap.min.js?s3k1a0"></script>
+<script src="/themes/custom/york/js/york2020/dropdown.js?s3k1a0"></script>
+<script src="/themes/custom/york/js/york2020/fontawesome.js?s3k1a0"></script>
+<script src="/themes/custom/york/js/york2020/nav.js?s3k1a0"></script>
+<script src="/themes/custom/york/js/york2020/popper.min.js?s3k1a0"></script>
+<script src="/themes/custom/york/js/york2020/youtube.js?s3k1a0"></script>
+
+		
+				
+				
+				
+		
+		<link rel="preload" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" as="style">
+		<link rel="preload" href="/templates/node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js" as="script">
+		
+<!-- Google Tag Manager --> <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-WB2S8R');</script> <!-- End Google Tag Manager -->
+		
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	</head>
+	
+	<body>
+	
+<!-- Google Tag Manager (noscript) --> <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WB2S8R" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> <!-- End Google Tag Manager (noscript) -->
+
+	
+	
+				<a href="#main-content" class="visually-hidden focusable">
+		Skip to main content
+		</a>
+		
+		
+		  <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+
+<div class="modal fade mt-0 pr-0" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+  <div class="modal-dialog search-modal m-0" role="document">
+    <div class="modal-content rounded-0">
+    
+      <div class="modal-header border-0">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      
+      <div class="modal-body container">
+      
+        <form id="main-search" class="main-search" method="get" action="https://search2.info.yorku.ca">
+          <div class="d-flex border rounded">
+            <fieldset class="w-100">
+              <legend class="sr-only">Global Search</legend>
+              <label for="yeb13searchfield" class="sr-only">search box</label>
+              <input class="header-search border-0 form-control bg-white" type="search" name="q" maxlength="255" id="yeb13searchfield" placeholder="What are you looking for?"  />
+              <input type="hidden" name="client" value="External" />
+              <input type="hidden" name="proxystylesheet" value="External" />
+              <input type="hidden" name="site" value="default_collection" />
+              <input type="hidden" name="output" value="xml_no_dtd" />
+            </fieldset>
+            <button type="submit" class="search-button btn btn-link ml-auto"><i class="fa fa-search text-dark" aria-hidden="true"></i><span class="sr-only">search button</span></button>
+          </div>
+        </form>  
+         
+      </div>
+      <div class="modal-footer border-0"></div>
+    </div>
+      
+    </div>
+  </div>
+</div>  
+
+<header id="header" class="bg-white">
+  <div id="branding" class="container">
+    <div class="d-sm-flex d-block justify-content-between py-3">
+      <div id="site-title" class="d-inline-block">
+        <a href="https://www.yorku.ca"><img src="/themes/custom/york/images/york2020/york-logo.svg" alt="York University" class="yu-logo"></a>
+      </div>
+      <div class="d-flex align-items-center">
+        <form id="popular-links">
+  <label for="popularlinks" class="sr-only">Popular Links</label>
+  <select id="popularlinks" onchange="location = this.value;" class="form-control rounded-0">
+    <option>Popular Links</option>
+    <option value="https://futurestudents.yorku.ca/program-search/">Programs of Study</option>
+    <option value="https://eclass.yorku.ca/">eClass</option>
+    <option value="https://google.info.yorku.ca/">MyMail</option>
+    <option value="https://sfs.yorku.ca/">Financial Services</option>
+    <option value="https://counselling.students.yorku.ca/">Mental Health & Wellness</option>
+    <option value="https://www.library.yorku.ca/web/">Libraries</option>
+    <option value="https://atlas.yorku.ca">Directory</option>
+  </select>
+  <input type="submit" onsubmit="location = popularlinks.value;" class="sr-only" value="Submit"></input>
+</form>
+        <a class="btn btn-link ml-1" data-toggle="modal" data-target="#searchModal"><i class="fas fa-search" aria-hidden="true"></i></a>      
+      </div>
+    </div>
+  </div>      
+</header>
+<div class="sticky-top">
+		<div class="name-and-slogan" id="name-and-slogan">
+		<div class="region region-redbar">
+		
+			<a href="/" title="Registrar&#039;s Office" class="site-link container" rel="home" style="display:block;">
+				<h1 class="site-name" id="site-name">Registrar's Office</h1>
+			</a>
+		</div>
+	</div>
+	
+	
+	
+		<div id="navigation">
+		<div class="menu-toggle">Menu</div>
+					<div class="container">
+				  <div>
+    <nav role="navigation" aria-labelledby="block-registrar-menu" id="block-registrar">
+      
+  <h2 id="block-registrar-menu">_Registrar</h2>
+  
+
+        
+		
+		<div>
+		<div class="region-navigation">
+						<ul class="menu">
+								<li class="menu__item  ">
+					<a href="/accal" class="menu__link">Academic<br />Calendars</a>
+		
+									</li>
+								<li class="menu__item  expanded is-expanded">
+					<a href="/program" class="menu__link">Academic<br />Program</a>
+		
+												
+						<ul class="menu">
+								<li class="menu__item  ">
+					<a href="http://futurestudents.yorku.ca/degrees/certificate" class="menu__link">Apply to a Certificate Program</a>
+		
+									</li>
+								<li class="menu__item  ">
+					<a href="/program/glossary" class="menu__link">Glossary of Terms</a>
+		
+									</li>
+								<li class="menu__item  ">
+					<a href="http://myacademicrecord.students.yorku.ca/program-change" class="menu__link">Program Change</a>
+		
+									</li>
+								<li class="menu__item  ">
+					<a href="/program/letters" class="menu__link">Request a Letter</a>
+		
+									</li>
+								<li class="menu__item  ">
+					<a href="/program/transfer-credit" class="menu__link">Transfer Credit Statement</a>
+		
+									</li>
+								
+							</ul>
+			
+									</li>
+								<li class="menu__item is-active-trail active-trail expanded is-expanded">
+					<a href="/enrol" class="menu__link">Enrol in<br />Courses</a>
+		
+												
+						<ul class="menu">
+								<li class="menu__item  ">
+					<a href="/enrol/dates" class="menu__link">Important Dates</a>
+		
+									</li>
+								<li class="menu__item  ">
+					<a href="/enrol/lop" class="menu__link">Letter of Permission</a>
+		
+									</li>
+								<li class="menu__item  ">
+					<a href="/enrol/reactivate" class="menu__link">Reactivation</a>
+		
+									</li>
+								<li class="menu__item  ">
+					<a href="/enrol/nondegree" class="menu__link">Take courses after graduation</a>
+		
+									</li>
+								<li class="menu__item  ">
+					<a href="/enrol/guide" class="menu__link">Undergraduate Enrolment and Registration Guide</a>
+		
+									</li>
+								<li class="menu__item  ">
+					<a href="/enrol/visiting" class="menu__link">Visiting Students</a>
+		
+									</li>
+								<li class="menu__item is-active-trail active-trail ">
+					<a href="/enrol/guide/vsb" class="menu__link">Visual Schedule Builder Guide</a>
+		
+									</li>
+								
+							</ul>
+			
+									</li>
+								<li class="menu__item  expanded is-expanded">
+					<a href="/exams" class="menu__link">Exams<br />and Tests</a>
+		
+												
+						<ul class="menu">
+								<li class="menu__item  ">
+					<a href="http://altexams.students.yorku.ca" class="menu__link">Alternate Exam/Test Scheduling</a>
+		
+									</li>
+								<li class="menu__item  ">
+					<a href="http://myacademicrecord.students.yorku.ca/deferred-standing" class="menu__link">Deferred Standing</a>
+		
+									</li>
+								<li class="menu__item  ">
+					<a href="https://w2prod.sis.yorku.ca/Apps/WebObjects/cdm.woa/wa/DirectAction/ExamConflicts" class="menu__link">Exam conflicts</a>
+		
+									</li>
+								<li class="menu__item  ">
+					<a href="/exams/tipsheet" class="menu__link">Examination Tip Sheet</a>
+		
+									</li>
+								<li class="menu__item  ">
+					<a href="/exams/sobeys" class="menu__link">Exams at Sobeys Stadium</a>
+		
+									</li>
+								<li class="menu__item  ">
+					<a href="https://w2prod.sis.yorku.ca/Apps/WebObjects/cdm.woa/wa/DirectAction/cde" class="menu__link">Plot my exam schedule</a>
+		
+									</li>
+								<li class="menu__item  ">
+					<a href="https://w2prod.sis.yorku.ca/Apps/WebObjects/cdm.woa/wa/regobs" class="menu__link">Religious observance policy</a>
+		
+									</li>
+								<li class="menu__item  ">
+					<a href="https://w2prod.sis.yorku.ca/Apps/WebObjects/cdm.woa/wa/curexam" class="menu__link">Search current exam schedule</a>
+		
+									</li>
+								
+							</ul>
+			
+									</li>
+								<li class="menu__item  expanded is-expanded">
+					<a href="/grades" class="menu__link">Grades and<br />Transcripts</a>
+		
+												
+						<ul class="menu">
+								<li class="menu__item  ">
+					<a href="http://myacademicrecord.students.yorku.ca/grade-reappraisal" class="menu__link">Grade Reappraisal Policy</a>
+		
+									</li>
+								<li class="menu__item  ">
+					<a href="/grades/legends" class="menu__link">Grade Report Legends</a>
+		
+									</li>
+								<li class="menu__item  ">
+					<a href="/transcripts" class="menu__link">Order Transcripts Online</a>
+		
+									</li>
+								
+							</ul>
+			
+									</li>
+								<li class="menu__item  expanded is-expanded">
+					<a href="/graduation" class="menu__link">Graduation<br /><br /></a>
+		
+												
+						<ul class="menu">
+								<li class="menu__item  ">
+					<a href="/graduation/apply" class="menu__link">Apply to graduate</a>
+		
+									</li>
+								<li class="menu__item  ">
+					<a href="/graduation/eligibility" class="menu__link">Graduation and Eligibility Status</a>
+		
+									</li>
+								<li class="menu__item  ">
+					<a href="https://currentstudents.yorku.ca/student-personal-information" class="menu__link">Update Personal Information</a>
+		
+									</li>
+								<li class="menu__item  ">
+					<a href="/graduation/money" class="menu__link">Money Matters</a>
+		
+									</li>
+								<li class="menu__item  ">
+					<a href="/graduation/academic-honours" class="menu__link">Academic Honours</a>
+		
+									</li>
+								<li class="menu__item  ">
+					<a href="/graduation/diplomas" class="menu__link">Diplomas</a>
+		
+									</li>
+								<li class="menu__item  ">
+					<a href="http://yorku.ca/convocation" class="menu__link">Convocation at York</a>
+		
+									</li>
+								
+							</ul>
+			
+									</li>
+								<li class="menu__item  expanded is-expanded">
+					<a href="http://myacademicrecord.students.yorku.ca" class="menu__link">Manage My<br />Academic Record</a>
+		
+												
+						<ul class="menu">
+								<li class="menu__item  ">
+					<a href="http://myacademicrecord.students.yorku.ca/academic-petitions" class="menu__link">Academic Petitions</a>
+		
+									</li>
+								<li class="menu__item  ">
+					<a href="http://myacademicrecord.students.yorku.ca/course-relief" class="menu__link">Course Relief</a>
+		
+									</li>
+								<li class="menu__item  ">
+					<a href="http://myacademicrecord.students.yorku.ca/course-repeat" class="menu__link">Course Repeat</a>
+		
+									</li>
+								<li class="menu__item  ">
+					<a href="http://myacademicrecord.students.yorku.ca/course-withdrawal" class="menu__link">Course Withdrawal</a>
+		
+									</li>
+								<li class="menu__item  ">
+					<a href="http://myacademicrecord.students.yorku.ca/deferred-standing" class="menu__link">Deferred Standing</a>
+		
+									</li>
+								<li class="menu__item  ">
+					<a href="http://myacademicrecord.students.yorku.ca/degree-progress-report" class="menu__link">Degree Progress Report</a>
+		
+									</li>
+								<li class="menu__item  ">
+					<a href="http://myacademicrecord.students.yorku.ca/grade-reappraisal-policy" class="menu__link">Grade Reappraisal Policy</a>
+		
+									</li>
+								<li class="menu__item  ">
+					<a href="http://myacademicrecord.students.yorku.ca/pass-fail-option" class="menu__link">Pass/Fail Option</a>
+		
+									</li>
+								<li class="menu__item  ">
+					<a href="http://myacademicrecord.students.yorku.ca/program-change" class="menu__link">Program Change</a>
+		
+									</li>
+								
+							</ul>
+			
+									</li>
+								<li class="menu__item  expanded is-expanded">
+					<a href="/petitions" class="menu__link">Petitions<br /><br /></a>
+		
+												
+						<ul class="menu">
+								<li class="menu__item  ">
+					<a href="http://myacademicrecord.students.yorku.ca/academic-petitions" class="menu__link">Academic Petitions</a>
+		
+									</li>
+								<li class="menu__item  ">
+					<a href="http://sfs.yorku.ca/refunds/petitions" class="menu__link">Financial Petitions</a>
+		
+									</li>
+								
+							</ul>
+			
+									</li>
+								<li class="menu__item  ">
+					<a href="/privacy" class="menu__link">Privacy and<br />Access to Records</a>
+		
+									</li>
+								
+														<div class="spacer"></div>
+										
+											
+					
+										<li class="menu__item">
+						<a href="https://registrar.yorku.ca/registrarial-services" class="menu__link" title="Contact">CONTACT</a>
+					</li>	
+							
+							</ul>
+					</div>
+	</div>
+	
+
+
+  </nav>
+
+  </div>
+
+			</div>		
+			</div>
+	</div>
+
+<div id="page-wrapper">
+	<div id="page" class="container">
+		  <div>
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+
+
+
+		
+		<div id="main">
+			<div id="content" class="column" role="main">
+				<a id="main-content"></a>		
+				
+								
+				
+				  <div>
+    <div id="block-pagetitle">
+  
+    
+      
+  <h1><span>Visual Schedule Builder</span>
+</h1>
+
+
+  </div>
+<div id="block-mainpagecontent">
+  
+    
+      <article role="article">
+
+  
+    
+
+  
+  <div>
+    
+<div class="ds-psa-wrapper">
+	
+	 	<div role="alert" aria-atomic="true" class="ds-psa warning">
+		<strong>Please note: Some courses will appear as (unscheduled) in the Visual Schedule Builder (VSB). </strong>Courses with no assigned day/time/duration are <a href="https://w2prod.sis.yorku.ca/Apps/WebObjects/cdm.woa/wa/DirectAction/FAQ#15" title="definition of asynchronous">asynchronous</a> and will appear blank or have zeroes in the Day / Time / Duration columns. As a result, the unscheduled course meetings will not appear in the schedule view on VSB. </p>
+<br/>
+<p>Students should always confirm course meeting dates, times, and delivery modes via the <a href="https://w2prod.sis.yorku.ca/Apps/WebObjects/cdm.woa/wa/DirectAction/cds" title="Course Timetables">Course Timetables</a> website.</p>
+	</div>
+	 	<div role="alert" aria-atomic="true" class="ds-psa ">
+		
+	</div>
+	</div>
+      <div>
+              <div><p>Visual Schedule Builder (VSB) is an online self-serve tool that helps plan your course schedule. It lets you graphically view schedule options and create a timetable based on the courses and times that work best for you. VSB arranges selected courses into conflict-free timetable options and displays them in an easy-to-read weekly schedule.</p>
+
+<div style="float: left; width:100%">
+<div style="float:left;width:40%;margin-right:2px">
+
+<div style="text-align:left;border:0px #000 solid;padding:2px;font-weight:bold">
+<h2>Please note:</h2>
+<ul>
+<li>VSB does not register you in courses. It helps you create an optimal course schedule plan. You then use it enrol in courses through the <a title="Registration and Enrolment Module (REM)" href="https://wrem.sis.yorku.ca/Apps/WebObjects/REM.woa/wa/DirectAction/rem">Registration and Enrolment Module (REM)</a>.</li>
+<li>VSB does not replace academic advising or degree auditing. It cannot check prerequisites or financial / enrolment blocks that may prevent enrolment in the courses you select.</li>
+</ul>
+</div>
+</div>
+
+<div style="float: left; margin:5px 0 0 0;text-align:center;width:58%"><iframe width="560" height="315" src="https://www.youtube.com/embed/6NnYmgWIoJs" frameborder="0" allowfullscreen></iframe>
+<br/><a href="https://www.youtube.com/watch?v=6NnYmgWIoJs" target="_blank"></a>
+</div>
+</div>
+
+<br/>
+ <p>Access VSB with your Passport York login. Step-by-step instructions and tips for VSB are listed in the tabs below.</p> 
+
+<h2>Using Visual Schedule Builder (VSB)</h2>
+        
+     </div>
+              <div><p class="button-center"><a title="Use the Visual Schedule Builder" href="https://schedulebuilder.yorku.ca" target="_blank" onclick="ga('send','event','VSB','button','vsb builder');">
+<button>Use the Visual Schedule Builder</button></a></p>
+
+<p class="button-center"><a title="Visual Schedule Builder Feedback Form" href="http://registrar.apps01.yorku.ca/machform/view.php?id=43353">
+<button style="background-color:#666666">Visual Schedule Builder Feedback Form</button></a></p>
+
+<h3><strong>Technical Tips</strong></h3>
+<ul>
+  <li>To better navigate the VSB, use a desktop computer or laptop.</li>
+  <li>Your Passport York (PPY) login will time out after 90 minutes.</li>
+  <li>Dedicated mobile and tablet versions of the VSB are coming soon. </li>
+</ul>
+<p class="smallbodytext"><strong>Note:</strong> The French version of the Visual Schedule Builder is coming soon.</p></div>
+              <div><div class="cs-vaadin-accordion">
+	<script src="/templates/node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js" defer></script>
+	<script type="module" src="/templates/node_modules/@vaadin/vaadin-accordion/vaadin-accordion.js" defer></script>
+	<script src="/sites/default/modules/content_server/templates/accordion.vaadin.js" defer></script>
+
+	<dom-module id="cs-vaadin-accordion-style" theme-for="vaadin-accordion-panel">
+		<template>
+			<style>
+			[part="summary"],
+			[part="toggle"],
+			[part="summary"]:hover,
+			[part="toggle"]:hover{
+				color:#e31837;
+				font-size:1.5em;
+			}
+			
+			[part="content"]{
+				font-size:1em;
+				padding:0 0 15px 38px;
+				margin:0 0 10px 12px;
+				border-left:1px dotted #e31837;
+			}
+			</style>
+		</template>
+	</dom-module>
+
+	<vaadin-accordion>
+		<vaadin-accordion-panel data-hash="#how_do_i_build_a_course_schedule_">
+			<div slot="summary">How do I build a course schedule?</div>
+			<h3>1. Choose a session</h3>
+<p>Log into VSB. By default, you will be in the <strong>Select</strong> Courses panel. If multiple enrolment periods are currently open (for example, for Summer and Fall/Winter), then you can choose the desired academic session using the radio buttons in the top right-hand corner of the screen.</p>
+
+<h3>2. Select your course location</h3>
+<p>Click the <strong>Select…</strong> link next to Campuses to open a list of campuses. This opens a new window area where , by default, all locations are marked. You can click the checkboxes individually to add or remove individual campus options, click <strong>Select All</strong> to add all campus options, or click <strong>Select None</strong> to remove all campus options. 
+TIP: The fastest way to select a single campus location is by clicking <strong>Select None</strong> and then clicking the location you want.</p> 
+
+<h3>3. Select your courses</h3>
+<p><strong>Remember: the VSB is used for planning an optimal schedule. <em>VSB does not enrol you in courses.</em></strong> When you find a schedule you like, you will enrol in courses using the Registration and Enrolment Module and the course catalogue numbers output by the VSB.</p>
+<h4>Adding a course</h4>
+<ol>
+<li>In the Enter Course search box, type in a course:
+<ul>
+<li>code, such as <strong>SC/CHEM 1001</strong> or <strong>MUSI 1020G</strong> <em>or</em></li>
+<li>title, whether partial or complete, such as <strong>calculus</strong> or <strong>Introduction to Linguistics</strong> <em>or</em></li>
+<li>instructor's name, whether partial or complete, such as Rezi or Tom Wilson <em>or</em></li>
+<li>catalog number, such as V23R01</li>
+</ul>
+</li>
+<li>Choose the desired course from the list of results.</li>
+<li>Click the Select button.</li>
+<li>Repeat steps 1‐3 for other desired courses for the session. Possible schedules are generated automatically as you add courses.</li>
+</ol>
+
+<h4>Removing a course</h4>
+<p>To remove a course from the list of desired courses, click the ‘X’ in the upper right-hand corner of the coloured box for that course. To unselect a course from schedule generation without entirely removing it from the list, click the check mark next the course code in the upper left-hand corner of the coloured box for that course.</p>
+
+<h3>4. Pin courses to schedule</h3>
+<p>You can pin a specific course option to the schedule to force the system to keep that course in the same place. You can pin (or unpin) a course with any of these methods:</p>
+<ol type="a">
+<li>Clicking any of the course meetings within a given graphical timetable schedule.</li>
+<li>Clicking the course title below the graphic timetable schedule.</li>
+<li>Clicking the coloured box containing the course ID / course title within the <strong>Results</strong> panel.</li>
+</ol>
+
+<?php drupal_add_library('system', 'ui.accordion');?>
+<div class="Accordion" id="Accordion1">
+<div class="AccordionPanel">
+<h2>TIPS AND TRICKS FOR BUILDING A SCHEDULE</h2>
+
+<div class="AccordionPanelContent">
+<h3>Browsing through your results</h3>
+<p>To browse through your generated schedule possibilities, you can use either the arrow keys on the page, or the arrow keys on your keyboard (saving time when you are paging through many results). When you hold down the arrow key, it will speed scroll through the different options.</p>
+
+<h3>Building a schedule with too many schedule scenarios</h3>
+<p>If the list of courses you select yields too many possible schedule combinations for VSB to handle, you will see the following warning:</p>
+<p><em>There are too many schedule possibilities. You must reduce the number of enabled classes or pin down some class(es) before adding more courses.</em></p>
+<p>If you see this warning, we highly recommend <strong>first pinning down any courses required for your major</strong>.</p>
+
+<h3>Campus change warning</h3>
+<p>A warning icon&mdash;an exclamation mark inside a triangle&mdash;will pop up in the timetable if two courses adjacent in time (60 minutes or less between them) are offered in two different locations. This warns you to ensure adequate travel time between campuses.</p>
+
+<h3>Choosing session and course location</h3>
+<p><strong>Session:</strong> You cannot select any courses until an academic session is selected at the top of the <strong>Select Courses</strong> panel.</p>
+<p><strong>Location:</strong> Unless you change the settings, all course campus locations are selected by default.</p>
+
+<h3>Resolving conflicts</h3>
+<p>If you select a course that has <strong>an unavoidable time conflict</strong> with other courses that you have pinned (or courses that have only one meeting group), then the number of your possible schedule results will automatically reduce to zero and the system will display the following message:</p>
+<p><em>No Results<br />There are no conflict-free schedule combinations with the selected courses.</em></p>
+
+<p>In the <strong>Select Courses</strong> panel, a warning icon&mdash;an exclamation mark inside a triangle&mdash;with the message <em>All classes of this course conflict with all classes of [conflicting course ID]</em> will show up for all conflicted courses.</p>
+
+<p>To resolve conflicts, <strong>first pin your core (major and/or minor) courses and then try to add other courses (such as general education or elective) courses to your schedule</strong>.</p>
+
+<p>If you select two courses that have <strong>no class options with open seats that do not conflict with each other</strong>, VSB will still display all schedule combinations but will also display the message: <em>Warning: Not all classes selected above have seats available.</em></p>
+
+<h3>Timetable layouts</h3>
+<p>VSB timetables look different depending on the academic session. The summer session timetable displays a single week-like calendar block. The fall/winter session timetable is divided into two halves: the left one displays fall courses and the right one displays winter courses. Courses that run across throughout the fall/winter session (such as Term Y courses) will appear in both halves.</p>
+<p>If you select courses offered only on week days, they will get displayed in a five-day timetable grid from Monday to Friday. If any of the courses you are interested in are offered on weekends, they will be plotted in a six- or seven-day calendar (including Sunday and/or Saturday) depending on the day(s) your course is offered. <strong>Be sure to look at the top row of your timetable to see which columns correspond to which days of the week.</strong></p>
+
+
+</div>
+</div>
+</div>			
+		</vaadin-accordion-panel><vaadin-accordion-panel data-hash="#how_can_i_refine_the_results_and_find_my_best_schedule_">
+			<div slot="summary">How can I refine the results and find my best schedule?</div>
+			<p>All possible conflict-free schedules are reviewable in the Results panel. The courses are colour-coded and laid out in the following two areas:</p>
+<ul>
+  <li>A <strong>Legend</strong> area showing details of each course selected, such as the course title and number, period, section, lecture meeting group number, tutorial and/or laboratory meeting group number, seat availability, campus, classroom location, instructor, course catalog number, start date and end date. Below that list, the <strong>Schedule Cat #s</strong> box shows all catalog numbers for the courses in the currently-displayed schedule.</li>
+  <li>A <strong>Schedule</strong> area  with courses plotted on a visual timetable schedule  and a monthly timeline indicating course start and end times/dates; see <strong>Timetable layouts</strong> for more information on these views.</li>
+</ul>
+<p>If the course is offered in a physical class space, then there will be a one-to-one correspondence between these two formats. However, if the course is offered fully online, then it will be displayed in the course detail list and the monthly timeline but you will not see it listed in the weekly schedule grid.</p>
+
+<p>When you navigate through your schedule options using the arrows located below the <strong>Navigate Schedules</strong> heading, the options in the <strong>Legend</strong> and <strong>Schedule</strong> areas are automatically updated.</p>
+
+<h3>Prioritizing specific times</h3>
+<p>One great feature of VSB is the ability to <strong>block off personal time</strong> when you don't want classes. You can create these blocks by clicking and dragging in the timetable grid. The system will preferentially show you possible schedule that avoid these times. (Possible schedules that show classes overlapping with these blocked-off times will still appear but will be moved to the back of the viewing order.)</p>
+<p>To remove a blocked-off time, click it in the timetable grid.You can also prioritize schedule options by using the options in the <strong>Sort preference</strong> drop-down menu in the top right-hand corner of the <strong>Results</strong> panel.</p>
+
+<h3>Narrowing down your results</h3>
+<p>There are three simple ways to narrow your results and find your best schedule:</p>
+<ol>
+<li><strong>Save favourite choices by clicking those courses in the grid to pin them.</strong> This prioritizes that specific course and arranges your other course options around it. When all your courses are pinned, the number of generated results is get reduced to one: your desired timetable. To remove a pin, just click that course again. (See <strong>Pin courses to schedule</strong>, above, for more methods of pinning and unpinning.)</li>
+<li><strong>Use the filters</strong> located in the top-right corner of the <strong>Results</strong> panel to show/hide full classes, online classes and/or on-campus classes. (See <strong>Filtering</strong>, below.).</li>
+<li><strong>Choose course terms, sections and meeting groups within sections</strong> from the drop-down menus within each course in the <strong>Select Courses</strong> panel.</li>
+</ol>
+
+<p>You can also simply browse through all the results until you find the schedule you like.</p>
+
+
+<?php drupal_add_library('system', 'ui.accordion');?>
+<div class="Accordion" id="Accordion1">
+<div class="AccordionPanel">
+<h2>TIPS AND TRICKS FOR REFINING RESULTS</h2>
+
+<div class="AccordionPanelContent">
+
+<h3>Entering and removing personal times manually</h3>
+<p>If you would like to manually enter personal times, rather than clicking and dragging on the schedule grid, you can enable accessibility features by clicking <strong>Increase Accessibility</strong> in the <strong>Select Courses</strong> panel. You can then type a time range in the <strong>Add Personal Times</strong> box below the timetable grid in the <strong>Results</strong> panel, then click <strong>Add Time</strong>. To remove every personal time added to the timetable grid, click <strong>Clear all Personal Times</strong>.</p>
+
+<h3>Filtering</h3>
+<p>All filters are applied to your search by default, indicated by a checkmark. You can narrow down your choices by unselecting some of the following options:</p>
+<ul>
+<li><strong>Full classes:</strong> If you don't want to see classes that are already full (note: VSB includes full classes in your list of courses in case the course you are interested in is full today but may have space tomorrow);</li>
+<li><strong>Online classes:</strong>If you are not interested in taking online courses;</li>
+<li><strong>On-campus classes:</strong> If you would like to take only online courses.</li>
+</ul>
+
+<h3>Sorting preferences</h3>
+<p>You can sort the viewing order of possible schedule by choosing from the <strong>Sort preference</strong> drop-down menu:</p>
+<ul>
+<li><strong>None:</strong> No schedule is prioritized.</li>
+<li><strong>Most days off:</strong> Schedules with the most days without a course are shown first.</li>
+<li><strong>Morning classes:</strong>Schedules with morning classes (before 12 PM) are shown first.</li>
+<li><strong>Mid-day classes:</strong> Schedules with mid-day classes (12 PM-6 PM) are shown first.</li>
+<li><strong>Evening classes:</strong> Schedules with mid-day classes (12 PM-6 PM) are shown first.</li>
+<li><strong>Time off campus:</strong> Schedules with the fewest on-campus hours are shown first.</li>
+<li><strong>Most on-campus:</strong> Schedules with the most on-campus hours/days are shown first.</li>
+</ul>
+
+<p><strong>Keep in mind that these sorting preferences do not change the number of your schedule results</strong>: they simply change the viewing order of those results. VSB will not save your sorting preferences between logins, so you need to apply them each time you create a new schedule.</p>
+
+<h3>Showing similar options</h3>
+<p>Some course sections will have sets of "Similar Options", such as a lecture meeting group and a tutorial meeting group and/or a laboratory (lab) meeting group. In such sets, tutorials/lab meetings are typically offered in different locations than the lecture meeting.</p>
+<p>Click <strong>Show Similar Options</strong> in the <strong>Results</strong> panel to see alternate options for the same course, and click the radio button to the left of an option to select it. Click <strong>Hide Similar Options</strong> to hide these alternate options again.</p>
+
+<h3>Zooming</h3>
+<p>If you increase the zoom on your browser, or use a narrow display monitor, then you will only be able to view one panel of the VSB (<strong>Select Courses</strong> or <strong>Results</strong>); you can switch between them by clicking the panel names. In this case, the <strong>Generate Schedules</strong> button will appear in the <strong>Select Courses</strong> panel: it will only become clickable (turning from grey to green) if at least one course is selected, and will switch you automatically to the <strong>Results</strong> panel to see the schedule options.</p>
+
+</div>
+</div>
+</div>			
+		</vaadin-accordion-panel><vaadin-accordion-panel data-hash="#i_have_my_schedule_now_what_">
+			<div slot="summary">I have my schedule. Now what?</div>
+			<h3>Enrolling immediately</h3>
+<p>If your <a title="Find out when you can enrol" href="https://registrar.yorku.ca/enrol/guide/when">enrolment window</a> is open, and you have no advising and/or financial blocks on your record preventing enrolment, you can immediately use the <a title="Registration and Enrolment Module (REM)" href="https://wrem.sis.yorku.ca/Apps/WebObjects/REM.woa/wa/DirectAction/rem">Registration and Enrolment Module (REM)</a> to enrol in courses. To do this quickly, copy the course catalog numbers (one at a time) from the <strong>Cat #s</strong> box below the list of courses in the <strong>Results</strong> panel. Enrol as soon as you can after deciding on your schedule because the seat availability information is constantly updated constantly. It is possible that a course that was not full when you created your VSB timetable may be full by the time you go attempt to add it within REM.</p>
+
+<h3>Enrolling later</h3>
+<p>If you cannot enrol immediately (for example, because your enrolment window is not open yet and/or you have an advising or financial block preventing enrolment), then you can copy or bookmark the URL address in your VSB browser to e-mail the schedule result(s) on screen to your academic advisor or to keep for later use. Pasting the URL into a web browser will display that set of schedules again, but you may have to log into Passport York to see it.</p>			
+		</vaadin-accordion-panel>
+	</vaadin-accordion>
+</div></div>
+          </div>
+  
+  </div>
+
+</article>
+
+  </div>
+
+  </div>
+			
+							
+			</div>
+			
+						
+					
+		</div>
+	</div>
+</div>
+
+
+
+  <div>
+    <div id="block-csquicklinksfooter">
+  
+    
+      
+            <div><div class="cs-bilingual-toggle">
+	<script src="/templates/node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+	<script type="module" src="/templates/node_modules/@polymer/iron-pages/iron-pages.js"></script>
+	
+	<iron-pages selected="0">
+		<div class="bilingual english">
+			<div id="cs-quick-links-footer">
+<div class="cs-quick-links-footer">
+<h4>QUICK LINKS</h4>
+<div class="cs-quick-links-footer-flex first">
+<ul class="first">
+<li><a href='https://currentstudents.yorku.ca' title='Current Students'>Current Students</a></li>
+<li><a href="https://registrar.yorku.ca/enrol/dates" title="Important Dates">Important Dates</a></li>
+<li><a href='https://myacademicrecord.students.yorku.ca' title='Manage My Academic Record'>Manage My Academic Record</a></li>
+<li><a href="https://myonlineservices.students.yorku.ca" title="My Online Services">My Online Services</a></li>
+</ul>
+</div>
+<div class="cs-quick-links-footer-flex last">
+<ul class="last">
+<li><a href='https://registrar.yorku.ca' title="Registrar's Office">Registrar's Office</a></li>
+<li><a href="https://currentstudents.yorku.ca/registrarial-services"><span class="english">Registrarial Services</span>
+<span class="french" style="display:none">Services d'enregistrement</span></a></li>
+<li><a href="https://sfs.yorku.ca" title="Student Financial Services">Student Financial Services</a></li>
+<li><a href="https://currentstudents.yorku.ca/student-forms" title="Student Forms">Student Forms</a></li>
+</ul>
+</div>
+</div>
+</div>
+		</div>
+		
+		<div class="bilingual french">
+			<div id="cs-quick-links-footer">
+<div class="cs-quick-links-footer">
+<h4>LIENS RAPIDES</h4>
+<div class="cs-quick-links-footer-flex first">
+<ul class="first">
+<li><a href="https://currentstudents.yorku.ca">Étudiants actuels</a></li>
+<li><a href="https://registrar.yorku.ca/enrol/dates">Dates importantes</a></li>
+<li><a href="https://myacademicrecord.students.yorku.ca">Gérer mon dossier académique</a></li>
+<li><a href="https://myonlineservices.students.yorku.ca">Mes services en ligne</li>
+</ul>
+</div>
+<div class="cs-quick-links-footer-flex last">
+<ul class="last">
+<li><a href="https://registrar.yorku.ca">Bureau du registraire</a></li>
+<li><a href="https://currentstudents.yorku.ca/registrarial-services">Services de registrariat</a></li>
+<li><a href="https://sfs.yorku.ca">Services financiers aux étudiants</a></li>
+<li><a href="https://currentstudents.yorku.ca/student-forms">Formulaires</a></li>
+</ul>
+</div>
+</div>
+</div>
+		</div>
+	</iron-pages>
+</div></div>
+      
+  </div>
+
+  </div>
+
+
+<div id="social-bar-wrapper">
+  <div class="wp-block-group container">
+    <div class="wp-block-group__inner-container">
+      <div class="wp-block-columns social-bar-block">
+        <div class="wp-block-column">
+          <h2 class="h6 text-white text-center">Connect with the Division of Students</h2>
+        </div>
+        <div class="wp-block-column">
+          <ul class="wp-block-social-links aligncenter my-2 is-style-default">
+            <li class="wp-social-link wp-social-link-twitter"><a href="https://twitter.com/yorkustudents" aria-label="Link to Twitter"><i class="fa fa-twitter fa-fw"></i></a></li>            <li class="wp-social-link wp-social-link-facebook"><a href="https://www.facebook.com/yorkustudents" aria-label="Link to Facebook"><i class="fa fa-facebook fa-fw"></i></a></li>            <li class="wp-social-link wp-social-link-instagram"><a href="https://www.instagram.com/yorkandu" aria-label="Link to Instagram"><i class="fa fa-instagram fa-fw"></i></a></li>            <li class="wp-social-link wp-social-link-youtube"><a href="https://www.youtube.com/user/YorkUniversity" aria-label="Link to YouTube"><i class="fa fa-youtube fa-fw"></i></a></li>          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer id="footer" class="mt-auto bg-primary">
+  <div class="container pt-5" style="background:url('/themes/custom/york/images/york2020/arrow.png');">
+    <div class="row pb-3">
+      <div class="col-md-3">
+        <a href="https://www.yorku.ca"><img alt="York University" data-src="/themes/custom/york/images/york2020/yorku-logo-ko.png" class="w-100 mb-4 ls-is-cached lazyloaded" src="/themes/custom/york/images/york2020/yorku-logo-ko.png"></a>
+      </div>
+      <div class="col-md-3">
+        <ul class="list-unstyled small">
+          <li><span class="font-weight-bold text-white">Keele, Glendon and Markham Campus</span></li>
+          <li><a href="https://www.yorku.ca/about/contact/" class="text-white">Contact</a></li>
+          <li><a href="tel:4167362100" class="text-white">(416) 736-2100</a></li>
+          <li><a href="https://map.concept3d.com/?id=1200#!s/?ct/29101,29093" class="text-white">Campus Maps</a></li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-unstyled small">
+          <li><a href="https://www.yorku.ca/safety/" class="text-white">Community Safety</a></li>
+          <li><a href="https://www.yorku.ca/about/privacy-legal/" class="text-white">Privacy &amp; Legal</a></li>
+          <li><a href="https://accessibility.students.yorku.ca/" class="text-white">Accessibility</a></li>
+          <li><a href="https://www.yorku.ca/about/careers/" class="text-white">Careers</a></li>
+        </ul>        
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+
+		
+		
+		
+		
+		<!-- Facebook Pixel Code -->
+		<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window, document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '1502327826699325');
+		fbq('track', 'PageView');
+		</script>
+		<noscript><img height="1" width="1" alt="" style="display:none"
+		src="https://www.facebook.com/tr?id=1502327826699325&ev=PageView&noscript=1(44 B)
+		https://www.facebook.com/tr?id=1502327826699325&ev=PageView&noscript=1
+		"
+		/></noscript>
+		<!-- End Facebook Pixel Code -->
+		
+				
+<script type="text/javascript">
+/*<![CDATA[*/
+(function() {
+var sz = document.createElement('script'); sz.type = 'text/javascript'; sz.async = true;
+sz.src = '//siteimproveanalytics.com/js/siteanalyze_11852.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sz, s);
+})();
+/*]]>*/
+</script> 		
+	<script src="/themes/custom/york/js/registrar/registrar.js?s3k1a0"></script>
+</body>
+</html>

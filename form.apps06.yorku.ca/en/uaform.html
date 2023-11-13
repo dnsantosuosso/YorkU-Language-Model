@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  
+
+    <head><link rel="stylesheet" type="text/css" href="/css/dataTables.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/css/jqui-styles.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/css/bootstrap/css/bootstrap.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/css/new-form-style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/css/type-styles.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/css/custom-responsive.css" media="all" />
+<script type="text/javascript" src="/javascript/jquery/current/jquery.js"></script>
+<link rel="stylesheet" type="text/css" href="/javascript/select2/current/select2.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/javascript/jquery-ui/current/css/tacocat/jquery-ui.custom.css" media="all" />
+<script type="text/javascript" src="/javascript/jquery-ui/current/js/jquery-ui.custom.js"></script>
+<link rel="stylesheet" type="text/css" href="/tw2/resources/tw2.forms/static/forms.css" media="all" />
+      <title>
+        Undergraduate Application Form
+      </title>
+      <meta name="description" content="York University" />
+      <meta name="keywords" content="York University" />
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-54028600-1', 'auto');
+        ga('send', 'pageview');
+      </script>
+    <script type="text/javascript" src="/javascript/jquery.dataTables/current/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="/javascript/jquery.lwtCountdown/jquery.lwtCountdown-1.0.js"></script>
+<script type="text/javascript" src="/javascript/jquery.validate/current/jquery.validate.js"></script>
+<script type="text/javascript" src="/javascript/jquery.validate/current/jquery.metadata.js"></script>
+<script type="text/javascript" src="/javascript/jquery.validate/current/additional-methods.min.js"></script>
+<script type="text/javascript" src="/javascript/validate.js"></script>
+<script type="text/javascript" src="/javascript/jquery.tmpl.js"></script>
+<script type="text/javascript" src="/javascript/jquery.form.js"></script>
+<script type="text/javascript" src="/javascript/select2/current/select2.js"></script>
+<script type="text/javascript" src="/javascript/jquery.eff.js"></script>
+<script type="text/javascript" src="/javascript/jquery.sectionslider.js"></script>
+<script type="text/javascript" src="/javascript/yaform.js"></script>
+<script type="text/javascript" src="/javascript/yaform_ugrad.js"></script>
+<script type="text/javascript" src="/javascript/dev.js"></script></head>
+    <body>
+      <div id="yapp-outer" class="yapp-logo-container">
+        <div class="container">
+          <div class="row">
+            <div class="span3">
+              <div id="skiptocontent" class="accessible">
+                <a href="#maincontent">skip to main content</a>
+              </div>
+              <div id="skiptonav" class="accessible">
+                <a href="#section-slider">skip to main navigation</a>
+              </div>
+	      <a href="http://www.yorku.ca/">
+	        <img alt="York University Logo" src="/images/york-u-logo-med.png" id="york-logo" width="200" />
+	      </a>
+            </div>
+            <div class="span9">
+              <h1>Undergraduate Application Form</h1>
+              <div class="la_buttons">
+                <span strip="True">
+	          <span class="set_language" lang="fr">
+	            <a class="c-language" href="/fr/uaform">Version Française</a>
+	          </span>
+                </span>
+                <span class="accessibility">
+                  <a href="http://site.info.yorku.ca/accessibility/">Accessibility</a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div id="loading" class="page-container"></div>
+  <form method="post" id="form" enctype="multipart/form-data">
+     <span class="error"></span>
+    <div style="display:none" id="form-container">
+    <div id="main-container" class="page-container">
+    <input name="form_language" type="hidden" id="form_language" value="EN" />
+    <div id="align-slider" class="align-slider">
+    <div id="section-slider" class="slider-nav"></div>
+</div>
+    <div id="maincontent"></div>
+    <div id="identity_data" class="form-section slider-section">
+  <h2>1 - Name &amp; Identity</h2>
+    <div>
+  <div class="ui-corner-all ui-state-notice">
+    <p><strong>Tool Tip navigation:</strong> Mouse over each <img style="width:16px;margin:3px 3px 0 3px" src="/images/tool-tip.jpg" alt="tooltip graphic" /> to read the information in each tip.</p>
+    <p><strong>Maintenance schedule:</strong> The application will be unavailable from 11:30pm to 1:10am each night for system maintenance.</p>
+  </div>
+  <div class="ui-corner-all ui-state-highlight">
+    <p>All fields marked with a red asterisk <span class="mandatory">*</span> are mandatory.</p>
+  </div>
+</div>
+    <div class="row">
+        <div class="span5">
+            <div id="title_and_first_name">
+        <label for="title" class="a-required clear">Title</label>
+    <select class="c-loadsalutation required" data-placeholder="Choose a Title" id="title" name="title">
+        <option></option>
+</select>
+      <div id="york-error-title" class="york-error clear"></div>
+        <label for="first_name" class="clear a-required">Legal First Name</label>
+    <input name="first_name" placeholder="Bao-Yu" id="first_name" maxlength="20" type="text" class="required {mixedcase: true}" size="34" />
+    <img alt="tooltip graphic" src="/images/tool-tip.jpg" tooltip="For a Canadian citizen, the name under which an individual is registered in a province. Usually the legal name is the one assigned at birth. For non-Canadian citizens, the legal name is that name under which they are registered in Canada and which is found on their immigration documents or passport." class="a-tooltip" style="width:16px;margin:3px 3px 0 3px" />
+      <div id="york-error-first_name" class="york-error "></div>
+</div>
+            <div id="middle_and_surname">
+        <label for="middle_name">Legal Middle Name</label>
+    <input name="middle_name" placeholder="Bertram" id="middle_name" maxlength="20" type="text" class="{mixedcase: true}" size="34" />
+    <img alt="tooltip graphic" src="/images/tool-tip.jpg" tooltip="For a Canadian citizen, the name under which an individual is registered in a province. Usually the legal name is the one assigned at birth. For non-Canadian citizens, the legal name is that name under which they are registered in Canada and which is found on their immigration documents or passport." class="a-tooltip" style="width:16px;margin:3px 3px 0 3px" />
+      <div id="york-error-middle_name" class="york-error "></div>
+        <label for="last_name" class="a-required">Legal Surname (Family Name)</label>
+    <input name="last_name" placeholder="Lee" id="last_name" maxlength="30" type="text" class="required {mixedcase: true}" size="34" />
+    <img alt="tooltip graphic" src="/images/tool-tip.jpg" tooltip="For a Canadian citizen, the name under which an individual is registered in a province. Usually the legal name is the one assigned at birth. For non-Canadian citizens, the legal name is that name under which they are registered in Canada and which is found on their immigration documents or passport." class="a-tooltip" style="width:16px;margin:3px 3px 0 3px" />
+      <div id="york-error-last_name" class="york-error "></div>
+</div>
+            <div id="preferred_and_former">
+        <label for="preferred_name">Common Name</label>
+    <input name="preferred_name" placeholder="Jennie" id="preferred_name" maxlength="20" type="text" class="{mixedcase: true}" size="34" />
+    <img alt="tooltip graphic" src="/images/tool-tip.jpg" tooltip="This could be your English name or a nickname that you use every day." class="a-tooltip" style="width:16px;margin:3px 3px 0 3px" />
+      <div id="york-error-preferred_name" class="york-error "></div>
+        <label for="former_last_name">Former Surname</label>
+    <input name="former_last_name" placeholder="Goode" id="former_last_name" maxlength="30" type="text" class="{mixedcase: true}" size="34" />
+      <div id="york-error-former_last_name" class="york-error "></div>
+</div>
+        </div>
+        <div class="span5">
+            <div>
+    <fieldset id="dob" class="ui-corner-all">
+    <legend class="a-required">Date of Birth</legend>
+        <input name="date_of_birth" type="hidden" id="date_of_birth" class="required {dateITA: true} c-group-error" />
+        <select class="dropdown c-group-error" data-placeholder="Day" id="dob_day" name="dob_day">
+        <option></option><option value="01">01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option><option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option>
+</select>
+        <select class="dropdown c-group-error" data-placeholder="Month" id="dob_month" name="dob_month">
+        <option></option><option value="01">January</option><option value="02">February</option><option value="03">March</option><option value="04">April</option><option value="05">May</option><option value="06">June</option><option value="07">July</option><option value="08">August</option><option value="09">September</option><option value="10">October</option><option value="11">November</option><option value="12">December</option>
+</select>
+        <select class="dropdown c-group-error" data-placeholder="Year" id="dob_year" name="dob_year">
+        <option></option>
+</select>
+</fieldset>
+      <div id="york-error-dob" class="york-error "></div>
+    <fieldset class="clear ui-corner-all" id="gender">
+      <legend class="label a-required">Gender</legend>
+      <label for="gender_0" class="radio-inline">Male</label>
+      <input id="gender_0" type="radio" class="required radio-inline c-group-error" value="M" name="gender" />
+      <div class="clear"></div>
+      <label for="gender_1" class="radio-inline">Female</label>
+      <input id="gender_1" type="radio" class="radio-inline c-group-error" value="F" name="gender" />
+      <div class="clear"></div>
+      <label for="gender_2" class="radio-inline">Undeclared</label>
+      <input id="gender_2" type="radio" class="radio-inline c-group-error" value="U" name="gender" />
+      <div class="clear"></div>
+</fieldset>
+    <img alt="tooltip graphic" src="/images/tool-tip.jpg" tooltip="Please choose the gender option you identify with most." class="a-tooltip" style="width:16px;margin:3px 3px 0 3px" />
+      <div id="york-error-gender" class="york-error "></div>
+</div>
+            <div>
+        <label for="email" class="a-required">E-mail address</label>
+    <input name="email" placeholder="yourname@domain.com" id="email" maxlength="50" type="text" class="required email" size="51" />
+      <div id="york-error-email" class="york-error "></div>
+        <label for="email2" class="a-required">E-mail address confirm</label>
+    <input name="email2" placeholder="yourname@domain.com" id="email2" maxlength="50" type="text" class="required email {equalTo: &#34;input[name$='email']&#34;}" size="51" />
+      <div id="york-error-email2" class="york-error "></div>
+</div>
+        </div>
+    </div>
+    <div>
+        <label for="next_btn" class="accessible"></label>
+    <input name="next_btn" type="button" id="next_btn" value="Next" class="c-next-button" />
+      <div id="york-error-next_btn" class="york-error clear"></div>
+</div>
+</div>
+    <div id="goal_of_study" class="form-section slider-section">
+  <h2>2 - Goal of Study</h2>
+      <div id="gos">
+        <label for="gos_session" class="a-required">When do you wish to begin classes?</label>
+    <select class="required c-loadsession" data-placeholder="Choose a start date" id="gos_session" name="gos_session">
+        <option></option>
+</select>
+      <div id="york-error-gos_session" class="york-error clear"></div>
+    <fieldset class="clear gos multiline-radio" id="goal_study">
+      <legend class="label a-required">Goal of Study</legend>
+      <label for="goal_study_0" class="radio-inline">I wish to study toward a degree</label>
+      <input id="goal_study_0" type="radio" class="radio-inline c-group-error {goalofstudy: true}" value="D" name="goal_study" />
+      <div class="clear"></div>
+      <label for="goal_study_1" class="radio-inline">I wish to study toward a certificate</label>
+      <input id="goal_study_1" type="radio" class="radio-inline c-group-error {goalofstudy: true}" value="C" name="goal_study" />
+      <div class="clear"></div>
+      <label for="goal_study_2" class="radio-inline">I wish to enrol as a visiting student on letter of permission</label>
+      <input id="goal_study_2" type="radio" class="radio-inline c-group-error {goalofstudy: true}" value="L" name="goal_study" />
+      <div class="clear"></div>
+      <label for="goal_study_3" class="radio-inline">I wish to enrol as a visiting student (I already have a degree from university OR I'm fulfilling requirements for professional designation)</label>
+      <input id="goal_study_3" type="radio" class="radio-inline c-group-error {goalofstudy: true}" value="V" name="goal_study" />
+      <div class="clear"></div>
+</fieldset>
+      <div id="york-error-goal_study" class="york-error "></div>
+</div>
+      <div style="display:none;" id="gos_degree" class="ui-corner-all ui-hide-show">
+        <input name="gos_major_1" type="hidden" id="gos_major_1" />
+        <input name="gos_major_2" type="hidden" id="gos_major_2" />
+        <label for="gs_degree_desc" class="a-required">Subject of Major Interest - Choice 1:</label>
+    <input name="gs_degree_desc" id="gs_degree_desc" type="text" class="{required: goalOfStudyDegree}" size="80" />
+      <div id="york-error-gs_degree_desc" class="york-error "></div>
+        <label for="gs_degree_desc2">Subject of Major Interest - Choice 2:</label>
+    <input name="gs_degree_desc2" id="gs_degree_desc2" type="text" size="80" />
+      <div id="york-error-gs_degree_desc2" class="york-error "></div>
+    <div>
+  To refresh your memory about York's programs of study, visit <a target="blank" href="http://futurestudents.yorku.ca/programs">futurestudents.yorku.ca/programs</a>
+</div>
+      <div id="york-error-degree_text" class="york-error "></div>
+</div>
+      <div style="display:none;" id="gs_certificate" class="ui-corner-all ui-hide-show">
+        <input name="gos_certificate" type="hidden" id="gos_certificate" />
+        <label for="gs_cert_desc" class="a-required">Certificate</label>
+    <input name="gs_cert_desc" id="gs_cert_desc" type="text" class="{required: goalOfStudyCertificate}" size="80" />
+      <div id="york-error-gs_cert_desc" class="york-error "></div>
+        <label for="gs_cert_faculty">Faculty</label>
+    <input name="gs_cert_faculty" id="gs_cert_faculty" type="text" size="80" />
+      <div id="york-error-gs_cert_faculty" class="york-error "></div>
+</div>
+      <div style="display:none;" id="gos_letter" class="ui-corner-all ui-hide-show">
+        <label for="gos_lor_faculty" class="a-required">Faculty</label>
+    <select class="clear c-loadfacultyvis {required: goalOfStudyLetterOfPermission}" data-placeholder="Choose a Faculty" id="gos_lor_faculty" name="gos_lor_faculty">
+        <option></option>
+</select>
+      <div id="york-error-gos_lor_faculty" class="york-error clear"></div>
+</div>
+      <div style="display:none;" id="gos_visiting" class="ui-corner-all ui-hide-show">
+        <label for="gos_visiting_faculty" class="a-required">Faculty</label>
+    <select class="clear c-loadfacultyvis {required: goalOfStudyVisiting}" data-placeholder="Choose a Faculty" id="gos_visiting_faculty" name="gos_visiting_faculty">
+        <option></option>
+</select>
+      <div id="york-error-gos_visiting_faculty" class="york-error clear"></div>
+</div>
+      <div>
+        <label for="prev_btn" class="accessible"></label>
+    <input name="prev_btn" type="button" id="prev_btn" value="Previous" class="c-prev-button" />
+      <div id="york-error-prev_btn" class="york-error "></div>
+        <label for="next_btn" class="accessible"></label>
+    <input name="next_btn" type="button" id="next_btn" value="Next" class="c-next-button" />
+      <div id="york-error-next_btn" class="york-error clear"></div>
+</div>
+</div>
+    <div id="previous_application" class="form-section slider-section">
+  <h2>3 - Citizenship &amp; Language</h2>
+    <div class="row">
+        <div class="span5">
+            <div id="citizenship_and_language">
+        <label for="cc_country" class="a-required">Country of Citizenship</label>
+    <select class="required c-loadcountries" data-placeholder="Choose a Country" id="cc_country" name="cc_country">
+        <option></option>
+</select>
+      <div id="york-error-cc_country" class="york-error clear"></div>
+        <label for="firstlang" class="clear a-required">First Language</label>
+    <select class="required c-loadlanguages" data-placeholder="Select a language" id="firstlang" name="firstlang">
+        <option></option>
+</select>
+      <div id="york-error-firstlang" class="york-error clear"></div>
+</div>
+        </div>
+        <div class="span5">
+            <div id="correspondence_and_citizenship">
+    <fieldset class="ui-corner-all" id="correspondence_language">
+      <legend class="a-required">Language of Correspondence</legend>
+      <label for="correspondence_language_0" class="radio-inline">English</label>
+      <input id="correspondence_language_0" type="radio" class="required c-group-error radio-inline" value="EN" name="correspondence_language" />
+      <div class="clear"></div>
+      <label for="correspondence_language_1" class="radio-inline">French</label>
+      <input id="correspondence_language_1" type="radio" class="required c-group-error radio-inline" value="FR" name="correspondence_language" />
+      <div class="clear"></div>
+</fieldset>
+    <img alt="tooltip graphic" src="/images/tool-tip.jpg" tooltip="In which language would you prefer to receive correspondence regarding your application process at York University?" class="a-tooltip" style="width:16px;margin:3px 3px 0 3px" />
+      <div id="york-error-correspondence_language" class="york-error "></div>
+    <fieldset class="ui-corner-all multiline-radio" id="citizenship">
+      <legend class="a-required">What is your official status in Canada?</legend>
+      <label for="citizenship_0" class="radio-inline">Canadian Citizen</label>
+      <input id="citizenship_0" type="radio" class="required c-group-error radio-inline" value="Canadian Citizen" name="citizenship" />
+      <div class="clear"></div>
+      <label for="citizenship_1" class="radio-inline">Permanent Resident of Canada (Landed Immigrant)</label>
+      <input id="citizenship_1" type="radio" class="c-group-error radio-inline" value="Permanent Resident" name="citizenship" />
+      <div class="clear"></div>
+      <label for="citizenship_2" class="radio-inline">Currently on, or will require, study permit to study in Canada</label>
+      <input id="citizenship_2" type="radio" class="c-group-error radio-inline" value="Study Permit" name="citizenship" />
+      <div class="clear"></div>
+      <label for="citizenship_3" class="radio-inline">Diplomatic</label>
+      <input id="citizenship_3" type="radio" class="c-group-error radio-inline" value="Diplomatic" name="citizenship" />
+      <div class="clear"></div>
+      <label for="citizenship_4" class="radio-inline">Convention Refugee (Protected Person)</label>
+      <input id="citizenship_4" type="radio" class="c-group-error radio-inline" value="Convention Refugee" name="citizenship" />
+      <div class="clear"></div>
+      <label for="citizenship_5" class="radio-inline">Visitor</label>
+      <input id="citizenship_5" type="radio" class="c-group-error radio-inline" value="Visitor" name="citizenship" />
+      <div class="clear"></div>
+      <label for="citizenship_6" class="radio-inline">No Status</label>
+      <input id="citizenship_6" type="radio" class="c-group-error radio-inline" value="No Status" name="citizenship" />
+      <div class="clear"></div>
+</fieldset>
+      <div id="york-error-citizenship" class="york-error "></div>
+</div>
+            <div id="doa">
+    <fieldset id="doa_container" class="ui-corner-all c-val-selects-change">
+    <legend>Date of arrival in Canada</legend>
+        <select class="c-select2 c-group-error {monthandyearcitizen: true}" data-placeholder="Month" id="month_arrival" name="month_arrival">
+        <option></option><option value="01">January</option><option value="02">February</option><option value="03">March</option><option value="04">April</option><option value="05">May</option><option value="06">June</option><option value="07">July</option><option value="08">August</option><option value="09">September</option><option value="10">October</option><option value="11">November</option><option value="12">December</option>
+</select>
+        <select class="c-group-error {monthandyearcitizen: true}" data-placeholder="Year" id="year_arrival" name="year_arrival">
+        <option></option>
+</select>
+</fieldset>
+      <div id="york-error-doa_container" class="york-error "></div>
+</div>
+        </div>
+    </div>
+    <div>
+        <label for="prev_btn" class="accessible"></label>
+    <input name="prev_btn" type="button" id="prev_btn" value="Previous" class="c-prev-button" />
+      <div id="york-error-prev_btn" class="york-error "></div>
+        <label for="next_btn" class="accessible"></label>
+    <input name="next_btn" type="button" id="next_btn" value="Next" class="c-next-button" />
+      <div id="york-error-next_btn" class="york-error clear"></div>
+</div>
+</div>
+    <div id="address_and_contact" class="form-section slider-section">
+  <h2>4 - Address &amp; Contact</h2>
+    <div class="row">
+        <div class="span5">
+            <div id="address_info" class="c-address-container">
+    <div id="country_info">
+        <label for="perm_address_country" class="a-required">Country</label>
+    <select class="required c-loadcountries c-address-country" data-placeholder="Choose a Country" id="perm_address_country" name="perm_address_country">
+        <option></option>
+</select>
+      <div id="york-error-perm_address_country" class="york-error clear"></div>
+</div>
+      <div id="york-error-country_info" class="york-error "></div>
+    <div id="street_info">
+        <input name="perm_street_address_hidden_check" type="hidden" id="perm_street_address_hidden_check" class="c-address-street" />
+        <label for="perm_street_address" class="clear a-required">Street Address</label>
+    <input name="perm_street_address" type="text" id="perm_street_address" maxlength="50" placeholder="1616 Elm St." class="c-address-street {required: addressCanadaOrUS, addressmodified: true}" size="34" />
+      <div id="york-error-perm_street_address" class="york-error "></div>
+        <label for="perm_street_address_cont">Street Address continued</label>
+    <input name="perm_street_address_cont" type="text" id="perm_street_address_cont" maxlength="50" size="34" />
+      <div id="york-error-perm_street_address_cont" class="york-error "></div>
+</div>
+      <div id="york-error-street_info" class="york-error "></div>
+        <label for="perm_address_city" class="a-required">City</label>
+    <input name="perm_address_city" placeholder="Toronto" id="perm_address_city" maxlength="30" type="text" class="c-address-city required" size="34" />
+      <div id="york-error-perm_address_city" class="york-error "></div>
+    <div style="display:none;" id="province_hide_show" class="c-province-hide-show">
+        <label for="perm_address_province" class="c-label-province-state a-required">Province/State</label>
+    <select class="c-select2 c-address-province {required: addressCanadaOrUS}" id="perm_address_province" name="perm_address_province">
+        <option></option>
+</select>
+      <div id="york-error-perm_address_province" class="york-error clear"></div>
+</div>
+      <div id="york-error-province_hide_show" class="york-error "></div>
+    <div id="province_free_hide_show" class="c-province-free-hide-show">
+        <label for="perm_free_address_province" class="a-required">Province/State</label>
+    <input name="perm_free_address_province" type="text" id="perm_free_address_province" maxlength="50" placeholder="Ontario" class="c-address-free-province {required: notAddressCanadaOrUS}" size="34" />
+      <div id="york-error-perm_free_address_province" class="york-error clear"></div>
+</div>
+      <div id="york-error-province_free_hide_show" class="york-error "></div>
+    <div id="postal_info">
+        <label for="perm_address_postal_zip" class="clear c-postal-code-label a-required">Postal Code/ZIP Code</label>
+    <input name="perm_address_postal_zip" type="text" id="perm_address_postal_zip" maxlength="9" class="a-address-postal c-address-postal {required: true, postalcode: true}" size="10" />
+      <div id="york-error-perm_address_postal_zip" class="york-error "></div>
+</div>
+      <div id="york-error-postal_info" class="york-error "></div>
+</div>
+            <div id="mailing_same">
+    <fieldset class="clear ui-corner-all" id="mailing_address_same">
+      <legend class="a-required">Mailing address same as permanent?</legend>
+      <label for="mailing_address_same_0" class="radio-inline">Yes</label>
+      <input id="mailing_address_same_0" type="radio" class="required c-group-error radio-inline" value="Y" name="mailing_address_same" />
+      <div class="clear"></div>
+      <label for="mailing_address_same_1" class="radio-inline">No</label>
+      <input id="mailing_address_same_1" type="radio" class="required c-group-error radio-inline" value="N" name="mailing_address_same" />
+      <div class="clear"></div>
+</fieldset>
+      <div id="york-error-mailing_address_same" class="york-error "></div>
+</div>
+            <div style="display:none;" id="mailing_info" class="mailing_hide_show c-address-container">
+        <label for="mailing_address_country" class="a-required">Country</label>
+    <select class="c-loadcountries c-address-country {required: mailingAddressSame}" data-placeholder="Choose a Country" id="mailing_address_country" name="mailing_address_country">
+        <option></option>
+</select>
+      <div id="york-error-mailing_address_country" class="york-error clear"></div>
+    <div id="m_street_info">
+        <input name="mailing_street_address_hidden_check" type="hidden" id="mailing_street_address_hidden_check" class="c-address-street" />
+        <label for="mailing_street_address" class="clear a-required">Street Address</label>
+    <input name="mailing_street_address" type="text" id="mailing_street_address" maxlength="50" placeholder="1616 Elm St." class="c-address-street {required: mailingAddressCanadaOrUS, mailingaddressmodified: true}" size="34" />
+      <div id="york-error-mailing_street_address" class="york-error "></div>
+        <label for="mailing_street_address_cont">Street Address continued</label>
+    <input name="mailing_street_address_cont" type="text" id="mailing_street_address_cont" maxlength="50" size="34" />
+      <div id="york-error-mailing_street_address_cont" class="york-error "></div>
+</div>
+      <div id="york-error-m_street_info" class="york-error "></div>
+        <label for="mailing_address_city" class="a-required">City</label>
+    <input name="mailing_address_city" placeholder="Toronto" id="mailing_address_city" maxlength="30" type="text" class="c-address-city {required: mailingAddressSame}" size="34" />
+      <div id="york-error-mailing_address_city" class="york-error "></div>
+    <div style="display:none;" id="m_province_hide_show" class="c-province-hide-show">
+        <label for="mailing_address_province" class="c-label-province-state a-required">Province/State</label>
+    <select class="c-select2 c-address-province {required: mailingAddressCanadaOrUS }" id="mailing_address_province" name="mailing_address_province">
+        <option></option>
+</select>
+      <div id="york-error-mailing_address_province" class="york-error "></div>
+</div>
+      <div id="york-error-m_province_hide_show" class="york-error "></div>
+    <div id="m_province_free_hide_show" class="c-province-free-hide-show">
+        <label for="mailing_free_address_province" class="a-required">Province/State</label>
+    <input name="mailing_free_address_province" type="text" id="mailing_free_address_province" maxlength="50" placeholder="Ontario" class="c-address-free-province {required: notMailingAddressCanadaOrUS }" />
+      <div id="york-error-mailing_free_address_province" class="york-error clear"></div>
+</div>
+      <div id="york-error-m_province_free_hide_show" class="york-error "></div>
+        <label for="mailing_address_postal_zip" class="clear c-postal-code-label a-required">Postal Code/ZIP Code</label>
+    <input name="mailing_address_postal_zip" id="mailing_address_postal_zip" maxlength="10" type="text" class="a-address-postal c-address-postal {required: mailingAddressSame}" size="9" />
+      <div id="york-error-mailing_address_postal_zip" class="york-error "></div>
+</div>
+        </div>
+        <div class="span5">
+            <div id="phone_text" class="ui-corner-all ui-state-highlight">
+  <div>
+    <p>You must provide at least one current phone number.</p>
+  </div>
+</div>
+            <div>
+    <fieldset id="phones" class="ui-corner-all">
+    <legend class="a-required">Phone numbers</legend>
+        <div id="home_phone_info">
+        <label for="home_pn">Home Phone Number</label>
+    <input name="home_pn" placeholder="+xx-xxx-xxx-xxxx" id="home_pn" maxlength="20" type="text" class="c-group-error {phone:true, onephonerequired:true}" size="34" />
+    <img alt="tooltip graphic" src="/images/tool-tip.jpg" tooltip="The format presented in the placeholder is just an example. Valid characters are numbers plus any of the characters in the following string: &#34;-+()&#34;" class="a-tooltip" style="width:16px;margin:3px 3px 0 3px" />
+      <div id="york-error-home_pn" class="york-error "></div>
+</div>
+        <div id="business_phone_info">
+        <label for="business_pn">Business Phone Number</label>
+    <input name="business_pn" placeholder="+xx-xxx-xxx-xxxx" id="business_pn" maxlength="20" type="text" class="c-group-error {phone:true, onephonerequired:true}" size="34" />
+        <label for="business_pn_ext" class="input-inline">Extension</label>
+    <input name="business_pn_ext" placeholder="12345" id="business_pn_ext" maxlength="5" type="text" class="digits input-inline {pn_extension:true}" size="5" />
+    <div class="error-wrapper">
+        <div id="york-error-business_pn" class="york-error "></div>
+        <div id="york-error-business_pn_ext" class="york-error "></div>
+    </div>
+</div>
+        <div id="mobile_phone_info">
+        <label for="mobile_pn">Mobile Phone Number</label>
+    <input name="mobile_pn" placeholder="+xx-xxx-xxx-xxxx" id="mobile_pn" maxlength="20" type="text" class="{phone: true, onephonerequired:true} c-group-error" size="34" />
+      <div id="york-error-mobile_pn" class="york-error "></div>
+</div>
+</fieldset>
+      <div id="york-error-phones" class="york-error "></div>
+</div>
+        </div>
+    </div>
+    <div>
+        <label for="prev_btn" class="accessible"></label>
+    <input name="prev_btn" type="button" id="prev_btn" value="Previous" class="c-prev-button" />
+      <div id="york-error-prev_btn" class="york-error "></div>
+        <label for="next_btn" class="accessible"></label>
+    <input name="next_btn" type="button" id="next_btn" value="Next" class="c-next-button" />
+      <div id="york-error-next_btn" class="york-error clear"></div>
+</div>
+</div>
+    <div id="previous_education" class="form-section slider-section">
+  <h2>5 - Previous Education</h2>
+      <div id="oen_info">
+        <label for="oen">Ontario Education Number (OEN)</label>
+    <input name="oen" placeholder="123456789" id="oen" maxlength="9" type="text" class="digits" size="34" />
+      <div id="york-error-oen" class="york-error "></div>
+        <label for="oen_text"></label>
+    <div id="oen_text">
+  <div>
+    <p>The OEN is a student identification number that will be assigned by the Ministry of Education to elementary and secondary students across the province. The OEN can be found on your Ontario Secondary School Transcript (OST).</p>
+  </div>
+</div>
+      <div id="york-error-oen_text" class="york-error "></div>
+</div>
+      <div style="display: block" id="hide-show-secondary">
+        <label for="secondary_title"></label>
+    <div id="secondary_title">
+  <h3>Secondary Schools Attended (start with current or most recent)</h3>
+</div>
+      <div id="york-error-secondary_title" class="york-error "></div>
+    <div id="sec_school">
+    <fieldset class="ui-corner-all" id="secondary_school_attended">
+      <legend>Have you attended any secondary schools within the past five years?</legend>
+      <label for="secondary_school_attended_0" class="radio-inline">Yes</label>
+      <input id="secondary_school_attended_0" type="radio" class="c-group-error radio-inline" value="Y" name="secondary_school_attended" />
+      <div class="clear"></div>
+      <label for="secondary_school_attended_1" class="radio-inline">No</label>
+      <input id="secondary_school_attended_1" type="radio" class="required c-group-error radio-inline" value="N" name="secondary_school_attended" />
+      <div class="clear"></div>
+</fieldset>
+    <img alt="tooltip graphic" src="/images/tool-tip.jpg" tooltip="To assess your application, we need to know if you've attended a secondary school within the past five years. Data going back beyond five years is not required." class="a-tooltip" style="width:16px;margin:3px 3px 0 3px" />
+      <div id="york-error-secondary_school_attended" class="york-error "></div>
+</div>
+      <div id="york-error-sec_school" class="york-error "></div>
+    <div style="display:none;" id="sec_school_info">
+    <div id="secschool" class="ui-corner-all">
+        <input name="sec_validated_inst" type="hidden" id="sec_validated_inst" class="c-sec-validated-inst" />
+        <label for="sec_school_country" class="a-required clear">Country</label>
+    <select class="c-sec-school-country {required: secondarySchool}" data-placeholder="Choose a Country" id="sec_school_country" name="sec_school_country">
+        <option></option>
+</select>
+      <div id="york-error-sec_school_country" class="york-error clear"></div>
+    <div style="display:none" id="secschool_province_hide_show" class="c-secschool-province-hide-show">
+        <label for="sec_school_province" class="a-required">Province</label>
+    <select class="c-eff-secondaryschool-province c-sec-school-province {required: secSchoolProvince}" data-placeholder="Choose a Province" id="sec_school_province" name="sec_school_province">
+        <option></option>
+</select>
+      <div id="york-error-sec_school_province" class="york-error clear"></div>
+</div>
+      <div id="york-error-secschool_province_hide_show" class="york-error "></div>
+        <label for="sec_school_name" class="clear a-required">Name of School</label>
+    <input name="sec_school_name" type="text" id="sec_school_name" readonly="readonly" maxlength="50" placeholder="Saint Mary's Collegiate" class="c-eff-secondaryschool c-sec-school-name {required: secondarySchool}" size="34" />
+      <div id="york-error-sec_school_name" class="york-error "></div>
+        <label for="sec_school_address" class="a-required">Address</label>
+    <input name="sec_school_address" type="text" id="sec_school_address" readonly="readonly" maxlength="50" placeholder="123 Some St." class="c-eff-secondaryschool c-sec-school-address {required: secSchoolAddress}" size="34" />
+      <div id="york-error-sec_school_address" class="york-error "></div>
+        <label for="sec_school_city" class="a-required">City</label>
+    <input name="sec_school_city" type="text" id="sec_school_city" readonly="readonly" maxlength="50" placeholder="Toronto" class="c-eff-secondaryschool c-sec-school-city {required: secSchoolCity}" size="34" />
+      <div id="york-error-sec_school_city" class="york-error "></div>
+    <input style="display:none" name="sec_school_reset" value="Reset Location" class="c-sec-school-reset" type="button" id="sec_school_reset" />
+      <div id="york-error-sec_school_reset" class="york-error "></div>
+    <div id="sec_school_timeline_from_container" class="c-date-from-to c-val-selects-change">
+    <fieldset id="sec_school_timeline_from" class="ui-corner-all c-date-from">
+    <legend class="a-required">From</legend>
+        <select class="c-eff-select2 c-month {monthandyear: true, required: secondarySchool } c-group-error" data-placeholder="Month" id="sec_school_month_start" name="sec_school_month_start">
+        <option></option><option value="01">January</option><option value="02">February</option><option value="03">March</option><option value="04">April</option><option value="05">May</option><option value="06">June</option><option value="07">July</option><option value="08">August</option><option value="09">September</option><option value="10">October</option><option value="11">November</option><option value="12">December</option>
+</select>
+        <select class="c-eff-select2 c-loadyear c-year {monthandyear: true, required: secondarySchool, frombeforetodate: true} c-group-error" data-placeholder="Year" id="sec_school_year_start" name="sec_school_year_start">
+        <option></option>
+</select>
+</fieldset>
+      <div id="york-error-sec_school_timeline_from" class="york-error "></div>
+    <fieldset id="sec_school_timeline_to" class="ui-corner-all c-date-to">
+    <legend class="a-required">To</legend>
+        <select class="c-eff-select2 c-group-error c-month {monthandyear: true, required: secondarySchool }" data-placeholder="Month" id="sec_school_month_end" name="sec_school_month_end">
+        <option></option><option value="01">January</option><option value="02">February</option><option value="03">March</option><option value="04">April</option><option value="05">May</option><option value="06">June</option><option value="07">July</option><option value="08">August</option><option value="09">September</option><option value="10">October</option><option value="11">November</option><option value="12">December</option>
+</select>
+        <select class="c-eff-select2 c-loadyear c-year {monthandyear: true, required: secondarySchool} c-group-error" data-placeholder="Year" id="sec_school_year_end" name="sec_school_year_end">
+        <option></option>
+</select>
+</fieldset>
+      <div id="york-error-sec_school_timeline_to" class="york-error "></div>
+</div>
+      <div id="york-error-sec_school_timeline_from_container" class="york-error "></div>
+    <fieldset class="clear ui-corner-all" id="sec_graduated">
+      <legend>Did you graduate?</legend>
+      <label for="sec_graduated_0" class="radio-inline">Yes</label>
+      <input id="sec_graduated_0" type="radio" class="c-group-error radio-inline {required: secondarySchool}" value="Y" name="sec_graduated" />
+      <div class="clear"></div>
+      <label for="sec_graduated_1" class="radio-inline">No</label>
+      <input id="sec_graduated_1" type="radio" class="c-group-error radio-inline {required: secondarySchool}" value="N" name="sec_graduated" />
+      <div class="clear"></div>
+</fieldset>
+      <div id="york-error-sec_graduated" class="york-error "></div>
+        <label for="sec_school_dipl">Diploma Name (if applicable)</label>
+    <input name="sec_school_dipl" type="text" id="sec_school_dipl" maxlength="30" placeholder="French Immersion Grade 12 diploma" class="sec-diploma-name" size="34" />
+      <div id="york-error-sec_school_dipl" class="york-error "></div>
+</div>
+      <div id="york-error-secschool" class="york-error "></div>
+</div>
+      <div id="york-error-sec_school_info" class="york-error "></div>
+</div>
+      <div style="display: block" id="hide-show-bridging">
+        <label for="bridging_title"></label>
+    <div id="bridging_title">
+  <h3>Pre-University/Bridging Courses</h3>
+</div>
+      <div id="york-error-bridging_title" class="york-error "></div>
+    <div>
+  <div>
+    <p>A bridging course is a university preparation course such as an academic upgrading course (mathematics, social science, English language), bridging for women or transition-year program.</p>
+  </div>
+</div>
+      <div id="york-error-bridging_text" class="york-error "></div>
+    <div id="bridging">
+        <label for="bridging_course" class="radio-inline"></label>
+    <fieldset class="ui-corner-all" id="bridging_course">
+      <legend>Have you taken any pre-university or bridging courses?</legend>
+      <label for="bridging_course_0" class="radio-inline">Yes</label>
+      <input id="bridging_course_0" type="radio" class="c-group-error radio-inline" value="Y" name="bridging_course" />
+      <div class="clear"></div>
+      <label for="bridging_course_1" class="radio-inline">No</label>
+      <input id="bridging_course_1" type="radio" class="c-group-error required radio-inline" value="N" name="bridging_course" />
+      <div class="clear"></div>
+</fieldset>
+      <div id="york-error-bridging_course" class="york-error "></div>
+</div>
+      <div id="york-error-bridging" class="york-error "></div>
+    <div style="display:none;" id="bridging_info">
+    <div id="bridging_courses" class="ui-corner-all">
+        <label for="bridging_course_name" class="a-required">Course</label>
+    <input name="bridging_course_name" type="text" id="bridging_course_name" maxlength="50" placeholder="Course name" class="{required: bridging}" size="34" />
+      <div id="york-error-bridging_course_name" class="york-error "></div>
+        <label for="bridging_institution_location" class="a-required">Where did you take the course?</label>
+    <input name="bridging_institution_location" type="text" id="bridging_institution_location" maxlength="50" placeholder="Institution name" class="{required: bridging}" size="34" />
+      <div id="york-error-bridging_institution_location" class="york-error "></div>
+</div>
+      <div id="york-error-bridging_courses" class="york-error "></div>
+</div>
+      <div id="york-error-bridging_info" class="york-error "></div>
+</div>
+      <div style="display: block" id="hide-show-postsecondary">
+        <label for="post_sec_title"></label>
+    <div id="post_sec_title">
+  <h3>Postsecondary Institutions Attended (start with current or most recent, include York University if applicable)</h3>
+</div>
+      <div id="york-error-post_sec_title" class="york-error "></div>
+    <div id="post_sec_school">
+        <label for="post_secondary_attended" class="radio-inline"></label>
+    <fieldset class="ui-corner-all" id="post_secondary_attended">
+      <legend>Have you attended any accredited postsecondary institutions?</legend>
+      <label for="post_secondary_attended_0" class="radio-inline">Yes</label>
+      <input id="post_secondary_attended_0" type="radio" class="c-group-error radio-inline" value="Y" name="post_secondary_attended" />
+      <div class="clear"></div>
+      <label for="post_secondary_attended_1" class="radio-inline">No</label>
+      <input id="post_secondary_attended_1" type="radio" class="c-group-error required radio-inline" value="N" name="post_secondary_attended" />
+      <div class="clear"></div>
+</fieldset>
+    <img alt="tooltip graphic" src="/images/tool-tip.jpg" tooltip="An institution of learning that is recognized as maintaining standards requisite for its graduates to gain admission to other reputable institutions of higher learning or to achieve credentials for professional practice" class="a-tooltip" style="width:16px;margin:3px 3px 0 3px" />
+      <div id="york-error-post_secondary_attended" class="york-error "></div>
+</div>
+      <div id="york-error-post_sec_school" class="york-error "></div>
+    <div style="display:none;" id="post_secschool_info">
+    <div id="post_secschool" class="ui-corner-all">
+        <input name="post_sec_validated_inst" type="hidden" id="post_sec_validated_inst" class="c-post-sec-validated-inst" />
+        <label for="post_sec_school_country" class="a-required clear">Country</label>
+    <select class="c-post-sec-school-country {required: postSecSchool}" data-placeholder="Choose a Country" id="post_sec_school_country" name="post_sec_school_country">
+        <option></option>
+</select>
+      <div id="york-error-post_sec_school_country" class="york-error clear"></div>
+    <div style="display:none" id="post_secschool_province_hide_show" class="c-post-secschool-province-hide-show clear">
+        <label for="post_sec_school_province" class="a-required clear">Province</label>
+    <select class="c-post-sec-school-province {required: postSecSchoolProvince}" data-placeholder="Choose a Province" id="post_sec_school_province" name="post_sec_school_province">
+        <option></option>
+</select>
+      <div id="york-error-post_sec_school_province" class="york-error clear"></div>
+</div>
+      <div id="york-error-post_secschool_province_hide_show" class="york-error "></div>
+        <label for="post_sec_school_name" class="a-required clear">Name of School</label>
+    <input name="post_sec_school_name" type="text" id="post_sec_school_name" readonly="readonly" maxlength="50" placeholder="York University" class="c-post-sec-school-name {required: postSecSchool}" size="34" />
+      <div id="york-error-post_sec_school_name" class="york-error "></div>
+        <label for="post_sec_school_address" class="a-required">Address</label>
+    <input name="post_sec_school_address" type="text" id="post_sec_school_address" readonly="readonly" maxlength="50" placeholder="123 Some St." class="c-post-sec-school-address {required: postSecSchoolAddress}" size="34" />
+      <div id="york-error-post_sec_school_address" class="york-error "></div>
+        <label for="post_sec_school_city" class="a-required">City</label>
+    <input name="post_sec_school_city" type="text" id="post_sec_school_city" placeholder="Toronto" class="c-post-sec-school-city {required: postSecSchoolCity}" size="34" />
+      <div id="york-error-post_sec_school_city" class="york-error "></div>
+    <input style="display:none" name="post_sec_school_reset" value="Reset Location" class="c-post-sec-school-reset" type="button" id="post_sec_school_reset" />
+      <div id="york-error-post_sec_school_reset" class="york-error "></div>
+        <label for="post_sec_school_diploma_name" class="a-required">Degree/Diploma/Certificate/Credential</label>
+    <input name="post_sec_school_diploma_name" type="text" id="post_sec_school_diploma_name" maxlength="30" placeholder="Bachelor of Science with Honours" class="{required: postSecSchool}" size="34" />
+      <div id="york-error-post_sec_school_diploma_name" class="york-error "></div>
+        <label for="post_sec_school_major" class="a-required">Program/Major</label>
+    <input name="post_sec_school_major" type="text" id="post_sec_school_major" maxlength="30" placeholder="Chemistry" class="{required: postSecSchoolAddress}" size="34" />
+      <div id="york-error-post_sec_school_major" class="york-error "></div>
+    <div id="post_sec_school_timeline_container" class="c-date-from-to c-val-selects-change">
+    <fieldset id="post_sec_school_timeline_from" class="ui-corner-all c-date-from">
+    <legend class="a-required">From</legend>
+        <select class="c-eff-select2 c-month c-group-error {monthandyear: true, required: postSecSchool, frombeforetodate:true}" data-placeholder="Month" id="post_sec_school_start_month" name="post_sec_school_start_month">
+        <option></option><option value="01">January</option><option value="02">February</option><option value="03">March</option><option value="04">April</option><option value="05">May</option><option value="06">June</option><option value="07">July</option><option value="08">August</option><option value="09">September</option><option value="10">October</option><option value="11">November</option><option value="12">December</option>
+</select>
+        <select class="c-eff-select2 c-loadyear c-year {monthandyear: true, required: postSecSchool, frombeforetodate:true} c-group-error" data-placeholder="Year" id="post_sec_school_start_year" name="post_sec_school_start_year">
+        <option></option>
+</select>
+</fieldset>
+      <div id="york-error-post_sec_school_timeline_from" class="york-error "></div>
+    <fieldset id="post_sec_school_timeline_to" class="ui-corner-all c-date-to">
+    <legend class="a-required">To</legend>
+        <select class="c-eff-select2 c-month {monthandyear: true, required: postSecSchool, frombeforetodate: true} c-group-error" data-placeholder="Month" id="post_sec_school_end_month" name="post_sec_school_end_month">
+        <option></option><option value="01">January</option><option value="02">February</option><option value="03">March</option><option value="04">April</option><option value="05">May</option><option value="06">June</option><option value="07">July</option><option value="08">August</option><option value="09">September</option><option value="10">October</option><option value="11">November</option><option value="12">December</option>
+</select>
+        <select class="c-eff-select2 c-year c-loadyear {monthandyear: true, required: postSecSchool, frombeforetodate: true} c-group-error" data-placeholder="Year" id="post_sec_school_end_year" name="post_sec_school_end_year">
+        <option></option>
+</select>
+</fieldset>
+      <div id="york-error-post_sec_school_timeline_to" class="york-error "></div>
+</div>
+      <div id="york-error-post_sec_school_timeline_container" class="york-error "></div>
+    <fieldset class="clear ui-corner-all" id="post_sec_school_grad">
+      <legend class="a-required">Did you graduate?</legend>
+      <label for="post_sec_school_grad_0" class="radio-inline">Yes</label>
+      <input id="post_sec_school_grad_0" type="radio" class="c-group-error radio-inline {required: postSecSchool}" value="Y" name="post_sec_school_grad" />
+      <div class="clear"></div>
+      <label for="post_sec_school_grad_1" class="radio-inline">No</label>
+      <input id="post_sec_school_grad_1" type="radio" class="c-group-error radio-inline {required: postSecSchool}" value="N" name="post_sec_school_grad" />
+      <div class="clear"></div>
+</fieldset>
+      <div id="york-error-post_sec_school_grad" class="york-error "></div>
+</div>
+      <div id="york-error-post_secschool" class="york-error "></div>
+</div>
+      <div id="york-error-post_secschool_info" class="york-error "></div>
+</div>
+      <div style="display: block" id="hide-show-activity">
+        <label for="employment_title"></label>
+    <div id="employment_title">
+  <h3>Activity While Away from School (if applicable)</h3>
+</div>
+      <div id="york-error-employment_title" class="york-error "></div>
+    <div id="employment">
+        <label for="has_employment_activity" class="radio-inline"></label>
+    <fieldset class="ui-corner-all" id="has_employment_activity">
+      <legend>Have you spent the last two consecutive years or more away from school (not enrolled in any academic studies)?</legend>
+      <label for="has_employment_activity_0" class="radio-inline">Yes</label>
+      <input id="has_employment_activity_0" type="radio" class="c-group-error radio-inline" value="Y" name="has_employment_activity" />
+      <div class="clear"></div>
+      <label for="has_employment_activity_1" class="radio-inline">No</label>
+      <input id="has_employment_activity_1" type="radio" class="c-group-error required radio-inline" value="N" name="has_employment_activity" />
+      <div class="clear"></div>
+</fieldset>
+      <div id="york-error-has_employment_activity" class="york-error "></div>
+</div>
+      <div id="york-error-employment" class="york-error "></div>
+    <div style="display:none;" id="employment_info">
+    <div id="no_school_activity" class="ui-corner-all">
+        <label for="employment_work">Employment Industry</label>
+    <select class="c-loadworkdesc c-eff-select2" data-placeholder="Choose an Industry" id="employment_work" name="employment_work">
+        <option></option>
+</select>
+      <div id="york-error-employment_work" class="york-error clear"></div>
+    <div id="employment_timeline" class="c-date-from-to c-val-selects-change">
+    <fieldset id="employment_timeline_from" class="ui-corner-all clear c-date-from">
+    <legend>From</legend>
+        <select class="c-eff-select2 c-group-error  c-month {frombeforetodate: true, monthandyear: 'month'}" data-placeholder="Month" id="employment_month_start" name="employment_month_start">
+        <option></option><option value="01">January</option><option value="02">February</option><option value="03">March</option><option value="04">April</option><option value="05">May</option><option value="06">June</option><option value="07">July</option><option value="08">August</option><option value="09">September</option><option value="10">October</option><option value="11">November</option><option value="12">December</option>
+</select>
+        <select class="c-eff-select2 c-loadyear c-year c-group-error {frombeforetodate: true, monthandyear: true}" data-placeholder="Year" id="employment_year_start" name="employment_year_start">
+        <option></option>
+</select>
+</fieldset>
+      <div id="york-error-employment_timeline_from" class="york-error "></div>
+    <fieldset id="employment_timeline_to" class="ui-corner-all clear c-date-to">
+    <legend>To</legend>
+        <select class="c-eff-select2 c-group-error  c-month {monthandyear: true, frombeforetodate: true }" data-placeholder="Month" id="employment_month_end" name="employment_month_end">
+        <option></option><option value="01">January</option><option value="02">February</option><option value="03">March</option><option value="04">April</option><option value="05">May</option><option value="06">June</option><option value="07">July</option><option value="08">August</option><option value="09">September</option><option value="10">October</option><option value="11">November</option><option value="12">December</option>
+</select>
+        <select class="c-eff-select2 c-loadyear c-year c-group-error {monthandyear: true, frombeforetodate: true }" data-placeholder="Year" id="employment_year_end" name="employment_year_end">
+        <option></option>
+</select>
+</fieldset>
+      <div id="york-error-employment_timeline_to" class="york-error "></div>
+</div>
+      <div id="york-error-employment_timeline" class="york-error "></div>
+</div>
+      <div id="york-error-no_school_activity" class="york-error "></div>
+</div>
+      <div id="york-error-employment_info" class="york-error "></div>
+</div>
+      <div>
+        <label for="prev_btn" class="accessible"></label>
+    <input name="prev_btn" type="button" id="prev_btn" value="Previous" class="c-prev-button" />
+      <div id="york-error-prev_btn" class="york-error "></div>
+        <label for="next_btn" class="accessible"></label>
+    <input name="next_btn" type="button" id="next_btn" value="Next" class="c-next-button" />
+      <div id="york-error-next_btn" class="york-error clear"></div>
+</div>
+</div>
+    <div id="demographic_information" class="form-section slider-section">
+  <h2>6 - Demographic Information</h2>
+      <div>
+    <fieldset class="ui-corner-all" id="aboriginal">
+      <legend>Do you identify as First Nations (Status or non-Status), Métis (Registered or Unregistered), or Inuit?</legend>
+      <label for="aboriginal_0" class="radio-inline">Yes</label>
+      <input id="aboriginal_0" type="radio" class="c-group-error radio-inline" value="Y" name="aboriginal" />
+      <div class="clear"></div>
+      <label for="aboriginal_1" class="radio-inline">No</label>
+      <input id="aboriginal_1" type="radio" class="c-group-error radio-inline" value="N" name="aboriginal" />
+      <div class="clear"></div>
+      <label for="aboriginal_2" class="radio-inline">Prefer not to respond</label>
+      <input id="aboriginal_2" type="radio" class="c-group-error radio-inline" value="NA" name="aboriginal" />
+      <div class="clear"></div>
+</fieldset>
+      <div id="york-error-aboriginal" class="york-error "></div>
+        <label for="aboriginal_text"></label>
+    <div id="aboriginal_text">
+  <div>
+    <p>Responding “Yes” to the above question will direct your application to the York University Indigenous Council review committee. This will assist us in providing a culturally relevant review of your application. Additionally, we will provide you with information on dedicated awards, and connect you to the Indigenous community at York.</p>
+  </div>
+</div>
+      <div id="york-error-aboriginal_text" class="york-error "></div>
+</div>
+      <div id="parent_info">
+    <fieldset class="ui-corner-all" id="parent_uni">
+      <legend>Have one of your parents/guardians attended a postsecondary institution (college, CÉGEP, university)?</legend>
+      <label for="parent_uni_0" class="radio-inline">Yes</label>
+      <input id="parent_uni_0" type="radio" class="c-group-error radio-inline" value="Y" name="parent_uni" />
+      <div class="clear"></div>
+      <label for="parent_uni_1" class="radio-inline">No</label>
+      <input id="parent_uni_1" type="radio" class="c-group-error radio-inline" value="N" name="parent_uni" />
+      <div class="clear"></div>
+      <label for="parent_uni_2" class="radio-inline">Prefer not to respond</label>
+      <input id="parent_uni_2" type="radio" class="c-group-error radio-inline" value="NA" name="parent_uni" />
+      <div class="clear"></div>
+</fieldset>
+      <div id="york-error-parent_uni" class="york-error "></div>
+</div>
+      <div id="previous_yes_no">
+    <fieldset class="ui-corner-all" id="previously_applied">
+      <legend class="a-required">Have you previously applied to York?</legend>
+      <label for="previously_applied_0" class="radio-inline">Yes</label>
+      <input id="previously_applied_0" type="radio" class="required c-group-error radio-inline" value="Y" name="previously_applied" />
+      <div class="clear"></div>
+      <label for="previously_applied_1" class="radio-inline">No</label>
+      <input id="previously_applied_1" type="radio" class="required c-group-error radio-inline" value="N" name="previously_applied" />
+      <div class="clear"></div>
+</fieldset>
+    <img alt="tooltip graphic" src="/images/tool-tip.jpg" tooltip="Includes those who applied via the Ontario University Application Centre as well as York's own online application." class="a-tooltip" style="width:16px;margin:3px 3px 0 3px" />
+      <div id="york-error-previously_applied" class="york-error "></div>
+</div>
+      <div style="display:none;" id="previous_info">
+    <div id="previous_applied" class="ui-corner-all ui-hide-show">
+        <label for="previous_year">When?</label>
+    <select class="{required: previouslyApplied} a-required" data-placeholder="Year" id="previous_year" name="previous_year">
+        <option></option>
+</select>
+      <div id="york-error-previous_year" class="york-error clear"></div>
+        <label for="previous_student_num" class="clear">Previous York student number</label>
+    <input name="previous_student_num" type="text" id="previous_student_num" placeholder="123456789" size="20" />
+      <div id="york-error-previous_student_num" class="york-error "></div>
+</div>
+      <div id="york-error-previous_applied" class="york-error "></div>
+</div>
+      <div>
+        <label for="prev_btn" class="accessible"></label>
+    <input name="prev_btn" type="button" id="prev_btn" value="Previous" class="c-prev-button" />
+      <div id="york-error-prev_btn" class="york-error "></div>
+        <label for="next_btn" class="accessible"></label>
+    <input name="next_btn" type="button" id="next_btn" value="Next" class="c-next-button" />
+      <div id="york-error-next_btn" class="york-error clear"></div>
+</div>
+</div>
+    <div id="declaration_consent" class="form-section slider-section">
+  <h2>7 - Declaration &amp; Consent</h2>
+    <div class="row">
+        <div class="span5">
+            <div>
+    <div>
+  <span class="">I have read and agree to the following:</span>
+  <div>
+    <ol>
+      <li>I certify that the information I have provided in this application is true, complete and accurate in all respects, including my declarations as to citizenship and immigration status in Canada, institutions attended and that all available information requested in this application has been disclosed.</li>
+      <li>All information I have provided in connection with this application is subject to verification and audit by York University.</li>
+      <li>I shall provide supporting documentation to York University to verify my eligibility upon request.</li>
+      <li>I consent to the disclosure by York University of personal information I have given in this application as follows:
+        <ol>
+          <li>to referees I have named and to other educational institutions when necessary to verify my statements.</li>
+        </ol>
+      </li>
+      <li>I understand that any misrepresentation on this application or failure to provide my consent to authorize York University to verify my information on this application may result in cancellation of my admission or enrolment status.</li>
+    </ol>
+  </div>
+</div>
+      <div id="york-error-consent1" class="york-error "></div>
+        <label for="dc_agree" class="a-required input-inline">I Agree</label>
+    <input name="dc_agree" type="checkbox" id="dc_agree" value="Y" class="accept-check input-inline {required: true, messages: {required: ya_translation('You must agree to the declaration of consent in order to submit this form.') }}" />
+      <div id="york-error-dc_agree" class="york-error "></div>
+</div>
+        </div>
+        <div class="span5">
+            <div>
+  <div>
+    <h5>Protection of Privacy</h5>
+  </div>
+  <div>
+    <p>
+      York University gathers and maintains information for the purposes of admission, registration and other fundamental activities related to being a member of the University community and to attending a public postsecondary institution in the Province of Ontario. When signing an application for admission, you should know that the information you provide, and any other information placed into your student record, will be protected and used in compliance with Ontario’s Freedom of Information and Protection of Privacy Act. The information on this form is collected under the authority of The York University Act, 1965 and is needed for educational, administrative and statistical purposes and to process your application for admission. The information will be used to verify qualifications and decide your eligibility for admission. Upon admission and registration, this information will form part of your student record and will be used to document your progress in an academic program.
+    </p>
+    <p>
+      If you have any questions about the collection, use and disclosure of your personal information by York University, please contact the Manager, Information Service, Bennett Centre for Student Services, 99 Ian MacDonald Blvd., York University, 4700 Keele Street, Toronto, Ontario, Canada M3J 1P3, 416-736-5000.
+      <a href="http://yorku.ca/ipo" target="blank">yorku.ca/ipo</a>
+    </p>
+  </div>
+  <div>
+    <h5>Disposal of records</h5>
+  </div>
+  <div>
+    <p>
+      All documents must be originals. Replaceable documents become the property of York University and will not be returned. We keep supporting documents for one year, after which we destroy materials related to your application. If the request is made upon application, irreplaceable documents will be returned to the original document holder.
+    </p>
+  </div>
+</div>
+        </div>
+    </div>
+    <div>
+        <label for="prev_btn" class="accessible"></label>
+    <input name="prev_btn" type="button" id="prev_btn" value="Previous" class="c-prev-button" />
+      <div id="york-error-prev_btn" class="york-error "></div>
+        <label for="submitForm" class="accessible"></label>
+    <input name="submitForm" type="button" id="submitForm" value="Submit" class="c-submit-button" />
+      <div id="york-error-submitForm" class="york-error clear"></div>
+</div>
+</div>
+    <div style="display:none" id="countdown_dashboard_container">
+  The application will shut down for system maintenance in:
+  <div id="countdown_dashboard">
+    <div class="dash minutes_dash">
+            <span class="dash_title">minutes</span>
+            <div class="digit">0</div>
+            <div class="digit">0</div>
+    </div>
+    <div class="dash seconds_dash">
+            <span class="dash_title">seconds</span>
+            <div class="digit">0</div>
+            <div class="digit">0</div>
+    </div>
+  </div>
+  <div class="countdown_controls">
+    <button onclick="set_by_offset()">set_by_offset()</button>
+  </div>
+</div>
+    <div id="loading_dialog" style="display:none">
+  <p style="text-align: center;">
+    <span>Loading, please wait...<img src="/images/loader.gif" alt="" /></span>
+  </p>
+</div>
+    <div id="message_dialog" style="display:none">
+  <p>
+    <span class="ui-icon ui-icon-alert" style="float: left;"></span>
+    <span id="message_dialog_message" style="float: left; font-weight: normal; font-size: 14px; line-height:1.4;"></span>
+  </p>
+</div>
+    <div id="language_dialog" style="display:none">
+  <p>
+    <span class="ui-icon ui-icon-alert" style="float: left;"></span>
+    <span id="language_dialog_message" style="float: left; font-weight: normal; font-size: 14px; line-height:1.4;">
+      Please note that if you switch the form's language, any data you have entered in the form so far will be lost.
+    </span>
+  </p>
+</div>
+    <div style="display:none" id="gs_certificate_dialog">
+  <div class="">Choose a Certificate from the list below. You can sort by each column using the arrow buttons below.</div>
+  <table id="gs-certificate-table">
+    <tbody>
+      <tr>
+        <td>
+          <span class="loading">Loading, please wait...<img src="/images/loader.gif" alt="" /></span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+    <div style="display:none" id="gs_program_dialog">
+  <div class="">Choose a Major/Program from the list below. You can sort by program using the arrow button below. Please be patient. Loading could take a while because the list is long.</div>
+  <table id="gs-program-table">
+    <tbody>
+      <tr>
+        <td>
+          <span class="loading">Loading, please wait...<img src="/images/loader.gif" alt="" /></span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+    <div style="display:none" id="gs_school_dialog">
+  <div class="">Choose a School from the list below. You can sort columns by using the arrow buttons below. Please be patient. Loading could take a while because the list is long.</div>
+  <table id="gs-school-table">
+    <tbody>
+      <tr>
+        <td>
+          <span class="loading">Loading, please wait...<img src="/images/loader.gif" alt="" /></span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <button class="c-gs-school-ff" style="float:right;">I could not find my School</button>
+</div>
+    <div style="display:none" id="gs_postschool_dialog">
+  <div class="">Choose a Post Secondary Institution from the list below. You can sort columns by using the arrow buttons below. Please be patient. Loading could take a while because the list is long.</div>
+  <table id="gs-postschool-table">
+    <tbody>
+      <tr>
+        <td>
+          <span class="loading">Loading, please wait...<img src="/images/loader.gif" alt="" /></span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <button class="c-gs-postschool-ff" style="float:right;">I could not find my institution</button>
+</div>
+    <div style="display:none;" id="postal-code-dialog">
+        <label for="pcd_div"></label>
+    <div id="pcd_div">Please enter your postal code.</div>
+      <div id="york-error-pcd_div" class="york-error "></div>
+        <label for="pcd_pd">Postal Code</label>
+    <input name="pcd_pd" type="text" id="pcd_pd" maxlength="6" placeholder="XXXXXX" size="6" />
+      <div id="york-error-pcd_pd" class="york-error "></div>
+</div>
+</div>
+    <div style="display:none" id="summary-container" class="page-container">
+    <div id="summary-data" class="summary-data">
+    <div id="conf-data">
+</div>
+</div>
+</div>
+</div>
+</form>
+  <script id="nitemplate" type="text/x-jquery-tmpl">
+  <div class="last">
+    <h2>Summary</h2>
+    <div class="row">
+      <div class="span5">
+	<h3>1 - Name &amp; Identity</h3>
+	<div class="a-label">Title</div>
+	<div class="a-value">${title}</div>
+	<div class="a-label">Legal First Name</div>
+	<div class="last a-value">${first_name}</div>
+	<div class="clear"></div>
+	<div class="a-label">Legal Middle Name</div>
+	<div class="a-value">${middle_name || '—'}</div>
+	<div class="a-label">Legal Surname (Family Name)</div>
+	<div class="last a-value">${last_name}</div>
+	<div class="clear"></div>
+	<div class="a-label">Common Name</div>
+	<div class="a-value">${preferred_name || '—'}</div>
+	<div class="a-label">Former Surname</div>
+	<div class="last a-value">${former_last_name || '—'}</div>
+	<div class="clear"></div>
+	<div class="a-label">Date of Birth:</div>
+	<div class="a-value">${date_of_birth}</div>
+	<div class="a-label">Gender</div>
+	<div class="last a-value">${gender}</div>
+	<div class="a-label">E-mail address</div>
+	<div class="last a-value">${email}</div>
+	<div class="clear"></div>
+	<button class="c-edit-button a-edit-button button-style append-2" name="0">Edit</button>
+      </div>
+      <div class="span5">
+	<div class="last">
+	  <h3>2 - Goal of Study</h3>
+	</div>
+	<div class="a-label">Start Date</div>
+	<div class="a-value">${$('#gos_session option:selected').text()}</div>
+	  {{if goal_study == 'D'}}
+	  <div class="a-label">Subject of Major Interest - Choice 1</div>
+	  <div class="last a-value">${$('#gs_degree_desc').val()}</div>
+	  {{if $('#gs_degree_desc2').val() != ''}}
+	  <div class="a-label">Subject of Major Interest - Choice 2</div>
+	  <div class="a-value">${$('#gs_degree_desc2').val() || '—'}</div>
+	  {{/if}}
+	  {{else}}
+	  {{if goal_study == 'C'}}
+	  <div class="a-label">Certificate</div>
+	  <div class="a-value">${$('#gs_cert_desc').val()}</div>
+	  <div class="clear"></div>
+	  <div class="a-label">Faculty</div>
+	  <div class="last a-value">${$('#gs_cert_faculty').val() || '—'}</div>
+	  {{else}}
+	  {{if goal_study == 'L'}}
+          <div class="a-label">I wish to enrol with a letter of permission to</div>
+          <div class="last a-value">${$('#letter_faculty option:selected').text()}</div>
+	  {{else}}
+          <div class="a-label">I wish to enrol as a visiting student to</div>
+          <div class="last a-value">${$('#visiting_faculty option:selected').text()}</div>
+	  {{/if}}
+	  {{/if}}
+	  {{/if}}
+	<div class="clear"></div>
+	<button class="c-edit-button a-edit-button button-style append-2" name="1">Edit</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span5">
+	<div class="last">
+	  <h3>3 - Citizenship &amp; Language</h3>
+	</div>
+	<div class="a-label">Country of Citizenship</div>
+	<div class="a-value">${$('#cc_country option:selected').text()}</div>
+	<div class="a-label">First Language</div>
+	<div class="last a-value">${$('#firstlang option:selected').text()}</div>
+	<div class="clear"></div>
+	<div class="a-label">Language of Correspondence</div>
+	<div class="a-value">${$item.language($("input[name='correspondence_language']").val())}</div>
+	<div class="a-label">Official status in Canada</div>
+        <div class="a-value">${$item.citizenship($("input[name='citizenship']:checked").val())}</div>
+	<div class="clear"></div>
+	{{if citizenship != 'Canadian Citizen'}}
+	<div class="a-label">Date of arrival in Canada</div>
+	<div class="a-value">${$('#month_arrival option:selected').text()}/${$('#year_arrival option:selected').text()}</div>
+	<div class="clear"></div>
+	{{/if}}
+	<button class="c-edit-button a-edit-button button-style" name="2">Edit</button>
+      </div>
+      <div class="span5">
+	<div class="last">
+	  <h3>4 - Address &amp; Contact</h3>
+	</div>
+	<div class="a-label">Street Address</div>
+	<div class="a-value">${perm_street_address}</div>
+	<div class="a-label">Street Address continued</div>
+	<div class="last a-value">${perm_street_address_cont || '—'}</div>
+	<div class="clear"></div>
+	<div class="a-label">Country</div>
+	<div class="a-value">${$('#perm_address_country option:selected').text()}</div>
+	<div class="a-label">Province</div>
+	{{if $("#perm_address_province option:selected").text() != '' }}
+	  <div class="last a-value">${$('#perm_address_province option:selected').text()}</div>
+	{{else}}
+	  <div class="last a-value">${perm_free_address_province}</div>
+	{{/if}}
+	<div class="clear"></div>
+	<div class="a-label">City</div>
+	<div class="a-value">${perm_address_city}</div>
+	<div class="a-label">Postal Code</div>
+	<div class="last a-value">${perm_address_postal_zip}</div>
+	<div class="clear"></div>
+	<div class="a-label">Mailing address same as permanent?</div>
+	<div class="a-value">${$item.yesNo($("input[name='mailing_address_same']:checked").val())}</div>
+	<div class="clear"></div>
+	{{if $("input[name='mailing_address_same']:checked").val() == 'N'}}
+	  <div class="a-label">Street Address</div>
+	  <div class="a-value">${mailing_street_address}</div>
+	  <div class="a-label">Street Address continued</div>
+	  <div class="last a-value">${mailing_street_address_cont || '—'}</div>
+	  <div class="clear"></div>
+	  <div class="a-label">Country</div>
+	  <div class="a-value">${$('#mailing_address_country option:selected').text()}</div>
+	  <div class="a-label">Province</div>
+          {{if $("#mailing_address_province option:selected").text() != '' }}
+	    <div class="last a-value">${$('#mailing_address_province option:selected').text()}</div>
+          {{else}}
+            <div class="last a-value">${mailing_free_address_province}</div>
+          {{/if}}
+	  <div class="clear"></div>
+	  <div class="a-label">City</div>
+	  <div class="a-value">${mailing_address_city}</div>
+	  <div class="a-label">Postal Code</div>
+	  <div class="last a-value">${mailing_address_postal_zip}</div>
+	  <div class="clear"></div>
+	{{/if}}
+	{{if home_pn}}
+	  <div class="a-label">Home Phone Number</div>
+	  <div class="a-value">${home_pn}</div>
+	  <div class="clear"></div>
+	{{/if}}
+	{{if business_pn}}
+	  <div class="a-label">Business Phone Number</div>
+	  <div class="a-value">${business_pn}</div>
+	  {{if $('#business_pn_ext').val()}}
+	    <div class="a-label">Extension</div>
+	    <div class="last a-value">${business_pn_ext || '—'}</div>
+	  {{/if}}
+	  <div class="clear"></div>
+	{{/if}}
+	{{if mobile_pn}}
+	  <div class="a-label">Mobile Phone Number</div>
+	  <div class="a-value">${mobile_pn}</div>
+	  <div class="clear"></div>
+	{{/if}}
+	<button class="c-edit-button a-edit-button button-style" name="3">Edit</button>
+    </div>
+  </div> <!-- row -->
+  <div class="row">
+    <div class="span5">
+	<div class="last">
+	  <h3>5 - Previous Education</h3>
+	</div>
+	<div class="a-label">Ontario Education Number (OEN)</div>
+	<div class="a-value">${$item.nAval($("#oen").val())}</div>
+	<div class="clear"></div>
+	  {{if $("input[name='secondary_school_attended']:checked").val() == 'Y'}}
+	  <div class="a-label">Have you attended any secondary schools within the past five years?</div>
+	  <div class="a-value">${$item.yesNo($("input[name='secondary_school_attended']:checked").val())}</div>
+	  <div class="clear"></div>
+	  {{each(myindex,value) $('#sec_school_info .eff-clone')}}
+	  <div class="a-label">Country</div>
+	  <div class="a-value">${$item.getSelect('sec_school_country_',value)}</div>
+	  {{if $item.getSelect('sec_school_country_',value) == 'Canada' }}
+          <div class="a-label">Province</div>
+          <div class="a-value">${$item.getSelect('sec_school_province_',value)}</div>
+	  {{/if}}
+	  <div class="clear"></div>
+	  <div class="a-label">School</div>
+	  <div class="a-value">${$item.getInput('sec_school_name_',value)}</div>
+	  <div class="a-label">Address</div>
+	  <div class="a-value">${$item.getInput('sec_school_address_',value)}</div>
+	  <div class="clear"></div>
+	  <div class="a-label">City</div>
+	  <div class="a-value">${$item.getInput('sec_school_city_',value)}</div>
+	  <div class="clear"></div>
+	  <div class="a-label">From</div>
+	  <div class="a-value">${$item.getSelect('sec_school_month_start_',value)}/${$item.getSelect('sec_school_year_start_',value)}</div>
+	  <div class="a-label">To</div>
+	  <div class="a-value">${$item.getSelect('sec_school_month_end_',value)}/${$item.getSelect('sec_school_year_end_',value)}</div>
+	  <div class="clear"></div>
+	  <div class="a-label">Did you graduate?</div>
+	  <div class="a-value">${$item.yesNo($item.getRadio('sec_graduated_',value)) || '—'}</div>
+	  <div class="a-label">Degree/Diploma/Certificate/Credential</div>
+	  <div class="a-value">${$item.getInput('sec_school_dipl_',value) || '—'}</div>
+	  <div class="clear"></div>
+	  {{/each}}
+	  {{/if}}
+	  {{if $("input[name='bridging_course']:checked").val() == 'Y' }}
+	  <div class="clear"></div>
+	  <div class="a-label">Have you taken any pre-university or bridging courses?</div>
+	  <div class="a-value">${$item.yesNo($("input[name='bridging_course']:checked").val())}</div>
+	  <div class="clear"></div>
+	  {{each(myindex,value) $('#bridging_info .eff-clone')}}
+	  <div class="a-label">Course</div>
+	  <div class="a-value">${$item.getInput('bridging_course_name_',value) || '—'}</div>
+	  <div class="a-label">School</div>
+	  <div class="a-value">${$item.getInput('bridging_institution_location_',value) || '—'}</div>
+	  <div class="clear"></div>
+	  {{/each}}
+	  {{/if}}
+	  {{if $("input[name='post_secondary_attended']:checked").val() == 'Y' }}
+	  <div class="a-label">Have you attended any accredited postsecondary institutions?</div>
+	  <div class="a-value">${$item.yesNo($("input[name='post_secondary_attended']:checked").val())}</div>
+	  <div class="clear"></div>
+	{{each(myindex,value) $('#post_secschool_info .eff-clone')}}
+	<div class="a-label">Country</div>
+	<div class="a-value">${$item.getSelect('post_sec_school_country_',value)}</div>
+	{{if $item.getSelect('post_sec_school_country_',value) == 'Canada'}}
+        <div class="a-label">Province</div>
+        <div class="a-value">${$item.getSelect('post_sec_school_province_',value)}</div>
+	{{/if}}
+	<div class="clear"></div>
+	<div class="a-label">School</div>
+	<div class="a-value">${$item.getInput('post_sec_school_name_',value)}</div>
+	<div class="a-label">Address</div>
+	<div class="a-value">${$item.getInput('post_sec_school_address_',value)}</div>
+	<div class="clear"></div>
+	<div class="a-label">City</div>
+	<div class="a-value">${$item.getInput('post_sec_school_city_',value)}</div>
+	<div class="clear"></div>
+	<div class="a-label">Program/Major</div>
+	<div class="a-value">${$item.getInput('post_sec_school_major_',value)}</div>
+	<div class="clear"></div>
+	<div class="a-label">From</div>
+	<div class="a-value">${$item.getSelect('post_sec_school_start_month_',value)}/${$item.getSelect('post_sec_school_start_year_',value)}</div>
+	<div class="a-label">To</div>
+	<div class="a-value">${$item.getSelect('post_sec_school_end_month_',value)}/${$item.getSelect('post_sec_school_end_year_',value)}</div>
+	<div class="clear"></div>
+	<div class="a-label">Graduated</div>
+	<div class="a-value">${$item.yesNo($item.getRadio('post_sec_school_grad_',value)) || '—'}</div>
+	<div class="a-label">Diploma Name</div>
+	<div class="a-value">${$item.getInput('post_sec_school_diploma_name_',value) || '—'}</div>
+	<div class="clear"></div>
+	{{/each}}
+	  {{/if}}
+	  {{if $("input[name='has_employment_activity']:checked").val() == 'Y' }}
+	  <div class="a-label">Have you spent 8 months away from school?</div>
+	  <div class="a-value">${$item.yesNo($("input[name='has_employment_activity']:checked").val())}</div>
+	  <div class="clear"></div>
+	  {{each(myindex,value) $('#employment_info .eff-clone')}}
+	  <div class="a-label">Activity or Nature of Work</div>
+	  <div class="a-value">${$item.getSelect('employment_work_',value)}</div>
+	  <div class="a-label">From</div>
+	  <div class="a-value">${$item.getSelect('employment_month_start_',value)}/${$item.getSelect('employment_year_start_',value)}</div>
+	  <div class="a-label">To</div>
+	  <div class="a-value">${$item.getSelect('employment_month_end_',value)}/${$item.getSelect('employment_year_end_',value)}</div>
+	  <div class="clear"></div>
+	  {{/each}}
+	  {{/if}}
+	<button class="c-edit-button a-edit-button button-style" name="4">Edit</button>
+      </div>
+      <div class="span5">
+	<div class="last">
+	  <h3>6 - Demographic Information</h3>
+	</div>
+	<div class="a-label">Do you identify as First Nations (Status or non-Status), Métis, or Inuit?</div>
+	<div class="a-value">${$item.noResponse($("input[name='aboriginal']:checked").val())}</div>
+	  <div class="a-label">Have one of your parents/guardians attended a postsecondary institution (college, CÉGEP, university)?</div>
+	  <div class="last a-value">${$item.noResponse($("input[name='parent_uni']:checked").val())}</div>
+	<div class="a-label">Have you previously applied to York?</div>
+	<div class="a-value">${$item.yesNo($("input[name='previously_applied']:checked").val())}</div>
+	{{if $("input[name='previously_applied']:checked").val() == 'Y'}}
+	<div class="a-label">When?</div>
+	<div class="last a-value">${$('#previous_year option:selected').text() || '—'}</div>
+	<div class="clear"></div>
+	<div class="a-label">Previous York student number</div>
+	<div class="a-value">${previous_student_num || '—'}</div>
+	{{/if}}
+	<button class="c-edit-button a-edit-button button-style append-2" name="5">Edit</button>
+	<div class="clear"></div>
+      </div>
+    </div>
+  </div>
+  <button class="confirm-button">Confirm</button>
+</script>
+  <span id="sizer" style="display:none;">A</span>
+      </div>
+      <div id="feedback-container" style="display:none;" class="container feedback">
+        <!-- <p>We'd love to hear your <a target="top" title="Technical Feedback" href="http://uafeedback.apps01.yorku.ca/machform/view.php?id=1">feedback</a> on this form.</p> -->
+	<p>We'd love to hear your
+	  <a target="top" title="Technical Feedback" href="http://uafeedback.apps01.yorku.ca/machform/view.php?id=1">feedback</a>
+ on this form.</p>
+</div>
+    <script type="text/javascript">var isUgrad = true;</script>
+<script type="text/javascript">var ya_translations = { 'Province': 'Province','Choose a province': 'Choose a province','State': 'State','Choose a state': 'Choose a state','You are using an outdated and unsupported web browser.  To enable you to complete and submit your application, please click "OK" to upgrade to a modern web browser.': 'You are using an outdated and unsupported web browser.  To enable you to complete and submit your application, please click "OK" to upgrade to a modern web browser.','Loading, please wait...': 'Loading, please wait...','Choose a Country': 'Choose a Country','Please select a province': 'Please select a province','Please select a country': 'Please select a country','Please specify when you wish to begin classes': 'Please specify when you wish to begin classes','Please select a start date': 'Please select a start date','CertificateSchool Name': 'CertificateSchool Name','City': 'City','Address': 'Address','Choose school': 'Choose school','Please enter your institution name, address and city on the fields provided.': 'Please enter your institution name, address and city on the fields provided.','Search all columns': 'Search all columns','Postal Code': 'Postal Code','ZIP Code': 'ZIP Code','Postal Code/ZIP Code': 'Postal Code/ZIP Code','Undergraduate Application Form': 'Undergraduate Application Form','The application is currently not available. Please try again later.Faculty': 'The application is currently not available. Please try again later.Faculty','Deadline': 'Deadline','Institution Name': 'Institution Name','City': 'City','Choose Institution': 'Choose Institution','Important notice!': 'Important notice!','The application will shut down for system maintenance in ': 'The application will shut down for system maintenance in ',' min. Please complete and submit the form and pay for your application before the shut down. Applications in progress cannot be saved. Alternatively, you can wait until after 1:10am EST to fill in this form.': ' min. Please complete and submit the form and pay for your application before the shut down. Applications in progress cannot be saved. Alternatively, you can wait until after 1:10am EST to fill in this form.','Unable to find data for your postal code.': 'Unable to find data for your postal code.','Not Available': 'Not Available','Yes': 'Yes','No': 'No','Full Time': 'Full Time','Part Time': 'Part Time','English': 'English','Choose School': 'Choose School','French': 'French','Remove this item?': 'Remove this item?','Remove Item': 'Remove Item','Remove': 'Remove','Add': 'Add','Diploma': 'Diploma','Closed': 'Closed','Please select the level of study': 'Please select the level of study','You must agree to the declaration of consent in order to submit this form.': 'You must agree to the declaration of consent in order to submit this form.','Please enter a valid phone number (e.g. +16051234567 and 011-23-3336310442).': 'Please enter a valid phone number (e.g. +16051234567 and 011-23-3336310442).','Please specify a valid postal/zip code.': 'Please specify a valid postal/zip code.','Select a valid Canadian province or US state.': 'Select a valid Canadian province or US state.','At least one phone number is required.': 'At least one phone number is required.','Please choose an option.': 'Please choose an option.','The start date cannot be after the end date.': 'The start date cannot be after the end date.','Please check the Street Address field and modify.': 'Please check the Street Address field and modify.','This field cannot be all upper case or lower case.': 'This field cannot be all upper case or lower case.','Date of arrival in Canada is not required if you are a Canadian Citizen.': 'Date of arrival in Canada is not required if you are a Canadian Citizen.','Choose a Faculty': 'Choose a Faculty','Please select a language.': 'Please select a language.','Please select your official status in Canada.': 'Please select your official status in Canada.','Please select a month and year.': 'Please select a month and year.','This field is required.': 'This field is required.','Please select an option.': 'Please select an option.','Degree Description': 'Degree Description','Degree': 'Degree','Degree Selection': 'Degree Selection','Choose Program': 'Choose Program','Choose Major/Program': 'Choose Major/Program','Choose Certificate': 'Choose Certificate','Cancel': 'Cancel','Choose a Diploma': 'Choose a Diploma','Please enter the same value again.': 'Please enter the same value again.','Prefer not to respond': 'Prefer not to respond','DegreeActivity Level': 'DegreeActivity Level','Start Date': 'Start Date','Subject of Major Interest - Choice 1': 'Subject of Major Interest - Choice 1','Subject of Major Interest - Choice 2': 'Subject of Major Interest - Choice 2','Canadian Citizen': 'Canadian Citizen','Permanent Resident of Canada (Landed Immigrant)': 'Permanent Resident of Canada (Landed Immigrant)','Permanent Resident': 'Permanent Resident','Study Permit': 'Study Permit','Currently on, or will require, study permit to study in Canada': 'Currently on, or will require, study permit to study in Canada','Diplomatic': 'Diplomatic','Convention Refugee (Protected Person)': 'Convention Refugee (Protected Person)','Visitor': 'Visitor','Other': 'Other','No Status': 'No Status','Convention Refugee': 'Convention Refugee','Please enter a correct date': 'Please enter a correct date','ZIP Code': 'ZIP Code','Please provide a business phone number for the extension.': 'Please provide a business phone number for the extension.' };</script>
+<script type="text/javascript">var ya_lang = 'en';</script></body>
+</html>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: What Can I Do With My Degree?	</title>
+	<atom:link href="https://careers.yorku.ca/students-and-new-grads/what-can-i-do-with-my-degree/feed" rel="self" type="application/rss+xml" />
+	<link>https://careers.yorku.ca</link>
+	<description>We help connect York University students and new graduates with career opportunities!</description>
+	<lastBuildDate>Wed, 23 Oct 2019 15:23:20 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.2.3</generator>
+</channel>
+</rss>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+Page Caching using memcached 
+Database Caching 59/74 queries in 0.180 seconds using memcached
+
+Served from: careers.yorku.ca @ 2023-11-12 18:43:20 by W3 Total Cache
+-->

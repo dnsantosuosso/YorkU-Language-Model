@@ -1,0 +1,14 @@
+.alert.global {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+  text-align: center;
+}
+
+.alert.global p {
+  margin-bottom: 0;
+}
+
+.alert.site {
+  text-align: center;
+}

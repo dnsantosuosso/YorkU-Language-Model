@@ -1,0 +1,62 @@
+/*
+ Theme Name:   York 2020 Faculty of Graduate Studies Child
+ Theme URI:    https://yorku.ca
+ Description:  York 2020 Faculty Graduate Studies Theme
+ Author:       Alice
+ Author URI:   http://yorku.ca
+ Template:     york2020
+ Version:      1.0.2
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  york2020child
+*/
+
+/* Hide Empty Toolset Cards */
+.js-wpv-view-layout .card:empty {
+	border: 0 !important;
+	height: 1px;
+	background-color: transparent;
+}
+/* Funding Table styles */
+.wp-block-table figcaption {
+	font-size: 80%;
+	text-align: center;
+}
+/* Datatables Style */
+.dataTables_wrapper .row {
+	margin-left: 0;
+	margin-right: 0;
+}
+/* Featured Frontpage Faculty */
+.featured-faculty figure {
+	text-align: center;
+}
+.featured-faculty img {
+	max-width: 245px;
+	max-height: 245px;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	object-position: center center;
+	border: 5px solid #e31837;
+	/*border-radius: 100% !important;*/
+}
+/* Faculty Profiles */
+.faculty-profiles .embed-responsive-1by1 {
+  border: 8px solid #fff;
+}
+.faculty-profiles .card-img-top {
+	padding: 8px;
+}
+.faculty-profiles img.embed-responsive-item {
+  object-fit: cover;
+  object-position: center top;
+}
+/* Alumni Profiles */
+.alumni-profiles .card img.rounded-left {
+	max-height: 116px;
+	max-width: 116px;
+	object-fit: cover;
+	object-position: center top;
+}

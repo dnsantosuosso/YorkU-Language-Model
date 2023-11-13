@@ -1,0 +1,825 @@
+  <!DOCTYPE html>
+<html lang="en-CA">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://www.yorku.ca/research/wp-content/themes/york2020/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://www.yorku.ca/research/wp-content/themes/york2020/favicon-16x16.png">
+  <link rel="manifest" href="https://www.yorku.ca/research/wp-content/themes/york2020/site.webmanifest">
+  <link rel="mask-icon" href="https://www.yorku.ca/research/wp-content/themes/york2020/safari-pinned-tab.svg" color="#e31837">
+  <link rel="shortcut icon" href="https://www.yorku.ca/research/wp-content/themes/york2020/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="https://www.yorku.ca/research/wp-content/themes/york2020/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WB2S8R');</script>
+  <!-- End Google Tag Manager --> 
+  <!-- Hotjar Tracking Code for https://www.yorku.ca/ -->
+  <script>
+    (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:1020482,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+  <style type="text/css">:root,::before,::after{--mec-color-skin: #a81010;--mec-color-skin-rgba-1: rgba(168,16,16,.25);--mec-color-skin-rgba-2: rgba(168,16,16,.5);--mec-color-skin-rgba-3: rgba(168,16,16,.75);--mec-color-skin-rgba-4: rgba(168,16,16,.11);--mec-container-normal-width: 1196px;--mec-container-large-width: 1690px;--mec-fes-main-color: #40d9f1;--mec-fes-main-color-rgba-1: rgba(64, 217, 241, 0.12);--mec-fes-main-color-rgba-2: rgba(64, 217, 241, 0.23);--mec-fes-main-color-rgba-3: rgba(64, 217, 241, 0.03);--mec-fes-main-color-rgba-4: rgba(64, 217, 241, 0.3);--mec-fes-main-color-rgba-5: rgb(64 217 241 / 7%);--mec-fes-main-color-rgba-6: rgba(64, 217, 241, 0.2);--mec-fluent-main-color: #ade7ff;--mec-fluent-main-color-rgba-1: rgba(173, 231, 255, 0.3);--mec-fluent-main-color-rgba-2: rgba(173, 231, 255, 0.8);--mec-fluent-main-color-rgba-3: rgba(173, 231, 255, 0.1);--mec-fluent-main-color-rgba-4: rgba(173, 231, 255, 0.2);--mec-fluent-main-color-rgba-5: rgba(173, 231, 255, 0.7);--mec-fluent-main-color-rgba-6: rgba(173, 231, 255, 0.7);--mec-fluent-bold-color: #00acf8;--mec-fluent-bg-hover-color: #ebf9ff;--mec-fluent-bg-color: #f5f7f8;--mec-fluent-second-bg-color: #d6eef9;}.mec-wrap, .mec-wrap div:not([class^="elementor-"]), .lity-container, .mec-wrap h1, .mec-wrap h2, .mec-wrap h3, .mec-wrap h4, .mec-wrap h5, .mec-wrap h6, .entry-content .mec-wrap h1, .entry-content .mec-wrap h2, .entry-content .mec-wrap h3, .entry-content .mec-wrap h4, .entry-content .mec-wrap h5, .entry-content .mec-wrap h6, .mec-wrap .mec-totalcal-box input[type="submit"], .mec-wrap .mec-totalcal-box .mec-totalcal-view span, .mec-agenda-event-title a, .lity-content .mec-events-meta-group-booking select, .lity-content .mec-book-ticket-variation h5, .lity-content .mec-events-meta-group-booking input[type="number"], .lity-content .mec-events-meta-group-booking input[type="text"], .lity-content .mec-events-meta-group-booking input[type="email"],.mec-organizer-item a, .mec-single-event .mec-events-meta-group-booking ul.mec-book-tickets-container li.mec-book-ticket-container label{ font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;}.mec-event-content p, .mec-search-bar-result .mec-event-detail{ font-family: Roboto, sans-serif;} .mec-wrap .mec-totalcal-box input, .mec-wrap .mec-totalcal-box select, .mec-checkboxes-search .mec-searchbar-category-wrap, .mec-wrap .mec-totalcal-box .mec-totalcal-view span{ font-family: "Roboto", Helvetica, Arial, sans-serif; }.mec-event-grid-modern .event-grid-modern-head .mec-event-day, .mec-event-list-minimal .mec-time-details, .mec-event-list-minimal .mec-event-detail, .mec-event-list-modern .mec-event-detail, .mec-event-grid-minimal .mec-time-details, .mec-event-grid-minimal .mec-event-detail, .mec-event-grid-simple .mec-event-detail, .mec-event-cover-modern .mec-event-place, .mec-event-cover-clean .mec-event-place, .mec-calendar .mec-event-article .mec-localtime-details div, .mec-calendar .mec-event-article .mec-event-detail, .mec-calendar.mec-calendar-daily .mec-calendar-d-top h2, .mec-calendar.mec-calendar-daily .mec-calendar-d-top h3, .mec-toggle-item-col .mec-event-day, .mec-weather-summary-temp{ font-family: "Roboto", sans-serif; } .mec-fes-form, .mec-fes-list, .mec-fes-form input, .mec-event-date .mec-tooltip .box, .mec-event-status .mec-tooltip .box, .ui-datepicker.ui-widget, .mec-fes-form button[type="submit"].mec-fes-sub-button, .mec-wrap .mec-timeline-events-container p, .mec-wrap .mec-timeline-events-container h4, .mec-wrap .mec-timeline-events-container div, .mec-wrap .mec-timeline-events-container a, .mec-wrap .mec-timeline-events-container span{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important; }</style><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v16.7 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Research and Innovation | York University</title>
+	<meta name="description" content="York University conducts purposeful research that advances knowledge and creates positive change." />
+	<link rel="canonical" href="https://www.yorku.ca/research/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Research and Innovation | York University" />
+	<meta property="og:description" content="York University conducts purposeful research that advances knowledge and creates positive change." />
+	<meta property="og:url" content="https://www.yorku.ca/research/" />
+	<meta property="og:site_name" content="Research &amp; Innovation" />
+	<meta property="article:modified_time" content="2023-11-06T17:17:46+00:00" />
+	<meta property="og:image" content="https://www.yorku.ca/research/wp-content/uploads/sites/39/2022/03/YORKU-Research-web-banner-2-002.png" />
+	<meta property="og:image:width" content="1642" />
+	<meta property="og:image:height" content="425" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Est. reading time" />
+	<meta name="twitter:data1" content="17 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.yorku.ca/research/#website","url":"https://www.yorku.ca/research/","name":"Research &amp; Innovation","description":"York is committed to excellence in research and scholarship in all its forms.","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.yorku.ca/research/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-CA"},{"@type":"ImageObject","@id":"https://www.yorku.ca/research/#primaryimage","inLanguage":"en-CA","url":"https://www.yorku.ca/research/wp-content/uploads/sites/39/2022/03/YORKU-Research-web-banner-2-002.png","contentUrl":"https://www.yorku.ca/research/wp-content/uploads/sites/39/2022/03/YORKU-Research-web-banner-2-002.png","width":1642,"height":425},{"@type":"WebPage","@id":"https://www.yorku.ca/research/#webpage","url":"https://www.yorku.ca/research/","name":"Research and Innovation | York University","isPartOf":{"@id":"https://www.yorku.ca/research/#website"},"primaryImageOfPage":{"@id":"https://www.yorku.ca/research/#primaryimage"},"datePublished":"2020-06-24T19:04:51+00:00","dateModified":"2023-11-06T17:17:46+00:00","description":"York University conducts purposeful research that advances knowledge and creates positive change.","breadcrumb":{"@id":"https://www.yorku.ca/research/#breadcrumb"},"inLanguage":"en-CA","potentialAction":[{"@type":"ReadAction","target":["https://www.yorku.ca/research/"]}]},{"@type":"BreadcrumbList","@id":"https://www.yorku.ca/research/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//www.yorku.ca' />
+<link rel='dns-prefetch' href='//use.fontawesome.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Research &amp; Innovation &raquo; Feed" href="https://www.yorku.ca/research/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Research &amp; Innovation &raquo; Comments Feed" href="https://www.yorku.ca/research/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.yorku.ca\/research\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.8"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='mec-select2-style-css'  href='https://www.yorku.ca/research/wp-content/plugins/modern-events-calendar/assets/packages/select2/select2.min.css?ver=6.10.0' type='text/css' media='all' />
+<link rel='stylesheet' id='mec-font-icons-css'  href='https://www.yorku.ca/research/wp-content/plugins/modern-events-calendar/assets/css/iconfonts.css?ver=5.8.8' type='text/css' media='all' />
+<link rel='stylesheet' id='mec-frontend-style-css'  href='https://www.yorku.ca/research/wp-content/plugins/modern-events-calendar/assets/css/frontend.min.css?ver=6.10.0' type='text/css' media='all' />
+<link rel='stylesheet' id='mec-tooltip-style-css'  href='https://www.yorku.ca/research/wp-content/plugins/modern-events-calendar/assets/packages/tooltip/tooltip.css?ver=5.8.8' type='text/css' media='all' />
+<link rel='stylesheet' id='mec-tooltip-shadow-style-css'  href='https://www.yorku.ca/research/wp-content/plugins/modern-events-calendar/assets/packages/tooltip/tooltipster-sideTip-shadow.min.css?ver=5.8.8' type='text/css' media='all' />
+<link rel='stylesheet' id='featherlight-css'  href='https://www.yorku.ca/research/wp-content/plugins/modern-events-calendar/assets/packages/featherlight/featherlight.css?ver=5.8.8' type='text/css' media='all' />
+<link rel='stylesheet' id='mec-lity-style-css'  href='https://www.yorku.ca/research/wp-content/plugins/modern-events-calendar/assets/packages/lity/lity.min.css?ver=5.8.8' type='text/css' media='all' />
+<link rel='stylesheet' id='mec-general-calendar-style-css'  href='https://www.yorku.ca/research/wp-content/plugins/modern-events-calendar/assets/css/mec-general-calendar.css?ver=5.8.8' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://www.yorku.ca/research/wp-includes/css/dist/block-library/style.min.css?ver=5.8.8' type='text/css' media='all' />
+<link rel='stylesheet' id='yorku-blocks-style-css'  href='https://www.yorku.ca/research/wp-content/plugins/yorkublocks-v1.3/dist/style.css?ver=5.8.8' type='text/css' media='all' />
+<link rel='stylesheet' id='mediaelement-css'  href='https://www.yorku.ca/research/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.16' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css'  href='https://www.yorku.ca/research/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=5.8.8' type='text/css' media='all' />
+<link rel='stylesheet' id='view_editor_gutenberg_frontend_assets-css'  href='https://www.yorku.ca/research/wp-content/plugins/toolset-blocks/public/css/views-frontend.css?ver=3.6.5' type='text/css' media='all' />
+<style id='view_editor_gutenberg_frontend_assets-inline-css' type='text/css'>
+.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item a {color: #444;background-color: #fff;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:focus {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #eee;}
+.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item a {color: #444;background-color: #fff;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:focus {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item a {color: #444;background-color: #eeeeee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey a:focus {color: #000;background-color: #e5e5e5;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #e5e5e5;}
+.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item a {color: #444;background-color: #fff;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:focus {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item a {color: #444;background-color: #eeeeee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey a:focus {color: #000;background-color: #e5e5e5;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #e5e5e5;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue .wpv-sort-list-item {border-color: #0099cc;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue .wpv-sort-list-item a {color: #444;background-color: #cbddeb;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue a:focus {color: #000;background-color: #95bedd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #95bedd;}
+</style>
+<link rel='stylesheet' id='yublockpatterns-style-css'  href='https://www.yorku.ca/research/wp-content/plugins/yu-blockpatterns/style.css?ver=5.8.8' type='text/css' media='all' />
+<link rel='stylesheet' id='york2020-style-css'  href='https://www.yorku.ca/research/wp-content/themes/york2020/style.css?ver=5.8.8' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-official-css'  href='https://use.fontawesome.com/releases/v5.13.1/css/all.css' type='text/css' media='all' integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous" />
+<link rel='stylesheet' id='font-awesome-official-v4shim-css'  href='https://use.fontawesome.com/releases/v5.13.1/css/v4-shims.css' type='text/css' media='all' integrity="sha384-KkCLkpBvvcSnFQn3PbNkSgmwKGj7ln8pQe/6BOAE0i+/fU9QYEx5CtwduPRyTNob" crossorigin="anonymous" />
+<style id='font-awesome-official-v4shim-inline-css' type='text/css'>
+@font-face {
+font-family: "FontAwesome";
+font-display: block;
+src: url("https://use.fontawesome.com/releases/v5.13.1/webfonts/fa-brands-400.eot"),
+		url("https://use.fontawesome.com/releases/v5.13.1/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"),
+		url("https://use.fontawesome.com/releases/v5.13.1/webfonts/fa-brands-400.woff2") format("woff2"),
+		url("https://use.fontawesome.com/releases/v5.13.1/webfonts/fa-brands-400.woff") format("woff"),
+		url("https://use.fontawesome.com/releases/v5.13.1/webfonts/fa-brands-400.ttf") format("truetype"),
+		url("https://use.fontawesome.com/releases/v5.13.1/webfonts/fa-brands-400.svg#fontawesome") format("svg");
+}
+
+@font-face {
+font-family: "FontAwesome";
+font-display: block;
+src: url("https://use.fontawesome.com/releases/v5.13.1/webfonts/fa-solid-900.eot"),
+		url("https://use.fontawesome.com/releases/v5.13.1/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"),
+		url("https://use.fontawesome.com/releases/v5.13.1/webfonts/fa-solid-900.woff2") format("woff2"),
+		url("https://use.fontawesome.com/releases/v5.13.1/webfonts/fa-solid-900.woff") format("woff"),
+		url("https://use.fontawesome.com/releases/v5.13.1/webfonts/fa-solid-900.ttf") format("truetype"),
+		url("https://use.fontawesome.com/releases/v5.13.1/webfonts/fa-solid-900.svg#fontawesome") format("svg");
+}
+
+@font-face {
+font-family: "FontAwesome";
+font-display: block;
+src: url("https://use.fontawesome.com/releases/v5.13.1/webfonts/fa-regular-400.eot"),
+		url("https://use.fontawesome.com/releases/v5.13.1/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"),
+		url("https://use.fontawesome.com/releases/v5.13.1/webfonts/fa-regular-400.woff2") format("woff2"),
+		url("https://use.fontawesome.com/releases/v5.13.1/webfonts/fa-regular-400.woff") format("woff"),
+		url("https://use.fontawesome.com/releases/v5.13.1/webfonts/fa-regular-400.ttf") format("truetype"),
+		url("https://use.fontawesome.com/releases/v5.13.1/webfonts/fa-regular-400.svg#fontawesome") format("svg");
+unicode-range: U+F004-F005,U+F007,U+F017,U+F022,U+F024,U+F02E,U+F03E,U+F044,U+F057-F059,U+F06E,U+F070,U+F075,U+F07B-F07C,U+F080,U+F086,U+F089,U+F094,U+F09D,U+F0A0,U+F0A4-F0A7,U+F0C5,U+F0C7-F0C8,U+F0E0,U+F0EB,U+F0F3,U+F0F8,U+F0FE,U+F111,U+F118-F11A,U+F11C,U+F133,U+F144,U+F146,U+F14A,U+F14D-F14E,U+F150-F152,U+F15B-F15C,U+F164-F165,U+F185-F186,U+F191-F192,U+F1AD,U+F1C1-F1C9,U+F1CD,U+F1D8,U+F1E3,U+F1EA,U+F1F6,U+F1F9,U+F20A,U+F247-F249,U+F24D,U+F254-F25B,U+F25D,U+F267,U+F271-F274,U+F279,U+F28B,U+F28D,U+F2B5-F2B6,U+F2B9,U+F2BB,U+F2BD,U+F2C1-F2C2,U+F2D0,U+F2D2,U+F2DC,U+F2ED,U+F328,U+F358-F35B,U+F3A5,U+F3D1,U+F410,U+F4AD;
+}
+</style>
+<script type='text/javascript' src='https://www.yorku.ca/research/wp-content/plugins/toolset-blocks/vendor/toolset/common-es/public/toolset-common-es-frontend.js?ver=164000' id='toolset-common-es-frontend-js'></script>
+<script type='text/javascript' src='https://www.yorku.ca/research/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://www.yorku.ca/research/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='https://www.yorku.ca/research/wp-content/plugins/modern-events-calendar/assets/js/mec-general-calendar.js?ver=6.10.0' id='mec-general-calendar-script-js'></script>
+<script type='text/javascript' src='https://www.yorku.ca/research/wp-content/plugins/modern-events-calendar/assets/packages/tooltip/tooltip.js?ver=6.10.0' id='mec-tooltip-script-js'></script>
+<script type='text/javascript' id='mec-frontend-script-js-extra'>
+/* <![CDATA[ */
+var mecdata = {"day":"day","days":"days","hour":"hour","hours":"hours","minute":"minute","minutes":"minutes","second":"second","seconds":"seconds","next":"Next","prev":"Prev","elementor_edit_mode":"no","recapcha_key":"","ajax_url":"https:\/\/www.yorku.ca\/research\/wp-admin\/admin-ajax.php","fes_nonce":"4cab49db0c","fes_thankyou_page_time":"2000","fes_upload_nonce":"ea96d95e4e","current_year":"2023","current_month":"11","datepicker_format":"yy-mm-dd"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.yorku.ca/research/wp-content/plugins/modern-events-calendar/assets/js/frontend.js?ver=6.10.0' id='mec-frontend-script-js'></script>
+<script type='text/javascript' src='https://www.yorku.ca/research/wp-content/plugins/modern-events-calendar/assets/js/events.js?ver=6.10.0' id='mec-events-script-js'></script>
+<script type='text/javascript' src='https://www.yorku.ca/research/wp-content/plugins/yorkublocks-v1.3/dist/script.js?ver=5.8.8' id='yorku-blocks-script-js'></script>
+<link rel="https://api.w.org/" href="https://www.yorku.ca/research/wp-json/" /><link rel="alternate" type="application/json" href="https://www.yorku.ca/research/wp-json/wp/v2/pages/2" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.yorku.ca/research/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.yorku.ca/research/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.8.8" />
+<link rel='shortlink' href='https://www.yorku.ca/research/' />
+<link rel="alternate" type="application/json+oembed" href="https://www.yorku.ca/research/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.yorku.ca%2Fresearch%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.yorku.ca/research/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.yorku.ca%2Fresearch%2F&#038;format=xml" />
+<script>
+    function replaceSVG() {
+        const parentElement = document.querySelector(".wp-social-link-twitter");
+
+        if (parentElement) {
+            const originalSVG = parentElement.querySelector("svg");
+            if (originalSVG) {
+                const newSVGCode = '<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>';
+                originalSVG.outerHTML = newSVGCode;
+            }
+        }
+    }
+
+    window.addEventListener("load", replaceSVG);
+</script><style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style> <script> window.addEventListener("load",function(){ var c={script:false,link:false}; function ls(s) { if(!['script','link'].includes(s)||c[s]){return;}c[s]=true; var d=document,f=d.getElementsByTagName(s)[0],j=d.createElement(s); if(s==='script'){j.async=true;j.src='https://www.yorku.ca/research/wp-content/plugins/toolset-blocks/vendor/toolset/blocks/public/js/frontend.js?v=1.6.4';}else{ j.rel='stylesheet';j.href='https://www.yorku.ca/research/wp-content/plugins/toolset-blocks/vendor/toolset/blocks/public/css/style.css?v=1.6.4';} f.parentNode.insertBefore(j, f); }; function ex(){ls('script');ls('link')} window.addEventListener("scroll", ex, {once: true}); if (('IntersectionObserver' in window) && ('IntersectionObserverEntry' in window) && ('intersectionRatio' in window.IntersectionObserverEntry.prototype)) { var i = 0, fb = document.querySelectorAll("[class^='tb-']"), o = new IntersectionObserver(es => { es.forEach(e => { o.unobserve(e.target); if (e.intersectionRatio > 0) { ex();o.disconnect();}else{ i++;if(fb.length>i){o.observe(fb[i])}} }) }); if (fb.length) { o.observe(fb[i]) } } }) </script>
+	<noscript>
+		<link rel="stylesheet" href="https://www.yorku.ca/research/wp-content/plugins/toolset-blocks/vendor/toolset/blocks/public/css/style.css">
+	</noscript>  </head>
+  <body class="home page-template-default page page-id-2 wp-embed-responsive mec-theme-york2020">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WB2S8R"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- searchModal -->
+    <div class="modal fade mt-0 pr-0" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog search-modal m-0" role="document">
+        <div class="modal-content rounded-0">
+          <div class="modal-header border-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body container">
+            <form id="main-search" class="main-search" method="get" action="https://www.yorku.ca/search/">
+              <div class="d-flex border rounded">
+                <fieldset class="w-100">
+                  <legend class="sr-only">Global Search</legend>
+                  <label for="yeb13searchfield" class="sr-only">search box</label>
+                  <input class="header-search border-0 form-control bg-white" type="search" name="q" maxlength="255" id="yeb13searchfield" placeholder="What are you looking for?"  />
+                  <input type="hidden" name="client" value="External" />
+                  <input type="hidden" name="proxystylesheet" value="External" />
+                  <input type="hidden" name="site" value="default_collection" />
+                  <input type="hidden" name="output" value="xml_no_dtd" />
+                </fieldset>
+                <button type="submit" class="search-button btn btn-link ml-auto"><i class="fa fa-search text-dark"></i><span class="sr-only">search button</span></button>
+              </div>
+            </form>   
+          </div>
+          <div class="modal-footer border-0">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="yeb11skipnav">
+      <a href="#container">Skip to main content</a>
+      <a href="#navbar">Skip to local navigation</a>
+    </div>  
+    <header id="header" class="bg-white">
+      <div id="branding" class="container">
+        <div class="d-sm-flex d-block justify-content-between py-3">
+          <div id="site-title" class="d-inline-block">
+            <a href="https://www.yorku.ca"><img src="https://www.yorku.ca/research/wp-content/themes/york2020/images/yorku-logo.jpg" alt="York University" class="yu-logo"></a>
+          </div>
+          <div class="d-flex align-items-center">
+                            <div id="popular-links" class="dropdown pt-2 pt-md-0">
+  <button class="btn btn-outline-dark dropdown-toggle rounded-0 w-100" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Popular Links  </button>
+  <div class="dropdown-menu shadow-sm border border-dark w-sm-100" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="https://futurestudents.yorku.ca/program-search/">Programs of Study</a>
+    <a class="dropdown-item" href="https://eclass.yorku.ca/">eClass</a>
+    <a class="dropdown-item" href="https://www.yorku.ca/about/email/">Email</a>
+    <a class="dropdown-item" href="https://www.yorku.ca/about/faculty-staff/">Faculty &amp; Staff</a>
+    <a class="dropdown-item" href="https://sfs.yorku.ca/">Financial Services</a>
+    <a class="dropdown-item" href="https://www.library.yorku.ca/web/">Libraries</a>
+    <a class="dropdown-item" href="https://atlas.yorku.ca/">Directory</a>
+  </div>
+</div>                        <button class="btn btn-link ml-4 text-dark" data-toggle="modal" data-target="#searchModal"><i class="fas fa-search"></i><span class="sr-only">Search</span></button>      
+          </div>
+        </div>
+      </div>      
+    </header>    <div class="sticky-top">
+      <div class="navbar navbar-expand-lg navbar-dark bg-primary py-1">
+        <div class="container">
+          <a class="navbar-brand" href="https://www.yorku.ca/research/" rel="home">Research &amp; Innovation</a>
+        </div>
+      </div>
+      <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-primary-2 py-0" role="navigation">
+        <div class="container">
+          <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+            <ul id="menu-navigation" class="mr-auto navbar-nav"><li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-21582" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21582 nav-item"><a href="https://www.yorku.ca/research/research-excellence/" class="nav-link">Research Excellence</a></li>
+<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-26598" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-26598 nav-item"><a href="https://www.yorku.ca/research/research-and-innovation-impact-stories/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-26598">News &amp; Opportunities</a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-26598" role="menu">
+	<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-26576" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26576 nav-item"><a href="https://www.yorku.ca/research/aspire/" class="dropdown-item">ASPIRE Newsletter</a></li>
+	<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-28438" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28438 nav-item"><a href="https://www.yorku.ca/ascend/" class="dropdown-item">Ascend Magazine</a></li>
+	<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-26595" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26595 nav-item"><a href="https://www.yorku.ca/research/impact-stories/" class="dropdown-item">Impact Stories</a></li>
+	<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-27779" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-27779 nav-item"><a href="https://www.yorku.ca/research/research-opportunities/" class="dropdown-item">Research &amp; Funding Opportunities</a></li>
+</ul>
+</li>
+<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-21834" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21834 nav-item"><a href="https://www.yorku.ca/research/research-services/" class="nav-link">Research Services</a></li>
+<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-21598" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21598 nav-item"><a href="https://www.yorku.ca/research/research-ethics/" class="nav-link">Research Ethics</a></li>
+<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-21826" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21826 nav-item"><a href="https://www.yorku.ca/research/innovation-york/" class="nav-link">Innovation York</a></li>
+<li itemscope="itemscope" role="menuitem" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-29619" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29619 nav-item"><a href="https://www.yorku.ca/research/eventrequest/" class="nav-link">Request the VP</a></li>
+</ul>                        <span id="main-contact" class="navbar-text d-block d-md-inline-block">
+              <a class="text-uppercase text-white" href="https://www.yorku.ca/research/contact">
+              Contact              </a>
+            </span>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="wrapper" class="hfeed">
+                      <div class="frontpage-img-banner">
+        <img src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2022/03/YORKU-Research-web-banner-2-002.png" alt="" />
+      </div>
+            <!-- end Featured Image -->
+        <div id="container"><main id="content" class="container">
+  		<article id="post-2" class="post-2 page type-page status-publish has-post-thumbnail hentry tag-discover tag-everyone tag-find-resources tag-keele-campus tag-learn-more tag-research-innovation tag-resources-services tag-world-issues">
+	<header class="header">
+  	<h1 class="entry-title">Research &#038; Innovation</h1>
+	</header>
+	<div class="entry-content">
+	
+<div class="wp-block-columns">
+<div class="wp-block-column" style="flex-basis:66.66%">
+<div class="wp-block-group border-lg border-primary p-4"><div class="wp-block-group__inner-container">
+<h2>Research Vision</h2>
+
+
+
+<p>York conducts purposeful research that advances knowledge and creates positive change. York is committed to excellence in research and scholarship in all its forms. Informed by a strong commitment to shared values, including the promotion of social justice, diversity, and the public good, we aspire through our research to better understand the human condition and the world around us and to employ the knowledge we gain in the service of society. Intensive engagement in research is a core institutional value that permeates the fabric of the University, and it is this foundation on which York’s vibrant and exciting academic environment is built.</p>
+</div></div>
+</div>
+
+
+
+<div class="wp-block-column" style="flex-basis:33.33%">
+<h2 class="text-uppercase h5">Quick Links</h2>
+
+
+
+<p></p>
+
+
+
+<ul class="list-unstyled"><li><a href="https://www.yorku.ca/research/research-and-innovation-impact-stories/">News &amp; Research Impact</a></li><li><a href="https://www.yorku.ca/ascend/" target="_blank" rel="noreferrer noopener">Ascend Magazine</a></li><li><a aria-label="undefined (opens in a new tab)" href="https://www.yorku.ca/research/organized-research-units/" rel="noreferrer noopener" target="_blank">Organized Research Units (ORU)</a></li><li><a href="https://www.yorku.ca/research/SRP"><strong>Strategic Research Plan 2023-2028</strong></a></li><li><a aria-label="undefined (opens in a new tab)" href="https://researchcommons.yorku.ca/" rel="noreferrer noopener" target="_blank">Research Commons</a></li><li><a rel="noreferrer noopener" href="https://www.yorku.ca/research/research-jobs/" target="_blank">Research Jobs</a></li><li><a aria-label="undefined (opens in a new tab)" rel="noreferrer noopener" href="https://www.yorku.ca/research/researchers-key-resources/" target="_blank">Researchers' Key Resources</a></li><li><a aria-label="undefined (opens in a new tab)" href="https://news.yorku.ca/experts/" target="_blank" rel="noreferrer noopener">Find a Researcher</a></li><li><a href="https://discover.academics.yorku.ca/">Discover York Academics</a></li><li><a href="https://www.yorku.ca/research/wp-content/uploads/sites/39/2022/04/York-University-Commercialization-Framework-April-13-2022.pdf" target="_blank" rel="noreferrer noopener">York University Commercialization Framework</a></li><li><a href="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/04/York-U-Public-Statement-on-the-Annual-Commercialization-Plan.pdf">Statement on Annual Commercialization Plan</a></li></ul>
+
+
+
+<p></p>
+</div>
+</div>
+
+
+
+<div style="height:56px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<hr class="wp-block-separator is-style-default"/>
+
+
+
+<div class="wp-block-image"><figure class="alignright size-large is-resized"><a href="https://yfile.news.yorku.ca/2023/09/22/new-online-curriculum-vitae-tool-coming-to-york-u/"><img loading="lazy" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/09/23069-DAAY_YFile-ad-3-1024x683.jpg" alt="" class="wp-image-29827" width="459" height="306" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/09/23069-DAAY_YFile-ad-3-1024x683.jpg 1024w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/09/23069-DAAY_YFile-ad-3-300x200.jpg 300w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/09/23069-DAAY_YFile-ad-3-391x260.jpg 391w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/09/23069-DAAY_YFile-ad-3-1536x1024.jpg 1536w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/09/23069-DAAY_YFile-ad-3-2048x1365.jpg 2048w" sizes="(max-width: 459px) 100vw, 459px" /></a></figure></div>
+
+
+
+<h2>New online curriculum vitae tool coming to York U</h2>
+
+
+
+<p><a href="https://discover.academics.yorku.ca">Discover York Academics</a> is a new electronic curriculum vitae (eCV) tool for faculty to centrally host their academic and professional accomplishments in one online profile. Faculty can easily manage, store and share research, publications, scholarly and creative works as well as grants and other teaching and professional activities.&nbsp;</p>
+
+
+
+<p>For more info about the tool and its test phase, <a href="https://yfile.news.yorku.ca/2023/09/22/new-online-curriculum-vitae-tool-coming-to-york-u/">click here.</a></p>
+
+
+
+<div style="height:25px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<hr class="wp-block-separator is-style-default"/>
+
+
+
+<div style="height:25px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-image"><figure class="alignright size-full is-resized"><img loading="lazy" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/03/Screenshot-10.png" alt="" class="wp-image-28808" width="458" height="232"/></figure></div>
+
+
+
+<h2>York U launches powerful resource to inspire action towards a greener future</h2>
+
+
+
+<p> “By offering a chance to not just learn about sustainability, but to make a difference and inspire others, the <a href="https://www.yorku.ca/news/2023/03/07/york-u-launches-powerful-resource-to-inspire-action-towards-a-greener-future/">Microlecture Series</a> is a powerful resource in our collective quest for a better future,” says York University’s Vice-President of Research and Innovation Amir Asif. </p>
+
+
+
+<div class="wp-block-columns">
+<div class="wp-block-column" style="flex-basis:66.66%"></div>
+</div>
+
+
+
+<div style="height:25px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<hr class="wp-block-separator is-style-wide"/>
+
+
+
+<div style="height:8px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-image"><figure class="alignright size-large is-resized"><img loading="lazy" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2022/12/ASCEND_digitalasset1-1024x576.jpg" alt="" class="wp-image-28440" width="459" height="260"/></figure></div>
+
+
+
+<h2>Read ASCEND Magazine, an annual publication focused on York research &amp; innovation</h2>
+
+
+
+<p><a href="https://www.yorku.ca/ascend/">ASCEND</a> is a magazine designed to showcase cutting-edge research and innovation activities in which our students, faculty, alumni, and staff are engaged. York is an international leader in research output, the recipient of countless research awards and accolades, and the creator of thriving innovation units. First and foremost, though, is our commitment to ensuring that our research efforts drive positive change through the sharing and application of our work.</p>
+
+
+
+<p>Read the latest issue <a href="https://www.yorku.ca/ascend/" target="_blank" rel="noreferrer noopener">now</a>. </p>
+
+
+
+<hr class="wp-block-separator"/>
+
+
+
+<div class="wp-block-image"><figure class="alignright size-full is-resized"><img loading="lazy" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2022/10/ASPIRE_Header-768x256-1.jpg" alt="" class="wp-image-28313" width="459" height="153" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2022/10/ASPIRE_Header-768x256-1.jpg 768w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2022/10/ASPIRE_Header-768x256-1-300x100.jpg 300w" sizes="(max-width: 459px) 100vw, 459px" /></figure></div>
+
+
+
+<h2>Read the latest issue of 'ASPIRE'</h2>
+
+
+
+<p><strong>“<a href="https://www.yorku.ca/research/aspire/" target="_blank" rel="noreferrer noopener">ASPIRE</a>”</strong>&nbsp;is a special edition of&nbsp;<em>YFile</em>&nbsp;publishing on select Fridays. It showcases research and innovation at York University. “ASPIRE” offers compelling and accessible stories about the world-leading and policy-relevant work of changemakers in all Faculties and professional schools across York and encompasses both discovery and applied research. “ASPIRE” replaces the previous special issue “Brainstorm.”</p>
+
+
+
+<hr class="wp-block-separator"/>
+
+
+
+<div class="wp-block-columns">
+<div class="wp-block-column" style="flex-basis:66.66%">
+<h2>Podcast or Perish: Episode 44</h2>
+
+
+
+<p>The latest episode of Podcast or Perish features Dr. Susan Dieleman, the newly appointed and inaugural Jarislowsky Chair in Trust and Political Leadership at the University of Lethbridge. Dieleman is an expert on the influential philosophy of Richard Rorty.</p>
+
+
+
+<p></p>
+
+
+
+<p><a href="https://www.podcastorperish.ca/home"><em>Podcast or Perish</em></a>&nbsp;is a podcast about academic research and why it matters. Join podcast host&nbsp;<strong><a href="https://schulich.yorku.ca/faculty/cameron-graham/">Cameron Graham</a></strong>, professor of Accounting at Schulich School of Business, for a special 10-part series featuring extraordinary researchers and creators at York University and their innovative methodologies and approaches. A new episode is launched every month.</p>
+
+
+
+<p><em>Podcast or Perish</em>&nbsp;is supported by York University’s Office of the Vice-President Research &amp; Innovation in partnership with Schulich School of Business.</p>
+</div>
+
+
+
+<div class="wp-block-column" style="flex-basis:33.33%">
+<figure class="wp-block-gallery aligncenter columns-1 is-cropped"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img loading="lazy" width="780" height="538" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/09/dieleman-susan.jpg" alt="" data-id="29642" data-full-url="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/09/dieleman-susan.jpg" data-link="https://www.yorku.ca/research/home/attachment/dieleman-susan/" class="wp-image-29642" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/09/dieleman-susan.jpg 780w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/09/dieleman-susan-300x207.jpg 300w" sizes="(max-width: 780px) 100vw, 780px" /></figure></li></ul></figure>
+</div>
+</div>
+
+
+
+<div class="wp-block-group grey-bg-block has-very-light-gray-background-color has-background"><div class="wp-block-group__inner-container">
+<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-group"><div class="wp-block-group__inner-container"><div class="wp-block-yorku-blocks-tabbed-content wp-block-yorku-blocks-tabbed-content-holder  wp-block-yorku-blocks-tabbed-content-horizontal-holder-mobile wp-block-yorku-blocks-tabbed-content-horizontal-holder-tablet">
+                <div class="wp-block-yorku-blocks-tabbed-content-tab-holder  horizontal-tab-width-mobile horizontal-tab-width-tablet">
+                    <div class="wp-block-yorku-blocks-tabbed-content-tabs-title wp-block-yorku-blocks-tabbed-content-tabs-title-mobile-horizontal-tab wp-block-yorku-blocks-tabbed-content-tabs-title-tablet-horizontal-tab" role="tablist" aria-label="info_tabs"><div class = "wp-block-yorku-blocks-tabbed-content-tab-title-wrap active">
+            <div class="wp-block-yorku-blocks-tabbed-content-tab-title"  role="tab" tabindex="0" aria-selected=true aria-controls="267news" id=267news-tab>Latest News</div></div><div class = "wp-block-yorku-blocks-tabbed-content-tab-title-wrap">
+            <div class="wp-block-yorku-blocks-tabbed-content-tab-title"  role="tab" tabindex="0" aria-selected=false aria-controls="267explore" id=267explore-tab>Aspire</div></div></div></div>
+                <div class="wp-block-yorku-blocks-tabbed-content-tabs-content "><div class="wp-block-yorku-blocks-tabbed-content-tab-content-wrap has-3-columns active" role="tabpanel" id="267news" aria-labelledby="267news-tab">
+    <div class="wp-block-yorku-blocks-latest-news news-article-1"><div class="news-article-inner"><div class="img-container"><img loading="lazy" width="2048" height="686" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/11/research-innovation-scaled-e1698864074329-2048x686-1.jpg" alt="" class="wp-image-29934" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/11/research-innovation-scaled-e1698864074329-2048x686-1.jpg 2048w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/11/research-innovation-scaled-e1698864074329-2048x686-1-300x100.jpg 300w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/11/research-innovation-scaled-e1698864074329-2048x686-1-1024x343.jpg 1024w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/11/research-innovation-scaled-e1698864074329-2048x686-1-1536x515.jpg 1536w" sizes="(max-width: 2048px) 100vw, 2048px" /></div><p class="wp-block-yorku-blocks-latest-news__info">November 3, 2023<br><a href="https://yfile.news.yorku.ca/2023/11/03/new-free-services-enhance-ip-protection-commercialization-for-researchers/">New, free services enhance IP protection, commercialization for researchers</a></p></div></div><div class="wp-block-yorku-blocks-latest-news news-article-2"><div class="news-article-inner"><div class="img-container"><img loading="lazy" width="1800" height="600" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/11/harvester-in-field.jpg" alt="" class="wp-image-29933" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/11/harvester-in-field.jpg 1800w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/11/harvester-in-field-300x100.jpg 300w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/11/harvester-in-field-1024x341.jpg 1024w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/11/harvester-in-field-1536x512.jpg 1536w" sizes="(max-width: 1800px) 100vw, 1800px" /></div><p class="wp-block-yorku-blocks-latest-news__info">November 1, 2023<br><a href="https://yfile.news.yorku.ca/2023/11/01/researchers-report-considers-farmers-mental-health/">Researcher’s report considers farmers’ mental health</a></p></div></div><div class="wp-block-yorku-blocks-latest-news news-article-3"><div class="news-article-inner"><div class="img-container"><img loading="lazy" width="2048" height="683" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/crop_startup_multi_ethnic_shutterstock_2101929538-2048x683-1.jpg" alt="" class="wp-image-29896" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/crop_startup_multi_ethnic_shutterstock_2101929538-2048x683-1.jpg 2048w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/crop_startup_multi_ethnic_shutterstock_2101929538-2048x683-1-300x100.jpg 300w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/crop_startup_multi_ethnic_shutterstock_2101929538-2048x683-1-1024x342.jpg 1024w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/crop_startup_multi_ethnic_shutterstock_2101929538-2048x683-1-1536x512.jpg 1536w" sizes="(max-width: 2048px) 100vw, 2048px" /></div><p class="wp-block-yorku-blocks-latest-news__info">October 27, 2023<br><a href="https://yfile.news.yorku.ca/2023/10/27/father-son-research-team-makes-novel-finding-in-autism-research/">Father-son research team makes novel finding in autism research</a></p></div></div><div class="wp-block-yorku-blocks-latest-news news-article-4 yorku-blocks-hide yorku-news-blocks-toggle-495"><div class="news-article-inner"><div class="img-container"><img loading="lazy" width="1124" height="373" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/Doug-Crawford-with-members-of-VISTA-team-e1698328575708.jpg" alt="" class="wp-image-29898" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/Doug-Crawford-with-members-of-VISTA-team-e1698328575708.jpg 1124w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/Doug-Crawford-with-members-of-VISTA-team-e1698328575708-300x100.jpg 300w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/Doug-Crawford-with-members-of-VISTA-team-e1698328575708-1024x340.jpg 1024w" sizes="(max-width: 1124px) 100vw, 1124px" /></div><p class="wp-block-yorku-blocks-latest-news__info">October 26, 2023<br><a href="https://yfile.news.yorku.ca/2023/10/26/aspire-1yorks-world-leading-vision-research-program-looks-towards-the-future/">York’s world-leading vision research program looks towards the future</a>&nbsp;</p></div></div><div class="wp-block-yorku-blocks-latest-news news-article-5 yorku-blocks-hide yorku-news-blocks-toggle-495"><div class="news-article-inner"><div class="img-container"><img loading="lazy" width="2048" height="686" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/Gord-Fletts-perfectionist-study-photo-scaled-e1698090025146-2048x686-1.jpg" alt="" class="wp-image-29897" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/Gord-Fletts-perfectionist-study-photo-scaled-e1698090025146-2048x686-1.jpg 2048w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/Gord-Fletts-perfectionist-study-photo-scaled-e1698090025146-2048x686-1-300x100.jpg 300w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/Gord-Fletts-perfectionist-study-photo-scaled-e1698090025146-2048x686-1-1024x343.jpg 1024w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/Gord-Fletts-perfectionist-study-photo-scaled-e1698090025146-2048x686-1-1536x515.jpg 1536w" sizes="(max-width: 2048px) 100vw, 2048px" /></div><p class="wp-block-yorku-blocks-latest-news__info">October 26, 2023<br><a href="https://yfile.news.yorku.ca/2023/10/26/aspire-1overbearing-dads-fuel-perfectionism-in-daughters-moms-influence-sons-york-ubc-study/">Overbearing dads fuel perfectionism in daughters, moms influence sons: York-UBC study</a></p></div></div><div class="wp-block-yorku-blocks-latest-news news-article-6 yorku-blocks-hide yorku-news-blocks-toggle-495"><div class="news-article-inner"><div class="img-container"><img loading="lazy" width="2005" height="1205" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/YorkU_280_MR-scaled1.jpg" alt="" class="wp-image-29876" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/YorkU_280_MR-scaled1.jpg 2005w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/YorkU_280_MR-scaled1-300x180.jpg 300w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/YorkU_280_MR-scaled1-1024x615.jpg 1024w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/YorkU_280_MR-scaled1-1536x923.jpg 1536w" sizes="(max-width: 2005px) 100vw, 2005px" /></div><p class="wp-block-yorku-blocks-latest-news__info">October 23, 2023<br><a href="https://www.yorku.ca/news/2023/10/23/macleans-2024-rankings-york-holds-strong-as-one-of-canadas-top-five-comprehensive-universities-advancing-to-fourth-place-overall/">Maclean’s 2024 rankings: York holds strong as one of Canada's top-five comprehensive universities, advancing to fourth place overall</a></p></div></div><div class="wp-block-yorku-blocks-latest-news news-article-7 yorku-blocks-hide"><div class="news-article-inner"><div class="img-container"><img loading="lazy" width="1024" height="342" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/53141655326_4318aa6ca5_o.jpg" alt="" class="wp-image-29873" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/53141655326_4318aa6ca5_o.jpg 1024w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/53141655326_4318aa6ca5_o-300x100.jpg 300w" sizes="(max-width: 1024px) 100vw, 1024px" /></div><p class="wp-block-yorku-blocks-latest-news__info">October 18, 2023<br><a href="https://yfile.news.yorku.ca/2023/10/18/lassonde-innovation-lands-place-in-space-history/">Lassonde innovation lands place in space history</a></p></div></div><div class="wp-block-yorku-blocks-latest-news news-article-8 yorku-blocks-hide"><div class="news-article-inner"><div class="img-container"><img loading="lazy" width="765" height="303" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/rover-investigating-the-badlands-alberta1.jpeg" alt="" class="wp-image-29875" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/rover-investigating-the-badlands-alberta1.jpeg 765w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/rover-investigating-the-badlands-alberta1-300x119.jpeg 300w" sizes="(max-width: 765px) 100vw, 765px" /></div><p class="wp-block-yorku-blocks-latest-news__info">October 17, 2023<br><a href="https://yfile.news.yorku.ca/2023/10/17/york-rover-team-fuelled-by-innovation-interdisciplinary-collaboration/">York rover team fuelled by innovation, interdisciplinary collaboration</a></p></div></div><div class="wp-block-yorku-blocks-latest-news news-article-9 yorku-blocks-hide"><div class="news-article-inner"><div class="img-container"><img loading="lazy" width="703" height="337" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/shutterstock_613099715-e16972131492031.jpg" alt="" class="wp-image-29861" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/shutterstock_613099715-e16972131492031.jpg 703w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/shutterstock_613099715-e16972131492031-300x144.jpg 300w" sizes="(max-width: 703px) 100vw, 703px" /></div><p class="wp-block-yorku-blocks-latest-news__info">October 13, 2023<br><a href="https://yfile.news.yorku.ca/2023/10/13/york-to-address-climate-impact-on-vulnerable-communities/">York to address climate impact on vulnerable communities</a></p></div></div><div class="wp-block-yorku-blocks-latest-news news-article-10 yorku-blocks-hide"><div class="news-article-inner"><div class="img-container"><img loading="lazy" width="1800" height="600" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/Science-Technology-and-Society-FEATURED-image-collage-for-YFile.jpg" alt="" class="wp-image-29862" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/Science-Technology-and-Society-FEATURED-image-collage-for-YFile.jpg 1800w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/Science-Technology-and-Society-FEATURED-image-collage-for-YFile-300x100.jpg 300w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/Science-Technology-and-Society-FEATURED-image-collage-for-YFile-1024x341.jpg 1024w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/Science-Technology-and-Society-FEATURED-image-collage-for-YFile-1536x512.jpg 1536w" sizes="(max-width: 1800px) 100vw, 1800px" /></div><p class="wp-block-yorku-blocks-latest-news__info">October 10, 2023<br><a href="https://yfile.news.yorku.ca/2023/10/10/4m-in-nserc-grants-supports-scientific-innovation-at-york/">$4M in NSERC grants supports scientific innovation at Yor</a><a href="https://www.yorku.ca/research/wp-admin/post.php?post=2&amp;action=edit">k</a></p></div></div><div class="wp-block-yorku-blocks-latest-news news-article-11 yorku-blocks-hide"><div class="news-article-inner"><div class="img-container"><img loading="lazy" width="2048" height="683" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/ai_brain-2048x683-1.jpg" alt="" class="wp-image-29863" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/ai_brain-2048x683-1.jpg 2048w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/ai_brain-2048x683-1-300x100.jpg 300w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/ai_brain-2048x683-1-1024x342.jpg 1024w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/ai_brain-2048x683-1-1536x512.jpg 1536w" sizes="(max-width: 2048px) 100vw, 2048px" /></div><p class="wp-block-yorku-blocks-latest-news__info">October 10, 2023<br><a href="https://yfile.news.yorku.ca/2023/10/10/new-funds-aid-in-ai-methods-to-advance-autism-research/">New funds aid in AI methods to advance autism research</a></p></div></div><div class="wp-block-yorku-blocks-latest-news news-article-12 yorku-blocks-hide"><div class="news-article-inner"><div class="img-container"><img loading="lazy" width="1200" height="800" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/The-rTPC-on-the-bench-at-CERN-before-being-installed-in-ALPHA-g-smaller.jpg" alt="" class="wp-image-29847" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/The-rTPC-on-the-bench-at-CERN-before-being-installed-in-ALPHA-g-smaller.jpg 1200w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/The-rTPC-on-the-bench-at-CERN-before-being-installed-in-ALPHA-g-smaller-300x200.jpg 300w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/The-rTPC-on-the-bench-at-CERN-before-being-installed-in-ALPHA-g-smaller-1024x683.jpg 1024w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/The-rTPC-on-the-bench-at-CERN-before-being-installed-in-ALPHA-g-smaller-391x260.jpg 391w" sizes="(max-width: 1200px) 100vw, 1200px" /></div><p class="wp-block-yorku-blocks-latest-news__info">September 27, 2023<br><a href="https://www.yorku.ca/news/2023/09/27/does-an-antimatter-apple-fall-up-or-down-scientists-solve-longstanding-mystery/">Does an antimatter apple fall up or down? Scientists solve longstanding mystery</a></p></div></div><div class="wp-block-yorku-blocks-latest-news news-article-13 yorku-blocks-hide"><div class="news-article-inner"><div class="img-container"><img loading="lazy" width="2560" height="1706" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/09/23069-DAAY_YFile-ad-3-1-scaled.jpg" alt="" class="wp-image-29831" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/09/23069-DAAY_YFile-ad-3-1-scaled.jpg 2560w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/09/23069-DAAY_YFile-ad-3-1-300x200.jpg 300w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/09/23069-DAAY_YFile-ad-3-1-1024x683.jpg 1024w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/09/23069-DAAY_YFile-ad-3-1-391x260.jpg 391w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/09/23069-DAAY_YFile-ad-3-1-1536x1024.jpg 1536w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/09/23069-DAAY_YFile-ad-3-1-2048x1365.jpg 2048w" sizes="(max-width: 2560px) 100vw, 2560px" /></div><p class="wp-block-yorku-blocks-latest-news__info">September 25, 2023<br><a href="https://yfile.news.yorku.ca/2023/09/22/new-online-curriculum-vitae-tool-coming-to-york-u/">New online curriculum vitae tool coming to York U</a></p></div></div><div class="wp-block-yorku-blocks-latest-news news-article-14 yorku-blocks-hide"><div class="news-article-inner"><div class="img-container"><img loading="lazy" width="2560" height="1428" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/Bennu.png" alt="" class="wp-image-29844" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/Bennu.png 2560w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/Bennu-300x167.png 300w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/Bennu-1024x571.png 1024w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/Bennu-1536x857.png 1536w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/Bennu-2048x1142.png 2048w" sizes="(max-width: 2560px) 100vw, 2560px" /></div><p class="wp-block-yorku-blocks-latest-news__info">September 21, 2023<br><a href="https://www.yorku.ca/news/2023/09/21/asteroid-now-most-surveyed-in-solar-system-thanks-to-a-canadian-laser-instrument/">Asteroid now most surveyed in solar system, thanks to a Canadian laser instrument</a></p></div></div><div class="wp-block-yorku-blocks-latest-news news-article-15 yorku-blocks-hide"><div class="news-article-inner"><p class="wp-block-yorku-blocks-latest-news__info">October 27, 2023<br><a href="https://www.yorku.ca/research/category/announcements/2023/10/announcing-york-us-new-associate-director-research-security/">Announcing York's new associate director research security</a></p></div></div><div class="wp-block-yorku-blocks-latest-news news-article-16 yorku-blocks-hide"><div class="news-article-inner"><div class="img-container"><img loading="lazy" width="1800" height="600" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/09/light-bulb-in-front-of-colorful-background.jpg" alt="" class="wp-image-29635" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/09/light-bulb-in-front-of-colorful-background.jpg 1800w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/09/light-bulb-in-front-of-colorful-background-300x100.jpg 300w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/09/light-bulb-in-front-of-colorful-background-1024x341.jpg 1024w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/09/light-bulb-in-front-of-colorful-background-1536x512.jpg 1536w" sizes="(max-width: 1800px) 100vw, 1800px" /></div><p class="wp-block-yorku-blocks-latest-news__info">August 30, 2023<br><a href="https://yfile.news.yorku.ca/2023/08/30/government-invests-more-than-15-5-million-in-york-led-research-projects/">Government invests more than $15.5 million in York-led research projects</a></p></div></div><div class="wp-block-yorku-blocks-latest-news news-article-17 yorku-blocks-hide"><div class="news-article-inner"><div class="img-container"><img loading="lazy" width="1800" height="600" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/09/Globe-image-for-YFile-Innovatus-special-issue.jpg" alt="" class="wp-image-29638" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/09/Globe-image-for-YFile-Innovatus-special-issue.jpg 1800w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/09/Globe-image-for-YFile-Innovatus-special-issue-300x100.jpg 300w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/09/Globe-image-for-YFile-Innovatus-special-issue-1024x341.jpg 1024w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/09/Globe-image-for-YFile-Innovatus-special-issue-1536x512.jpg 1536w" sizes="(max-width: 1800px) 100vw, 1800px" /></div><p class="wp-block-yorku-blocks-latest-news__info">August 30, 2023<br><a href="https://www.yorku.ca/research/category/news/2018/04/ten-york-university-professors-awarded-prestigious-cfi-research-awards/">CFI funding supports professors developing sustainable future</a></p></div></div><div class="wp-block-yorku-blocks-latest-news news-article-18 yorku-blocks-hide"><div class="news-article-inner"><div class="img-container"><img loading="lazy" width="1800" height="600" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/09/pexels-pixabay-45842-copy.jpg" alt="" class="wp-image-29640" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/09/pexels-pixabay-45842-copy.jpg 1800w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/09/pexels-pixabay-45842-copy-300x100.jpg 300w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/09/pexels-pixabay-45842-copy-1024x341.jpg 1024w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/09/pexels-pixabay-45842-copy-1536x512.jpg 1536w" sizes="(max-width: 1800px) 100vw, 1800px" /></div><p class="wp-block-yorku-blocks-latest-news__info">August 30, 2023<br><a href="https://yfile.news.yorku.ca/2023/08/30/project-to-explore-experiences-of-syrian-ethiopian-refugees/">Project to explore experiences of Syrian, Ethiopian refugees</a></p></div></div><div class="wp-block-yorku-blocks-latest-news news-article-19 yorku-blocks-hide"><div class="news-article-inner"><div class="img-container"><img loading="lazy" width="570" height="418" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/06/Screenshot-40-1.png" alt="" class="wp-image-29517" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/06/Screenshot-40-1.png 570w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/06/Screenshot-40-1-300x220.png 300w" sizes="(max-width: 570px) 100vw, 570px" /></div><p class="wp-block-yorku-blocks-latest-news__info">June 2023<br><a href="https://yfile.news.yorku.ca/2023/06/01/york-ranks-among-top-universities-making-global-impact-for-positive-change/">York ranks among top universities making global impact&nbsp;for positive change</a><br></p></div></div><div class="wp-block-yorku-blocks-latest-news news-article-20 yorku-blocks-hide"><div class="news-article-inner"><div class="img-container"><img loading="lazy" width="582" height="754" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/05/SRP-Cover-Image.png" alt="" class="wp-image-29445" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/05/SRP-Cover-Image.png 582w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/05/SRP-Cover-Image-232x300.png 232w" sizes="(max-width: 582px) 100vw, 582px" /></div><p class="wp-block-yorku-blocks-latest-news__info">May 29, 2023<br><a href="https://yfile.news.yorku.ca/2023/05/26/york-university-releases-new-strategic-research-plan/" target="_blank" rel="noreferrer noopener">York University releases new strategic research plan</a></p></div></div><div class="wp-block-yorku-blocks-latest-news news-article-21 yorku-blocks-hide"><div class="news-article-inner"><div class="img-container"><img loading="lazy" width="2048" height="1152" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/04/22211-ConnectedMinds-new-thumb-2048x1152-1.png" alt="" class="wp-image-29260" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/04/22211-ConnectedMinds-new-thumb-2048x1152-1.png 2048w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/04/22211-ConnectedMinds-new-thumb-2048x1152-1-300x169.png 300w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/04/22211-ConnectedMinds-new-thumb-2048x1152-1-1024x576.png 1024w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/04/22211-ConnectedMinds-new-thumb-2048x1152-1-1536x864.png 1536w" sizes="(max-width: 2048px) 100vw, 2048px" /></div><p class="wp-block-yorku-blocks-latest-news__info">April 28, 2023<br><a href="https://www.yorku.ca/news/2023/04/28/york-university-leads-groundbreaking-research-to-ensure-technology-revolution-leaves-no-one-behind/" target="_blank" rel="noreferrer noopener">York University leads groundbreaking research to ensure technology revolution leaves no one behind</a></p></div></div><div class="wp-block-yorku-blocks-latest-news news-article-22 yorku-blocks-hide"><div class="news-article-inner"><div class="img-container"><img loading="lazy" width="1800" height="600" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/03/pexels-alexander-suhorucov-6457579.jpg" alt="" class="wp-image-29081" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/03/pexels-alexander-suhorucov-6457579.jpg 1800w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/03/pexels-alexander-suhorucov-6457579-300x100.jpg 300w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/03/pexels-alexander-suhorucov-6457579-1024x341.jpg 1024w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/03/pexels-alexander-suhorucov-6457579-1536x512.jpg 1536w" sizes="(max-width: 1800px) 100vw, 1800px" /></div><p class="wp-block-yorku-blocks-latest-news__info">March 24, 2023<br><a href="https://yfile.news.yorku.ca/2023/03/24/york-innovation-hub-receives-3m-to-support-women-entrepreneurs/" target="_blank" rel="noreferrer noopener">York innovation hub receives $3M to support women entrepreneurs</a></p></div></div><div class="wp-block-yorku-blocks-latest-news news-article-23 yorku-blocks-hide"><div class="news-article-inner"><div class="img-container"><img loading="lazy" width="768" height="256" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/02/Academic-Innovation-Featured-image-768x256-1.jpg" alt="" class="wp-image-28587" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/02/Academic-Innovation-Featured-image-768x256-1.jpg 768w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/02/Academic-Innovation-Featured-image-768x256-1-300x100.jpg 300w" sizes="(max-width: 768px) 100vw, 768px" /></div><p class="wp-block-yorku-blocks-latest-news__info">February 10, 2023<br><a href="https://yfile.news.yorku.ca/2023/02/10/new-and-renewed-canada-research-chairs-at-forefront-of-important-future-defining-research/?utm_source=YFile+-+Master+Subscriber+List&amp;utm_campaign=df66e0cc7b-EMAIL_CAMPAIGN_2023_02_10_04_04&amp;utm_medium=email&amp;utm_term=0_-df66e0cc7b-%5BLIST_EMAIL_ID%5D" target="_blank" rel="noreferrer noopener">New and renewed Canada Research Chairs at forefront of important, future-defining research</a></p></div></div><div class="wp-block-yorku-blocks-latest-news news-article-24 yorku-blocks-hide"><div class="news-article-inner"><div class="img-container"><img loading="lazy" width="600" height="600" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/02/Christine-Brooks-Cappadocia.jpg" alt="" class="wp-image-28552" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/02/Christine-Brooks-Cappadocia.jpg 600w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/02/Christine-Brooks-Cappadocia-300x300.jpg 300w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/02/Christine-Brooks-Cappadocia-150x150.jpg 150w" sizes="(max-width: 600px) 100vw, 600px" /></div><p class="wp-block-yorku-blocks-latest-news__info">February 1, 2023<br><a href="https://yfile.news.yorku.ca/2023/02/01/announcement-of-appointment-of-interim-assistant-vice-president-continuing-studies-avp/?utm_source=YFile+-+Master+Subscriber+List&amp;utm_campaign=f797bf4908-EMAIL_CAMPAIGN_2023_02_01_09_26&amp;utm_medium=email&amp;utm_term=0_-f797bf4908-%5BLIST_EMAIL_ID%5D" target="_blank" rel="noreferrer noopener">Announcement of appointment of interim assistant vice-president, continuing studies (AVP)</a></p></div></div><div class="wp-block-yorku-blocks-latest-news news-article-25 yorku-blocks-hide"><div class="news-article-inner"><div class="img-container"><img loading="lazy" width="768" height="256" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/01/Sustainability-featured-image-for-YFile-768x256-1.jpg" alt="" class="wp-image-28504" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/01/Sustainability-featured-image-for-YFile-768x256-1.jpg 768w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/01/Sustainability-featured-image-for-YFile-768x256-1-300x100.jpg 300w" sizes="(max-width: 768px) 100vw, 768px" /></div><p class="wp-block-yorku-blocks-latest-news__info">January 6, 2023<br><a href="https://yfile.news.yorku.ca/2023/01/06/york-university-funds-4-05m-to-support-interdisciplinary-research-for-the-un-sdgs/?utm_source=YFile+-+Master+Subscriber+List&amp;utm_campaign=630af9c482-EMAIL_CAMPAIGN_2023_01_08_10_39&amp;utm_medium=email&amp;utm_term=0_-630af9c482-%5BLIST_EMAIL_ID%5D" target="_blank" rel="noreferrer noopener">York University funds $4.05M to support interdisciplinary research for the UN SDGs</a></p></div></div><div class="wp-block-yorku-blocks-latest-news news-article-26 yorku-blocks-hide"><div class="news-article-inner"><div class="img-container"><img loading="lazy" width="768" height="256" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2022/11/YORK020-YFile-Header_Annual-Report-768x256-1.png" alt="" class="wp-image-28369" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2022/11/YORK020-YFile-Header_Annual-Report-768x256-1.png 768w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2022/11/YORK020-YFile-Header_Annual-Report-768x256-1-300x100.png 300w" sizes="(max-width: 768px) 100vw, 768px" /></div><p class="wp-block-yorku-blocks-latest-news__info">November 13, 2022<br><a href="https://yfile.news.yorku.ca/2022/11/13/presidents-2022-annual-report-reinforces-yorks-commitment-to-right-the-future/?utm_source=YFile+-+Master+Subscriber+List&amp;utm_campaign=8b308c1729-EMAIL_CAMPAIGN_2022_11_11_09_15&amp;utm_medium=email&amp;utm_term=0_3ba936d492-8b308c1729-577136766" target="_blank" rel="noreferrer noopener">President’s 2022 Annual Report reinforces York’s commitment to right the future</a></p></div></div><div class="wp-block-yorku-blocks-latest-news news-article-27 yorku-blocks-hide"><div class="news-article-inner"><div class="img-container"><img loading="lazy" width="500" height="282" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2022/05/shutterstock_1613073550.jpg" alt="" class="wp-image-27785" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2022/05/shutterstock_1613073550.jpg 500w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2022/05/shutterstock_1613073550-300x169.jpg 300w" sizes="(max-width: 500px) 100vw, 500px" /></div><p class="wp-block-yorku-blocks-latest-news__info">September 27, 2022<br><a href="https://yfile.news.yorku.ca/2022/09/27/innovation-yorks-commercialization-fellowships-open-to-applicants/" target="_blank" rel="noreferrer noopener">Innovation York’s Commercialization Fellowships open to applicants</a></p></div></div><div class="wp-block-yorku-blocks-latest-news news-article-28 yorku-blocks-hide"><div class="news-article-inner"><div class="img-container"><img loading="lazy" width="768" height="253" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2022/05/Vari-Hall-New-Featured-image-768x253-1.jpg" alt="" class="wp-image-27853" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2022/05/Vari-Hall-New-Featured-image-768x253-1.jpg 768w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2022/05/Vari-Hall-New-Featured-image-768x253-1-300x99.jpg 300w" sizes="(max-width: 768px) 100vw, 768px" /></div><p class="wp-block-yorku-blocks-latest-news__info">September 16, 2022<br><a href="https://yfile.news.yorku.ca/2022/09/16/vpri-launches-consultations-on-strategic-research-plan-announces-advisory-committee-members/" target="_blank" rel="noreferrer noopener">VPRI launches consultations on strategic research plan, announces advisory committee members</a></p></div></div><div class="wp-block-yorku-blocks-tabbed-content-news-toggle" ><a tabindex="0" id="495" class="wp-block-yorku-blocks-tabbed-content-read-more" onclick="yorku_blocks_toggleNews(event, 'yorku-news-blocks-toggle', 495, 'Read More', 'Read Less' )"onkeypress="yorku_blocks_toggleNews(event, 'yorku-news-blocks-toggle', 495, 'Read More', 'Read Less' )">Read More</a></div> </div><div class="wp-block-yorku-blocks-tabbed-content-tab-content-wrap has-3-columns yorku-blocks-hide" role="tabpanel" id="267explore" aria-labelledby="267explore-tab">
+    <div class="wp-block-yorku-blocks-latest-news news-article-1"><div class="news-article-inner"><div class="img-container"><img loading="lazy" width="2560" height="1707" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/shutterstock_1485835613-1-scaled.jpg" alt="" class="wp-image-29888" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/shutterstock_1485835613-1-scaled.jpg 2560w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/shutterstock_1485835613-1-300x200.jpg 300w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/shutterstock_1485835613-1-1024x683.jpg 1024w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/shutterstock_1485835613-1-391x260.jpg 391w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/shutterstock_1485835613-1-1536x1024.jpg 1536w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/shutterstock_1485835613-1-2048x1365.jpg 2048w" sizes="(max-width: 2560px) 100vw, 2560px" /></div><p class="wp-block-yorku-blocks-latest-news__info">October 27, 2023<br><a href="https://www.yorku.ca/research/category/announcements/2023/10/announcing-york-us-new-associate-director-research-security/">Announcing York's new associate director research security</a></p></div></div><div class="wp-block-yorku-blocks-latest-news news-article-2"><div class="news-article-inner"><div class="img-container"><img loading="lazy" width="1124" height="373" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/Doug-Crawford-with-members-of-VISTA-team-e1698328575708-2.jpg" alt="" class="wp-image-29919" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/Doug-Crawford-with-members-of-VISTA-team-e1698328575708-2.jpg 1124w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/Doug-Crawford-with-members-of-VISTA-team-e1698328575708-2-300x100.jpg 300w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/Doug-Crawford-with-members-of-VISTA-team-e1698328575708-2-1024x340.jpg 1024w" sizes="(max-width: 1124px) 100vw, 1124px" /></div><p class="wp-block-yorku-blocks-latest-news__info">October 2023 <em>Aspire</em><br><a href="https://yfile.news.yorku.ca/2023/10/26/aspire-1yorks-world-leading-vision-research-program-looks-towards-the-future/">York’s world-leading vision research program looks towards the future</a></p></div></div><div class="wp-block-yorku-blocks-latest-news news-article-3"><div class="news-article-inner"><div class="img-container"><img loading="lazy" width="2048" height="686" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/Gord-Fletts-perfectionist-study-photo-scaled-e1698090025146-2048x686-2.jpg" alt="" class="wp-image-29915" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/Gord-Fletts-perfectionist-study-photo-scaled-e1698090025146-2048x686-2.jpg 2048w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/Gord-Fletts-perfectionist-study-photo-scaled-e1698090025146-2048x686-2-300x100.jpg 300w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/Gord-Fletts-perfectionist-study-photo-scaled-e1698090025146-2048x686-2-1024x343.jpg 1024w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/Gord-Fletts-perfectionist-study-photo-scaled-e1698090025146-2048x686-2-1536x515.jpg 1536w" sizes="(max-width: 2048px) 100vw, 2048px" /></div><p class="wp-block-yorku-blocks-latest-news__info">October 2023 <em>Aspire</em><br><a href="https://yfile.news.yorku.ca/2023/10/26/aspire-1overbearing-dads-fuel-perfectionism-in-daughters-moms-influence-sons-york-ubc-study/">Overbearing dads fuel perfectionism in daughters, moms influence sons: York-UBC study</a></p></div></div><div class="wp-block-yorku-blocks-latest-news news-article-4 yorku-blocks-hide yorku-news-blocks-toggle-657"><div class="news-article-inner"><div class="img-container"><img loading="lazy" width="1800" height="621" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/shutterstock_1485212855-scaled-e1681492572785-1.jpg" alt="" class="wp-image-29918" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/shutterstock_1485212855-scaled-e1681492572785-1.jpg 1800w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/shutterstock_1485212855-scaled-e1681492572785-1-300x104.jpg 300w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/shutterstock_1485212855-scaled-e1681492572785-1-1024x353.jpg 1024w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/shutterstock_1485212855-scaled-e1681492572785-1-1536x530.jpg 1536w" sizes="(max-width: 1800px) 100vw, 1800px" /></div><p class="wp-block-yorku-blocks-latest-news__info">October 2023 <em>Aspire</em><br><a href="https://yfile.news.yorku.ca/2023/10/26/aspireyork-u-health-researcher-tackles-tb-stigma-through-partnership-in-india/">York U health researcher tackles TB stigma through partnership in India</a>&nbsp;</p></div></div><div class="wp-block-yorku-blocks-latest-news news-article-5 yorku-blocks-hide yorku-news-blocks-toggle-657"><div class="news-article-inner"><div class="img-container"><img loading="lazy" width="2048" height="686" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/OCI-Seneca-Agreement-photo-scaled-e1698090868956-2048x686-2.jpg" alt="" class="wp-image-29916" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/OCI-Seneca-Agreement-photo-scaled-e1698090868956-2048x686-2.jpg 2048w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/OCI-Seneca-Agreement-photo-scaled-e1698090868956-2048x686-2-300x100.jpg 300w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/OCI-Seneca-Agreement-photo-scaled-e1698090868956-2048x686-2-1024x343.jpg 1024w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/OCI-Seneca-Agreement-photo-scaled-e1698090868956-2048x686-2-1536x515.jpg 1536w" sizes="(max-width: 2048px) 100vw, 2048px" /></div><p class="wp-block-yorku-blocks-latest-news__info">October 2023 <em>Aspire</em><br><a href="https://yfile.news.yorku.ca/2023/10/26/aspire-3new-partnership-empowers-businesses-through-applied-research/" target="_blank" rel="noreferrer noopener">New partnership empowers businesses through applied research</a></p></div></div><div class="wp-block-yorku-blocks-latest-news news-article-6 yorku-blocks-hide yorku-news-blocks-toggle-657"><div class="news-article-inner"><div class="img-container"><img loading="lazy" width="1301" height="432" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/connection-grant-research-funding-idea-innovation-e1698085169420-1.jpg" alt="" class="wp-image-29917" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/connection-grant-research-funding-idea-innovation-e1698085169420-1.jpg 1301w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/connection-grant-research-funding-idea-innovation-e1698085169420-1-300x100.jpg 300w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/connection-grant-research-funding-idea-innovation-e1698085169420-1-1024x340.jpg 1024w" sizes="(max-width: 1301px) 100vw, 1301px" /></div><p class="wp-block-yorku-blocks-latest-news__info">October 2023 <em>Aspire</em><br><a href="https://yfile.news.yorku.ca/2023/10/26/aspire-4york-researchers-receive-federal-funding-for-knowledge-mobilization-projects/">York researchers receive federal funding for knowledge mobilization projects</a></p></div></div><div class="wp-block-yorku-blocks-latest-news news-article-7 yorku-blocks-hide"><div class="news-article-inner"><div class="img-container"><img loading="lazy" width="2048" height="681" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/Partnership-Engage-Grants-photo-scaled-e1698091644598-2048x681-2.jpg" alt="" class="wp-image-29914" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/Partnership-Engage-Grants-photo-scaled-e1698091644598-2048x681-2.jpg 2048w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/Partnership-Engage-Grants-photo-scaled-e1698091644598-2048x681-2-300x100.jpg 300w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/Partnership-Engage-Grants-photo-scaled-e1698091644598-2048x681-2-1024x341.jpg 1024w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/10/Partnership-Engage-Grants-photo-scaled-e1698091644598-2048x681-2-1536x511.jpg 1536w" sizes="(max-width: 2048px) 100vw, 2048px" /></div><p class="wp-block-yorku-blocks-latest-news__info">October 2023 <em>Aspire</em><br><a href="https://yfile.news.yorku.ca/2023/10/26/aspire-2collaborative-research-projects-exploring-international-justice-creative-tech-earn-grants/" target="_blank" rel="noreferrer noopener">Collaborative research projects exploring international justice, creative tech earn grants</a></p></div></div><div class="wp-block-yorku-blocks-latest-news news-article-8 yorku-blocks-hide"><div class="news-article-inner"><div class="img-container"><img loading="lazy" width="2560" height="857" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/06/shutterstock_1190069647-scaled-e1683229234387.jpg" alt="" class="wp-image-29497" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/06/shutterstock_1190069647-scaled-e1683229234387.jpg 2560w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/06/shutterstock_1190069647-scaled-e1683229234387-300x100.jpg 300w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/06/shutterstock_1190069647-scaled-e1683229234387-1024x343.jpg 1024w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/06/shutterstock_1190069647-scaled-e1683229234387-1536x514.jpg 1536w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/06/shutterstock_1190069647-scaled-e1683229234387-2048x686.jpg 2048w" sizes="(max-width: 2560px) 100vw, 2560px" /></div><p class="wp-block-yorku-blocks-latest-news__info">May 2023 <em>Aspire</em><br><strong><a href="https://yfile.news.yorku.ca/2022/05/12/dont-leave-me-this-way-researcher-explores-barriers-to-gaming/" target="_blank" rel="noreferrer noopener"></a><a href="https://yfile.news.yorku.ca/2022/10/13/research-supports-development-of-inclusive-technologies-to-enhance-quality-of-living/"></a></strong><a href="https://yfile.news.yorku.ca/2023/05/04/meet-york-universitys-latest-commercialization-fellows/"><strong>Meet York University’s latest commercialization Fellows</strong></a></p></div></div><div class="wp-block-yorku-blocks-latest-news news-article-9 yorku-blocks-hide"><div class="news-article-inner"><div class="img-container"><img loading="lazy" width="890" height="290" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/06/sciencesaturdayWATER.jpg" alt="" class="wp-image-29499" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/06/sciencesaturdayWATER.jpg 890w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/06/sciencesaturdayWATER-300x98.jpg 300w" sizes="(max-width: 890px) 100vw, 890px" /></div><p class="wp-block-yorku-blocks-latest-news__info">May 2023 <em>Aspire</em><br><b><a href="https://yfile.news.yorku.ca/2023/05/04/new-organized-research-unit-focused-on-water-issues-rides-wave-of-early-success-impact/">New organized research unit focused on water issues rides wave of early success, impact</a></b></p></div></div><div class="wp-block-yorku-blocks-latest-news news-article-10 yorku-blocks-hide"><div class="news-article-inner"><div class="img-container"><img loading="lazy" width="2560" height="857" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/06/IPOsgoode2022_0279-min-scaled-e1683216836362.jpg" alt="" class="wp-image-29498" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/06/IPOsgoode2022_0279-min-scaled-e1683216836362.jpg 2560w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/06/IPOsgoode2022_0279-min-scaled-e1683216836362-300x100.jpg 300w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/06/IPOsgoode2022_0279-min-scaled-e1683216836362-1024x343.jpg 1024w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/06/IPOsgoode2022_0279-min-scaled-e1683216836362-1536x514.jpg 1536w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2023/06/IPOsgoode2022_0279-min-scaled-e1683216836362-2048x686.jpg 2048w" sizes="(max-width: 2560px) 100vw, 2560px" /></div><p class="wp-block-yorku-blocks-latest-news__info">May 2023 <em>Aspire</em><br><a href="https://yfile.news.yorku.ca/2023/05/04/york-receives-300k-from-provincial-agency-to-advance-research-commercialization/"><strong>York receives $300K from provincial agency to advance research commercializatio</strong>n</a></p></div></div><div class="wp-block-yorku-blocks-latest-news news-article-11 yorku-blocks-hide"><div class="news-article-inner"><div class="img-container"><img loading="lazy" width="1200" height="628" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2022/10/social-media-networks-FEATURED-image-Aspire-1.jpg" alt="" class="wp-image-28300" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2022/10/social-media-networks-FEATURED-image-Aspire-1.jpg 1200w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2022/10/social-media-networks-FEATURED-image-Aspire-1-300x157.jpg 300w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2022/10/social-media-networks-FEATURED-image-Aspire-1-1024x536.jpg 1024w" sizes="(max-width: 1200px) 100vw, 1200px" /></div><p class="wp-block-yorku-blocks-latest-news__info">May 2023 <em>Aspire</em><br><strong><a href="https://yfile.news.yorku.ca/2022/10/13/covid-19-social-networks-helped-spread-fear-among-investors/" target="_blank" rel="noreferrer noopener"></a></strong><a href="https://yfile.news.yorku.ca/2023/05/04/new-frontiers-in-research-fund-awards-2-4m-to-york-university-researchers/"><strong>New Frontiers in Research Fund awards $2.4M to York University researchers</strong></a></p></div></div><div class="wp-block-yorku-blocks-tabbed-content-news-toggle" ><a tabindex="0" id="657" class="wp-block-yorku-blocks-tabbed-content-read-more" onclick="yorku_blocks_toggleNews(event, 'yorku-news-blocks-toggle', 657, 'Read More', 'Read Less' )"onkeypress="yorku_blocks_toggleNews(event, 'yorku-news-blocks-toggle', 657, 'Read More', 'Read Less' )">Read More</a></div> </div></div>
+            </div></div></div>
+</div></div>
+
+
+
+<div style="height:80px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-group profile-block middle left black"><div class="wp-block-group__inner-container">
+<figure class="wp-block-image size-large border-md border-primary"><img loading="lazy" width="1024" height="683" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2021/12/vari-hall-1024x683.jpg" alt="An image of Vari Hall, York University." class="wp-image-26029" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2021/12/vari-hall-1024x683.jpg 1024w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2021/12/vari-hall-300x200.jpg 300w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2021/12/vari-hall.jpg 1500w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<div class="wp-block-group"><div class="wp-block-group__inner-container">
+<h2 class="mb-0">A message from the Vice-President Research &amp; Innovation</h2>
+
+
+
+<p>York is a research-intensive University committed to enhancing the well-being of the communities we serve.  Through our work, we seek to contribute to the economic, scientific, cultural and social health of our society.&nbsp;We strongly believe in the power of research, scholarship, creativity, education and dialogue to transform ourselves and the world around us for the better.</p>
+
+
+
+<p class="text-uppercase"><a href="https://www.yorku.ca/research/message-from-the-vice-president-research-innovation/">Continue Reading Message ...</a></p>
+</div></div>
+</div></div>
+
+
+
+<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<hr class="wp-block-separator"/>
+
+
+
+<div class="wp-block-columns">
+<div class="wp-block-column" style="flex-basis:66.66%">
+<h2>2 Minutes, 3 Questions video series</h2>
+
+
+
+<p class="has-text-align-left">The popular 2 Minutes, 3 Questions&nbsp;video series, launched in 2017, offers compelling interviews with York’s researchers and academics about the significance and impact of their work as changemakers.&nbsp;</p>
+
+
+
+<p>To watch more videos from the 2 Minutes, 3 Questions video series, check out our <a aria-label="undefined (opens in a new tab)" href="https://www.youtube.com/playlist?list=PLE7AE62D4FD0E0AEB" target="_blank" rel="noreferrer noopener">Youtube channel</a>.</p>
+</div>
+
+
+
+<div class="wp-block-column" style="flex-basis:33.33%">
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube border-md border-primary wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe loading="lazy" title="#YUResearch" width="1778" height="1000" src="https://www.youtube.com/embed/videoseries?list=PLE7AE62D4FD0E0AEB" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div></figure>
+
+
+
+<p></p>
+</div>
+</div>
+
+
+
+<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<h2 class="border-top mb-4 pt-2" id="snapshot">Research &amp; Innovation at a Glance</h2>
+
+
+
+<p><strong>We are a research-intensive University that is committed to advancing knowledge, creating positive change and enhancing the well-being of the communities we serve</strong>.</p>
+
+
+
+<div class="wp-block-cover has-background-dim full-width" style="background-color:#ffffff"><div class="wp-block-cover__inner-container">
+<div class="wp-block-group container pt-4 mt-3"><div class="wp-block-group__inner-container">
+<div class="wp-block-columns card-deck aspect-ratio">
+<div class="wp-block-column card rounded-0 bg-white">
+<figure class="wp-block-image size-large"><img loading="lazy" width="174" height="99" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2021/07/YorkUBM-icon-ribbon.png" alt="A red icon of an award ribbon. " class="wp-image-25250"/></figure>
+
+
+
+<div class="wp-block-group card-body"><div class="wp-block-group__inner-container">
+<h2 class="card-title h5 has-text-color" style="color:#212529"><strong>World ranking “high”</strong></h2>
+
+
+
+<p class="card-text has-text-color" style="color:#212529">York’s research output ranked “very high” (QS World University<br>Rankings, 2021).</p>
+</div></div>
+</div>
+
+
+
+<div class="wp-block-column card rounded-0 bg-white">
+<figure class="wp-block-image size-large"><img loading="lazy" width="174" height="99" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2021/07/YorkUBM-icon-coronavirus.png" alt="A red icon of a coronavirus." class="wp-image-25251"/></figure>
+
+
+
+<div class="wp-block-group card-body"><div class="wp-block-group__inner-container">
+<h2 class="card-title h5 has-text-color" style="color:#212529">No. 1</h2>
+
+
+
+<p class="has-text-color" style="color:#212529">York is the top ranked university in Canada for publications on<strong>&nbsp;COVID-19 &amp;<br>Mathematical Modeling</strong>, with researchers ranked Nos. 1, 3, 4 &amp; 6 in the<br>country (SciVal, 2021).</p>
+
+
+
+<p></p>
+</div></div>
+</div>
+
+
+
+<div class="wp-block-column card rounded-0 bg-white">
+<figure class="wp-block-image size-large"><img loading="lazy" width="121" height="68" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2021/07/YorkUBM-icon-outerspace.png" alt="A red icon of planets. " class="wp-image-25252"/></figure>
+
+
+
+<div class="wp-block-group card-body"><div class="wp-block-group__inner-container">
+<h2 class="card-title h5 has-text-color" style="color:#212529">No. 1 </h2>
+
+
+
+<p class="card-text has-text-color" style="color:#212529">York is the top ranked university in Canada for publications on&nbsp;<strong>galaxies,<br>stars &amp; galactic evolution</strong>&nbsp;with the<strong>&nbsp;No. 1 researcher in the country</strong>:<br>Science Prof Adam Muzzin, with 30 publications &amp; a 354-citation count.<br>(SciVal, 2021). </p>
+</div></div>
+</div>
+
+
+
+<div class="wp-block-column card rounded-0 bg-white">
+<figure class="wp-block-image size-large"><img loading="lazy" width="155" height="87" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2021/07/YorkUBM-icon-nursing.png" alt="A red icon of a nursing cap and stethoscope " class="wp-image-25253"/></figure>
+
+
+
+<div class="wp-block-group card-body"><div class="wp-block-group__inner-container">
+<h2 class="card-title h5 has-text-color" style="color:#212529">No. 1</h2>
+
+
+
+<p class="card-text has-text-color" style="color:#212529">York ranked No. 1 in citation impact in&nbsp;<strong>Nursing &amp; Health Professions</strong><br>(SciVal, 2020-21). </p>
+</div></div>
+</div>
+</div>
+</div></div>
+
+
+
+<p></p>
+</div></div>
+
+
+
+<div class="wp-block-cover has-background-dim full-width" style="background-color:#ffffff"><div class="wp-block-cover__inner-container">
+<div class="wp-block-group container pt-4 mt-3"><div class="wp-block-group__inner-container">
+<div class="wp-block-columns card-deck aspect-ratio">
+<div class="wp-block-column card rounded-0 bg-white">
+<figure class="wp-block-image size-large"><img loading="lazy" width="120" height="69" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2021/07/YorkUBM-icon-heartmonitor-1.png" alt="A red icon of a heart rate monitor. " class="wp-image-25264"/></figure>
+
+
+
+<div class="wp-block-group card-body"><div class="wp-block-group__inner-container">
+<h2 class="card-title h5 has-text-color" style="color:#212529">No. 2</h2>
+
+
+
+<p class="card-text has-text-color" style="color:#212529">York ranks second academic institution in the world for Heart<br>Rehabilitation, Secondary Prevention &amp; Metabolic Equivalent, with the&nbsp;<strong>No.<br>1 researcher in the world</strong>: Health Prof Sherry Grace (SciVal, 2021).</p>
+</div></div>
+</div>
+
+
+
+<div class="wp-block-column card rounded-0 bg-white">
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2021/07/2021-Twitter-logo-blue-1024x576.png" alt="Twitter icon." class="wp-image-25268" srcset="https://www.yorku.ca/research/wp-content/uploads/sites/39/2021/07/2021-Twitter-logo-blue-1024x576.png 1024w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2021/07/2021-Twitter-logo-blue-300x169.png 300w, https://www.yorku.ca/research/wp-content/uploads/sites/39/2021/07/2021-Twitter-logo-blue.png 1513w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<div class="wp-block-group card-body"><div class="wp-block-group__inner-container">
+<h2 class="card-title h5 has-text-color" style="color:#212529">Top 3</h2>
+
+
+
+<p class="has-text-color" style="color:#212529">ranking of&nbsp;<strong>@YUResearch</strong>&nbsp;compared to other Canadian university research<br>Twitter accounts, no. of followers, with a potential reach of&nbsp;<strong>5+ million.</strong><br>Engagement rate jumped by&nbsp;<strong>68%&nbsp;</strong>over last year (2021).</p>
+</div></div>
+</div>
+
+
+
+<div class="wp-block-column card rounded-0 bg-white">
+<figure class="wp-block-image size-large"><img loading="lazy" width="144" height="81" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2021/07/YorkUBM-icon-briefcase.png" alt="A red icon of a business briefcase. " class="wp-image-25259"/></figure>
+
+
+
+<div class="wp-block-group card-body"><div class="wp-block-group__inner-container">
+<p class="card-text has-text-color" style="color:#212529">Innovation York supported&nbsp;<strong>179&nbsp;</strong>start-up ventures, which have raised<br><strong>$16.8M+,</strong>&nbsp;generated&nbsp;<strong>$18.1M+&nbsp;</strong>in revenue, &amp; created&nbsp;<strong>263&nbsp;</strong>jobs.</p>
+</div></div>
+</div>
+
+
+
+<div class="wp-block-column card rounded-0 bg-white">
+<figure class="wp-block-image size-large"><img loading="lazy" width="128" height="78" src="https://www.yorku.ca/research/wp-content/uploads/sites/39/2021/07/YorkUBM-icon-communitypeople-2.png" alt="A red icon of five individuals." class="wp-image-25269"/></figure>
+
+
+
+<div class="wp-block-group card-body"><div class="wp-block-group__inner-container">
+<h2 class="card-title h5 has-text-color" style="color:#212529">Innovation York</h2>
+
+
+
+<p class="card-text has-text-color" style="color:#212529">• engaged with&nbsp;<strong>354&nbsp;</strong>students,&nbsp;<strong>177&nbsp;</strong>community &amp; industry partners to<br>support<strong>&nbsp;$27M</strong>&nbsp;in grant applications<br>• facilitated&nbsp;<strong>292&nbsp;</strong>experiential learning opportunities. </p>
+</div></div>
+</div>
+</div>
+</div></div>
+
+
+
+<p></p>
+</div></div>
+
+
+
+<div class="wp-block-buttons is-content-justification-center">
+<div class="wp-block-button"><a class="wp-block-button__link no-border-radius" href="https://www.yorku.ca/research/research-innovation-at-a-glance/">Learn More</a></div>
+</div>
+
+
+
+<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-group grey-bg-block has-very-light-gray-background-color has-background"><div class="wp-block-group__inner-container">
+<div class="wp-block-columns learnmore-block">
+<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:60%">
+<div class="wp-block-image"><figure class="alignleft size-large is-resized"><img loading="lazy" src="https://idis.apps01.yorku.ca/wp-content/uploads/2020/05/learnmore.png" alt="" class="wp-image-11892" width="53" height="76"/></figure></div>
+
+
+
+<h2>Learn More</h2>
+
+
+
+<p>Get to know more about our research strengths and opportunities in the Strategic Research Plan for 2023-2028</p>
+</div>
+
+
+
+<div class="wp-block-column is-vertically-aligned-center">
+<div class="wp-block-buttons is-content-justification-center">
+<div class="wp-block-button"><a class="wp-block-button__link" href="https://www.yorku.ca/research/SRP/">View Strategic Research Plan</a></div>
+</div>
+</div>
+</div>
+
+
+
+<div class="wp-block-group"><div class="wp-block-group__inner-container"></div></div>
+</div></div>
+
+
+
+<div class="wp-block-group"><div class="wp-block-group__inner-container">
+<div class="wp-block-columns social-bar-block">
+<div class="wp-block-column">
+<h3 class="h6 text-white text-center">Connect with Research &amp; Innovation at York University</h3>
+</div>
+
+
+
+<div class="wp-block-column is-vertically-aligned-center">
+<ul class="wp-block-social-links aligncenter my-2 is-style-pill-shape"><li class="wp-social-link wp-social-link-twitter wp-block-social-link"><a href="https://twitter.com/YUResearch" aria-label="Twitter: https://twitter.com/YUResearch"  class="wp-block-social-link-anchor"> <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false"><path d="M22.23,5.924c-0.736,0.326-1.527,0.547-2.357,0.646c0.847-0.508,1.498-1.312,1.804-2.27 c-0.793,0.47-1.671,0.812-2.606,0.996C18.324,4.498,17.257,4,16.077,4c-2.266,0-4.103,1.837-4.103,4.103 c0,0.322,0.036,0.635,0.106,0.935C8.67,8.867,5.647,7.234,3.623,4.751C3.27,5.357,3.067,6.062,3.067,6.814 c0,1.424,0.724,2.679,1.825,3.415c-0.673-0.021-1.305-0.206-1.859-0.513c0,0.017,0,0.034,0,0.052c0,1.988,1.414,3.647,3.292,4.023 c-0.344,0.094-0.707,0.144-1.081,0.144c-0.264,0-0.521-0.026-0.772-0.074c0.522,1.63,2.038,2.816,3.833,2.85 c-1.404,1.1-3.174,1.756-5.096,1.756c-0.331,0-0.658-0.019-0.979-0.057c1.816,1.164,3.973,1.843,6.29,1.843 c7.547,0,11.675-6.252,11.675-11.675c0-0.178-0.004-0.355-0.012-0.531C20.985,7.47,21.68,6.747,22.23,5.924z"></path></svg></a></li>
+
+<li class="wp-social-link wp-social-link-youtube wp-block-social-link"><a href="https://www.youtube.com/playlist?list=PLE7AE62D4FD0E0AEB" aria-label="YouTube: https://www.youtube.com/playlist?list=PLE7AE62D4FD0E0AEB"  class="wp-block-social-link-anchor"> <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false"><path d="M21.8,8.001c0,0-0.195-1.378-0.795-1.985c-0.76-0.797-1.613-0.801-2.004-0.847c-2.799-0.202-6.997-0.202-6.997-0.202 h-0.009c0,0-4.198,0-6.997,0.202C4.608,5.216,3.756,5.22,2.995,6.016C2.395,6.623,2.2,8.001,2.2,8.001S2,9.62,2,11.238v1.517 c0,1.618,0.2,3.237,0.2,3.237s0.195,1.378,0.795,1.985c0.761,0.797,1.76,0.771,2.205,0.855c1.6,0.153,6.8,0.201,6.8,0.201 s4.203-0.006,7.001-0.209c0.391-0.047,1.243-0.051,2.004-0.847c0.6-0.607,0.795-1.985,0.795-1.985s0.2-1.618,0.2-3.237v-1.517 C22,9.62,21.8,8.001,21.8,8.001z M9.935,14.594l-0.001-5.62l5.404,2.82L9.935,14.594z"></path></svg></a></li></ul>
+</div>
+</div>
+</div></div>
+
+
+
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+	<div class="entry-links"></div>
+	</div>
+	</article>
+		</main>
+</div>
+<footer id="footer" class="mt-auto bg-primary">
+  <div class="container pt-5" style="background:url('https://www.yorku.ca/research/wp-content/themes/york2020/images/arrow.png');">
+    <div class="row pb-3">
+      <div class="col-md-3">
+        <a href="https://www.yorku.ca"><img src="https://www.yorku.ca/research/wp-content/themes/york2020/images/yorku-logo-ko.png" alt="York University" class="w-100 mb-4"></a>
+      </div>
+      <div class="col-md-3">
+        <ul class="list-unstyled small">
+          <li><span class="font-weight-bold text-white">Keele, Glendon and Markham Campus</span></li>
+          <li><a href="https://www.yorku.ca/about/contact/" class="text-white">Contact</a></li>
+          <li><a href="tel:4167362100" class="text-white">(416) 736-2100</a></li>
+          <li><a href="https://map.concept3d.com/?id=1200#!s/?ct/29101,29093" class="text-white">Campus Maps</a></li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-unstyled small">
+          <li><a href="https://www.yorku.ca/safety/" class="text-white">Community Safety</a></li>
+          <li><a href="https://www.yorku.ca/about/privacy-legal/" class="text-white">Privacy &amp; Legal</a></li>
+          <li><a href="https://accessibility.students.yorku.ca/" class="text-white">Accessibility</a></li>
+          <li><a href="https://www.yorku.ca/about/careers/" class="text-white">Careers</a></li>
+        </ul>        
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+jQuery(document).ready(function ($) {
+var deviceAgent = navigator.userAgent.toLowerCase();
+if (deviceAgent.match(/(iphone|ipod|ipad)/)) {
+$("html").addClass("ios");
+$("html").addClass("mobile");
+}
+if (navigator.userAgent.search("MSIE") >= 0) {
+$("html").addClass("ie");
+}
+else if (navigator.userAgent.search("Chrome") >= 0) {
+$("html").addClass("chrome");
+}
+else if (navigator.userAgent.search("Firefox") >= 0) {
+$("html").addClass("firefox");
+}
+else if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
+$("html").addClass("safari");
+}
+else if (navigator.userAgent.search("Opera") >= 0) {
+$("html").addClass("opera");
+}
+});
+</script>
+<script type='text/javascript' src='https://www.yorku.ca/research/wp-includes/js/jquery/ui/core.min.js?ver=1.12.1' id='jquery-ui-core-js'></script>
+<script type='text/javascript' src='https://www.yorku.ca/research/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.12.1' id='jquery-ui-datepicker-js'></script>
+<script type='text/javascript' id='jquery-ui-datepicker-js-after'>
+jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"d MM yy","firstDay":1,"isRTL":false});});
+</script>
+<script type='text/javascript' src='https://www.yorku.ca/research/wp-content/plugins/modern-events-calendar/assets/js/jquery.typewatch.js?ver=6.10.0' id='mec-typekit-script-js'></script>
+<script type='text/javascript' src='https://www.yorku.ca/research/wp-content/plugins/modern-events-calendar/assets/packages/featherlight/featherlight.js?ver=6.10.0' id='featherlight-js'></script>
+<script type='text/javascript' src='https://www.yorku.ca/research/wp-content/plugins/modern-events-calendar/assets/packages/select2/select2.full.min.js?ver=6.10.0' id='mec-select2-script-js'></script>
+<script type='text/javascript' src='https://www.yorku.ca/research/wp-content/plugins/modern-events-calendar/assets/packages/lity/lity.min.js?ver=6.10.0' id='mec-lity-script-js'></script>
+<script type='text/javascript' src='https://www.yorku.ca/research/wp-content/plugins/modern-events-calendar/assets/packages/colorbrightness/colorbrightness.min.js?ver=6.10.0' id='mec-colorbrightness-script-js'></script>
+<script type='text/javascript' src='https://www.yorku.ca/research/wp-content/plugins/modern-events-calendar/assets/packages/owl-carousel/owl.carousel.min.js?ver=6.10.0' id='mec-owl-carousel-script-js'></script>
+<script type='text/javascript' src='https://www.yorku.ca/research/wp-content/plugins/yorkublocks-v1.3/src/blocks/tabbed-news/front.build.js' id='yorku-blocks-tabbed-news-front-script-js'></script>
+<script type='text/javascript' src='https://www.yorku.ca/research/wp-content/plugins/yorkublocks-v1.3/src/scrollby-polyfill.js' id='yorku-blocks-scrollby-polyfill-js'></script>
+<script type='text/javascript' src='https://www.yorku.ca/research/wp-content/themes/york2020/js/popper.min.js?ver=5.8.8' id='popper-js'></script>
+<script type='text/javascript' src='https://www.yorku.ca/research/wp-content/themes/york2020/js/bootstrap.min.js?ver=5.8.8' id='bootstrap-js'></script>
+<script type='text/javascript' src='https://www.yorku.ca/research/wp-content/themes/york2020/js/dropdown.js?ver=5.8.8' id='dropdown-js'></script>
+<script type='text/javascript' src='https://www.yorku.ca/research/wp-content/themes/york2020/js/nav.js?ver=5.8.8' id='nav-js'></script>
+<script type='text/javascript' src='https://www.yorku.ca/research/wp-includes/js/wp-embed.min.js?ver=5.8.8' id='wp-embed-js'></script>
+<!--[if IE]>
+<script src="https://www.yorku.ca/research/wp-content/themes/york2020/js/anchor.js"></script>
+<![endif]-->
+</body>
+</html>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+Page Caching using memcached (Page is front page) 
+Database Caching 74/95 queries in 0.290 seconds using memcached
+
+Served from: 130.63.73.76 @ 2023-11-12 17:59:26 by W3 Total Cache
+-->

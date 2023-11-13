@@ -1,0 +1,24 @@
+.two-columns .col-md-3,
+.two-columns .col-md-4,
+.two-columns .col-md-6,
+.two-columns .col-md-8,
+.two-columns .col-md-9 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#content a {
+  text-decoration: underline;
+}
+
+@media(max-width:781px){
+  .two-columns.flip-in-mobile{
+    flex-direction:column-reverse;
+  }
+  
+  .two-columns img{
+    margin:0 auto 2rem;
+    display:block;
+  }
+}
+
