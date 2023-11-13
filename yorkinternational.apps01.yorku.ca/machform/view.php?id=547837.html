@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en"  xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>York International Exchange Program Course Assessment Form Upload</title>
+<link rel="stylesheet" type="text/css" href="./data/form_547837/css/view.css" media="all" />
+<link rel="stylesheet" type="text/css" href="view.mobile.css" media="all" />
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.12/effect.js"></script>
+<script type="text/javascript" src="view.js"></script>
+
+<script type="text/javascript" src="js/uploadifive/jquery.uploadifive.js"></script>
+
+
+
+
+
+
+
+</head>
+<body id="main_body" class=" no_guidelines">
+	<div id="form_container" class="">
+	
+		<h1><a>York International Exchange Program Course Assessment Form Upload</a></h1>
+		<form id="form_547837" class="appnitro top_label" enctype="multipart/form-data" method="post" data-highlightcolor="#FFF7C0" action="/machform/view.php">
+					<div class="form_description">
+			<h2>York International Exchange Program Course Assessment Form Upload</h2>
+			<p>Please upload a copy of your completed course assessment form. A completed course assessment form must have the signature of your Undergraduate Program Director, Graduate Program Director, Program Chair or Program Coordinator approving the courses that you are taking abroad. <br />
+This form MUST be completed and uploaded 2 weeks prior to departure. It is possible to change your course selection once you arrive at your host institution, however, you must get sign off for any new courses added. A signature is required for each course you plan to take abroad. We encourage you to list more classes than you will actually take in case some are not available.</p>
+		</div>						
+			<ul >
+			
+			
+			
+					<li id="li_1"  class="simple_name">
+		<fieldset>
+		<legend style="display: none">Student First and Last Name</legend>
+		<span class="description">Student First and Last Name <span id="required_1" class="required">*</span></span>
+		<span class="simple_name_1">
+			<input id="element_1_1" name="element_1_1"  type="text" class="element text" maxlength="255" size="8" value="" />
+			<label for="element_1_1">First</label>
+		</span>
+		<span class="simple_name_2">
+			<input id="element_1_2" name="element_1_2"  type="text" class="element text" maxlength="255" size="14" value="" />
+			<label for="element_1_2">Last</label>
+		</span></fieldset> 
+		</li>		<li id="li_2"  >
+		<label class="description" for="element_2">Student Number <span id="required_2" class="required">*</span></label>
+		<div>
+			<input id="element_2" name="element_2" class="element text medium"   type="text" maxlength="9"  value="" onkeyup="limit_input(2,'d',9);" onchange="limit_input(2,'d',9);" /> 
+			<span class="label">Must be <var id="range_max_2">9</var> digits.&nbsp;&nbsp; <em class="currently_entered">Currently Entered: <var id="currently_entered_2">0</var> digits.</em></span>
+		</div> 
+		</li>		<li id="li_3"  >
+		<label class="description" for="element_3">Host Institution Abroad </label>
+		<div>
+			<input id="element_3" name="element_3"    class="element text medium" type="text" value=""   />
+			 
+		</div> 
+		</li>		<li id="li_5"   class="multiple_choice">
+		<span class="description">Semester Abroad </span>
+		<div>
+			<fieldset>
+				<legend style="display: none">Semester Abroad</legend>
+				<span><input id="element_5_1"  name="element_5" class="element radio" type="radio" value="1"  />
+<label class="choice" for="element_5_1">Fall</label>
+</span>
+<span><input id="element_5_2"  name="element_5" class="element radio" type="radio" value="2"  />
+<label class="choice" for="element_5_2">Fall/Winter</label>
+</span>
+<span><input id="element_5_3"  name="element_5" class="element radio" type="radio" value="3"  />
+<label class="choice" for="element_5_3">Winter</label>
+</span>
+<span><input id="element_5_4"  name="element_5" class="element radio" type="radio" value="4"  />
+<label class="choice" for="element_5_4">Summer</label>
+</span>
+
+			</fieldset>
+		</div> 
+		</li>		<li id="li_6"  >
+		<label for="element_6" class="description" for="element_6">Please upload your completed and signed course assessment form.<br />
+You can upload multiple course assessment forms (up to 5 uploads) <span id="required_6" class="required">*</span></label>
+		<div>
+			<input id="element_6" name="element_6" class="element file" type="file"  />
+			<div id="element_6_queue" class="file_queue"></div> 
+			<script type="text/javascript">
+	$(function(){
+		 if(is_support_html5_uploader()){
+		 	$('#element_6').uploadifive({
+		 		'uploadScript'     : 'upload.php',
+		 		'buttonText'	   : 'Select Files',
+		 		'removeCompleted' : false,
+				'formData'         : {
+									  'form_id': 547837,
+				        			  'element_id': 6,
+				        			  'file_token': 'ddfcb203b2cc8dac3cfe42f420ca6c89'
+				                     },
+				'auto'             : true,
+				'multi'       	   : true,
+				'queueSizeLimit' : 5,
+				'fileSizeLimit'  : '10MB',
+				'queueID'          : 'element_6_queue',
+				'onAddQueueItem' : function(file) {
+		            var file_block_or_allow  = 'b';
+		            var file_type_limit_exts = 'php,php3,php4,php5,phtml,exe,pl,cgi,html,htm,js';
+		            var file_type_limit_exts_array = file_type_limit_exts.split(',');
+
+		            var uploaded_file_ext 	 = file.name.split('.').pop().toLowerCase();
+		            
+		            var file_exist_in_array = false;
+		            $.each(file_type_limit_exts_array,function(index,value){
+		            	if(value == uploaded_file_ext){
+		            		file_exist_in_array = true;
+		            	}
+		            });
+					if(file_type_limit_exts.trim().length > 0){
+			            if((file_block_or_allow == 'b' && file_exist_in_array == true) || (file_block_or_allow == 'a' && file_exist_in_array == false)){
+			            	$("#" + file.queueItem.attr('id')).addClass('error');
+				            $("#" + file.queueItem.attr('id') + ' span.fileinfo').text(" - Error. This file type is not allowed.");
+			            }
+		        	}
+
+		            
+		            if($("html").hasClass("embed")){
+				    	$.postMessage({mf_iframe_height: $('body').outerHeight(true)}, '*', parent );
+				   	}
+		        },
+				'onUploadComplete' : function(file, response) { 
+					
+
+					var is_valid_response = false;
+					try{
+						var response_json = JSON.parse(response);
+						is_valid_response = true;
+					}catch(e){
+						is_valid_response = false;
+						alert(response);
+					}
+					var queue_item_id =  file.queueItem.attr('id');
+					
+					if(is_valid_response == true && response_json.status == "ok"){
+						var remove_link = "<a class=\"close\" href=\"javascript:remove_attachment('" + response_json.message + "',547837,6,'" + queue_item_id + "',0,'ddfcb203b2cc8dac3cfe42f420ca6c89');\"><img border=\"0\" src=\"images/icons/delete.png\" /></a>";
+						
+						$("#" + queue_item_id + " a.close").replaceWith(remove_link);
+				        $("#" + queue_item_id + ' span.filename').prepend('<img align="absmiddle" class="file_attached" src="images/icons/attach.gif">'); 
+			        }else{
+			        	$("#" + queue_item_id).addClass('error');
+			        	$("#" + queue_item_id + " a.close").replaceWith('<img style="float: right" border="0" src="images/icons/exclamation.png" />');
+						$("#" + queue_item_id + " span.fileinfo").text(" - Error! Unable to upload");
+					}
+
+					if($("html").hasClass("embed")){
+				    	$.postMessage({mf_iframe_height: $('body').outerHeight(true)}, '*', parent );
+				   	} 
+
+					if($("#form_547837").data('form_submitting') === true){
+				       	upload_all_files();
+					}
+				}
+			});
+			$("#element_6_upload_link").remove();
+		 }else{
+	     	$("#element_6_token").remove();
+		 }
+    });
+</script>
+<input type="hidden" id="element_6_token" name="element_6_token" value="ddfcb203b2cc8dac3cfe42f420ca6c89" />
+<a id="element_6_upload_link_uploadifive" style="display: none" href="javascript:$('#element_6').uploadifive('upload');">Attach Files</a>
+		</div>  
+		</li>
+			
+			
+			
+					<li id="li_buttons" class="buttons">
+			    <input type="hidden" name="form_id" value="547837" />
+			    
+			    <input type="hidden" name="submit_form" value="1" />
+			    <input type="hidden" name="page_number" value="1" />
+				<input id="submit_form" class="button_text" type="submit" name="submit_form" value="Submit" />
+		</li>
+			</ul>
+		</form>	
+		<div id="footer">
+			Powered by <a href="https://www.machform.com" target="_blank">MachForm</a>
+		</div>
+	</div>
+	
+	</body>
+</html>
