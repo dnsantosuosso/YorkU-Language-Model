@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+CALSCALE:GREGORIAN
+PRODID:-//WordPress - MECv6.7.3//EN
+X-ORIGINAL-URL:https://events.yorku.ca/
+X-WR-CALNAME:York University Events Calendar
+X-WR-CALDESC:
+REFRESH-INTERVAL;VALUE=DURATION:PT1H
+X-PUBLISHED-TTL:PT1H
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VEVENT
+CLASS:PUBLIC
+UID:MEC-ca47d49b363ef094ba80bd0b8c4e04b5@events.yorku.ca
+DTSTART:20231030T140000Z
+DTEND:20231030T150000Z
+DTSTAMP:20231013T202900Z
+CREATED:20231013
+LAST-MODIFIED:20231019
+PRIORITY:5
+SEQUENCE:16
+TRANSP:OPAQUE
+SUMMARY:Global Learning Partner Info Session: Zurich University of Applied Sciences (ZHAW), School of Engineering
+DESCRIPTION:\nSo many places, so many opportunities… to go abroad! Find the right fit for you at an information session. Discover different opportunities to work, study and research at partner universities around the world. \nLearn More!\nStudy in Switzerland! Our global partner will guide your through the programs offered and elaborate on costs and scholarships available.\nRegister!\n
+URL:https://events.yorku.ca/events/global-learning-partner-info-session-malmo-university-388-272-424-359-287-979-809/
+ORGANIZER;CN=York International:MAILTO:goglobal@yorku.ca
+CATEGORIES:International,LA&amp;PS Students-International
+LOCATION:Live on Zoom @ Zoom
+END:VEVENT
+END:VCALENDAR

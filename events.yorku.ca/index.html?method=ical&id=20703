@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+CALSCALE:GREGORIAN
+PRODID:-//WordPress - MECv6.7.3//EN
+X-ORIGINAL-URL:https://events.yorku.ca/
+X-WR-CALNAME:York University Events Calendar
+X-WR-CALDESC:
+REFRESH-INTERVAL;VALUE=DURATION:PT1H
+X-PUBLISHED-TTL:PT1H
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VEVENT
+CLASS:PUBLIC
+UID:MEC-77b1932b3eec9f094a2b103001f0dff1@events.yorku.ca
+DTSTART:20231111T180000Z
+DTEND:20231111T193000Z
+DTSTAMP:20231105T164000Z
+CREATED:20231105
+LAST-MODIFIED:20231109
+PRIORITY:5
+SEQUENCE:16
+TRANSP:OPAQUE
+SUMMARY:Music Audition Prep Workshop
+DESCRIPTION:Want to study music at York?\nOur Music Audition Prep Workshop is for you!\nIn this 90-minute session, you will:\n\nlearn how to prepare for all the elements of our music audition: sight reading, performance and interview\nget tips on how to choose your audition pieces\nfind out more about our music program and admission process\nask questions at our live Q&A session\ntake a tour of the Music Dept\n\nFriends and family are welcome.\nAdmission to the Music Audition Prep Workshop is free but pre-registration is required.\nSaturday, November 11, 2023\n1:00-2:30pm\nTribute Communities Recital Hall\n \n
+URL:https://events.yorku.ca/events/music-audition-prep-workshop-nov11/
+CATEGORIES:School of the Arts, Media, Performance &amp; Design
+LOCATION:Accolade East Building, Tribute Communities Recital Hall @ 83 York Boulevard, Toronto
+ATTACH;FMTTYPE=image/jpeg:https://events.yorku.ca/wp-content/uploads/2022/12/auditionprep.jpg
+END:VEVENT
+END:VCALENDAR

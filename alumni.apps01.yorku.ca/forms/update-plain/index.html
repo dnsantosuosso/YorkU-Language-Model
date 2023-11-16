@@ -1,0 +1,1270 @@
+
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Warning</p>
+<p>Message:  mysqli::real_connect(): MySQL server has gone away</p>
+<p>Filename: mysqli/mysqli_driver.php</p>
+<p>Line Number: 203</p>
+
+
+</div><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>York Alumni - Update Your Info</title>
+    
+
+    <script type="text/javascript" src="/forms/js/jquery-1.4.2.min.js"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="/forms/css/main-wide-alum.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="/forms/css/main.css" />
+    <link rel="alternate stylesheet" type="text/css" media="all" href="/forms/css/main-wide-mediumtext-alum.css" title="alternate"/>
+	<link rel="alternate stylesheet" type="text/css" media="all" href="/forms/css/main-wide-largetext-alum.css" title="alternate2"/>    
+	<script language="JavaScript" type="text/javascript" src="/forms/css/styleswitcher.js"></script>
+    
+    
+
+<script language="javascript">
+/*
+* Simple State/Province Select plugin for jQuery
+*
+* Example:
+* $(document).ready(function() {
+* $('#country').linkToStates('#state');
+* });
+*
+* Copyright (c) 2008 Adam Daniels
+* Licensed under the MIT License
+*
+*/
+
+function getParameterByName(name) {
+        var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+        return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+}
+
+;(function($) {
+
+ var canadian_provinces = {
+'Alberta' : 'Alberta',
+'British Columbia' : 'British Columbia',
+'Manitoba' : 'Manitoba',
+'New Brunswick' : 'New Brunswick',
+'Newfoundland and Labrador' : 'Newfoundland and Labrador',
+'Nova Scotia' : 'Nova Scotia',
+'Northwest Territories' : 'Northwest Territories',
+'Nunavut' : 'Nunavut',
+'Ontario' : 'Ontario',
+'Prince Edward Island' : 'Prince Edward Island',
+'Quebec' : 'Quebec',
+'Saskatchewan' : 'Saskatchewan',
+'Yukon' : 'Yukon'
+}
+
+var us_states = {
+'Alabama' : 'Alabama',
+'Alaska' : 'Alaska',
+'Arizona' : 'Arizona',
+'Arkansas' : 'Arkansas',
+'California' : 'California',
+'Colorado' : 'Colorado',
+'Connecticut' : 'Connecticut',
+'Delaware' : 'Delaware',
+'District of Columbia' : 'District of Columbia',
+'Florida' : 'Florida',
+'Georgia' : 'Georgia',
+'Hawaii' : 'Hawaii',
+'Idaho' : 'Idaho',
+'Illinois' : 'Illinois',
+'Indiana' : 'Indiana',
+'Iowa' : 'Iowa',
+'Kansas' : 'Kansas',
+'Kentucky' : 'Kentucky',
+'Louisiana' : 'Louisiana',
+'Maine' : 'Maine',
+'Maryland' : 'Maryland',
+'Massachusetts' : 'Massachusetts',
+'Michigan' : 'Michigan',
+'Minnesota' : 'Minnesota',
+'Mississippi' : 'Mississippi',
+'Missouri' : 'Missouri',
+'Montana' : 'Montana',
+'Nebraska' : 'Nebraska',
+'Nevada' : 'Nevada',
+'New Hampshire' : 'New Hampshire',
+'New Jersey' : 'New Jersey',
+'New Mexico' : 'New Mexico',
+'New York' : 'New York',
+'North Carolina' : 'North Carolina',
+'North Dakota' : 'North Dakota',
+'Ohio' : 'Ohio',
+'Oklahoma' : 'Oklahoma',
+'Oregon' : 'Oregon',
+'Pennsylvania' : 'Pennsylvania',
+'Rhode Island' : 'Rhode Island',
+'South Carolina' : 'South Carolina',
+'South Dakota' : 'South Dakota',
+'Tennessee' : 'Tennessee',
+'Texas' : 'Texas',
+'Utah' : 'Utah',
+'Vermont' : 'Vermont',
+'Virginia' : 'Virginia',
+'Washington' : 'Washington',
+'West Virginia' : 'West Virginia',
+'Wisconsin' : 'Wisconsin',
+'Wyoming' : 'Wyoming'
+}
+  
+jQuery.fn.extend({
+linkToStates: function(state_select_id) {
+      jQuery(this).change(function() {
+        var country = jQuery(this).attr('value');
+        jQuery(state_select_id).removeOption(/.*/);
+        switch (country) {
+          case 'Canada':
+		    jQuery(state_select_id+"_other").hide();	
+		    jQuery(state_select_id).show();					
+            jQuery(state_select_id).addOption(canadian_provinces, false);
+            break;
+          case 'United States':
+		    jQuery(state_select_id+"_other").hide();
+		    jQuery(state_select_id).show();
+            jQuery(state_select_id).addOption(us_states, false);
+			
+            break;
+          default:
+		  	jQuery(state_select_id).hide();
+			jQuery(state_select_id+"_other").show();
+            jQuery(state_select_id).addOption({ '' : ''}, false);
+            break;
+        }
+      });
+    }
+  });
+})(jQuery);
+
+	// pad with leading 0
+	function PadDigits(n, totalDigits) 
+    { 
+        n = n.toString(); 
+        var pd = ''; 
+        if (totalDigits > n.length) 
+        { 
+            for (i=0; i < (totalDigits-n.length); i++) 
+            { 
+                pd += '0'; 
+            } 
+        } 
+        return pd + n.toString(); 
+    } 
+
+
+/*
+ *
+ * Copyright (c) 2006-2008 Sam Collett (http://www.texotela.co.uk)
+ * Dual licensed under the MIT (http://www.opensource.org/licenses/mit-license.php)
+ * and GPL (http://www.opensource.org/licenses/gpl-license.php) licenses.
+ *
+ * Version 2.2.4
+ * Demo: http://www.texotela.co.uk/code/jquery/select/
+ *
+ * $LastChangedDate: 2008-06-17 17:27:25 +0100 (Tue, 17 Jun 2008) $
+ * $Rev: 5727 $
+ *
+ */
+;(function(h){h.fn.addOption=function(){var j=function(a,f,c,g){var d=document.createElement("option");d.value=f,d.text=c;var b=a.options;var e=b.length;if(!a.cache){a.cache={};for(var i=0;i<e;i++){a.cache[b[i].value]=i}}if(typeof a.cache[f]=="undefined")a.cache[f]=e;a.options[a.cache[f]]=d;if(g){d.selected=true}};var k=arguments;if(k.length==0)return this;var l=true;var m=false;var n,o,p;if(typeof(k[0])=="object"){m=true;n=k[0]}if(k.length>=2){if(typeof(k[1])=="boolean")l=k[1];else if(typeof(k[2])=="boolean")l=k[2];if(!m){o=k[0];p=k[1]}}this.each(function(){if(this.nodeName.toLowerCase()!="select")return;if(m){for(var a in n){j(this,a,n[a],l)}}else{j(this,o,p,l)}});return this};h.fn.ajaxAddOption=function(c,g,d,b,e){if(typeof(c)!="string")return this;if(typeof(g)!="object")g={};if(typeof(d)!="boolean")d=true;this.each(function(){var f=this;h.getJSON(c,g,function(a){h(f).addOption(a,d);if(typeof b=="function"){if(typeof e=="object"){b.apply(f,e)}else{b.call(f)}}})});return this};h.fn.removeOption=function(){var d=arguments;if(d.length==0)return this;var b=typeof(d[0]);var e,i;if(b=="string"||b=="object"||b=="function"){e=d[0];if(e.constructor==Array){var j=e.length;for(var k=0;k<j;k++){this.removeOption(e[k],d[1])}return this}}else if(b=="number")i=d[0];else return this;this.each(function(){if(this.nodeName.toLowerCase()!="select")return;if(this.cache)this.cache=null;var a=false;var f=this.options;if(!!e){var c=f.length;for(var g=c-1;g>=0;g--){if(e.constructor==RegExp){if(f[g].value.match(e)){a=true}}else if(f[g].value==e){a=true}if(a&&d[1]===true)a=f[g].selected;if(a){f[g]=null}a=false}}else{if(d[1]===true){a=f[i].selected}else{a=true}if(a){this.remove(i)}}});return this};h.fn.sortOptions=function(e){var i=h(this).selectedValues();var j=typeof(e)=="undefined"?true:!!e;this.each(function(){if(this.nodeName.toLowerCase()!="select")return;var c=this.options;var g=c.length;var d=[];for(var b=0;b<g;b++){d[b]={v:c[b].value,t:c[b].text}}d.sort(function(a,f){o1t=a.t.toLowerCase(),o2t=f.t.toLowerCase();if(o1t==o2t)return 0;if(j){return o1t<o2t?-1:1}else{return o1t>o2t?-1:1}});for(var b=0;b<g;b++){c[b].text=d[b].t;c[b].value=d[b].v}}).selectOptions(i,true);return this};h.fn.selectOptions=function(g,d){var b=g;var e=typeof(g);if(e=="object"&&b.constructor==Array){var i=this;h.each(b,function(){i.selectOptions(this,d)})};var j=d||false;if(e!="string"&&e!="function"&&e!="object")return this;this.each(function(){if(this.nodeName.toLowerCase()!="select")return this;var a=this.options;var f=a.length;for(var c=0;c<f;c++){if(b.constructor==RegExp){if(a[c].value.match(b)){a[c].selected=true}else if(j){a[c].selected=false}}else{if(a[c].value==b){a[c].selected=true}else if(j){a[c].selected=false}}}});return this};h.fn.copyOptions=function(g,d){var b=d||"selected";if(h(g).size()==0)return this;this.each(function(){if(this.nodeName.toLowerCase()!="select")return this;var a=this.options;var f=a.length;for(var c=0;c<f;c++){if(b=="all"||(b=="selected"&&a[c].selected)){h(g).addOption(a[c].value,a[c].text)}}});return this};h.fn.containsOption=function(g,d){var b=false;var e=g;var i=typeof(e);var j=typeof(d);if(i!="string"&&i!="function"&&i!="object")return j=="function"?this:b;this.each(function(){if(this.nodeName.toLowerCase()!="select")return this;if(b&&j!="function")return false;var a=this.options;var f=a.length;for(var c=0;c<f;c++){if(e.constructor==RegExp){if(a[c].value.match(e)){b=true;if(j=="function")d.call(a[c],c)}}else{if(a[c].value==e){b=true;if(j=="function")d.call(a[c],c)}}}});return j=="function"?this:b};h.fn.selectedValues=function(){var a=[];this.selectedOptions().each(function(){a[a.length]=this.value});return a};h.fn.selectedTexts=function(){var a=[];this.selectedOptions().each(function(){a[a.length]=this.text});return a};h.fn.selectedOptions=function(){return this.find("option:selected")}})(jQuery);
+
+/*
+ * jQuery Birthday Picker: v1.1.1 - 11/16/2010
+ * http://abecoffman.com/birthdaypicker
+ * 
+ * Copyright (c) 2010 Abe Coffman
+ * Dual licensed under the MIT and GPL licenses.
+ * 
+ */
+(function(b){var a={"short":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"long":["January","February","March","April","May","June","July","August","September","October","November","December"]};b.fn.birthdaypicker=function(d){var f={maxAge:120,futureDates:false,maxYear:e,dateFormat:"middleEndian",monthFormat:"short",placeholder:true,legend:""};var c=new Date();var e=c.getFullYear();var h=c.getMonth()+1;var g=c.getDate();return this.each(function(){if(d){b.extend(f,d)}var p=b("<fieldset class='birthday-picker'></fieldset>");var o=b("<select class='birth-year' name='birth[year]'></select>");var n=b("<select class='birth-month' name='birth[month]'></select>");var i=b("<select class='birth-day' name='birth[day]'></select>");if(f.legend){b("<legend>"+f.legend+"</legend>").appendTo(p)}if(f.placeholder){b("<option value='0'>Year:</option>").appendTo(o);b("<option value='0'>Month:</option>").appendTo(n);b("<option value='0'>Day:</option>").appendTo(i)}if(f.dateFormat=="bigEndian"){p.append(o).append(n).append(i)}else{if(f.dateFormat=="littleEndian"){p.append(i).append(n).append(o)}else{p.append(n).append(i).append(o)}}var q=e;var s=e-f.maxAge;if(f.futureDates&&f.maxYear!=e){if(f.maxYear>1000){q=f.maxYear}else{q=e+f.maxYear}}while(q>=s){b("<option></option>").attr("value",q).text(q).appendTo(o);q--}for(var m=0;m<12;m++){b("<option></option>").attr("value",m+1).text(a[f.monthFormat][m]).appendTo(n)}for(var l=1;l<32;l++){b("<option></option>").attr("value",l).text(l).appendTo(i)}var r=b(this);r.append(p);p.change(function(){var k=parseInt(n.children(":last").val());var u=parseInt(i.children(":last").val());var j=new Date(o.val(),n.val(),0);var t=j.getDate();if(u>t){while(u>t){i.children(":last").remove();u--}}else{if(u<t){while(u<t){b("<option></option>").attr("value",u+1).text(u+1).appendTo(i);u++}}}if(!f.futureDates&&o.val()==e){if(k>h){while(k>h){n.children(":last").remove();k--}}if(n.val()==h){if(u>g){while(u>g){i.children(":last").remove();u--}}}}if(o.val()!=e&&k!=12){while(k<12){b("<option></option>").attr("value",k+1).text(a[f.monthFormat][k]).appendTo(n);k++}}})})}})(jQuery);
+
+
+ 
+jQuery(document).ready(function() {
+
+$("#birthdate").birthdaypicker();
+
+// populate Grad Year Selection
+var yearOptions =[];
+var now = new Date();
+var thisYear = now.getFullYear();
+$('#graduation_year').append("<option value=''></option>");
+for (i=thisYear; i >= 1959 ; i--) {
+	$('#graduation_year').append("<option value='"+i+"'>" + i + "</option>");
+}
+$("#graduation_year").val("");
+// End populate Grad Year Selection
+								
+$('#UpdateForm input, #UpdateForm select, #UpdateForm image').focus(function(){
+$(this).parents('.dotted').addClass("highlight");
+}).blur(function(){
+$(this).parents('.dotted').removeClass("highlight");
+});
+
+
+   jQuery('#country').linkToStates('#province');
+   jQuery('#company_country').linkToStates('#company_province');
+   
+   jQuery('#country').change();
+   jQuery('#company_country').change();
+   
+	jQuery("#UpdateForm td").click(function() {
+			$("tr").removeClass("dotted_highlight");
+            $(this).parents("tr").addClass("dotted_highlight");
+ 
+	});
+
+
+	
+	
+	$("#update").click(function() {
+		var salutation = $("#salutation").val();
+		var firstname = $("#firstname").val(); 
+		var middlename = $("#middlename").val();
+		var lastname = $("#lastname").val(); 
+		var email = $("#email").val();
+		var email_confirm= $("#email_confirm").val(); 
+		//var birthdate = $("#birthdate").val();
+		
+		if ($('[name=birth[year]]').val() > 0 && $('[name=birth[day]]').val() >0  && $('[name=birth[month]]').val() >0 ) {
+			var shortmonths=Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");			
+			var birthdate = shortmonths[$('[name=birth[month]]').val()-1] + "-" + PadDigits($('[name=birth[day]]').val(),2) +"-"+ $('[name=birth[year]]').val(); 
+			//alert(birthdate);
+			
+		}
+		
+		var previos_lastname = $("#previos_lastname").val();		
+		var spouse_york_alumni = $("#spouse_york_alumni").val(); 
+		var spouse_name  = $("#spouse_name").val(); 
+		var apartment_number = $("#apartment_number").val(); 
+		var address = $("#address").val(); 
+		var po_box = $("#po_box").val(); 
+		var city = $("#city").val(); 
+		var province = $("#province").val();
+		var province_other = $("#province_other").val(); 
+		var country = $("#country").val(); 
+		var postal_zip = $("#postal_zip").val(); 
+		var phone = $("#phone").val(); 
+		var company_title = $("#company_title").val(); 
+		var self_employed = $("#self_employed").val(); 
+		var company_name  = $("#company_name").val(); 
+		var company_division = $("#company_division").val(); 
+		var company_apartment_number = $("#company_apartment_number").val(); 
+		var company_address = $("#company_address").val(); 
+		var company_po_box = $("#company_po_box").val(); 
+		var company_city = $("#company_city").val(); 
+		var company_country = $("#company_country").val(); 
+		var company_province = $("#company_province").val(); 
+		var company_postal_zip = $("#company_postal_zip").val(); 
+		var company_email = $("#company_email").val(); 
+		var company_phone = $("#company_phone").val(); 
+		var prefered_email = $("input[name='prefered_email']:checked").val();
+		//var prefered_email = $("#prefered_email").val(); 
+		//var prefered_address = $("#prefered_address").val(); 
+		var prefered_address = $("input[name='prefered_address']:checked").val();
+		var student_number = $("#student_number").val(); 
+		var faculty = $("#faculty").val(); 
+		var graduation_year = $("#graduation_year").val(); 
+		var college = $("#college").val(); 
+		var majors  = $("#majors").val(); 
+	
+        var thankyou = '';	
+			  
+		$.post(
+			"index.php/form/process_update?ID=" + getParameterByName("ID"),  
+			{ salutation:salutation, firstname:firstname, middlename:middlename, lastname:lastname, email:email, email_confirm:email_confirm, birthdate:birthdate, 
+			thankyou:thankyou, previos_lastname:previos_lastname, spouse_york_alumni:spouse_york_alumni, spouse_name:spouse_name, 
+			apartment_number:apartment_number, address:address, po_box:po_box, city:city, province:province, province_other:province_other, 
+			country:country, country:country, postal_zip:postal_zip, phone:phone, company_title:company_title, self_employed:self_employed, 
+			company_name:company_name, company_division:company_division, company_apartment_number:company_apartment_number, company_address:company_address,
+			company_po_box:company_po_box, company_city:company_city, company_country:company_country, company_province:company_province, 
+			company_postal_zip:company_postal_zip, company_email:company_email, company_phone:company_phone, prefered_email:prefered_email, 
+			prefered_address:prefered_address, student_number:student_number, faculty:faculty, graduation_year:graduation_year,college:college, 
+			majors:majors },
+			function(data){
+				if (data.status=="submitted") {
+					$("#form_row2").html(data.signup_success);					
+					
+				} else {
+					$("#firstname_error").html(data.firstname_error);
+					$("#lastname_error").html(data.lastname_error);
+					$("#birthdate_error").html(data.birthdate_error);
+					$("#email_error").html(data.email_error);
+ 					$("#email_confirm_error").html(data.email_confirm_error);
+					$("#address_error").html(data.address_error);
+					$("#city_error").html(data.city_error);
+					$("#country_error").html(data.country_error);
+					$("#postal_zip_error").html(data.postal_zip_error);
+					$("#faculty_error").html(data.faculty_error);
+					$("#phone_error").html(data.phone_error);
+					$("#graduation_year_error").html(data.graduation_year_error);
+                			$("#signup_success").html(data.signup_success);
+					
+					if ($('#graduation_year').val()=="") {$('#graduation_year').focus();}
+					if ($('#faculty').val()=="") {$('#faculty').focus();}
+					if ($('#postal_zip').val()=="") {$('#postal_zip').focus();}
+					if ($('#city').val()=="") {$('#city').focus();}
+					if ($('#email_confirm').val()=="") {$('#email_confirm').focus();}
+					if ($('#email').val()=="") {$('#email').focus();}
+				
+					if ($('[name=birth[year]]').val() == 0 || $('[name=birth[day]]').val() ==0  ||  $('[name=birth[month]]').val() ==0 ) {
+						$('[name=birth[month]]').focus();
+					}
+					
+					if ($('#lastname').val()=="") {$('#lastname').focus();}
+					if ($('#firstname').val()=="") {$('#firstname').focus();}					
+
+					
+				}
+			},
+		'json');
+	});
+	
+	
+});
+
+$(document).ready(function() {
+  $("#province option[value='Ontario']").attr("selected", "selected");
+});
+
+</script>
+
+
+<style type="text/css">
+
+
+.formlabel {
+	font-size: 9px;
+}
+
+#form_row2 {
+padding:0px;margin:0;	
+}
+
+#form_row2 .dotted_highlight {
+background-image:#333333 url(http://www.yorku.ca/alumni/images/templates/h2dottedunderline.gif) bottom left repeat-x;
+}
+
+tr.form_row {
+  
+} 
+
+#UpdateForm {
+  border-collapse: collapse;
+  width: 620px;
+  border-color:#FFF;
+  padding:0px;
+ }
+  
+ #UpdateForm th,
+ #UpdateForm td
+ {
+  padding:5px;
+  vertical-align:top;
+ }
+ 
+ #UpdateForm th {
+  text-align:left;
+  margin-top: 5px;
+ }
+ 
+ #UpdateForm tr.highlight {
+  background-color: #FAF2CB ;
+ }
+
+.error {
+display:block;
+float:right;
+margin:0px;
+padding:3px;
+font-size: 8pt;	
+color: #333 ;
+background: #FDF8CE;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border: 1px solid #ccc;
+
+}
+
+.success
+{
+margin:0px;
+width:100%;
+padding-top:0px;
+font-size: 8pt;	
+color: green;
+}
+
+#SignUpform {
+width: 150px;
+}
+
+
+a {
+ color: #003399;
+ background-color: transparent;
+ font-weight: normal;
+}
+
+.ui-datepicker
+{
+width: 160px;
+padding-left:0px;
+padding-right:0px
+margin-left:-10px;
+}
+
+.ui-datepicker th, .ui-datepicker td {
+font-size: 10px;
+}
+
+.ui-datepicker .ui-datepicker-title select
+{
+font-size: 10px;
+}
+
+.ui-datepicker .ui-datepicker-title {
+	font-size: 11px;
+}
+
+input.text {background-color: #ffffff;
+background-image: url("images/shadow.gif");
+background-repeat: repeat-x;
+background-attachment: scroll;
+background-position: center top;
+border-bottom-width: 1px;
+border-bottom-style: solid;
+border-bottom-color: #dddddd;
+border-left-width-value: 1px;
+border-left-style-value: solid;
+border-left-color-value: #c3c3c3;
+border-left-width-ltr-source: physical;
+border-left-width-rtl-source: physical;
+border-left-style-ltr-source: physical;
+border-left-style-rtl-source: physical;
+border-left-color-ltr-source: physical;
+border-left-color-rtl-source: physical;
+border-right-width-value: 1px;
+border-right-style-value: solid;
+border-right-color-value: #c3c3c3;
+border-right-width-ltr-source: physical;
+border-right-width-rtl-source: physical;
+border-right-style-ltr-source: physical;
+border-right-style-rtl-source: physical;
+border-right-color-ltr-source: physical;
+border-right-color-rtl-source: physical;
+border-top-width: 1px;
+border-top-style: solid;
+border-top-color: #7c7c7c;
+color: #333333;
+font-size: 8pt;
+margin-top: 0pt;
+margin-right: 0pt;
+margin-bottom: 0pt;
+margin-left: 0pt;
+padding-top: 2px;
+padding-right: 0pt;
+padding-bottom: 2px;
+padding-left: 0pt;
+}
+
+fieldset {
+border:none;F	
+}
+
+</style>
+
+</head>
+<body class="whitebg updateinfo-bold">
+	<div id="containera">
+
+		<? //include "../css/global_nav_main.txt"; ?>
+    
+    	<div id="primarycontent_widea">
+    
+    		<? //include "http://www.yorku.ca/alumni/includes/navlist_forms.txt"; ?>
+            
+        	<div id="content_wide_alumnia">
+            
+            	 <? //include "../css/buttons-secondary.txt"; ?>
+                
+                <div id="content_805a">
+                
+
+                  <div id="form_row2">
+                    
+                    <table id="UpdateForm">
+                      <tr class="dotted">
+                        <th colspan="2"><strong>Personal Information / Home Address:</strong></th>
+                      </tr>
+                      <tr class="dotted">
+    <td width="161">
+Salutation:</td>
+    <td width="392">
+      <select name="salutation" id="salutation">
+        <option value=""></option>
+        <option value="M.">M.</option>
+        <option value="Mlle">Mlle</option>
+        <option value="Mme">Mme</option>
+        <option value="Mr.">Mr.</option>
+	<option value="Ms">Ms</option>
+        <option value="Mx">Mx</option>
+        <option value="Mrs.">Mrs.</option>
+        <option value="Miss">Miss</option>
+        <option value="Dr.">Dr.</option>
+      </select>
+    </td>
+    </tr>
+  <tr class="dotted">
+    <td>* First Name:</td>
+    <td>
+
+        <input name="firstname" type="text" id="firstname" size="40" />
+        <span id="firstname_error"></span>
+
+
+    </td>
+  </tr>
+  <tr class="dotted">
+    <td>Middle Name:</td>
+    <td>
+      <input name="middlename" type="text" id="middlename" size="40" /> 
+    </td>
+  </tr>
+  <tr class="dotted">
+    <td>* Last Name:</td>
+    <td>
+      <input name="lastname" type="text" id="lastname" size="40" />
+      <span id="lastname_error" ></span>
+    </td>
+  </tr>
+  <tr class="dotted">
+    <td>Last name at Graduation<br />
+(if different from above):</td>
+    <td>
+      <input name="previos_lastname" type="text" id="previos_lastname" size="40" />
+    </td>
+  </tr>
+  <tr class="dotted">
+    <td>* Birth Date:</td>
+    <td>
+      
+      <div id="birthdate"></div> 
+      <span id="birthdate_error" ></span>
+      </td>
+  </tr>
+  <tr class="dotted">
+    <td>Is your spouse an alum?</td>
+    <td>
+      <label>
+        <input type="checkbox" name="spouse_york_alumni" id="spouse_york_alumni" />
+      </label>
+    </td>
+  </tr>
+  <tr class="dotted">
+    <td>Spouse Name:</td>
+    <td><input name="spouse_name" type="text" id="spouse_name" size="40" /></td>
+  </tr>
+  <tr class="dotted">
+    <td>* Email:</td>
+    <td><input name="email" type="text" id="email" size="40" />
+      <span id="email_error"></span></td>
+  </tr>
+  <tr class="dotted">
+    <td>* Email Confirmation:</td>
+    <td><input name="email_confirm" type="text" id="email_confirm" size="40" />
+    <span id="email_confirm_error"></span>
+    </td>
+  </tr>
+  <tr class="dotted">
+    <td>Apartment #:</td>
+    <td>
+      <input type="text" name="apartment_number" id="apartment_number" />
+    </td>
+  </tr>
+  <tr class="dotted">
+    <td>Address:</td>
+    <td>
+      <input name="address" type="text" id="address" size="40" />
+      <span id="address_error" ></span>
+    </td>
+  </tr>
+  <tr class="dotted">
+    <td>P.O. box:</td>
+    <td>
+      <input type="text" name="po_box" id="po_box" />
+    </td>
+  </tr>
+  <tr class="dotted">
+    <td>* City:</td>
+    <td>
+      <input name="city" type="text" id="city" size="40" />
+      <span id="city_error" ></span>
+    </td>
+  </tr>
+  
+  <tr class="dotted">
+    <td>* Country:</td>
+    <td>
+      <select name="country" size="1" id="country">
+        <option value="">Please choose a Country </option>
+        <option value="Canada" selected="selected">Canada</option>
+        <option value="United States">United States</option>
+        <option value="Afghanistan">Afghanistan</option>
+        <option value="Albania">Albania</option>
+        <option value="Algeria">Algeria</option>
+        <option value="Andorra">Andorra</option>
+        <option value="Angola">Angola</option>
+        <option value="Antigua">Antigua</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Armenia">Armenia</option>
+        <option value="Australia">Australia</option>
+        <option value="Austria">Austria</option>
+        <option value="Azerbaijan">Azerbaijan</option>
+        <option value="Bahamas">Bahamas</option>
+        <option value="Bahrain">Bahrain</option>
+        <option value="Bangladesh">Bangladesh</option>
+        <option value="Barbados">Barbados</option>
+        <option value="Barbuda">Barbuda</option>
+        <option value="Belarus">Belarus</option>
+        <option value="Belgium">Belgium</option>
+        <option value="Belize">Belize</option>
+        <option value="Benin">Benin</option>
+        <option value="Bermuda">Bermuda</option>
+        <option value="Bhutan">Bhutan</option>
+        <option value="Bolivia">Bolivia</option>
+        <option value="Bosnia">Bosnia</option>
+        <option value="Botswana">Botswana</option>
+        <option value="Brazil">Brazil</option>
+        <option value="Brunei">Brunei</option>
+        <option value="Bulgaria">Bulgaria</option>
+        <option value="Burkina Faso">Burkina Faso</option>
+        <option value="Burma">Burma</option>
+        <option value="Burundi">Burundi</option>
+        <option value="Cambodia">Cambodia</option>
+        <option value="Cameroon">Cameroon</option>
+        <option value="Canada">Canada</option>
+        <option value="Cape Verde">Cape Verde</option>
+        <option value="Cayman Islands">Cayman Islands</option>
+        <option value="Central African Republic">Central African Republic</option>
+        <option value="Chad">Chad</option>
+        <option value="Chile">Chile</option>
+        <option value="China">China</option>
+        <option value="Colombia">Colombia</option>
+        <option value="Comoros">Comoros</option>
+        <option value="Congo">Congo</option>
+        <option value="Costa Rica">Costa Rica</option>
+        <option value="Cote d'Ivoire">Cote d'Ivoire</option>
+        <option value="Croatia">Croatia</option>
+        <option value="Cuba">Cuba</option>
+        <option value="Cyprus">Cyprus</option>
+        <option value="Czech Republic">Czech Republic</option>
+        <option value="Democratic Republic of Congo">Democratic Republic of Congo</option>
+        <option value="Denmark">Denmark</option>
+        <option value="Djibouti">Djibouti</option>
+        <option value="Dominica">Dominica</option>
+        <option value="Dominican Republic">Dominican Republic</option>
+        <option value="East Timor">East Timor</option>
+        <option value="Ecuador">Ecuador</option>
+        <option value="Egypt">Egypt</option>
+        <option value="El Salvador">El Salvador</option>
+        <option value="Equatorial Guinea">Equatorial Guinea</option>
+        <option value="Eritrea">Eritrea</option>
+        <option value="Estonia">Estonia</option>
+        <option value="Ethiopia">Ethiopia</option>
+        <option value="Fiji">Fiji</option>
+        <option value="Finland">Finland</option>
+        <option value="France">France</option>
+        <option value="FYR Macedonia">FYR Macedonia</option>
+        <option value="Gabon">Gabon</option>
+        <option value="Gaza Strip">Gaza Strip</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Germany">Germany</option>
+        <option value="Ghana">Ghana</option>
+        <option value="Greece">Greece</option>
+        <option value="Grenada">Grenada</option>
+        <option value="Grenadines">Grenadines</option>
+        <option value="Guatemala">Guatemala</option>
+        <option value="Guinea">Guinea</option>
+        <option value="Guinea-Bissau">Guinea-Bissau</option>
+        <option value="Guyana">Guyana</option>
+        <option value="Haiti">Haiti</option>
+        <option value="Herzegovina">Herzegovina</option>
+        <option value="Holy See">Holy See</option>
+        <option value="Honduras">Honduras</option>
+        <option value="Hong Kong">Hong Kong</option>
+        <option value="Hungary">Hungary</option>
+        <option value="Iceland">Iceland</option>
+        <option value="India">India</option>
+        <option value="Indonesia">Indonesia</option>
+        <option value="Iran">Iran</option>
+        <option value="Iraq">Iraq</option>
+        <option value="Ireland">Ireland</option>
+        <option value="Israel">Israel</option>
+        <option value="Italy">Italy</option>
+        <option value="Jamaica">Jamaica</option>
+        <option value="Japan">Japan</option>
+        <option value="Jordan">Jordan</option>
+        <option value="Kazakhstan">Kazakhstan</option>
+        <option value="Kenya">Kenya</option>
+        <option value="Kiribati">Kiribati</option>
+        <option value="Kuwait">Kuwait</option>
+        <option value="Kyrgyzstan">Kyrgyzstan</option>
+        <option value="Laos">Laos</option>
+        <option value="Latvia">Latvia</option>
+        <option value="Lebanon">Lebanon</option>
+        <option value="Lesotho">Lesotho</option>
+        <option value="Liberia">Liberia</option>
+        <option value="Libya">Libya</option>
+        <option value="Liechtenstein">Liechtenstein</option>
+        <option value="Lithuania">Lithuania</option>
+        <option value="Luxembourg">Luxembourg</option>
+        <option value="Madagascar">Madagascar</option>
+        <option value="Malawi">Malawi</option>
+        <option value="Malaysia">Malaysia</option>
+        <option value="Maldives">Maldives</option>
+        <option value="Mali">Mali</option>
+        <option value="Malta">Malta</option>
+        <option value="Marshall Islands">Marshall Islands</option>
+        <option value="Mauritania">Mauritania</option>
+        <option value="Mauritius">Mauritius</option>
+        <option value="Mexico">Mexico</option>
+        <option value="Micronesia">Micronesia</option>
+        <option value="Moldova">Moldova</option>
+        <option value="Monaco">Monaco</option>
+        <option value="Mongolia">Mongolia</option>
+        <option value="Montenegro">Montenegro</option>
+        <option value="Morocco">Morocco</option>
+        <option value="Mozambique">Mozambique</option>
+        <option value="Myanmar">Myanmar</option>
+        <option value="Namibia">Namibia</option>
+        <option value="Nauru">Nauru</option>
+        <option value="Nepal">Nepal</option>
+        <option value="Netherlands">Netherlands</option>
+        <option value="Nevis">Nevis</option>
+        <option value="New Zealand">New Zealand</option>
+        <option value="Nicaragua">Nicaragua</option>
+        <option value="Niger">Niger</option>
+        <option value="Nigeria">Nigeria</option>
+        <option value="Niue">Niue</option>
+        <option value="North Korea">North Korea</option>
+        <option value="Norway">Norway</option>
+        <option value="Oman">Oman</option>
+        <option value="Other">Other</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="Palau">Palau</option>
+        <option value="Palestine">Palestine</option>
+        <option value="Panama">Panama</option>
+        <option value="Papua New Guinea">Papua New Guinea</option>
+        <option value="Paraguay">Paraguay</option>
+        <option value="Peru">Peru</option>
+        <option value="Philippines">Philippines</option>
+        <option value="Poland">Poland</option>
+        <option value="Portugal">Portugal</option>
+        <option value="Qatar">Qatar</option>
+        <option value="Romania">Romania</option>
+        <option value="Russia">Russia</option>
+        <option value="Rwanda">Rwanda</option>
+        <option value="Saint Kitts">Saint Kitts</option>
+        <option value="Saint Lucia">Saint Lucia</option>
+        <option value="Saint Vincent">Saint Vincent</option>
+        <option value="San Marino">San Marino</option>
+        <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+        <option value="Saudi Arabia">Saudi Arabia</option>
+        <option value="Senegal">Senegal</option>
+        <option value="Serbia">Serbia</option>
+        <option value="Seychelles">Seychelles</option>
+        <option value="Sierra Leone">Sierra Leone</option>
+        <option value="Singapore">Singapore</option>
+        <option value="Slovakia">Slovakia</option>
+        <option value="Slovenia">Slovenia</option>
+        <option value="Solomon Islands">Solomon Islands</option>
+        <option value="Somalia">Somalia</option>
+        <option value="South Africa">South Africa</option>
+        <option value="South Korea">South Korea</option>
+        <option value="Spain">Spain</option>
+        <option value="Sri Lanka">Sri Lanka</option>
+        <option value="Sudan">Sudan</option>
+        <option value="Suriname">Suriname</option>
+        <option value="Swaziland">Swaziland</option>
+        <option value="Sweden">Sweden</option>
+        <option value="Switzerland">Switzerland</option>
+        <option value="Syria">Syria</option>
+        <option value="Taiwan">Taiwan</option>
+        <option value="Tajikistan">Tajikistan</option>
+        <option value="Tanzania">Tanzania</option>
+        <option value="Thailand">Thailand</option>
+        <option value="The Gambia">The Gambia</option>
+        <option value="Togo">Togo</option>
+        <option value="Tonga">Tonga</option>
+        <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+        <option value="Tunisia">Tunisia</option>
+        <option value="Turkey">Turkey</option>
+        <option value="Turkmenistan">Turkmenistan</option>
+        <option value="Tuvalu">Tuvalu</option>
+        <option value="Uganda">Uganda</option>
+        <option value="Ukraine">Ukraine</option>
+        <option value="United Arabic Emirates">United Arabic Emirates</option>
+        <option value="United Kingdom">United Kingdom</option>
+        <option value="United States">United States</option>
+        <option value="Uruguay">Uruguay</option>
+        <option value="Uzbekistan">Uzbekistan</option>
+        <option value="Vanuatu">Vanuatu</option>
+        <option value="Vatican">Vatican</option>
+        <option value="Venezuela">Venezuela</option>
+        <option value="Vietnam">Vietnam</option>
+        <option value="West Bank">West Bank</option>
+        <option value="Western Sahara">Western Sahara</option>
+        <option value="Western Samoa">Western Samoa</option>
+        <option value="Yemen">Yemen</option>
+        <option value="Yugoslavia">Yugoslavia</option>
+        <option value="Zambia">Zambia</option>
+        <option value="Zimbabwe">Zimbabwe</option>
+      </select>
+  
+      <span id="country_error" ></span>    
+    </td>
+  </tr>
+  
+  <tr class="dotted">
+    <td>Province/State:</td>
+    <td>    
+      <span class="dotted">
+    <select name="province" id="province">
+    </select>
+    <input name="province_other" id="province_other" size="14" maxlength="12" type="text">
+      </span></td>
+  </tr>
+  
+  
+  
+  <tr class="dotted">
+    <td>* Postal/Zip Code:</td>
+    <td>
+      <input type="text" name="postal_zip" id="postal_zip" /><span id="postal_zip_error" ></span>
+    </td>
+  </tr>
+  <tr class="dotted">
+    <td>Telephone:</td>
+    <td>
+      <input type="text" name="phone" id="phone" /><span id="phone_error" ></span>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+    </tr>
+  <tr> 
+    <th colspan="2"><strong>Occupational Information</strong></th>
+  </tr>
+  <tr class="dotted">
+    <td>Position/title:</td>
+    <td>
+      <input name="company_title" type="text" id="company_title" size="40" />
+    </td>
+  </tr>
+  <tr class="dotted">
+    <td>Self Employed:</td>
+    <td>
+
+        <input type="checkbox" name="self_employed" id="self_employed" value="yes" />
+  </td>
+  </tr>
+  <tr class="dotted">
+    <td>Company:</td>
+    <td>
+      <input name="company_name" type="text" id="company_name" size="40" />
+    </td>
+  </tr>
+  <tr class="dotted">
+    <td>Division/Department:</td>
+    <td>
+      <input name="company_division" type="text" id="company_division" size="40" />
+    </td>
+  </tr>
+  <tr class="dotted">
+    <td>Suite #:</td>
+    <td>
+      <input type="text" name="company_apartment_number" id="company_apartment_number" />
+    </td>
+  </tr>
+  <tr class="dotted">
+    <td>Address:</td>
+    <td>
+      <input name="company_address" type="text" id="company_address" size="40" />
+    </td>
+  </tr>
+  <tr class="dotted">
+    <td>P.O. Box:</td>
+    <td>
+      <input type="text" name="company_po_box" id="company_po_box" />
+    </td>
+  </tr>
+  <tr class="dotted">
+    <td>City:</td>
+    <td>
+      <input name="company_city" type="text" id="company_city" size="40" />
+    </td>
+  </tr>
+  <tr class="dotted">
+    <td>Country:</td>
+    <td>    
+      <span class="dotted">
+      <select name="company_country" id="company_country" size="1">
+        <option value="">Please choose a Country </option>
+        <option value="Canada" selected="selected">Canada</option>
+        <option value="United States">United States</option>
+        <option value="Afghanistan">Afghanistan</option>
+        <option value="Albania">Albania</option>
+        <option value="Algeria">Algeria</option>
+        <option value="Andorra">Andorra</option>
+        <option value="Angola">Angola</option>
+        <option value="Antigua">Antigua</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Armenia">Armenia</option>
+        <option value="Australia">Australia</option>
+        <option value="Austria">Austria</option>
+        <option value="Azerbaijan">Azerbaijan</option>
+        <option value="Bahamas">Bahamas</option>
+        <option value="Bahrain">Bahrain</option>
+        <option value="Bangladesh">Bangladesh</option>
+        <option value="Barbados">Barbados</option>
+        <option value="Barbuda">Barbuda</option>
+        <option value="Belarus">Belarus</option>
+        <option value="Belgium">Belgium</option>
+        <option value="Belize">Belize</option>
+        <option value="Benin">Benin</option>
+        <option value="Bermuda">Bermuda</option>
+        <option value="Bhutan">Bhutan</option>
+        <option value="Bolivia">Bolivia</option>
+        <option value="Bosnia">Bosnia</option>
+        <option value="Botswana">Botswana</option>
+        <option value="Brazil">Brazil</option>
+        <option value="Brunei">Brunei</option>
+        <option value="Bulgaria">Bulgaria</option>
+        <option value="Burkina Faso">Burkina Faso</option>
+        <option value="Burma">Burma</option>
+        <option value="Burundi">Burundi</option>
+        <option value="Cambodia">Cambodia</option>
+        <option value="Cameroon">Cameroon</option>
+        <option value="Canada">Canada</option>
+        <option value="Cape Verde">Cape Verde</option>
+        <option value="Cayman Islands">Cayman Islands</option>
+        <option value="Central African Republic">Central African Republic</option>
+        <option value="Chad">Chad</option>
+        <option value="Chile">Chile</option>
+        <option value="China">China</option>
+        <option value="Colombia">Colombia</option>
+        <option value="Comoros">Comoros</option>
+        <option value="Congo">Congo</option>
+        <option value="Costa Rica">Costa Rica</option>
+        <option value="Cote d'Ivoire">Cote d'Ivoire</option>
+        <option value="Croatia">Croatia</option>
+        <option value="Cuba">Cuba</option>
+        <option value="Cyprus">Cyprus</option>
+        <option value="Czech Republic">Czech Republic</option>
+        <option value="Democratic Republic of Congo">Democratic Republic of Congo</option>
+        <option value="Denmark">Denmark</option>
+        <option value="Djibouti">Djibouti</option>
+        <option value="Dominica">Dominica</option>
+        <option value="Dominican Republic">Dominican Republic</option>
+        <option value="East Timor">East Timor</option>
+        <option value="Ecuador">Ecuador</option>
+        <option value="Egypt">Egypt</option>
+        <option value="El Salvador">El Salvador</option>
+        <option value="Equatorial Guinea">Equatorial Guinea</option>
+        <option value="Eritrea">Eritrea</option>
+        <option value="Estonia">Estonia</option>
+        <option value="Ethiopia">Ethiopia</option>
+        <option value="Fiji">Fiji</option>
+        <option value="Finland">Finland</option>
+        <option value="France">France</option>
+        <option value="FYR Macedonia">FYR Macedonia</option>
+        <option value="Gabon">Gabon</option>
+        <option value="Gaza Strip">Gaza Strip</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Germany">Germany</option>
+        <option value="Ghana">Ghana</option>
+        <option value="Greece">Greece</option>
+        <option value="Grenada">Grenada</option>
+        <option value="Grenadines">Grenadines</option>
+        <option value="Guatemala">Guatemala</option>
+        <option value="Guinea">Guinea</option>
+        <option value="Guinea-Bissau">Guinea-Bissau</option>
+        <option value="Guyana">Guyana</option>
+        <option value="Haiti">Haiti</option>
+        <option value="Herzegovina">Herzegovina</option>
+        <option value="Holy See">Holy See</option>
+        <option value="Honduras">Honduras</option>
+        <option value="Hong Kong">Hong Kong</option>
+        <option value="Hungary">Hungary</option>
+        <option value="Iceland">Iceland</option>
+        <option value="India">India</option>
+        <option value="Indonesia">Indonesia</option>
+        <option value="Iran">Iran</option>
+        <option value="Iraq">Iraq</option>
+        <option value="Ireland">Ireland</option>
+        <option value="Israel">Israel</option>
+        <option value="Italy">Italy</option>
+        <option value="Jamaica">Jamaica</option>
+        <option value="Japan">Japan</option>
+        <option value="Jordan">Jordan</option>
+        <option value="Kazakhstan">Kazakhstan</option>
+        <option value="Kenya">Kenya</option>
+        <option value="Kiribati">Kiribati</option>
+        <option value="Kuwait">Kuwait</option>
+        <option value="Kyrgyzstan">Kyrgyzstan</option>
+        <option value="Laos">Laos</option>
+        <option value="Latvia">Latvia</option>
+        <option value="Lebanon">Lebanon</option>
+        <option value="Lesotho">Lesotho</option>
+        <option value="Liberia">Liberia</option>
+        <option value="Libya">Libya</option>
+        <option value="Liechtenstein">Liechtenstein</option>
+        <option value="Lithuania">Lithuania</option>
+        <option value="Luxembourg">Luxembourg</option>
+        <option value="Madagascar">Madagascar</option>
+        <option value="Malawi">Malawi</option>
+        <option value="Malaysia">Malaysia</option>
+        <option value="Maldives">Maldives</option>
+        <option value="Mali">Mali</option>
+        <option value="Malta">Malta</option>
+        <option value="Marshall Islands">Marshall Islands</option>
+        <option value="Mauritania">Mauritania</option>
+        <option value="Mauritius">Mauritius</option>
+        <option value="Mexico">Mexico</option>
+        <option value="Micronesia">Micronesia</option>
+        <option value="Moldova">Moldova</option>
+        <option value="Monaco">Monaco</option>
+        <option value="Mongolia">Mongolia</option>
+        <option value="Montenegro">Montenegro</option>
+        <option value="Morocco">Morocco</option>
+        <option value="Mozambique">Mozambique</option>
+        <option value="Myanmar">Myanmar</option>
+        <option value="Namibia">Namibia</option>
+        <option value="Nauru">Nauru</option>
+        <option value="Nepal">Nepal</option>
+        <option value="Netherlands">Netherlands</option>
+        <option value="Nevis">Nevis</option>
+        <option value="New Zealand">New Zealand</option>
+        <option value="Nicaragua">Nicaragua</option>
+        <option value="Niger">Niger</option>
+        <option value="Nigeria">Nigeria</option>
+        <option value="Niue">Niue</option>
+        <option value="North Korea">North Korea</option>
+        <option value="Norway">Norway</option>
+        <option value="Oman">Oman</option>
+        <option value="Other">Other</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="Palau">Palau</option>
+        <option value="Palestine">Palestine</option>
+        <option value="Panama">Panama</option>
+        <option value="Papua New Guinea">Papua New Guinea</option>
+        <option value="Paraguay">Paraguay</option>
+        <option value="Peru">Peru</option>
+        <option value="Philippines">Philippines</option>
+        <option value="Poland">Poland</option>
+        <option value="Portugal">Portugal</option>
+        <option value="Qatar">Qatar</option>
+        <option value="Romania">Romania</option>
+        <option value="Russia">Russia</option>
+        <option value="Rwanda">Rwanda</option>
+        <option value="Saint Kitts">Saint Kitts</option>
+        <option value="Saint Lucia">Saint Lucia</option>
+        <option value="Saint Vincent">Saint Vincent</option>
+        <option value="San Marino">San Marino</option>
+        <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+        <option value="Saudi Arabia">Saudi Arabia</option>
+        <option value="Senegal">Senegal</option>
+        <option value="Serbia">Serbia</option>
+        <option value="Seychelles">Seychelles</option>
+        <option value="Sierra Leone">Sierra Leone</option>
+        <option value="Singapore">Singapore</option>
+        <option value="Slovakia">Slovakia</option>
+        <option value="Slovenia">Slovenia</option>
+        <option value="Solomon Islands">Solomon Islands</option>
+        <option value="Somalia">Somalia</option>
+        <option value="South Africa">South Africa</option>
+        <option value="South Korea">South Korea</option>
+        <option value="Spain">Spain</option>
+        <option value="Sri Lanka">Sri Lanka</option>
+        <option value="Sudan">Sudan</option>
+        <option value="Suriname">Suriname</option>
+        <option value="Swaziland">Swaziland</option>
+        <option value="Sweden">Sweden</option>
+        <option value="Switzerland">Switzerland</option>
+        <option value="Syria">Syria</option>
+        <option value="Taiwan">Taiwan</option>
+        <option value="Tajikistan">Tajikistan</option>
+        <option value="Tanzania">Tanzania</option>
+        <option value="Thailand">Thailand</option>
+        <option value="The Gambia">The Gambia</option>
+        <option value="Togo">Togo</option>
+        <option value="Tonga">Tonga</option>
+        <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+        <option value="Tunisia">Tunisia</option>
+        <option value="Turkey">Turkey</option>
+        <option value="Turkmenistan">Turkmenistan</option>
+        <option value="Tuvalu">Tuvalu</option>
+        <option value="Uganda">Uganda</option>
+        <option value="Ukraine">Ukraine</option>
+        <option value="United Arabic Emirates">United Arabic Emirates</option>
+        <option value="United Kingdom">United Kingdom</option>
+        <option value="United States">United States</option>
+        <option value="Uruguay">Uruguay</option>
+        <option value="Uzbekistan">Uzbekistan</option>
+        <option value="Vanuatu">Vanuatu</option>
+        <option value="Vatican">Vatican</option>
+        <option value="Venezuela">Venezuela</option>
+        <option value="Vietnam">Vietnam</option>
+        <option value="West Bank">West Bank</option>
+        <option value="Western Sahara">Western Sahara</option>
+        <option value="Western Samoa">Western Samoa</option>
+        <option value="Yemen">Yemen</option>
+        <option value="Yugoslavia">Yugoslavia</option>
+        <option value="Zambia">Zambia</option>
+        <option value="Zimbabwe">Zimbabwe</option>
+      </select>
+
+
+    
+    
+      </span></td>
+  </tr>
+  <tr class="dotted">
+    <td>Province/State:</td>
+    <td>
+      <select name="company_province" id="company_province">
+      </select>      
+      <input type="text" name="company_province_other" id="company_province_other" />
+    </td>
+  </tr>
+  
+  <tr class="dotted">
+    <td>Postal/Zip Code:</td>
+    <td>
+      <input type="text" name="company_postal_zip" id="company_postal_zip" />
+    </td>
+  </tr>
+  <tr class="dotted">
+    <td>Company Email</td>
+    <td><input type="text" name="company_email" id="company_email" /></td>
+  </tr>
+  <tr class="dotted">
+    <td>Telephone:</td>
+    <td>
+      <input type="text" name="company_phone" id="company_phone" />
+    </td>
+  </tr>
+  <tr valign="top" class="dotted">
+    <td>Check for preferred Email:</td>
+    <td>
+
+
+        <input name="prefered_email" type="radio" id="prefered_email" value="per" checked="checked" />
+        Personal </label>&nbsp; 
+
+        <input type="radio" name="prefered_email" value="bus" id="prefered_email" />
+        Business</label>
+    </td>
+  </tr>
+  <tr valign="top" class="dotted">
+    <td>Check for preferred Address:</td>
+    <td>
+
+        <input name="prefered_address" type="radio" id="prefered_address" value="per" checked="checked" />
+        Personal</label> 
+      &nbsp; 
+
+<input type="radio" name="prefered_address" value="bus" id="prefered_address" />
+Business</label>
+    </td>
+  </tr>
+  <tr>
+    <td colspan=2>&nbsp;</td>
+  </tr>
+  <tr class="dotted">
+    <th colspan=2>York Academic Information</th>
+  </tr>
+  <tr class="dotted">
+    <td>Student Number:</td>
+    <td>
+      <input type="text" name="student_number" id="student_number" />
+    </td>
+  </tr>
+  <tr class="dotted">
+    <td>* Faculty:</td>
+    <td>
+      <select name="faculty" id="faculty" size="1">
+      <option value="">Please choose your Faculty.</option>			
+				<option value="Atkinson Faculty of Liberal and Professional Studies">Atkinson Faculty of Liberal and Prof. Studies</option>
+				<option value="Faculty of Arts">Faculty of Arts</option>
+				<option value="Faculty of Education">Faculty of Education</option>
+				<option value="Faculty of Environmental Studies">Faculty of Environmental Studies</option>
+				<option value="Faculty of Fine Arts">Faculty of Fine Arts</option>
+				<option value="Faculty of Graduate Studies">Faculty of Graduate Studies</option>
+				<option value="Faculty of Health">Faculty of Health</option>
+                                <option value="Faculty of Liberal Arts and Professional Studies">Faculty of Liberal Arts and Professional Studies</option>              
+				<option value="Faculty of Science">Faculty of Science</option>
+				<option value="Glendon">Glendon</option>
+				<option value="Lakeshore Teaching College">Lakeshore Teaching College</option>
+                                <option value="Lassonde School of Engineering">Lassonde School of Engineering</option>
+				<option value="Osgoode Hall Law School">Osgoode Hall Law School</option>
+                                <option value="School of the Arts, Media, Performance &amp; Design">School of the Arts, Media, Performance &amp; Design</option>
+				<option value="Schulich School of Business">Schulich School of Business</option>
+      </select>
+
+     <span id="faculty_error" class="error_center"></span>
+    </td>
+  </tr>
+  <tr class="dotted">
+    <td>* Graduation Year:</td>
+    <td>
+      <select name="graduation_year" id="graduation_year" size="1">
+      </select>
+      <span id="graduation_year_error" ></span>      
+    </td>
+  </tr>
+  <tr class="dotted">
+    <td>College (if applicable):</td>
+    <td>
+      <input type="text" name="college" id="college" />
+    </td>
+  </tr>
+  <tr class="dotted">
+    <td>Major(s):</td>
+    <td>
+      <input name="majors" type="text" id="majors" size="50" />
+    </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><input type="button" id="update" value="Update Your Record" />
+    <span id="signup_success" class="success"></span>
+    </td>
+    </tr>
+</table>
+
+
+</div><!-- form_row2 -->
+                    
+                </div><!-- content_805 -->
+                
+        	</div><!-- content_wide_alumni -->
+                
+            <? //include "http://www.yorku.ca/alumni/includes/global_contact_footer-wide.txt"; ?>
+        
+    	</div><!-- primarycontent_wide -->
+
+	</div><!-- container -->
+
+</body>
+</html>

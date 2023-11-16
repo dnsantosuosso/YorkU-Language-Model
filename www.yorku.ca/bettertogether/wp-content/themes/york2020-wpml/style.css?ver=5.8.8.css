@@ -1,0 +1,57 @@
+/*
+ Theme Name:   York 2020 WPML Child
+ Theme URI:    https://yorku.ca
+ Description:  York 2020 WPML Child Theme
+ Author:       Alice
+ Author URI:   http://yorku.ca
+ Template:     york2020
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  york2020child
+*/
+/* LANG SWITCH */
+header .wpml-ls-legacy-list-horizontal {
+    padding: 0;
+    margin-right: 1rem;
+  }
+  header .wpml-ls-link {
+  max-height: 38px;
+  color: #343a40;
+  border: 1px solid #343a40;
+  background: transparent;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.275rem 0.75rem 0.475rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5 !important;
+  border-radius: 0;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  header .wpml-ls-link:hover {
+  color: #fff;
+  background-color: #343a40;
+  border-color: #343a40;
+  }
+  header .wpml-ls-link:focus {
+  color: #fff;
+  background-color: #343a40;
+  border-color: #343a40;
+  box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);	
+  }
+  header .wpml-ls-link:active {
+  color: #343a40;
+  border: 1px solid #343a40;
+  background: transparent;
+  }
+  header .wpml-ls .wpml-ls-current-language, header .wpml-ls .wpml-ls-item span:nth-child(n+2) {
+    display: none;
+  }
+  @media (max-width: 767px) {
+    header .wpml-ls-link {
+      margin-top: 0.5rem;
+    }
+  }

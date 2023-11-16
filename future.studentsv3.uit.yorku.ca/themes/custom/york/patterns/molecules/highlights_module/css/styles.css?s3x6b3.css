@@ -1,0 +1,9 @@
+.highlights-module{
+	display:grid !important;
+	grid-gap:32px;
+	grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.highlights-module .wp-block-column{
+	margin-left:0 !important;
+}

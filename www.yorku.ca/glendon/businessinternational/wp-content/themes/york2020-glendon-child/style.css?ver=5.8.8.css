@@ -1,0 +1,148 @@
+/*
+ Theme Name:   York 2020 Glendon Child
+ Theme URI:    https://yorku.ca
+ Description:  York 2020 Glendon Child Theme
+ Author:       Alice
+ Author URI:   http://yorku.ca
+ Template:     york2020
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  york2020child
+*/
+.glendon-logo {
+	width: auto;
+	height: 31px;
+	border: 0;
+	margin: 5px 0;
+}
+.navbar.bg-glendon, #footer.bg-glendon {
+	background: #004A8D !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+	color: rgba(255, 255, 255, .98);
+}
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+    color: rgba(255, 255, 255, 1);
+    background: #810001;
+}
+.navbar .dropdown-menu {
+	background: #e31837;
+}
+.navbar .dropdown-item:hover, .navbar .dropdown-item:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: #810001;
+}
+header .wpml-ls-legacy-list-horizontal {
+    padding: 0;
+    margin-right: 1rem;
+}
+header .wpml-ls-link {
+	max-height: 38px;
+	color: #343a40;
+	border: 1px solid #343a40;
+	background: transparent;
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	vertical-align: middle;
+	padding: 0.275rem 0.75rem 0.475rem 0.75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: 0;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+header .wpml-ls-link:hover {
+	color: #fff;
+	background-color: #343a40;
+	border-color: #343a40;
+}
+header .wpml-ls-link:focus {
+	color: #fff;
+	background-color: #343a40;
+	border-color: #343a40;
+	box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);	
+}
+header .wpml-ls-link:active {
+	color: #343a40;
+	border: 1px solid #343a40;
+	background: transparent;
+}
+@media (max-width: 991.98px) {	
+	.navbar .dropdown-item:hover, .navbar .dropdown-item:focus {
+		background: transparent;
+	}}
+@media (max-width: 767px) {
+	header .d-sm-flex {
+    display: block !important; }
+	#popular-links, #popular-links .dropdown-menu {
+    width: 100%;
+	}}
+
+/* Override Standard York blocks with Glendon Colors */
+
+/* Accordions */
+.kt-blocks-accordion-header {
+	background: #fff !important;
+	border-bottom: 1px solid #ccc !important;
+}
+.kt-accodion-icon-style-arrow .kt-blocks-accordion-icon-trigger::before, .kt-accodion-icon-style-arrow .kt-blocks-accordion-icon-trigger::after {
+	height: 3px !important;
+	width: 13px !important;
+	color: #004a8d !important;
+}
+.kt-accodion-icon-style-arrow .kt-blocks-accordion-icon-trigger::before, .kt-accodion-icon-style-arrow .kt-blocks-accordion-icon-trigger::after {
+	height: 3px !important;
+	width: 13px !important;
+	background-color: #004a8d !important;
+}
+.kt-accodion-icon-style-arrow .kt-blocks-accordion-header.kt-accordion-panel-active .kt-blocks-accordion-icon-trigger::before, .kt-accodion-icon-style-arrow .kt-blocks-accordion-header.kt-accordion-panel-active .kt-blocks-accordion-icon-trigger::after {
+	background-color: #fff !important;
+}
+.kt-accordion-panel-inner {
+	border: 0 !important;
+	background: #fafafa !important;
+}
+.kt-blocks-accordion-header {
+	color: #212529 !important;
+	font-weight: 600;
+}
+.kt-blocks-accordion-header.kt-accordion-panel-active {
+	color: #fff !important;
+	font-weight: 600;
+	background: #004a8d !important;
+	border: 0 !important;
+}
+/* Content Tabs  */
+.kt-tabs-title-list li .kt-tab-title {
+	border-radius: 0 !important;
+}
+.kt-tabs-title-list li.kt-tab-title-active .kt-tab-title, .kt-tabs-title-list li.kt-tab-title-active .kt-tab-title:hover {
+	color: #fff !important;
+	border-color: #004a8d !important;
+	background: #004a8d !important;
+}
+.kt-tabs-title-list li.kt-tab-title-active .kt-tab-title, .kt-tabs-accordion-title.kt-tab-title-active .kt-tab-title {
+	color: #fff !important;
+}
+.kt-tabs-title-list li .kt-tab-title {
+	color: #686260 !important;
+}
+.kt-tabs-title-list li .kt-tab-title:hover {
+	border-color: transparent !important;
+	background: #fafafa !important;
+}
+/* Feature Quote */
+.fas.fa-quote-left.h1.text-primary {
+	color: #004a8d !important;
+}
+/* Infographics and Numbers */
+.infographics-block.card-deck .bg-primary-2 {
+  background: #004a8d !important;
+}
+/* Blue Button */
+.wp-block-button.bg-glendon.text-decoration-none a {
+	text-decoration: none !important;
+}

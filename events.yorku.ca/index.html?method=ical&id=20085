@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+CALSCALE:GREGORIAN
+PRODID:-//WordPress - MECv6.7.3//EN
+X-ORIGINAL-URL:https://events.yorku.ca/
+X-WR-CALNAME:York University Events Calendar
+X-WR-CALDESC:
+REFRESH-INTERVAL;VALUE=DURATION:PT1H
+X-PUBLISHED-TTL:PT1H
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VEVENT
+CLASS:PUBLIC
+UID:MEC-9a3e594b26056b67a02cac0e510393d1@events.yorku.ca
+DTSTART:20231030T160000Z
+DTEND:20231030T170000Z
+DTSTAMP:20230927T155500Z
+CREATED:20230927
+LAST-MODIFIED:20230927
+PRIORITY:5
+SEQUENCE:5
+TRANSP:OPAQUE
+SUMMARY:LA&PS Summer Study Abroad Program Info Session
+DESCRIPTION:Please register to attend one of our upcoming in-person info sessions! You’ll learn all about the LA&PS Summer Study Abroad Program and our Summer 2024 course offerings and have an opportunity to ask previous study abroad students questions about their experiences.\nDATE: Wednesday, October 30, 2023\nTIME: 12-1 pm\nLOCATION: Ross Building South, Room 802 (beside the School of Social Work)\nJoin Here\n
+URL:https://events.yorku.ca/events/laps-summer-study-abroad-program-info-session-895/
+ORGANIZER;CN=LA&amp;PS Summer Study Abroad Program:MAILTO:studyabr@yorku.ca
+CATEGORIES:LA&amp;PS Colleges,LA&amp;PS Department of Anthropology,LA&amp;PS Department of Communication &amp; Media Studies,LA&amp;PS Department of Economics,LA&amp;PS Department of English,LA&amp;PS Department of Equity Studies,LA&amp;PS Department of French Studies,LA&amp;PS Department of History,LA&amp;PS Department of Humanities,LA&amp;PS Department of Languages, Literatures &amp; Linguistics,LA&amp;PS Department of Philosophy,LA&amp;PS Department of Politics,LA&amp;PS Department of Social Science,LA&amp;PS Department of Sociology,LA&amp;PS Founders College,LA&amp;PS McLaughlin College,LA&amp;PS New College,LA&amp;PS School of Administrative Studies,LA&amp;PS School of Gender, Sexuality and Women's Studies,LA&amp;PS School of Human Resources Management,LA&amp;PS School of Information Technology,LA&amp;PS School of Public Policy &amp; Administration,LA&amp;PS School of Social Work,LA&amp;PS Student Success,LA&amp;PS Students All,LA&amp;PS Students-Graduate,LA&amp;PS Students-International,LA&amp;PS Students-Undergrad,LA&amp;PS Vanier College,LA&amp;PS Writing Department
+LOCATION:802 South Ross Building @ 4700 Keele Street, Toronto ON, M3J 1P3
+END:VEVENT
+END:VCALENDAR

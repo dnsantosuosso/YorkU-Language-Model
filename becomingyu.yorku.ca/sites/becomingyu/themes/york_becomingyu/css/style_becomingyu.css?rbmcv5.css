@@ -1,0 +1,22 @@
+/*
+Khai added: customize york style to ckeditor accordion
+*/
+.ckeditor-accordion-container > dl.york
+{
+    border: 0 !important;
+}
+
+dl.york > dt.active > a {
+     background-color: #9A0100;
+}
+.ckeditor-accordion-container > dl.york dt > a {
+     background-color: #e31837 !important;
+     border-bottom: 0!important;
+}
+.tab-content > .active {
+    border : 0 !important;
+}
+
+#page a{
+    font-weight: 700;
+}

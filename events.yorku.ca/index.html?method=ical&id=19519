@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+CALSCALE:GREGORIAN
+PRODID:-//WordPress - MECv6.7.3//EN
+X-ORIGINAL-URL:https://events.yorku.ca/
+X-WR-CALNAME:York University Events Calendar
+X-WR-CALDESC:
+REFRESH-INTERVAL;VALUE=DURATION:PT1H
+X-PUBLISHED-TTL:PT1H
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VEVENT
+CLASS:PUBLIC
+UID:MEC-1e1aee7d1c2f371f8cd3442dcdc4e8cd@events.yorku.ca
+DTSTART:20231030T150000Z
+DTEND:20231030T160000Z
+DTSTAMP:20230906T185900Z
+CREATED:20230906
+LAST-MODIFIED:20231019
+PRIORITY:5
+SEQUENCE:3
+TRANSP:OPAQUE
+SUMMARY:Go Global Information Session – Exchange
+DESCRIPTION:\nWhere in the world do you want to go? The Global Learning team is here to help. Chat with a Global Learning coordinator who will guide you through the process.\nLearn More!\nAre you interested in going abroad for the academic year 2024-25? An academic exchange allows students to study abroad for one or two semesters (4-8 months) at one of our many partner universities worldwide. Students will travel to a different country, earn credits towards their degree, and learn about their academic field from an alternative perspective. Don’t miss out on this opportunity of a lifetime! Come to an Information session and learn how this is possible.\nRegister!\n
+URL:https://events.yorku.ca/events/go-global-information-session-exchange-13/
+ORGANIZER;CN=York International:MAILTO:goglobal@yorku.ca
+CATEGORIES:International,LA&amp;PS Students-International
+LOCATION:(URL will be provided in the email confirmation)
+END:VEVENT
+END:VCALENDAR

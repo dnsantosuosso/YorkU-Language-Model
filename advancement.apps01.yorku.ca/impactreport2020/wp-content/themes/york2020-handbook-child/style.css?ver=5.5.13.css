@@ -1,0 +1,357 @@
+/*
+Theme Name: York 2020 Handbook Child
+Theme URI: https://yorku.ca
+Author: Ogilvy
+Author URI: https://ogilvy-canada.com
+Description: Child Theme based on YorkU 2020. The templates are developed to support the Student Handbook online.
+Template: york2020
+License: GNU General Public License v3
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Version: 1.0.0
+Text Domain: york2020-child
+*/
+.handbook {
+  padding-top: 0 !important;
+  font-family: "IBM Plex Sans", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.handbook h1.entry-title {
+  display: none;
+}
+.handbook .btn {
+  border: 0;
+  background-color: #8C0000;
+  color: #FFFFFF;
+  padding: 1rem;
+  line-height: 1rem;
+  transition: all 0.2s linear;
+  text-decoration: none !important;
+}
+.handbook .btn:hover {
+  background-color: #E31837;
+}
+.handbook .btn:after {
+  content: " ";
+  background-image: url("data:image/svg+xml;charset=UTF-8, %3csvg version='1.1' id='Layer_1' focusable='false' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 320 512' style='enable-background:new 0 0 320 512;' xml:space='preserve'%3e%3cstyle type='text/css'%3e .st0%7bfill:%23FFFFFF;%7d %3c/style%3e%3cpath class='st0' d='M285.5,273L91.1,467.3c-9.4,9.4-24.6,9.4-33.9,0l-22.7-22.7c-9.4-9.4-9.4-24.5,0-33.9l154-154.7l-154-154.7 c-9.3-9.4-9.3-24.5,0-33.9l22.7-22.7c9.4-9.4,24.6-9.4,33.9,0L285.5,239C294.8,248.4,294.8,263.6,285.5,273z'/%3e%3c/svg%3e ");
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  background-repeat: no-repeat;
+  background-size: 0.8rem 0.8rem;
+  background-position: center center;
+  position: relative;
+  top: 0.125rem;
+  left: 0.25rem;
+}
+.handbook .btn .lrg-btn {
+  font-size: 1.2rem;
+}
+.handbook .cards .ic {
+  padding: 0.5rem;
+}
+.handbook .cards .ic .inner {
+  padding: 1rem;
+  background-color: #FFFFFF;
+  transition: all 0.15s linear;
+}
+.handbook .cards .ic .inner:hover {
+  transform: scale(1.025, 1.025);
+}
+.handbook .cards .ic .inner .ic-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+}
+.handbook .cards .ic .inner .ic-heading {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: inline-block;
+  line-height: 1.125;
+  margin-bottom: 1rem;
+  text-decoration: none !important;
+  transition: all 0.2s linear;
+}
+.handbook .cards .ic .inner .ic-heading:hover {
+  text-decoration: underline !important;
+}
+.handbook .cards .ic .inner .ic-copy {
+  margin-bottom: 1rem;
+  display: block;
+}
+.handbook .cards .ic .inner .ic-link {
+  margin-bottom: 1rem;
+  display: inline-block;
+  text-decoration: none !important;
+  transition: all 0.2s linear;
+}
+.handbook .cards .ic .inner .ic-link:after {
+  content: " ";
+  background-image: url("data:image/svg+xml;charset=UTF-8, %3csvg version='1.1' id='Layer_1' focusable='false' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 320 512' style='enable-background:new 0 0 320 512;' xml:space='preserve'%3e%3cstyle type='text/css'%3e .st0%7bfill:%23E31837;%7d %3c/style%3e%3cpath class='st0' d='M285.5,273L91.1,467.3c-9.4,9.4-24.6,9.4-33.9,0l-22.7-22.7c-9.4-9.4-9.4-24.5,0-33.9l154-154.7l-154-154.7 c-9.3-9.4-9.3-24.5,0-33.9l22.7-22.7c9.4-9.4,24.6-9.4,33.9,0L285.5,239C294.8,248.4,294.8,263.6,285.5,273z'/%3e%3c/svg%3e ");
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  background-repeat: no-repeat;
+  background-size: 0.8rem 0.8rem;
+  background-position: center center;
+  position: relative;
+  top: 0.125rem;
+  left: 0.25rem;
+}
+.handbook .cards .ic .inner .ic-link:hover:after {
+  background-image: url("data:image/svg+xml;charset=UTF-8, %3csvg version='1.1' id='Layer_1' focusable='false' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 320 512' style='enable-background:new 0 0 320 512;' xml:space='preserve'%3e%3cstyle type='text/css'%3e .st0%7bfill:%238C0000;%7d %3c/style%3e%3cpath class='st0' d='M285.5,273L91.1,467.3c-9.4,9.4-24.6,9.4-33.9,0l-22.7-22.7c-9.4-9.4-9.4-24.5,0-33.9l154-154.7l-154-154.7 c-9.3-9.4-9.3-24.5,0-33.9l22.7-22.7c9.4-9.4,24.6-9.4,33.9,0L285.5,239C294.8,248.4,294.8,263.6,285.5,273z'/%3e%3c/svg%3e ");
+}
+.handbook .full-height {
+  height: calc(100vh - (73px + 88px));
+}
+.handbook #program-structure,
+.handbook #starting-york {
+  padding: 5rem 0;
+}
+.handbook #admission-requirements {
+  padding: 5rem 0;
+  display: flex;
+}
+.handbook #admission-requirements .row_100 {
+  height: 100%;
+}
+.handbook #admission-requirements .row_100 .to_bottom {
+  align-self: flex-end;
+}
+.handbook #admission-requirements .ar-txt-box {
+  border: 1rem solid #E31837;
+  padding: 3rem;
+  margin: auto 3rem 0;
+  text-align: center;
+  color: #FFFFFF;
+}
+.handbook #admission-requirements .ar-txt-box .ar-copy {
+  margin-bottom: 3rem;
+}
+@media (max-width: 768px) {
+  .handbook #admission-requirements .ar-txt-box {
+    border: 1rem solid #E31837;
+    padding: 2rem;
+    margin: auto 0 0;
+  }
+}
+.handbook #graduating-careers {
+  padding: 5rem 0;
+  color: #FFFFFF;
+}
+.handbook #graduating-careers.dark {
+  color: #000000;
+}
+.handbook #graduating-careers .ic .inner {
+  color: #000000;
+}
+.handbook #graduating-careers .grad-testimonials-carousel {
+  margin-bottom: 4rem;
+}
+.handbook #graduating-careers .grad-testimonials-carousel .it .quote,
+.handbook #graduating-careers .grad-testimonials-carousel .it .cite_1,
+.handbook #graduating-careers .grad-testimonials-carousel .it .cite_2 {
+  text-align: right;
+}
+.handbook #graduating-careers .grad-testimonials-carousel .it .cite_1 {
+  margin-top: 0.5rem;
+}
+.handbook #graduating-careers .grad-testimonials-carousel .it .cite_2 {
+  font-size: 0.875rem;
+}
+@media (max-width: 768px) {
+  .handbook #graduating-careers .grad-testimonials-carousel {
+    margin-bottom: 2rem;
+  }
+  .handbook #graduating-careers .grad-testimonials-carousel .it {
+    padding: 0 2rem;
+  }
+  .handbook #graduating-careers .grad-testimonials-carousel .it .quote,
+.handbook #graduating-careers .grad-testimonials-carousel .it .cite_1,
+.handbook #graduating-careers .grad-testimonials-carousel .it .cite_2 {
+    text-align: center !important;
+  }
+  .handbook #graduating-careers .grad-testimonials-carousel .it .cite_1 {
+    margin-top: 0.5rem;
+  }
+  .handbook #graduating-careers .grad-testimonials-carousel .it .cite_2 {
+    font-size: 0.875rem;
+  }
+}
+@media (min-width: 769px) {
+  .handbook #graduating-careers .grad-testimonials-carousel .owl-nav {
+    position: absolute;
+    top: calc(100% + 20px);
+    width: 100%;
+  }
+  .handbook #graduating-careers .grad-testimonials-carousel .owl-nav .owl-next,
+.handbook #graduating-careers .grad-testimonials-carousel .owl-nav .owl-prev {
+    position: absolute;
+    width: 14px;
+    height: 20px;
+    right: 0px;
+    display: block;
+  }
+  .handbook #graduating-careers .grad-testimonials-carousel .owl-nav .owl-prev {
+    left: calc(100% - 35px);
+  }
+  .handbook #graduating-careers .grad-testimonials-carousel .owl-nav .owl-next:before,
+.handbook #graduating-careers .grad-testimonials-carousel .owl-nav .owl-prev:before {
+    content: "";
+    width: 14px;
+    height: 20px;
+    display: block;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 14px 20px;
+  }
+}
+.handbook #graduating-careers .grad-testimonials-carousel .owl-dots {
+  display: none;
+}
+.handbook #graduating-careers .grad-testimonials-carousel .owl-nav .owl-next:before,
+.handbook #graduating-careers .grad-testimonials-carousel .owl-nav .owl-prev:before {
+  background-image: url(/wp-content/themes/york2020-handbook-child/inc/svg/arrow-light-next.svg);
+}
+.handbook #graduating-careers .grad-testimonials-carousel .owl-nav .owl-prev:before {
+  background-image: url(/wp-content/themes/york2020-handbook-child/inc/svg/arrow-light-prev.svg);
+}
+.handbook #graduating-careers .graduating-carousel .owl-nav .owl-next:before,
+.handbook #graduating-careers .graduating-carousel .owl-nav .owl-prev:before {
+  background-image: url(/wp-content/themes/york2020-handbook-child/inc/svg/arrow-light-next.svg);
+}
+.handbook #graduating-careers .graduating-carousel .owl-nav .owl-prev:before {
+  background-image: url(/wp-content/themes/york2020-handbook-child/inc/svg/arrow-light-prev.svg);
+}
+.handbook #graduating-careers .graduating-carousel .owl-dot {
+  border: 2px solid #FFFFFF !important;
+  border-radius: 11px;
+  margin: 0 5px;
+}
+.handbook #graduating-careers .graduating-carousel .owl-dot.active {
+  background-color: #FFFFFF !important;
+}
+.handbook #scholarship-bursaries,
+.handbook #faculty-usp {
+  padding: 5rem 0;
+}
+.handbook #scholarship-bursaries .desc-txt,
+.handbook #faculty-usp .desc-txt {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #000000;
+}
+.handbook #scholarship-bursaries .sections .section,
+.handbook #faculty-usp .sections .section {
+  padding: 1rem 0;
+}
+.handbook #scholarship-bursaries .sections .section .section-image,
+.handbook #faculty-usp .sections .section .section-image {
+  padding-right: 1rem;
+}
+.handbook #scholarship-bursaries .sections .section .section-image img,
+.handbook #faculty-usp .sections .section .section-image img {
+  width: 100%;
+  height: auto;
+}
+.handbook #councils-clubs {
+  padding: 2rem 0;
+}
+.handbook #councils-clubs .red-highlight {
+  margin: 0 -15px;
+  padding: 3rem;
+  border: 15px solid #E31837;
+}
+.handbook .left-right {
+  border-bottom: 1px solid #000000;
+}
+.handbook .left-right-top {
+  border-top: 1px solid #000000;
+}
+
+#alumni {
+  padding: 5rem 0;
+  color: #FFFFFF;
+  text-align: center;
+}
+#alumni.dark {
+  color: #000000;
+}
+#alumni h2 {
+  margin-bottom: 4rem;
+}
+#alumni .members .alumni-carousel .member {
+  padding: 6rem 4rem 2rem;
+}
+@media (max-width: 768px) {
+  #alumni .members .alumni-carousel .member {
+    padding: 0 1rem;
+  }
+}
+#alumni .members .alumni-carousel .member .inner .member-image {
+  display: none;
+}
+@media (max-width: 768px) {
+  #alumni .members .alumni-carousel .member .inner .member-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 125px;
+    border: 5px solid #FFFFFF;
+  }
+}
+#alumni .members .alumni-carousel .member .inner .member-quote {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+}
+@media (max-width: 768px) {
+  #alumni .members .alumni-carousel .member .inner .member-quote {
+    margin-top: 2rem;
+  }
+}
+#alumni .members .alumni-carousel .member .inner .member-program {
+  font-size: 0.875rem;
+}
+
+#contact {
+  background-color: #E8E4DF;
+  padding: 5rem 0;
+  background-image: url(/wp-content/themes/york2020-handbook-child/inc/svg/cross-pointers.svg);
+  background-repeat: no-repeat;
+  background-position: 80% 0;
+  background-size: 275px 198px;
+}
+#contact .container {
+  overflow: visible;
+}
+@media (max-width: 768px) {
+  #contact {
+    background-image: url(/wp-content/themes/york2020-handbook-child/inc/svg/cross-pointers.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% + 118px) 20px;
+    background-size: 235px 170px;
+  }
+  #contact .details {
+    width: 75%;
+  }
+}
+#contact .contacts {
+  margin-bottom: 2rem;
+}
+#contact .contacts .contact-point {
+  margin: 1rem 0;
+}
+#contact .contacts .contact-point .inner {
+  padding-right: 1rem;
+}
+#contact .contacts .contact-point .inner a {
+  color: #000000;
+  text-decoration: none;
+}
+#contact .contacts .contact-point .inner a:hover {
+  text-decoration: underline;
+}

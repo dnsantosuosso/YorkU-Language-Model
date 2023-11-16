@@ -1,0 +1,84 @@
+(function ($) {
+  'use strict';
+
+  const firstTab = $('ul.kt-tabs-title-list li:first-child a');
+  firstTab.attr("tabindex", "0");
+  const lastTab = $('ul.kt-tabs-title-list li:last-child a');
+  const currentTab = $('.kt-tab-title:not(.ignore-link)');
+
+  function moveFocusToPreviousTab(currentTab) {
+    if (currentTab === firstTab) {
+      moveFocusToTab(lastTab);
+    } else {
+      moveFocusToTab(currentTab.parent().prev().find('a'));
+    }
+  }
+
+  function moveFocusToNextTab(currentTab){
+    if (currentTab === lastTab) {
+      moveFocusToTab(firstTab);
+    } else {
+      moveFocusToTab(currentTab.parent().next().find('a'));
+    }
+  }
+
+  function moveFocusToTab(currentTab) {
+    currentTab.focus();
+  }
+
+  currentTab.on('click keypress', function (e) {
+    e.preventDefault();
+
+    const tab = $(this);
+    const id = tab.data('tab');
+    const tabContainer = tab.closest('.kt-title-item').eq(0);
+    const tabWrapper = tab.closest('.wp-block-kadence-tabs').eq(0);
+    const isActive = tabContainer.hasClass('kt-tab-title-active');
+
+    if (!isActive) {
+      // Remove current active
+      $('.kt-tab-title-active', tabWrapper).addClass('kt-tab-title-inactive').removeClass('kt-tab-title-active');
+      // Set active
+      tabContainer.addClass('kt-tab-title-active');
+      // Hide content
+      $('.wp-block-kadence-tab', tabWrapper).css('display', 'none').attr('aria-hidden', 'true');
+      // Show content
+      $(`.kt-inner-tab-${id}`, tabWrapper).css('display', 'block').attr('aria-hidden', 'false');
+    }
+  });
+
+  currentTab.on('click', function (e) {
+    e.preventDefault();
+    $(this).parent().siblings().each(function () {
+      $(this).children('a.kt-tab-title').attr('tabIndex', -1);
+    })
+    $(this).attr('tabIndex', 0);
+  });
+
+  currentTab.keydown(function (event) {
+    const tab = $(this);
+
+    switch (event.key) {
+      case 'ArrowLeft':
+        moveFocusToPreviousTab(tab);
+        break;
+
+      case 'ArrowRight':
+        moveFocusToNextTab(tab);
+        break;
+
+      case 'Home':
+        event.preventDefault();
+        moveFocusToTab(firstTab);
+        break;
+
+      case 'End':
+        event.preventDefault();
+        moveFocusToTab(lastTab);
+        break;
+
+      default:
+        break;
+    }});
+
+})(jQuery);

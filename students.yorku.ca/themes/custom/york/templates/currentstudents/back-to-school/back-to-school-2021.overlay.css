@@ -1,0 +1,111 @@
+#self-selector {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 10000;
+	overflow: hidden;
+	display: none;
+}
+
+#self-selector #self-selector-wrapper {
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media screen and (max-width:600px) {
+	#self-selector #self-selector-wrapper {
+		align-items: start;
+		padding-top: 24px;
+	}
+}
+
+#self-selector #self-selector-body {
+	width: 80%;
+	max-width: 600px;
+	position: relative;
+}
+
+#self-selector #self-selector-control {
+	color: #FFF;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#self-selector #self-selector-control h2 {
+	margin-bottom: 24px;
+}
+
+#self-selector #self-selector-control a i {
+	font-size: 36px;
+}
+
+#self-selector #self-selector-body-wrapper {
+	z-index: 2;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	position: relative;
+	column-gap: 8px;
+	row-gap: 8px;
+}
+
+#self-selector #self-selector-body-wrapper>img {
+	z-index: 1;
+	position: absolute;
+	width: 200px;
+	left: -250px;
+}
+
+#self-selector #self-selector-body-wrapper>a {
+	display: block;
+	background-color: #FFF;
+	padding: 24px;
+	border: 8px solid #FFF;
+	transition: all ease-in-out 0.3s;
+	color: var(--yorkred);
+	font-size: 1.5rem;
+}
+#self-selector #self-selector-body-wrapper > a.self-selector-iam .bilingual-toggle > span:before {
+    content: 'I\'m in my';
+    display: block;
+    color: #666;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#self-selector #self-selector-body-wrapper > a.self-selector-iam .bilingual-toggle > span[data-lang="french"]:before {
+    content: 'Je suis en';
+}
+
+
+@media screen and (max-width:600px) {
+	#self-selector #self-selector-body-wrapper>a.self-selector-iam {
+		grid-column: 1 / span 2;
+	}
+}
+
+#self-selector #self-selector-body-wrapper>a:hover,
+#self-selector #self-selector-body-wrapper>a:focus {
+	border: 8px solid var(--yorkred);
+	;
+	transition: all ease-in-out 0.3s;
+}
+
+/*#self-selector #self-selector-body-wrapper>a:last-child {
+	grid-column: 1 / span 2;
+}*/
+
+.self-selector-bilingual {
+	margin-top: 24px;
+}
+
+.self-selector-bilingual york-paper-toggle-button-bilingual {
+	--paper-toggle-button-label-color: #FFF;
+}

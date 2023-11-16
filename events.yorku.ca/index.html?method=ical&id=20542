@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+CALSCALE:GREGORIAN
+PRODID:-//WordPress - MECv6.7.3//EN
+X-ORIGINAL-URL:https://events.yorku.ca/
+X-WR-CALNAME:York University Events Calendar
+X-WR-CALDESC:
+REFRESH-INTERVAL;VALUE=DURATION:PT1H
+X-PUBLISHED-TTL:PT1H
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VEVENT
+CLASS:PUBLIC
+UID:MEC-3f7b5208b016e1f6d2ef81964b1fb065@events.yorku.ca
+DTSTART:20231030T153000Z
+DTEND:20231030T170000Z
+DTSTAMP:20231024T133400Z
+CREATED:20231024
+LAST-MODIFIED:20231024
+PRIORITY:5
+SEQUENCE:2
+TRANSP:OPAQUE
+SUMMARY:Unstable Properties: Aboriginal Title and the Claim of British Columbia
+DESCRIPTION:Please join us on Monday, Oct. 30 (11:30 a.m. to 1 p.m. in HNES 142) for a panel to discuss “Unstable Properties: Aboriginal Title and the Claim of British Columbia” (UBC Press, 2023)  by EUC Professor Patricia Wood and York Geography PhD alumnus David Rossiter (now professor at Western Washington University).\nWood and Rossiter will discuss the background to the book. Commentaries will be provided by three panellists:\nMatt Farish – associate professor and associate Chair, Department of Geography & Planning, University of Toronto;\nLeora Gansworth – Provostial Indigenous Postdoctoral Fellow, Osgoode Hall Law School (and York U geography PhD alumna);\nSonia Lawrence – associate professor, Osgoode Hall Law School.\nAll are welcome!\n
+URL:https://events.yorku.ca/events/unstable-properties-aboriginal-title-and-the-claim-of-british-columbia/
+ORGANIZER;CN=Faculty of Environmental &amp; Urban Change:MAILTO:
+CATEGORIES:Faculty of Environmental &amp; Urban Change,Research &amp; Innovation
+LOCATION:Health, Nursing &amp; Environmental Studies (HNES) 142 @ York University
+END:VEVENT
+END:VCALENDAR

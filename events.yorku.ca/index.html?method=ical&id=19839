@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+CALSCALE:GREGORIAN
+PRODID:-//WordPress - MECv6.7.3//EN
+X-ORIGINAL-URL:https://events.yorku.ca/
+X-WR-CALNAME:York University Events Calendar
+X-WR-CALDESC:
+REFRESH-INTERVAL;VALUE=DURATION:PT1H
+X-PUBLISHED-TTL:PT1H
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VEVENT
+CLASS:PUBLIC
+UID:MEC-7b6ce75e5d95acc103465e3522f9d2fd@events.yorku.ca
+DTSTART:20231030T143000Z
+DTEND:20231030T153000Z
+DTSTAMP:20230921T203300Z
+CREATED:20230921
+LAST-MODIFIED:20231020
+PRIORITY:5
+SEQUENCE:4
+TRANSP:OPAQUE
+SUMMARY:Cannabis: Misconceptions & Safe Practices (Online Workshop)
+DESCRIPTION:Using cannabis (weed, pot) is a personal choice, but it can have short- and long-term effects on your health.  \nOur peer-led workshop focuses on debunking cannabis myths.   We review types of cannabis forms (edibles, inhalants , topicals) and understanding dosage size, understanding packaging labels interaction with other substances. We also look at safety considerations and provide harm-reduction guidelines to lower health associated health risks and dependency and interaction with other substance use (e.g. alcohol).   \nPlease note this is presentation is created and delivered by Peer Health Educators. The purpose of this workshop is for general education only. We do not condone or promote any particular lifestyle choice. Please consult a professional counsellor if you are looking for individual support.  \nTo register, click here! ( https://yorku.zoom.us/meeting/register/tJEkf-6grj4pH9QQ4HxRzLu_H1PvqW_NxBwZ )\nBefore attending the presentation, please fill out our anonymous Pre-Test Form (it takes less than 1 minute to complete): https://forms.office.com/r/GntveLeWeR \nThis form helps us ensure our presentation meets the needs of the student body. \n
+URL:https://events.yorku.ca/events/cannabis-misconceptions-safe-practices-online-workshop/
+ORGANIZER;CN=Student Counselling, Health &amp; Well-Being:MAILTO:schw@yorku.ca
+CATEGORIES:Bethune College,Calumet College,Colleges,Health Education &amp; Promotion,Markham Campus,Stong College,Student Counselling, Health &amp; Well-being,Students
+END:VEVENT
+END:VCALENDAR

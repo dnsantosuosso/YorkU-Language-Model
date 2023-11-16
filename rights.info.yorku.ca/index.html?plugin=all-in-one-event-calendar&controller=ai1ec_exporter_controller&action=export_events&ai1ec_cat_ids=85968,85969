@@ -1,0 +1,1349 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//130.63.173.84//NONSGML kigkonsult.se iCalcreator 2.26.9//
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-FROM-URL:https://rights.info.yorku.ca
+X-WR-TIMEZONE:America/Toronto
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+X-LIC-LOCATION:America/Toronto
+BEGIN:STANDARD
+DTSTART:20231105T020000
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+RDATE:20241103T020000
+TZNAME:EST
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20240310T020000
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+RDATE:20250309T020000
+TZNAME:EDT
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ai1ec-6256@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:https://yorku.zoom.us/meeting/register/tJAlduCrrzstH9WrkFb3dsi8itwH
+ McMVOLTO
+DESCRIPTION:
+DTSTART;TZID=America/Toronto:20210120T133000
+DTEND;TZID=America/Toronto:20210120T150000
+LOCATION:zoom @ https://yorku.zoom.us/meeting/register/tJAlduCrrzstH9WrkFb3
+ dsi8itwHMcMVOLTO
+SEQUENCE:0
+SUMMARY:Academic Integrity and Universal Design
+URL:https://rights.info.yorku.ca/event/academic-integrity-and-universal-des
+ ign-2/
+X-COST-TYPE:free
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6258@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:https://yorku.zoom.us/meeting/register/tJMld-morz0uEt0AYUiCXo0isdZw
+ 3oZd7Dgt
+DESCRIPTION:
+DTSTART;TZID=America/Toronto:20210202T130000
+DTEND;TZID=America/Toronto:20210202T143000
+LOCATION:zoom @ https://yorku.zoom.us/meeting/register/tJMld-morz0uEt0AYUiC
+ Xo0isdZw3oZd7Dgt
+SEQUENCE:0
+SUMMARY:Acknowledging and Addressing Racism
+URL:https://rights.info.yorku.ca/event/acknowledging-and-addressing-racism/
+X-COST-TYPE:free
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6259@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:
+DESCRIPTION:<p>This workshop will take a deep dive into forms of unconsciou
+ s bias and stereotyping that lead to microaggressions and discriminatory b
+ ehaviour. Participants will explore effective strategies to challenge our 
+ biases\, reframing our ways of thinking and strengthen the experience of i
+ nclusion for all.</p>
+DTSTART;TZID=America/Toronto:20210209T130000
+DTEND;TZID=America/Toronto:20210209T143000
+LOCATION:zoom @ https://yorku.zoom.us/meeting/register/tJ0pdeuorzIjHNHbu1dA
+ K6nSZxQhjGgLIDME
+SEQUENCE:0
+SUMMARY:Challenging Unconscious Bias and Microaggressions
+URL:https://rights.info.yorku.ca/event/challenging-unconscious-bias-and-mic
+ roaggressions/
+X-COST-TYPE:free
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6260@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:
+DESCRIPTION:<p>Participants will examine how organizational cultures can pe
+ rpetuate systemic disadvantages for individuals and groups\, and then cons
+ ider how engagement can create positive impacts and change within organiza
+ tional cultures.</p>
+DTSTART;TZID=America/Toronto:20210210T133000
+DTEND;TZID=America/Toronto:20210210T150000
+LOCATION:zoom @ https://yorku.zoom.us/meeting/register/tJMvfuChrTorEtVS9AkD
+ baWOUMVIydMRjNvE
+SEQUENCE:0
+SUMMARY:Challenging Organizational Cultures
+URL:https://rights.info.yorku.ca/event/challenging-organizational-cultures-
+ 3/
+X-COST-TYPE:free
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6261@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:
+DESCRIPTION:<p>This workshop focuses on racism and discrimination in the wo
+ rkplace\, highlighting the relevant policies and laws in place to support 
+ efforts that build healthy and inclusive workplace environments and cultur
+ e.</p>
+DTSTART;TZID=America/Toronto:20210216T130000
+DTEND;TZID=America/Toronto:20210216T143000
+LOCATION:zoom @ https://yorku.zoom.us/meeting/register/tJYqd--trzosG9cw0JmS
+ omfzfJcA6w1je_PW
+SEQUENCE:0
+SUMMARY:Racial Inclusion and Employment Equity
+URL:https://rights.info.yorku.ca/event/racial-inclusion-and-employment-equi
+ ty/
+X-COST-TYPE:free
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6262@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:
+DESCRIPTION:<p>Please note that we strongly recommend participants to have 
+ attended at least one of the workshops above before attending this session
+ .</p>\n<p>This workshop will be highly participation-based\, and ask atten
+ dees to design strategies and practice tools to intervene on moments of ra
+ cial discrimination\, harassment\, and microaggressions. Prior familiarity
+  with these concepts is recommended.</p>
+DTSTART;TZID=America/Toronto:20210223T130000
+DTEND;TZID=America/Toronto:20210223T143000
+LOCATION:zoom @ https://yorku.zoom.us/meeting/register/tJUvceqtrT8iHdRrWWZO
+ zgrhG_9sEUsiZ546
+SEQUENCE:0
+SUMMARY:Intervening on Racism
+URL:https://rights.info.yorku.ca/event/intervening-on-racism-2/
+X-COST-TYPE:free
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6263@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:
+DESCRIPTION:<p>Participants will engage in discussions about community resi
+ lience in the face of disadvantage and hardship\, examining the ways barri
+ ers and discrimination shape our perspective of communities under duress. 
+ The workshop will help participants consider how to engage and foster incl
+ usivity across multiple groups and spaces.</p>
+DTSTART;TZID=America/Toronto:20210224T133000
+DTEND;TZID=America/Toronto:20210224T150000
+LOCATION:zoom @ https://yorku.zoom.us/meeting/register/tJwtc-6vqjIsEtMqVj62
+ O5RPIJBHlz8lN7fo
+SEQUENCE:0
+SUMMARY:Recognizing Resilience in Communities
+URL:https://rights.info.yorku.ca/event/recognizing-resilience-in-communitie
+ s-2/
+X-COST-TYPE:free
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6265@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:
+DESCRIPTION:<p>This workshop is designed to strengthen participants underst
+ anding of fundamental freedom of speech rights in a Canadian context\, and
+  will explore current conflicts and resolutions in post-secondary institut
+ ions.</p>
+DTSTART;TZID=America/Toronto:20210310T133000
+DTEND;TZID=America/Toronto:20210310T150000
+LOCATION:zoom @ https://yorku.zoom.us/meeting/register/tJwqc-mvrzwuGtyaA_YD
+ 5yp8XbPk-oWCcev1
+SEQUENCE:0
+SUMMARY:Freedom of Speech @ York University
+URL:https://rights.info.yorku.ca/event/freedom-of-speech-york-university/
+X-COST-TYPE:free
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6326@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:
+DESCRIPTION:<p>Through a series of engaging activities and reflection exerc
+ ises participants who take part in this workshop will be able to:</p>\n<ul
+ >\n<li>Contextualize their social location based on their identity\;</li>
+ \n<li>Deepen their understanding of allyship in a personal and institution
+ al setting\;</li>\n<li>Practice active allyship and develop strategies to 
+ have brave conversations.</li>\n<li style='list-style-type: none'></li>\n<
+ /ul>
+DTSTART;TZID=America/Toronto:20210315T130000
+DTEND;TZID=America/Toronto:20210315T143000
+LOCATION:https://yorku.zoom.us/meeting/register/tJctce2opzIvG9e10EioyQ7soWG
+ 3AcgRUMg4
+SEQUENCE:0
+SUMMARY:Inclusion Days: Allyship and Inclusion
+URL:https://rights.info.yorku.ca/event/inclusion-days-allyship-and-inclusio
+ n/
+X-COST-TYPE:free
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6332@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events
+CONTACT:
+DESCRIPTION:<div class='ai1ec-event-avatar alignleft timely'><img src='http
+ s://rights.info.yorku.ca/files/2021/03/Dr.-ABC-Keynote-225x300.png' width=
+ '225' height='300' /></div><p>“Belonging is a manifestation of deep connec
+ tion.” (Biss\, 2019).</p>\n<p>What are the barriers in our institutions th
+ at impact belonging?</p>\n<p>How do we move from surviving to thriving in 
+ a virtual world?</p>\n<p>How do we ensure our school’s culture and climate
+  is one where our students feel a genuine sense of belonging?</p>\n<p>What
+  are those inclusionary practices that can ensure we create and foster bel
+ onging within our institutions?</p>\n<p>In this workshop we will examine t
+ hese questions and provide additional tools to create a deeper sense of in
+ clusion and belonging in our schools so that our students\, staff and coll
+ eagues can truly see themselves reflected in how we offer education and sc
+ hooling.</p>
+DTSTART;TZID=America/Toronto:20210316T130000
+DTEND;TZID=America/Toronto:20210316T143000
+LOCATION:https://yorku.zoom.us/webinar/register/WN_-U-I8mlwSiG6llTe4GEB0w
+SEQUENCE:0
+SUMMARY:Inclusion Days: Creating & Fostering Intentional Spaces of Belongin
+ g in a Virtual World
+URL:https://rights.info.yorku.ca/event/inclusion-days-creating-fostering-in
+ tentional-spaces-of-belonging-in-a-virtual-world/
+X-COST-TYPE:free
+X-WP-IMAGES-URL:thumbnail\;https://rights.info.yorku.ca/files/2021/03/Dr.-A
+ BC-Keynote-150x150.png\;150\;150\;1\,medium\;https://rights.info.yorku.ca/
+ files/2021/03/Dr.-ABC-Keynote-225x300.png\;225\;300\;1\,large\;https://rig
+ hts.info.yorku.ca/files/2021/03/Dr.-ABC-Keynote.png\;1728\;2304\;
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6333@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events
+CONTACT:
+DESCRIPTION:<div class='ai1ec-event-avatar alignleft timely'><img src='http
+ s://rights.info.yorku.ca/files/2021/03/Bex-Hurwitzs-Keynote-225x300.png' w
+ idth='225' height='300' /></div><h3><strong>Presented By: Bex Hong Hurwitz
+ \, founder of Tiny Gigantic</strong></h3>\n<p>When did you first feel you 
+ belon<img decoding='async' loading='lazy' class='wp-image-6354 alignleft' 
+ src='https://rights.info.yorku.ca/files/2021/03/Bex-Hurwitzs-Keynote-225x3
+ 00.png' alt='' width='305' height='407' srcset='https://rights.info.yorku.
+ ca/files/2021/03/Bex-Hurwitzs-Keynote-225x300.png 225w\, https://rights.in
+ fo.yorku.ca/files/2021/03/Bex-Hurwitzs-Keynote-768x1024.png 768w\, https:/
+ /rights.info.yorku.ca/files/2021/03/Bex-Hurwitzs-Keynote-1152x1536.png 115
+ 2w\, https://rights.info.yorku.ca/files/2021/03/Bex-Hurwitzs-Keynote-1536x
+ 2048.png 1536w\, https://rights.info.yorku.ca/files/2021/03/Bex-Hurwitzs-K
+ eynote-724x965.png 724w\, https://rights.info.yorku.ca/files/2021/03/Bex-H
+ urwitzs-Keynote.png 1728w' sizes='(max-width: 305px) 100vw\, 305px' />ged 
+ online\, that you were seen and in community with others? Where were you? 
+ Who were you with? What were you doing?</p>\n<p>To me\, belonging in the d
+ igital world means having ways to safely and freely use digital tools to s
+ peak and express ourselves\, build power together in social movement\, and
+  create and dream together. This means having safe spaces where I can enga
+ ge with people I choose to\, question\, learn\, play\, change\, experiment
+ \, and where I can represent myself how I choose.</p>\n<p>In this talk\, I
+ ’ll share examples of ways that I am working to make a digital world where
+  I belong in these ways. I’ll share perspectives on codesign\; design just
+ ice and encoding a more inclusive internet one emoji at a time\; on digita
+ l security and surveillance\; and our right to private communication on an
+ d offline in our public socializing\, organizing for social justice\, and 
+ our most intimate exchanges.</p>\n<p>Register here: https://rights.info.yo
+ rku.ca/inclusion-days-2021/</p>
+DTSTART;TZID=America/Toronto:20210317T110000
+DTEND;TZID=America/Toronto:20210317T123000
+LOCATION:https://yorku.zoom.us/webinar/register/WN_wDSZWYvRR6W8AXrnuO6u2Q
+SEQUENCE:0
+SUMMARY:Inclusion Days: Belonging in a Digital World
+URL:https://rights.info.yorku.ca/event/inclusion-days-belonging-in-a-digita
+ l-world/
+X-COST-TYPE:free
+X-WP-IMAGES-URL:thumbnail\;https://rights.info.yorku.ca/files/2021/03/Bex-H
+ urwitzs-Keynote-150x150.png\;150\;150\;1\,medium\;https://rights.info.york
+ u.ca/files/2021/03/Bex-Hurwitzs-Keynote-225x300.png\;225\;300\;1\,large\;h
+ ttps://rights.info.yorku.ca/files/2021/03/Bex-Hurwitzs-Keynote.png\;1728\;
+ 2304\;
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6328@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:
+DESCRIPTION:<div class='ai1ec-event-avatar alignleft timely'><img src='http
+ s://rights.info.yorku.ca/files/2021/03/Inclusion-days_-Emojis-as-Digital-L
+ anguage-1-225x300.png' width='225' height='300' /></div><p><a href='https:
+ //rights.info.yorku.ca/files/2021/03/Inclusion-days_-Emojis-as-Digital-Lan
+ guage-1.pdf'>Inclusion days_ Emojis as Digital Language (1)</a></p>\n<p>Em
+ ojis have become a part of our digital language.  We use emojis to relay m
+ essages\, express emotions\, sling slang.</p>\n<p>Anyone can submit a prop
+ osal to the Unicode Consortium’s Emoji Subcommittee for a new emoji. Only 
+ a few are accepted.</p>\n<p>In this workshop\, we’ll discuss the roles emo
+ jis play in our lives and communication\, how we make meaning with and fro
+ m emojis. We’ll imagine emojis that represent our personal experiences\, c
+ ultures\, and lives. We’ll learn about the Unicode Consortium and internet
+  standards and ask questions about who proposes emojis\, judges proposals\
+ , and determines what becomes an emoji.</p>\n<p>Participants will leave wi
+ th practical information about how to propose emojis and deeper understand
+ ing of internet standards and how a more inclusive internet can be encoded
+ .</p>
+DTSTART;TZID=America/Toronto:20210317T133000
+DTEND;TZID=America/Toronto:20210317T150000
+LOCATION:https://yorku.zoom.us/meeting/register/tJIpfumgqzopHdTQpZ524gAGqrF
+ fz6TPMMgX
+SEQUENCE:0
+SUMMARY:Inclusion Days: Emojis as Digital Language
+URL:https://rights.info.yorku.ca/event/inclusion-days-emojis-as-digital-lan
+ guage/
+X-COST-TYPE:free
+X-WP-IMAGES-URL:thumbnail\;https://rights.info.yorku.ca/files/2021/03/Inclu
+ sion-days_-Emojis-as-Digital-Language-1-150x150.png\;150\;150\;1\,medium\;
+ https://rights.info.yorku.ca/files/2021/03/Inclusion-days_-Emojis-as-Digit
+ al-Language-1-225x300.png\;225\;300\;1\,large\;https://rights.info.yorku.c
+ a/files/2021/03/Inclusion-days_-Emojis-as-Digital-Language-1.png\;1728\;23
+ 04\;
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6330@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:
+DESCRIPTION:<div class='ai1ec-event-avatar alignleft timely'><img src='http
+ s://rights.info.yorku.ca/files/2021/03/Dialogue-across-difference-v2-225x3
+ 00.png' width='225' height='300' /></div><p>Through a series of engaging a
+ ctivities and reflection exercises participants who take part in this work
+ shop will be able to:</p>\n<p> </p>\n<ul>\n<li>Identify personal limitatio
+ ns to engagement<img decoding='async' loading='lazy' class='size-medium wp
+ -image-6340 alignright' src='https://rights.info.yorku.ca/files/2021/03/In
+ clusion-day-mock-up-1-225x300.png' alt='' width='225' height='300' /> in d
+ ialogue across differences.</li>\n<li>Identify what they need to engage in
+  meaningful conversation though respectful dialogue without the intention 
+ of persuasion.</li>\n<li>Develop personal strategies to manage emotions in
+  order to look past individual differences and hear the humanity of someon
+ e’s lived experiences.</li>\n<li style='list-style-type: none'>Register <a
+  href='https://yorku.zoom.us/meeting/register/tJckfuqurjktGNcQipmyHsTiZD7K
+ Ip00ojVB'>here</a></li>\n</ul>
+DTSTART;TZID=America/Toronto:20210317T150000
+DTEND;TZID=America/Toronto:20210317T163000
+LOCATION:https://yorku.zoom.us/meeting/register/tJckfuqurjktGNcQipmyHsTiZD7
+ KIp00ojVB
+SEQUENCE:0
+SUMMARY:Inclusion Days: Respectful Dialogue Across Difference
+URL:https://rights.info.yorku.ca/event/respectful-dialogue-across-differenc
+ e/
+X-COST-TYPE:free
+X-WP-IMAGES-URL:thumbnail\;https://rights.info.yorku.ca/files/2021/03/Dialo
+ gue-across-difference-v2-150x150.png\;150\;150\;1\,medium\;https://rights.
+ info.yorku.ca/files/2021/03/Dialogue-across-difference-v2-225x300.png\;225
+ \;300\;1\,large\;https://rights.info.yorku.ca/files/2021/03/Dialogue-acros
+ s-difference-v2.png\;1728\;2304\;
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6381@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:https://yorku.zoom.us/meeting/register/tJUvc-CupzwsGdVOGaNOX_vBHc3j
+ DElkaiWo
+DESCRIPTION:<p>In this interactive session\, participants will become famil
+ iar with the legislation and policies that define sexual harassment and ga
+ in a general understanding of why sexual harassment continues to be pervas
+ ive in our society. Attendees will examine various scenarios aimed at obta
+ ining strategies and sharing best practices on how to identify\, prevent\,
+  and respond to instances of sexual harassment on campus.</p>
+DTSTART;TZID=America/Toronto:20210505T100000
+DTEND;TZID=America/Toronto:20210505T113000
+LOCATION:https://yorku.zoom.us/meeting/register/tJUvc-CupzwsGdVOGaNOX_vBHc3
+ jDElkaiWo
+SEQUENCE:0
+SUMMARY:REDI: Addressing and Responding to Sexual Harassment
+URL:https://rights.info.yorku.ca/event/redi-addressing-and-responding-to-se
+ xual-harassment/
+X-COST-TYPE:free
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6374@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:https://yorku.zoom.us/meeting/register/tJUtc--prD8iGdceh6x4CtVRxKmQ
+ JZCg1VDD
+DESCRIPTION:<div class='ai1ec-event-avatar alignleft timely'><img src='http
+ s://rights.info.yorku.ca/files/2021/04/Anti-Racism-Series-e1618260306543-3
+ 00x121.png' width='300' height='121' /></div><p><img decoding='async' load
+ ing='lazy' class='alignnone size-medium wp-image-6375' src='https://rights
+ .info.yorku.ca/files/2021/04/Anti-Racism-Series-300x300.png' alt='' width=
+ '300' height='300' /></p>\n<p>This workshop will help participants gain an
+  understanding of how to recognize racism\, how it can manifest\, and what
+  its impacts are. Participants will learn about strategies to address barr
+ iers to inclusive spaces\, and become familiar with relevant tools\, polic
+ ies and legislation within the York context.</p>
+DTSTART;TZID=America/Toronto:20210511T140000
+DTEND;TZID=America/Toronto:20210511T153000
+LOCATION:https://yorku.zoom.us/meeting/register/tJUtc--prD8iGdceh6x4CtVRxKm
+ QJZCg1VDD
+SEQUENCE:0
+SUMMARY:Acknowledging and Addressing Racism
+URL:https://rights.info.yorku.ca/event/acknowledging-and-addressing-racism-
+ 2/
+X-COST-TYPE:free
+X-WP-IMAGES-URL:thumbnail\;https://rights.info.yorku.ca/files/2021/04/Anti-
+ Racism-Series-e1618260306543-150x150.png\;150\;150\;1\,medium\;https://rig
+ hts.info.yorku.ca/files/2021/04/Anti-Racism-Series-e1618260306543-300x121.
+ png\;300\;121\;1\,large\;https://rights.info.yorku.ca/files/2021/04/Anti-R
+ acism-Series-e1618260306543.png\;800\;322\;
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6382@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:https://yorku.zoom.us/meeting/register/tJwlc-6srj4qEt0i2quVCZvmPVF4
+ RLmvhfLk
+DESCRIPTION:<p>This is a “101” session that will explore gender and sexual 
+ diversity\, as well as homophobia and transphobia specific to the campus e
+ xperience. Learn about using inclusive language\, being a supportive ally\
+ , campus resources\, and creating safer spaces on campus for gender and se
+ xually diverse students\, staff and faculty.</p>
+DTSTART;TZID=America/Toronto:20210519T130000
+DTEND;TZID=America/Toronto:20210519T143000
+LOCATION:https://yorku.zoom.us/meeting/register/tJwlc-6srj4qEt0i2quVCZvmPVF
+ 4RLmvhfLk
+SEQUENCE:0
+SUMMARY:REDI: Creating and Maintaining Positive Space
+URL:https://rights.info.yorku.ca/event/redi-creating-and-maintaining-positi
+ ve-space/
+X-COST-TYPE:free
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6383@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:https://yorku.zoom.us/meeting/register/tJEqc-mrqD0uHdV8CKFvxTMySVAX
+ dBwYmD5K
+DESCRIPTION:<p>Participants receive a detailed overview of the rights and r
+ esponsibilities in the accommodations process based on the Ontario Human R
+ ights Code\, such as those involving disability (including mental health)\
+ , creed (religion)\, and sex/gender.</p>\n<p>In addition to learning how t
+ o request and respond to accommodation needs\, participants will learn str
+ ategies that will assist in increasing inclusion and accessibility in the 
+ York community.</p>
+DTSTART;TZID=America/Toronto:20210601T110000
+DTEND;TZID=America/Toronto:20210601T123000
+LOCATION:https://yorku.zoom.us/meeting/register/tJEqc-mrqD0uHdV8CKFvxTMySVA
+ XdBwYmD5K
+SEQUENCE:0
+SUMMARY:REDI: Requesting and Accessing Accommodations
+URL:https://rights.info.yorku.ca/event/redi-requesting-and-accessing-accomm
+ odations/
+X-COST-TYPE:free
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6377@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:https://yorku.zoom.us/meeting/register/tJ0tdOyrpzwpGtQTXtsUTq9HO4p6
+ 4mTdzxRx
+DESCRIPTION:<div class='ai1ec-event-avatar alignleft timely'><img src='http
+ s://rights.info.yorku.ca/files/2021/04/Anti-Racism-Series-e1618260306543-3
+ 00x121.png' width='300' height='121' /></div><p><span data-contrast='auto'
+ >This workshop will take a deep dive into </span><span data-contrast='auto
+ '>forms of </span><span data-contrast='auto'>unconscious</span><span data-
+ contrast='auto'> bias</span><span data-contrast='auto'>\, and stereotyping
+  that</span> <span data-contrast='auto'>lead to </span><span data-contrast
+ ='auto'>microaggressions</span><span data-contrast='auto'> and discriminat
+ ory behaviour. Participants</span><span data-contrast='auto'> </span><span
+  data-contrast='auto'>will explore effective strategies to challenge our b
+ iases</span><span data-contrast='auto'>\, reframing our ways of thinking a
+ nd strengthen the experience of inclusion for all.</span><span data-ccp-pr
+ ops='{'134233279':true\,'201341983':0\,'335559685':1440\,'335559739':0\,'3
+ 35559740':240}'> </span><img decoding='async' loading='lazy' class='alignn
+ one size-medium wp-image-6376' src='https://rights.info.yorku.ca/files/202
+ 1/04/Anti-Racism-Series-1-300x300.png' alt='' width='300' height='300' src
+ set='https://rights.info.yorku.ca/files/2021/04/Anti-Racism-Series-1-300x3
+ 00.png 300w\, https://rights.info.yorku.ca/files/2021/04/Anti-Racism-Serie
+ s-1-150x150.png 150w\, https://rights.info.yorku.ca/files/2021/04/Anti-Rac
+ ism-Series-1-768x768.png 768w\, https://rights.info.yorku.ca/files/2021/04
+ /Anti-Racism-Series-1-724x724.png 724w\, https://rights.info.yorku.ca/file
+ s/2021/04/Anti-Racism-Series-1.png 800w' sizes='(max-width: 300px) 100vw\,
+  300px' /></p>
+DTSTART;TZID=America/Toronto:20210609T130000
+DTEND;TZID=America/Toronto:20210609T143000
+LOCATION:https://yorku.zoom.us/meeting/register/tJ0tdOyrpzwpGtQTXtsUTq9HO4p
+ 64mTdzxRx
+SEQUENCE:0
+SUMMARY:Challenging Unconscious Bias and Microaggressions
+URL:https://rights.info.yorku.ca/event/challenging-unconscious-bias-and-mic
+ roaggressions-2/
+X-COST-TYPE:free
+X-WP-IMAGES-URL:thumbnail\;https://rights.info.yorku.ca/files/2021/04/Anti-
+ Racism-Series-e1618260306543-150x150.png\;150\;150\;1\,medium\;https://rig
+ hts.info.yorku.ca/files/2021/04/Anti-Racism-Series-e1618260306543-300x121.
+ png\;300\;121\;1\,large\;https://rights.info.yorku.ca/files/2021/04/Anti-R
+ acism-Series-e1618260306543.png\;800\;322\;
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6384@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:https://yorku.zoom.us/meeting/register/tJAtd-GtrT8iEtATgr-nHOaVWhun
+ _WVz0AkX
+DESCRIPTION:<p>This workshop will help participants gain an understanding o
+ f how to recognize racism\, how it can manifest\, and what its impacts are
+ . Participants will learn about strategies to address barriers to inclusiv
+ e spaces\, and become familiar with relevant tools\, policies and legislat
+ ion within the York context.</p>
+DTSTART;TZID=America/Toronto:20210616T133000
+DTEND;TZID=America/Toronto:20210616T150000
+LOCATION:https://yorku.zoom.us/meeting/register/tJAtd-GtrT8iEtATgr-nHOaVWhu
+ n_WVz0AkX
+SEQUENCE:0
+SUMMARY:REDI: Acknowledging and Addressing Racism
+URL:https://rights.info.yorku.ca/event/redi-acknowledging-and-addressing-ra
+ cism/
+X-COST-TYPE:free
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6442@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:https://yorku.zoom.us/meeting/register/tJcudeqgqjwiH9aTuSy1HJDhXbfj
+ 7zMkG4vj
+DESCRIPTION:<div class='ai1ec-event-avatar alignleft timely'><img src='http
+ s://rights.info.yorku.ca/files/2021/05/Anti-Racism-Series-2-300x300.png' w
+ idth='300' height='300' /></div><p>Cet atelier aidera les participants à c
+ omprendre comment se manifeste le racisme\, et quels sont ses impacts. Les
+  participants découvriront des stratégies visant à éliminer les obstacles 
+ aux espaces inclusifs et s'exerceront à interrompre les commentaires racis
+ tes.</p>\n<p>Cette session sera présentée en français.</p>
+DTSTART;TZID=America/Toronto:20210621T140000
+DTEND;TZID=America/Toronto:20210621T153000
+LOCATION:Zoom @ https://yorku.zoom.us/meeting/register/tJcudeqgqjwiH9aTuSy1
+ HJDhXbfj7zMkG4vj
+SEQUENCE:0
+SUMMARY:Reconnaître et aborder le racisme
+URL:https://rights.info.yorku.ca/event/reconnaitre-et-aborder-le-racisme/
+X-COST-TYPE:free
+X-WP-IMAGES-URL:thumbnail\;https://rights.info.yorku.ca/files/2021/05/Anti-
+ Racism-Series-2-150x150.png\;150\;150\;1\,medium\;https://rights.info.york
+ u.ca/files/2021/05/Anti-Racism-Series-2-300x300.png\;300\;300\;1\,large\;h
+ ttps://rights.info.yorku.ca/files/2021/05/Anti-Racism-Series-2.png\;800\;8
+ 00\;
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6385@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:https://yorku.zoom.us/meeting/register/tJAvceCvqTkpGNFx7dHb36uY7-wJ
+ 8tPufemR
+DESCRIPTION:<p>Participants will develop an understanding of universal desi
+ gn and academic integrity in an educational environment\, and consider the
+  ways universal design can become part of a teaching strategy.</p>\n<p>Dis
+ cussion and activities will offer opportunities for participants to obtain
+  strategies for ensuring academic integrity while also providing inclusive
+  learning experiences for all.</p>
+DTSTART;TZID=America/Toronto:20210629T150000
+DTEND;TZID=America/Toronto:20210629T163000
+LOCATION:https://yorku.zoom.us/meeting/register/tJAvceCvqTkpGNFx7dHb36uY7-w
+ J8tPufemR
+SEQUENCE:0
+SUMMARY:REDI: Academic Integrity and Universal Design
+URL:https://rights.info.yorku.ca/event/redi-academic-integrity-and-universa
+ l-design/
+X-COST-TYPE:free
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6378@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:https://yorku.zoom.us/meeting/register/tJ0oceCvrT8sE9CG_MUxIkhGzH4G
+ ec_bGFZG
+DESCRIPTION:<div class='ai1ec-event-avatar alignleft timely'><img src='http
+ s://rights.info.yorku.ca/files/2021/04/Anti-Racism-Series-e1618260306543-3
+ 00x121.png' width='300' height='121' /></div><p><span data-contrast='auto'
+ >This workshop focuses on racism and discrimination in the workplace</span
+ ><span data-contrast='auto'>\, highlight</span><span data-contrast='auto'>
+ ing</span><span data-contrast='auto'> the relevant policies and laws</span
+ ><span data-contrast='auto'> in place to support efforts t</span><span dat
+ a-contrast='auto'>hat</span><span data-contrast='auto'> build healthy and 
+ inclusive </span><span data-contrast='auto'>workplace </span><span data-co
+ ntrast='auto'>environments and </span><span data-contrast='auto'>culture</
+ span><span data-contrast='auto'>.</span><span data-ccp-props='{'134233279'
+ :true\,'201341983':0\,'335551550':1\,'335551620':1\,'335559685':1440\,'335
+ 559739':0\,'335559740':240}'> <img decoding='async' loading='lazy' class='
+ alignnone size-medium wp-image-6376' src='https://rights.info.yorku.ca/fil
+ es/2021/04/Anti-Racism-Series-1-300x300.png' alt='' width='300' height='30
+ 0' srcset='https://rights.info.yorku.ca/files/2021/04/Anti-Racism-Series-1
+ -300x300.png 300w\, https://rights.info.yorku.ca/files/2021/04/Anti-Racism
+ -Series-1-150x150.png 150w\, https://rights.info.yorku.ca/files/2021/04/An
+ ti-Racism-Series-1-768x768.png 768w\, https://rights.info.yorku.ca/files/2
+ 021/04/Anti-Racism-Series-1-724x724.png 724w\, https://rights.info.yorku.c
+ a/files/2021/04/Anti-Racism-Series-1.png 800w' sizes='(max-width: 300px) 1
+ 00vw\, 300px' /></span></p>
+DTSTART;TZID=America/Toronto:20210708T123000
+DTEND;TZID=America/Toronto:20210708T140000
+LOCATION:https://yorku.zoom.us/meeting/register/tJ0oceCvrT8sE9CG_MUxIkhGzH4
+ Gec_bGFZG
+SEQUENCE:0
+SUMMARY:Racial Inclusion and Employment Equity
+URL:https://rights.info.yorku.ca/event/racial-inclusion-and-employment-equi
+ ty-2/
+X-COST-TYPE:free
+X-WP-IMAGES-URL:thumbnail\;https://rights.info.yorku.ca/files/2021/04/Anti-
+ Racism-Series-e1618260306543-150x150.png\;150\;150\;1\,medium\;https://rig
+ hts.info.yorku.ca/files/2021/04/Anti-Racism-Series-e1618260306543-300x121.
+ png\;300\;121\;1\,large\;https://rights.info.yorku.ca/files/2021/04/Anti-R
+ acism-Series-e1618260306543.png\;800\;322\;
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6386@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:https://yorku.zoom.us/meeting/register/tJYodOytpzMsG9wkbHV1b3F1g4_Q
+ cPghb87X
+DESCRIPTION:<p>Participants will examine how organizational cultures can pe
+ rpetuate systemic disadvantages for individuals and groups\, and then cons
+ ider how engagement can create positive impacts and change within organiza
+ tional cultures.</p>
+DTSTART;TZID=America/Toronto:20210714T100000
+DTEND;TZID=America/Toronto:20210714T113000
+LOCATION:https://yorku.zoom.us/meeting/register/tJYodOytpzMsG9wkbHV1b3F1g4_
+ QcPghb87X
+SEQUENCE:0
+SUMMARY:REDI: Challenging Organizational Structures
+URL:https://rights.info.yorku.ca/event/redi-challenging-organizational-stru
+ ctures/
+X-COST-TYPE:free
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6423@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:https://yorku.zoom.us/meeting/register/tJIkde2gqD4tHdbWLaZsq-p5QwCb
+ p1yiRSkb
+DESCRIPTION:<div class='ai1ec-event-avatar alignleft timely'><img src='http
+ s://rights.info.yorku.ca/files/2021/05/Anti-Racism-Series-2-300x300.png' w
+ idth='300' height='300' /></div><p>Through a series of engaging activities
+  and reflection exercises participants who take part in this workshop will
+  be able to:</p>\n<p>- Identify personal limitations to engagement in dial
+ ogue across differences.<br />\n- Identify what they need to engage in mea
+ ningful conversation though respectful dialogue without the intention of p
+ ersuasion.<br />\n- Develop personal strategies to manage emotions in orde
+ r to look past individual differences and hear the humanity of someone’s l
+ ived experiences.</p>\n<p>This workshop is developed and delivered in part
+ nership with Student Community Leadership and Development (SCLD)</p>
+DTSTART;TZID=America/Toronto:20210721T110000
+DTEND;TZID=America/Toronto:20210721T123000
+LOCATION:Zoom @ https://yorku.zoom.us/meeting/register/tJIkde2gqD4tHdbWLaZs
+ q-p5QwCbp1yiRSkb
+SEQUENCE:0
+SUMMARY:REDI - Dialogue Across Difference
+URL:https://rights.info.yorku.ca/event/redi-dialogue-across-difference/
+X-COST-TYPE:free
+X-WP-IMAGES-URL:thumbnail\;https://rights.info.yorku.ca/files/2021/05/Anti-
+ Racism-Series-2-150x150.png\;150\;150\;1\,medium\;https://rights.info.york
+ u.ca/files/2021/05/Anti-Racism-Series-2-300x300.png\;300\;300\;1\,large\;h
+ ttps://rights.info.yorku.ca/files/2021/05/Anti-Racism-Series-2.png\;800\;8
+ 00\;
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6424@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:https://yorku.zoom.us/meeting/register/tJ0sdu6rrjIoHNSB0fsG-GW_Ph4H
+ E4saMo2y
+DESCRIPTION:<div class='ai1ec-event-avatar alignleft timely'><img src='http
+ s://rights.info.yorku.ca/files/2021/05/Anti-Racism-Series-2-300x300.png' w
+ idth='300' height='300' /></div><p><img decoding='async' loading='lazy' cl
+ ass='alignnone size-medium wp-image-6444' src='https://rights.info.yorku.c
+ a/files/2021/05/Anti-Racism-Series-2-300x300.png' alt='' width='300' heigh
+ t='300' srcset='https://rights.info.yorku.ca/files/2021/05/Anti-Racism-Ser
+ ies-2-300x300.png 300w\, https://rights.info.yorku.ca/files/2021/05/Anti-R
+ acism-Series-2-150x150.png 150w\, https://rights.info.yorku.ca/files/2021/
+ 05/Anti-Racism-Series-2-768x768.png 768w\, https://rights.info.yorku.ca/fi
+ les/2021/05/Anti-Racism-Series-2-724x724.png 724w\, https://rights.info.yo
+ rku.ca/files/2021/05/Anti-Racism-Series-2.png 800w' sizes='(max-width: 300
+ px) 100vw\, 300px' /></p>\n<p>Through a series of engaging activities and 
+ reflection exercises participants who take part in this workshop will be a
+ ble to:</p>\n<p>- Contextualize their social location based on their ident
+ ity.<br />\n- Deepen their understanding of allyship in a personal and ins
+ titutional setting.<br />\n- Practice active allyship and develop strategi
+ es to have brave conversations.</p>\n<p>This workshop is developed and del
+ ivered in partnership with Student Community Leadership and Development (S
+ CLD)</p>
+DTSTART;TZID=America/Toronto:20210722T130000
+DTEND;TZID=America/Toronto:20210722T143000
+LOCATION:Zoom @ https://yorku.zoom.us/meeting/register/tJ0sdu6rrjIoHNSB0fsG
+ -GW_Ph4HE4saMo2y
+SEQUENCE:0
+SUMMARY:REDI - Orienting Yourself to Allyship
+URL:https://rights.info.yorku.ca/event/redi-orienting-yourself-to-allyship/
+X-COST-TYPE:free
+X-WP-IMAGES-URL:thumbnail\;https://rights.info.yorku.ca/files/2021/05/Anti-
+ Racism-Series-2-150x150.png\;150\;150\;1\,medium\;https://rights.info.york
+ u.ca/files/2021/05/Anti-Racism-Series-2-300x300.png\;300\;300\;1\,large\;h
+ ttps://rights.info.yorku.ca/files/2021/05/Anti-Racism-Series-2.png\;800\;8
+ 00\;
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6387@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:https://yorku.zoom.us/meeting/register/tJUud-ivrDkqE925bjednsnuCR8h
+ 4BH0G246
+DESCRIPTION:<p>Participants will engage in discussions about community resi
+ lience in the face of disadvantage and hardship\, examining the ways barri
+ ers and discrimination shape our perspective of communities under duress. 
+ The workshop will help participants consider how to engage and foster incl
+ usivity across multiple groups and spaces.</p>
+DTSTART;TZID=America/Toronto:20210727T130000
+DTEND;TZID=America/Toronto:20210727T143000
+LOCATION:https://yorku.zoom.us/meeting/register/tJUud-ivrDkqE925bjednsnuCR8
+ h4BH0G246
+SEQUENCE:0
+SUMMARY:REDI: Recognizing Resilience in Communities
+URL:https://rights.info.yorku.ca/event/redi-recognizing-resilience-in-commu
+ nities/
+X-COST-TYPE:free
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6475@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:https://yorku.zoom.us/meeting/register/tJIkdO6uqz8qHdP3NjUgoHe5wBnz
+ EypJeIdL
+DESCRIPTION:<div class='ai1ec-event-avatar alignleft timely'><img src='http
+ s://rights.info.yorku.ca/files/2021/06/MicrosoftTeams-image-1-300x300.png'
+  width='300' height='300' /></div><p>With the COVID-19 pandemic\, many peo
+ ple have found themselves with more responsibilities caring for loved ones
+ \, children\, or parents\, whilst having to work from home. This workshop 
+ outlines what family status accommodation is\, how to request it\, and how
+  to respond to requests for it.</p>\n<p> </p>
+DTSTART;TZID=America/Toronto:20210728T100000
+DTEND;TZID=America/Toronto:20210728T113000
+LOCATION:Zoom @ https://yorku.zoom.us/meeting/register/tJIkdO6uqz8qHdP3NjUg
+ oHe5wBnzEypJeIdL
+SEQUENCE:0
+SUMMARY:Family Status Accommodations @ York University
+URL:https://rights.info.yorku.ca/event/family-status-accommodations-york-un
+ iversity-2/
+X-COST-TYPE:free
+X-WP-IMAGES-URL:thumbnail\;https://rights.info.yorku.ca/files/2021/06/Micro
+ softTeams-image-1-150x150.png\;150\;150\;1\,medium\;https://rights.info.yo
+ rku.ca/files/2021/06/MicrosoftTeams-image-1-300x300.png\;300\;300\;1\,larg
+ e\;https://rights.info.yorku.ca/files/2021/06/MicrosoftTeams-image-1.png\;
+ 800\;800\;
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6474@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:https://yorku.zoom.us/meeting/register/tJ0lcOuvrjkpEtbnzdo46u6dMLUk
+ YSISYIMl
+DESCRIPTION:<div class='ai1ec-event-avatar alignleft timely'><img src='http
+ s://rights.info.yorku.ca/files/2021/06/MicrosoftTeams-image-1-300x300.png'
+  width='300' height='300' /></div><p>With the COVID-19 pandemic\, many peo
+ ple have found themselves with more responsibilities caring for loved ones
+ \, children\, or parents. This workshop outlines what family status accomm
+ odation is\, how to request it\, and how to respond to requests for it.</p
+ >\n<p> </p>
+DTSTART;TZID=America/Toronto:20210809T153000
+DTEND;TZID=America/Toronto:20210809T170000
+LOCATION:Zoom @ https://yorku.zoom.us/meeting/register/tJ0lcOuvrjkpEtbnzdo4
+ 6u6dMLUkYSISYIMl
+SEQUENCE:0
+SUMMARY:Family Status Accommodations @ York University
+URL:https://rights.info.yorku.ca/event/family-status-accommodations-york-un
+ iversity/
+X-COST-TYPE:free
+X-WP-IMAGES-URL:thumbnail\;https://rights.info.yorku.ca/files/2021/06/Micro
+ softTeams-image-1-150x150.png\;150\;150\;1\,medium\;https://rights.info.yo
+ rku.ca/files/2021/06/MicrosoftTeams-image-1-300x300.png\;300\;300\;1\,larg
+ e\;https://rights.info.yorku.ca/files/2021/06/MicrosoftTeams-image-1.png\;
+ 800\;800\;
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6379@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:https://yorku.zoom.us/meeting/register/tJMtd-CpqDgrHNKq8GGCDH8R_118
+ Ve8Dtd4y
+DESCRIPTION:<div class='ai1ec-event-avatar alignleft timely'><img src='http
+ s://rights.info.yorku.ca/files/2021/04/Anti-Racism-Series-e1618260306543-3
+ 00x121.png' width='300' height='121' /></div><p><span data-contrast='auto'
+ >Please note that we strongly recommend participants to have</span><span d
+ ata-contrast='auto'> attended at least one of the workshops above before a
+ ttending this session.</span><span data-ccp-props='{'134233279':true\,'201
+ 341983':0\,'335551550':1\,'335551620':1\,'335559685':1440\,'335559739':0\,
+ '335559740':240}'> </span></p>\n<p><span data-contrast='auto'>This worksho
+ p will be highly participation-</span><span data-contrast='auto'>based\, a
+ nd</span><span data-contrast='auto'> ask attendees to design strategies an
+ d practice tools to intervene on moments of racial discrimination\, harass
+ ment\, and microaggressions. </span><span data-contrast='auto'>Prior f</sp
+ an><span data-contrast='auto'>amiliarity with these concepts is </span><sp
+ an data-contrast='auto'>recommended. </span><span data-ccp-props='{'134233
+ 279':true\,'201341983':0\,'335559685':1440\,'335559739':0\,'335559740':240
+ }'> <img decoding='async' loading='lazy' class='size-medium wp-image-6376 
+ aligncenter' src='https://rights.info.yorku.ca/files/2021/04/Anti-Racism-S
+ eries-1-300x300.png' alt='' width='300' height='300' srcset='https://right
+ s.info.yorku.ca/files/2021/04/Anti-Racism-Series-1-300x300.png 300w\, http
+ s://rights.info.yorku.ca/files/2021/04/Anti-Racism-Series-1-150x150.png 15
+ 0w\, https://rights.info.yorku.ca/files/2021/04/Anti-Racism-Series-1-768x7
+ 68.png 768w\, https://rights.info.yorku.ca/files/2021/04/Anti-Racism-Serie
+ s-1-724x724.png 724w\, https://rights.info.yorku.ca/files/2021/04/Anti-Rac
+ ism-Series-1.png 800w' sizes='(max-width: 300px) 100vw\, 300px' /></span><
+ /p>
+DTSTART;TZID=America/Toronto:20210810T103000
+DTEND;TZID=America/Toronto:20210810T120000
+LOCATION:https://yorku.zoom.us/meeting/register/tJMtd-CpqDgrHNKq8GGCDH8R_11
+ 8Ve8Dtd4y
+SEQUENCE:0
+SUMMARY:Intervening on Racism
+URL:https://rights.info.yorku.ca/event/intervening-on-racism-3/
+X-COST-TYPE:free
+X-WP-IMAGES-URL:thumbnail\;https://rights.info.yorku.ca/files/2021/04/Anti-
+ Racism-Series-e1618260306543-150x150.png\;150\;150\;1\,medium\;https://rig
+ hts.info.yorku.ca/files/2021/04/Anti-Racism-Series-e1618260306543-300x121.
+ png\;300\;121\;1\,large\;https://rights.info.yorku.ca/files/2021/04/Anti-R
+ acism-Series-e1618260306543.png\;800\;322\;
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6512@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:https://yorku.zoom.us/meeting/register/tJcvf-ytrjMuE9cH4wlRUhi9Qz2V
+ PEHIon19
+DESCRIPTION:<div class='ai1ec-event-avatar alignleft timely'><img src='http
+ s://rights.info.yorku.ca/files/2021/09/2021_22_-REDI-Flyers-232x300.jpg' w
+ idth='232' height='300' /></div><p><span class='JsGRdQ'>Rejoignez-nous pou
+ r explorer des stratégies et des pratiques de réponse dans des situations 
+ de discrimination\, afin de mieux créer une culture et une institution inc
+ lusive.</span></p>
+DTSTART;TZID=America/Toronto:20210923T103000
+DTEND;TZID=America/Toronto:20210923T120000
+LOCATION:Zoom @ https://yorku.zoom.us/meeting/register/tJcvf-ytrjMuE9cH4wlR
+ Uhi9Qz2VPEHIon19
+SEQUENCE:0
+SUMMARY:Lutte contre la discrimination
+URL:https://rights.info.yorku.ca/event/lutte-contre-la-discrimination/
+X-COST-TYPE:free
+X-WP-IMAGES-URL:thumbnail\;https://rights.info.yorku.ca/files/2021/09/2021_
+ 22_-REDI-Flyers-150x150.jpg\;150\;150\;1\,medium\;https://rights.info.york
+ u.ca/files/2021/09/2021_22_-REDI-Flyers-232x300.jpg\;232\;300\;1\,large\;h
+ ttps://rights.info.yorku.ca/files/2021/09/2021_22_-REDI-Flyers.jpg\;1545\;
+ 2000\;
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6596@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:https://rights.info.yorku.ca/redipd/
+DESCRIPTION:<div class='ai1ec-event-avatar alignleft timely'><img src='http
+ s://rights.info.yorku.ca/files/2020/05/MicrosoftTeams-image-2-300x91.png' 
+ width='300' height='91' /></div><p>This workshop will help participants ga
+ in an understanding of how to recognize racism\, how it can manifest\, and
+  what its impacts are. Participants will learn about strategies to address
+  barriers to inclusive spaces\, and become familiar with relevant tools\, 
+ policies and legislation within the York context.</p>
+DTSTART;TZID=America/Toronto:20211007T103000
+DTEND;TZID=America/Toronto:20211007T120000
+LOCATION:Zoom @ https://yorku.zoom.us/meeting/register/tJYsdeyuqDkiHNWcyzE0
+ 9JdzUupPzeGk8Yx7
+SEQUENCE:0
+SUMMARY:Acknowledging and Addressing Racism
+URL:https://rights.info.yorku.ca/event/acknowledging-and-addressing-racism-
+ 4/
+X-COST-TYPE:free
+X-WP-IMAGES-URL:thumbnail\;https://rights.info.yorku.ca/files/2020/05/Micro
+ softTeams-image-2-150x150.png\;150\;150\;1\,medium\;https://rights.info.yo
+ rku.ca/files/2020/05/MicrosoftTeams-image-2-300x91.png\;300\;91\;1\,large\
+ ;https://rights.info.yorku.ca/files/2020/05/MicrosoftTeams-image-2.png\;11
+ 50\;350\;
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6597@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:https://rights.info.yorku.ca/redipd/
+DESCRIPTION:<div class='ai1ec-event-avatar alignleft timely'><img src='http
+ s://rights.info.yorku.ca/files/2020/05/MicrosoftTeams-image-2-300x91.png' 
+ width='300' height='91' /></div><p>This workshop will take a deep dive int
+ o forms of unconscious bias and stereotyping that lead to microaggressions
+  and discriminatory behaviour. Participants will explore effective strateg
+ ies to challenge our biases\, reframing our ways of thinking and strengthe
+ n the experience of inclusion for all.</p>
+DTSTART;TZID=America/Toronto:20211019T133000
+DTEND;TZID=America/Toronto:20211019T150000
+LOCATION:Zoom @ https://yorku.zoom.us/meeting/register/tJUudu6urTIjHdZS1dVj
+ dBDtyETkWAvRht6t
+SEQUENCE:0
+SUMMARY:Challenging Unconscious Bias and Microaggressions
+URL:https://rights.info.yorku.ca/event/challenging-unconscious-bias-and-mic
+ roaggressions-4/
+X-COST-TYPE:free
+X-WP-IMAGES-URL:thumbnail\;https://rights.info.yorku.ca/files/2020/05/Micro
+ softTeams-image-2-150x150.png\;150\;150\;1\,medium\;https://rights.info.yo
+ rku.ca/files/2020/05/MicrosoftTeams-image-2-300x91.png\;300\;91\;1\,large\
+ ;https://rights.info.yorku.ca/files/2020/05/MicrosoftTeams-image-2.png\;11
+ 50\;350\;
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6523@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:https://yorku.zoom.us/meeting/register/tJYqf-yvrz0vEtPVih_x1yyHLwYA
+ MEYh9m-2
+DESCRIPTION:<div class='ai1ec-event-avatar alignleft timely'><img src='http
+ s://rights.info.yorku.ca/files/2021/09/REDI_2021_22_WEB_BANNER-300x91.png'
+  width='300' height='91' /></div><p>Developed in partnership with the Teac
+ hing Commons\, this workshop supports participants to<img decoding='async'
+  loading='lazy' class='size-medium wp-image-6525 alignright' src='https://
+ rights.info.yorku.ca/files/2021/09/IG_SIZE_REDI_2021_22-300x300.png' alt='
+ ' width='300' height='300' srcset='https://rights.info.yorku.ca/files/2021
+ /09/IG_SIZE_REDI_2021_22-300x300.png 300w\, https://rights.info.yorku.ca/f
+ iles/2021/09/IG_SIZE_REDI_2021_22-150x150.png 150w\, https://rights.info.y
+ orku.ca/files/2021/09/IG_SIZE_REDI_2021_22-768x768.png 768w\, https://righ
+ ts.info.yorku.ca/files/2021/09/IG_SIZE_REDI_2021_22-724x724.png 724w\, htt
+ ps://rights.info.yorku.ca/files/2021/09/IG_SIZE_REDI_2021_22.png 1080w' si
+ zes='(max-width: 300px) 100vw\, 300px' /> develop an understanding of univ
+ ersal design\, accessibility\, and academic integrity in an educational en
+ vironment\, and consider the ways universal design can become part of a te
+ aching strategy.</p>\n<p>Discussion and activities will offer strategies f
+ or aligning values of academic integrity while also providing inclusive le
+ arning experiences for all.</p>
+DTSTART;TZID=America/Toronto:20211021T100000
+DTEND;TZID=America/Toronto:20211021T113000
+LOCATION:Zoom @ https://yorku.zoom.us/meeting/register/tJYqf-yvrz0vEtPVih_x
+ 1yyHLwYAMEYh9m-2
+SEQUENCE:0
+SUMMARY:Academic Integrity and Universal Design
+URL:https://rights.info.yorku.ca/event/academic-integrity-and-universal-des
+ ign-3/
+X-COST-TYPE:free
+X-WP-IMAGES-URL:thumbnail\;https://rights.info.yorku.ca/files/2021/09/REDI_
+ 2021_22_WEB_BANNER-150x150.png\;150\;150\;1\,medium\;https://rights.info.y
+ orku.ca/files/2021/09/REDI_2021_22_WEB_BANNER-300x91.png\;300\;91\;1\,larg
+ e\;https://rights.info.yorku.ca/files/2021/09/REDI_2021_22_WEB_BANNER.png\
+ ;1150\;350\;
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6598@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:https://rights.info.yorku.ca/redipd/
+DESCRIPTION:<div class='ai1ec-event-avatar alignleft timely'><img src='http
+ s://rights.info.yorku.ca/files/2020/05/MicrosoftTeams-image-2-300x91.png' 
+ width='300' height='91' /></div><p>This workshop focuses on racism and dis
+ crimination in the workplace\, highlighting the relevant policies and laws
+  in place to support efforts that build healthy and inclusive workplace en
+ vironments and culture.</p>
+DTSTART;TZID=America/Toronto:20211104T103000
+DTEND;TZID=America/Toronto:20211104T120000
+LOCATION:Zoom @ https://yorku.zoom.us/meeting/register/tJYoc-msqTkvHdRIEWoy
+ b7aARMuUAY69SjN0
+SEQUENCE:0
+SUMMARY:Racial Inclusion and Employment Equity
+URL:https://rights.info.yorku.ca/event/racial-inclusion-and-employment-equi
+ ty-3/
+X-COST-TYPE:free
+X-WP-IMAGES-URL:thumbnail\;https://rights.info.yorku.ca/files/2020/05/Micro
+ softTeams-image-2-150x150.png\;150\;150\;1\,medium\;https://rights.info.yo
+ rku.ca/files/2020/05/MicrosoftTeams-image-2-300x91.png\;300\;91\;1\,large\
+ ;https://rights.info.yorku.ca/files/2020/05/MicrosoftTeams-image-2.png\;11
+ 50\;350\;
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6599@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:https://rights.info.yorku.ca/redipd/
+DESCRIPTION:<div class='ai1ec-event-avatar alignleft timely'><img src='http
+ s://rights.info.yorku.ca/files/2020/05/MicrosoftTeams-image-2-300x91.png' 
+ width='300' height='91' /></div><p>Please note that we strongly recommend 
+ participants to have attended at least one of the workshops above before a
+ ttending this session.</p>\n<p>This workshop is highly participation-based
+  and asks attendees to design strategies and practice tools to intervene o
+ n moments of racial discrimination\, harassment\, and microaggressions. Ag
+ ain\, prior familiarity with these concepts is recommended.</p>
+DTSTART;TZID=America/Toronto:20211109T133000
+DTEND;TZID=America/Toronto:20211109T143000
+LOCATION:Zoom @ https://yorku.zoom.us/meeting/register/tJAlc-qorzIuGtLT_VNy
+ Cxl_pEyOIQ1y12WE
+SEQUENCE:0
+SUMMARY:Intervening on Racism
+URL:https://rights.info.yorku.ca/event/intervening-on-racism-5/
+X-COST-TYPE:free
+X-WP-IMAGES-URL:thumbnail\;https://rights.info.yorku.ca/files/2020/05/Micro
+ softTeams-image-2-150x150.png\;150\;150\;1\,medium\;https://rights.info.yo
+ rku.ca/files/2020/05/MicrosoftTeams-image-2-300x91.png\;300\;91\;1\,large\
+ ;https://rights.info.yorku.ca/files/2020/05/MicrosoftTeams-image-2.png\;11
+ 50\;350\;
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6600@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:https://rights.info.yorku.ca/redipd/
+DESCRIPTION:<p>In recognition of November 20<sup>th</sup>\, Transgender Day
+  of Remembrance\, this session offers a “101” exploration of gender and se
+ xual diversity\, as well as homophobia and transphobia specific to the cam
+ pus experience. Learn about using inclusive language\, being a supportive 
+ ally\, campus resources\, and creating safer spaces on campus for gender a
+ nd sexually diverse students\, staff and faculty.</p>
+DTSTART;TZID=America/Toronto:20211118T103000
+DTEND;TZID=America/Toronto:20211118T120000
+LOCATION:Zoom @ https://yorku.zoom.us/meeting/register/tJEpcuuoqTkvH9QRvnM7
+ VGP6Demy4Q5tbFob
+SEQUENCE:0
+SUMMARY:Creating and Maintaining Positive Space
+URL:https://rights.info.yorku.ca/event/creating-and-maintaining-positive-sp
+ ace/
+X-COST-TYPE:free
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6601@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:https://rights.info.yorku.ca/redipd/
+DESCRIPTION:<div class='ai1ec-event-avatar alignleft timely'><img src='http
+ s://rights.info.yorku.ca/files/2020/05/MicrosoftTeams-image-2-300x91.png' 
+ width='300' height='91' /></div><p>In this interactive session that is bei
+ ng brought forward in anticipation and recognition of The National Day of 
+ Remembrance and Action on Violence against Women on December 6\, 2021\, pa
+ rticipants will become familiar with the legislation and policies that def
+ ine sexual harassment and gain a general understanding of why sexual haras
+ sment continues to be pervasive in our society. Attendees will examine var
+ ious scenarios aimed at obtaining strategies and sharing best practices on
+  how to identify\, prevent\, and respond to instances of sexual harassment
+  on campus.</p>
+DTSTART;TZID=America/Toronto:20211202T103000
+DTEND;TZID=America/Toronto:20211202T120000
+LOCATION:Zoom @ https://yorku.zoom.us/meeting/register/tJEkdO-urzouGtHfV2me
+ uN5bWyFUv-q1BbaP
+SEQUENCE:0
+SUMMARY:Addressing and Responding to Sexual Harassment
+URL:https://rights.info.yorku.ca/event/addressing-and-responding-to-sexual-
+ harassment/
+X-COST-TYPE:free
+X-WP-IMAGES-URL:thumbnail\;https://rights.info.yorku.ca/files/2020/05/Micro
+ softTeams-image-2-150x150.png\;150\;150\;1\,medium\;https://rights.info.yo
+ rku.ca/files/2020/05/MicrosoftTeams-image-2-300x91.png\;300\;91\;1\,large\
+ ;https://rights.info.yorku.ca/files/2020/05/MicrosoftTeams-image-2.png\;11
+ 50\;350\;
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6602@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:https://rights.info.yorku.ca/redipd/
+DESCRIPTION:<div class='ai1ec-event-avatar alignleft timely'><img src='http
+ s://rights.info.yorku.ca/files/2020/05/MicrosoftTeams-image-2-300x91.png' 
+ width='300' height='91' /></div><p style='text-align: left'>This workshop 
+ will take a deep dive into forms of unconscious bias and stereotyping that
+  lead to microaggressions and discriminatory behaviour. Participants will 
+ explore effective strategies to challenge our biases\, reframe our ways of
+  thinking\, and strengthen the experience of inclusion for all.</p>
+DTSTART;TZID=America/Toronto:20220120T103000
+DTEND;TZID=America/Toronto:20220120T120000
+LOCATION:Zoom @ https://yorku.zoom.us/meeting/register/tJ0od-qoqTkrGNRg-aOc
+ uv_7N-CgwdooEm_d
+SEQUENCE:0
+SUMMARY:Challenging Unconscious Bias and Microaggressions
+URL:https://rights.info.yorku.ca/event/challenging-organizational-structure
+ s/
+X-COST-TYPE:free
+X-WP-IMAGES-URL:thumbnail\;https://rights.info.yorku.ca/files/2020/05/Micro
+ softTeams-image-2-150x150.png\;150\;150\;1\,medium\;https://rights.info.yo
+ rku.ca/files/2020/05/MicrosoftTeams-image-2-300x91.png\;300\;91\;1\,large\
+ ;https://rights.info.yorku.ca/files/2020/05/MicrosoftTeams-image-2.png\;11
+ 50\;350\;
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6603@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:https://rights.info.yorku.ca/redipd/
+DESCRIPTION:<div class='ai1ec-event-avatar alignleft timely'><img src='http
+ s://rights.info.yorku.ca/files/2020/05/MicrosoftTeams-image-2-300x91.png' 
+ width='300' height='91' /></div><p>Through a series of engaging activities
+  and reflection exercises participants who take part in this workshop will
+  be able to:</p>\n<ul>\n<li>Identify personal limitations to engagement in
+  dialogue across differences.</li>\n<li>Identify what they need to engage 
+ in meaningful conversation though respectful dialogue without the intentio
+ n of persuasion.</li>\n<li>Develop personal strategies to manage emotions 
+ in order to look past individual differences and hear the humanity of some
+ one’s lived experiences.</li>\n</ul>\n<p>This workshop is developed and de
+ livered in partnership with Student Community Leadership and Development (
+ SCLD)</p>
+DTSTART;TZID=America/Toronto:20220127T120000
+DTEND;TZID=America/Toronto:20220127T133000
+LOCATION:Zoom @ https://yorku.zoom.us/meeting/register/tJEudemorD0sHdfvksOI
+ CJWSFHqU8-nnOY48
+SEQUENCE:0
+SUMMARY:Dialogue Across Difference
+URL:https://rights.info.yorku.ca/event/dialogue-across-difference/
+X-COST-TYPE:free
+X-WP-IMAGES-URL:thumbnail\;https://rights.info.yorku.ca/files/2020/05/Micro
+ softTeams-image-2-150x150.png\;150\;150\;1\,medium\;https://rights.info.yo
+ rku.ca/files/2020/05/MicrosoftTeams-image-2-300x91.png\;300\;91\;1\,large\
+ ;https://rights.info.yorku.ca/files/2020/05/MicrosoftTeams-image-2.png\;11
+ 50\;350\;
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6547@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:https://rights.info.yorku.ca/redipd/
+DESCRIPTION:<div class='ai1ec-event-avatar alignleft timely'><img src='http
+ s://rights.info.yorku.ca/files/2021/09/REDI_2021_22_WEB_BANNER-300x91.png'
+  width='300' height='91' /></div><p><img decoding='async' loading='lazy' c
+ lass='alignnone  wp-image-6543' src='https://rights.info.yorku.ca/files/20
+ 21/09/2021_22_-REDI-Flyers-1-232x300.png' alt='' width='381' height='493' 
+ srcset='https://rights.info.yorku.ca/files/2021/09/2021_22_-REDI-Flyers-1-
+ 232x300.png 232w\, https://rights.info.yorku.ca/files/2021/09/2021_22_-RED
+ I-Flyers-1-768x994.png 768w\, https://rights.info.yorku.ca/files/2021/09/2
+ 021_22_-REDI-Flyers-1-1187x1536.png 1187w\, https://rights.info.yorku.ca/f
+ iles/2021/09/2021_22_-REDI-Flyers-1-724x937.png 724w\, https://rights.info
+ .yorku.ca/files/2021/09/2021_22_-REDI-Flyers-1.png 1545w' sizes='(max-widt
+ h: 381px) 100vw\, 381px' /></p>\n<p>This session will explore the history 
+ of race and racism and how it is maintained today in institutions across C
+ anada. This workshop is designed to complement the anti-racism REDI series
+  and is heavily information focused\, aiming to give context to what is ha
+ ppening in our world today. Unlike other REDI sessions\, the emphasis is l
+ ess on skill-building and more on awareness-building and we strongly encou
+ rage participants to take this session in conjunction with other anti-raci
+ sm workshops with more action-oriented content.</p>
+DTSTART;TZID=America/Toronto:20220203T103000
+DTEND;TZID=America/Toronto:20220203T120000
+LOCATION:Zoom @ https://yorku.zoom.us/meeting/register/tJIucOGrqTwuEtEGX8p3
+ EtuYku2O-41m1xCS
+SEQUENCE:0
+SUMMARY:The Construction and Maintenance of Systemic Racism
+URL:https://rights.info.yorku.ca/event/the-construction-and-maintenance-of-
+ systemic-racism-2/
+X-COST-TYPE:free
+X-WP-IMAGES-URL:thumbnail\;https://rights.info.yorku.ca/files/2021/09/REDI_
+ 2021_22_WEB_BANNER-150x150.png\;150\;150\;1\,medium\;https://rights.info.y
+ orku.ca/files/2021/09/REDI_2021_22_WEB_BANNER-300x91.png\;300\;91\;1\,larg
+ e\;https://rights.info.yorku.ca/files/2021/09/REDI_2021_22_WEB_BANNER.png\
+ ;1150\;350\;
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6545@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:https://rights.info.yorku.ca/redipd/
+DESCRIPTION:<div class='ai1ec-event-avatar alignleft timely'><img src='http
+ s://rights.info.yorku.ca/files/2021/09/REDI_2021_22_WEB_BANNER-300x91.png'
+  width='300' height='91' /></div><p>Participants will engage in discussion
+ s about community resilience in the face of disadvantage and hardship\, ex
+ amining the ways barriers and discrimination shape our perspective of comm
+ unities under duress. The workshop will help participants consider how to 
+ engage and foster inclusivity across multiple groups and spaces.</p>\n<p><
+ img decoding='async' loading='lazy' class='alignnone size-medium wp-image-
+ 6546' src='https://rights.info.yorku.ca/files/2021/09/REDI_500X500_YFILE-3
+ -300x300.png' alt='' width='300' height='300' srcset='https://rights.info.
+ yorku.ca/files/2021/09/REDI_500X500_YFILE-3-300x300.png 300w\, https://rig
+ hts.info.yorku.ca/files/2021/09/REDI_500X500_YFILE-3-150x150.png 150w\, ht
+ tps://rights.info.yorku.ca/files/2021/09/REDI_500X500_YFILE-3-768x768.png 
+ 768w\, https://rights.info.yorku.ca/files/2021/09/REDI_500X500_YFILE-3-724
+ x724.png 724w\, https://rights.info.yorku.ca/files/2021/09/REDI_500X500_YF
+ ILE-3.png 1500w' sizes='(max-width: 300px) 100vw\, 300px' /></p>
+DTSTART;TZID=America/Toronto:20220208T133000
+DTEND;TZID=America/Toronto:20220208T150000
+LOCATION:Zoom @ https://yorku.zoom.us/meeting/register/tJckc-qprDkjHddg_2GN
+ F2UFQxFjZHiut1gP
+SEQUENCE:0
+SUMMARY:Recognizing Resilience in Communities
+URL:https://rights.info.yorku.ca/event/recognizing-resilience-in-communitie
+ s-3/
+X-COST-TYPE:free
+X-WP-IMAGES-URL:thumbnail\;https://rights.info.yorku.ca/files/2021/09/REDI_
+ 2021_22_WEB_BANNER-150x150.png\;150\;150\;1\,medium\;https://rights.info.y
+ orku.ca/files/2021/09/REDI_2021_22_WEB_BANNER-300x91.png\;300\;91\;1\,larg
+ e\;https://rights.info.yorku.ca/files/2021/09/REDI_2021_22_WEB_BANNER.png\
+ ;1150\;350\;
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6544@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:https://rights.info.yorku.ca/redipd/
+DESCRIPTION:<div class='ai1ec-event-avatar alignleft timely'><img src='http
+ s://rights.info.yorku.ca/files/2021/09/REDI_2021_22_WEB_BANNER-300x91.png'
+  width='300' height='91' /></div><p>This workshop will help participants g
+ ain an understanding of how to recognize racism\, how it can manifest\, an
+ d what its impacts are. Participants will learn about strategies to addres
+ s barriers to inclusive spaces\, and become familiar with relevant tools\,
+  policies and legislation within the York context.</p>\n<p><img decoding='
+ async' loading='lazy' class='alignnone size-medium wp-image-6543' src='htt
+ ps://rights.info.yorku.ca/files/2021/09/2021_22_-REDI-Flyers-1-232x300.png
+ ' alt='' width='232' height='300' srcset='https://rights.info.yorku.ca/fil
+ es/2021/09/2021_22_-REDI-Flyers-1-232x300.png 232w\, https://rights.info.y
+ orku.ca/files/2021/09/2021_22_-REDI-Flyers-1-768x994.png 768w\, https://ri
+ ghts.info.yorku.ca/files/2021/09/2021_22_-REDI-Flyers-1-1187x1536.png 1187
+ w\, https://rights.info.yorku.ca/files/2021/09/2021_22_-REDI-Flyers-1-724x
+ 937.png 724w\, https://rights.info.yorku.ca/files/2021/09/2021_22_-REDI-Fl
+ yers-1.png 1545w' sizes='(max-width: 232px) 100vw\, 232px' /></p>
+DTSTART;TZID=America/Toronto:20220215T133000
+DTEND;TZID=America/Toronto:20220215T150000
+LOCATION:Zoom @ https://yorku.zoom.us/meeting/register/tJwqdeCtrDsjEtxaAN1k
+ LsDaY4UfRgcd8PuK
+SEQUENCE:0
+SUMMARY:Acknowledging and Addressing Racism
+URL:https://rights.info.yorku.ca/event/acknowledging-and-addressing-racism-
+ 3/
+X-COST-TYPE:free
+X-WP-IMAGES-URL:thumbnail\;https://rights.info.yorku.ca/files/2021/09/REDI_
+ 2021_22_WEB_BANNER-150x150.png\;150\;150\;1\,medium\;https://rights.info.y
+ orku.ca/files/2021/09/REDI_2021_22_WEB_BANNER-300x91.png\;300\;91\;1\,larg
+ e\;https://rights.info.yorku.ca/files/2021/09/REDI_2021_22_WEB_BANNER.png\
+ ;1150\;350\;
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6541@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:https://rights.info.yorku.ca/redipd/
+DESCRIPTION:<div class='ai1ec-event-avatar alignleft timely'><img src='http
+ s://rights.info.yorku.ca/files/2021/09/REDI_2021_22_WEB_BANNER-300x91.png'
+  width='300' height='91' /></div><p> </p>\n<p><img decoding='async' loadin
+ g='lazy' class='alignnone  wp-image-6543' src='https://rights.info.yorku.c
+ a/files/2021/09/2021_22_-REDI-Flyers-1-232x300.png' alt='' width='358' hei
+ ght='463' srcset='https://rights.info.yorku.ca/files/2021/09/2021_22_-REDI
+ -Flyers-1-232x300.png 232w\, https://rights.info.yorku.ca/files/2021/09/20
+ 21_22_-REDI-Flyers-1-768x994.png 768w\, https://rights.info.yorku.ca/files
+ /2021/09/2021_22_-REDI-Flyers-1-1187x1536.png 1187w\, https://rights.info.
+ yorku.ca/files/2021/09/2021_22_-REDI-Flyers-1-724x937.png 724w\, https://r
+ ights.info.yorku.ca/files/2021/09/2021_22_-REDI-Flyers-1.png 1545w' sizes=
+ '(max-width: 358px) 100vw\, 358px' /></p>\n<p>Please note that we strongly
+  recommend participants to have attended at least one of the workshops abo
+ ve before attending this session.</p>\n<p>This workshop will be highly par
+ ticipation-based\, and ask attendees to design strategies and practice too
+ ls to intervene on moments of racial discrimination\, harassment\, and mic
+ roaggressions. Prior familiarity with these concepts is recommended.</p>
+DTSTART;TZID=America/Toronto:20220224T103000
+DTEND;TZID=America/Toronto:20220224T120000
+LOCATION:Zoom @ https://yorku.zoom.us/meeting/register/tJUocu6srTIuG9Wb441r
+ CSOpQldwRv5iWxLo
+SEQUENCE:0
+SUMMARY:Intervening on Racism
+URL:https://rights.info.yorku.ca/event/intervening-on-racism-4/
+X-COST-TYPE:free
+X-WP-IMAGES-URL:thumbnail\;https://rights.info.yorku.ca/files/2021/09/REDI_
+ 2021_22_WEB_BANNER-150x150.png\;150\;150\;1\,medium\;https://rights.info.y
+ orku.ca/files/2021/09/REDI_2021_22_WEB_BANNER-300x91.png\;300\;91\;1\,larg
+ e\;https://rights.info.yorku.ca/files/2021/09/REDI_2021_22_WEB_BANNER.png\
+ ;1150\;350\;
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6539@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:https://rights.info.yorku.ca/redipd/
+DESCRIPTION:<div class='ai1ec-event-avatar alignleft timely'><img src='http
+ s://rights.info.yorku.ca/files/2021/09/REDI_2021_22_WEB_BANNER-300x91.png'
+  width='300' height='91' /></div><p>This workshop will take a deep dive in
+ to forms of unconscious bias\, and stereotyping that lead to microaggressi
+ ons and discriminatory behaviour. Participants will explore effective stra
+ tegies to challenge our biases\, reframing our ways of thinking and streng
+ then the <img decoding='async' loading='lazy' class='size-medium wp-image-
+ 6540 alignleft' src='https://rights.info.yorku.ca/files/2021/09/REDI_500X5
+ 00_YFILE-2-300x300.png' alt='' width='300' height='300' srcset='https://ri
+ ghts.info.yorku.ca/files/2021/09/REDI_500X500_YFILE-2-300x300.png 300w\, h
+ ttps://rights.info.yorku.ca/files/2021/09/REDI_500X500_YFILE-2-150x150.png
+  150w\, https://rights.info.yorku.ca/files/2021/09/REDI_500X500_YFILE-2-76
+ 8x768.png 768w\, https://rights.info.yorku.ca/files/2021/09/REDI_500X500_Y
+ FILE-2-724x724.png 724w\, https://rights.info.yorku.ca/files/2021/09/REDI_
+ 500X500_YFILE-2.png 1500w' sizes='(max-width: 300px) 100vw\, 300px' />expe
+ rience of inclusion for all.</p>\n<p> </p>
+DTSTART;TZID=America/Toronto:20220303T103000
+DTEND;TZID=America/Toronto:20220303T120000
+LOCATION:Zoom @ https://yorku.zoom.us/meeting/register/tJEpde-srTgiHdwRSsJz
+ ucm640pNDCHrUNcQ
+SEQUENCE:0
+SUMMARY:Challenging Unconscious Bias and Microaggressions
+URL:https://rights.info.yorku.ca/event/challenging-unconscious-bias-and-mic
+ roaggressions-3/
+X-COST-TYPE:free
+X-WP-IMAGES-URL:thumbnail\;https://rights.info.yorku.ca/files/2021/09/REDI_
+ 2021_22_WEB_BANNER-150x150.png\;150\;150\;1\,medium\;https://rights.info.y
+ orku.ca/files/2021/09/REDI_2021_22_WEB_BANNER-300x91.png\;300\;91\;1\,larg
+ e\;https://rights.info.yorku.ca/files/2021/09/REDI_2021_22_WEB_BANNER.png\
+ ;1150\;350\;
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6537@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:https://rights.info.yorku.ca/redipd/
+DESCRIPTION:<div class='ai1ec-event-avatar alignleft timely'><img src='http
+ s://rights.info.yorku.ca/files/2021/09/REDI_2021_22_WEB_BANNER-300x91.png'
+  width='300' height='91' /></div><p>Through a series of engaging activitie
+ s and reflection exercises participants who take part in this workshop wil
+ l be able to:</p>\n<ul>\n<li>Contextualize their social location based on 
+ their identity.</li>\n<li>Deepen their understanding of allyship in a pers
+ onal and institutional setting.</li>\n<li>Practice active allyship and dev
+ elop strategies to have brave conversations.</li>\n</ul>\n<p>This workshop
+  is developed and delivered in partnership with Student Community Leadersh
+ ip and Development (SCLD).</p>\n<p><img decoding='async' loading='lazy' cl
+ ass='alignnone size-medium wp-image-6538' src='https://rights.info.yorku.c
+ a/files/2021/09/REDI_500X500_YFILE-1-300x300.png' alt='' width='300' heigh
+ t='300' srcset='https://rights.info.yorku.ca/files/2021/09/REDI_500X500_YF
+ ILE-1-300x300.png 300w\, https://rights.info.yorku.ca/files/2021/09/REDI_5
+ 00X500_YFILE-1-150x150.png 150w\, https://rights.info.yorku.ca/files/2021/
+ 09/REDI_500X500_YFILE-1-768x768.png 768w\, https://rights.info.yorku.ca/fi
+ les/2021/09/REDI_500X500_YFILE-1-724x724.png 724w\, https://rights.info.yo
+ rku.ca/files/2021/09/REDI_500X500_YFILE-1.png 1500w' sizes='(max-width: 30
+ 0px) 100vw\, 300px' /></p>
+DTSTART;TZID=America/Toronto:20220317T130000
+DTEND;TZID=America/Toronto:20220317T143000
+LOCATION:Zoom @ https://yorku.zoom.us/meeting/register/tJUkduGsqTkvH9dNe2ag
+ 4_5LLKxF_nIerhvo
+SEQUENCE:0
+SUMMARY:Orienting Yourself to Allyship
+URL:https://rights.info.yorku.ca/event/orienting-yourself-to-allyship/
+X-COST-TYPE:free
+X-WP-IMAGES-URL:thumbnail\;https://rights.info.yorku.ca/files/2021/09/REDI_
+ 2021_22_WEB_BANNER-150x150.png\;150\;150\;1\,medium\;https://rights.info.y
+ orku.ca/files/2021/09/REDI_2021_22_WEB_BANNER-300x91.png\;300\;91\;1\,larg
+ e\;https://rights.info.yorku.ca/files/2021/09/REDI_2021_22_WEB_BANNER.png\
+ ;1150\;350\;
+END:VEVENT
+BEGIN:VEVENT
+UID:ai1ec-6534@rights.info.yorku.ca
+DTSTAMP:20231115T220926Z
+CATEGORIES;LANGUAGE=en-CA:REI Events\,Training
+CONTACT:https://rights.info.yorku.ca/redipd/
+DESCRIPTION:<div class='ai1ec-event-avatar alignleft timely'><img src='http
+ s://rights.info.yorku.ca/files/2021/09/REDI_2021_22_WEB_BANNER-300x91.png'
+  width='300' height='91' /></div><p><img decoding='async' loading='lazy' c
+ lass='alignnone size-medium wp-image-6536' src='https://rights.info.yorku.
+ ca/files/2021/09/REDI_500X500_YFILE-300x300.png' alt='' width='300' height
+ ='300' srcset='https://rights.info.yorku.ca/files/2021/09/REDI_500X500_YFI
+ LE-300x300.png 300w\, https://rights.info.yorku.ca/files/2021/09/REDI_500X
+ 500_YFILE-150x150.png 150w\, https://rights.info.yorku.ca/files/2021/09/RE
+ DI_500X500_YFILE-768x768.png 768w\, https://rights.info.yorku.ca/files/202
+ 1/09/REDI_500X500_YFILE-724x724.png 724w\, https://rights.info.yorku.ca/fi
+ les/2021/09/REDI_500X500_YFILE.png 1500w' sizes='(max-width: 300px) 100vw\
+ , 300px' /></p>
+DTSTART;TZID=America/Toronto:20220407T103000
+DTEND;TZID=America/Toronto:20220407T120000
+LOCATION:Zoom @ https://yorku.zoom.us/meeting/register/tJEof-yrpzsuEtFR95Q2
+ To5z10KI2NzvG4Uo
+SEQUENCE:0
+SUMMARY:Freedom of Expression
+URL:https://rights.info.yorku.ca/event/freedom-of-expression/
+X-COST-TYPE:free
+X-WP-IMAGES-URL:thumbnail\;https://rights.info.yorku.ca/files/2021/09/REDI_
+ 2021_22_WEB_BANNER-150x150.png\;150\;150\;1\,medium\;https://rights.info.y
+ orku.ca/files/2021/09/REDI_2021_22_WEB_BANNER-300x91.png\;300\;91\;1\,larg
+ e\;https://rights.info.yorku.ca/files/2021/09/REDI_2021_22_WEB_BANNER.png\
+ ;1150\;350\;
+END:VEVENT
+END:VCALENDAR

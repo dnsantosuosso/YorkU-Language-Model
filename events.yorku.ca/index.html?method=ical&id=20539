@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+CALSCALE:GREGORIAN
+PRODID:-//WordPress - MECv6.7.3//EN
+X-ORIGINAL-URL:https://events.yorku.ca/
+X-WR-CALNAME:York University Events Calendar
+X-WR-CALDESC:
+REFRESH-INTERVAL;VALUE=DURATION:PT1H
+X-PUBLISHED-TTL:PT1H
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VEVENT
+CLASS:PUBLIC
+UID:MEC-de487db7a08250a136f966ead11da262@events.yorku.ca
+DTSTART:20231030T130000Z
+DTEND:20231105T210000Z
+DTSTAMP:20231023T183900Z
+CREATED:20231023
+LAST-MODIFIED:20231030
+PRIORITY:5
+SEQUENCE:9
+TRANSP:OPAQUE
+SUMMARY:(Un)comfortably Numb: Colin Arthurs
+DESCRIPTION:(Un)comfortably Numb is a solo gallery exhibition by Colin Arthurs.\nLocation: Gales Gallery ( https://facilities.ampd.yorku.ca/facilities/gales-gallery/ )\nHours: 9 am to 5pm\nDates: October 30 to November 5\nReception: November 1 (6 pm to 9 pm)\nThrough artworks created across the mediums of painting, photography, and print, artist Colin Arthurs engages with contemporary constructions of disability, isolation, and masculinity to challenge and subvert modern conceptions of time, space, and identity. Having developed a nerve condition in his early teens that has left him without feeling in his arms and legs, Arthurs’ artworks explore the ways in which this diagnosis has altered aspects of his lifestyle and identity.\nAs a result of this condition, Arthurs has been deemed ineligible to follow in a long familial tradition of military service. In (Un)comfortably Numb, the artist confronts these unspoken expectations and lays bare the overwhelming struggle to assert one’s individuality and define an identity bereft of historical reciprocity. Works like Never Coming Home play with the uncomfortable complexity of expectation. While the portrait itself, a painted representation of a military headshot, is meant to immortalize the image of courage, pride, and tradition, the cool palette and title of the work situate the young subject in a numbing reality. Arthurs’ poignant portrait communicates a concept that too often becomes a truth; the overreliance on and dedication to preserving history often leads to the loss of a future. While Never Coming Home conveys this idea literally through the subject on the canvas, it also situates the artist and viewer in the conceptual realm of lost identity. Through an adept interaction between past and future, the works on display in (Un)comfortably Numb transcend traditional western boundaries of time and space.\nThe exhibit’s critical struggle with a traditional masculine identity is overtly explored through the artist’s stone lithograph series Peace was Never an Option and The Distinguished Gentleman. In yet another clever contradiction between subject and title, Arthurs offers an engaging analysis of “manliness” in Peace was Never an Option, a work depicting a male chicken sitting on the handle of an axe. Combining the historical symbolism of the chicken (cowardice and fear), the rooster (phallus and false bravado), and the axe (violence and sustenance), the artist deconstructs the false narrative of the man as a brave warrior and provider and questions this story’s role in contemporary society. The artwork asks the viewer what is more courageous, to blindly follow preconceived constructions of masculinity, or to refuse its enticing aura of acceptance and assurance?\nThis question, and its answers, culminate in the ambitious five by seven foot painting The Death of General Industry. The painting, part redux and part critique of Benjamin West’s iconic The Death of General Wolfe, depicts eleven male members of Canadian politics and industry standing in front of the Fort MacMurry oil refinery. A twelfth figure, laying wounded and dying in the arms of a laborer, is Francois-Phillipe Champagne—the current minister of innovation, science, and industry in Canada. Is it Champagne dying in the painting, is it his title, or is it what it represents? How can a country so transfixed on traditional masculinity innovate industry, or anything else for that matter?\nFinally, the artist’s material and conceptual versatility is on display in his isolationist series of paintings. In works like Allein, Apochronal, and Wanderer, audiences are asked to examine the differences between being lonely and being alone, and to consider the philosophical impact of the distinctions between these two states of existence, the time one may spend in each state, and the influence each plays in the forming of a personal identity.\n(Un)comfortably Numb is a personal investigation of identity, evolution, history, and development, as well as a critique of society’s preservation of traditional gender roles and their impact on individual expression. Arthurs places his works within a space where time is non-linear and indistinguishable; an environment akin to his own experience in dealing with his condition. As such, (Un)comfortably Numb transforms the gallery space into a state of contradiction in which the reality of past, present, and future is lost to the numbing stillness of being.\n– By Zachary Scola-Allison\n \n
+URL:https://events.yorku.ca/events/uncomfortably-numb/
+CATEGORIES:School of the Arts, Media, Performance &amp; Design
+LOCATION:Gales Gallery, Accolade West Building, York University @ 89 York Blvd., Toronto
+ATTACH;FMTTYPE=image/jpeg:https://events.yorku.ca/wp-content/uploads/2023/10/colina-scaled.jpg
+END:VEVENT
+END:VCALENDAR

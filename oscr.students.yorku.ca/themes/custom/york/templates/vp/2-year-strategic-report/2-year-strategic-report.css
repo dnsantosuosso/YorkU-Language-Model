@@ -1,0 +1,261 @@
+html,
+body{
+	font-size:18px;
+	scroll-behavior:smooth;
+}
+
+h1{
+}
+
+h2{
+
+}
+
+	h2.h5{
+		color:#666;
+		margin-top:0;
+	}
+
+h3{
+	font-size:2rem;
+	margin-bottom:24px;
+}
+
+	h3 + p{
+		max-width:700px;
+		margin-bottom:48px;
+		line-height:1.5;
+		font-size:1.2rem;
+	}
+
+h4{
+	text-transform:uppercase;
+	color:#e31837;
+}
+
+
+
+.grid-2{
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	grid-gap:36px;
+}
+
+		@media (max-width:800px){
+			.grid-2{
+				grid-template-columns:1fr;
+			}
+		}
+
+	.grid-12{
+		grid-row-end:span 2;
+	}
+	
+img.iconography{
+	object-fit:contain;
+	width:50px;
+	margin-right:16px;
+	align-self:flex-start;
+}
+
+.grid-11, .grid-12{
+	display:flex;
+}
+
+	.grid-11 ul, .grid-12 ul{
+		margin-top:16px;
+	}
+	
+		.grid-11 ul li, .grid-12 ul li{
+			margin-bottom:8px;
+		}	
+		
+.profile-block .wp-block-group .wp-block-group__inner-container{
+	width:40%;
+	padding:36px;
+}		
+
+	.profile-block h2{
+		font-size:1.5em;
+		margin-top:0;
+		margin-bottom:8px;
+	}
+	
+		.profile-block h2 + p{
+			font-size:0.8em;
+		}	
+	
+		.profile-block p{
+			font-size:16px;
+		}	
+	
+
+
+
+:root{
+	--spacing:48px;
+	--spacing-less:36px;
+}
+
+.scene{
+	position:relative;
+}
+
+	img.emblem{
+		width:24px;
+		height:24px;
+		margin:0;
+		vertical-align:top;
+	}				
+			
+.count-up{
+	color:#e31837;
+	font-weight:bold;
+	font-size:2rem;
+	display:inline-block;
+	vertical-align:middle;
+}
+
+	.count-up.counting{
+		color:#e31837;
+	}					
+
+/* https://dev.to/wtaylor45/quick-and-easy-text-highlight-animation-386e */
+/*.grid-2 > div > div strong{
+	background-image: linear-gradient(#ffd900, #ffd900);
+	background-repeat: no-repeat;
+	background-position: 0% 100%;
+	background-size: 100% 0px;	
+	transition: background-size .2s, background-position .2s ease-in .2s;
+}
+
+	.grid-2 > div > div strong.current{
+		background-position: 0% 0%;		
+		background-size: 100% 100%;
+		transition-delay:2s;
+		transition: background-position .2s, background-size .2s ease-in .2s;
+	}*/
+
+		
+#vp5yr-banner h1{
+	font-size:2rem;
+	font-weight:bold;
+}
+
+	#vp5yr-banner h1 span{
+		font-size:5rem;
+		margin-top:12px;
+		line-height:1;
+	}	
+	
+	@media (max-width:500px){
+		#vp5yr-banner h1 span{
+			font-size:4rem;
+		}			
+	}		
+	
+	#vp5yr-banner .action{
+		margin:100px 0 24px;
+	}
+	
+		#vp5yr-banner .action paper-button{
+			padding:8px 16px;
+			border-radius:4px;
+			margin-right:8px;
+			margin-top:12px;
+		}	
+			
+.scene02{
+	text-align:justify;
+}		
+
+.scene03{	
+}
+
+	.scene03 .wp-block-column{
+		 border:10px solid #3AC2EF;
+		 color:#666;
+		 background-color:#FFF;
+	}
+	
+		.scene03 .wp-block-column.red{
+			 border:10px solid var(--yorkred);
+		}	
+
+	.scene03 .card-deck div.focus{
+		font-size:1rem !important;
+	}
+
+	.scene03 table #sem-table-header th{
+		text-align:center;
+		
+	}
+	
+		.scene03 table #sem-table-header th div{
+			font-size:1.5rem;
+		}	
+	
+		.scene03 table #sem-table-header th span{
+			font-weight:normal;
+		}	
+		
+	.scene03 table td{
+		padding:.75rem;
+		width:25%;
+		line-height:1.5;
+	}		
+	
+		.scene03 table td span{
+			font-size:1.1em;
+			display:inline-block;
+			margin-bottom:8px;
+		}	
+	
+		.scene03 table td p{
+			color:#666;
+		}	
+		
+	@media (max-width:1000px){
+		.scene03 table tr:not(#sem-table-header){
+			display:flex;
+			flex-wrap:wrap;
+			margin-top:12px;
+		}
+		
+			.scene03 table tr:not(#sem-table-header) th{
+				display:block;
+				text-align:center;
+				width:100%;
+			}		
+		
+			.scene03 table tr:not(#sem-table-header) td{
+				display:block;
+				text-align:left;
+			}		
+	}
+	
+	@media (max-width:800px){
+		.scene03 table tr:not(#sem-table-header) td{
+			width:50%;
+		}		
+	}	
+	
+	@media (max-width:600px){
+		.scene03 table tr:not(#sem-table-header) td{
+			width:100%;
+		}		
+	}				
+		
+.scene06 figure img{
+	transform:translateY(-200px);
+}	
+
+	@media (max-width:992px){
+		.scene06 figure img{
+			transform:none;
+		}
+	}
+		
+#page-wrapper{
+	padding-bottom:0;
+}			
